@@ -1,0 +1,91 @@
+===========================================================================
+Advanced engine needed  : GZDoom
+Primary purpose         : IWAD Combining Tool
+===========================================================================
+Title                   : WadSmoosh
+Filename                : wadsmush.zip
+Release date            : 2016-08-11
+Author                  : JP LeBreton
+Email Address           : [redacted]
+Other Files By Author   : oakridge.wad, arcadia.wad, jphouse.wad
+
+Description             : A tool for combining all official id release
+                          WADs into a single PK3 file playable with ZDoom
+                          and its derivatives. Drop your WADs into the
+                          source_wads\ subfolder, then run wadsmoosh.exe.
+                          A new IWAD file called "doom_complete.pk3" will
+                          be generated.
+                          
+                          Linux and macOS users can run from the included
+                          source code with "./wadsmoo.sh".
+                          
+                          Program logs to wadsmoosh.log as it runs, any
+                          errors it encounters will show up there.
+                          
+                          Master Levels map order can be customized in
+                          masterlevels_order.txt.
+                          
+                          Advanced users can edit wadsmoosh_data.py to
+                          customize what and how WadSmoosh extracts.
+
+Additional Credits to   : ZDoom forums folks for help testing and fixing!
+                          Custom title art by Scalliano and Hellser.
+                          Episode name art by NightFright.
+                          Credits data by Shockwave_S08.
+
+Inspirational Quote     : "As my son Steve says, just 'smoosh' it in there.
+                          It's not a real word, but people seem to know
+                          what it means." - Bob Ross
+
+===========================================================================
+* What is included *
+
+New levels              : None
+Sounds                  : No
+Music                   : No
+Graphics                : Yes (title art, map credits)
+Dehacked/BEX Patch      : No
+Demos                   : No
+Other                   : Yes (custom data files)
+Other files required    : Any official id release WADs:
+                          - Doom / Ultimate Doom
+                          - Doom 2
+                          - Master Levels for Doom 2
+                          - No Rest for the Living (aka NERVE.WAD)
+                          - Final Doom (TNT and Plutonia)
+                          - Sigil
+
+
+* Construction *
+
+Base                    : New from scratch
+Build Time              : One weekend + a few hours here and there to bugfix
+Editor(s) used          : OMGIFOL, the excellent Python-based lump management
+                          library. Playscii for the custom ENDOOM.
+Known Bugs              : Nope
+May Not Run With        : Any non-GZDoom-derived source port.
+                          Mods designed specifically for TNT or Plutonia may
+                          have texture errors, as WadSmoosh renames some of
+                          the originals to prevent name conflicts.
+Tested With             : GZDoom in Windows, macOS, and Arch Linux
+
+
+* Copyright / Permissions *
+
+Authors MAY use the contents of this file as a base for
+modification or reuse.  Permissions have been obtained from original
+authors for any of their resources modified or included in this file.
+
+You MAY distribute this file, provided you include this text
+file, with no modifications.  You may distribute this file in any
+electronic format (BBS, Diskette, CD, etc) as long as you include
+this file intact.  I have received permission from the original
+authors of any modified or included content in this file to allow
+further distribution.
+
+
+* Where to get the file that this text file describes *
+
+The Usual: ftp://archives.gamers.org/pub/idgames/ and mirrors
+Web sites: https://jp.itch.io/wadsmoosh
+           https://heptapod.host/jp-lebreton/wadsmoosh

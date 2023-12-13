@@ -1,0 +1,103 @@
+
+defaultmap
+{
+	BorderTexture = "FLOOR7_2"
+	nocrouch
+	nojump
+	sky1 = "SKY5"
+	cluster = 25
+	enterpic = "SIGILINT"
+	exitpic = "SIGILINT"
+	InterMusic = "S_INTER"
+	Author = "$WS_AU_ROMERO"
+}
+
+map E5M1 "$HUSTR_E5M1"
+{
+	levelnum = 41
+	titlepatch = "WILV40"
+	next = "E5M2"
+	music = "D_E5M1"
+	par = 90
+}
+
+map E5M2 "$HUSTR_E5M2"
+{
+	levelnum = 42
+	titlepatch = "WILV41"
+	next = "E5M3"
+	music = "D_E5M2"
+	par = 150
+}
+
+map E5M3 "$HUSTR_E5M3"
+{
+	levelnum = 43
+	titlepatch = "WILV42"
+	next = "E5M4"
+	music = "D_E5M3"
+	par = 360
+}
+
+map E5M4 "$HUSTR_E5M4"
+{
+	levelnum = 44
+	titlepatch = "WILV43"
+	next = "E5M5"
+	music = "D_E5M4"
+	par = 420
+}
+
+map E5M5 "$HUSTR_E5M5"
+{
+	levelnum = 45
+	titlepatch = "WILV44"
+	next = "E5M6"
+	music = "D_E5M5"
+	par = 780
+}
+
+map E5M6 "$HUSTR_E5M6"
+{
+	levelnum = 46
+	titlepatch = "WILV45"
+	next = "E5M7"
+	secretnext = "E5M9"
+	music = "D_E5M6"
+	par = 420
+}
+
+map E5M7 "$HUSTR_E5M7"
+{
+	levelnum = 47
+	titlepatch = "WILV46"
+	next = "E5M8"
+	music = "D_E5M7"
+	par = 780
+}
+
+map E5M8 "$HUSTR_E5M8"
+{
+	levelnum = 48
+	titlepatch = "WILV47"
+	next = EndPic, "SCREDIT"
+	nosoundclipping
+	music = "D_E5M8"
+	par = 300
+}
+
+map E5M9 "$HUSTR_E5M9"
+{
+	levelnum = 49
+	titlepatch = "WILV48"
+	next = "E5M7"
+	music =  "D_E5M9"
+	par = 660
+}
+
+cluster 25
+{
+	flat = "FLOOR7_2"
+	music = "S_INTRO"
+	exittext = lookup, "E5TEXT"
+}

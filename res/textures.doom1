@@ -1,0 +1,363 @@
+
+Texture "ASHWALL", 64, 128
+{
+	Patch "W104_1", 0, 0
+}
+
+Texture "BLODGR1", 32, 128
+{
+	Patch "TP5_1", 0, 0
+}
+
+Texture "BLODGR2", 32, 128
+{
+	Patch "TP5_2", 0, 0
+}
+
+Texture "BLODGR3", 32, 128
+{
+	Patch "TP5_3", 0, 0
+}
+
+Texture "BLODGR4", 32, 128
+{
+	Patch "TP5_4", 0, 0
+}
+
+Texture "BRNBIGC", 128, 128
+{
+	Patch "W113_1", 0, 0
+}
+
+Texture "BRNBIGL", 32, 128
+{
+	Patch "W113_2", 0, 0
+}
+
+Texture "BRNBIGR", 32, 128
+{
+	Patch "W113_3", 0, 0
+}
+
+Texture "BROWNWEL", 256, 72
+{
+	Patch "WALL03_4", 0, 0
+	Patch "WALL03_3", 128, 0
+	Patch "WALL03_4", 64, 0
+	Patch "WALL03_4", 192, 0
+}
+
+Texture "COMP2", 256, 128
+{
+	Patch "COMP02_1", 0, 0
+	Patch "COMP02_2", 64, 0
+	Patch "COMP02_4", 128, 0
+	Patch "COMP02_3", 192, 0
+	Patch "COMP02_6", 0, 64
+	Patch "COMP02_8", 64, 64
+	Patch "COMP02_7", 128, 64
+	Patch "COMP02_5", 192, 64
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+	Patch "STEP08", 128, 56
+	Patch "STEP08", 160, 56
+	Patch "STEP08", 192, 56
+	Patch "STEP08", 224, 56
+	Patch "STEP08", 0, 120
+	Patch "STEP08", 32, 120
+	Patch "STEP08", 64, 120
+	Patch "STEP08", 96, 120
+	Patch "STEP08", 128, 120
+	Patch "STEP08", 160, 120
+	Patch "STEP08", 192, 120
+	Patch "STEP08", 224, 120
+}
+
+Texture "COMPOHSO", 128, 128
+{
+	Patch "WALL21_1", 64, 70
+	Patch "WALL21_5", 0, 70
+	Patch "WALL21_3", 0, -2
+	Patch "WALL21_5", 64, -2
+}
+
+Texture "COMPTILE", 128, 128
+{
+	Patch "COMP03_7", 0, 0
+	Patch "COMP03_1", 32, 0
+	Patch "COMP03_6", 96, 0
+	Patch "COMP03_7", 0, 64
+	Patch "COMP03_1", 32, 64
+	Patch "COMP03_6", 96, 64
+}
+
+Texture "COMPUTE1", 128, 128
+{
+	Patch "COMP01_5", 26, 64
+	Patch "COMP01_1", 0, 64
+	Patch "W33_8", 0, 56
+	Patch "W33_8", 64, 56
+	Patch "W33_8", 0, 120
+	Patch "W33_8", 64, 120
+	Patch "COMP01_5", 28, 0
+	Patch "COMP1C_6", 72, 64
+	Patch "COMP01_6", 72, 0
+	Patch "COMP1B_4", 0, 0
+}
+
+Texture "COMPUTE2", 256, 56
+{
+	Patch "COMP02_1", 0, 0
+	Patch "COMP02_2", 64, 0
+	Patch "COMP02_3", 128, 0
+	Patch "COMP02_7", 192, 0
+}
+
+Texture "COMPUTE3", 128, 128
+{
+	Patch "SW11_4", 0, 4
+	Patch "SW11_5", 32, 4
+	Patch "SW11_4", 64, 4
+	Patch "COMP02_1", 0, 0
+	Patch "SW11_5", 96, 4
+	Patch "COMP02_2", 64, 0
+	Patch "STEP08", 0, 56
+	Patch "STEP08", 32, 56
+	Patch "STEP08", 64, 56
+	Patch "STEP08", 96, 56
+}
+
+Texture "DOORHI", 64, 128
+{
+	Patch "DOOR2_3", 0, 0
+	Patch "DOOR2_3", 0, 32
+	Patch "DOOR2_3", 0, 96
+	Patch "DOOR2_3", 0, 64
+}
+
+Texture "GRAYDANG", 64, 128
+{
+	Patch "W33_7", 0, 0
+	Patch "W33_7", 0, 64
+	Patch "PS15A0", 14, 74
+}
+
+Texture "ICKDOOR1", 64, 72
+{
+	Patch "WALL69_4", 0, 9
+	Patch "WALL70_3", 0, 0
+}
+
+Texture "ICKWALL6", 64, 128
+{
+	Patch "WALL70_4", 0, 0
+	Patch "WALL70_2", 4, 0
+	Patch "W32_4", 0, 64
+}
+
+Texture "LITE2", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "FLAMP", 5, 0
+	Patch "FLAMP", 35, 0
+}
+
+Texture "LITE96", 64, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "FLAMP", 4, 18
+	Patch "FLAMP", 38, 18
+}
+
+Texture "LITEBLU2", 16, 72
+{
+	Patch "W13_A", 0, 0
+}
+
+Texture "LITEBLU3", 16, 128
+{
+	Patch "W13_8", 0, 0
+	Patch "W13_8", 0, 56
+}
+
+Texture "LITEMET", 128, 128
+{
+	Patch "WALL03_7", 0, 0
+	Patch "WALL03_7", 64, 0
+	Patch "WALL03_7", 0, 64
+	Patch "WALL03_7", 64, 64
+	Patch "FLAMP", 81, 34
+	Patch "FLAMP", 19, 34
+}
+
+Texture "LITERED", 16, 128
+{
+	Patch "W15_6", -4, 56
+	Patch "W15_6", -4, 0
+}
+
+Texture "LITESTON", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "FLAMP", 7, 27
+	Patch "FLAMP", 37, 27
+}
+
+Texture "NUKESLAD", 64, 128
+{
+	Patch "WALL57_1", 0, 0
+}
+
+Texture "PLANET1", 256, 128
+{
+	Patch "AG128_1", 0, 0
+	Patch "TSCRN2", 4, 69
+	Patch "AG128_1", 64, 0
+	Patch "TSCRN3", 68, 69
+	Patch "AG128_1", 128, 0
+	Patch "TSCRN4", 132, 69
+	Patch "TSCRN5", 68, 7
+	Patch "TSCRN6", 4, 7
+	Patch "TSCRN8", 132, 7
+	Patch "AG128_1", 192, 0
+}
+
+Texture "REDWALL1", 128, 128
+{
+	Patch "W15_4", 0, 56
+	Patch "W15_5", 64, 56
+	Patch "W15_4", 0, 0
+	Patch "W15_5", 64, 0
+}
+
+Texture "SKINBORD", 64, 128
+{
+	Patch "HELL6_1", 0, 0
+	Patch "HELL8_3", 32, 0
+}
+
+Texture "SKINTEK1", 256, 128
+{
+	Patch "W109_1", 0, 0
+	Patch "W109_2", 128, 0
+}
+
+Texture "SKINTEK2", 256, 128
+{
+	Patch "W110_1", 0, 0
+}
+
+Texture "SKULWAL3", 128, 128
+{
+	Patch "WALL76_1", -12, 0
+	Patch "WALL76_1", 116, 0
+}
+
+Texture "SKULWALL", 128, 128
+{
+	Patch "WALL79_1", -4, 0
+	Patch "WALL79_1", 124, 0
+}
+
+Texture "SKY1", 256, 128
+{
+	Patch "SKY1", 0, 0
+}
+
+Texture "SKY2", 256, 128
+{
+	Patch "SKY2", 0, 0
+}
+
+Texture "SKY3", 256, 128
+{
+	Patch "SKY3", 0, 0
+}
+
+Texture "SKY4", 256, 128
+{
+	Patch "SKY4", 0, 0
+}
+
+Texture "SLADRIP1", 64, 128
+{
+	Patch "WALL57_2", 0, 0
+}
+
+Texture "SLADRIP2", 64, 128
+{
+	Patch "WALL57_3", 0, 0
+}
+
+Texture "SLADRIP3", 64, 128
+{
+	Patch "WALL57_4", 0, 0
+}
+
+Texture "SP_DUDE3", 64, 128
+{
+	Patch "WALL51_1", 0, 0
+}
+
+Texture "SP_DUDE6", 64, 128
+{
+	Patch "W108_1", 0, 0
+}
+
+Texture "SP_ROCK2", 128, 128
+{
+	Patch "WALL63_2", 0, 0
+}
+
+Texture "STONGARG", 128, 128
+{
+	Patch "W28_6", 64, 64
+	Patch "W28_7", 64, 0
+	Patch "W28_6", 0, 0
+	Patch "W28_7", 0, 64
+	Patch "SW2_3", 0, 78
+	Patch "SW2_3", 64, 15
+}
+
+Texture "SW1PIPE", 128, 128
+{
+	Patch "TP2_2", 0, 0
+	Patch "SW3S0", 48, 76
+}
+
+Texture "TEKWALL2", 128, 128
+{
+	Patch "WALL24_1", 0, 0
+}
+
+Texture "TEKWALL5", 128, 128
+{
+	Patch "WALL24_1", -120, -8
+}
+
+// for WadSmoosh 1.2:
+// two 64x128 doom.wad textures that also exist in doom2.wad, but are 128x128
+// there. by default WadSmooshHandler will swap these in for ExMx-named levels.
+Texture "BRNPOIS1", 64, 128
+{
+	Patch "WALL62_2", 0, 0
+	Patch "PS20A0", 1, 60
+}
+
+Texture "NUKPOIS1", 64, 128
+{
+	Patch "WALL04_3", 0, 0
+	Patch "WALL04_4", 16, 0
+	Patch "WALL04_5", 32, 0
+	Patch "WALL04_2", 48, 0
+	Patch "NUKEDGE", 0, 104
+	Patch "WALL04_3", 0, 33
+	Patch "WALL04_4", 16, 33
+	Patch "WALL04_5", 32, 33
+	Patch "WALL04_2", 48, 33
+	Patch "PS20A0", -1, 68
+}

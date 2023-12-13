@@ -1,0 +1,453 @@
+// TNT maps
+
+defaultmap
+{
+	ExitPic = "TNTINTER"
+	InterMusic = "T_DM2INT"
+}
+
+map TN_MAP01 lookup "THUSTR_1"
+{
+	next = "TN_MAP02"
+	secretnext = "TN_MAP02"
+	sky1 = "TNT_SKY1"
+	cluster = 12
+	titlepatch = "TWILV00"
+	par = 30
+	music = "T_RUNNIN"
+	Author = "$WS_AU_MUSTAINE"
+}
+
+map TN_MAP02 lookup "THUSTR_2"
+{
+	next = "TN_MAP03"
+	secretnext = "TN_MAP03"
+	sky1 = "TNT_SKY1"
+	cluster = 12
+	titlepatch = "TWILV01"
+	par = 90
+	music = "T_STALKS"
+	Author = "$WS_AU_WAKELIN"
+}
+
+map TN_MAP03 lookup "THUSTR_3"
+{
+	next = "TN_MAP04"
+	secretnext = "TN_MAP04"
+	sky1 = "TNT_SKY1"
+	cluster = 12
+	titlepatch = "TWILV02"
+	par = 120
+	music = "T_COUNTD"
+	Author = "$WS_AU_PATENALL_MINADEO"
+}
+
+map TN_MAP04 lookup "THUSTR_4"
+{
+	next = "TN_MAP05"
+	secretnext = "TN_MAP05"
+	sky1 = "TNT_SKY1"
+	cluster = 12
+	titlepatch = "TWILV03"
+	par = 120
+	music = "T_BETWEE"
+	Author = "$WS_AU_HALDERMAN"
+}
+
+map TN_MAP05 lookup "THUSTR_5"
+{
+	next = "TN_MAP06"
+	secretnext = "TN_MAP06"
+	sky1 = "TNT_SKY1"
+	cluster = 12
+	titlepatch = "TWILV04"
+	par = 90
+	music = "T_DOOM"
+	Author = "$WS_AU_DETHLEFSEN"
+}
+
+map TN_MAP06 lookup "THUSTR_6"
+{
+	next = "TN_MAP07"
+	secretnext = "TN_MAP07"
+	sky1 = "TNT_SKY1"
+	cluster = 12
+	titlepatch = "TWILV05"
+	par = 150
+	music = "T_THE_DA"
+	Author = "$WS_AU_SIEBEN_HALDERMAN"
+}
+
+map TN_MAP07 lookup "THUSTR_7"
+{
+	next = "TN_MAP08"
+	secretnext = "TN_MAP08"
+	sky1 = "TNT_SKY1"
+	cluster = 13
+	titlepatch = "TWILV06"
+	par = 120
+	map07special
+	music = "T_SHAWN"
+	Author = "$WS_AU_DOWSWELL"
+}
+
+map TN_MAP08 lookup "THUSTR_8"
+{
+	next = "TN_MAP09"
+	secretnext = "TN_MAP09"
+	sky1 = "TNT_SKY1"
+	cluster = 13
+	titlepatch = "TWILV07"
+	par = 120
+	music = "T_DDTBLU"
+	Author = "$WS_AU_MINADEO"
+}
+
+map TN_MAP09 lookup "THUSTR_9"
+{
+	next = "TN_MAP10"
+	secretnext = "TN_MAP10"
+	sky1 = "TNT_SKY1"
+	cluster = 13
+	titlepatch = "TWILV08"
+	par = 270
+	music = "T_IN_CIT"
+	Author = "$WS_AU_SIEBEN_HALDERMAN"
+}
+
+map TN_MAP10 lookup "THUSTR_10"
+{
+	next = "TN_MAP11"
+	secretnext = "TN_MAP11"
+	sky1 = "TNT_SKY1"
+	cluster = 13
+	titlepatch = "TWILV09"
+	par = 90
+	music = "T_DEAD"
+	Author = "$WS_AU_MUSTAINE"
+}
+
+map TN_MAP11 lookup "THUSTR_11"
+{
+	next = "TN_MAP12"
+	secretnext = "TN_MAP12"
+	sky1 = "TNT_SKY1"
+	cluster = 13
+	titlepatch = "TWILV10"
+	par = 210
+	music = "T_STLKS2"
+	Author = "$WS_AU_JOHNSON"
+}
+
+map TN_MAP12 lookup "THUSTR_12"
+{
+	next = "TN_MAP13"
+	secretnext = "TN_MAP13"
+	sky1 = "TNT_SKY2"
+	cluster = 14
+	titlepatch = "TWILV11"
+	par = 150
+	music = "T_THEDA2"
+	Author = "$WS_AU_LOWELL"
+}
+
+map TN_MAP13 lookup "THUSTR_13"
+{
+	next = "TN_MAP14"
+	secretnext = "TN_MAP14"
+	sky1 = "TNT_SKY2"
+	cluster = 14
+	titlepatch = "TWILV12"
+	par = 150
+	music = "T_DOOM2"
+	Author = "$WS_AU_KIDBY_HALDERMAN"
+}
+
+map TN_MAP14 lookup "THUSTR_14"
+{
+	next = "TN_MAP15"
+	secretnext = "TN_MAP15"
+	sky1 = "TNT_SKY2"
+	cluster = 14
+	titlepatch = "TWILV13"
+	par = 150
+	music = "T_DDTBL2"
+	Author = "$WS_AU_PATENALL"
+}
+
+map TN_MAP15 lookup "THUSTR_15"
+{
+	next = "TN_MAP16"
+	secretnext = "TN_MAP31"
+	sky1 = "TNT_SKY2"
+	cluster = 14
+	titlepatch = "TWILV14"
+	par = 210
+	music = "T_RUNNI2"
+	Author = "$WS_AU_WHITAKER"
+}
+
+map TN_MAP16 lookup "THUSTR_16"
+{
+	next = "TN_MAP17"
+	secretnext = "TN_MAP17"
+	sky1 = "TNT_SKY2"
+	cluster = 14
+	titlepatch = "TWILV15"
+	par = 150
+	music = "T_DEAD2"
+	Author = "$WS_AU_ARSENAULT"
+}
+
+map TN_MAP17 lookup "THUSTR_17"
+{
+	next = "TN_MAP18"
+	secretnext = "TN_MAP18"
+	sky1 = "TNT_SKY2"
+	cluster = 14
+	titlepatch = "TWILV16"
+	par = 420
+	music = "T_STLKS3"
+	Author = "$WS_AU_MUSTAINE"
+}
+
+map TN_MAP18 lookup "THUSTR_18"
+{
+	next = "TN_MAP19"
+	secretnext = "TN_MAP19"
+	sky1 = "TNT_SKY2"
+	cluster = 14
+	titlepatch = "TWILV17"
+	par = 150
+	music = "T_ROMERO"
+	Author = "$WS_AU_CASALI_HALDERMAN"
+}
+
+map TN_MAP19 lookup "THUSTR_19"
+{
+	next = "TN_MAP20"
+	secretnext = "TN_MAP20"
+	sky1 = "TNT_SKY2"
+	cluster = 14
+	titlepatch = "TWILV18"
+	par = 210
+	music = "T_SHAWN2"
+	Author = "$WS_AU_HALDERMAN"
+}
+
+map TN_MAP20 lookup "THUSTR_20"
+{
+	next = "TN_MAP21"
+	secretnext = "TN_MAP21"
+	sky1 = "TNT_SKY2"
+	cluster = 14
+	titlepatch = "TWILV19"
+	par = 150
+	music = "T_MESSAG"
+	Author = "$WS_AU_OBRIEN"
+}
+
+map TN_MAP21 lookup "THUSTR_21"
+{
+	next = "TN_MAP22"
+	secretnext = "TN_MAP22"
+	sky1 = "TNT_SKY3"
+	cluster = 15
+	titlepatch = "TWILV20"
+	par = 240
+	music = "T_COUNT2"
+	Author = "$WS_AU_OBRIEN"
+}
+
+map TN_MAP22 lookup "THUSTR_22"
+{
+	next = "TN_MAP23"
+	secretnext = "TN_MAP23"
+	sky1 = "TNT_SKY3"
+	cluster = 15
+	titlepatch = "TWILV21"
+	par = 150
+	music = "T_DDTBL3"
+	Author = "$WS_AU_BUTEAU"
+}
+
+map TN_MAP23 lookup "THUSTR_23"
+{
+	next = "TN_MAP24"
+	secretnext = "TN_MAP24"
+	sky1 = "TNT_SKY3"
+	cluster = 15
+	titlepatch = "TWILV22"
+	par = 180
+	music = "T_AMPIE"
+	Author = "$WS_AU_TURNBULL"
+}
+
+map TN_MAP24 lookup "THUSTR_24"
+{
+	next = "TN_MAP25"
+	secretnext = "TN_MAP25"
+	sky1 = "TNT_SKY3"
+	cluster = 15
+	titlepatch = "TWILV23"
+	par = 150
+	music = "T_THEDA3"
+	Author = "$WS_AU_JOHNSON"
+}
+
+map TN_MAP25 lookup "THUSTR_25"
+{
+	next = "TN_MAP26"
+	secretnext = "TN_MAP26"
+	sky1 = "TNT_SKY3"
+	cluster = 15
+	titlepatch = "TWILV24"
+	par = 150
+	music = "T_ADRIAN"
+	Author = "$WS_AU_MENTZER"
+}
+
+map TN_MAP26 lookup "THUSTR_26"
+{
+	next = "TN_MAP27"
+	secretnext = "TN_MAP27"
+	sky1 = "TNT_SKY3"
+	cluster = 15
+	titlepatch = "TWILV25"
+	par = 300
+	music = "T_MESSG2"
+	Author = "$WS_AU_SNELL_LOWELL"
+}
+
+map TN_MAP27 lookup "THUSTR_27"
+{
+	next = "TN_MAP28"
+	secretnext = "TN_MAP28"
+	sky1 = "TNT_SKY3"
+	cluster = 15
+	titlepatch = "TWILV26"
+	par = 330
+	music = "T_ROMER2"
+	Author = "$WS_AU_OBRIEN"
+}
+
+map TN_MAP28 lookup "THUSTR_28"
+{
+	next = "TN_MAP29"
+	secretnext = "TN_MAP29"
+	sky1 = "TNT_SKY3"
+	cluster = 15
+	titlepatch = "TWILV27"
+	par = 420
+	music = "T_TENSE"
+	Author = "$WS_AU_MILO_CASALI"
+}
+
+map TN_MAP29 lookup "THUSTR_29"
+{
+	next = "TN_MAP30"
+	secretnext = "TN_MAP30"
+	sky1 = "TNT_SKY3"
+	titlepatch = "TWILV28"
+	cluster = 15
+	par = 300
+	music = "T_SHAWN3"
+	Author = "$WS_AU_SIEBEN"
+}
+
+map TN_MAP30 lookup "THUSTR_30"
+{
+	sky1 = "TNT_SKY3"
+	cluster = 15
+	titlepatch = "TWILV29"
+	par = 180
+	allowmonstertelefrags
+	// depends on broken vanilla stair builder behavior, which ZDoom
+	// hardcodes for TNT.wad but must be manually specified here
+	compat_stairs
+	music = "T_OPENIN"
+	next = endgame {
+		pic = "TNTBOSS"
+		music = "T_DM2INT"
+		cast
+	}
+	Author = "$WS_AU_SIEBEN"
+}
+
+map TN_MAP31 lookup "THUSTR_31"
+{
+	next = "TN_MAP16"
+	secretnext = "TN_MAP32"
+	sky1 = "TNT_SKY3"
+	cluster = 16
+	titlepatch = "TWILV30"
+	par = 120
+	music = "T_EVIL"
+	Author = "$WS_AU_DARIO_CASALI"
+}
+
+map TN_MAP32 lookup "THUSTR_32"
+{
+	next = "TN_MAP16"
+	secretnext = "TN_MAP16"
+	sky1 = "TNT_SKY3"
+	cluster = 17
+	titlepatch = "TWILV31"
+	par = 30
+	music = "T_ULTIMA"
+	Author = "$WS_AU_DARIO_CASALI"
+}
+
+// TNT first cluster (up thru level 6)
+
+cluster 12
+{
+	flat = "$BGFLAT06"
+	music = "T_READ_M"
+	exittext = lookup, "T1TEXT"
+}
+
+// TNT second cluster (up thru level 11)
+
+cluster 13
+{
+	flat = "$BGFLAT11"
+	music = "T_READ_M"
+	exittext = lookup, "T2TEXT"
+}
+
+// TNT third cluster (up thru level 20)
+
+cluster 14
+{
+	flat = "$BGFLAT20"
+	music = "T_READ_M"
+	exittext = lookup, "T3TEXT"
+}
+
+// TNT fourth cluster (up thru level 30)
+
+cluster 15
+{
+	flat = "$BGFLAT30"
+	music = "T_READ_M"
+	exittext = lookup, "T4TEXT"
+}
+
+// TNT fifth cluster (level 31)
+
+cluster 16
+{
+	flat = "$BGFLAT15"
+	music = "T_READ_M"
+	entertext = lookup, "T5TEXT"
+}
+
+// TNT sixth cluster (level 32)
+
+cluster 17
+{
+	flat = "$BGFLAT31"
+	music = "T_READ_M"
+	entertext = lookup, "T6TEXT"
+}

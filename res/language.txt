@@ -1,0 +1,235 @@
+[enu default]
+
+// options menu text
+WS_MENU_TITLE = "WadSmoosh Options";
+WS_RESTART_TEXT = "Note: Changing any of these requires a level restart.";
+WS_MENU_FD_TEXSWAP = "Final Doom Texture Substitutions";
+WS_MENU_D2SKY_COMPAT = "Doom2 Custom Sky Compatibility";
+WS_MENU_D1POIS_TEXSWAP = "Doom1 Poison Texture Substitutions";
+WS_MENU_CREDITS = "WadSmoosh Credits";
+WS_NAME = "WadSmoosh";
+WS_SKILL_UVPLUS = "Ultra-Violence+";
+
+// credits headings
+WS_CRED_DEVPUB = "Developed and Published by";
+WS_CRED_CODE = "Programmers";
+WS_CRED_ART = "Artists";
+WS_CRED_BIZ = "Business";
+WS_CRED_SUPPORT = "Software Support";
+WS_CRED_AUDIO = "Music and Sound";
+WS_CRED_AUDIO_CODE = "Sound Code";
+WS_CRED_LD = "Level Designers";
+WS_CRED_THANKS = "Special Thanks";
+WS_CRED_DEV = "Developed by";
+WS_CRED_PUB = "Published by";
+WS_CRED_ORIG = "Original Code and Art Assets";
+WS_CRED_MUSIC = "Original Compositions";
+WS_CRED_ORIG_MUSIC = "Music From Doom and Doom II";
+WS_CRED_COVER = "Cover Art";
+WS_CRED_WS = "Concept and Implementation";
+WS_CRED_WS_TITLE_ART = "Custom Title Art";
+WS_CRED_WS_EP_ART = "Episode Name Art";
+WS_CRED_WS_CREDITS = "Credits Implementation";
+WS_CRED_WS_LIBRARY = "Omgifol Library";
+WS_CRED_LD1 = "Level Designer";
+WS_CRED_TEST = "Playtesters";
+
+//
+// map author names
+//
+// doom1/2
+WS_AU_ROMERO = "John Romero";
+WS_AU_ROMERO_HALL = "John Romero & Tom Hall";
+WS_AU_PETERSEN_HALL = "Sandy Petersen & Tom Hall";
+WS_AU_PETERSEN = "Sandy Petersen";
+WS_AU_MCGEE = "American McGee";
+WS_AU_GREEN = "Shawn Green";
+WS_AU_WILLITS_CHASAR = "Tim Willits & Theresa Chasar";
+WS_AU_ANDERSON = "John \"Dr. Sleep\" Anderson";
+WS_AU_WILLITS = "Tim Willits";
+WS_AU_MCGEE_PETERSEN = "American McGee & Sandy Petersen";
+// master levels
+WS_AU_KLIE = "Chris Klie";
+WS_AU_MUSTAINE = "Tom Mustaine";
+WS_AU_KVERNMO = "Sverre André Kvernmo";
+WS_AU_FLYNN = "Jim Flynn";
+// nerve
+WS_AU_MEAKIM = "Russell Meakim";
+WS_AU_IWAKURA = "Arya Iwakura";
+// tnt + plutonia
+WS_AU_WAKELIN = "John Wakelin";
+WS_AU_PATENALL_MINADEO = "Robin Patenall & John Minadeo";
+WS_AU_HALDERMAN = "Ty Halderman";
+WS_AU_DETHLEFSEN = "Jim Dethlefsen";
+WS_AU_SIEBEN_HALDERMAN = "Jimmy Sieben & Ty Halderman";
+WS_AU_DOWSWELL = "Andrew Dowswell";
+WS_AU_MINADEO = "John Minadeo";
+WS_AU_JOHNSON = "Dean Johnson";
+WS_AU_LOWELL = "Jim Lowell";
+WS_AU_KIDBY_HALDERMAN = "Brian Kidby & Ty Halderman";
+WS_AU_PATENALL = "Robin Patenall";
+WS_AU_WHITAKER = "William D. Whitaker";
+WS_AU_ARSENAULT = "Andre Arsenault";
+WS_AU_CASALI_HALDERMAN = "Dario Casali & Ty Halderman";
+WS_AU_OBRIEN = "Drake O'Brien";
+WS_AU_BUTEAU = "Christopher Buteau";
+WS_AU_TURNBULL = "Paul Turnbull";
+WS_AU_MENTZER = "Jim Mentzer";
+WS_AU_SNELL_LOWELL = "Mark Snell & Jim Lowell";
+WS_AU_MILO_CASALI = "Milo Casali";
+WS_AU_SIEBEN = "Jimmy Sieben";
+WS_AU_DARIO_CASALI = "Dario Casali";
+WS_AU_CASALIS = "Dario & Milo Casali";
+// xbox secret levels
+WS_AU_CALVIN = "David Calvin";
+WS_AU_BUKOWSKI = "Michael Bukowski";
+
+// episode names
+UD1NAME = "The Ultimate Doom";
+D2E1NAME = "Doom II: Hell on Earth";
+D2E2NAME = "Doom II: No Rest for the Living";
+D2MLNAME = "The Master Levels";
+D2MLEPNAME = "The Master Levels for Doom II";
+TNTEPNAME = "Final Doom: TNT Evilution";
+PLUTEPNAME = "Final Doom: The Plutonia Experiment";
+EP5NAME = "Sigil";
+
+// master levels names
+// (map order defined in masterlevels_order.txt)
+ML_ATTACK = "Attack";
+ML_CANYON = "Canyon";
+ML_CATWALK = "The Catwalk";
+ML_COMBINE = "The Combine";
+ML_FISTULA = "The Fistula";
+ML_GARRISON = "The Garrison";
+ML_MANOR = "Titan Manor";
+ML_PARADOX = "Paradox";
+ML_SUBSPACE = "Subspace";
+ML_SUBTERRA = "Subterra";
+ML_TTRAP = "Trapped on Titan";
+ML_VIRGIL = "Virgil's Lead";
+ML_MINOS = "Minos' Judgement";
+ML_BLOODSEA = "Bloodsea Keep";
+ML_MEPHISTO = "Mephisto's Maosoleum";
+ML_NESSUS = "Nessus";
+ML_GERYON = "Geryon";
+ML_VESPERAS = "Vesperas";
+ML_BLACKTWR = "Black Tower";
+ML_TEETH = "The Express Elevator To Hell";
+ML_TEETH_SECRET = "Bad Dream";
+
+// master levels victory text (from PSX doom)
+M1TEXT =
+	"You have assaulted and triumphed over the\n"
+	"most vicious realms that the demented minds\n"
+	"of our designers could devise.\n"
+	"\n"
+	"The havoc you left behind you as you\n"
+	"smashed your way through the Master Levels\n"
+	"is mute tribute to your prowess.\n"
+	"\n"
+	"You have earned the title of\n"
+	"\"Master of Destruction\".";
+
+// nerve level names (sans level #)
+NHUSTR_1 = "The Earth Base";
+NHUSTR_2 = "The Pain Labs";
+NHUSTR_3 = "Canyon of the Dead";
+NHUSTR_4 = "Hell Mountain";
+NHUSTR_5 = "Vivisection";
+NHUSTR_6 = "Inferno of Blood";
+NHUSTR_7 = "Baron's Banquet";
+NHUSTR_8 = "Tomb of Malevolence";
+NHUSTR_9 = "March of the Demons";
+
+// xbox bonus level names
+HUSTR_E1M10 = "Sewers";
+HUSTR_33 = "Betray";
+
+// tnt level names (sans level #)
+THUSTR_1 = "System Control";
+THUSTR_2 = "Human BBQ";
+THUSTR_3 = "Power Control";
+THUSTR_4 = "Wormhole";
+THUSTR_5 = "Hanger";
+THUSTR_6 = "Open Season";
+THUSTR_7 = "Prison";
+THUSTR_8 = "Metal";
+THUSTR_9 = "Stronghold";
+THUSTR_10 = "Redemption";
+THUSTR_11 = "Storage Facility";
+THUSTR_12 = "Crater";
+THUSTR_13 = "Nukage Processing";
+THUSTR_14 = "Steel Works";
+THUSTR_15 = "Dead Zone";
+THUSTR_16 = "Deepest Reaches";
+THUSTR_17 = "Processing Area";
+THUSTR_18 = "Mill";
+THUSTR_19 = "Shipping/Respawning";
+THUSTR_20 = "Central Processing";
+THUSTR_21 = "Administration Center";
+THUSTR_22 = "Habitat";
+THUSTR_23 = "Lunar Mining Project";
+THUSTR_24 = "Quarry";
+THUSTR_25 = "Baron's Den";
+THUSTR_26 = "Ballistyx";
+THUSTR_27 = "Mount Pain";
+THUSTR_28 = "Heck";
+THUSTR_29 = "River Styx";
+THUSTR_30 = "Last Call";
+THUSTR_31 = "Pharaoh";
+THUSTR_32 = "Caribbean";
+
+// plutonia level names (sans level #)
+PHUSTR_1 = "Congo";
+PHUSTR_2 = "Well of Souls";
+PHUSTR_3 = "Aztec";
+PHUSTR_4 = "Caged";
+PHUSTR_5 = "Ghost Town";
+PHUSTR_6 = "Baron's Lair";
+PHUSTR_7 = "Caughtyard";
+PHUSTR_8 = "Realm";
+PHUSTR_9 = "Abattoire";
+PHUSTR_10 = "Onslaught";
+PHUSTR_11 = "Hunted";
+PHUSTR_12 = "Speed";
+PHUSTR_13 = "The Crypt";
+PHUSTR_14 = "Genesis";
+PHUSTR_15 = "The Twilight";
+PHUSTR_16 = "The Omen";
+PHUSTR_17 = "Compound";
+PHUSTR_18 = "Neurosphere";
+PHUSTR_19 = "NME";
+PHUSTR_20 = "The Death Domain";
+PHUSTR_21 = "Slayer";
+PHUSTR_22 = "Impossible Mission";
+PHUSTR_23 = "Tombstone";
+PHUSTR_24 = "The Final Frontier";
+PHUSTR_25 = "The Temple of Darkness";
+PHUSTR_26 = "Bunker";
+PHUSTR_27 = "Anti-Christ";
+PHUSTR_28 = "The Sewers";
+PHUSTR_29 = "Odyssey of Noises";
+PHUSTR_30 = "The Gateway of Hell";
+PHUSTR_31 = "Cyberden";
+PHUSTR_32 = "Go 2 It";
+
+// sigil
+HUSTR_EPI5 = "SIGIL";
+HUSTR_E5M1 = "E5M1: Baphomet's Demesne";
+HUSTR_E5M2 = "E5M2: Sheol";
+HUSTR_E5M3 = "E5M3: Cages of the Damned";
+HUSTR_E5M4 = "E5M4: Paths of Wretchedness";
+HUSTR_E5M5 = "E5M5: Abaddon's Void";
+HUSTR_E5M6 = "E5M6: Unspeakable Persecution";
+HUSTR_E5M7 = "E5M7: Nightmare Underworld";
+HUSTR_E5M8 = "E5M8: Halls of Perdition";
+HUSTR_E5M9 = "E5M9: Realm of Iblis";
+E5TEXT = "Baphomet was only doing Satan's bidding\n"
+       "by bringing you back to Hell. Somehow they\n"
+       "didn't understand that you're the reason\n"
+       "they failed in the first place.\n\n"
+       "After mopping up the place with your\n"
+       "arsenal, you're ready to face the more\n"
+       "advanced demons that were sent to Earth.\n\n"
+       "Lock and load. Rip and tear.";

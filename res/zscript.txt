@@ -1,0 +1,95 @@
+
+version "4.1.0"
+
+class WadSmooshHandler : EventHandler
+{
+    void DoFinalDoomTextureReplacements()
+    {
+        String mapPrefix = level.MapName.Left(3);
+        mapPrefix = mapPrefix.MakeLower();
+        if ( mapPrefix == "tn_" )
+        {
+            Level.ReplaceTextures("SW1GSTON", "SW1GSTNT", 0);
+            Level.ReplaceTextures("SW2GSTON", "SW2GSTNT", 0);
+            Level.ReplaceTextures("SKY1", "TNT_SKY1", 0);
+            Level.ReplaceTextures("SW1BRN1", "SW1BRN1T", 0);
+            Level.ReplaceTextures("SW2BRN1", "SW2BRN1T", 0);
+            Level.ReplaceTextures("SW1SKULL", "SW1SKULT", 0);
+            Level.ReplaceTextures("SW2SKULL", "SW2SKULT", 0);
+            Level.ReplaceTextures("SW1STARG", "SW1STARP", 0); // also in plutonia
+            Level.ReplaceTextures("SW2STARG", "SW2STARP", 0);
+            Level.ReplaceTextures("SLADRIP1", "SLADRPT1", 0);
+            Level.ReplaceTextures("SLADRIP3", "SLADRPT3", 0);
+            Level.ReplaceTextures("BLODGR1", "BLODGRT1", 0);
+            Level.ReplaceTextures("BLODGR4", "BLODGRT4", 0);
+            Level.ReplaceTextures("WFALL1", "TWFALL1", 0);
+        }
+        else if ( mapPrefix == "pl_" )
+        {
+            Level.ReplaceTextures("DBRAIN1", "PBRAIN1", 0);
+            Level.ReplaceTextures("DBRAIN4", "PBRAIN4", 0);
+            Level.ReplaceTextures("FIREBLU1", "FIREPLU1", 0);
+            Level.ReplaceTextures("FIREBLU2", "FIREPLU2", 0);
+            Level.ReplaceTextures("SW1SKULL", "SW1SKULP", 0);
+            Level.ReplaceTextures("SW2SKULL", "SW2SKULP", 0);
+            Level.ReplaceTextures("SKY3", "PSKY3", 0);
+            Level.ReplaceTextures("SW1BRN1", "SW1BRN1T", 0); // also in tnt
+            Level.ReplaceTextures("SW2BRN1", "SW2BRN1T", 0);
+            Level.ReplaceTextures("SW1STARG", "SW1STARP", 0);
+            Level.ReplaceTextures("SW2STARG", "SW2STARP", 0);
+            Level.ReplaceTextures("WFALL1", "PWFALL1", 0);
+            Level.ReplaceTextures("WFALL2", "PWFALL2", 0);
+            Level.ReplaceTextures("WFALL3", "PWFALL3", 0);
+            Level.ReplaceTextures("WFALL4", "PWFALL4", 0);
+        }
+    }
+    
+    void DoDoom1PoisonTextureReplacements()
+    {
+        // detect doom1 style map name
+        String mapName = level.MapName.MakeLower();
+        if ( mapName.Left(1) == "e" && mapName.Mid(2, 1) == "m" )
+        {
+            // replace two size-sensitive textures with doom1-specific variants
+            Level.ReplaceTextures("BRNPOIS", "BRNPOIS1", 0);
+            Level.ReplaceTextures("NUKEPOIS", "NUKPOIS1", 0);
+        }
+    }
+    
+    // check if the given sky is the level's current sky, see if that is
+    // being overriden, and if so change it. return whether this happened.
+    bool CheckSkyOverriden(String skyName, String possibleTrueSkyName)
+    {
+        String sky1Name = TexMan.GetName(level.skytexture1);
+        if ( skyName != sky1Name )
+            return false;
+        int flags = TexMan.ReturnFirst; // default = TexMan.TryAny
+        TextureID skyA = TexMan.CheckForTexture(possibleTrueSkyName, TexMan.Type_Any, flags);
+        TextureID skyB = TexMan.CheckForTexture(possibleTrueSkyName, TexMan.Type_Override, flags);
+        if ( skyA == skyB )
+            return false;
+        // use skyA as sky2 if it's the same as sky1, otherwise don't touch it
+        TextureID skyA2 = (level.skytexture1 == level.skytexture2) ? skyA : level.skytexture2;
+        level.ChangeSky(skyA, skyA2);
+        return true;
+    }
+    
+    void DoDoom2SkyReplacements()
+    {
+        if ( CheckSkyOverriden("RSKY1", "SKY1") )
+            return;
+        else if ( CheckSkyOverriden("RSKY2", "SKY2") )
+            return;
+        CheckSkyOverriden("RSKY3", "SKY3");
+    }
+    
+    override void WorldLoaded(WorldEvent e)
+    {
+        if ( CVar.FindCVar("ws_finaldoom_texswap").GetBool() )
+            DoFinalDoomTextureReplacements();
+        if ( CVar.FindCVar("ws_d1pois_texswap").GetBool() )
+            DoDoom1PoisonTextureReplacements();
+        if ( CVar.FindCVar("ws_d2sky_compat").GetBool() )
+            DoDoom2SkyReplacements();
+    }
+}

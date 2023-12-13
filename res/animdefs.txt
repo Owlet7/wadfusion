@@ -1,0 +1,233 @@
+// final doom switch texture replacements
+switch doom 1 SW1BRN1T on pic SW2BRN1T tics 0
+switch doom 3 SW1SKULP on pic SW2SKULP tics 0
+switch doom 3 SW1SKULT on pic SW2SKULT tics 0
+switch doom 3 SW1GSTNT on pic SW2GSTNT tics 0
+switch doom 3 SW1STARP on pic SW2STARP tics 0
+
+// TNT animated textures
+
+texture optional SW1SKULT
+pic BLOD3 tics 8
+pic BLODGRT4 tics 8
+pic BLODGRT1 tics 8
+
+texture optional SW2SKULT
+pic FALL3 tics 8
+pic TWFALL4 tics 8
+pic TWFALL1 tics 8
+
+texture optional BLODGRT1
+pic SW1SKULT tics 8
+pic BLOD3 tics 8
+pic BLODGRT4 tics 8
+
+texture optional TWFALL1
+pic SW2SKULT tics 8
+pic FALL3 tics 8
+pic TWFALL4 tics 8
+
+texture optional SLADRPT1
+pic SLAD2 tics 8
+pic SLAD3 tics 8
+pic SLAD4 tics 8
+pic SLAD5 tics 8
+pic SLAD6 tics 8
+pic SLAD7 tics 8
+pic SLAD8 tics 8
+pic SLAD9 tics 8
+pic SLAD10 tics 8
+pic SLAD11 tics 8
+pic SLADRPT3 tics 8
+
+texture optional SLAD2
+pic SLAD3 tics 8
+pic SLAD4 tics 8
+pic SLAD5 tics 8
+pic SLAD6 tics 8
+pic SLAD7 tics 8
+pic SLAD8 tics 8
+pic SLAD9 tics 8
+pic SLAD10 tics 8
+pic SLAD11 tics 8
+pic SLADRPT3 tics 8
+pic SLADRPT1 tics 8
+
+texture optional SLAD3
+pic SLAD4 tics 8
+pic SLAD5 tics 8
+pic SLAD6 tics 8
+pic SLAD7 tics 8
+pic SLAD8 tics 8
+pic SLAD9 tics 8
+pic SLAD10 tics 8
+pic SLAD11 tics 8
+pic SLADRPT3 tics 8
+pic SLADRPT1 tics 8
+pic SLAD2 tics 8
+
+texture optional SLAD4
+pic SLAD5 tics 8
+pic SLAD6 tics 8
+pic SLAD7 tics 8
+pic SLAD8 tics 8
+pic SLAD9 tics 8
+pic SLAD10 tics 8
+pic SLAD11 tics 8
+pic SLADRPT3 tics 8
+pic SLADRPT1 tics 8
+pic SLAD2 tics 8
+pic SLAD3 tics 8
+
+texture optional SLAD5
+pic SLAD6 tics 8
+pic SLAD7 tics 8
+pic SLAD8 tics 8
+pic SLAD9 tics 8
+pic SLAD10 tics 8
+pic SLAD11 tics 8
+pic SLADRPT3 tics 8
+pic SLADRPT1 tics 8
+pic SLAD2 tics 8
+pic SLAD3 tics 8
+pic SLAD4 tics 8
+
+texture optional SLAD6
+pic SLAD7 tics 8
+pic SLAD8 tics 8
+pic SLAD9 tics 8
+pic SLAD10 tics 8
+pic SLAD11 tics 8
+pic SLADRPT3 tics 8
+pic SLADRPT1 tics 8
+pic SLAD2 tics 8
+pic SLAD3 tics 8
+pic SLAD4 tics 8
+pic SLAD5 tics 8
+
+texture optional SLAD7
+pic SLAD8 tics 8
+pic SLAD9 tics 8
+pic SLAD10 tics 8
+pic SLAD11 tics 8
+pic SLADRPT3 tics 8
+pic SLADRPT1 tics 8
+pic SLAD2 tics 8
+pic SLAD3 tics 8
+pic SLAD4 tics 8
+pic SLAD5 tics 8
+pic SLAD6 tics 8
+
+texture optional SLAD8
+pic SLAD9 tics 8
+pic SLAD10 tics 8
+pic SLAD11 tics 8
+pic SLADRPT3 tics 8
+pic SLADRPT1 tics 8
+pic SLAD2 tics 8
+pic SLAD3 tics 8
+pic SLAD4 tics 8
+pic SLAD5 tics 8
+pic SLAD6 tics 8
+pic SLAD7 tics 8
+
+texture optional SLAD9
+pic SLAD10 tics 8
+pic SLAD11 tics 8
+pic SLADRPT3 tics 8
+pic SLADRPT1 tics 8
+pic SLAD2 tics 8
+pic SLAD3 tics 8
+pic SLAD4 tics 8
+pic SLAD5 tics 8
+pic SLAD6 tics 8
+pic SLAD7 tics 8
+pic SLAD8 tics 8
+
+texture optional SLAD10
+pic SLAD11 tics 8
+pic SLADRPT3 tics 8
+pic SLADRPT1 tics 8
+pic SLAD2 tics 8
+pic SLAD3 tics 8
+pic SLAD4 tics 8
+pic SLAD5 tics 8
+pic SLAD6 tics 8
+pic SLAD7 tics 8
+pic SLAD8 tics 8
+pic SLAD9 tics 8
+
+texture optional SLAD11
+pic SLADRPT3 tics 8
+pic SLADRPT1 tics 8
+pic SLAD2 tics 8
+pic SLAD3 tics 8
+pic SLAD4 tics 8
+pic SLAD5 tics 8
+pic SLAD6 tics 8
+pic SLAD7 tics 8
+pic SLAD8 tics 8
+pic SLAD9 tics 8
+pic SLAD10 tics 8
+
+texture optional SLADRPT3
+pic SLADRPT1 tics 8
+pic SLAD2 tics 8
+pic SLAD3 tics 8
+pic SLAD4 tics 8
+pic SLAD5 tics 8
+pic SLAD6 tics 8
+pic SLAD7 tics 8
+pic SLAD8 tics 8
+pic SLAD9 tics 8
+pic SLAD10 tics 8
+pic SLAD11 tics 8
+
+// plutonia animated textures
+
+texture optional FIREPLU1
+pic AROCK2 tics 8
+pic AROCK3 tics 8
+pic AROCK4 tics 8
+pic AROCK5 tics 8
+pic FIREPLU2 tics 8
+
+texture optional PWFALL1
+pic PWFALL2 tics 8
+pic PWFALL3 tics 8
+pic PWFALL4 tics 8
+
+texture optional PWFALL2
+pic PWFALL3 tics 8
+pic PWFALL4 tics 8
+pic PWFALL1 tics 8
+
+texture optional PWFALL3
+pic PWFALL4 tics 8
+pic PWFALL1 tics 8
+pic PWFALL2 tics 8
+
+texture optional PWFALL4
+pic PWFALL1 tics 8
+pic PWFALL2 tics 8
+pic PWFALL3 tics 8
+
+texture optional PBRAIN1
+pic MC2 tics 8
+pic MC3 tics 8
+pic MC4 tics 8
+pic MC5 tics 8
+pic MC6 tics 8
+pic MC7 tics 8
+pic MC8 tics 8
+pic MC10 tics 8
+pic MC11 tics 8
+pic MC12 tics 8
+pic MC13 tics 8
+pic MC14 tics 8
+pic MC15 tics 8
+pic MC16 tics 8
+pic MC17 tics 8
+pic MC18 tics 8
+pic MC19 tics 8
+pic PBRAIN4 tics 8

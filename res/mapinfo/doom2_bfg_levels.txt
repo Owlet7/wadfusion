@@ -1,0 +1,23 @@
+map MAP31 lookup "HUSTR_31B"
+{
+	next = "MAP16"
+	secretnext = "MAP32"
+	titlepatch = "CWILV30"
+	sky1 = "RSKY3"
+	cluster = 9
+	par = 120
+	music = "$MUSIC_EVIL"
+	Author = "$WS_AU_PETERSEN"
+}
+
+map MAP32 lookup "HUSTR_32B"
+{
+	next = "MAP16"
+	secretnext = "MAP16"
+	titlepatch = "CWILV31"
+	sky1 = "RSKY3"
+	cluster = 10
+	par = 30
+	music = "$MUSIC_ULTIMA"
+	Author = "$WS_AU_PETERSEN"
+}

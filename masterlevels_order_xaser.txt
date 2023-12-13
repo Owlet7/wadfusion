@@ -1,0 +1,23 @@
+// alternate "Xaser ordering" for master levels - WadSmoosh's default.
+// to change, modify this file or specify another when running wadsmoosh, eg:
+// wadsmoosh.exe masterlevels_order_psn.txt
+attack
+canyon
+catwalk
+fistula
+combine
+subspace
+paradox
+subterra
+garrison
+blacktwr
+virgil
+minos
+nessus
+geryon
+vesperas
+manor
+ttrap
+teeth
+bloodsea
+mephisto

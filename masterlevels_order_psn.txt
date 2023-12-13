@@ -1,0 +1,24 @@
+// doom 2 master levels ordering
+// based on "PSN order" from PS3 Doom Classic Complete
+// ( https://doomwiki.org/wiki/Master_Levels_for_Doom_II#Level_progression )
+// see masterlevels_order_xaser.txt for details on using this
+attack
+canyon
+catwalk
+combine
+fistula
+garrison
+manor
+paradox
+subspace
+subterra
+ttrap
+virgil
+minos
+bloodsea
+mephisto
+nessus
+geryon
+vesperas
+blacktwr
+teeth
