@@ -1,0 +1,93 @@
+defaultmap
+{
+    BorderTexture = "FLOOR7_2"
+	nocrouch
+	nojump
+	sky1 = "SKY6"
+	cluster = 26
+	enterpic = "SIGILIN2"
+	exitpic = "SIGILIN2"
+    InterMusic = "SII_INTER"
+	Author = "$WS_AU_ROMERO"
+}
+
+map E6M1 "$HUSTR_E6M1"
+{
+	levelnum = 51
+	titlepatch = "WILV50"
+	next = "E6M2"
+	music = "D_E6M1"
+}
+
+map E6M2 "$HUSTR_E6M2"
+{
+	levelnum = 52
+	titlepatch = "WILV51"
+	next = "E6M3"
+	music = "D_E6M2"
+}
+
+map E6M3 "$HUSTR_E6M3"
+{
+	levelnum = 53
+	titlepatch = "WILV52"
+	next = "E6M4"
+	secretnext = "E6M9"
+	music = "D_E6M3"
+}
+
+map E6M4 "$HUSTR_E6M4"
+{
+	levelnum = 54
+	titlepatch = "WILV53"
+	next = "E6M5"
+	music = "D_E6M4"
+}
+
+map E6M5 "$HUSTR_E6M5"
+{
+	levelnum = 55
+	titlepatch = "WILV54"
+	next = "E6M6"
+	music = "D_E6M5"
+}
+
+map E6M6 "$HUSTR_E6M6"
+{
+	levelnum = 56
+	titlepatch = "WILV55"
+	next = "E6M7"
+	music = "D_E6M6"
+}
+
+map E6M7 "$HUSTR_E6M7"
+{
+	levelnum = 57
+	titlepatch = "WILV56"
+	next = "E6M8"
+	music = "D_E6M7"
+}
+
+map E6M8 "$HUSTR_E6M8"
+{
+	levelnum = 58
+	titlepatch = "WILV57"
+	next = EndPic, "S2CREDIT"
+	nosoundclipping
+	music = "D_E6M8"
+}
+
+map E6M9 "$HUSTR_E6M9"
+{
+	levelnum = 59
+	titlepatch = "WILV58"
+	next = "E6M4"
+	music =  "D_E6M9"
+}
+
+cluster 26
+{
+	flat = "FLOOR7_2"
+    music = "SII_INTRO"
+	exittext = lookup, "E6TEXT"
+}

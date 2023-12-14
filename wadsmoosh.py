@@ -38,6 +38,7 @@ MASTER_LEVELS_AUTHOR_PREFIX = ''
 MASTER_LEVELS_AUTHORS = {}
 MASTER_LEVELS_MAPINFO_HEADER = []
 SIGIL_ALT_FILENAMES = []
+SIGIL_II_ALT_FILENAMES = []
 BFG_ONLY_LUMP = ''
 
 logfile = None
@@ -258,7 +259,7 @@ def extract_lumps(wad_name):
         if wad_name == 'sigil' and lump_list == 'patches_sigil':
             lump_subdir = DEST_DIR + 'patches/'
         # sigil screens aren't in graphics namespace but belong in that dir
-        elif wad_name == 'sigil' and lump_type == 'data':
+        elif (wad_name == 'sigil' or wad_name == 'sigil_ii') and lump_type == 'data':
             lump_subdir = DEST_DIR + 'graphics/'
         # write PLAYPAL, TEXTURE1 etc to pk3 root
         elif lump_type in ['data', 'txdefs']:
@@ -336,6 +337,15 @@ def get_report_found():
                 copyfile(sigil_alt, SRC_WAD_DIR + 'sigil.wad')
                 found.insert(1, 'sigil')
                 break
+    # do the same for sigil ii
+    if 'doom' in found and not 'sigil_ii' in found:
+        for alt_name in SIGIL_II_ALT_FILENAMES:
+            sigil_ii_alt = get_wad_filename(alt_name)
+            if sigil_ii_alt:
+                copyfile(sigil_ii_alt, SRC_WAD_DIR + 'sigil_ii.wad')
+                index = 2 if 'sigil' in found else 1
+                found.insert(index, 'sigil_ii')
+                break
     return found
 
 def get_eps(wads_found):
@@ -355,6 +365,8 @@ def get_eps(wads_found):
             eps += ['The Plutonia Experiment']
         elif wadname == 'sigil' and 'doom' in wads_found:
             eps += ['Sigil']
+        elif wadname == 'sigil_ii' and 'doom' in wads_found:
+            eps += ['Sigil II']
     return eps
 
 def main():
@@ -433,6 +445,9 @@ def main():
             continue
         if iwad_name == 'sigil_shreds' and not get_wad_filename('sigil'):
             logg('Skipping SIGIL_SHREDS.wad as SIGIL.wad is not present', error=True)
+            continue
+        if iwad_name == 'sigil_ii' and not get_wad_filename('doom'):
+            logg('Skipping SIGIL_II.wad as doom.wad is not present', error=True)
             continue
         logg('Processing WAD %s...' % iwad_name)
         if should_extract:

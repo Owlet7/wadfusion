@@ -33,6 +33,7 @@ OptionMenu "WadSmooshCredits"
 	Submenu "$PLUTEPNAME", "PLCredits"
 	Submenu "$WS_NAME", "WSCredits"
 	Submenu "$EP5NAME", "SCredits"
+	Submenu "$EP6NAME", "SIICredits"
 }
 
 OptionMenu "UDCredits"
@@ -202,6 +203,27 @@ OptionMenu "SCredits"
 	StaticText "$WS_CRED_TEST", "Gold"
 	StaticText "Boris Klimeš, Xaser,"
 	StaticText "Kurt Baumgardner"
+}
+
+OptionMenu "SIICredits"
+{
+	Title "Sigil II"
+	StaticText "$WS_CRED_DEVPUB", "Gold"
+	StaticText "Romero Games"
+	StaticText " "
+	StaticText "$WS_CRED_LD1", "Gold"
+	StaticText "John Romero"
+	StaticText " "
+	StaticText "$WS_CRED_MUSIC", "Gold"
+	StaticText "THORR, James \"Jimmy\" Paddock"
+	StaticText " "
+	StaticText "$WS_CRED_COVER", "Gold"
+	StaticText "Christopher Lovell"
+	StaticText " "
+	StaticText "$WS_CRED_TEST", "Gold"
+	StaticText "FLAMBEAU, UberGewei,"
+	StaticText "KEYBOARD_DOOMER,"
+	StaticText "dew, AF-Domains, Xaser"
 }
 
 OptionMenu "WSCredits"
