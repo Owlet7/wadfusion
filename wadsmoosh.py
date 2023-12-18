@@ -111,10 +111,6 @@ def get_ml_mapinfo(wad_name, map_number):
     lines.append('    Author = "$%s"' % author_lc)
     if wad_name in MASTER_LEVELS_MAP07_SPECIAL:
         lines.append('    map07special')
-    # don't reset player for secret level
-    if map_number != 21:
-        lines.append('    ResetHealth')
-        lines.append('    ResetInventory')
     lines.append('}')
     return lines
 

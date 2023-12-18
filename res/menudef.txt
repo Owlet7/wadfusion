@@ -13,6 +13,13 @@ AddOptionMenu "OptionsMenu"
     Submenu "$WS_MENU_CREDITS", "WadSmooshCredits"
 }
 
+OptionValue "ws_pistol_start_values"
+{
+    0, "Never"
+    1, "Always"
+    2, "Master Levels only"
+}
+
 OptionMenu "WadSmooshOptions"
 {
     Title "$WS_MENU_TITLE"
@@ -21,6 +28,7 @@ OptionMenu "WadSmooshOptions"
     Option "$WS_MENU_FD_TEXSWAP", "ws_finaldoom_texswap", "OnOff"
     Option "$WS_MENU_D2SKY_COMPAT", "ws_d2sky_compat", "OnOff"
     Option "$WS_MENU_S2_SPIDERDEMON", "ws_s2_spiderdemon", "OnOff"
+    Option "$WS_MENU_PISTOL_START", "ws_pistol_start", "ws_pistol_start_values"
 }
 
 OptionMenu "WadSmooshCredits"
