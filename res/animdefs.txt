@@ -1,9 +1,13 @@
+// doom 1 switch texture replacements
+switch doom 1 SW1BRN1A on pic SW2BRN1A tics 0
+switch doom 1 SW1STARA on pic SW2STARA tics 0
+switch doom 1 SW1STONA on pic SW2STONA tics 0
+switch doom 1 SW1STONB on pic SW2STONB tics 0
+
 // final doom switch texture replacements
-switch doom 1 SW1BRN1T on pic SW2BRN1T tics 0
+switch doom 3 SW1GSTNT on pic SW2GSTNT tics 0
 switch doom 3 SW1SKULP on pic SW2SKULP tics 0
 switch doom 3 SW1SKULT on pic SW2SKULT tics 0
-switch doom 3 SW1GSTNT on pic SW2GSTNT tics 0
-switch doom 3 SW1STARP on pic SW2STARP tics 0
 
 // TNT animated textures
 
@@ -192,25 +196,25 @@ pic AROCK4 tics 8
 pic AROCK5 tics 8
 pic FIREPLU2 tics 8
 
-texture optional PWFALL1
-pic PWFALL2 tics 8
-pic PWFALL3 tics 8
-pic PWFALL4 tics 8
+texture optional WFALL1
+pic WFALL2 tics 8
+pic WFALL3 tics 8
+pic WFALL4 tics 8
 
-texture optional PWFALL2
-pic PWFALL3 tics 8
-pic PWFALL4 tics 8
-pic PWFALL1 tics 8
+texture optional WFALL2
+pic WFALL3 tics 8
+pic WFALL4 tics 8
+pic WFALL1 tics 8
 
-texture optional PWFALL3
-pic PWFALL4 tics 8
-pic PWFALL1 tics 8
-pic PWFALL2 tics 8
+texture optional WFALL3
+pic WFALL4 tics 8
+pic WFALL1 tics 8
+pic WFALL2 tics 8
 
-texture optional PWFALL4
-pic PWFALL1 tics 8
-pic PWFALL2 tics 8
-pic PWFALL3 tics 8
+texture optional WFALL4
+pic WFALL1 tics 8
+pic WFALL2 tics 8
+pic WFALL3 tics 8
 
 texture optional PBRAIN1
 pic MC2 tics 8
