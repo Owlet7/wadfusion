@@ -14,7 +14,7 @@ RES_FILES = [
     'mapinfo/tnt_levels.txt', 'mapinfo/plutonia_levels.txt',
     'mapinfo/masterlevels.txt', 'mapinfo/sigil_levels.txt',
     'mapinfo/sigil_ii_levels.txt',
-    'menudef.txt', 'cvarinfo.txt', 'zscript.txt'
+    'menudef.txt', 'cvarinfo.txt', 'zscript.txt', 'pistolstart.txt'
 ]
 
 # files within pk3 dir that will be removed before a new run
