@@ -1,3 +1,4 @@
 user bool ws_finaldoom_texswap = true;
 user bool ws_d2sky_compat = true;
 user bool ws_d1pois_texswap = true;
+user bool ws_s2_spiderdemon = true;

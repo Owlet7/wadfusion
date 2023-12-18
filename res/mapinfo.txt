@@ -81,9 +81,10 @@ episode E5M1
 
 episode E6M1
 {
+	picname = "M_EPI6"
 	name = "$HUSTR_EPI6"
 	key = "s"
-	picname = "M_EPI6"
+	optional
 }
 
 episode MAP01

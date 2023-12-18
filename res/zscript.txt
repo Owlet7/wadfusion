@@ -83,6 +83,17 @@ class WadSmooshHandler : EventHandler
         CheckSkyOverriden("RSKY3", "SKY3");
     }
     
+    override void WorldThingSpawned(WorldEvent e)
+    {
+        let actor = e.Thing;
+        let spiderMastermind = SpiderMastermind(actor);
+        String mapName = level.MapName.MakeLower();
+        if ( spiderMastermind != null && ( mapName.Left(3) == "e3m" ) && CVar.FindCVar("ws_s2_spiderdemon").GetBool() )
+        {
+            spiderMastermind.Health = 9000;
+        }
+    }
+    
     override void WorldLoaded(WorldEvent e)
     {
         if ( CVar.FindCVar("ws_finaldoom_texswap").GetBool() )
