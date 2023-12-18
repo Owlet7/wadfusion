@@ -508,6 +508,20 @@ Texture TNTDOOR, 128, 128
 	Patch DOTNTDR, 0, 0
 }
 
+// renamed from SW1BRN1 to avoid Doom 1/2 conflict
+Texture "SW1BRN1T", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+
+// renamed from SW2BRN1 to avoid Doom 1/2 conflict
+Texture "SW2BRN1T", 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+
 // renamed from SW1GSTON to avoid Doom 2 conflict
 Texture SW1GSTNT, 512, 128
 {
@@ -601,7 +615,6 @@ Texture "BLODGRT4", 512, 128
 	Patch "CYAN", 488, 0
 }
 
-// renamed from WFALL1 to avoid Plutonia conflict
 Texture "TWFALL1", 512, 128
 {
 	Patch "RW48_2", 0, 0
@@ -639,7 +652,6 @@ Texture "FALL3", 512, 128
 	Patch "CYAN", 488, 0
 }
 
-// renamed from WFALL4 to avoid Plutonia conflict
 Texture "TWFALL4", 512, 128
 {
 	Patch "RW48_2", 0, 0

@@ -17,9 +17,9 @@ OptionMenu "WadSmooshOptions"
 {
     Title "$WS_MENU_TITLE"
     StaticText "$WS_RESTART_TEXT", "Gold"
-    Option "$WS_MENU_D1_TEXSWAP", "ws_d1_texswap", "OnOff"
     Option "$WS_MENU_FD_TEXSWAP", "ws_finaldoom_texswap", "OnOff"
     Option "$WS_MENU_D2SKY_COMPAT", "ws_d2sky_compat", "OnOff"
+    Option "$WS_MENU_D1POIS_TEXSWAP", "ws_d1pois_texswap", "OnOff"
     Option "$WS_MENU_S2_SPIDERDEMON", "ws_s2_spiderdemon", "OnOff"
 }
 

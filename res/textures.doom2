@@ -66,12 +66,6 @@ Texture "BIGBRIK3", 64, 128
 	Patch "RW38_4", 0, 0
 }
 
-Texture "BIGDOOR7", 128, 128
-{
-	Patch "W105_1", -5, 0
-	Patch "W105_1", 123, 0
-}
-
 Texture "BLAKWAL1", 64, 128
 {
 	Patch "RW34_1", 0, 0
@@ -148,13 +142,6 @@ Texture "BRICKLIT", 64, 128
 	Patch "RW12_3", 0, 0
 }
 
-Texture "BRNPOIS", 128, 128
-{
-	Patch "WALL62_2", 0, 0
-	Patch "PS20A0", 1, 60
-	Patch "WALL62_2", 64, 0
-}
-
 Texture "BRONZE1", 64, 128
 {
 	Patch "RW10_1", 0, 0
@@ -218,14 +205,6 @@ Texture "CRACKLE2", 64, 128
 Texture "CRACKLE4", 64, 128
 {
 	Patch "RW44_4", 0, 0
-}
-
-Texture "CRATE3", 64, 128
-{
-	Patch "GCRATEL1", 0, 0
-	Patch "GCRATER1", 32, 0
-	Patch "BCRATEL1", 0, 64
-	Patch "BCRATER1", 32, 64
 }
 
 Texture "DBRAIN1", 64, 32
@@ -326,29 +305,6 @@ Texture "MODWALL3", 64, 128
 Texture "MODWALL4", 64, 128
 {
 	Patch "RW31_4", 0, 0
-}
-
-Texture "NUKEPOIS", 128, 128
-{
-	Patch "WALL04_3", 0, 0
-	Patch "WALL04_4", 16, 0
-	Patch "WALL04_5", 32, 0
-	Patch "WALL04_2", 48, 0
-	Patch "NUKEDGE", 0, 104
-	Patch "WALL04_3", 0, 33
-	Patch "WALL04_4", 16, 33
-	Patch "WALL04_5", 32, 33
-	Patch "WALL04_2", 48, 33
-	Patch "PS20A0", 0, 69
-	Patch "WALL04_2", 64, 0
-	Patch "WALL04_3", 80, 0
-	Patch "WALL04_4", 112, 0
-	Patch "WALL04_7", 96, 0
-	Patch "WALL04_2", 112, 72
-	Patch "WALL04_3", 96, 72
-	Patch "WALL04_4", 80, 72
-	Patch "WALL04_5", 64, 64
-	Patch "NUKEDGE", 64, 105
 }
 
 Texture "PANBLACK", 64, 128
@@ -496,14 +452,6 @@ Texture "SFALL4", 64, 128
 	Patch "SFALL4", 0, 0
 }
 
-Texture "SHAWN1", 128, 128
-{
-	Patch "W13_1", 64, 56
-	Patch "W13_1", 64, 0
-	Patch "W13_1", 0, 56
-	Patch "CYL1_1", 0, 0
-}
-
 Texture "SILVER1", 64, 128
 {
 	Patch "RW32_1", 0, 0
@@ -529,19 +477,16 @@ Texture "SK_RIGHT", 64, 128
 	Patch "RW48_3", 0, 0
 }
 
-// renamed from SKY1 to avoid Doom1 conflict
 Texture "RSKY1", 256, 128
 {
 	Patch "RSKY1", 0, 0
 }
 
-// renamed from SKY2 to avoid Doom1 conflict
 Texture "RSKY2", 256, 128
 {
 	Patch "RSKY2", 0, 0
 }
 
-// renamed from SKY3 to avoid Doom1 conflict
 Texture "RSKY3", 256, 128
 {
 	Patch "RSKY3", 0, 0
@@ -607,31 +552,6 @@ Texture "SPCDOOR4", 64, 128
 	Patch "DOOR15_4", 0, 0
 }
 
-WallTexture "STEP1", 32, 16
-{
-	Patch "STEP05", 0, 8
-	Patch "STEP05", 0, 5
-	Patch "STEP04", 0, 0
-}
-
-WallTexture "STEP2", 32, 16
-{
-	Patch "SW11_4", 0, -112
-	Patch "STEP03", 0, 0
-}
-
-Texture "STEP3", 32, 16
-{
-	Patch "STEP05", 0, 0
-	Patch "STEP05", 0, 8
-}
-
-Texture "STEP5", 32, 16
-{
-	Patch "STEP09", 0, 0
-	Patch "STEP08", 0, 8
-}
-
 Texture "STONE4", 64, 128
 {
 	Patch "RW18_1", 0, 0
@@ -678,18 +598,6 @@ Texture "SW1BRIK", 64, 128
 	Patch "SW1S0", 16, 72
 }
 
-Texture "SW1BRN1", 128, 128
-{
-	Patch "WALL62_1", 0, 0
-	Patch "SW1S0", 48, 72
-}
-
-Texture "SW1MARB", 64, 128
-{
-	Patch "MWALL1_1", 0, 0
-	Patch "SW2_7", 13, 55
-}
-
 Texture "SW1MET2", 64, 128
 {
 	Patch "RW33_1", 0, 0
@@ -708,6 +616,12 @@ Texture "SW1PANEL", 64, 128
 	Patch "SW2_7", 14, 64
 }
 
+Texture "SW1PIPE", 128, 128
+{
+	Patch "TP2_2", 0, 0
+	Patch "SW3S0", 48, 76
+}
+
 Texture "SW1ROCK", 64, 128
 {
 	Patch "RW30_1", 0, 0
@@ -719,28 +633,10 @@ Texture "SW1SKULL", 64, 128
 	Patch "RW48_4", 0, 0
 }
 
-Texture "SW1STARG", 128, 128
-{
-	Patch "WALL62_1", 0, 0
-	Patch "SW1S0", 48, 72
-}
-
-Texture "SW1STON2", 128, 128
-{
-	Patch "WALL62_1", 0, 0
-	Patch "SW1S0", 48, 72
-}
-
 Texture "SW1STON6", 64, 128
 {
 	Patch "RW18_3", 0, 0
 	Patch "SW2S0", 16, 72
-}
-
-Texture "SW1STONE", 128, 128
-{
-	Patch "WALL62_1", 0, 0
-	Patch "SW1S0", 48, 72
 }
 
 Texture "SW1TEK", 64, 128
@@ -775,18 +671,6 @@ Texture "SW2BRIK", 64, 128
 	Patch "SW1S1", 16, 72
 }
 
-Texture "SW2BRN1", 128, 128
-{
-	Patch "WALL62_1", 0, 0
-	Patch "SW1S1", 48, 72
-}
-
-Texture "SW2MARB", 64, 128
-{
-	Patch "MWALL1_1", 0, 0
-	Patch "SW2_8", 13, 55
-}
-
 Texture "SW2MET2", 64, 128
 {
 	Patch "RW33_1", 0, 0
@@ -816,28 +700,10 @@ Texture "SW2SKULL", 64, 128
 	Patch "RW48_2", 0, 0
 }
 
-Texture "SW2STARG", 128, 128
-{
-	Patch "WALL62_1", 0, 0
-	Patch "SW1S1", 48, 72
-}
-
-Texture "SW2STON2", 128, 128
-{
-	Patch "WALL62_1", 0, 0
-	Patch "SW1S1", 48, 72
-}
-
 Texture "SW2STON6", 64, 128
 {
 	Patch "RW18_3", 0, 0
 	Patch "SW2S1", 16, 72
-}
-
-Texture "SW2STONE", 128, 128
-{
-	Patch "WALL62_1", 0, 0
-	Patch "SW1S1", 48, 72
 }
 
 Texture "SW2TEK", 64, 128

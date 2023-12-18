@@ -29,7 +29,7 @@ Texture "A-YELLOW", 16, 8
 // renamed from FIREBLU1 to avoid Doom2 conflict
 Texture FIREPLU1, 128, 128
 {
-	Patch FIREPLU1, 0, 0
+	Patch FIREBLU1, 0, 0
 }
 
 Texture AROCK2, 128, 128
@@ -55,7 +55,7 @@ Texture AROCK5, 128, 128
 // renamed from FIREBLU2 to avoid Doom2 conflict
 Texture FIREPLU2, 128, 128
 {
-	Patch FIREPLU2, 0, 0
+	Patch FIREBLU2, 0, 0
 }
 
 Texture "A-GRATE", 128, 128
@@ -131,14 +131,27 @@ Texture "A-BROCK2", 128, 128
 // renamed from SW1SKULL to avoid Doom2 conflict
 Texture SW1SKULP, 64, 64
 {
-	Patch SW1SKULP, 0, 0
+	Patch SW1SKULL, 0, 0
 }
 
 // renamed from SW2SKULL to avoid Doom2 conflict
 Texture SW2SKULP, 64, 64
 {
-	Patch SW2SKULP, 0, 0
+	Patch SW2SKULL, 0, 0
 }
+
+// renamed from SW1START/SW2STARG to avoid Doom1+2 conflict
+Texture SW1STARP, 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
+}
+Texture SW2STARP, 128, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
+}
+
 
 Texture "A-MOSROK", 128, 128
 {
@@ -165,6 +178,7 @@ Texture "A-MYWOOD", 128, 128
 	Patch MYWOOD, 0, 0
 }
 
+// define WFALL1-4 here even though they get replaced, to suppress errors
 Texture WFALL1, 64, 128
 {
 	Patch PWFALL1, 0, 0
@@ -181,6 +195,27 @@ Texture WFALL3, 64, 128
 }
 
 Texture WFALL4, 64, 128
+{
+	Patch PWFALL4, 0, 0
+}
+
+// plutonia WFALL replacements
+Texture PWFALL1, 64, 128
+{
+	Patch PWFALL1, 0, 0
+}
+
+Texture PWFALL2, 64, 128
+{
+	Patch PWFALL2, 0, 0
+}
+
+Texture PWFALL3, 64, 128
+{
+	Patch PWFALL3, 0, 0
+}
+
+Texture PWFALL4, 64, 128
 {
 	Patch PWFALL4, 0, 0
 }
@@ -328,12 +363,12 @@ Texture "A-ASKIN5", 256, 128
 
 Texture "A-BROWN1", 128, 128
 {
-	Patch PBROWN1, 0, 0
+	Patch BROWN1, 0, 0
 }
 
 Texture "A-MARBLE", 128, 128
 {
-	Patch PMARBLE1, 0, 0
+	Patch MARBLE1, 0, 0
 }
 
 Texture "A-BROWN2", 128, 128
@@ -353,7 +388,7 @@ Texture "A-CAMO1", 128, 128
 
 Texture "A-BROWN4", 128, 128
 {
-	Patch PBROWN1, 0, 0
+	Patch BROWN1, 0, 0
 	Patch W111_2, 0, 0
 	Patch W111_3, 64, 64
 	Patch W111_2, 0, 64
@@ -383,12 +418,12 @@ Texture "A-WOOD1", 128, 128
 
 Texture "A-BRICK1", 128, 128
 {
-	Patch PBRICK1, 0, 0
+	Patch BRICK1, 0, 0
 }
 
 Texture "A-BRICK2", 128, 128
 {
-	Patch PBRICK2, 0, 0
+	Patch BRICK2, 0, 0
 }
 
 Texture "A-BROWN5", 128, 128
