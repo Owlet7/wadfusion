@@ -88,7 +88,7 @@ class WadSmooshHandler : EventHandler
         let actor = e.Thing;
         let spiderMastermind = SpiderMastermind(actor);
         String mapName = level.MapName.MakeLower();
-        if ( spiderMastermind != null && ( mapName.Left(3) == "e3m" ) && CVar.FindCVar("ws_s2_spiderdemon").GetBool() )
+        if ( spiderMastermind != null && ( mapName.Left(3) == "e6m" ) && CVar.FindCVar("ws_s2_spiderdemon").GetBool() )
         {
             spiderMastermind.Health = 9000;
         }
