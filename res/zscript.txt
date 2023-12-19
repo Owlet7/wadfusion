@@ -94,6 +94,55 @@ class WadSmooshHandler : EventHandler
         }
     }
     
+    void StripAllPlayerInventory()
+    {
+        // MP-friendly version: iterate through all players
+        for ( int i = 0; i < MAXPLAYERS; i++ )
+        {
+            if ( playeringame[i] )
+            {
+                PlayerPawn p = PlayerPawn(players[i].mo);
+                // avoid stripping a dead player's inventory at moment of level
+                // transition, as it seems to put them into a weird state
+                // (starting next level in noclip w/ no pistol)
+                if ( p.Health <= 0 )
+                {
+                    //Console.Printf("player is dead!");
+                    continue;
+                }
+                // handle UNDROPPABLE and UNTOSSABLE items
+                // (thanks DevilBlackDeath)
+                Inventory item = p.inv;
+                while ( item != NULL ) {
+                    p.RemoveInventory(item);
+                    item = p.inv;
+                }
+                p.ClearInventory();
+                p.GiveDefaultInventory();
+                p.health = p.Default.Health;
+                // PlayerInfo also has a health value!
+                players[i].health = p.Default.Health;
+                // stripping inventory does not clear invulnerable flag!
+                p.bInvulnerable = false;
+            }
+        }
+    }
+    
+    // previous approaches tried to detect player exiting a level
+    // (switch, teleporter) which doesn't cover E1M8-style exits,
+    // which can be detected. but AFAICT there is no way to detect
+    // E2M8-style exits because level specials can't be accessed
+    // from ZScript. hence we use this event, which because this is
+    // a non-Static EventHandler, only runs when a player exits.
+    override void WorldUnloaded(WorldEvent e)
+    {
+        String mapName = level.MapName.MakeLower();
+        if ( (CVar.FindCVar("ws_pistol_start").GetInt()) == 1 )
+            StripAllPlayerInventory();
+        else if ( (CVar.FindCVar("ws_pistol_start").GetInt()) == 2 && ( mapName.Left(3) == "ml_" ) && !( mapName == "ml_map18" ) )
+            StripAllPlayerInventory();
+    }
+    
     override void WorldLoaded(WorldEvent e)
     {
         if ( CVar.FindCVar("ws_finaldoom_texswap").GetBool() )

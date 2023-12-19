@@ -1,0 +1,19 @@
+"Always Pistol Start" mod for GZDoom
+by JP LeBreton
+
+This simple ZScript mod makes it so you always "pistol start" every level. By
+default in Doom, when you exit one level and enter another, you carry over
+weapons, ammo, armor, and the backpack powerup. Pistol start means you start
+every level with only your fists, the pistol, 50 bullets, 100 health, and no
+armor.
+
+This mod has been coded in such a way that it should work with a variety of
+other mods, such as ones that modify the default player loadout and/or starting
+health. Let me know if you find a mod this doesn't work with.
+
+For your convenience, an on/off switch is provided in a new section of the
+options menu. This way you can keep it auto-loaded (from gzdoom.ini) and turn it
+on or off as needed.
+
+Thanks to a fix from DevilBlackDeath, items marked UNDROPPABLE and UNTOSSABLE
+are now handled correctly.
