@@ -1,4 +1,10 @@
 
+Texture "AASTINKY", 24, 72
+{
+	Patch "WALL00_3", 0, 0
+	Patch "WALL00_3", 12, -6
+}
+
 Texture "ASHWALL", 64, 128
 {
 	Patch "W104_1", 0, 0
@@ -39,12 +45,41 @@ Texture "BRNBIGR", 32, 128
 	Patch "W113_3", 0, 0
 }
 
+Texture "BRNPOIS2", 64, 128
+{
+	Patch "WALL62_1", 0, 0
+	Patch "PS20A0", 0, 57
+}
+
+Texture "BROVINE", 256, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "WALL02_1", 88, 56
+	Patch "WALL02_1", 88, 0
+	Patch "WALL02_3", 64, 56
+	Patch "WALL02_3", 64, 0
+	Patch "WALL02_3", 152, 56
+	Patch "WALL02_3", 152, 0
+	Patch "WALL02_3", 232, 56
+	Patch "WALL02_2", 176, 56
+	Patch "WALL02_3", 232, 0
+	Patch "WALL02_2", 176, 0
+	Patch "W107_1", 0, 0
+}
+
 Texture "BROWNWEL", 256, 72
 {
 	Patch "WALL03_4", 0, 0
 	Patch "WALL03_3", 128, 0
 	Patch "WALL03_4", 64, 0
 	Patch "WALL03_4", 192, 0
+}
+
+Texture "CEMPOIS", 128, 128
+{
+	Patch "WALL52_1", 0, 0
+	Patch "PS20A0", 0, 28
 }
 
 Texture "COMP2", 256, 128
@@ -80,7 +115,7 @@ Texture "COMPOHSO", 128, 128
 	Patch "WALL21_1", 64, 70
 	Patch "WALL21_5", 0, 70
 	Patch "WALL21_3", 0, -2
-	Patch "WALL21_5", 64, -2
+	Patch "WALL21_1", 64, -2
 }
 
 Texture "COMPTILE", 128, 128
@@ -165,9 +200,28 @@ Texture "LITE2", 64, 128
 	Patch "FLAMP", 35, 0
 }
 
+Texture "LITE4", 16, 128
+{
+	Patch "T14_5", 0, 56
+	Patch "WLITA0", 0, 0
+	Patch "WLITC0", 8, 0
+	Patch "WLITA0", 0, 48
+	Patch "WLITC0", 8, 48
+	Patch "WLITA0", 0, 40
+	Patch "WLITC0", 8, 40
+	Patch "WLITA0", 0, 32
+	Patch "WLITC0", 8, 32
+	Patch "WLITA0", 0, 24
+	Patch "WLITC0", 8, 24
+	Patch "WLITA0", 0, 16
+	Patch "WLITC0", 8, 16
+	Patch "WLITA0", 0, 8
+	Patch "WLITC0", 8, 8
+}
+
 Texture "LITE96", 64, 128
 {
-	Patch "WALL62_1", 0, 0
+	Patch "WALL62_1", -1, 0
 	Patch "FLAMP", 4, 18
 	Patch "FLAMP", 38, 18
 }
@@ -205,6 +259,16 @@ Texture "LITESTON", 64, 128
 	Patch "W28_8", 0, 64
 	Patch "FLAMP", 7, 27
 	Patch "FLAMP", 37, 27
+}
+
+Texture "MIDVINE1", 256, 128
+{
+	Patch "W106_1", 0, 0
+}
+
+Texture "MIDVINE2", 256, 128
+{
+	Patch "W107_1", 0, 0
 }
 
 Texture "NUKESLAD", 64, 128
@@ -313,20 +377,35 @@ Texture "SP_ROCK2", 128, 128
 	Patch "WALL63_2", 0, 0
 }
 
+Texture "STARTAN1", 64, 128
+{
+	Patch "SW12_4", 0, 0
+	Patch "SW12_5", 32, 0
+}
+
 Texture "STONGARG", 128, 128
 {
 	Patch "W28_6", 64, 64
 	Patch "W28_7", 64, 0
 	Patch "W28_6", 0, 0
 	Patch "W28_7", 0, 64
-	Patch "SW2_3", 0, 78
+	Patch "SW2_3", 0, 79
 	Patch "SW2_3", 64, 15
 }
 
-Texture "SW1PIPE", 128, 128
+Texture "STONPOIS", 64, 128
 {
-	Patch "TP2_2", 0, 0
-	Patch "SW3S0", 48, 76
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "PS20A0", 1, 43
 }
 
 Texture "TEKWALL2", 128, 128
@@ -334,20 +413,34 @@ Texture "TEKWALL2", 128, 128
 	Patch "WALL24_1", 0, 0
 }
 
+Texture "TEKWALL3", 128, 112
+{
+	Patch "W17_1", -104, 0
+}
+
 Texture "TEKWALL5", 128, 128
 {
 	Patch "WALL24_1", -120, -8
 }
 
+Texture "WOODSKUL", 64, 128
+{
+	Patch "WALL40_1", 0, 0
+	Patch "SW2_2", 24, 70
+}
+
 // for WadSmoosh 1.2:
 // two 64x128 doom.wad textures that also exist in doom2.wad, but are 128x128
 // there. by default WadSmooshHandler will swap these in for ExMx-named levels.
+
+// renamed from BRNPOIS to avoid Doom2 conflict
 Texture "BRNPOIS1", 64, 128
 {
 	Patch "WALL62_2", 0, 0
 	Patch "PS20A0", 1, 60
 }
 
+// renamed from NUKEPOIS to avoid Doom2 conflict
 Texture "NUKPOIS1", 64, 128
 {
 	Patch "WALL04_3", 0, 0
@@ -360,4 +453,128 @@ Texture "NUKPOIS1", 64, 128
 	Patch "WALL04_5", 32, 33
 	Patch "WALL04_2", 48, 33
 	Patch "PS20A0", -1, 68
+}
+
+// renamed from BIGDOOR7 to avoid Doom2 conflict
+Texture "BIGDOORA", 128, 128
+{
+	Patch "W105_1", -4, -4
+	Patch "W105_1", 124, -4
+}
+
+// renamed from SHAWN1 to avoid Doom2 conflict
+Texture "SHAWN1A", 128, 128
+{
+	Patch "W13_1", 64, 56
+	Patch "W13_1", 0, 56
+	Patch "CYL1_1", 0, 0
+	Patch "WALL01_1", 118, 0
+	Patch "WALL01_1", 117, 56
+}
+
+// renamed from STEP1 to avoid Doom2 conflict
+WallTexture "STEP1A", 32, 8
+{
+	Patch "STEP04", 0, 0
+}
+
+// renamed from STEP2 to avoid Doom2 conflict
+WallTexture "STEP2A", 32, 8
+{
+	Patch "STEP03", 0, 0
+}
+
+// renamed from STEP3 to avoid Doom2 conflict
+Texture "STEP3A", 32, 8
+{
+	Patch "STEP05", 0, 0
+}
+
+// renamed from STEP5 to avoid Doom2 conflict
+Texture "STEP5A", 32, 16
+{
+	Patch "STEP09", 0, 0
+	Patch "STEP09", 0, 8
+}
+
+// renamed from SW1BRN1 to avoid Doom2 conflict
+Texture "SW1BRN1A", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+
+// renamed from SW1STARG to avoid Doom2 conflict
+Texture "SW1STARA", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S0", 48, 76
+}
+
+// renamed from SW1STON2 to avoid Doom2 conflict
+Texture "SW1STONA", 64, 128
+{
+	Patch "W28_5", 0, 0
+	Patch "W28_8", 0, 64
+	Patch "WARNB0", 24, 73
+}
+
+// renamed from SW1STONE to avoid Doom2 conflict
+Texture "SW1STONB", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S0", 16, 72
+}
+
+// renamed from SW2BRN1 to avoid Doom2 conflict
+Texture "SW2BRN1A", 64, 128
+{
+	Patch "STEP07", 32, 72
+	Patch "STEP07", 0, 72
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S1", 16, 75
+}
+
+// renamed from SW2STARG to avoid Doom2 conflict
+Texture "SW2STARA", 128, 128
+{
+	Patch "SW19_3", 64, 0
+	Patch "SW19_4", 0, 0
+	Patch "SW3S1", 48, 76
+}
+
+// renamed from SW2STON2 to avoid Doom2 conflict
+Texture "SW2STONA", 64, 128
+{
+	Patch "W28_8", 0, 64
+	Patch "WARNA0", 24, 73
+	Patch "W28_5", 0, 0
+}
+
+// renamed from SW2STONE to avoid Doom2 conflict
+Texture "SW2STONB", 64, 128
+{
+	Patch "WALL01_1", 0, 0
+	Patch "WALL01_2", 16, 0
+	Patch "WALL01_3", 32, 0
+	Patch "WALL01_4", 48, 0
+	Patch "WALL01_1", 0, 72
+	Patch "WALL01_2", 16, 72
+	Patch "WALL01_3", 32, 72
+	Patch "WALL01_4", 48, 72
+	Patch "W33_8", 0, 64
+	Patch "W33_8", 0, 120
+	Patch "SW1S1", 16, 72
 }
