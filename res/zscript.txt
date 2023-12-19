@@ -101,6 +101,15 @@ class WadSmooshHandler : EventHandler
         }
     }
     
+    bool isSecretExit;
+    
+    // Check if secret exit is used
+    override void WorldLinePreActivated(WorldEvent e)
+    {
+        if( e.ActivatedLine.special == 244 )
+			isSecretExit = true;
+    }
+    
     void StripAllPlayerInventory()
     {
         // MP-friendly version: iterate through all players
@@ -146,7 +155,7 @@ class WadSmooshHandler : EventHandler
         String mapName = level.MapName.MakeLower();
         if ( (CVar.FindCVar("ws_pistol_start").GetInt()) == 1 )
             StripAllPlayerInventory();
-        else if ( (CVar.FindCVar("ws_pistol_start").GetInt()) == 2 && ( mapName.Left(3) == "ml_" ) && !( mapName == "ml_map18" ) )
+        else if ( (CVar.FindCVar("ws_pistol_start").GetInt()) == 2 && ( mapName.Left(3) == "ml_" ) && isSecretExit != true )
             StripAllPlayerInventory();
     }
     
