@@ -177,16 +177,6 @@ def extract_master_levels():
                                                    patch_replace[1]))
         lump.to_file(out_filename)
 
-def add_secret_exit(map_name, line_id):
-    # sets given line # in given map as a secret exit switch
-    wad = omg.WAD()
-    wad_filename = DEST_DIR + 'maps/%s.wad' % map_name
-    wad.from_file(wad_filename)
-    ed = omg.MapEditor(wad.maps[map_name])
-    ed.linedefs[line_id].__dict__['action'] = 51
-    wad.maps[map_name] = ed.to_lumps()
-    wad.to_file(wad_filename)
-
 def add_secret_level(map_src_filename, map_src_name, map_dest_name):
     global num_maps
     # copies given map file into dest dir and sets its map lump name
@@ -203,13 +193,9 @@ def add_xbox_levels():
     # :P
     logg('Adding Xbox bonus levels...')
     if get_wad_filename('doom'):
-        logg('  Adding secret exit to E1M1')
-        add_secret_exit('E1M1', 268)
         logg('  Adding SEWERS.WAD as E1M10')
         add_secret_level('sewers', 'E3M1', 'E1M10')
     if get_wad_filename('doom2'):
-        logg('  Adding secret exit to MAP02')
-        add_secret_exit('MAP02', 283)
         logg('  Adding BETRAY.WAD as MAP33')
         add_secret_level('betray', 'MAP01', 'MAP33')
 
