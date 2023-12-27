@@ -1,13 +1,14 @@
+
 defaultmap
 {
-    BorderTexture = "FLOOR7_2"
+	BorderTexture = "FLOOR7_2"
 	nocrouch
 	nojump
 	sky1 = "SKY6"
 	cluster = 26
 	enterpic = "SIGILIN2"
 	exitpic = "SIGILIN2"
-    InterMusic = "S2_INTER"
+	InterMusic = "S2_INTER"
 	Author = "$WS_AU_ROMERO"
 }
 
@@ -97,6 +98,6 @@ map E6M9 "$HUSTR_E6M9"
 cluster 26
 {
 	flat = "FLOOR7_2"
-    music = "S2_INTRO"
+	music = "S2_INTRO"
 	exittext = lookup, "E6TEXT"
 }

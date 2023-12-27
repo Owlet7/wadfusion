@@ -1,10 +1,12 @@
 ListMenu "EpisodeMenu"
 {
     Font "BigFont", "RED"
-    Linespacing 16
+    Linespacing 18
     
     StaticPatch 50, 2, "M_EPISOD"
     Position 30, 30
+    
+    ForceList
 }
 
 AddOptionMenu "OptionsMenu"
@@ -19,7 +21,8 @@ OptionMenu "WadSmooshOptions"
     StaticText "$WS_RESTART_TEXT", "Gold"
     Option "$WS_MENU_FD_TEXSWAP", "ws_finaldoom_texswap", "OnOff"
     Option "$WS_MENU_D2SKY_COMPAT", "ws_d2sky_compat", "OnOff"
-    Option "$WS_MENU_D1POIS_TEXSWAP", "ws_d1pois_texswap", "OnOff"
+    Option "$WS_MENU_D1_TEXSWAP", "ws_d1_texswap", "OnOff"
+    Option "$WS_MENU_S2_SPIDERBOSS_BUFF", "ws_s2_spiderboss", "OnOff"
 }
 
 OptionMenu "WadSmooshCredits"
@@ -33,7 +36,7 @@ OptionMenu "WadSmooshCredits"
 	Submenu "$PLUTEPNAME", "PLCredits"
 	Submenu "$WS_NAME", "WSCredits"
 	Submenu "$EP5NAME", "SCredits"
-	Submenu "$EP6NAME", "SIICredits"
+	Submenu "$EP6NAME", "S2Credits"
 }
 
 OptionMenu "UDCredits"
@@ -205,7 +208,7 @@ OptionMenu "SCredits"
 	StaticText "Kurt Baumgardner"
 }
 
-OptionMenu "SIICredits"
+OptionMenu "S2Credits"
 {
 	Title "Sigil II"
 	StaticText "$WS_CRED_DEVPUB", "Gold"
@@ -243,4 +246,7 @@ OptionMenu "WSCredits"
 	StaticText " "
 	StaticText "$WS_CRED_WS_CREDITS", "Gold"
 	StaticText "Shockwave_S08"
+	StaticText " "
+	StaticText "$WS_MENU_SIGIL2", "Gold"
+	StaticText "jdbrown"
 }

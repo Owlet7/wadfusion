@@ -5,7 +5,7 @@ include mapinfo/masterlevels.txt
 include mapinfo/tnt_levels.txt
 include mapinfo/plutonia_levels.txt
 include mapinfo/sigil_levels.txt
-include mapinfo/sigil_ii_levels.txt
+include mapinfo/sigil2_levels.txt
 
 GameInfo
 {
@@ -75,15 +75,16 @@ episode E5M1
 {
 	picname = "M_EPI5"
 	name = "$HUSTR_EPI5"
-	key = "s"
+	key = "g"
 	optional
 }
 
 episode E6M1
 {
-	name = "$HUSTR_EPI6"
-	key = "s"
 	picname = "M_EPI6"
+	name = "$HUSTR_EPI6"
+	key = "x"
+	optional
 }
 
 episode MAP01

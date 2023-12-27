@@ -361,3 +361,18 @@ Texture "NUKPOIS1", 64, 128
 	Patch "WALL04_2", 48, 33
 	Patch "PS20A0", -1, 68
 }
+
+// the SW[1|2]BRN1 texture pair is a totally different texture in doom vs doom2.
+Texture "SW1BRWN1", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW3S0", 16, 75
+}
+
+Texture "SW2BRWN1", 64, 128
+{
+	Patch "WALL02_2", 0, 56
+	Patch "WALL02_2", 0, 0
+	Patch "SW4S0", 20, 79
+}

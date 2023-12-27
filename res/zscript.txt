@@ -44,7 +44,7 @@ class WadSmooshHandler : EventHandler
         }
     }
     
-    void DoDoom1PoisonTextureReplacements()
+    void DoDoom1TextureReplacements()
     {
         // detect doom1 style map name
         String mapName = level.MapName.MakeLower();
@@ -53,6 +53,10 @@ class WadSmooshHandler : EventHandler
             // replace two size-sensitive textures with doom1-specific variants
             Level.ReplaceTextures("BRNPOIS", "BRNPOIS1", 0);
             Level.ReplaceTextures("NUKEPOIS", "NUKPOIS1", 0);
+            // replace a pair of switch textures that's completely different
+            // in doom vs doom2
+            Level.ReplaceTextures("SW1BRN1", "SW1BRWN1", 0);
+            Level.ReplaceTextures("SW2BRN1", "SW2BRWN1", 0);
         }
     }
     
@@ -87,9 +91,22 @@ class WadSmooshHandler : EventHandler
     {
         if ( CVar.FindCVar("ws_finaldoom_texswap").GetBool() )
             DoFinalDoomTextureReplacements();
-        if ( CVar.FindCVar("ws_d1pois_texswap").GetBool() )
-            DoDoom1PoisonTextureReplacements();
+        if ( CVar.FindCVar("ws_d1_texswap").GetBool() )
+            DoDoom1TextureReplacements();
         if ( CVar.FindCVar("ws_d2sky_compat").GetBool() )
             DoDoom2SkyReplacements();
+    }
+    
+    override void WorldThingSpawned(WorldEvent e)
+    {
+        // sigil 2 spider boss buff
+        String mapName = level.MapName.MakeLower();
+        if ( mapName.Left(3) == "e6m" )
+        {
+            if ( CVar.FindCVar("ws_s2_spiderboss").GetBool() && e.Thing.GetClassName() == "SpiderMastermind" )
+            {
+                e.Thing.Health = 9000;
+            }
+        }
     }
 }

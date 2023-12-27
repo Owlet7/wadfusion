@@ -1376,18 +1376,16 @@ Texture "SW1BRCOM", 128, 128
 	Patch "SW1S0", 48, 72
 }
 
-Texture "SW1BRN1", 64, 128
+Texture "SW1BRN1", 128, 128
 {
-	Patch "WALL02_2", 0, 56
-	Patch "WALL02_2", 0, 0
-	Patch "SW3S0", 16, 75
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S0", 48, 72
 }
 
-Texture "SW1BRN2", 64, 128
+Texture "SW2BRN1", 128, 128
 {
-	Patch "WALL02_2", 0, 56
-	Patch "WALL02_2", 0, 0
-	Patch "SW4S0", 20, 79
+	Patch "WALL62_1", 0, 0
+	Patch "SW1S1", 48, 72
 }
 
 Texture "SW1BRNGN", 64, 128
