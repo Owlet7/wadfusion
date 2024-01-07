@@ -374,5 +374,5 @@ Texture "SW2BRWN1", 64, 128
 {
 	Patch "WALL02_2", 0, 56
 	Patch "WALL02_2", 0, 0
-	Patch "SW4S0", 20, 79
+	Patch "SW3S1", 16, 75
 }
