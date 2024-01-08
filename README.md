@@ -16,11 +16,29 @@ If you're in macOS or Linux, run the `wadsmoo.sh` shell script - Python 2 and 3 
 
 WadSmoosh will create a new file called `doom_complete.pk3` with all the game content in it. You can run this in GZDoom with `-iwad doom_complete.pk3` at the command line, or even rename it to `doom2.wad` and run without any command line needed. GZDoom 2.4 and later will recognize the `doom_complete.pk3` file as a valid IWAD without any name change needed.
 
-If you've extracted the No Rest for the Living addon episode for Doom 2 from Doom 3: BFG Edition or the PSN or XBLA versions, make sure it's named `nerve.wad` in the `source_wads/` folder.
+If you've extracted the No Rest for the Living add-on episode for Doom 2 from Doom 3: BFG Edition or the PSN or XBLA versions, make sure it's named `nerve.wad` in the `source_wads/` folder.
 
 In rare cases, you may need to uncheck the `source_wads/` folder's read-only status.
 
 Advanced users can edit `wadsmoosh_data.py` to customize how and what WadSmoosh extracts. This file is Python code, read by the main program at runtime, so no recompile is required. You can also customize the ordering of the Master Levels by running WadSmoosh from the command line with a text file defining the ordering as an extra parameter. The ["Xaser ordering"](https://forum.zdoom.org/viewtopic.php?p=634600#p634600) is the default, but `masterlevels_order.txt` provides the mostly-alphabetical "PSN ordering", and more info on this customization option is included in comments at the top of that file. This is the only configuration option that WadSmoosh supports, and in general I'm opposed to adding more such options without turning WadSmoosh into a full-on GUI program.
+
+## Supported WADs
+
+WadSmoosh is not a general-purpose tool for merging Doom WADs; it is for *merging retail content* only - it was created in 2016 out of a desire for a "complete" retail version of Doom and Doom II, and only exists as a program because the IWAD file that it generates cannot be distributed legally. Please do not ask if WadSmoosh will support any specific WAD. If you want to add your own content to a custom IWAD, please either modify [WadSmoosh's source code](https://heptapod.host/jp-lebreton/wadsmoosh) yourself, or simply edit the `doom_complete.pk3` file WadSmoosh generated on your computer by opening it in a ZIP archive management program. Please do not ask me for support when doing either.
+
+Here is the official list of WADs that WadSmoosh will recognize:
+- Ultimate Doom (`doom.wad`)
+- Doom (original registered version of `doom.wad`, containing only episodes 1-3)
+- Doom II (`doom2.wad`)
+- The Master Levels (the 20 unmodified WAD files from the retail release)
+- Final Doom (`tnt.wad` and `plutonia.wad`)
+- No Rest for the Living (`nerve.wad`)
+- Sigil (`sigil.wad` and its optional music addon `sigil_shreds.wad`)
+- Sigil II (`sigil2.wad`, either its MIDI or MP3 soundtrack versions)
+
+For Sigil and Sigil II, all the filenames for different releases of those WADs are also recognized; you shouldn't have to rename your original files.
+
+None of the "official add-on" content from the [Unity-based rereleases of Doom and Doom II](https://doomwiki.org/wiki/Doom_Classic_Unity_port) is supported. Only the versions of `doom.wad` and `doom2.wad` in the install folders for these ports are supported; they are virtually identical to the original data files.
 
 ## Absolute Beginner's Guide
 

@@ -6,10 +6,9 @@ WS_RESTART_TEXT = "Note: Changing any of these requires a level restart.";
 WS_MENU_FD_TEXSWAP = "Final Doom Texture Substitutions";
 WS_MENU_D2SKY_COMPAT = "Doom2 Custom Sky Compatibility";
 WS_MENU_D1_TEXSWAP = "Doom1 Texture Substitutions";
-WS_MENU_XBOX_SECRET_EXITS = "Xbox Secret Exits";
-WS_MENU_S2_SPIDERDEMON = "Sigil2 Spiderdemon Health Increase";
-WS_MENU_PISTOL_START = "Force Pistol Start";
+WS_MENU_S2_SPIDERBOSS_BUFF = "Sigil II Spider Mastermind Buff";
 WS_MENU_CREDITS = "WadSmoosh Credits";
+WS_MENU_SIGIL2 = "Sigil II Support";
 WS_NAME = "WadSmoosh";
 WS_SKILL_UVPLUS = "Ultra-Violence+";
 
@@ -238,7 +237,7 @@ E5TEXT = "Baphomet was only doing Satan's bidding\n"
        "advanced demons that were sent to Earth.\n\n"
        "Lock and load. Rip and tear.";
 
-// sigil ii
+// sigil2
 HUSTR_EPI6 = "SIGIL II";
 HUSTR_E6M1 = "E6M1: Cursed Darkness";
 HUSTR_E6M2 = "E6M2: Violent Hatred";
@@ -250,10 +249,10 @@ HUSTR_E6M7 = "E6M7: Descent Into Terror";
 HUSTR_E6M8 = "E6M8: Abyss of Despair";
 HUSTR_E6M9 = "E6M9: Shattered Homecoming";
 E6TEXT = "Satan erred in casting you to Hell's\n"
-        "darker depths. His plan failed. He has\n"
-        "tried for so long to destroy you, and he\n"
-        "has lost every single time. His only\n"
-        "option is to flood Earth with demons\n"
-        "and hope you go down fighting.\n"
-        "\n"
-        "Prepare for HELLION!\n";
+       "darker depths. His plan failed. He has\n"
+       "tried for so long to destroy you, and he\n"
+       "has lost every single time. His only\n"
+       "option is to flood Earth with demons\n"
+       "and hope you go down fighting.\n"
+       "\n"
+       "Prepare for HELLION!\n";

@@ -1,6 +1,4 @@
 user bool ws_finaldoom_texswap = true;
 user bool ws_d2sky_compat = true;
 user bool ws_d1_texswap = true;
-user bool ws_xbox_secret_exits = true;
-user bool ws_s2_spiderdemon = true;
-server int ws_pistol_start = 2;
+user bool ws_s2_spiderboss = true;

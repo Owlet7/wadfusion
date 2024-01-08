@@ -1,23 +1,18 @@
 ListMenu "EpisodeMenu"
 {
     Font "BigFont", "RED"
-    Linespacing 16
+    Linespacing 18
     
     StaticPatch 50, 2, "M_EPISOD"
     Position 30, 30
+    
+    ForceList
 }
 
 AddOptionMenu "OptionsMenu"
 {
     Submenu "$WS_MENU_TITLE", "WadSmooshOptions"
     Submenu "$WS_MENU_CREDITS", "WadSmooshCredits"
-}
-
-OptionValue "ws_pistol_start_values"
-{
-    0, "Never"
-    1, "Always"
-    2, "Master Levels only"
 }
 
 OptionMenu "WadSmooshOptions"
@@ -27,9 +22,7 @@ OptionMenu "WadSmooshOptions"
     Option "$WS_MENU_D1_TEXSWAP", "ws_d1_texswap", "OnOff"
     Option "$WS_MENU_FD_TEXSWAP", "ws_finaldoom_texswap", "OnOff"
     Option "$WS_MENU_D2SKY_COMPAT", "ws_d2sky_compat", "OnOff"
-    Option "$WS_MENU_XBOX_SECRET_EXITS", "ws_xbox_secret_exits", "OnOff"
-    Option "$WS_MENU_S2_SPIDERDEMON", "ws_s2_spiderdemon", "OnOff"
-    Option "$WS_MENU_PISTOL_START", "ws_pistol_start", "ws_pistol_start_values"
+    Option "$WS_MENU_S2_SPIDERBOSS_BUFF", "ws_s2_spiderboss", "OnOff"
 }
 
 OptionMenu "WadSmooshCredits"
@@ -43,7 +36,7 @@ OptionMenu "WadSmooshCredits"
 	Submenu "$PLUTEPNAME", "PLCredits"
 	Submenu "$WS_NAME", "WSCredits"
 	Submenu "$EP5NAME", "SCredits"
-	Submenu "$EP6NAME", "SIICredits"
+	Submenu "$EP6NAME", "S2Credits"
 }
 
 OptionMenu "UDCredits"
@@ -215,7 +208,7 @@ OptionMenu "SCredits"
 	StaticText "Kurt Baumgardner"
 }
 
-OptionMenu "SIICredits"
+OptionMenu "S2Credits"
 {
 	Title "Sigil II"
 	StaticText "$WS_CRED_DEVPUB", "Gold"
@@ -253,4 +246,7 @@ OptionMenu "WSCredits"
 	StaticText " "
 	StaticText "$WS_CRED_WS_CREDITS", "Gold"
 	StaticText "Shockwave_S08"
+	StaticText " "
+	StaticText "$WS_MENU_SIGIL2", "Gold"
+	StaticText "jdbrown"
 }

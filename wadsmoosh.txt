@@ -27,6 +27,8 @@ Description             : A tool for combining all official id release
                           
                           Advanced users can edit wadsmoosh_data.py to
                           customize what and how WadSmoosh extracts.
+                          
+                          See README.md for more info.
 
 Additional Credits to   : ZDoom forums folks for help testing and fixing!
                           Custom title art by Scalliano and Hellser.
@@ -54,6 +56,7 @@ Other files required    : Any official id release WADs:
                           - No Rest for the Living (aka NERVE.WAD)
                           - Final Doom (TNT and Plutonia)
                           - Sigil
+                          - Sigil II
 
 
 * Construction *

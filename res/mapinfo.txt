@@ -5,7 +5,7 @@ include mapinfo/masterlevels.txt
 include mapinfo/tnt_levels.txt
 include mapinfo/plutonia_levels.txt
 include mapinfo/sigil_levels.txt
-include mapinfo/sigil_ii_levels.txt
+include mapinfo/sigil2_levels.txt
 
 GameInfo
 {
@@ -32,6 +32,7 @@ GameInfo
 skill hardplus
 {
 	SpawnFilter = Hard
+	PicName = "M_UVPLUS"
 	Name = "$WS_SKILL_UVPLUS"
 	Key = "u"
 	FastMonsters
@@ -75,7 +76,7 @@ episode E5M1
 {
 	picname = "M_EPI5"
 	name = "$HUSTR_EPI5"
-	key = "s"
+	key = "g"
 	optional
 }
 
@@ -83,7 +84,7 @@ episode E6M1
 {
 	picname = "M_EPI6"
 	name = "$HUSTR_EPI6"
-	key = "s"
+	key = "x"
 	optional
 }
 

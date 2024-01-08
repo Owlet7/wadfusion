@@ -38,7 +38,7 @@ MASTER_LEVELS_AUTHOR_PREFIX = ''
 MASTER_LEVELS_AUTHORS = {}
 MASTER_LEVELS_MAPINFO_HEADER = []
 SIGIL_ALT_FILENAMES = []
-SIGIL_II_ALT_FILENAMES = []
+SIGIL2_ALT_FILENAMES = []
 BFG_ONLY_LUMP = ''
 
 logfile = None
@@ -111,6 +111,10 @@ def get_ml_mapinfo(wad_name, map_number):
     lines.append('    Author = "$%s"' % author_lc)
     if wad_name in MASTER_LEVELS_MAP07_SPECIAL:
         lines.append('    map07special')
+    # don't reset player for secret level
+    if map_number != 21:
+        lines.append('    ResetHealth')
+        lines.append('    ResetInventory')
     lines.append('}')
     return lines
 
@@ -177,6 +181,16 @@ def extract_master_levels():
                                                    patch_replace[1]))
         lump.to_file(out_filename)
 
+def add_secret_exit(map_name, line_id):
+    # sets given line # in given map as a secret exit switch
+    wad = omg.WAD()
+    wad_filename = DEST_DIR + 'maps/%s.wad' % map_name
+    wad.from_file(wad_filename)
+    ed = omg.MapEditor(wad.maps[map_name])
+    ed.linedefs[line_id].__dict__['action'] = 51
+    wad.maps[map_name] = ed.to_lumps()
+    wad.to_file(wad_filename)
+
 def add_secret_level(map_src_filename, map_src_name, map_dest_name):
     global num_maps
     # copies given map file into dest dir and sets its map lump name
@@ -193,9 +207,13 @@ def add_xbox_levels():
     # :P
     logg('Adding Xbox bonus levels...')
     if get_wad_filename('doom'):
+        logg('  Adding secret exit to E1M1')
+        add_secret_exit('E1M1', 268)
         logg('  Adding SEWERS.WAD as E1M10')
         add_secret_level('sewers', 'E3M1', 'E1M10')
     if get_wad_filename('doom2'):
+        logg('  Adding secret exit to MAP02')
+        add_secret_exit('MAP02', 283)
         logg('  Adding BETRAY.WAD as MAP33')
         add_secret_level('betray', 'MAP01', 'MAP33')
 
@@ -240,8 +258,10 @@ def extract_lumps(wad_name):
         # sigil sky is in data namespace but we want it in patches dir
         if wad_name == 'sigil' and lump_list == 'patches_sigil':
             lump_subdir = DEST_DIR + 'patches/'
-        # sigil screens aren't in graphics namespace but belong in that dir
-        elif (wad_name == 'sigil' or wad_name == 'sigil_ii') and lump_type == 'data':
+        # sigil 1&2 screens aren't in graphics namespace but belong in that dir
+        elif wad_name == 'sigil' and lump_type == 'data':
+            lump_subdir = DEST_DIR + 'graphics/'
+        elif wad_name == 'sigil2' and lump_type == 'data':
             lump_subdir = DEST_DIR + 'graphics/'
         # write PLAYPAL, TEXTURE1 etc to pk3 root
         elif lump_type in ['data', 'txdefs']:
@@ -319,14 +339,14 @@ def get_report_found():
                 copyfile(sigil_alt, SRC_WAD_DIR + 'sigil.wad')
                 found.insert(1, 'sigil')
                 break
-    # do the same for sigil ii
-    if 'doom' in found and not 'sigil_ii' in found:
-        for alt_name in SIGIL_II_ALT_FILENAMES:
-            sigil_ii_alt = get_wad_filename(alt_name)
-            if sigil_ii_alt:
-                copyfile(sigil_ii_alt, SRC_WAD_DIR + 'sigil_ii.wad')
-                index = 2 if 'sigil' in found else 1
-                found.insert(index, 'sigil_ii')
+    # same with sigil2
+    # (TODO maybe some way to generalize this for future releases?)
+    if 'doom' in found and not 'sigil2' in found:
+        for alt_name in SIGIL2_ALT_FILENAMES:
+            sigil2_alt = get_wad_filename(alt_name)
+            if sigil2_alt:
+                copyfile(sigil2_alt, SRC_WAD_DIR + 'sigil2.wad')
+                found.insert(2, 'sigil2')
                 break
     return found
 
@@ -347,7 +367,7 @@ def get_eps(wads_found):
             eps += ['The Plutonia Experiment']
         elif wadname == 'sigil' and 'doom' in wads_found:
             eps += ['Sigil']
-        elif wadname == 'sigil_ii' and 'doom' in wads_found:
+        elif wadname == 'sigil2' and 'doom' in wads_found:
             eps += ['Sigil II']
     return eps
 
@@ -428,8 +448,8 @@ def main():
         if iwad_name == 'sigil_shreds' and not get_wad_filename('sigil'):
             logg('Skipping SIGIL_SHREDS.wad as SIGIL.wad is not present', error=True)
             continue
-        if iwad_name == 'sigil_ii' and not get_wad_filename('doom'):
-            logg('Skipping SIGIL_II.wad as doom.wad is not present', error=True)
+        if iwad_name == 'sigil2' and not get_wad_filename('doom'):
+            logg('Skipping sigil2.wad as doom.wad is not present', error=True)
             continue
         logg('Processing WAD %s...' % iwad_name)
         if should_extract:

@@ -185,11 +185,13 @@ Texture WFALL4, 64, 128
 	Patch PWFALL4, 0, 0
 }
 
+// renamed from SKY1 to avoid Doom1 conflict
 Texture PSKY1, 256, 128
 {
 	Patch PSKY1, 0, 0
 }
 
+// renamed from SKY2 to avoid Doom1 conflict
 Texture PSKY2, 1024, 128
 {
 	Patch PSKY2A, 0, 0
@@ -198,6 +200,7 @@ Texture PSKY2, 1024, 128
 	Patch PSKY2D, 768, 0
 }
 
+// renamed from SKY3 to avoid Doom1 conflict
 Texture PSKY3, 512, 128
 {
 	Patch PSKY3A, 0, 0
