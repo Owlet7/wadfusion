@@ -304,7 +304,7 @@ map TN_MAP25 lookup "THUSTR_25"
 	titlepatch = "TWILV24"
 	par = 150
 	music = "T_ADRIAN"
-	Author = "$WS_AU_MENTZER"
+	Author = "$WS_AU_HILL"
 }
 
 map TN_MAP26 lookup "THUSTR_26"

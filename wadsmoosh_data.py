@@ -3,13 +3,13 @@
 
 # pre-authored resources to copy
 RES_FILES = [
-    'mapinfo.txt', 'language.txt', 'endoom', 'smooshed.txt',
+    'mapinfo.txt', 'language.csv', 'endoom', 'smooshed.txt',
     'textures.common', 'textures.doom1', 'textures.doom2',
     'textures.tnt', 'textures.plut', 'animdefs.txt',
     'graphics/M_DOOM.lmp', 'graphics/TITLEPIC.lmp',
     'graphics/M_HELL.lmp', 'graphics/M_NOREST.lmp',
     'graphics/M_MASTER.lmp', 'graphics/M_TNT.lmp',
-    'graphics/M_PLUT.lmp', 'graphics/M_UVPLUS.lmp',
+    'graphics/M_PLUT.lmp',
     'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
     'mapinfo/tnt_levels.txt', 'mapinfo/plutonia_levels.txt',
     'mapinfo/masterlevels.txt', 'mapinfo/sigil_levels.txt',
@@ -174,7 +174,7 @@ MASTER_LEVELS_AUTHORS = {
     'fistula':  'KLIE',
     'combine':  'KLIE',
     'subspace': 'KLIE',
-    'paradox':  'MUSTAINE',
+    'paradox':  'MUSTAINES',
     'subterra': 'KLIE',
     'garrison': 'KLIE',
     'blacktwr': 'KVERNMO',
