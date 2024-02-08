@@ -181,16 +181,6 @@ def extract_master_levels():
                                                    patch_replace[1]))
         lump.to_file(out_filename)
 
-def add_secret_exit(map_name, line_id):
-    # sets given line # in given map as a secret exit switch
-    wad = omg.WAD()
-    wad_filename = DEST_DIR + 'maps/%s.wad' % map_name
-    wad.from_file(wad_filename)
-    ed = omg.MapEditor(wad.maps[map_name])
-    ed.linedefs[line_id].__dict__['action'] = 51
-    wad.maps[map_name] = ed.to_lumps()
-    wad.to_file(wad_filename)
-
 def add_secret_level(map_src_filename, map_src_name, map_dest_name):
     global num_maps
     # copies given map file into dest dir and sets its map lump name
@@ -207,15 +197,21 @@ def add_xbox_levels():
     # :P
     logg('Adding Xbox bonus levels...')
     if get_wad_filename('doom'):
-        logg('  Adding secret exit to E1M1')
-        add_secret_exit('E1M1', 268)
         logg('  Adding SEWERS.WAD as E1M10')
         add_secret_level('sewers', 'E3M1', 'E1M10')
     if get_wad_filename('doom2'):
-        logg('  Adding secret exit to MAP02')
-        add_secret_exit('MAP02', 283)
         logg('  Adding BETRAY.WAD as MAP33')
         add_secret_level('betray', 'MAP01', 'MAP33')
+
+def enable_xbox_levels():
+    # switches ws_xbox_secret_exits cvar to true
+    xbox_false = 'ws_xbox_secret_exits = false'
+    xbox_true = 'ws_xbox_secret_exits = true'
+    with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
+        tmp_file = file.read()
+        tmp_file = tmp_file.replace(xbox_false, xbox_true)
+    with open(DEST_DIR + 'cvarinfo.txt', 'w') as file:
+        file.write(tmp_file)
 
 def extract_map(in_wad, map_name, out_filename):
     global num_maps
@@ -466,6 +462,7 @@ def main():
     # only supported versions of these @ http://classicdoom.com/xboxspec.htm
     if get_wad_filename('sewers') and get_wad_filename('betray') and should_extract:
         add_xbox_levels()
+        enable_xbox_levels()
     # copy custom GENMIDI, if user hasn't deleted it
     genmidi_filename = 'GENMIDI.lmp'
     if os.path.exists(RES_DIR + genmidi_filename):
