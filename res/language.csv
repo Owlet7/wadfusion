@@ -8,6 +8,7 @@ WS_MENU_D1_TEXSWAP,,DOOM 1 Texture Substitutions,,Замена текстур в
 WS_MENU_S2_SPIDERBOSS_BUFF,,SIGIL II Spider Mastermind Buff,,Усиление Паука-предводителя в СИГИЛ II
 WS_MENU_XBOX_SECRET_EXITS,,Xbox Secret Exits,,Тайные выходы из Xbox
 WS_MENU_CREDITS,,WadSmoosh Credits,,Разработчики WadSmoosh
+WS_CREDITS,,Credits,,Разработчики
 WS_NAME,,WadSmoosh,,
 WS_SKILL_UVPLUS,,Ultra-Violence+,,Ультранасилие+
 ,credits headings,,,
@@ -131,6 +132,7 @@ D2E1NAME,,DOOM II: Hell on Earth,,DOOM II: Ад на Земле
 D2E2NAME,,No Rest for the Living,,Не будет покоя живым
 D2MLNAME,,The Master Levels,,Уровни мастеров для DOOM II
 D2MLEPNAME,,Master Levels for DOOM II,,Уровни мастеров для DOOM II
+FDNAME,,Final DOOM,,Финальный DOOM
 TNTEPNAME,,Final DOOM - TNT: Evilution,,Финальный DOOM - TNT: Дьяволюция
 PLUTEPNAME,,Final DOOM - The Plutonia Experiment,,Финальный DOOM - Эксперимент «Плутония»
 EP5NAME,,SIGIL,,СИГИЛ
