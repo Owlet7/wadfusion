@@ -1,10 +1,4 @@
 
-Texture "AASTINKY", 24, 72
-{
-	Patch "WALL00_3", 0, 0
-	Patch "WALL00_3", 12, -6
-}
-
 Texture "ASHWALL", 64, 128
 {
 	Patch "W104_1", 0, 0
