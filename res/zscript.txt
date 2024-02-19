@@ -9,9 +9,9 @@ class WadSmooshHandler : EventHandler
         mapPrefix = mapPrefix.MakeLower();
         if ( mapPrefix == "tn_" )
         {
-            Level.ReplaceTextures("SKY1", "TNT_SKY1", 0);     // different from doom1
-            Level.ReplaceTextures("SKY2", "TNT_SKY2", 0);     // different from doom1
-            Level.ReplaceTextures("SKY3", "TNT_SKY3", 0);     // different from doom1
+            Level.ReplaceTextures("SKY1", "TSKY1", 0);        // different from doom1
+            Level.ReplaceTextures("SKY2", "TSKY2", 0);        // different from doom1
+            Level.ReplaceTextures("SKY3", "TSKY3", 0);        // different from doom1
             Level.ReplaceTextures("SW1GSTON", "SW1GSTNT", 0); // different from doom2
             Level.ReplaceTextures("SW2GSTON", "SW2GSTNT", 0); // different from doom2
             Level.ReplaceTextures("SW1SKULL", "SW1SKULT", 0); // different from doom2

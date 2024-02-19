@@ -2,7 +2,16 @@
 // on Wed Jun 15 12:35:07 2016
 
 // renamed from SKY1 to avoid Doom1 conflict
-Texture TNT_SKY2, 1024, 128
+Texture TSKY1, 1024, 128
+{
+	Patch DOEDAY, 0, 0
+	Patch DONDAY, 256, 0
+	Patch DOWDAY, 512, 0
+	Patch DOSDAY, 768, 0
+}
+
+// renamed from SKY2 to avoid Doom1 conflict
+Texture TSKY2, 1024, 128
 {
 	Patch DOENITE, 0, 0
 	Patch DONNITE, 256, 0
@@ -10,22 +19,13 @@ Texture TNT_SKY2, 1024, 128
 	Patch DOSNITE, 768, 0
 }
 
-// renamed from SKY2 to avoid Doom1 conflict
-Texture TNT_SKY3, 1024, 128
+// renamed from SKY3 to avoid Doom1 conflict
+Texture TSKY3, 1024, 128
 {
 	Patch DOEHELL, 0, 0
 	Patch DONHELL, 256, 0
 	Patch DOWHELL, 512, 0
 	Patch DOSHELL, 768, 0
-}
-
-// renamed from SKY3 to avoid Doom1 conflict
-Texture TNT_SKY1, 1024, 128
-{
-	Patch DOEDAY, 0, 0
-	Patch DONDAY, 256, 0
-	Patch DOWDAY, 512, 0
-	Patch DOSDAY, 768, 0
 }
 
 Texture METAL2BD, 64, 128
