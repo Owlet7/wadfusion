@@ -19,6 +19,7 @@ RES_DIR = 'res/'
 DATA_TABLES_FILE = 'wadsmoosh_data.py'
 ML_ORDER_FILENAME = 'masterlevels_order_xaser.txt'
 ML_MAPINFO_FILENAME = DEST_DIR + 'mapinfo/masterlevels.txt'
+MUSIC_DIR = DEST_DIR + 'music/'
 
 # forward-declare all the stuff in DATA_TABLES_FILE for clarity
 RES_FILES = []
@@ -39,6 +40,7 @@ MASTER_LEVELS_AUTHORS = {}
 MASTER_LEVELS_MAPINFO_HEADER = []
 SIGIL_ALT_FILENAMES = []
 SIGIL2_ALT_FILENAMES = []
+SIGIL2_MP3_ALT_FILENAMES = []
 BFG_ONLY_LUMP = ''
 
 logfile = None
@@ -181,6 +183,35 @@ def extract_master_levels():
                                                    patch_replace[1]))
         lump.to_file(out_filename)
 
+def rename_sigil_shreds():
+    # remove .mus file extension from .mp3 music
+    for filename in os.listdir(MUSIC_DIR):
+        old_name = os.path.join(MUSIC_DIR, filename)
+        new_name = old_name.replace('.mp3.mus', '.mp3')
+        os.rename(old_name, new_name)
+
+def enable_sigil_shreds():
+    logg('Enabling Sigil MP3 music...')
+    # switches ws_sigil_shreds cvar default to true
+    shreds_false = 'ws_sigil_shreds = false'
+    shreds_true = 'ws_sigil_shreds = true'
+    with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
+        tmp_file = file.read()
+        tmp_file = tmp_file.replace(shreds_false, shreds_true)
+    with open(DEST_DIR + 'cvarinfo.txt', 'w') as file:
+        file.write(tmp_file)
+
+def enable_sigil2_shreds():
+    logg('Enabling Sigil II MP3 music...')
+    # switches ws_sigil2_shreds cvar default to true
+    shreds2_false = 'ws_sigil2_shreds = false'
+    shreds2_true = 'ws_sigil2_shreds = true'
+    with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
+        tmp_file = file.read()
+        tmp_file = tmp_file.replace(shreds2_false, shreds2_true)
+    with open(DEST_DIR + 'cvarinfo.txt', 'w') as file:
+        file.write(tmp_file)
+
 def add_secret_level(map_src_filename, map_src_name, map_dest_name):
     global num_maps
     # copies given map file into dest dir and sets its map lump name
@@ -204,7 +235,7 @@ def add_xbox_levels():
         add_secret_level('betray', 'MAP01', 'MAP33')
 
 def enable_xbox_levels():
-    # switches ws_xbox_secret_exits cvar to true
+    # switches ws_xbox_secret_exits cvar default to true
     xbox_false = 'ws_xbox_secret_exits = false'
     xbox_true = 'ws_xbox_secret_exits = true'
     with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
@@ -344,6 +375,14 @@ def get_report_found():
                 copyfile(sigil2_alt, SRC_WAD_DIR + 'sigil2.wad')
                 found.insert(2, 'sigil2')
                 break
+    # ... and sigil2 mp3 soundtrack version
+    if 'sigil2' in found and not 'sigil2_mp3' in found:
+        for alt_name in SIGIL2_MP3_ALT_FILENAMES:
+            sigil2_mp3_alt = get_wad_filename(alt_name)
+            if sigil2_mp3_alt:
+                copyfile(sigil2_mp3_alt, SRC_WAD_DIR + 'sigil2_mp3.wad')
+                found.insert(3, 'sigil2_mp3')
+                break
     return found
 
 def get_eps(wads_found):
@@ -439,13 +478,16 @@ def main():
             logg('Skipping nerve.wad as doom2.wad is not present', error=True)
             continue
         if iwad_name == 'sigil' and not get_wad_filename('doom'):
-            logg('Skipping SIGIL.wad as doom.wad is not present', error=True)
+            logg('Skipping sigil.wad as doom.wad is not present', error=True)
             continue
         if iwad_name == 'sigil_shreds' and not get_wad_filename('sigil'):
-            logg('Skipping SIGIL_SHREDS.wad as SIGIL.wad is not present', error=True)
+            logg('Skipping sigil_shreds.wad as sigil.wad is not present', error=True)
             continue
         if iwad_name == 'sigil2' and not get_wad_filename('doom'):
             logg('Skipping sigil2.wad as doom.wad is not present', error=True)
+            continue
+        if iwad_name == 'sigil2_mp3' and not get_wad_filename('sigil2'):
+            logg('Skipping sigil2_mp3.wad as sigil2.wad is not present', error=True)
             continue
         logg('Processing WAD %s...' % iwad_name)
         if should_extract:
@@ -459,6 +501,13 @@ def main():
             extract_master_levels()
     else:
         logg('Skipping Master Levels as doom2.wad is not present', error=True)
+    # rename file extensions of mp3 music
+    rename_sigil_shreds()
+    # enable mp3 music options
+    if get_wad_filename('sigil_shreds') and get_wad_filename('sigil'):
+        enable_sigil_shreds()
+    if get_wad_filename('sigil2_mp3') and get_wad_filename('sigil2'):
+        enable_sigil2_shreds()
     # only supported versions of these @ http://classicdoom.com/xboxspec.htm
     if get_wad_filename('sewers') and get_wad_filename('betray') and should_extract:
         add_xbox_levels()

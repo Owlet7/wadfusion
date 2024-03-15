@@ -1,6 +1,11 @@
 
 defaultmap
 {
+	// to allow switching between the midi and mp3 soundtracks,
+	// the music is intentionally set to something invalid,
+	// instead to be started through zscript
+	Music = NULL
+	InterMusic = NULL
 	BorderTexture = "FLOOR7_2"
 	nocrouch
 	nojump
@@ -8,7 +13,6 @@ defaultmap
 	cluster = 26
 	enterpic = "SIGILIN2"
 	exitpic = "SIGILIN2"
-	InterMusic = "S2_INTER"
 	Author = "$WS_AU_ROMERO"
 }
 
@@ -17,7 +21,6 @@ map E6M1 "$HUSTR_E6M1"
 	levelnum = 51
 	titlepatch = "WILV50"
 	next = "E6M2"
-	music = "D_E6M1"
 	par = 480
 }
 
@@ -26,7 +29,6 @@ map E6M2 "$HUSTR_E6M2"
 	levelnum = 52
 	titlepatch = "WILV51"
 	next = "E6M3"
-	music = "D_E6M2"
 	par = 300
 }
 
@@ -36,7 +38,6 @@ map E6M3 "$HUSTR_E6M3"
 	titlepatch = "WILV52"
 	next = "E6M4"
 	secretnext = "E6M9"
-	music = "D_E6M3"
 	par = 240
 }
 
@@ -45,7 +46,6 @@ map E6M4 "$HUSTR_E6M4"
 	levelnum = 54
 	titlepatch = "WILV53"
 	next = "E6M5"
-	music = "D_E6M4"
 	par = 420
 }
 
@@ -54,7 +54,6 @@ map E6M5 "$HUSTR_E6M5"
 	levelnum = 55
 	titlepatch = "WILV54"
 	next = "E6M6"
-	music = "D_E6M5"
 	par = 510
 }
 
@@ -63,7 +62,6 @@ map E6M6 "$HUSTR_E6M6"
 	levelnum = 56
 	titlepatch = "WILV55"
 	next = "E6M7"
-	music = "D_E6M6"
 	par = 840
 }
 
@@ -72,7 +70,6 @@ map E6M7 "$HUSTR_E6M7"
 	levelnum = 57
 	titlepatch = "WILV56"
 	next = "E6M8"
-	music = "D_E6M7"
 	par = 960
 }
 
@@ -82,7 +79,6 @@ map E6M8 "$HUSTR_E6M8"
 	titlepatch = "WILV57"
 	next = EndPic, "S2CREDIT"
 	nosoundclipping
-	music = "D_E6M8"
 	par = 390
 }
 
@@ -91,13 +87,12 @@ map E6M9 "$HUSTR_E6M9"
 	levelnum = 59
 	titlepatch = "WILV58"
 	next = "E6M4"
-	music =  "D_E6M9"
 	par = 450
 }
 
 cluster 26
 {
 	flat = "FLOOR7_2"
-	music = "S2_INTRO"
+	music = "$MUSIC_VICTOR"
 	exittext = lookup, "E6TEXT"
 }

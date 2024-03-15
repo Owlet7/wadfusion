@@ -24,7 +24,7 @@ TIDY_DIR_EXTENSIONS = {
     'patches/': ['lmp'],
     'sounds/': ['lmp'],
     'sprites/': ['lmp'],
-    'music/': ['mus'],
+    'music/': ['mus', 'mp3'],
     'mapinfo/': ['txt'],
     'maps/': ['wad'],
     './': ['lmp', 'txt']
@@ -32,10 +32,10 @@ TIDY_DIR_EXTENSIONS = {
 
 # list of files we can extract from
 WADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve', 'sigil', 'sigil_shreds',
-        'sigil2', 'doomu', 'doom2u', 'nerveu', 'tntu', 'plutoniau', 'extras']
+        'sigil2', 'sigil2_mp3', 'doomu', 'doom2u', 'nerveu', 'tntu', 'plutoniau', 'extras']
 
 # wads to search for and report if found
-REPORT_WADS = ['doom', 'sigil', 'sigil_shreds', 'sigil2',
+REPORT_WADS = ['doom', 'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',
                'doom2', 'nerve', 'attack', 'tnt', 'plutonia',
                'sewers', 'betray', 'doomu', 'doom2u',
                'nerveu', 'tntu', 'plutoniau', 'extras']
@@ -65,9 +65,9 @@ WAD_LUMP_LISTS = {
     'tnt': ['graphics_tnt', 'music_tnt', 'patches_tnt'],
     'plutonia': ['graphics_plutonia', 'music_plutonia', 'patches_plutonia'],
     'sigil': ['graphics_sigil', 'music_sigil', 'patches_sigil', 'data_sigil'],
-    # (buckethead tracks use the same names as jimmy's midi)
-    'sigil_shreds': ['music_sigil'],
+    'sigil_shreds': ['music_sigil_shreds'],
     'sigil2': ['graphics_sigil2', 'music_sigil2', 'patches_sigil2', 'data_sigil2', 'flats_sigil2'],
+    'sigil2_mp3': ['music_sigil2_shreds'],
     # widescreen assets from unity ports
     'doomu': ['graphics_doomu'],
     'doom2u': ['graphics_doom2u'],
@@ -205,8 +205,10 @@ defaultmap
 
 # help the initial source wad reporting find sigil by any of its released names
 SIGIL_ALT_FILENAMES = ['sigil_v1_0', 'sigil_v1_1', 'sigil_v1_2', 'sigil_v1_21']
-# same for sigil2 - no sigil_shreds equivalent; MP3 music just an alternate wad
-SIGIL2_ALT_FILENAMES = ['sigil_ii_v1_0', 'sigil_ii_mp3_v1_0']
+# same for sigil2 - version with MIDI music
+SIGIL2_ALT_FILENAMES = ['sigil_ii_v1_0']
+# sigil2 version with MP3 music (no sigil_shreds equivalent; MP3 music just an alternate wad)
+SIGIL2_MP3_ALT_FILENAMES = ['sigil_ii_mp3_v1_0']
 
 # lump whose presence distinguishes BFG & Unity vs original doom2.wad
 BFG_ONLY_LUMP = 'DMENUPIC'
