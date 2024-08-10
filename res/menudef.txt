@@ -1,14 +1,3 @@
-ListMenu "EpisodeMenu"
-{
-    Font "BigFont", "RED"
-    Linespacing 18
-    
-    StaticPatch 50, 2, "M_EPISOD"
-    Position 30, 30
-    
-    ForceList
-}
-
 AddOptionMenu "OptionsMenu"
 {
     Submenu "$WS_MENU_TITLE", "WadSmooshOptions"

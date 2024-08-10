@@ -9,7 +9,7 @@ RES_FILES = [
     'graphics/M_DOOM.lmp', 'graphics/TITLEPIC.lmp',
     'graphics/M_HELL.lmp', 'graphics/M_NOREST.lmp',
     'graphics/M_MASTER.lmp', 'graphics/M_TNT.lmp',
-    'graphics/M_PLUT.lmp', 'graphics/M_UVPLUS.lmp',
+    'graphics/M_PLUT.lmp',
     'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
     'mapinfo/tnt_levels.txt', 'mapinfo/plutonia_levels.txt',
     'mapinfo/masterlevels.txt', 'mapinfo/sigil_levels.txt',
