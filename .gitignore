@@ -5,3 +5,4 @@ build
 dist
 *.pyc
 doom_complete.pk3
+res/.~lock.language.csv#
