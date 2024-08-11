@@ -1,5 +1,5 @@
 
-import os, sys, time
+import os, sys, time, fnmatch
 from shutil import copyfile
 from zipfile import ZipFile, ZIP_DEFLATED
 
@@ -13,13 +13,14 @@ should_extract = True
 SRC_WAD_DIR = 'source_wads/'
 DATA_DIR = 'data/'
 DEST_DIR = 'pk3/'
+DEST_DIR_OGG = 'pk3_ogg/'
 DEST_FILENAME = 'doom_complete.pk3'
+DEST_FILENAME_OGG = 'hulshult_ogg.pk3'
 LOG_FILENAME = 'wadsmoosh.log'
 RES_DIR = 'res/'
 DATA_TABLES_FILE = 'wadsmoosh_data.py'
 ML_ORDER_FILENAME = 'masterlevels_order_xaser.txt'
 ML_MAPINFO_FILENAME = DEST_DIR + 'mapinfo/master_levels.txt'
-MUSIC_DIR = DEST_DIR + 'music/'
 
 # forward-declare all the stuff in DATA_TABLES_FILE for clarity
 RES_FILES = []
@@ -182,10 +183,25 @@ def extract_master_levels():
                                                    patch_replace[1]))
         lump.to_file(out_filename)
 
+def rename_ogg():
+    # remove .mus file extension from Andrew Hulshult's .ogg music
+    for filename in os.listdir(DEST_DIR + 'music/'):
+        if fnmatch.fnmatch(filename, '*.ogg.mus'):
+            os.replace(DEST_DIR + 'music/' + filename, DEST_DIR_OGG + 'music/' + filename)
+            old_name = os.path.join(DEST_DIR_OGG + 'music/', filename)
+            new_name = old_name.replace('.ogg.mus', '.ogg')
+            os.rename(old_name, new_name)
+    for filename in os.listdir(DEST_DIR + 'mapinfo/'):
+        if fnmatch.fnmatch(filename, '*.ogg.txt'):
+            os.replace(DEST_DIR + 'mapinfo/' + filename, DEST_DIR_OGG + 'mapinfo/' + filename)
+            old_name = os.path.join(DEST_DIR_OGG + 'mapinfo/', filename)
+            new_name = old_name.replace('.ogg.txt', '.txt')
+            os.rename(old_name, new_name)
+
 def rename_mp3():
-    # remove .mus file extension from .mp3 music
-    for filename in os.listdir(MUSIC_DIR):
-        old_name = os.path.join(MUSIC_DIR, filename)
+    # remove .mus file extension from Sigil's .mp3 music
+    for filename in os.listdir(DEST_DIR + 'music/'):
+        old_name = os.path.join(DEST_DIR + 'music/', filename)
         new_name = old_name.replace('.mp3.mus', '.mp3')
         os.rename(old_name, new_name)
 
@@ -389,8 +405,28 @@ def get_eps(wads_found):
             eps += ['Sigil II']
     return eps
 
+def pk3_compress():
+    logg('Compressing %s...' % DEST_FILENAME)
+    pk3 = ZipFile(DEST_FILENAME, 'w', ZIP_DEFLATED)
+    for dir_name, x, filenames in os.walk(DEST_DIR):
+        for filename in filenames:
+            src_name = dir_name + '/' + filename
+            # exclude pk3/ top dir from name within archive
+            dest_name = src_name[len(DEST_DIR):]
+            pk3.write(src_name, dest_name)
+    pk3.close()
+
+def pk3_ogg_compress():
+    pk3_ogg = ZipFile(DEST_FILENAME_OGG, 'w', ZIP_DEFLATED)
+    for dir_name, x, filenames in os.walk(DEST_DIR_OGG):
+        for filename in filenames:
+            src_name = dir_name + '/' + filename
+            # exclude pk3_ogg/ top dir from name within archive
+            dest_name = src_name[len(DEST_DIR_OGG):]
+            pk3_ogg.write(src_name, dest_name)
+    pk3_ogg.close()
+
 def main():
-    start_time = time.time()
     version = open(VERSION_FILENAME).readlines()[0].strip()
     title_line = 'WadSmoosh v%s' % version
     logg(title_line + '\n' + '-' * len(title_line))
@@ -411,6 +447,16 @@ def main():
             for ext in extensions:
                 if filename.endswith(ext):
                     filename = DEST_DIR + dirname + filename
+                    if os.path.exists(filename):
+                        os.remove(filename)
+                        files_tidied += 1
+    for dirname,extensions in TIDY_DIR_OGG.items():
+        if not os.path.exists(DEST_DIR_OGG + dirname):
+            continue
+        for filename in os.listdir(DEST_DIR_OGG + dirname):
+            for ext in extensions:
+                if filename.endswith(ext):
+                    filename = DEST_DIR_OGG + dirname + filename
                     if os.path.exists(filename):
                         os.remove(filename)
                         files_tidied += 1
@@ -442,6 +488,11 @@ def main():
                     'patches', 'sounds', 'sprites', 'zscript']:
         if not os.path.exists(DEST_DIR + dirname):
             os.mkdir(DEST_DIR + dirname)
+    if not os.path.exists(DEST_DIR_OGG):
+        os.mkdir(DEST_DIR_OGG)
+    for dirname in ['music', 'mapinfo']:
+        if not os.path.exists(DEST_DIR_OGG + dirname):
+            os.mkdir(DEST_DIR_OGG + dirname)
     # if final doom present but not doom1/2, extract doom2 resources from it
     if get_wad_filename('tnt') and not get_wad_filename('doom2'):
         WAD_LUMP_LISTS['tnt'] += DOOM2_LUMPS
@@ -484,9 +535,11 @@ def main():
     # copy pre-authored lumps eg mapinfo
     if should_extract:
         copy_resources()
-    # rename file extensions of mp3 music
+    # rename file extensions of Andrew Hulshult's ogg music
+    rename_ogg()
+    # rename file extensions of Sigil mp3 music
     rename_mp3()
-    # enable mp3 music options
+    # enable Sigil mp3 music options
     if get_wad_filename('sigil_shreds') and get_wad_filename('sigil'):
         enable_sigil_shreds()
     if get_wad_filename('sigil2_mp3') and get_wad_filename('sigil2'):
@@ -501,19 +554,19 @@ def main():
         logg('Copying %s' % genmidi_filename)
         copyfile(RES_DIR + genmidi_filename, DEST_DIR + genmidi_filename)
     # create pk3
-    logg('Compressing %s...' % DEST_FILENAME)
-    pk3 = ZipFile(DEST_FILENAME, 'w', ZIP_DEFLATED)
-    for dir_name, x, filenames in os.walk(DEST_DIR):
-        for filename in filenames:
-            src_name = dir_name + '/' + filename
-            # exclude pk3/ top dir from name within archive
-            dest_name = src_name[len(DEST_DIR):]
-            pk3.write(src_name, dest_name)
-    pk3.close()
-    logg('Done!')
+    start_time = time.time()
+    pk3_compress()
     elapsed_time = time.time() - start_time
     ipk3_size =  os.path.getsize(DEST_FILENAME) / 1000000
     logg('Generated %s (%.1f MB) with %s maps in %s episodes in %.2f seconds.' % (DEST_FILENAME, ipk3_size, num_maps, num_eps, elapsed_time))
+    # create pk3_ogg
+    if get_wad_filename('extras'):
+        logg('Compressing %s...' % DEST_FILENAME_OGG)
+        pk3_ogg_compress()
+        elapsed_time_ogg = time.time() - start_time - elapsed_time
+        ipk3_ogg_size =  os.path.getsize(DEST_FILENAME_OGG) / 1000000
+        logg('Generated %s (%.1f MB) in %.2f seconds.' % (DEST_FILENAME_OGG, ipk3_ogg_size, elapsed_time_ogg))
+    logg('Done!')
     if num_errors > 0:
         logg('%s errors found, see %s for details.' % (num_errors, LOG_FILENAME))
     input_func('Press Enter to exit.\n')

@@ -197,7 +197,7 @@ defstruct = [
     [MarkerGroup, 'ztextures', Graphic, 'TX'],
     [HeaderGroup, 'maps',   Lump, _maptail],
     [HeaderGroup, 'glmaps', Lump, _glmaptail],
-    [NameGroup,   'music',    Music, ['D_*']],
+    [NameGroup,   'music',    Music, ['D_*', 'H_*']],
     [NameGroup,   'sounds',   Sound, ['DS*', 'DP*']],
     [TxdefGroup,  'txdefs',   Lump,  ['TEXTURE?', 'PNAMES']],
     [NameGroup,   'graphics', Graphic, _graphics],

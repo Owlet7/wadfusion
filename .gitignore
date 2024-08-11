@@ -1,8 +1,10 @@
 source_wads
 pk3
+pk3_ogg
 wadsmoosh.log
 build
 dist
 *.pyc
 doom_complete.pk3
+hulshult_ogg.pk3
 res/.~lock.language.csv#

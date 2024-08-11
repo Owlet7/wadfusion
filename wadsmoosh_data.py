@@ -32,11 +32,13 @@ RES_FILES = [
     'graphics/NWILV05.lmp', 'graphics/NWILV06.lmp',
     'graphics/NWILV07.lmp', 'graphics/NWILV08.lmp',
     'graphics/PWILV01.lmp',
-    'mapinfo/episodes.txt', 'mapinfo/doom1_levels.txt',
-    'mapinfo/doom2_levels.txt', 'mapinfo/xbox_levels.txt',
-    'mapinfo/master_levels.txt', 'mapinfo/nerve_levels.txt',
+    'mapinfo/episodes.txt',
+    'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
+    'mapinfo/xbox_levels.txt', 'mapinfo/nerve_levels.txt',
     'mapinfo/tnt_levels.txt', 'mapinfo/plutonia_levels.txt',
     'mapinfo/sigil_levels.txt', 'mapinfo/sigil2_levels.txt',
+    'mapinfo/doom1_levels.ogg.txt', 'mapinfo/doom2_levels.ogg.txt',
+    'mapinfo/tnt_levels.ogg.txt', 'mapinfo/plutonia_levels.ogg.txt',
     'menudef.txt', 'cvarinfo.txt', 'zscript.zs',
     'zscript/ws_handler.zs', 'zscript/ws_music.zs',
     'zscript/ws_xbox.zs'
@@ -54,6 +56,10 @@ TIDY_DIR_EXTENSIONS = {
     'maps/': ['wad'],
     'zscript/': ['zs'],
     './': ['lmp', 'txt', 'zs']
+}
+TIDY_DIR_OGG = {
+    'music/': ['ogg'],
+    'mapinfo/': ['txt']
 }
 
 # list of files we can extract from
@@ -101,7 +107,7 @@ WAD_LUMP_LISTS = {
     'tntu': ['graphics_tntu'],
     'plutoniau': ['graphics_plutoniau'],
     # "found secret" sound from unity and kex ports
-    'extras': ['sounds_extras']
+    'extras': ['sounds_extras', 'music_extras']
 }
 
 # prefixes for filenames of maps extracted from IWADs
