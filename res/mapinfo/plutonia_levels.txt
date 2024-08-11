@@ -2,396 +2,310 @@
 
 defaultmap
 {
+	SuckTime = 1
 	ExitPic = "PLUINTER"
 	InterMusic = "P_DM2INT"
+	NoJump
+	NoCrouch
 }
 
-map PL_MAP01 lookup "PHUSTR_1"
+// Episode 1 Part 1
+
+adddefaultmap
 {
-	next = "PL_MAP02"
-	secretnext = "PL_MAP02"
-	sky1 = "PSKY1"
-	cluster = 18
-	titlepatch = "PWILV00"
-	par = 30
-	music = "P_RUNNIN"
+	Cluster = 18
+	Sky1 = "PSKY1"
+}
+
+map PL_MAP01 "$PHUSTR_1"
+{
+	Next = "PL_MAP02"
+	TitlePatch = "PWILV00"
+	Music = "P_RUNNIN"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
-map PL_MAP02 lookup "PHUSTR_2"
+map PL_MAP02 "$PHUSTR_2"
 {
-	next = "PL_MAP03"
-	secretnext = "PL_MAP03"
-	sky1 = "PSKY1"
-	cluster = 18
-	titlepatch = "PWILV01"
-	par = 90
-	music = "P_STALKS"
+	Next = "PL_MAP03"
+	TitlePatch = "PWILV01"
+	Music = "P_STALKS"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP03 lookup "PHUSTR_3"
+map PL_MAP03 "$PHUSTR_3"
 {
-	next = "PL_MAP04"
-	secretnext = "PL_MAP04"
-	sky1 = "PSKY1"
-	cluster = 18
-	titlepatch = "PWILV02"
-	par = 120
-	music = "P_COUNTD"
+	Next = "PL_MAP04"
+	TitlePatch = "PWILV02"
+	Music = "P_COUNTD"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
-map PL_MAP04 lookup "PHUSTR_4"
+map PL_MAP04 "$PHUSTR_4"
 {
-	next = "PL_MAP05"
-	secretnext = "PL_MAP05"
-	sky1 = "PSKY1"
-	cluster = 18
-	titlepatch = "PWILV03"
-	par = 120
-	music = "P_BETWEE"
+	Next = "PL_MAP05"
+	TitlePatch = "PWILV03"
+	Music = "P_BETWEE"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP05 lookup "PHUSTR_5"
+map PL_MAP05 "$PHUSTR_5"
 {
-	next = "PL_MAP06"
-	secretnext = "PL_MAP06"
-	sky1 = "PSKY1"
-	cluster = 18
-	titlepatch = "PWILV04"
-	par = 90
-	music = "P_DOOM"
+	Next = "PL_MAP06"
+	TitlePatch = "PWILV04"
+	Music = "P_DOOM"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
-map PL_MAP06 lookup "PHUSTR_6"
+map PL_MAP06 "$PHUSTR_6"
 {
-	next = "PL_MAP07"
-	secretnext = "PL_MAP07"
-	sky1 = "PSKY1"
-	cluster = 18
-	titlepatch = "PWILV05"
-	par = 150
-	music = "P_THE_DA"
+	Next = "PL_MAP07"
+	TitlePatch = "PWILV05"
+	Music = "P_THE_DA"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP07 lookup "PHUSTR_7"
+// Episode 1 Part 2
+
+adddefaultmap
 {
-	next = "PL_MAP08"
-	secretnext = "PL_MAP08"
-	sky1 = "PSKY1"
-	cluster = 19
-	titlepatch = "PWILV06"
-	par = 120
-	map07special
-	music = "P_SHAWN"
+	Cluster = 19
+}
+
+map PL_MAP07 "$PHUSTR_7"
+{
+	Next = "PL_MAP08"
+	TitlePatch = "PWILV06"
+	Music = "P_SHAWN"
+	Map07Special
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP08 lookup "PHUSTR_8"
+map PL_MAP08 "$PHUSTR_8"
 {
-	next = "PL_MAP09"
-	secretnext = "PL_MAP09"
-	sky1 = "PSKY1"
-	cluster = 19
-	titlepatch = "PWILV07"
-	par = 120
-	music = "P_DDTBLU"
+	Next = "PL_MAP09"
+	TitlePatch = "PWILV07"
+	Music = "P_DDTBLU"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP09 lookup "PHUSTR_9"
+map PL_MAP09 "$PHUSTR_9"
 {
-	next = "PL_MAP10"
-	secretnext = "PL_MAP10"
-	sky1 = "PSKY1"
-	cluster = 19
-	titlepatch = "PWILV08"
-	par = 270
-	music = "P_IN_CIT"
+	Next = "PL_MAP10"
+	TitlePatch = "PWILV08"
+	Music = "P_IN_CIT"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
-map PL_MAP10 lookup "PHUSTR_10"
+map PL_MAP10 "$PHUSTR_10"
 {
-	next = "PL_MAP11"
-	secretnext = "PL_MAP11"
-	sky1 = "PSKY1"
-	cluster = 19
-	titlepatch = "PWILV09"
-	par = 90
-	music = "P_DEAD"
+	Next = "PL_MAP11"
+	TitlePatch = "PWILV09"
+	Music = "P_DEAD"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP11 lookup "PHUSTR_11"
+map PL_MAP11 "$PHUSTR_11"
 {
-	next = "PL_MAP12"
-	secretnext = "PL_MAP12"
-	sky1 = "PSKY1"
-	cluster = 19
-	titlepatch = "PWILV10"
-	par = 210
-	music = "P_STLKS2"
+	Next = "PL_MAP12"
+	TitlePatch = "PWILV10"
+	Music = "P_STLKS2"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP12 lookup "PHUSTR_12"
+// Episode 2
+
+adddefaultmap
 {
-	next = "PL_MAP13"
-	secretnext = "PL_MAP13"
-	sky1 = "PSKY2"
-	cluster = 20
-	titlepatch = "PWILV11"
-	par = 150
-	music = "P_THEDA2"
+	Cluster = 20
+	Sky1 = "PSKY2"
+}
+
+map PL_MAP12 "$PHUSTR_12"
+{
+	Next = "PL_MAP13"
+	TitlePatch = "PWILV11"
+	Music = "P_THEDA2"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
-map PL_MAP13 lookup "PHUSTR_13"
+map PL_MAP13 "$PHUSTR_13"
 {
-	next = "PL_MAP14"
-	secretnext = "PL_MAP14"
-	sky1 = "PSKY2"
-	cluster = 20
-	titlepatch = "PWILV12"
-	par = 150
-	music = "P_DOOM2"
+	Next = "PL_MAP14"
+	TitlePatch = "PWILV12"
+	Music = "P_DOOM2"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP14 lookup "PHUSTR_14"
+map PL_MAP14 "$PHUSTR_14"
 {
-	next = "PL_MAP15"
-	secretnext = "PL_MAP15"
-	sky1 = "PSKY2"
-	cluster = 20
-	titlepatch = "PWILV13"
-	par = 150
-	music = "P_DDTBL2"
+	Next = "PL_MAP15"
+	TitlePatch = "PWILV13"
+	Music = "P_DDTBL2"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP15 lookup "PHUSTR_15"
+map PL_MAP15 "$PHUSTR_15"
 {
-	next = "PL_MAP16"
-	secretnext = "PL_MAP31"
-	sky1 = "PSKY2"
-	cluster = 20
-	titlepatch = "PWILV14"
-	par = 210
-	music = "P_RUNNI2"
+	Next = "PL_MAP16"
+	SecretNext = "PL_MAP31"
+	TitlePatch = "PWILV14"
+	Music = "P_RUNNI2"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
-map PL_MAP16 lookup "PHUSTR_16"
+map PL_MAP16 "$PHUSTR_16"
 {
-	next = "PL_MAP17"
-	secretnext = "PL_MAP17"
-	sky1 = "PSKY2"
-	cluster = 20
-	titlepatch = "PWILV15"
-	par = 150
-	music = "P_DEAD2"
+	Next = "PL_MAP17"
+	TitlePatch = "PWILV15"
+	Music = "P_DEAD2"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
-map PL_MAP17 lookup "PHUSTR_17"
+map PL_MAP17 "$PHUSTR_17"
 {
-	next = "PL_MAP18"
-	secretnext = "PL_MAP18"
-	sky1 = "PSKY2"
-	cluster = 20
-	titlepatch = "PWILV16"
-	par = 420
-	music = "P_STLKS3"
+	Next = "PL_MAP18"
+	TitlePatch = "PWILV16"
+	Music = "P_STLKS3"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP18 lookup "PHUSTR_18"
+map PL_MAP18 "$PHUSTR_18"
 {
-	next = "PL_MAP19"
-	secretnext = "PL_MAP19"
-	sky1 = "PSKY2"
-	cluster = 20
-	titlepatch = "PWILV17"
-	par = 150
-	music = "P_ROMERO"
+	Next = "PL_MAP19"
+	TitlePatch = "PWILV17"
+	Music = "P_ROMERO"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
-map PL_MAP19 lookup "PHUSTR_19"
+map PL_MAP19 "$PHUSTR_19"
 {
-	next = "PL_MAP20"
-	secretnext = "PL_MAP20"
-	sky1 = "PSKY2"
-	cluster = 20
-	titlepatch = "PWILV18"
-	par = 210
-	music = "P_SHAWN2"
+	Next = "PL_MAP20"
+	TitlePatch = "PWILV18"
+	Music = "P_SHAWN2"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
-map PL_MAP20 lookup "PHUSTR_20"
+map PL_MAP20 "$PHUSTR_20"
 {
-	next = "PL_MAP21"
-	secretnext = "PL_MAP21"
-	sky1 = "PSKY2"
-	cluster = 20
-	titlepatch = "PWILV19"
-	par = 150
-	music = "P_MESSAG"
+	Next = "PL_MAP21"
+	TitlePatch = "PWILV19"
+	Music = "P_MESSAG"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP21 lookup "PHUSTR_21"
+// Episode 3
+
+adddefaultmap
 {
-	next = "PL_MAP22"
-	secretnext = "PL_MAP22"
-	sky1 = "PSKY3"
-	cluster = 21
-	titlepatch = "PWILV20"
-	par = 240
-	music = "P_COUNT2"
+	Cluster = 21
+	Sky1 = "PSKY3"
+}
+
+map PL_MAP21 "$PHUSTR_21"
+{
+	Next = "PL_MAP22"
+	TitlePatch = "PWILV20"
+	Music = "P_COUNT2"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
-map PL_MAP22 lookup "PHUSTR_22"
+map PL_MAP22 "$PHUSTR_22"
 {
-	next = "PL_MAP23"
-	secretnext = "PL_MAP23"
-	sky1 = "PSKY3"
-	cluster = 21
-	titlepatch = "PWILV21"
-	par = 150
-	music = "P_DDTBL3"
+	Next = "PL_MAP23"
+	TitlePatch = "PWILV21"
+	Music = "P_DDTBL3"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP23 lookup "PHUSTR_23"
+map PL_MAP23 "$PHUSTR_23"
 {
-	next = "PL_MAP24"
-	secretnext = "PL_MAP24"
-	sky1 = "PSKY3"
-	cluster = 21
-	titlepatch = "PWILV22"
-	par = 180
-	music = "P_AMPIE"
+	Next = "PL_MAP24"
+	TitlePatch = "PWILV22"
+	Music = "P_AMPIE"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
-map PL_MAP24 lookup "PHUSTR_24"
+map PL_MAP24 "$PHUSTR_24"
 {
-	next = "PL_MAP25"
-	secretnext = "PL_MAP25"
-	sky1 = "PSKY3"
-	cluster = 21
-	titlepatch = "PWILV23"
-	par = 150
-	music = "P_THEDA3"
+	Next = "PL_MAP25"
+	TitlePatch = "PWILV23"
+	Music = "P_THEDA3"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
-map PL_MAP25 lookup "PHUSTR_25"
+map PL_MAP25 "$PHUSTR_25"
 {
-	next = "PL_MAP26"
-	secretnext = "PL_MAP26"
-	sky1 = "PSKY3"
-	cluster = 21
-	titlepatch = "PWILV24"
-	par = 150
-	music = "P_ADRIAN"
+	Next = "PL_MAP26"
+	TitlePatch = "PWILV24"
+	Music = "P_ADRIAN"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP26 lookup "PHUSTR_26"
+map PL_MAP26 "$PHUSTR_26"
 {
-	next = "PL_MAP27"
-	secretnext = "PL_MAP27"
-	sky1 = "PSKY3"
-	cluster = 21
-	titlepatch = "PWILV25"
-	par = 300
-	music = "P_MESSG2"
+	Next = "PL_MAP27"
+	TitlePatch = "PWILV25"
+	Music = "P_MESSG2"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP27 lookup "PHUSTR_27"
+map PL_MAP27 "$PHUSTR_27"
 {
-	next = "PL_MAP28"
-	secretnext = "PL_MAP28"
-	sky1 = "PSKY3"
-	cluster = 21
-	titlepatch = "PWILV26"
-	par = 330
-	music = "P_ROMER2"
+	Next = "PL_MAP28"
+	TitlePatch = "PWILV26"
+	Music = "P_ROMER2"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
-map PL_MAP28 lookup "PHUSTR_28"
+map PL_MAP28 "$PHUSTR_28"
 {
-	next = "PL_MAP29"
-	secretnext = "PL_MAP29"
-	sky1 = "PSKY3"
-	cluster = 21
-	titlepatch = "PWILV27"
-	par = 420
-	music = "P_TENSE"
+	Next = "PL_MAP29"
+	TitlePatch = "PWILV27"
+	Music = "P_TENSE"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP29 lookup "PHUSTR_29"
+map PL_MAP29 "$PHUSTR_29"
 {
-	next = "PL_MAP30"
-	secretnext = "PL_MAP30"
-	sky1 = "PSKY3"
-	cluster = 21
-	titlepatch = "PWILV28"
-	par = 300
-	music = "P_SHAWN3"
+	Next = "PL_MAP30"
+	TitlePatch = "PWILV28"
+	Music = "P_SHAWN3"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
-map PL_MAP30 lookup "PHUSTR_30"
+map PL_MAP30 "$PHUSTR_30"
 {
-	sky1 = "PSKY3"
-	cluster = 21
-	titlepatch = "PWILV29"
-	par = 180
-	allowmonstertelefrags
-	music = "P_OPENIN"
-	Author = "$WS_AU_MILO_CASALI"
-	next = endgame {
-		pic = "PLUBOSS"
-		music = "P_THE_DA"
-		cast
+	Next = EndGame
+	{
+		Pic = "PLUBOSS"
+		Music = "P_THE_DA"
+		Cast
 	}
+	TitlePatch = "PWILV29"
+	Music = "P_OPENIN"
+	AllowMonsterTelefrags
+	Author = "$WS_AU_MILO_CASALI"
 }
 
-map PL_MAP31 lookup "PHUSTR_31"
+// Secret maps
+
+map PL_MAP31 "$PHUSTR_31"
 {
-	next = "PL_MAP16"
-	secretnext = "PL_MAP32"
-	sky1 = "PSKY3"
-	cluster = 22
-	titlepatch = "PWILV30"
-	par = 120
-	music = "P_EVIL"
+	Next = "PL_MAP16"
+	SecretNext = "PL_MAP32"
+	Cluster = 22
+	TitlePatch = "PWILV30"
+	Music = "P_EVIL"
 	Author = "$WS_AU_DARIO_CASALI"
 }
 
-map PL_MAP32 lookup "PHUSTR_32"
+map PL_MAP32 "$PHUSTR_32"
 {
-	next = "PL_MAP16"
-	secretnext = "PL_MAP16"
-	sky1 = "PSKY3"
-	cluster = 23
-	titlepatch = "PWILV31"
-	par = 30
-	music = "P_ULTIMA"
+	Next = "PL_MAP16"
+	Cluster = 23
+	TitlePatch = "PWILV31"
+	Music = "P_ULTIMA"
 	Author = "$WS_AU_MILO_CASALI"
 }
 
@@ -399,52 +313,52 @@ map PL_MAP32 lookup "PHUSTR_32"
 
 cluster 18
 {
-	flat = "$BGFLAT06"
-	music = "P_READ_M"
-	exittext = lookup, "P1TEXT"
+	ExitText = "$P1TEXT"
+	Music = "P_READ_M"
+	Flat = "$BGFLAT06"
 }
 
 // Plutonia second cluster (up thru level 11)
 
 cluster 19
 {
-	flat = "$BGFLAT11"
-	music = "P_READ_M"
-	exittext = lookup, "P2TEXT"
+	ExitText = "$P2TEXT"
+	Music = "P_READ_M"
+	Flat = "$BGFLAT11"
 }
 
 // Plutonia third cluster (up thru level 20)
 
 cluster 20
 {
-	flat = "$BGFLAT20"
-	music = "P_READ_M"
-	exittext = lookup, "P3TEXT"
+	ExitText = "$P3TEXT"
+	Music = "P_READ_M"
+	Flat = "$BGFLAT20"
 }
 
 // Plutonia fourth cluster (up thru level 30)
 
 cluster 21
 {
-	flat = "$BGFLAT30"
-	music = "P_READ_M"
-	exittext = lookup, "P4TEXT"
+	ExitText = "$P4TEXT"
+	Music = "P_READ_M"
+	Flat = "$BGFLAT30"
 }
 
-// Plutonia DOOM II fifth cluster (level 31)
+// Plutonia fifth cluster (level 31)
 
 cluster 22
 {
-	flat = "$BGFLAT15"
-	music = "P_READ_M"
-	entertext = lookup, "P5TEXT"
+	EnterText = "$P5TEXT"
+	Music = "P_READ_M"
+	Flat = "$BGFLAT15"
 }
 
 // Plutonia sixth cluster (level 32)
 
 cluster 23
 {
-	flat = "$BGFLAT31"
-	music = "P_READ_M"
-	entertext = lookup, "P6TEXT"
+	EnterText = "$P6TEXT"
+	Music = "P_READ_M"
+	Flat = "$BGFLAT31"
 }

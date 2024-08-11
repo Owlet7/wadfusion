@@ -10,11 +10,36 @@ RES_FILES = [
     'graphics/M_HELL.lmp', 'graphics/M_NOREST.lmp',
     'graphics/M_MASTER.lmp', 'graphics/M_TNT.lmp',
     'graphics/M_PLUT.lmp',
-    'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
+    'graphics/WILV39.lmp', 'graphics/WILV50.lmp',
+    'graphics/WILV51.lmp', 'graphics/WILV52.lmp',
+    'graphics/WILV53.lmp', 'graphics/WILV54.lmp',
+    'graphics/WILV55.lmp', 'graphics/WILV56.lmp',
+    'graphics/WILV57.lmp', 'graphics/WILV58.lmp',
+    'graphics/CWILV00.lmp', 'graphics/CWILV32.lmp',
+    'graphics/MWILV00.lmp', 'graphics/MWILV01.lmp',
+    'graphics/MWILV02.lmp', 'graphics/MWILV03.lmp',
+    'graphics/MWILV04.lmp', 'graphics/MWILV05.lmp',
+    'graphics/MWILV06.lmp', 'graphics/MWILV07.lmp',
+    'graphics/MWILV08.lmp', 'graphics/MWILV09.lmp',
+    'graphics/MWILV10.lmp', 'graphics/MWILV11.lmp',
+    'graphics/MWILV12.lmp', 'graphics/MWILV13.lmp',
+    'graphics/MWILV14.lmp', 'graphics/MWILV15.lmp',
+    'graphics/MWILV16.lmp', 'graphics/MWILV17.lmp',
+    'graphics/MWILV18.lmp', 'graphics/MWILV19.lmp',
+    'graphics/MWILV20.lmp', 'graphics/NWILV00.lmp',
+    'graphics/NWILV01.lmp', 'graphics/NWILV02.lmp',
+    'graphics/NWILV03.lmp', 'graphics/NWILV04.lmp',
+    'graphics/NWILV05.lmp', 'graphics/NWILV06.lmp',
+    'graphics/NWILV07.lmp', 'graphics/NWILV08.lmp',
+    'graphics/PWILV01.lmp',
+    'mapinfo/episodes.txt', 'mapinfo/doom1_levels.txt',
+    'mapinfo/doom2_levels.txt', 'mapinfo/xbox_levels.txt',
+    'mapinfo/master_levels.txt', 'mapinfo/nerve_levels.txt',
     'mapinfo/tnt_levels.txt', 'mapinfo/plutonia_levels.txt',
-    'mapinfo/masterlevels.txt', 'mapinfo/sigil_levels.txt',
-    'mapinfo/sigil2_levels.txt',
-    'menudef.txt', 'cvarinfo.txt', 'zscript.txt'
+    'mapinfo/sigil_levels.txt', 'mapinfo/sigil2_levels.txt',
+    'menudef.txt', 'cvarinfo.txt', 'zscript.zs',
+    'zscript/ws_handler.zs', 'zscript/ws_music.zs',
+    'zscript/ws_xbox.zs'
 ]
 
 # files within pk3 dir that will be removed before a new run
@@ -27,7 +52,8 @@ TIDY_DIR_EXTENSIONS = {
     'music/': ['mus', 'mp3'],
     'mapinfo/': ['txt'],
     'maps/': ['wad'],
-    './': ['lmp', 'txt']
+    'zscript/': ['zs'],
+    './': ['lmp', 'txt', 'zs']
 }
 
 # list of files we can extract from
@@ -68,14 +94,14 @@ WAD_LUMP_LISTS = {
     'sigil_shreds': ['music_sigil_shreds'],
     'sigil2': ['graphics_sigil2', 'music_sigil2', 'patches_sigil2', 'data_sigil2', 'flats_sigil2'],
     'sigil2_mp3': ['music_sigil2_shreds'],
-    # widescreen assets from unity ports
+    # widescreen assets from unity and kex ports
     'doomu': ['graphics_doomu'],
     'doom2u': ['graphics_doom2u'],
     'nerveu': ['graphics_nerveu'],
     'tntu': ['graphics_tntu'],
     'plutoniau': ['graphics_plutoniau'],
-    # "found secret" sound from unity port
-    'extras': ['sounds_unity']
+    # "found secret" sound from unity and kex ports
+    'extras': ['sounds_extras']
 }
 
 # prefixes for filenames of maps extracted from IWADs
@@ -209,6 +235,3 @@ SIGIL_ALT_FILENAMES = ['sigil_v1_0', 'sigil_v1_1', 'sigil_v1_2', 'sigil_v1_21']
 SIGIL2_ALT_FILENAMES = ['sigil_ii_v1_0']
 # sigil2 version with MP3 music (no sigil_shreds equivalent; MP3 music just an alternate wad)
 SIGIL2_MP3_ALT_FILENAMES = ['sigil_ii_mp3_v1_0']
-
-# lump whose presence distinguishes BFG & Unity vs original doom2.wad
-BFG_ONLY_LUMP = 'DMENUPIC'

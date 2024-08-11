@@ -1,98 +1,105 @@
+// Sigil maps
 
 defaultmap
 {
+	Cluster = 26
+	Sky1 = "SKY6"
+	SuckTime = 1
 	// to allow switching between the midi and mp3 soundtracks,
 	// the music is intentionally set to something invalid,
 	// instead to be started through zscript
 	Music = NULL
 	InterMusic = NULL
+	EnterPic = "SIGILIN2"
+	ExitPic = "SIGILIN2"
 	BorderTexture = "FLOOR7_2"
-	nocrouch
-	nojump
-	sky1 = "SKY6"
-	cluster = 26
-	enterpic = "SIGILIN2"
-	exitpic = "SIGILIN2"
+	NoJump
+	NoCrouch
+	NoFreelook
 	Author = "$WS_AU_ROMERO"
 }
 
+// Sigil 2
+
 map E6M1 "$HUSTR_E6M1"
 {
-	levelnum = 51
-	titlepatch = "WILV50"
-	next = "E6M2"
-	par = 480
+	LevelNum = 51
+	Next = "E6M2"
+	TitlePatch = "WILV50"
+	Par = 480
 }
 
 map E6M2 "$HUSTR_E6M2"
 {
-	levelnum = 52
-	titlepatch = "WILV51"
-	next = "E6M3"
-	par = 300
+	LevelNum = 52
+	Next = "E6M3"
+	TitlePatch = "WILV51"
+	Par = 300
 }
 
 map E6M3 "$HUSTR_E6M3"
 {
-	levelnum = 53
-	titlepatch = "WILV52"
-	next = "E6M4"
-	secretnext = "E6M9"
-	par = 240
+	LevelNum = 53
+	Next = "E6M4"
+	SecretNext = "E6M9"
+	TitlePatch = "WILV52"
+	Par = 240
 }
 
 map E6M4 "$HUSTR_E6M4"
 {
-	levelnum = 54
-	titlepatch = "WILV53"
-	next = "E6M5"
-	par = 420
+	LevelNum = 54
+	Next = "E6M5"
+	TitlePatch = "WILV53"
+	Par = 420
 }
 
 map E6M5 "$HUSTR_E6M5"
 {
-	levelnum = 55
-	titlepatch = "WILV54"
-	next = "E6M6"
-	par = 510
+	LevelNum = 55
+	Next = "E6M6"
+	TitlePatch = "WILV54"
+	Par = 510
 }
 
 map E6M6 "$HUSTR_E6M6"
 {
-	levelnum = 56
-	titlepatch = "WILV55"
-	next = "E6M7"
-	par = 840
+	LevelNum = 56
+	Next = "E6M7"
+	TitlePatch = "WILV55"
+	Par = 840
 }
 
 map E6M7 "$HUSTR_E6M7"
 {
-	levelnum = 57
-	titlepatch = "WILV56"
-	next = "E6M8"
-	par = 960
+	LevelNum = 57
+	Next = "E6M8"
+	TitlePatch = "WILV56"
+	Par = 960
 }
 
 map E6M8 "$HUSTR_E6M8"
 {
-	levelnum = 58
-	titlepatch = "WILV57"
-	next = EndPic, "S2CREDIT"
-	nosoundclipping
-	par = 390
+	LevelNum = 58
+	Next = EndPic, "SIGILEN2"
+	TitlePatch = "WILV57"
+	Par = 390
+	NoSoundClipping
 }
 
 map E6M9 "$HUSTR_E6M9"
 {
-	levelnum = 59
-	titlepatch = "WILV58"
-	next = "E6M4"
-	par = 450
+	LevelNum = 59
+	Next = "E6M4"
+	TitlePatch = "WILV58"
+	Par = 450
 }
+
+// Sigil 2 cluster
 
 cluster 26
 {
-	flat = "FLOOR7_2"
-	music = "$MUSIC_VICTOR"
-	exittext = lookup, "E6TEXT"
+	Flat = "FLOOR7_2"
+	Music = "$MUSIC_VICTOR"
+	ExitText = "$E6TEXT"
 }

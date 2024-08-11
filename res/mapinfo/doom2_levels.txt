@@ -1,380 +1,337 @@
+// Doom 2 maps
 
 defaultmap
 {
+	SuckTime = 1
+	NoJump
+	NoCrouch
 }
 
-map MAP01 lookup "HUSTR_1"
+// Episode 1 Part 1
+
+adddefaultmap
 {
-	next = "MAP02"
-	secretnext = "MAP02"
-	titlepatch = "CWILV00"
-	sky1 = "RSKY1"
-	cluster = 5
-	par = 30
-	music = "$MUSIC_RUNNIN"
+	Cluster = 5
+	Sky1 = "RSKY1"
+}
+
+map MAP01 "$HUSTR_1"
+{
+	Next = "MAP02"
+	TitlePatch = "CWILV00"
+	Par = 30
+	Music = "$MUSIC_RUNNIN"
 	Author = "$WS_AU_PETERSEN"
 }
 
-map MAP02 lookup "HUSTR_2"
+map MAP02 "$HUSTR_2"
 {
-	next = "MAP03"
-	secretnext = "MAP33"
-	titlepatch = "CWILV01"
-	sky1 = "RSKY1"
-	cluster = 5
-	par = 90
-	music = "$MUSIC_STALKS"
+	Next = "MAP03"
+	SecretNext = "MAP33"
+	TitlePatch = "CWILV01"
+	Par = 90
+	Music = "$MUSIC_STALKS"
 	Author = "$WS_AU_MCGEE"
 }
 
-map MAP33 lookup "HUSTR_33"
+map MAP03 "$HUSTR_3"
 {
-	next = "MAP03"
-	secretnext = "MAP03"
-	titlepatch = "CWILV32"
-	sky1 = "RSKY1"
-	cluster = 5
-	music = "D_READ_M"
-	par = 120
-	Author = "$WS_AU_BUKOWSKI"
-}
-
-map MAP03 lookup "HUSTR_3"
-{
-	next = "MAP04"
-	secretnext = "MAP04"
-	titlepatch = "CWILV02"
-	sky1 = "RSKY1"
-	cluster = 5
-	par = 120
-	music = "$MUSIC_COUNTD"
+	Next = "MAP04"
+	TitlePatch = "CWILV02"
+	Par = 120
+	Music = "$MUSIC_COUNTD"
 	Author = "$WS_AU_MCGEE"
 }
 
-map MAP04 lookup "HUSTR_4"
+map MAP04 "$HUSTR_4"
 {
-	next = "MAP05"
-	secretnext = "MAP05"
-	titlepatch = "CWILV03"
-	sky1 = "RSKY1"
-	cluster = 5
-	par = 120
-	music = "$MUSIC_BETWEE"
+	Next = "MAP05"
+	TitlePatch = "CWILV03"
+	Par = 120
+	Music = "$MUSIC_BETWEE"
 	Author = "$WS_AU_MCGEE"
 }
 
-map MAP05 lookup "HUSTR_5"
+map MAP05 "$HUSTR_5"
 {
-	next = "MAP06"
-	secretnext = "MAP06"
-	titlepatch = "CWILV04"
-	sky1 = "RSKY1"
-	cluster = 5
-	par = 90
-	music = "$MUSIC_DOOM"
+	Next = "MAP06"
+	TitlePatch = "CWILV04"
+	Par = 90
+	Music = "$MUSIC_DOOM"
 	Author = "$WS_AU_MCGEE"
 }
 
-map MAP06 lookup "HUSTR_6"
+map MAP06 "$HUSTR_6"
 {
-	next = "MAP07"
-	secretnext = "MAP07"
-	titlepatch = "CWILV05"
-	sky1 = "RSKY1"
-	cluster = 5
-	par = 150
-	sucktime = 1
-	music = "$MUSIC_THE_DA"
+	Next = "MAP07"
+	TitlePatch = "CWILV05"
+	Par = 150
+	Music = "$MUSIC_THE_DA"
 	Author = "$WS_AU_MCGEE"
 }
 
-map MAP07 lookup "HUSTR_7"
+// Episode 1 Part 2
+
+adddefaultmap
 {
-	next = "MAP08"
-	secretnext = "MAP08"
-	titlepatch = "CWILV06"
-	sky1 = "RSKY1"
-	cluster = 6
-	par = 120
-	map07special
-	music = "$MUSIC_SHAWN"
+	Cluster = 6
+}
+
+map MAP07 "$HUSTR_7"
+{
+	Next = "MAP08"
+	TitlePatch = "CWILV06"
+	Par = 120
+	Music = "$MUSIC_SHAWN"
+	Map07Special
 	Author = "$WS_AU_MCGEE_PETERSEN"
 }
 
-map MAP08 lookup "HUSTR_8"
+map MAP08 "$HUSTR_8"
 {
-	next = "MAP09"
-	secretnext = "MAP09"
-	titlepatch = "CWILV07"
-	sky1 = "RSKY1"
-	cluster = 6
-	par = 120
-	music = "$MUSIC_DDTBLU"
+	Next = "MAP09"
+	TitlePatch = "CWILV07"
+	Par = 120
+	Music = "$MUSIC_DDTBLU"
 	Author = "$WS_AU_PETERSEN"
 }
 
-map MAP09 lookup "HUSTR_9"
+map MAP09 "$HUSTR_9"
 {
-	next = "MAP10"
-	secretnext = "MAP10"
-	titlepatch = "CWILV08"
-	sky1 = "RSKY1"
-	cluster = 6
-	par = 270
-	music = "$MUSIC_IN_CIT"
+	Next = "MAP10"
+	TitlePatch = "CWILV08"
+	Par = 270
+	Music = "$MUSIC_IN_CIT"
 	Author = "$WS_AU_PETERSEN"
 }
 
-map MAP10 lookup "HUSTR_10"
+map MAP10 "$HUSTR_10"
 {
-	next = "MAP11"
-	secretnext = "MAP11"
-	titlepatch = "CWILV09"
-	sky1 = "RSKY1"
-	cluster = 6
-	par = 90
-	music = "$MUSIC_DEAD"
+	Next = "MAP11"
+	TitlePatch = "CWILV09"
+	Par = 90
+	Music = "$MUSIC_DEAD"
 	Author = "$WS_AU_PETERSEN_HALL"
 }
 
-map MAP11 lookup "HUSTR_11"
+map MAP11 "$HUSTR_11"
 {
-	next = "MAP12"
-	secretnext = "MAP12"
-	titlepatch = "CWILV10"
-	sky1 = "RSKY1"
-	cluster = 6
-	par = 210
-	music = "$MUSIC_STLKS2"
+	Next = "MAP12"
+	TitlePatch = "CWILV10"
+	Par = 210
+	Music = "$MUSIC_STLKS2"
 	Author = "$WS_AU_ROMERO"
 }
 
-map MAP12 lookup "HUSTR_12"
+// Episode 2
+
+adddefaultmap
 {
-	next = "MAP13"
-	secretnext = "MAP13"
-	titlepatch = "CWILV11"
-	sky1 = "RSKY2"
-	cluster = 7
-	par = 150
-	music = "$MUSIC_THEDA2"
+	Cluster = 7
+	Sky1 = "RSKY2"
+}
+
+map MAP12 "$HUSTR_12"
+{
+	Next = "MAP13"
+	TitlePatch = "CWILV11"
+	Par = 150
+	Music = "$MUSIC_THEDA2"
 	Author = "$WS_AU_PETERSEN"
 }
 
-map MAP13 lookup "HUSTR_13"
+map MAP13 "$HUSTR_13"
 {
-	next = "MAP14"
-	secretnext = "MAP14"
-	titlepatch = "CWILV12"
-	sky1 = "RSKY2"
-	cluster = 7
-	par = 150
-	music = "$MUSIC_DOOM2"
+	Next = "MAP14"
+	TitlePatch = "CWILV12"
+	Par = 150
+	Music = "$MUSIC_DOOM2"
 	Author = "$WS_AU_PETERSEN"
 }
 
-map MAP14 lookup "HUSTR_14"
+map MAP14 "$HUSTR_14"
 {
-	next = "MAP15"
-	secretnext = "MAP15"
-	titlepatch = "CWILV13"
-	sky1 = "RSKY2"
-	cluster = 7
-	par = 150
-	music = "$MUSIC_DDTBL2"
+	Next = "MAP15"
+	TitlePatch = "CWILV13"
+	Par = 150
+	Music = "$MUSIC_DDTBL2"
 	Author = "$WS_AU_MCGEE"
 }
 
-map MAP15 lookup "HUSTR_15"
+map MAP15 "$HUSTR_15"
 {
-	next = "MAP16"
-	secretnext = "MAP31"
-	titlepatch = "CWILV14"
-	sky1 = "RSKY2"
-	cluster = 7
-	par = 210
-	music = "$MUSIC_RUNNI2"
+	Next = "MAP16"
+	SecretNext = "MAP31"
+	TitlePatch = "CWILV14"
+	Par = 210
+	Music = "$MUSIC_RUNNI2"
 	Author = "$WS_AU_ROMERO"
 }
 
-map MAP16 lookup "HUSTR_16"
+map MAP16 "$HUSTR_16"
 {
-	next = "MAP17"
-	secretnext = "MAP17"
-	titlepatch = "CWILV15"
-	sky1 = "RSKY2"
-	cluster = 7
-	par = 150
-	music = "$MUSIC_DEAD2"
+	Next = "MAP17"
+	TitlePatch = "CWILV15"
+	Par = 150
+	Music = "$MUSIC_DEAD2"
 	Author = "$WS_AU_PETERSEN"
 }
 
-map MAP17 lookup "HUSTR_17"
+map MAP17 "$HUSTR_17"
 {
-	next = "MAP18"
-	secretnext = "MAP18"
-	titlepatch = "CWILV16"
-	sky1 = "RSKY2"
-	cluster = 7
-	par = 420
-	music = "$MUSIC_STLKS3"
+	Next = "MAP18"
+	TitlePatch = "CWILV16"
+	Par = 420
+	Music = "$MUSIC_STLKS3"
 	Author = "$WS_AU_ROMERO"
 }
 
-map MAP18 lookup "HUSTR_18"
+map MAP18 "$HUSTR_18"
 {
-	next = "MAP19"
-	secretnext = "MAP19"
-	titlepatch = "CWILV17"
-	sky1 = "RSKY2"
-	cluster = 7
-	par = 150
-	music = "$MUSIC_ROMERO"
+	Next = "MAP19"
+	TitlePatch = "CWILV17"
+	Par = 150
+	Music = "$MUSIC_ROMERO"
 	Author = "$WS_AU_PETERSEN"
 }
 
-map MAP19 lookup "HUSTR_19"
+map MAP19 "$HUSTR_19"
 {
-	next = "MAP20"
-	secretnext = "MAP20"
-	titlepatch = "CWILV18"
-	sky1 = "RSKY2"
-	cluster = 7
-	par = 210
-	music = "$MUSIC_SHAWN2"
+	Next = "MAP20"
+	TitlePatch = "CWILV18"
+	Par = 210
+	Music = "$MUSIC_SHAWN2"
 	Author = "$WS_AU_PETERSEN"
 }
 
-map MAP20 lookup "HUSTR_20"
+map MAP20 "$HUSTR_20"
 {
-	next = "MAP21"
-	secretnext = "MAP21"
-	titlepatch = "CWILV19"
-	sky1 = "RSKY2"
-	cluster = 7
-	par = 150
-	music = "$MUSIC_MESSAG"
+	Next = "MAP21"
+	TitlePatch = "CWILV19"
+	Par = 150
+	Music = "$MUSIC_MESSAG"
 	Author = "$WS_AU_ROMERO"
 }
 
-map MAP21 lookup "HUSTR_21"
+// Episode 3
+
+adddefaultmap
 {
-	next = "MAP22"
-	secretnext = "MAP22"
-	titlepatch = "CWILV20"
-	sky1 = "RSKY3"
-	cluster = 8
-	par = 240
-	music = "$MUSIC_COUNT2"
+	Cluster = 8
+	Sky1 = "RSKY3"
+}
+
+map MAP21 "$HUSTR_21"
+{
+	Next = "MAP22"
+	TitlePatch = "CWILV20"
+	Par = 240
+	Music = "$MUSIC_COUNT2"
 	Author = "$WS_AU_PETERSEN"
 }
 
-map MAP22 lookup "HUSTR_22"
+map MAP22 "$HUSTR_22"
 {
-	next = "MAP23"
-	secretnext = "MAP23"
-	titlepatch = "CWILV21"
-	sky1 = "RSKY3"
-	cluster = 8
-	par = 150
-	music = "$MUSIC_DDTBL3"
+	Next = "MAP23"
+	TitlePatch = "CWILV21"
+	Par = 150
+	Music = "$MUSIC_DDTBL3"
 	Author = "$WS_AU_MCGEE"
 }
 
-map MAP23 lookup "HUSTR_23"
+map MAP23 "$HUSTR_23"
 {
-	next = "MAP24"
-	secretnext = "MAP24"
-	titlepatch = "CWILV22"
-	sky1 = "RSKY3"
-	cluster = 8
-	par = 180
-	music = "$MUSIC_AMPIE"
+	Next = "MAP24"
+	TitlePatch = "CWILV22"
+	Par = 180
+	Music = "$MUSIC_AMPIE"
 	Author = "$WS_AU_PETERSEN"
 }
 
-map MAP24 lookup "HUSTR_24"
+map MAP24 "$HUSTR_24"
 {
-	next = "MAP25"
-	secretnext = "MAP25"
-	titlepatch = "CWILV23"
-	sky1 = "RSKY3"
-	cluster = 8
-	par = 150
-	music = "$MUSIC_THEDA3"
+	Next = "MAP25"
+	TitlePatch = "CWILV23"
+	Par = 150
+	Music = "$MUSIC_THEDA3"
 	Author = "$WS_AU_PETERSEN"
 }
 
-map MAP25 lookup "HUSTR_25"
+map MAP25 "$HUSTR_25"
 {
-	next = "MAP26"
-	secretnext = "MAP26"
-	titlepatch = "CWILV24"
-	sky1 = "RSKY3"
-	cluster = 8
-	par = 150
-	music = "$MUSIC_ADRIAN"
+	Next = "MAP26"
+	TitlePatch = "CWILV24"
+	Par = 150
+	Music = "$MUSIC_ADRIAN"
 	Author = "$WS_AU_GREEN"
 }
 
-map MAP26 lookup "HUSTR_26"
+map MAP26 "$HUSTR_26"
 {
-	next = "MAP27"
-	secretnext = "MAP27"
-	titlepatch = "CWILV25"
-	sky1 = "RSKY3"
-	cluster = 8
-	par = 300
-	music = "$MUSIC_MESSG2"
+	Next = "MAP27"
+	TitlePatch = "CWILV25"
+	Par = 300
+	Music = "$MUSIC_MESSG2"
 	Author = "$WS_AU_ROMERO"
 }
 
-map MAP27 lookup "HUSTR_27"
+map MAP27 "$HUSTR_27"
 {
-	next = "MAP28"
-	secretnext = "MAP28"
-	titlepatch = "CWILV26"
-	sky1 = "RSKY3"
-	cluster = 8
-	par = 330
-	music = "$MUSIC_ROMER2"
+	Next = "MAP28"
+	TitlePatch = "CWILV26"
+	Par = 330
+	Music = "$MUSIC_ROMER2"
 	Author = "$WS_AU_PETERSEN"
 }
 
-map MAP28 lookup "HUSTR_28"
+map MAP28 "$HUSTR_28"
 {
-	next = "MAP29"
-	secretnext = "MAP29"
-	titlepatch = "CWILV27"
-	sky1 = "RSKY3"
-	cluster = 8
-	par = 420
-	music = "$MUSIC_TENSE"
+	Next = "MAP29"
+	TitlePatch = "CWILV27"
+	Par = 420
+	Music = "$MUSIC_TENSE"
 	Author = "$WS_AU_PETERSEN"
 }
 
-map MAP29 lookup "HUSTR_29"
+map MAP29 "$HUSTR_29"
 {
-	next = "MAP30"
-	secretnext = "MAP30"
-	titlepatch = "CWILV28"
-	sky1 = "RSKY3"
-	cluster = 8
-	par = 300
-	music = "$MUSIC_SHAWN3"
+	Next = "MAP30"
+	TitlePatch = "CWILV28"
+	Par = 300
+	Music = "$MUSIC_SHAWN3"
 	Author = "$WS_AU_ROMERO"
 }
 
-map MAP30 lookup "HUSTR_30"
+map MAP30 "$HUSTR_30"
 {
-	titlepatch = "CWILV29"
-	next = "EndGameC"
-	secretnext = "EndGameC"
-	sky1 = "RSKY3"
-	cluster = 8
-	par = 180
-	allowmonstertelefrags
-	music = "$MUSIC_OPENIN"
+	Next = "EndGameC"
+	TitlePatch = "CWILV29"
+	Par = 180
+	Music = "$MUSIC_OPENIN"
+	AllowMonsterTelefrags
+	Author = "$WS_AU_PETERSEN"
+}
+
+// Secret maps
+
+map MAP31 "$HUSTR_31"
+{
+	Next = "MAP16"
+	SecretNext = "MAP32"
+	Cluster = 9
+	TitlePatch = "CWILV30"
+	Par = 120
+	Music = "$MUSIC_EVIL"
+	Author = "$WS_AU_PETERSEN"
+}
+
+map MAP32 "$HUSTR_32"
+{
+	Next = "MAP16"
+	Cluster = 10
+	TitlePatch = "CWILV31"
+	Par = 30
+	Music = "$MUSIC_ULTIMA"
 	Author = "$WS_AU_PETERSEN"
 }
 
@@ -382,9 +339,9 @@ map MAP30 lookup "HUSTR_30"
 
 cluster 5
 {
-	flat = "$BGFLAT06"
-	music = "$MUSIC_READ_M"
-	exittext = lookup, "C1TEXT"
+	ExitText = "$C1TEXT"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
 
 }
 
@@ -392,9 +349,9 @@ cluster 5
 
 cluster 6
 {
-	flat = "$BGFLAT11"
-	music = "$MUSIC_READ_M"
-	exittext = lookup, "C2TEXT"
+	ExitText = "$C2TEXT"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT11"
 
 }
 
@@ -402,162 +359,34 @@ cluster 6
 
 cluster 7
 {
-	flat = "$BGFLAT20"
-	music = "$MUSIC_READ_M"
-	exittext = lookup, "C3TEXT"
+	ExitText = "$C3TEXT"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT20"
 }
 
 // DOOM II fourth cluster (up thru level 30)
 
 cluster 8
 {
-	flat = "$BGFLAT30"
-	music = "$MUSIC_READ_M"
-	exittext = lookup, "C4TEXT"
+	ExitText = "$C4TEXT"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT30"
 }
 
 // DOOM II fifth cluster (level 31)
 
 cluster 9
 {
-	flat = "$BGFLAT15"
-	music = "$MUSIC_READ_M"
-	entertext = lookup, "C5TEXT"
+	EnterText = "$C5TEXT"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT15"
 }
 
 // DOOM II sixth cluster (level 32)
 
 cluster 10
 {
-	flat = "$BGFLAT31"
-	music = "$MUSIC_READ_M"
-	entertext = lookup, "C6TEXT"
-}
-
-// No Rest for the Living
-
-map NV_MAP01 lookup "NHUSTR_1"
-{
-	next = "NV_MAP02"
-	secretnext = "NV_MAP09"
-	sky1 = "RSKY1"
-	cluster = 11
-	titlepatch = "NWILV00"
-	par = 75
-	music = "$MUSIC_MESSAG"
-	ExitPic = "NVINTER"
-	Author = "$WS_AU_MEAKIM"
-}
-
-map NV_MAP02 lookup "NHUSTR_2"
-{
-	next = "NV_MAP03"
-	secretnext = "NV_MAP09"
-	sky1 = "RSKY1"
-	cluster = 11
-	titlepatch = "NWILV01"
-	par = 105
-	music = "$MUSIC_DDTBLU"
-	ExitPic = "NVINTER"
-	Author = "$WS_AU_IWAKURA"
-}
-
-map NV_MAP03 lookup "NHUSTR_3"
-{
-	next = "NV_MAP04"
-	secretnext = "NV_MAP09"
-	sky1 = "RSKY1"
-	cluster = 11
-	titlepatch = "NWILV02"
-	par = 120
-	music = "$MUSIC_DOOM"
-	ExitPic = "NVINTER"
-	Author = "$WS_AU_MEAKIM"
-}
-
-map NV_MAP04 lookup "NHUSTR_4"
-{
-	next = "NV_MAP05"
-	secretnext = "NV_MAP09"
-	sky1 = "RSKY3"
-	cluster = 11
-	titlepatch = "NWILV03"
-	par = 105
-	music = "$MUSIC_SHAWN"
-	ExitPic = "NVINTER"
-	Author = "$WS_AU_MEAKIM"
-}
-
-map NV_MAP05 lookup "NHUSTR_5"
-{
-	next = "NV_MAP06"
-	secretnext = "NV_MAP09"
-	sky1 = "RSKY3"
-	cluster = 11
-	titlepatch = "NWILV04"
-	par = 210
-	music = "$MUSIC_IN_CIT"
-	ExitPic = "NVINTER"
-	Author = "$WS_AU_IWAKURA"
-}
-
-map NV_MAP06 lookup "NHUSTR_6"
-{
-	next = "NV_MAP07"
-	secretnext = "NV_MAP09"
-	sky1 = "RSKY3"
-	cluster = 11
-	titlepatch = "NWILV05"
-	par = 105
-	sucktime = 1
-	music = "$MUSIC_THE_DA"
-	ExitPic = "NVINTER"
-	Author = "$WS_AU_IWAKURA"
-}
-
-map NV_MAP07 lookup "NHUSTR_7"
-{
-	next = "NV_MAP08"
-	secretnext = "NV_MAP09"
-	sky1 = "RSKY3"
-	cluster = 11
-	titlepatch = "NWILV06"
-	par = 165
-	map07special
-	music = "$MUSIC_IN_CIT"
-	ExitPic = "NVINTER"
-	Author = "$WS_AU_IWAKURA"
-}
-
-map NV_MAP08 lookup "NHUSTR_8"
-{
-	next = "EndGameC"
-	secretnext = "EndGameC"
-	sky1 = "RSKY3"
-	cluster = 11
-	titlepatch = "NWILV07"
-	par = 105
-	music = "$MUSIC_SHAWN"
-	ExitPic = "NVINTER"
-	Author = "$WS_AU_IWAKURA"
-}
-
-map NV_MAP09 lookup "NHUSTR_9"
-{
-	next = "NV_MAP05"
-	secretnext = "NV_MAP05"
-	sky1 = "RSKY1"
-	titlepatch = "NWILV08"
-	cluster = 11
-	par = 135
-	music = "$MUSIC_DDTBLU"
-	ExitPic = "NVINTER"
-	Author = "$WS_AU_MEAKIM"
-}
-
-cluster 11
-{
-	flat = "SLIME16"
-	music = "$MUSIC_READ_M"
-	exittext = lookup, "NERVETEXT"
+	EnterText = "$C6TEXT"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT31"
 }

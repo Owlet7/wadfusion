@@ -1,0 +1,109 @@
+// No Rest for the Living maps
+
+defaultmap
+{
+	Cluster = 11
+	SuckTime = 1
+	ExitPic = "NVINTER"
+	NoJump
+	NoCrouch
+}
+
+map NV_MAP01 "$NHUSTR_1"
+{
+	Next = "NV_MAP02"
+	Sky1 = "RSKY1"
+	TitlePatch = "NWILV00"
+	Par = 75
+	Music = "$MUSIC_MESSAG"
+	Author = "$WS_AU_MEAKIM"
+}
+
+map NV_MAP02 "$NHUSTR_2"
+{
+	Next = "NV_MAP03"
+	Sky1 = "RSKY1"
+	TitlePatch = "NWILV01"
+	Par = 105
+	Music = "$MUSIC_DDTBLU"
+	Author = "$WS_AU_IWAKURA"
+}
+
+map NV_MAP03 "$NHUSTR_3"
+{
+	Next = "NV_MAP04"
+	Sky1 = "RSKY1"
+	TitlePatch = "NWILV02"
+	Par = 120
+	Music = "$MUSIC_DOOM"
+	Author = "$WS_AU_MEAKIM"
+}
+
+map NV_MAP04 "$NHUSTR_4"
+{
+	Next = "NV_MAP05"
+	SecretNext = "NV_MAP09"
+	Sky1 = "RSKY3"
+	TitlePatch = "NWILV03"
+	Par = 105
+	Music = "$MUSIC_SHAWN"
+	Author = "$WS_AU_MEAKIM"
+}
+
+map NV_MAP05 "$NHUSTR_5"
+{
+	Next = "NV_MAP06"
+	Sky1 = "RSKY3"
+	TitlePatch = "NWILV04"
+	Par = 210
+	Music = "$MUSIC_IN_CIT"
+	Author = "$WS_AU_IWAKURA"
+}
+
+map NV_MAP06 "$NHUSTR_6"
+{
+	Next = "NV_MAP07"
+	Sky1 = "RSKY3"
+	TitlePatch = "NWILV05"
+	Par = 105
+	Music = "$MUSIC_THE_DA"
+	Author = "$WS_AU_IWAKURA"
+}
+
+map NV_MAP07 "$NHUSTR_7"
+{
+	Next = "NV_MAP08"
+	Sky1 = "RSKY3"
+	TitlePatch = "NWILV06"
+	Par = 165
+	Music = "$MUSIC_IN_CIT"
+	Map07Special
+	Author = "$WS_AU_IWAKURA"
+}
+
+map NV_MAP08 "$NHUSTR_8"
+{
+	Next = "EndGameC"
+	Sky1 = "RSKY3"
+	TitlePatch = "NWILV07"
+	Par = 105
+	Music = "$MUSIC_SHAWN"
+	Author = "$WS_AU_IWAKURA"
+}
+
+map NV_MAP09 "$NHUSTR_9"
+{
+	Next = "NV_MAP05"
+	Sky1 = "RSKY1"
+	TitlePatch = "NWILV08"
+	Par = 135
+	Music = "$MUSIC_DDTBLU"
+	Author = "$WS_AU_MEAKIM"
+}
+
+cluster 11
+{
+	ExitText = "$NERVETEXT"
+	Music = "$MUSIC_READ_M"
+	Flat = "SLIME16"
+}

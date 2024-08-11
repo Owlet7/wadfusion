@@ -18,7 +18,7 @@ LOG_FILENAME = 'wadsmoosh.log'
 RES_DIR = 'res/'
 DATA_TABLES_FILE = 'wadsmoosh_data.py'
 ML_ORDER_FILENAME = 'masterlevels_order_xaser.txt'
-ML_MAPINFO_FILENAME = DEST_DIR + 'mapinfo/masterlevels.txt'
+ML_MAPINFO_FILENAME = DEST_DIR + 'mapinfo/master_levels.txt'
 MUSIC_DIR = DEST_DIR + 'music/'
 
 # forward-declare all the stuff in DATA_TABLES_FILE for clarity
@@ -41,7 +41,6 @@ MASTER_LEVELS_MAPINFO_HEADER = []
 SIGIL_ALT_FILENAMES = []
 SIGIL2_ALT_FILENAMES = []
 SIGIL2_MP3_ALT_FILENAMES = []
-BFG_ONLY_LUMP = ''
 
 logfile = None
 
@@ -183,7 +182,7 @@ def extract_master_levels():
                                                    patch_replace[1]))
         lump.to_file(out_filename)
 
-def rename_sigil_shreds():
+def rename_mp3():
     # remove .mus file extension from .mp3 music
     for filename in os.listdir(MUSIC_DIR):
         old_name = os.path.join(MUSIC_DIR, filename)
@@ -334,22 +333,6 @@ def copy_resources():
             continue
         logg('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
-    # doom2 vs doom2bfg map31/32 names differ, different mapinfos with same name
-    d2wad = omg.WAD()
-    d2_wad_filename = get_wad_filename('doom2')
-    # neither doom2: mapinfo still wants a file for the secret levels
-    if not d2_wad_filename:
-        copyfile(RES_DIR + 'mapinfo/doom2_nonbfg_levels.txt',
-                 DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
-        return
-    d2wad.from_file(d2_wad_filename)
-    # bfg version?
-    if d2wad.graphics.get(BFG_ONLY_LUMP, None):
-        copyfile(RES_DIR + 'mapinfo/doom2_bfg_levels.txt',
-                 DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
-    else:
-        copyfile(RES_DIR + 'mapinfo/doom2_nonbfg_levels.txt',
-                 DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
 
 def get_report_found():
     found = []
@@ -456,12 +439,9 @@ def main():
     if not os.path.exists(DEST_DIR):
         os.mkdir(DEST_DIR)
     for dirname in ['flats', 'graphics', 'music', 'maps', 'mapinfo',
-                    'patches', 'sounds', 'sprites']:
+                    'patches', 'sounds', 'sprites', 'zscript']:
         if not os.path.exists(DEST_DIR + dirname):
             os.mkdir(DEST_DIR + dirname)
-    # copy pre-authored lumps eg mapinfo
-    if should_extract:
-        copy_resources()
     # if final doom present but not doom1/2, extract doom2 resources from it
     if get_wad_filename('tnt') and not get_wad_filename('doom2'):
         WAD_LUMP_LISTS['tnt'] += DOOM2_LUMPS
@@ -501,8 +481,11 @@ def main():
             extract_master_levels()
     else:
         logg('Skipping Master Levels as doom2.wad is not present', error=True)
+    # copy pre-authored lumps eg mapinfo
+    if should_extract:
+        copy_resources()
     # rename file extensions of mp3 music
-    rename_sigil_shreds()
+    rename_mp3()
     # enable mp3 music options
     if get_wad_filename('sigil_shreds') and get_wad_filename('sigil'):
         enable_sigil_shreds()

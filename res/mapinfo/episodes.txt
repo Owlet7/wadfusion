@@ -1,0 +1,88 @@
+clearepisodes
+episode E1M1
+{
+	picname = "M_EPI1"
+	name = "$TXT_D1E1"
+	key = "k"
+	optional
+}
+
+episode E2M1
+{
+	picname = "M_EPI2"
+	name = "$TXT_D1E2"
+	key = "s"
+	optional
+}
+
+episode E3M1
+{
+	picname = "M_EPI3"
+	name = "$TXT_D1E3"
+	key = "i"
+	optional
+}
+
+episode E4M1
+{
+	picname = "M_EPI4"
+	name = "$TXT_D1E4"
+	key = "f"
+	optional
+}
+
+episode E5M1
+{
+	picname = "M_EPI5"
+	name = "$HUSTR_EPI5"
+	key = "g"
+	optional
+}
+
+episode E6M1
+{
+	picname = "M_EPI6"
+	name = "$HUSTR_EPI6"
+	key = "x"
+	optional
+}
+
+episode MAP01
+{
+	picname = "M_HELL"
+	name = "$TXT_D2E1"
+	key = "h"
+	optional
+}
+
+episode ML_MAP01
+{
+	picname = "M_MASTER"
+	name = "$D2MLNAME"
+	key = "m"
+	optional
+}
+
+episode NV_MAP01
+{
+	picname = "M_NOREST"
+	name = "$TXT_D2E2"
+	key = "n"
+	optional
+}
+
+episode TN_MAP01
+{
+	picname = "M_TNT"
+	name = "$TXT_TNT_EP"
+	key = "t"
+	optional
+}
+
+episode PL_MAP01
+{
+	picname = "M_PLUT"
+	name = "$TXT_PLUT_EP"
+	key = "p"
+	optional
+}
