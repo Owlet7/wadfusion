@@ -15,7 +15,6 @@ defaultmap
 	BorderTexture = "FLOOR7_2"
 	NoJump
 	NoCrouch
-	NoFreelook
 	Author = "$WS_AU_ROMERO"
 }
 
