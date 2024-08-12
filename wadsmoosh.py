@@ -21,6 +21,7 @@ RES_DIR = 'res/'
 DATA_TABLES_FILE = 'wadsmoosh_data.py'
 ML_ORDER_FILENAME = 'masterlevels_order_xaser.txt'
 ML_MAPINFO_FILENAME = DEST_DIR + 'mapinfo/master_levels.txt'
+DEST_DIR_OGG_MUS = DEST_DIR_OGG + 'music/'
 
 # forward-declare all the stuff in DATA_TABLES_FILE for clarity
 RES_FILES = []
@@ -184,13 +185,37 @@ def extract_master_levels():
         lump.to_file(out_filename)
 
 def rename_ogg():
-    # remove .mus file extension from Andrew Hulshult's .ogg music
+    # move Andrew Hulshult's tracks to separate dest dir and remove .mus file extension from .ogg music
     for filename in os.listdir(DEST_DIR + 'music/'):
         if fnmatch.fnmatch(filename, '*.ogg.mus'):
-            os.replace(DEST_DIR + 'music/' + filename, DEST_DIR_OGG + 'music/' + filename)
-            old_name = os.path.join(DEST_DIR_OGG + 'music/', filename)
+            os.replace(DEST_DIR + 'music/' + filename, DEST_DIR_OGG_MUS + filename)
+            old_name = os.path.join(DEST_DIR_OGG_MUS, filename)
             new_name = old_name.replace('.ogg.mus', '.ogg')
             os.rename(old_name, new_name)
+    # duplicate tracks
+    copyfile(DEST_DIR_OGG_MUS + 'D_E1M6.ogg', DEST_DIR_OGG_MUS + 'D_E3M6.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_E1M7.ogg', DEST_DIR_OGG_MUS + 'D_E2M5.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_E1M7.ogg', DEST_DIR_OGG_MUS + 'D_E3M5.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_E1M8.ogg', DEST_DIR_OGG_MUS + 'D_E3M4.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_E1M9.ogg', DEST_DIR_OGG_MUS + 'D_E3M9.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_E2M3.ogg', DEST_DIR_OGG_MUS + 'D_INTER.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_E2M7.ogg', DEST_DIR_OGG_MUS + 'D_E3M7.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_E2M9.ogg', DEST_DIR_OGG_MUS + 'D_E3M1.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_RUNNIN.ogg', DEST_DIR_OGG_MUS + 'D_RUNNI2.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_STALKS.ogg', DEST_DIR_OGG_MUS + 'D_STLKS2.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_STALKS.ogg', DEST_DIR_OGG_MUS + 'D_STLKS3.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_COUNTD.ogg', DEST_DIR_OGG_MUS + 'D_COUNT2.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_DOOM.ogg', DEST_DIR_OGG_MUS + 'D_DOOM2.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_THE_DA.ogg', DEST_DIR_OGG_MUS + 'D_THEDA2.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_THE_DA.ogg', DEST_DIR_OGG_MUS + 'D_THEDA3.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_SHAWN.ogg', DEST_DIR_OGG_MUS + 'D_SHAWN2.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_SHAWN.ogg', DEST_DIR_OGG_MUS + 'D_SHAWN3.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_DDTBLU.ogg', DEST_DIR_OGG_MUS + 'D_DDTBL2.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_DDTBLU.ogg', DEST_DIR_OGG_MUS + 'D_DDTBL3.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_DEAD.ogg', DEST_DIR_OGG_MUS + 'D_DEAD2.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_ROMERO.ogg', DEST_DIR_OGG_MUS + 'D_ROMER2.ogg')
+    copyfile(DEST_DIR_OGG_MUS + 'D_MESSAG.ogg', DEST_DIR_OGG_MUS + 'D_MESSG2.ogg')
+    # move mapinfo lumps for Andrew Hulshult's tracks to separate dest dir
     for filename in os.listdir(DEST_DIR + 'mapinfo/'):
         if fnmatch.fnmatch(filename, '*.ogg.txt'):
             os.replace(DEST_DIR + 'mapinfo/' + filename, DEST_DIR_OGG + 'mapinfo/' + filename)
