@@ -104,9 +104,12 @@ class WadSmooshHandler : EventHandler
         String mapName = level.MapName.MakeLower();
         if ( mapName.Left(3) == "e6m" )
         {
-            if ( CVar.FindCVar("ws_s2_spiderboss").GetBool() && e.Thing.GetClassName() == "SpiderMastermind" )
+            if ( CVar.FindCVar("ws_s2_spiderboss").GetBool() && e.Thing )
             {
-                e.Thing.Health = 9000;
+				if ( e.Thing.GetClassName() == "SpiderMastermind" )
+				{
+					e.Thing.Health = 9000;
+				}
             }
         }
     }
