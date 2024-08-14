@@ -36,10 +36,12 @@ RES_FILES = [
     'mapinfo/xbox_levels.txt', 'mapinfo/nerve_levels.txt',
     'mapinfo/tnt_levels.txt', 'mapinfo/plutonia_levels.txt',
     'mapinfo/sigil_levels.txt', 'mapinfo/sigil2_levels.txt',
-    'mapinfo/episodes.txt', 'mapinfo/plutonia_levels.ogg.txt',
+    'mapinfo/episodes.txt',
     'menudef.txt', 'cvarinfo.txt', 'zscript.zs',
     'zscript/ws_handler.zs', 'zscript/ws_music.zs',
-    'zscript/ws_xbox.zs'
+    'zscript/ws_xbox.zs',
+    'gameinfo.ogg.txt', 'menudef.ogg.txt', 'language.ogg.csv',
+    'mapinfo/plutonia_levels.ogg.txt'
 ]
 
 # files within pk3 dir that will be removed before a new run
@@ -53,11 +55,12 @@ TIDY_DIR_EXTENSIONS = {
     'mapinfo/': ['txt'],
     'maps/': ['wad'],
     'zscript/': ['zs'],
-    './': ['lmp', 'txt', 'zs']
+    './': ['csv', 'lmp', 'txt', 'zs']
 }
 TIDY_DIR_OGG = {
     'music/': ['ogg'],
-    'mapinfo/': ['txt']
+    'mapinfo/': ['txt'],
+    './': ['csv', 'txt']
 }
 
 # list of files we can extract from

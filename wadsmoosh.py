@@ -215,7 +215,18 @@ def rename_ogg():
     copyfile(DEST_DIR_OGG_MUS + 'D_DEAD.ogg', DEST_DIR_OGG_MUS + 'D_DEAD2.ogg')
     copyfile(DEST_DIR_OGG_MUS + 'D_ROMERO.ogg', DEST_DIR_OGG_MUS + 'D_ROMER2.ogg')
     copyfile(DEST_DIR_OGG_MUS + 'D_MESSAG.ogg', DEST_DIR_OGG_MUS + 'D_MESSG2.ogg')
-    # move mapinfo lumps for Andrew Hulshult's tracks to separate dest dir
+    # move menudef and mapinfo lumps for Andrew Hulshult's tracks to separate dest dir
+    for filename in os.listdir(DEST_DIR):
+        if fnmatch.fnmatch(filename, '*.ogg.csv'):
+            os.replace(DEST_DIR + filename, DEST_DIR_OGG + filename)
+            old_name = os.path.join(DEST_DIR_OGG, filename)
+            new_name = old_name.replace('.ogg.csv', '.csv')
+            os.rename(old_name, new_name)
+        if fnmatch.fnmatch(filename, '*.ogg.txt'):
+            os.replace(DEST_DIR + filename, DEST_DIR_OGG + filename)
+            old_name = os.path.join(DEST_DIR_OGG, filename)
+            new_name = old_name.replace('.ogg.txt', '.txt')
+            os.rename(old_name, new_name)
     for filename in os.listdir(DEST_DIR + 'mapinfo/'):
         if fnmatch.fnmatch(filename, '*.ogg.txt'):
             os.replace(DEST_DIR + 'mapinfo/' + filename, DEST_DIR_OGG + 'mapinfo/' + filename)
