@@ -25,6 +25,7 @@ DEST_DIR_OGG_MUS = DEST_DIR_OGG + 'music/'
 
 # forward-declare all the stuff in DATA_TABLES_FILE for clarity
 RES_FILES = []
+RES_FILES_OGG = []
 WADS = []
 REPORT_WADS = []
 COMMON_LUMPS = []
@@ -43,6 +44,8 @@ MASTER_LEVELS_MAPINFO_HEADER = []
 SIGIL_ALT_FILENAMES = []
 SIGIL2_ALT_FILENAMES = []
 SIGIL2_MP3_ALT_FILENAMES = []
+BFG_ONLY_LUMP = ''
+EXTRAS_KEX_ONLY_LUMP = ''
 
 logfile = None
 
@@ -184,7 +187,7 @@ def extract_master_levels():
                                                    patch_replace[1]))
         lump.to_file(out_filename)
 
-def rename_ogg():
+def move_ogg():
     # move Andrew Hulshult's tracks to separate dest dir and remove .mus file extension from .ogg music
     for filename in os.listdir(DEST_DIR + 'music/'):
         if fnmatch.fnmatch(filename, '*.ogg.mus'):
@@ -215,27 +218,9 @@ def rename_ogg():
     copyfile(DEST_DIR_OGG_MUS + 'D_DEAD.ogg', DEST_DIR_OGG_MUS + 'D_DEAD2.ogg')
     copyfile(DEST_DIR_OGG_MUS + 'D_ROMERO.ogg', DEST_DIR_OGG_MUS + 'D_ROMER2.ogg')
     copyfile(DEST_DIR_OGG_MUS + 'D_MESSAG.ogg', DEST_DIR_OGG_MUS + 'D_MESSG2.ogg')
-    # move menudef and mapinfo lumps for Andrew Hulshult's tracks to separate dest dir
-    for filename in os.listdir(DEST_DIR):
-        if fnmatch.fnmatch(filename, '*.ogg.csv'):
-            os.replace(DEST_DIR + filename, DEST_DIR_OGG + filename)
-            old_name = os.path.join(DEST_DIR_OGG, filename)
-            new_name = old_name.replace('.ogg.csv', '.csv')
-            os.rename(old_name, new_name)
-        if fnmatch.fnmatch(filename, '*.ogg.txt'):
-            os.replace(DEST_DIR + filename, DEST_DIR_OGG + filename)
-            old_name = os.path.join(DEST_DIR_OGG, filename)
-            new_name = old_name.replace('.ogg.txt', '.txt')
-            os.rename(old_name, new_name)
-    for filename in os.listdir(DEST_DIR + 'mapinfo/'):
-        if fnmatch.fnmatch(filename, '*.ogg.txt'):
-            os.replace(DEST_DIR + 'mapinfo/' + filename, DEST_DIR_OGG + 'mapinfo/' + filename)
-            old_name = os.path.join(DEST_DIR_OGG + 'mapinfo/', filename)
-            new_name = old_name.replace('.ogg.txt', '.txt')
-            os.rename(old_name, new_name)
 
 def rename_mp3():
-    # remove .mus file extension from Sigil's .mp3 music
+    # remove .mus file extension from Sigil's .mp3 music if it's present
     for filename in os.listdir(DEST_DIR + 'music/'):
         old_name = os.path.join(DEST_DIR + 'music/', filename)
         new_name = old_name.replace('.mp3.mus', '.mp3')
@@ -385,6 +370,50 @@ def copy_resources():
             continue
         logg('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
+#    # doom2 vs doom2bfg map31/32 names differ, different mapinfos with same name
+#    d2wad = omg.WAD()
+#    d2_wad_filename = get_wad_filename('doom2')
+#    # neither doom2: mapinfo still wants a file for the secret levels
+#    if not d2_wad_filename:
+#        copyfile(RES_DIR + 'mapinfo/doom2_nonbfg_levels.txt',
+#                 DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
+#        return
+#    d2wad.from_file(d2_wad_filename)
+#    # bfg version?
+#    if d2wad.graphics.get(BFG_ONLY_LUMP, None):
+#        copyfile(RES_DIR + 'mapinfo/doom2_bfg_levels.txt',
+#                 DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
+#    else:
+#        copyfile(RES_DIR + 'mapinfo/doom2_nonbfg_levels.txt',
+#                 DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
+
+def copy_resources_ogg():
+    # unity vs kex extras.wad differ, kex has Andrew Hulshult soundtrack
+    if get_wad_filename('extras'):
+        extras_wad = omg.WAD()
+        extras_wad_filename = get_wad_filename('extras')
+        extras_wad.from_file(extras_wad_filename)
+        if extras_wad.colormaps.get(EXTRAS_KEX_ONLY_LUMP, None):
+            for src_file in RES_FILES_OGG:
+                logg('Copying %s' % src_file)
+                copyfile(RES_DIR + src_file, DEST_DIR_OGG + src_file)
+            # move Andrew Hulshult's tracks to pk3_ogg
+            move_ogg()
+            # rename '.ogg' from filenames of pre-authored lumps
+            for src_file in os.listdir(DEST_DIR_OGG):
+                if fnmatch.fnmatch(src_file, '*.ogg.csv'):
+                    old_name = os.path.join(DEST_DIR_OGG, src_file)
+                    new_name = old_name.replace('.ogg.csv', '.csv')
+                    os.rename(old_name, new_name)
+                if fnmatch.fnmatch(src_file, '*.ogg.txt'):
+                    old_name = os.path.join(DEST_DIR_OGG, src_file)
+                    new_name = old_name.replace('.ogg.txt', '.txt')
+                    os.rename(old_name, new_name)
+            for src_file in os.listdir(DEST_DIR_OGG + 'mapinfo/'):
+                if fnmatch.fnmatch(src_file, '*.ogg.txt'):
+                    old_name = os.path.join(DEST_DIR_OGG + 'mapinfo/', src_file)
+                    new_name = old_name.replace('.ogg.txt', '.txt')
+                    os.rename(old_name, new_name)
 
 def get_report_found():
     found = []
@@ -453,14 +482,26 @@ def pk3_compress():
     pk3.close()
 
 def pk3_ogg_compress():
-    pk3_ogg = ZipFile(DEST_FILENAME_OGG, 'w', ZIP_DEFLATED)
-    for dir_name, x, filenames in os.walk(DEST_DIR_OGG):
-        for filename in filenames:
-            src_name = dir_name + '/' + filename
-            # exclude pk3_ogg/ top dir from name within archive
-            dest_name = src_name[len(DEST_DIR_OGG):]
-            pk3_ogg.write(src_name, dest_name)
-    pk3_ogg.close()
+    # unity vs kex extras.wad differ, kex has Andrew Hulshult soundtrack
+    start_time = time.time()
+    extras_wad = omg.WAD()
+    extras_wad_filename = get_wad_filename('extras')
+    extras_wad.from_file(extras_wad_filename)
+    if extras_wad.colormaps.get(EXTRAS_KEX_ONLY_LUMP, None):
+        logg('Compressing %s...' % DEST_FILENAME_OGG)
+        pk3_ogg = ZipFile(DEST_FILENAME_OGG, 'w', ZIP_DEFLATED)
+        for dir_name, x, filenames in os.walk(DEST_DIR_OGG):
+            for filename in filenames:
+                src_name = dir_name + '/' + filename
+                # exclude pk3_ogg/ top dir from name within archive
+                dest_name = src_name[len(DEST_DIR_OGG):]
+                pk3_ogg.write(src_name, dest_name)
+        pk3_ogg.close()
+    else:
+        return
+    elapsed_time_ogg = time.time() - start_time
+    ipk3_ogg_size =  os.path.getsize(DEST_FILENAME_OGG) / 1000000
+    logg('Generated %s (%.1f MB) in %.2f seconds.' % (DEST_FILENAME_OGG, ipk3_ogg_size, elapsed_time_ogg))
 
 def main():
     version = open(VERSION_FILENAME).readlines()[0].strip()
@@ -486,6 +527,7 @@ def main():
                     if os.path.exists(filename):
                         os.remove(filename)
                         files_tidied += 1
+    # clear out pk3_ogg dir from previous runs
     for dirname,extensions in TIDY_DIR_OGG.items():
         if not os.path.exists(DEST_DIR_OGG + dirname):
             continue
@@ -524,11 +566,18 @@ def main():
                     'patches', 'sounds', 'sprites', 'zscript']:
         if not os.path.exists(DEST_DIR + dirname):
             os.mkdir(DEST_DIR + dirname)
-    if not os.path.exists(DEST_DIR_OGG):
-        os.mkdir(DEST_DIR_OGG)
-    for dirname in ['music', 'mapinfo']:
-        if not os.path.exists(DEST_DIR_OGG + dirname):
-            os.mkdir(DEST_DIR_OGG + dirname)
+    # make dirs for Andrew Hulshult's ogg music if they don't exist
+    if get_wad_filename('extras'):
+        extras_wad = omg.WAD()
+        extras_wad_filename = get_wad_filename('extras')
+        extras_wad.from_file(extras_wad_filename)
+        # create folders only if the music is present
+        if extras_wad.colormaps.get(EXTRAS_KEX_ONLY_LUMP, None):
+            if not os.path.exists(DEST_DIR_OGG):
+                os.mkdir(DEST_DIR_OGG)
+            for dirname in ['music', 'mapinfo']:
+                if not os.path.exists(DEST_DIR_OGG + dirname):
+                    os.mkdir(DEST_DIR_OGG + dirname)
     # if final doom present but not doom1/2, extract doom2 resources from it
     if get_wad_filename('tnt') and not get_wad_filename('doom2'):
         WAD_LUMP_LISTS['tnt'] += DOOM2_LUMPS
@@ -571,8 +620,9 @@ def main():
     # copy pre-authored lumps eg mapinfo
     if should_extract:
         copy_resources()
-    # rename file extensions of Andrew Hulshult's ogg music
-    rename_ogg()
+    # copy pre-authored lumps for Andrew Hulshult's soundtrack supported
+    if should_extract:
+        copy_resources_ogg()
     # rename file extensions of Sigil mp3 music
     rename_mp3()
     # enable Sigil mp3 music options
@@ -597,11 +647,7 @@ def main():
     logg('Generated %s (%.1f MB) with %s maps in %s episodes in %.2f seconds.' % (DEST_FILENAME, ipk3_size, num_maps, num_eps, elapsed_time))
     # create pk3_ogg
     if get_wad_filename('extras'):
-        logg('Compressing %s...' % DEST_FILENAME_OGG)
         pk3_ogg_compress()
-        elapsed_time_ogg = time.time() - start_time - elapsed_time
-        ipk3_ogg_size =  os.path.getsize(DEST_FILENAME_OGG) / 1000000
-        logg('Generated %s (%.1f MB) in %.2f seconds.' % (DEST_FILENAME_OGG, ipk3_ogg_size, elapsed_time_ogg))
     logg('Done!')
     if num_errors > 0:
         logg('%s errors found, see %s for details.' % (num_errors, LOG_FILENAME))

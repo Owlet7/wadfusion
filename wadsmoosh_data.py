@@ -39,7 +39,10 @@ RES_FILES = [
     'mapinfo/episodes.txt',
     'menudef.txt', 'cvarinfo.txt', 'zscript.zs',
     'zscript/ws_handler.zs', 'zscript/ws_music.zs',
-    'zscript/ws_xbox.zs',
+    'zscript/ws_xbox.zs'
+]
+
+RES_FILES_OGG = [
     'gameinfo.ogg.txt', 'menudef.ogg.txt', 'language.ogg.csv',
     'mapinfo/plutonia_levels.ogg.txt'
 ]
@@ -57,6 +60,7 @@ TIDY_DIR_EXTENSIONS = {
     'zscript/': ['zs'],
     './': ['csv', 'lmp', 'txt', 'zs']
 }
+
 TIDY_DIR_OGG = {
     'music/': ['ogg'],
     'mapinfo/': ['txt'],
@@ -242,3 +246,8 @@ SIGIL_ALT_FILENAMES = ['sigil_v1_0', 'sigil_v1_1', 'sigil_v1_2', 'sigil_v1_21']
 SIGIL2_ALT_FILENAMES = ['sigil_ii_v1_0']
 # sigil2 version with MP3 music (no sigil_shreds equivalent; MP3 music just an alternate wad)
 SIGIL2_MP3_ALT_FILENAMES = ['sigil_ii_mp3_v1_0']
+
+# lump whose presence distinguishes BFG, Unity, and KEX vs original
+BFG_ONLY_LUMP = 'DMENUPIC'
+# lump whose presence distinguishes Unity vs KEX extras.wad
+EXTRAS_KEX_ONLY_LUMP = 'WATERMAP'
