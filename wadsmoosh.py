@@ -12,8 +12,9 @@ should_extract = True
 
 SRC_WAD_DIR = 'source_wads/'
 DATA_DIR = 'data/'
-DEST_DIR = 'pk3/'
-DEST_DIR_OGG = 'pk3_ogg/'
+TEMP_DIR = 'temp/'
+DEST_DIR = TEMP_DIR + 'pk3/'
+DEST_DIR_OGG = TEMP_DIR + 'pk3_ogg/'
 DEST_FILENAME = 'doom_complete.pk3'
 DEST_FILENAME_OGG = 'hulshult_ogg.pk3'
 LOG_FILENAME = 'wadsmoosh.log'
@@ -449,6 +450,42 @@ def get_report_found():
                 break
     return found
 
+def clear_pk3():
+    # clear out pk3 dir from previous runs
+    files_tidied = 0
+    for dirname,extensions in TIDY_DIR_EXTENSIONS.items():
+        if not os.path.exists(DEST_DIR + dirname):
+            continue
+        for filename in os.listdir(DEST_DIR + dirname):
+            for ext in extensions:
+                if filename.endswith(ext):
+                    filename = DEST_DIR + dirname + filename
+                    if os.path.exists(filename):
+                        os.remove(filename)
+                        files_tidied += 1
+    # clear out pk3_ogg dir from previous runs
+    for dirname,extensions in TIDY_DIR_OGG.items():
+        if not os.path.exists(DEST_DIR_OGG + dirname):
+            continue
+        for filename in os.listdir(DEST_DIR_OGG + dirname):
+            for ext in extensions:
+                if filename.endswith(ext):
+                    filename = DEST_DIR_OGG + dirname + filename
+                    if os.path.exists(filename):
+                        os.remove(filename)
+                        files_tidied += 1
+    # clear out files in pk3 base dir too
+    for filename in RES_FILES:
+        # don't touch subdirs
+        if filename != os.path.basename(filename):
+            continue
+        filename = DEST_DIR + filename
+        if os.path.exists(filename):
+            os.remove(filename)
+            files_tidied += 1
+    if files_tidied > 0:
+        logg('Removed %s files from a previous run.' % files_tidied)
+
 def get_eps(wads_found):
     eps = []
     for wadname in wads_found:
@@ -516,39 +553,7 @@ def main():
         input_func('Press Enter to exit.\n')
         return
     # clear out pk3 dir from previous runs
-    files_tidied = 0
-    for dirname,extensions in TIDY_DIR_EXTENSIONS.items():
-        if not os.path.exists(DEST_DIR + dirname):
-            continue
-        for filename in os.listdir(DEST_DIR + dirname):
-            for ext in extensions:
-                if filename.endswith(ext):
-                    filename = DEST_DIR + dirname + filename
-                    if os.path.exists(filename):
-                        os.remove(filename)
-                        files_tidied += 1
-    # clear out pk3_ogg dir from previous runs
-    for dirname,extensions in TIDY_DIR_OGG.items():
-        if not os.path.exists(DEST_DIR_OGG + dirname):
-            continue
-        for filename in os.listdir(DEST_DIR_OGG + dirname):
-            for ext in extensions:
-                if filename.endswith(ext):
-                    filename = DEST_DIR_OGG + dirname + filename
-                    if os.path.exists(filename):
-                        os.remove(filename)
-                        files_tidied += 1
-    # clear out files in pk3 base dir too
-    for filename in RES_FILES:
-        # don't touch subdirs
-        if filename != os.path.basename(filename):
-            continue
-        filename = DEST_DIR + filename
-        if os.path.exists(filename):
-            os.remove(filename)
-            files_tidied += 1
-    if files_tidied > 0:
-        logg('Removed %s files from a previous run.' % files_tidied)
+    clear_pk3()
     logg('Found in %s:\n  ' % SRC_WAD_DIR + ', '.join(found))
     print('A new PK3 format IWAD will be generated with the following episodes:')
     for num_eps,ep_name in enumerate(get_eps(found)):
@@ -560,6 +565,8 @@ def main():
         logfile.close()
         return
     # make dirs if they don't exist
+    if not os.path.exists(TEMP_DIR):
+        os.mkdir(TEMP_DIR)
     if not os.path.exists(DEST_DIR):
         os.mkdir(DEST_DIR)
     for dirname in ['flats', 'graphics', 'music', 'maps', 'mapinfo',
@@ -652,6 +659,7 @@ def main():
     if num_errors > 0:
         logg('%s errors found, see %s for details.' % (num_errors, LOG_FILENAME))
     input_func('Press Enter to exit.\n')
+    clear_pk3()
     logfile.close()
 
 if __name__ == "__main__":
