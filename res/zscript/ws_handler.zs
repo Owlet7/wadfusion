@@ -61,6 +61,31 @@ class WadSmooshHandler : EventHandler
         }
     }
     
+    void DoId1TextureReplacements()
+    {
+        // detect id1 or iddm1 style map name
+        String mapPrefix = level.MapName.Left(3);
+        mapPrefix = mapPrefix.MakeLower();
+        if ( mapPrefix == "id_" || mapPrefix == "dm_" )
+        {
+            // replace id1 textures that are different from doom2
+            Level.ReplaceTextures("BLOOD1", "XBLOOD1", 0);
+            Level.ReplaceTextures("NUKAGE1", "XNUKAGE1", 0);
+            Level.ReplaceTextures("BRNPOIS2", "BRNPOIS3", 0);
+            Level.ReplaceTextures("DOORSTOP", "DOORSTP1", 0);
+            Level.ReplaceTextures("LITERED2", "LITERED6", 0);
+            Level.ReplaceTextures("WFALL1", "XWFALL1", 0);
+            Level.ReplaceTextures("SW1BRN1", "SW1BRN1A", 0);
+            Level.ReplaceTextures("SW1STARG", "SW1STARA", 0);
+            Level.ReplaceTextures("SW1STONE", "SW1STONA", 0);
+            Level.ReplaceTextures("SW1STON2", "SW1STONB", 0);
+            Level.ReplaceTextures("SW2BRN1", "SW2BRN1A", 0);
+            Level.ReplaceTextures("SW2STARG", "SW2STARA", 0);
+            Level.ReplaceTextures("SW2STONE", "SW2STONA", 0);
+            Level.ReplaceTextures("SW2STON2", "SW2STONB", 0);
+        }
+    }
+    
     // check if the given sky is the level's current sky, see if that is
     // being overriden, and if so change it. return whether this happened.
     bool CheckSkyOverriden(String skyName, String possibleTrueSkyName)
@@ -94,6 +119,8 @@ class WadSmooshHandler : EventHandler
             DoFinalDoomTextureReplacements();
         if ( CVar.FindCVar("ws_d1_texswap").GetBool() )
             DoDoom1TextureReplacements();
+        if ( CVar.FindCVar("ws_id1_texswap").GetBool() )
+            DoId1TextureReplacements();
         if ( CVar.FindCVar("ws_d2sky_compat").GetBool() )
             DoDoom2SkyReplacements();
     }

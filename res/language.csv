@@ -1,166 +1,183 @@
-Identifier,Remarks,Filter,default,eng enc ena enz eni ens enj enb enl ent enw,cs,da,de,el,eo,es,esm esn esg esc esa esd esv eso esr ess esf esl esy esz esb ese esh esi esu,fi,fr,hu,it,jp,ko,nl,no nb,pl,pt,ptg,ro,ru,sr,sv,tr
-,options menu text,,,,,,,,,,,,,,,,,,,,,,,,,,
-WS_MENU_TITLE,,,WadSmoosh Options,,,,,,,,,,,,,,,,,,,,,Настройки WadSmoosh,,,
-WS_RESTART_TEXT,,,Note: Changing any of these requires a level restart.,,,,,,,,,,,,,,,,,,,,,Примечание: Для применения данных настроек требуется перезапуск уровня.,,,
-WS_MENU_FD_TEXSWAP,,,Final DOOM Texture Substitutions,,,,,,,,,,,,,,,,,,,,,Замена текстур в Финальном DOOM,,,
-WS_MENU_D2SKY_COMPAT,,,DOOM II Custom Sky Compatibility,,,,,,,,,,,,,,,,,,,,,Совместимость с пользовательскими текстурами неба в DOOM II,,,
-WS_MENU_D1_TEXSWAP,,,DOOM 1 Texture Substitutions,,,,,,,,,,,,,,,,,,,,,Замена текстур в DOOM 1,,,
-WS_MENU_S2_SPIDERBOSS_BUFF,,,SIGIL II Spider Mastermind Buff,,,,,,,,,,,,,,,,,,,,,Усиление Паука-предводителя в СИГИЛ II,,,
-WS_MENU_SIGIL_SHDERS,,,Buckethead Soundtrack for SIGIL,,,,,,,,,,,,,,,,,,,,,Саундтрек Buckethead к СИГИЛ,,,
-WS_MENU_SIGIL2_SHDERS,,,THORR Soundtrack for SIGIL II,,,,,,,,,,,,,,,,,,,,,Саундтрек THORR к СИГИЛ II,,,
-WS_MENU_XBOX_SECRET_EXITS,,,Xbox Secret Exits,,,,,,,,,,,,,,,,,,,,,Тайные выходы из Xbox,,,
-WS_MENU_CREDITS,,,WadSmoosh Credits,,,,,,,,,,,,,,,,,,,,,Разработчики WadSmoosh,,,
-WS_CREDITS,,,Credits,,,,,,,,,,,,,,,,,,,,,Разработчики,,,
-WS_NAME,,,WadSmoosh,,,,,,,,,,,,,,,,,,,,,,,,
-,credits headings,,,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_DEVPUB,,,Developed and Published by,,,,,,,,,,,,,,,,,,,,,Разработчик и издатель,,,
-WS_CRED_CODE,,,Programmers,,,,,,,,,,,,,,,,,,,,,Программисты,,,
-WS_CRED_ART,,,Artists,,,,,,,,,,,,,,,,,,,,,Художники,,,
-WS_CRED_BIZ,,,Business,,,,,,,,,,,,,,,,,,,,,Бизнес,,,
-WS_CRED_SUPPORT,,,Software Support,,,,,,,,,,,,,,,,,,,,,Поддержка ПО,,,
-WS_CRED_AUDIO,,,Music and Sound,,,,,,,,,,,,,,,,,,,,,Музыка и звуки,,,
-WS_CRED_AUDIO_CODE,,,Sound Code,,,,,,,,,,,,,,,,,,,,,Звуковой код,,,
-WS_CRED_LD,,,Level Designers,,,,,,,,,,,,,,,,,,,,,Дизайнеры уровней,,,
-WS_CRED_THANKS,,,Special Thanks,,,,,,,,,,,,,,,,,,,,,Особая благодарность,,,
-WS_CRED_DEV,,,Developed by,,,,,,,,,,,,,,,,,,,,,Разработчик,,,
-WS_CRED_PUB,,,Published by,,,,,,,,,,,,,,,,,,,,,Издатель,,,
-WS_CRED_ORIG,,,Original Code and Art Assets,,,,,,,,,,,,,,,,,,,,,Оригинальный код и художественные ресурсы,,,
-WS_CRED_MUSIC,,,Original Compositions,,,,,,,,,,,,,,,,,,,,,Оригинальные композиции,,,
-WS_CRED_ORIG_MUSIC,,,Music From DOOM and DOOM II,,,,,,,,,,,,,,,,,,,,,Музыка из DOOM и DOOM II,,,
-WS_CRED_COVER,,,Cover Art,,,,,,,,,,,,,,,,,,,,,Обложка,,,
-WS_CRED_LD1,,,Level Designer,,,,,,,,,,,,,,,,,,,,,Дизайн уровней,,,
-WS_CRED_TEST,,,Playtesters,,,,,,,,,,,,,,,,,,,,,Тестеры,,,
-WS_CRED_XBOXLD,,,Xbox Port Level Designers,,,,,,,,,,,,,,,,,,,,,Дизайнеры уровней из порта на Xbox,,,
-WS_CRED_XBOXLD1,,,Xbox Port Level Designer,,,,,,,,,,,,,,,,,,,,,Дизайнер уровня из порта на Xbox,,,
-WS_CRED_WS,,,Concept and Implementation,,,,,,,,,,,,,,,,,,,,,Концепция и реализация,,,
-WS_CRED_WS_FORK,,,Fork Development,,,,,,,,,,,,,,,,,,,,,Разработка форка,,,
-WS_CRED_WS_TITLE_ART,,,Custom Title Art,,,,,,,,,,,,,,,,,,,,,Пользовательское заглавное изображение,,,
-WS_CRED_WS_EP_ART,,,Episode Name Art,,,,,,,,,,,,,,,,,,,,,Изображения имен эпизодов,,,
-WS_CRED_WS_CREDITS,,,Credits Implementation,,,,,,,,,,,,,,,,,,,,,Реализация списка разработчиков,,,
-WS_CRED_WS_LIBRARY,,,Omgifol Library,,,,,,,,,,,,,,,,,,,,,Библиотека Omgifol,,,
-WS_CRED_WS_SIGIL2,,,SIGIL II Support,,,,,,,,,,,,,,,,,,,,,Поддержка СИГИЛ II,,,
-WS_CRED_ID,credits,,id Software,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_NERVE,,,Nerve Software,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_TNT,,,Team TNT,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_ROMEROGAMES,,,Romero Games,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_JOHN_CARMACK,id Software,,John Carmack,,,,,,,,,,,,,,,,,,,,,Джон Кармак,,,
-WS_CRED_ABRASH,,,Mike Abrash,,,,,,,,,,,,,,,,,,,,,Майк Абраш,,,
-WS_CRED_TAYLOR,,,Dave Taylor,,,,,,,,,,,,,,,,,,,,,Дэйв Тейлор,,,
-WS_CRED_ADRIAN_CARMACK,,,Adrian Carmack,,,,,,,,,,,,,,,,,,,,,Адриан Кармак,,,
-WS_CRED_CLOUD,,,Kevin Cloud,,,,,,,,,,,,,,,,,,,,,Кевин Клауд,,,
-WS_CRED_WILBUR,,,Jay Wilbur,,,,,,,,,,,,,,,,,,,,,Джей Уилбур,,,
-WS_CRED_RADEK,,,Paul Radek,,,,,,,,,,,,,,,,,,,,,Пол Радек,,,
-WS_CRED_PRINCE,,,Robert Prince,,,,,,,,,,,,,,,,,,,,,Роберт Принс,,,
-WS_CRED_HALL,,,Tom Hall,,,,,,,,,,,,,,,,,,,,,Том Холл,,,
-WS_CRED_CHASAR,,,Theresa Chasar,,,,,,,,,,,,,,,,,,,,,Тереза Часар,,,
-WS_CRED_PUNCHATZ,,,Gregor Punchatz,,,,,,,,,,,,,,,,,,,,,Грегор Пунчац,,,
-WS_CRED_CALVIN,xbox,,David Calvin,,,,,,,,,,,,,,,,,,,,,Дэвид Кэлвин,,,
-WS_CRED_BLANSHINE,,,David Blanshine,,,,,,,,,,,,,,,,,,,,,Дэвид Бланшайн,,,
-WS_CRED_KIDBY,Team TNT,,Brian Kidby,,,,,,,,,,,,,,,,,,,,,Брайан Кидби,,,
-WS_CRED_SNELL,,,Mark Snell,,,,,,,,,,,,,,,,,,,,,Марк Снелл,,,
-WS_CRED_ELBIZRI,,,Jonathan El-Bizri,,,,,,,,,,,,,,,,,,,,,Джонатан Эль-Бизри,,,
-WS_CRED_MARTEL,,,Josh Martel,,,,,,,,,,,,,,,,,,,,,Джош Мартел,,,
-WS_CRED_LA_SIEBEN,,,L.A. Sieben,,,,,,,,,,,,,,,,,,,,,Л. А. Зибен,,,
-WS_CRED_BOB_MUSTAINE,,,Bob Mustaine,,,,,,,,,,,,,,,,,,,,,Боб Мастейн,,,
-WS_CRED_BUCKETHEAD,Sigil,,Buckethead,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_PADDOCK,,,James Paddock,,,,,,,,,,,,,,,,,,,,,Джеймс Пэддок,,,
-WS_CRED_LOVELL,,,Christopher Lovell,,,,,,,,,,,,,,,,,,,,,Кристофер Ловелл,,,
-WS_CRED_KLIMES,,,Boris Klimeš,,,,,,,,,,,,,,,,,,,,,Борис Климеш,,,
-WS_CRED_XASER,,,Xaser,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_BAUMGARDNER,,,Kurt Baumgardner,,,,,,,,,,,,,,,,,,,,,Курт Баумгарднер,,,
-WS_CRED_THORR,,,THORR,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_FLAMBEAU,,,FLAMBEAU,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_UBERGWEI,,,UberGewei,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_KEYBOARD_DOOMER,,,KEYBOARD_DOOMER,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_DEW,,,dew,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_AF_DOMAINS,,,AF-Domains,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_LEBRETON,WadSmoosh,,JP LeBreton,,,,,,,,,,,,,,,,,,,,,Джей-Пи ЛеБретон,,,
-WS_CRED_JOHANSSON,,,Fredrik Johansson,,,,,,,,,,,,,,,,,,,,,Фредрик Йоханссон,,,
-WS_CRED_REVENANT,,,Revenant,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_SCALLIANO,,,Scalliano,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_HELLSER,,,Hellser,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_NIGHTFRIGHT,,,NightFright,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_SHOCKWAVE,,,Shockwave_S08,,,,,,,,,,,,,,,,,,,,,,,,
-WS_CRED_BROWN,,,jdbrown,,,,,,,,,,,,,,,,,,,,,Джей-Ди Браун,,,
-WS_CRED_OWLET,,,Owlet VII,,,,,,,,,,,,,,,,,,,,,,,,
-,map author names,,,,,,,,,,,,,,,,,,,,,,,,,,
-WS_AU_ROMERO,doom1/2,,John Romero,,,,,,,,,,,,,,,,,,,,,Джон Ромеро,,,
-WS_AU_ROMERO_HALL,,,John Romero & Tom Hall,,,,,,,,,,,,,,,,,,,,,Джон Ромеро и Том Холл,,,
-WS_AU_PETERSEN_HALL,,,Sandy Petersen & Tom Hall,,,,,,,,,,,,,,,,,,,,,Сэнди Питерсен и Том Холл,,,
-WS_AU_PETERSEN,,,Sandy Petersen,,,,,,,,,,,,,,,,,,,,,Сэнди Питерсен,,,
-WS_AU_MCGEE,,,American McGee,,,,,,,,,,,,,,,,,,,,,Американ Макги,,,
-WS_AU_GREEN,,,Shawn Green,,,,,,,,,,,,,,,,,,,,,Шон Грин,,,
-WS_AU_WILLITS_CHASAR,,,Tim Willits & Theresa Chasar,,,,,,,,,,,,,,,,,,,,,Тим Уиллитс и Тереза Часар,,,
-WS_AU_ANDERSON,,,John Anderson,,,,,,,,,,,,,,,,,,,,,Джон Андерсон,,,
-WS_AU_WILLITS,,,Tim Willits,,,,,,,,,,,,,,,,,,,,,Тим Уиллитс,,,
-WS_AU_MCGEE_PETERSEN,,,American McGee & Sandy Petersen,,,,,,,,,,,,,,,,,,,,,Американ Макги и Сэнди Питерсен,,,
-WS_AU_KLIE,master levels,,Chris Klie,,,,,,,,,,,,,,,,,,,,,Крис Кли,,,
-WS_AU_MUSTAINES,,,Tom & Bob Mustaine,,,,,,,,,,,,,,,,,,,,,Том и Боб Мастейн,,,
-WS_AU_KVERNMO,,,Sverre André Kvernmo,,,,,,,,,,,,,,,,,,,,,Сверре Андре Квернмо,,,
-WS_AU_FLYNN,,,Jim Flynn,,,,,,,,,,,,,,,,,,,,,Джим Флинн,,,
-WS_AU_MEAKIM,nerve,,Russell Meakim,,,,,,,,,,,,,,,,,,,,,Рассел Миким,,,
-WS_AU_IWAKURA,,,Arya Iwakura,,,,,,,,,,,,,,,,,,,,,Арья Ивакура,,,
-WS_AU_WAKELIN,tnt + plutonia,,John Wakelin,,,,,,,,,,,,,,,,,,,,,Джон Уэйклин,,,
-WS_AU_PATENALL_MINADEO,,,Robin Patenall & John Minadeo,,,,,,,,,,,,,,,,,,,,,Робин Патеналл и Джон Минадео,,,
-WS_AU_HALDERMAN,,,Ty Halderman,,,,,,,,,,,,,,,,,,,,,Тай Халдерман,,,
-WS_AU_DETHLEFSEN,,,Jim Dethlefsen,,,,,,,,,,,,,,,,,,,,,Джим Детлефсен,,,
-WS_AU_SIEBEN_HALDERMAN,,,Jimmy Sieben & Ty Halderman,,,,,,,,,,,,,,,,,,,,,Джимми Сибен и Тай Халдерман,,,
-WS_AU_DOWSWELL,,,Andrew Dowswell,,,,,,,,,,,,,,,,,,,,,Эндрю Даусвелл,,,
-WS_AU_MINADEO,,,John Minadeo,,,,,,,,,,,,,,,,,,,,,Джон Минадео,,,
-WS_AU_JOHNSON,,,Dean Johnson,,,,,,,,,,,,,,,,,,,,,Дин Джонсон,,,
-WS_AU_LOWELL,,,Jim Lowell,,,,,,,,,,,,,,,,,,,,,Джим Лоуэлл,,,
-WS_AU_KIDBY_HALDERMAN,,,Brian Kidby & Ty Halderman,,,,,,,,,,,,,,,,,,,,,Брайан Кидби и Тай Халдерман,,,
-WS_AU_PATENALL,,,Robin Patenall,,,,,,,,,,,,,,,,,,,,,Робин Патеналл,,,
-WS_AU_WHITAKER,,,William D. Whitaker,,,,,,,,,,,,,,,,,,,,,Уильям Д. Уитакер,,,
-WS_AU_ARSENAULT,,,Andre Arsenault,,,,,,,,,,,,,,,,,,,,,Андре Арсено,,,
-WS_AU_CASALI_HALDERMAN,,,Dario Casali & Ty Halderman,,,,,,,,,,,,,,,,,,,,,Дарио Казали и Тай Халдерман,,,
-WS_AU_OBRIEN,,,Drake O'Brien,,,,,,,,,,,,,,,,,,,,,Дрейк О'Брайен,,,
-WS_AU_BUTEAU,,,Christopher Buteau,,,,,,,,,,,,,,,,,,,,,Кристофер Бюто,,,
-WS_AU_TURNBULL,,,Paul Turnbull,,,,,,,,,,,,,,,,,,,,,Пол Тернбулл,,,
-WS_AU_HILL,,,David J. Hill,,,,,,,,,,,,,,,,,,,,,Дэвид Дж. Хилл,,,
-WS_AU_SNELL_LOWELL,,,Mark Snell & Jim Lowell,,,,,,,,,,,,,,,,,,,,,Марк Снелл и Джим Лоуэлл,,,
-WS_AU_MILO_CASALI,,,Milo Casali,,,,,,,,,,,,,,,,,,,,,Майло Казали,,,
-WS_AU_SIEBEN,,,Jimmy Sieben,,,,,,,,,,,,,,,,,,,,,Джимми Сибен,,,
-WS_AU_DARIO_CASALI,,,Dario Casali,,,,,,,,,,,,,,,,,,,,,Дарио Казали,,,
-WS_AU_CASALIS,,,Dario & Milo Casali,,,,,,,,,,,,,,,,,,,,,Дарио и Майло Казали,,,
-WS_AU_MUSTAINE,,,Tom Mustaine,,,,,,,,,,,,,,,,,,,,,Том Мастейн,,,
-WS_AU_CALVIN_BLANSHINE,xbox secret levels,,David Calvin & David Blanshine,,,,,,,,,,,,,,,,,,,,,Дэвид Кэлвин и Дэвид Блэншайн,,,
-WS_AU_BUKOWSKI,,,Michael Bukowski,,,,,,,,,,,,,,,,,,,,,Майкл Буковски,,,
-,episode names,,,,,,,,,,,,,,,,,,,,,,,,,,
-UD1NAME,,,The Ultimate DOOM,,,,,,,,,,,,,,,,,,,,,Предельный DOOM,,,
-D2E1NAME,,,DOOM II: Hell on Earth,,,,,,,,,,,,,,,,,,,,,DOOM II: Ад на Земле,,,
-D2E2NAME,,,No Rest for the Living,,,,,,,,,,,,,,,,,,,,,Не будет покоя живым,,,
-D2MLNAME,,,Master Levels,,,,,,,,,,,,,,,,,,,,,Уровни мастеров,,,
-D2MLEPNAME,,,Master Levels for DOOM II,,,,,,,,,,,,,,,,,,,,,Уровни мастеров для DOOM II,,,
-FDNAME,,,Final DOOM,,,,,,,,,,,,,,,,,,,,,Финальный DOOM,,,
-TNTEPNAME,,,Final DOOM - TNT: Evilution,,,,,,,,,,,,,,,,,,,,,Финальный DOOM - TNT: Дьяволюция,,,
-PLUTEPNAME,,,Final DOOM - The Plutonia Experiment,,,,,,,,,,,,,,,,,,,,,Финальный DOOM - Эксперимент «Плутония»,,,
-EP5NAME,,,SIGIL,,,,,,,,,,,,,,,,,,,,,СИГИЛ,,,
-EP6NAME,,,SIGIL II,,,,,,,,,,,,,,,,,,,,,СИГИЛ II,,,
+Identifier,Remarks,Filter,default,eng enc ena enz eni ens enj enb enl ent enw,cs,da,de,el,eo,es,esm esn esg esc esa esd esv eso esr ess esf esl esy esz esb ese esh esi esu,fi,fr,hu,it,jp,ko,nl,no nb,pl,pt,ptg,ro,ru,sr,sv,tr,zh,zht
+,options menu text,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_MENU_TITLE,,,WadSmoosh Options,,,,,,,,,,,,,,,,,,,,,Настройки WadSmoosh,,,,,
+WS_RESTART_TEXT,,,Note: Changing any of these requires a level restart.,,,,,,,,,,,,,,,,,,,,,Примечание: Для применения данных настроек требуется перезапуск уровня.,,,,,
+WS_MENU_FD_TEXSWAP,,,Final DOOM Texture Substitutions,,,,,,,,,,,,,,,,,,,,,Замена текстур в Финальном DOOM,,,,,
+WS_MENU_D2SKY_COMPAT,,,DOOM II Custom Sky Compatibility,,,,,,,,,,,,,,,,,,,,,Совместимость с пользовательскими текстурами неба в DOOM II,,,,,
+WS_MENU_D1_TEXSWAP,,,DOOM 1 Texture Substitutions,,,,,,,,,,,,,,,,,,,,,Замена текстур в DOOM 1,,,,,
+WS_MENU_ID1_TEXSWAP,,,Legacy of Rust Texture Substitutions,,,,,,,,,,,,,,,,,,,,,Замена текстур в Legacy of Rust,,,,,
+WS_MENU_S2_SPIDERBOSS_BUFF,,,SIGIL II Spider Mastermind Buff,,,,,,,,,,,,,,,,,,,,,Усиление Паука-предводителя в SIGIL II,,,,,
+WS_MENU_SIGIL_SHDERS,,,Buckethead Soundtrack for SIGIL,,,,,,,,,,,,,,,,,,,,,Саундтрек Buckethead к SIGIL,,,,,
+WS_MENU_SIGIL2_SHDERS,,,THORR Soundtrack for SIGIL II,,,,,,,,,,,,,,,,,,,,,Саундтрек THORR к SIGIL II,,,,,
+WS_MENU_XBOX_SECRET_EXITS,,,Xbox Secret Exits,,,,,,,,,,,,,,,,,,,,,Тайные выходы из Xbox,,,,,
+WS_MENU_CREDITS,,,WadSmoosh Credits,,,,,,,,,,,,,,,,,,,,,Разработчики WadSmoosh,,,,,
+WS_CREDITS,,,Credits,,,,,,,,,,,,,,,,,,,,,Разработчики,,,,,
+WS_NAME,,,WadSmoosh,,,,,,,,,,,,,,,,,,,,,,,,,,
+,credits headings,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_DEVPUB,,,Developed and Published by,,,,,,,,,,,,,,,,,,,,,Разработчик и издатель,,,,,
+WS_CRED_CODE,,,Programmers,,,,,,,,,,,,,,,,,,,,,Программисты,,,,,
+WS_CRED_ART,,,Artists,,,,,,,,,,,,,,,,,,,,,Художники,,,,,
+WS_CRED_BIZ,,,Business,,,,,,,,,,,,,,,,,,,,,Бизнес,,,,,
+WS_CRED_SUPPORT,,,Software Support,,,,,,,,,,,,,,,,,,,,,Поддержка ПО,,,,,
+WS_CRED_AUDIO,,,Music and Sound,,,,,,,,,,,,,,,,,,,,,Музыка и звуки,,,,,
+WS_CRED_AUDIO_CODE,,,Sound Code,,,,,,,,,,,,,,,,,,,,,Звуковой код,,,,,
+WS_CRED_LD,,,Level Designers,,,,,,,,,,,,,,,,,,,,,Дизайнеры уровней,,,,,
+WS_CRED_THANKS,,,Special Thanks,,,,,,,,,,,,,,,,,,,,,Особая благодарность,,,,,
+WS_CRED_DEV,,,Developed by,,,,,,,,,,,,,,,,,,,,,Разработчик,,,,,
+WS_CRED_PUB,,,Published by,,,,,,,,,,,,,,,,,,,,,Издатель,,,,,
+WS_CRED_ORIG,,,Original Code and Art Assets,,,,,,,,,,,,,,,,,,,,,Оригинальный код и художественные ресурсы,,,,,
+WS_CRED_MUSIC,,,Original Compositions,,,,,,,,,,,,,,,,,,,,,Оригинальные композиции,,,,,
+WS_CRED_ORIG_MUSIC,,,Music From DOOM and DOOM II,,,,,,,,,,,,,,,,,,,,,Музыка из DOOM и DOOM II,,,,,
+WS_CRED_COVER,,,Cover Art,,,,,,,,,,,,,,,,,,,,,Обложка,,,,,
+WS_CRED_LD1,,,Level Designer,,,,,,,,,,,,,,,,,,,,,Дизайн уровней,,,,,
+WS_CRED_TEST,,,Playtesters,,,,,,,,,,,,,,,,,,,,,Тестеры,,,,,
+WS_CRED_XBOXLD,,,Xbox Port Level Designers,,,,,,,,,,,,,,,,,,,,,Дизайнеры уровней из порта на Xbox,,,,,
+WS_CRED_XBOXLD1,,,Xbox Port Level Designer,,,,,,,,,,,,,,,,,,,,,Дизайнер уровня из порта на Xbox,,,,,
+WS_CRED_WS,,,Concept and Implementation,,,,,,,,,,,,,,,,,,,,,Концепция и реализация,,,,,
+WS_CRED_WS_FORK,,,Fork Development,,,,,,,,,,,,,,,,,,,,,Разработка форка,,,,,
+WS_CRED_WS_TITLE_ART,,,Custom Title Art,,,,,,,,,,,,,,,,,,,,,Пользовательское заглавное изображение,,,,,
+WS_CRED_WS_EP_ART,,,Episode Name Art,,,,,,,,,,,,,,,,,,,,,Изображения имен эпизодов,,,,,
+WS_CRED_WS_CREDITS,,,Credits Implementation,,,,,,,,,,,,,,,,,,,,,Реализация списка разработчиков,,,,,
+WS_CRED_WS_LIBRARY,,,Omgifol Library,,,,,,,,,,,,,,,,,,,,,Библиотека Omgifol,,,,,
+WS_CRED_WS_SIGIL2,,,SIGIL II Support,,,,,,,,,,,,,,,,,,,,,Поддержка SIGIL II,,,,,
+WS_CRED_ID,credits,,id Software,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_NERVE,,,Nerve Software,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_TNT,,,Team TNT,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_ROMEROGAMES,,,Romero Games,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_JOHN_CARMACK,id Software,,John Carmack,,,,,,,,,,,,,,,,,,,,,Джон Кармак,,,,,
+WS_CRED_ABRASH,,,Mike Abrash,,,,,,,,,,,,,,,,,,,,,Майк Абраш,,,,,
+WS_CRED_TAYLOR,,,Dave Taylor,,,,,,,,,,,,,,,,,,,,,Дэйв Тейлор,,,,,
+WS_CRED_ADRIAN_CARMACK,,,Adrian Carmack,,,,,,,,,,,,,,,,,,,,,Адриан Кармак,,,,,
+WS_CRED_CLOUD,,,Kevin Cloud,,,,,,,,,,,,,,,,,,,,,Кевин Клауд,,,,,
+WS_CRED_WILBUR,,,Jay Wilbur,,,,,,,,,,,,,,,,,,,,,Джей Уилбур,,,,,
+WS_CRED_RADEK,,,Paul Radek,,,,,,,,,,,,,,,,,,,,,Пол Радек,,,,,
+WS_CRED_PRINCE,,,Robert Prince,,,,,,,,,,,,,,,,,,,,,Роберт Принс,,,,,
+WS_CRED_HALL,,,Tom Hall,,,,,,,,,,,,,,,,,,,,,Том Холл,,,,,
+WS_CRED_CHASAR,,,Theresa Chasar,,,,,,,,,,,,,,,,,,,,,Тереза Часар,,,,,
+WS_CRED_PUNCHATZ,,,Gregor Punchatz,,,,,,,,,,,,,,,,,,,,,Грегор Пунчац,,,,,
+WS_CRED_CALVIN,xbox,,David Calvin,,,,,,,,,,,,,,,,,,,,,Дэвид Кэлвин,,,,,
+WS_CRED_BLANSHINE,,,David Blanshine,,,,,,,,,,,,,,,,,,,,,Дэвид Бланшайн,,,,,
+WS_CRED_KIDBY,Team TNT,,Brian Kidby,,,,,,,,,,,,,,,,,,,,,Брайан Кидби,,,,,
+WS_CRED_SNELL,,,Mark Snell,,,,,,,,,,,,,,,,,,,,,Марк Снелл,,,,,
+WS_CRED_ELBIZRI,,,Jonathan El-Bizri,,,,,,,,,,,,,,,,,,,,,Джонатан Эль-Бизри,,,,,
+WS_CRED_MARTEL,,,Josh Martel,,,,,,,,,,,,,,,,,,,,,Джош Мартел,,,,,
+WS_CRED_LA_SIEBEN,,,L.A. Sieben,,,,,,,,,,,,,,,,,,,,,Л. А. Зибен,,,,,
+WS_CRED_BOB_MUSTAINE,,,Bob Mustaine,,,,,,,,,,,,,,,,,,,,,Боб Мастейн,,,,,
+WS_CRED_BUCKETHEAD,Sigil,,Buckethead,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_PADDOCK,,,James Paddock,,,,,,,,,,,,,,,,,,,,,Джеймс Пэддок,,,,,
+WS_CRED_LOVELL,,,Christopher Lovell,,,,,,,,,,,,,,,,,,,,,Кристофер Ловелл,,,,,
+WS_CRED_KLIMES,,,Boris Klimeš,,,,,,,,,,,,,,,,,,,,,Борис Климеш,,,,,
+WS_CRED_XASER,,,Xaser,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_BAUMGARDNER,,,Kurt Baumgardner,,,,,,,,,,,,,,,,,,,,,Курт Баумгарднер,,,,,
+WS_CRED_THORR,,,THORR,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_FLAMBEAU,,,FLAMBEAU,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_UBERGWEI,,,UberGewei,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_KEYBOARD_DOOMER,,,KEYBOARD_DOOMER,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_DEW,,,dew,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_AF_DOMAINS,,,AF-Domains,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_LEBRETON,WadSmoosh,,JP LeBreton,,,,,,,,,,,,,,,,,,,,,Джей-Пи ЛеБретон,,,,,
+WS_CRED_JOHANSSON,,,Fredrik Johansson,,,,,,,,,,,,,,,,,,,,,Фредрик Йоханссон,,,,,
+WS_CRED_REVENANT,,,Revenant,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_SCALLIANO,,,Scalliano,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_HELLSER,,,Hellser,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_NIGHTFRIGHT,,,NightFright,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_SHOCKWAVE,,,Shockwave_S08,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_CRED_BROWN,,,jdbrown,,,,,,,,,,,,,,,,,,,,,Джей-Ди Браун,,,,,
+WS_CRED_OWLET,,,Owlet VII,,,,,,,,,,,,,,,,,,,,,,,,,,
+,map author names,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_AU_ROMERO,doom1/2,,John Romero,,,,,,,,,,,,,,,,,,,,,Джон Ромеро,,,,,
+WS_AU_ROMERO_HALL,,,John Romero & Tom Hall,,,,,,,,,,,,,,,,,,,,,Джон Ромеро и Том Холл,,,,,
+WS_AU_PETERSEN_HALL,,,Sandy Petersen & Tom Hall,,,,,,,,,,,,,,,,,,,,,Сэнди Питерсен и Том Холл,,,,,
+WS_AU_PETERSEN,,,Sandy Petersen,,,,,,,,,,,,,,,,,,,,,Сэнди Питерсен,,,,,
+WS_AU_MCGEE,,,American McGee,,,,,,,,,,,,,,,,,,,,,Американ Макги,,,,,
+WS_AU_GREEN,,,Shawn Green,,,,,,,,,,,,,,,,,,,,,Шон Грин,,,,,
+WS_AU_WILLITS_CHASAR,,,Tim Willits & Theresa Chasar,,,,,,,,,,,,,,,,,,,,,Тим Уиллитс и Тереза Часар,,,,,
+WS_AU_ANDERSON,,,John Anderson,,,,,,,,,,,,,,,,,,,,,Джон Андерсон,,,,,
+WS_AU_WILLITS,,,Tim Willits,,,,,,,,,,,,,,,,,,,,,Тим Уиллитс,,,,,
+WS_AU_MCGEE_PETERSEN,,,American McGee & Sandy Petersen,,,,,,,,,,,,,,,,,,,,,Американ Макги и Сэнди Питерсен,,,,,
+WS_AU_KLIE,master levels,,Chris Klie,,,,,,,,,,,,,,,,,,,,,Крис Кли,,,,,
+WS_AU_MUSTAINES,,,Tom & Bob Mustaine,,,,,,,,,,,,,,,,,,,,,Том и Боб Мастейн,,,,,
+WS_AU_KVERNMO,,,Sverre André Kvernmo,,,,,,,,,,,,,,,,,,,,,Сверре Андре Квернмо,,,,,
+WS_AU_FLYNN,,,Jim Flynn,,,,,,,,,,,,,,,,,,,,,Джим Флинн,,,,,
+WS_AU_MEAKIM,nerve,,Russell Meakim,,,,,,,,,,,,,,,,,,,,,Рассел Миким,,,,,
+WS_AU_IWAKURA,,,Arya Iwakura,,,,,,,,,,,,,,,,,,,,,Арья Ивакура,,,,,
+WS_AU_WAKELIN,tnt + plutonia,,John Wakelin,,,,,,,,,,,,,,,,,,,,,Джон Уэйклин,,,,,
+WS_AU_PATENALL_MINADEO,,,Robin Patenall & John Minadeo,,,,,,,,,,,,,,,,,,,,,Робин Патеналл и Джон Минадео,,,,,
+WS_AU_HALDERMAN,,,Ty Halderman,,,,,,,,,,,,,,,,,,,,,Тай Халдерман,,,,,
+WS_AU_DETHLEFSEN,,,Jim Dethlefsen,,,,,,,,,,,,,,,,,,,,,Джим Детлефсен,,,,,
+WS_AU_SIEBEN_HALDERMAN,,,Jimmy Sieben & Ty Halderman,,,,,,,,,,,,,,,,,,,,,Джимми Сибен и Тай Халдерман,,,,,
+WS_AU_DOWSWELL,,,Andrew Dowswell,,,,,,,,,,,,,,,,,,,,,Эндрю Даусвелл,,,,,
+WS_AU_MINADEO,,,John Minadeo,,,,,,,,,,,,,,,,,,,,,Джон Минадео,,,,,
+WS_AU_JOHNSON,,,Dean Johnson,,,,,,,,,,,,,,,,,,,,,Дин Джонсон,,,,,
+WS_AU_LOWELL,,,Jim Lowell,,,,,,,,,,,,,,,,,,,,,Джим Лоуэлл,,,,,
+WS_AU_KIDBY_HALDERMAN,,,Brian Kidby & Ty Halderman,,,,,,,,,,,,,,,,,,,,,Брайан Кидби и Тай Халдерман,,,,,
+WS_AU_PATENALL,,,Robin Patenall,,,,,,,,,,,,,,,,,,,,,Робин Патеналл,,,,,
+WS_AU_WHITAKER,,,William D. Whitaker,,,,,,,,,,,,,,,,,,,,,Уильям Д. Уитакер,,,,,
+WS_AU_ARSENAULT,,,Andre Arsenault,,,,,,,,,,,,,,,,,,,,,Андре Арсено,,,,,
+WS_AU_CASALI_HALDERMAN,,,Dario Casali & Ty Halderman,,,,,,,,,,,,,,,,,,,,,Дарио Казали и Тай Халдерман,,,,,
+WS_AU_OBRIEN,,,Drake O'Brien,,,,,,,,,,,,,,,,,,,,,Дрейк О'Брайен,,,,,
+WS_AU_BUTEAU,,,Christopher Buteau,,,,,,,,,,,,,,,,,,,,,Кристофер Бюто,,,,,
+WS_AU_TURNBULL,,,Paul Turnbull,,,,,,,,,,,,,,,,,,,,,Пол Тернбулл,,,,,
+WS_AU_HILL,,,David J. Hill,,,,,,,,,,,,,,,,,,,,,Дэвид Дж. Хилл,,,,,
+WS_AU_SNELL_LOWELL,,,Mark Snell & Jim Lowell,,,,,,,,,,,,,,,,,,,,,Марк Снелл и Джим Лоуэлл,,,,,
+WS_AU_MILO_CASALI,,,Milo Casali,,,,,,,,,,,,,,,,,,,,,Майло Казали,,,,,
+WS_AU_SIEBEN,,,Jimmy Sieben,,,,,,,,,,,,,,,,,,,,,Джимми Сибен,,,,,
+WS_AU_DARIO_CASALI,,,Dario Casali,,,,,,,,,,,,,,,,,,,,,Дарио Казали,,,,,
+WS_AU_CASALIS,,,Dario & Milo Casali,,,,,,,,,,,,,,,,,,,,,Дарио и Майло Казали,,,,,
+WS_AU_MUSTAINE,,,Tom Mustaine,,,,,,,,,,,,,,,,,,,,,Том Мастейн,,,,,
+WS_AU_CALVIN_BLANSHINE,xbox secret levels,,David Calvin & David Blanshine,,,,,,,,,,,,,,,,,,,,,Дэвид Кэлвин и Дэвид Блэншайн,,,,,
+WS_AU_BUKOWSKI,,,Michael Bukowski,,,,,,,,,,,,,,,,,,,,,Майкл Буковски,,,,,
+,id1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_AU_VILLARREAL,,,Samuel Villarreal,,,,,,,,,,,,,,,,,,,,,Самуэль Вильярреал,,,,,
+WS_AU_ACHERON,,,Xaser Acheron,,,,,,,,,,,,,,,,,,,,,Хасер Ахерон,,,,,
+WS_AU_CARTER,,,Thomas Carter,,,,,,,,,,,,,,,,,,,,,Томас Картер,,,,,
+WS_AU_WATSON,,,Ethan Watson,,,,,,,,,,,,,,,,,,,,,Итан Уотсон,,,,,
+WS_AU_DUNLOP,,,Kevin Dunlop,,,,,,,,,,,,,,,,,,,,,Кевин Данлоп,,,,,
+WS_AU_ID1TEST,,,"nobody, this map just appeared out of thin air like a damn ghost",,,,,,,,,,,,,,,,,,,,,"никто, эта карта просто появилась из ниоткуда, как чертов призрак",,,,,
+,iddm1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+WS_AU_VICKERS,,,Ralph 'Ralphis' Vickers,,,,,,,,,,,,,,,,,,,,,Ральф «Ralphis» Викерс,,,,,
+WS_AU_CIRIACO,,,Luca Ciriaco,,,,,,,,,,,,,,,,,,,,,Лука Сириако,,,,,
+WS_AU_BOUVE_BOYLE,,,Andrew 'saar' Bouvé & Joshua 'tokyopunchout' Boyle,,,,,,,,,,,,,,,,,,,,,Эндрю «saar» Буве и Джошуа «tokyopunchout» Бойл,,,,,
+WS_AU_ARMACANQUI,,,Luis 'DX-Chain' Armacanqui,,,,,,,,,,,,,,,,,,,,,Луис «DX-Chain» Армаканки,,,,,
+WS_AU_CIBULAS,,,Matthew 'RottKing' Cibulas,,,,,,,,,,,,,,,,,,,,,Мэтью «RottKing» Сибулас,,,,,
+WS_AU_MURCHISON,,,Colton 'Arrowhead' Murchison,,,,,,,,,,,,,,,,,,,,,Колтон «Arrowhead» Мёрчисон,,,,,
+WS_AU_ID_MAYFIELD,,,id Software & Lexi Mayfield,,,,,,,,,,,,,,,,,,,,,id Software и Лекси Мэйфилд,,,,,
+WS_AU_MAYFIELD,,,Lexi Mayfield,,,,,,,,,,,,,,,,,,,,,Лекси Мэйфилд,,,,,
+,episode names,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+UD1NAME,,,The Ultimate DOOM,,,,,,,,,,,,,,,,,,,,,Предельный DOOM,,,,,
+D2E1NAME,,,DOOM II: Hell on Earth,,,,,,,,,,,,,,,,,,,,,DOOM II: Ад на Земле,,,,,
+D2E2NAME,,,No Rest for the Living,,,,,,,,,,,,,,,,,,,,,Не будет покоя живым,,,,,
+D2MLNAME,,,Master Levels,,,,,,,,,,,,,,,,,,,,,Уровни мастеров,,,,,
+D2MLEPNAME,,,Master Levels for DOOM II,,,,,,,,,,,,,,,,,,,,,Уровни мастеров для DOOM II,,,,,
+FDNAME,,,Final DOOM,,,,,,,,,,,,,,,,,,,,,Финальный DOOM,,,,,
+TNTEPNAME,,,Final DOOM - TNT: Evilution,,,,,,,,,,,,,,,,,,,,,Финальный DOOM - TNT: Дьяволюция,,,,,
+PLUTEPNAME,,,Final DOOM - The Plutonia Experiment,,,,,,,,,,,,,,,,,,,,,Финальный DOOM - Эксперимент «Плутония»,,,,,
+EP5NAME,,,SIGIL,,,,,,,,,,,,,,,,,,,,,,,,,,
+EP6NAME,,,SIGIL II,,,,,,,,,,,,,,,,,,,,,,,,,,
 ,"master levels names
-(map order defined in masterlevels_order.txt)",,,,,,,,,,,,,,,,,,,,,,,,,,
-ML_ATTACK,,,Attack,,,,,,,,,,,,,,,,,,,,,Атака,,,
-ML_CANYON,,,Canyon,,,,,,,,,,,,,,,,,,,,,Каньон,,,
-ML_CATWALK,,,The Catwalk,,,,,,,,,,,,,,,,,,,,,Подиум,,,
-ML_COMBINE,,,The Combine,,,,,,,,,,,,,,,,,,,,,Комбайн,,,
-ML_FISTULA,,,The Fistula,,,,,,,,,,,,,,,,,,,,,Фистула,,,
-ML_GARRISON,,,The Garrison,,,,,,,,,,,,,,,,,,,,,Гарнизон,,,
-ML_MANOR,,,Titan Manor,,,,,,,,,,,,,,,,,,,,,Поместье на Титане,,,
-ML_PARADOX,,,Paradox,,,,,,,,,,,,,,,,,,,,,Парадокс,,,
-ML_SUBSPACE,,,Subspace,,,,,,,,,,,,,,,,,,,,,Подпространство,,,
-ML_SUBTERRA,,,Subterra,,,,,,,,,,,,,,,,,,,,,Субтерра,,,
-ML_TTRAP,,,Trapped on Titan,,,,,,,,,,,,,,,,,,,,,Застрявший на Титане,,,
-ML_VIRGIL,,,Virgil's Lead,,,,,,,,,,,,,,,,,,,,,Путь Вергилия,,,
-ML_MINOS,,,Minos' Judgement,,,,,,,,,,,,,,,,,,,,,Суждение Миноса,,,
-ML_BLOODSEA,,,Bloodsea Keep,,,,,,,,,,,,,,,,,,,,,Крепость Кровавого Моря,,,
-ML_MEPHISTO,,,Mephisto's Maosoleum,,,,,,,,,,,,,,,,,,,,,Мавзалей Мефисто,,,
-ML_NESSUS,,,Nessus,,,,,,,,,,,,,,,,,,,,,Несс,,,
-ML_GERYON,,,Geryon,,,,,,,,,,,,,,,,,,,,,Герион,,,
-ML_VESPERAS,,,Vesperas,,,,,,,,,,,,,,,,,,,,,Весперас,,,
-ML_BLACKTWR,,,Black Tower,,,,,,,,,,,,,,,,,,,,,Черная Башня,,,
-ML_TEETH,,,The Express Elevator To Hell,,,,,,,,,,,,,,,,,,,,,Экспресс-лифт в Ад,,,
-ML_TEETH_SECRET,,,Bad Dream,,,,,,,,,,,,,,,,,,,,,Плохой сон,,,
-,master levels victory text (from PSX doom),,,,,,,,,,,,,,,,,,,,,,,,,,
+(map order defined in masterlevels_order.txt)",,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML_ATTACK,,,Attack,,,,,,,,,,,,,,,,,,,,,Атака,,,,,
+ML_CANYON,,,Canyon,,,,,,,,,,,,,,,,,,,,,Каньон,,,,,
+ML_CATWALK,,,The Catwalk,,,,,,,,,,,,,,,,,,,,,Подиум,,,,,
+ML_COMBINE,,,The Combine,,,,,,,,,,,,,,,,,,,,,Комбайн,,,,,
+ML_FISTULA,,,The Fistula,,,,,,,,,,,,,,,,,,,,,Фистула,,,,,
+ML_GARRISON,,,The Garrison,,,,,,,,,,,,,,,,,,,,,Гарнизон,,,,,
+ML_MANOR,,,Titan Manor,,,,,,,,,,,,,,,,,,,,,Поместье на Титане,,,,,
+ML_PARADOX,,,Paradox,,,,,,,,,,,,,,,,,,,,,Парадокс,,,,,
+ML_SUBSPACE,,,Subspace,,,,,,,,,,,,,,,,,,,,,Подпространство,,,,,
+ML_SUBTERRA,,,Subterra,,,,,,,,,,,,,,,,,,,,,Субтерра,,,,,
+ML_TTRAP,,,Trapped on Titan,,,,,,,,,,,,,,,,,,,,,Застрявший на Титане,,,,,
+ML_VIRGIL,,,Virgil's Lead,,,,,,,,,,,,,,,,,,,,,Путь Вергилия,,,,,
+ML_MINOS,,,Minos' Judgement,,,,,,,,,,,,,,,,,,,,,Суждение Миноса,,,,,
+ML_BLOODSEA,,,Bloodsea Keep,,,,,,,,,,,,,,,,,,,,,Крепость Кровавого Моря,,,,,
+ML_MEPHISTO,,,Mephisto's Maosoleum,,,,,,,,,,,,,,,,,,,,,Мавзалей Мефисто,,,,,
+ML_NESSUS,,,Nessus,,,,,,,,,,,,,,,,,,,,,Несс,,,,,
+ML_GERYON,,,Geryon,,,,,,,,,,,,,,,,,,,,,Герион,,,,,
+ML_VESPERAS,,,Vesperas,,,,,,,,,,,,,,,,,,,,,Весперас,,,,,
+ML_BLACKTWR,,,Black Tower,,,,,,,,,,,,,,,,,,,,,Черная Башня,,,,,
+ML_TEETH,,,The Express Elevator To Hell,,,,,,,,,,,,,,,,,,,,,Экспресс-лифт в Ад,,,,,
+ML_TEETH_SECRET,,,Bad Dream,,,,,,,,,,,,,,,,,,,,,Плохой сон,,,,,
+,master levels victory text (from PSX doom),,,,,,,,,,,,,,,,,,,,,,,,,,,,
 M1TEXT,,,"You have assaulted and triumphed over the
 most vicious realms that the demented minds
 of our designers could devise.
@@ -178,94 +195,94 @@ You have earned the title of
 прорываясь через Уровни Мастеров, — немая
 дань уважения вашему мастерству.
 
-Вы заслужили титул «Мастер разрушения».",,,
-,nerve level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,
-NHUSTR_1,,,The Earth Base,,Pozemská základna,Jordbasen,Die Erd-Basis,,La Tera Bazo,La Base Terrestre,,Maatukikohta,La Base Terrienne,A földi bázis,La Base Terrestre ,地球基地,지구 기지,De basis van de aarde,Jordbasen,Ziemska Baza,A Base Terrestre,,Baza terestră,База на Земле,Земаљска база,Jordbasen,Dünya Üssü
-NHUSTR_2,,,The Pain Labs,,Laboratoře bolesti,Smerte laboratorier,Die Folterlabore,,La Doloro-Laboratorio,Los Laboratorios del Dolor,,Tuskalaboratoriot,Les Laboratoires de la Douleur,A kínok laboratóriuma,I Laboratori del Dolore,生物工学実験室,고통의 연구소,De pijnlaboratoria,Smertelaboratoriet,Laboratoria Bólu,Os Laboratórios da Dor,,Laboratoarele durerii,Лаборатории боли,Лабораторије патње,Smärtlaboratorierna,Ağrı Laboratuvarları
-NHUSTR_3,,,Canyon of the Dead,,Kaňon mrtvých,De dødes kløft,Schlucht der Toten,,Kanjono de La Mortintoj,Cañón de los Muertos,,Kalmankanjoni,Canyon des Morts,A holtak szurdoka,Il Canyon dei Morti,死の渓谷,죽음의 계곡,Canyon van de doden,De dødes kløft,Kanion Umarłych,Desfiladeiro dos Mortos,,Canionul morților,Каньон мертвецов,Кањон мртваца,De dödas kanjon,Ölüler Kanyonu
-NHUSTR_4,,,Hell Mountain,,Pekelná hora,Helvede bjerg,Höllenberg,,Monto de Infero,Montaña Infernal,,Hornanvuori,Montagne Infernale,Pokol-hegy,Montagna Infernale ,地獄山脈,지옥의 산,Helleberg,Helvetesfjellet,Piekielna Góra,Montanha Infernal,,Muntele infernal,Адская гора,Планина пакла,Helvetesberget,Cehennem Dağı
-NHUSTR_5,,,Vivisection,,Vivisekce,Vivisektion,Vivisektion,,Vivisekcio,Vivisección,,Vivisektio,Vivisection,Élveboncolás,Vivisezione ,生体解剖,생체 해부,Vivisectie,Viviseksjon,Wiwisekcja,Vivissecção,,Vivisecție,Вивисекция,Вивисекција,Vivisektion,Canlı Kesim
-NHUSTR_6,,,Inferno of Blood,,Krvavé inferno,Blodets inferno,Blutiges Inferno,,Brulego de Sango,Hoguera de Sangre,,Veri-inferno,Enfer Sanglant,Véres alvilág,Inferno di Sangue ,血のインフェルノ,연옥의 피,Bloederige inferno,Blodets inferno,Piekło Krwi,Inferno de Sangue,,Infern sângeriu,Кровавая преисподняя,Ватре крви,Blodets inferno,Kan Cehennemi
-NHUSTR_7,,,Baron's Banquet,,Baronova hostina,Baron's Banquet,Das Bankett des Barons,,Festeno de Barono,Banquete del Barón,,Paronin pidot,Banquet du Baron,A báró bankettje,Il Banchetto del Barone ,バロンの晩餐,남작의 연회,Baron's banket,Baronens bankett,Bankiet Barona,Banquete do Barão,,Banchetul baronilor,Банкет у барона,Баронова Гозба,Baronens bankett,Baron'un Ziyafeti
-NHUSTR_8,,,Tomb of Malevolence,,Hrobka zlovolnosti,Ondskabens grav,Feindselige Gruft,,Tombo de Malbonvolo,Tumba de Malevolencia,,Pahantahdon hauta,Tombe Maléfique,A Gátlástalanság sírja,Tomba della Malevolenza,悪意の墓,증오의 무덤,Graf van kwaadwilligheid,Ondskapens grav,Grobowiec Zła,Tumba da Malevolência,Túmulo da Malevolência,Mormântul răutății,Гробница злобы,Гроб злобе,Ondskans grav,Kötülük Mezarı
-NHUSTR_9,,,March of the Demons,,Pochod démonů,Dæmonernes march,Marsch der Dämonen,,Marŝo de La Demonoj,Marcha de los Demonios,,Demonien marssi,Marche des Démons,A démonok parádéja,La Marcia dei Demoni ,デーモンの行進,악마들의 행진,Maart van de demonen,Demonenes marsj,Marsz Demonów,Marcha dos Demônios,,Marșul demonilor,Шествие демонов,Марш демона,Demonernas marsch,Şeytanların Yürüyüşü
-,tnt level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,
-THUSTR_1,,,System Control,,Administrace,Systemkontrol,Systemkontrolle,,Sistema Kontrolo,Control del Sistema,,Järjestelmäohjaamo,Système de Contrôle,Rendszervezérlő,Controllo del Sistema,制御システム,시스템 제어시설,Systeemcontrole,Systemkontroll,Kontrola Systemu,Controle do Sistema,Controlo de Sistema,Control sisteme,Центр управления системой,Контролна система,Systemkontroll,Sistem Kontrolü
-THUSTR_2,,,Human BBQ,,Člověčí grilovačka,Menneskelig grill,Menschliches Barbecue,,Homo-Kradrostado,Barbacoa Humana,,Ihmisgrilli,Barbecue Humain,Emberi grill,Barbecue Umano,人肉晩餐会,인간 바비큐,Menselijke BBQ,Menneskelig BBQ,Ludzki Grill,Churrasco Humano,,Oameni la grătar,Барбекю из человечины,Људски роштиљ,Människogrill,İnsan Barbekü
-THUSTR_3,,,Power Control,,Napájecí vedení,Kontrol med magten,Energiekontrolle,,Energia Kontrolo,Control de Energía,,Voimalan ohjaamo,Contrôle Energétique,Energiavezérlő,Centrale Energetica,制御室,전력 통제소,Machtscontrole,Kraftkontroll,Kontrola Zasilania,Controle de Energia,,Uzina,Центр управления питанием,Контролна моћ,Maktkontroll,Güç Kontrolü
-THUSTR_4,,,Wormhole,,Červí díra,Ormehul,Wurmloch,,Vermtruo,Agujero de Gusano,,Madonreikä,Trou de Ver,Féreglyuk,Wormhole,虫喰い穴,웜홀,Wormgat,Ormehull,Tunel,Buraco de Minhoca,,Gaura de vierme,Червоточина,Црвоточина,Maskhål,Solucan Deliği
-THUSTR_5,,,Hanger,,Hangár,,Hangar,,Pendigejo,Colgador,,Lentoalushalli,Hengar,Horog,Hanga,格納庫,격납고,Hangar,Hanger,Hangar,Hangar,,Hangar,Ангар,Вешалица,Hängare,Askı
-THUSTR_6,,,Open Season,,Lovecká sezóna,Åben sæson,Jagdsaison,,Ĉasosezono,Temporada Abierta,,Avoin sesonki,La Chasse Est Ouverte,Vadászszezon,Stagione Aperta,狩猟解禁,사냥철,Open seizoen,Åpen sesong,Otwarty Sezon,Temporada Aberta,Época Aberta,Sezon deschis,Сезон охоты,Отворена сезона,Öppen säsong,Açık Sezon
-THUSTR_7,,,Prison,,Vězení,Fængsel,Gefängnis,,Malliberejo,Prisión,,Vankila,Prison,Börtön,Prigione,監獄,감옥,Gevangenis,Fengsel,Więzienie,Prisão,,Închisoare,Тюрьма,Затвор,Fängelse,Hapishane
-THUSTR_8,,,Metal,,Kov,,Metall,,Metalo,Metal,,Metalli,Métal,Fém,Metallo,メタル,강철,Metaal,Metall,,Metal,,Metal,Металл,Метал,Metall,Metal
-THUSTR_9,,,Stronghold,,Pevnost,Borgen,Festung,,Fuorto,Fortaleza,,Linnake,Forteresse,Erőd,Fortezza,牙城,요새,Vesting,Festning,Warownia,Fortaleza,,Bastion,Твердыня,Упориште,Fästning,Kale
-THUSTR_10,,,Redemption,,Vykoupení,Forløsning,Erlösung,,Elaĉeto,Redención,,Lunastus,Rédemption,Megváltás,Redenzione,償還,구원,Aflossing,Innløsning,Odkupienie,Redenção,,Răscumpărare,Искупление,Искупљење,Inlösen,Kefaret
-THUSTR_11,,,Storage Facility,,Skladiště,Opbevaringsanlæg,Lagerstätte,,Stokejo,Complejo de Almacenes,Almacenes,Varastolaitos,Complexe de Stockage,Raktárépület,Impianto di Stoccaggio,貯蔵施設,저장소,Opslagfaciliteit,Lagringsanlegg,Magazyn,Centro de Armazenamento,,Stația de depozitare,Склад,Складиште,Förvaringsanläggning,Depolama Tesisi
-THUSTR_12,,,Crater,,Kráter,Krater,Krater,,Kratero,Cráter,,Kraateri,Cratère,Kráter,Cratere,火口,분화구,Krater,Krater,Krater,Cratera,,Crater,Кратер,Кратер,Krater,Krater
-THUSTR_13,,,Nukage Processing,,Jaderné zpracování,Nukageforarbejdning,Nuklearverarbeitung,,Nukleaĵo-Traktejo,Procesamiento de Residuos Nucleares,,Ydinjätekäsittely,Traitement Nucléaire,Atomhulladék-feldolgozó,Trattamento Nucleare,核廃棄物加工所,폐기물 처리소,Nucleaire verwerking,Nukage-prosessering,Przetwórstwo Jądrowe,Processamento Nuclear,,Prelucrarea deșeurilor nucleare,Переработка ядерных отходов,Прерада нуклеарног отпада,Kärnavfall Behandling,Nukage İşleme
-THUSTR_14,,,Steel Works,,Ocelárna,Stålværk,Stahlwerk,,Ŝtalejo,Siderúrgica,Siderurgia,Terästehdas,Aciérie,Acélművek,Acciaieria,製鉄所,제강소,Staalfabrieken,Stålverk,Huta,Siderúrgica,,Oțelărie,Сталелитейный завод,Челичана,Stålverk,Çelik İşleri
-THUSTR_15,,,Dead Zone,,Mrtvá zóna,Død zone,Tote Zone,,Senvivzono,Zona Muerta,,Kuollut alue,Zone Morte,A holtak zónája,Zona Morta,危険地帯,사각지대,Dode zone,Død sone,Martwa Strefa,Zona Morta,,Zona moartă,Мёртвая зона,Зона смрти,Dödszon,Ölü Bölge
-THUSTR_16,,,Deepest Reaches,,Nejhlubší sluje,De dybeste afkroge,Tiefe,,Plejsubejo,Recodos profundos,,Syvyydet,Profondeurs,A legmélyebb pont,Profondità,最深部,깊숙한 강,Diepste reiken,De dypeste områdene,Głębiny,Profundezas,,În adâncuri,Глубочайшие достижения,Најдубља дубина,De djupaste hålen,En Derin Erişimler
-THUSTR_17,,,Processing Area,,Kombinát,Forarbejdningsområde,Verarbeitungsbereich,,Traktadareo,Área de Procesamiento,,Käsittelyalue,Zone de Traitement,Feldolgozó,Area di Elaborazione,処理地帯,처리 구역,Verwerkingsgebied,Behandlingsområde,Strefa Przerobowa,Área de Processamento,,Aria de procesare,Зона обработки,Подручје обраде,Bearbetningsområde,İşleme Alanı
-THUSTR_18,,,Mill,,Mlýn,Mølle,Mühle,,Muelejo,Molino,,Mylly,Fonderie,Malom,Fonderia,製粉所,제분소,Molen,Mølle,Młyn,Moinho,,Moara,Завод,Млин,Kvarn,Değirmen
-THUSTR_19,,,Shipping/Respawning,,Přeprava,Forsendelsescenter,Versandlager,,Ekspedo/Revivado,Enviando/Reapareciendo,,Huolinta/Ylösnostatus,Envoi/Réapparition,Szállítás/újraéledés,Consegna/Respawn,出荷と再生成,운송/리스폰 장소,Verzendingscentrum,Frakt/omlasting,Wysyłka/Reprodukcja,Expedição/reaparecimento,,Livrare/reapariție,Погрузка и отправка,Отпремање/оживљавање,Skeppning,Nakliye Merkezi
-THUSTR_20,,,Central Processing,,Centrální zpracování,Central forarbejdning,Zentralverarbeitung,,Centra Eskpedado,Procesamiento Central,,Käsittelykeskus,Organisme Central,Központi feldolgozó,Centrale di Elaborazione,中央処理所,중앙 처리소,Centrale verwerking,Sentral behandling,Centralny Proces,Processamento Central,,Prelucrare centrală,Центральный пункт обработки,Централна обрада,Centralt bearbetningsområde,Merkezi İşlem
-THUSTR_21,,,Administration Center,,Administrativní centrum,Administrationscenter,Verwaltungszentrum,,Administracia Centro,Centro de Administración,,Keskushallinto,Centre Administratif,Adminisztrációs központ,Centro Amministrativo,行政センター,관리 센터,Administratief centrum,Administrasjonssenter,Centrum Administracyjne,Centro de Administração,,Centru administrativ,Административный центр,Административни центар,Administrationscenter,Yönetim Merkezi
-THUSTR_22,,,Habitat,,,Levested,,,Habitato,Hábitat,,Asuinpaikka,Habitat,Élőhely,Habitat,生息地,서식지,,Habitat,Siedlisko,Habitat,,Habitat,Ареал,Станиште,Livsområde,Habitat
-THUSTR_23,,,Lunar Mining Project,,Lunární těžební projekt,Projekt for månens minedrift,Mondbergbauprojekt,,Luna Mino-Projekto,Proyecto de Minería Lunar,,Kuukaivosprojekti,Projet Minier Lunaire,Holdbánya-projekt,Progetto Minerario Lunare,月面探鉱計画,월석 채광 계획,Maanmijnbouw project,Månegruveprosjekt,Projekt Księżycowe Górnictwo,Projeto de Mineração Lunar,Projeto de Escavação Lunar,Proiect minier satelitar,Лунный проект горной добычи,Пројекат лунарног рударства,Gruvprojekt på månen,Ay Madenciliği Projesi
-THUSTR_24,,,Quarry,,Kamenolom,Stenbrud,Steinbruch,,Ŝtonejo,Cantera,,Louhos,Carrière,Kőbánya,Caccia,採石場,채석장,Steengroeve,Steinbrudd,Kamieniołom,Pedreira,,Carieră,Карьер,Каменолом,Stenbrott,Taş Ocağı
-THUSTR_25,,,Baron's Den,,Baronovo doupě,Baronens hule,Der Bau des Barons,,Nestego de Barono,Guarida del Barón,,Paronin pesä,l'Antre des Barons,A báró odúja,Antro del Barone,バロンの巣窟,남작의 소굴,Het baron's gebouw,Baronens hule,Legowisko Barona,Covil do Barão,,Cuibul Baronului,Логово барона,Баронова јазбина,Baronens lya,Baron'un İni
-THUSTR_26,,,Ballistyx,,Balistika,,,,Balistikso,Balístige,,Ballistyks,Ballistyx,Ballisztüx,Ballistige,バリステュクス,탄도스틱스,,,Balistyka,Ballistige,,Ballistyx,Баллистикс,Билистичкикс,Ballistyx,Balistyx
-THUSTR_27,,,Mount Pain,,Hora bolesti,Smertefjellet,Berg des Schmerzes,,Monto de Doloro,Monte Dolor,,Tuskavuori,Mont Souffrance,A Gyötrelem Hegye,Monte del Dolore,苦しみの山,등신같은 등산,Pijn in de bergen,Smertefjellet,Góra Bólu,Monte Dor,,Muntele Durerii,Гора Боль,Планина боли,Smärta på berget,Acı Dağı
-THUSTR_28,,,Heck,,Sakra,,Zum Teufel,,Diable,Diablos,,Hemmetti,Que Diable?,Rosseb,Al Diavolo,苛立ち,젠장함,,Helvete,Do Diabła,Capeta,Inferno,Naiba,Чертовщина,Пакао,Heck,Cehennem
-THUSTR_29,,,River Styx,,Řeka Styx,Floden Styx,Fluss Styx,,Rivero de Stikso,Río Estige,,Styksjoki,Fleuve Styx,A Sztüx folyó,Fiume Stige,三途の川,스틱스 강,Rivier Styx,Elven Styx,Styks,Rio Estige,,Râul Styx,Река Стикс,Река Стикс,Floden Styx,Styx Nehri
-THUSTR_30,,,Last Call,,Poslední mise,Sidste opkald,Letzter Aufruf,,Fina Voko,Última Llamada,,Viimeinen koollehuuto,Dernier Appel,Utolsó esély,Ultima Chiamata,最終指令,최후의 호출,Laatste oproep,Siste innkalling,Ostatni Zew,Última Chamada,,Ultimul apel,Последний вызов,Последњи позив,Sista kallelsen,Son Çağrı
-THUSTR_31,,,Pharaoh,,Faraón,Farao,Pharao,,Faraono,Faraón,,Faarao,Pharaon,Fáraó,Faraone,ファラオ,파라오,Farao,Farao,Faraon,Faraó,,Faraon,Фараон,Фараон,Farao,Firavun
-THUSTR_32,,,Caribbean,,Karibik,Caribien,Karibik,,Karibio,Caribeño,,Karibia,Caraïbes,Karib-térség,Caraibi,カリビアン,카리브해,Caribisch,Karibia,Karaiby,Caribe,Caraíbas,Caraibe,Карибы,Кариби,Karibien,Karayipler
-,plutonia level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,
-PHUSTR_1,,,Congo,,Kongo,,Kongo,,Kongo,Congo,,Kongo,Congo,Kongó,Congo,コンゴ川,콩고,Kongo,Kongo,Kongo,Congo,,Congo,Конго,Конго,Kongo,Kongo
-PHUSTR_2,,,Well of Souls,,Studna duší,Sjælebrønden,Seelenbrunnen,,Puto de animoj,Pozo de almas,,Sielujen lähde,Puits des Ames,A lelkek kútja,Pozzo delle Anime,魂の井戸,영혼의 우물,Bron van zielen,Sjelenes brønn,Studnia Dusz,Poço das Almas,Poço de Almas,Fântâna sufletelor,Колодец душ,Бунар душа,Själarnas brunn,Ruhlar Kuyusu
-PHUSTR_3,,,Aztec,,Azték,Azteker,Aztekisch,,Azteko,Azteca,,Asteekki,Aztèque,Azték,Aztec,アステカ,아즈텍,Azteken,Aztekisk,Aztek,Asteca,,Aztec,Ацтек,Астек,Azteker,Aztek
-PHUSTR_4,,,Caged,,V kleci,Låst op,Eingesperrt,,Enkaĝigita,Enjaulado,,Häkissä,Enfermé,Ketrecbe zárva,Ingabbiato,檻の中,갇히다,Gekooid,Buret,W Klatce,Na Jaula,,Încarcerat,В клетке,Заробљен,Burad,Kafesli
-PHUSTR_5,,,Ghost Town,,Město duchů,Spøgelsesby,Geisterstadt,,Fantoma urbeto,Pueblo Fantasma,,Aavekaupunki,Ville Fantôme,Szellemváros,Città Fantasma,ゴーストタウン,유령 도시,Spookstad,Spøkelsesbyen,Miasto Duchów,Cidade Fantasma,,Orașul fantomă,Город-призрак,Град духова,Spökstad,Hayalet Kasaba
-PHUSTR_6,,,Baron's Lair,,Baronovo doupě,Baronens hule,Lager des Barons,,Kaŝejo de Barono,Guarida del Barón,,Paronin luola,Repaire du Baron,A báró rejteke,Tana del Barone,バロンの隠れ家,남작의 은신처,Baron's kamp,Baronens hule,Legowisko Barona,Covil do Barão,,Claustrul Baronului,Обитель барона,Баронова јазбина,Baronens lya,Baron'un İni
-PHUSTR_7,,,Caughtyard,,Karcer,,Gehege,,Kaptkorto,Campo de Concentración,,Posenpiha,Pris de court,A foglyok udvara,Cortile Prigione,囚われの庭,포획마당,Omheining,Fangegården,Dziedziniec Więzienny,Campo de Concentração,,Capcana curții,Ловчий двор,Замчиште,Fångården,Caughtyard
-PHUSTR_8,,,Realm,,Říše,Rige,Bereich,,Regno,Reino,,Valtapiiri,Royaume,Uradalom,Regno,領地,왕국,Rijk,Riket,Królestwo,Reino,,Tărâm,Царство,Царство,Riket,Diyar
-PHUSTR_9,,,Abattoire,,Jatka,,Schlachthaus,,Buĉejo,Matadero,,Teurastamo,Abattoir,Vágóhíd,Mattatoio,屠殺場,도축장,Abattoir,Slakteriet,Rzeźnia,Matadouro,,Abator,Абатство,Кланица,Slakthus,Abattoire
-PHUSTR_10,,,Onslaught,,Nájezd,Stormløb,Angriff,,Buĉado,Arremetida,,Ryntäys,Assaut,Roham,Assalto,猛襲,맹공격,Aanval,Angrep,Szturm,Investida,,Năvala,Натиск,Јуриш,Angrepp,Saldırı
-PHUSTR_11,,,Hunted,,Loven,Jaget,Gehetzt,,Ĉasata,Cazado,,Metsästetty,Traque,Űzött vad,Braccato,逃走,사냥당함,Gejaagd,Jaget,Nawiedzony,Perseguição,,Vânătoarea,Преследуемый,Уловљен,Jaktad,Avlanmış
-PHUSTR_12,,,Speed,,Rychlost,Fart,Tempo,,Rapido,Velocidad,,Vauhti,Vitesse,Iram,Velocità,スピード,스피드,Haast,Hastighet,Pęd,Velocidade,,Viteză,Скорость,Брзина,Hastighet,Hız
-PHUSTR_13,,,The Crypt,,Krypta,Krypten,Die Gruft,,La kripto,La cripta,,Krypta,La Crypte,A kripta,La Cripta,地下聖堂,봉안당,De crypte,Krypten,Krypta,A Cripta,,Cripta,Склеп,Гробница,Kryptan,Mahzen
-PHUSTR_14,,,Genesis,,,,,,Genezo,Génesis,,Luominen,Genèse,Teremtés,Genesi,創世記,창세기,,,Geneza,Gênese,,Geneza,Зарождение,Постанак,Genesis,Yaratılış
-PHUSTR_15,,,The Twilight,,Soumrak,Tusmørket,Zwielicht,,La krepusko,El ocaso,,Hämärä,Le Crépuscule,Alkonyat,Il Crepuscolo,黄昏,황혼,De schemering,Skumringen,Zmierzch,O Crepúsculo,,Amurgul,Сумерки,Сумрак,Skymningen,Alacakaranlık
-PHUSTR_16,,,The Omen,,Znamení,Omenet,Das Omen,,La Aŭguro,El Presagio,,Enne,Le Présage,Az Ómen,Il Presagio,予兆,징조,De omen,Varselet,Omen,O Presságio,,Prevestirea,Предзнаменование,Знамење,Omen,Omen
-PHUSTR_17,,,Compound,,Ústav,Forbindelsen,Anlage,,Konstruaĵaro,Complejo,,Laitos,Installation,Létesítmény,Recinto,調合,복합체,Faciliteit,Forbindelsen,Mieszanka,Complexo,,Complexul,Комплекс,Једињење,Förbandet,Bileşik
-PHUSTR_18,,,Neurosphere,,Neurosféra,Neurosfæren,Neurosphäre,,Neŭrosfero,Neuroesfera,,Neurosfääri,Neurosphère,Neuroszféra,Neurosfera,ニューロスフィア,뉴로스피어,Neurosferen,Nevrosfæren,Neurosfera,Neurosfera,,Neurosferă,Нейросфера,Неуросфера,Neurosfären,Nörosfer
-PHUSTR_19,,,NME,,Nepřítel,,,,Mal-BN,N-MIGO,,VHLLNN,NMI,LNSG,NMIC,野郎,NOM,,,WRG,N-MIGO,,INMIC,В.Р.А.Г.,Н.Е.П.Р.,FiND,NME
-PHUSTR_20,,,The Death Domain,,Panství smrti,Dødsdomænet,Die Todeszone,,La morta regno,El Dominio Mortal,,Kuoleman piiri,Le Domaine de la Mort,A holtak birtoka,Il Dominio della Morte,死の領域,죽음의 영역,Het domein van de dood,Dødens domene,Domena Śmierci,O Domínio da Morte,,Domeniul morții,Владения смерти,Подручије смрти,Dödsdomänen,Ölüm Alanı
-PHUSTR_21,,,Slayer,,Zabiják,Slagter,Töter,,Mortigisto,Descuatizador,,Tappaja,Pourfendeur,Halálosztó,Assassino,スレイヤー,슬레이어,Doder,Slakteren,Pogromca,Matador,,Ucigător,Истребитель,Убица,Jägare,Avcı
-PHUSTR_22,,,Impossible Mission,,Nemožná mise,Umulig mission,Unmögliche Mission,,Neebla tasko,Misión imposible,,Mahdoton tehtävä,Mission Impossible,Lehetetlen küldetés,Missione Impossibile,不可能な任務,임파서블 미션,Onmogelijke missie,Umulig oppdrag,Niemożliwa Misja,Missão Impossível,,Misiune imposibilă,Невыполнимое задание,Немогућа мисија,Omöjligt uppdrag,İmkansız Görev
-PHUSTR_23,,,Tombstone,,Náhrobek,Gravsten,Grabstein,,Tombŝtono,Lápida,,Hautakivi,Pierre Tombale,Sírkő,Pietra Tombale,墓石,묘비,Grafsteen,Gravstein,Nagrobek,Lápide,,Piatra de mormânt,Надгробие,Надгробни споменик,Gravsten,Mezar Taşı
-PHUSTR_24,,,The Final Frontier,,Poslední hranice,Den endelige grænse,Die letzte Grenze,,La Fina Limo,La Frontera Final,La Última Frontera,Viimeinen rajamaa,La Frontière Finale,A végső határ,La Frontiera Finale,最後のフロンティア,최후의 개척지,De eindgrens,Den siste grensen,Ostateczna Granica,A Fronteira Final,,Ultima frontieră,Последний рубеж,Коначна граница,Den sista gränsen,Son Sınır
-PHUSTR_25,,,The Temple of Darkness,,Chrám temna,Mørkets tempel,Der Tempel der Dunkelheit,,La Idolejo de Mallumo,El Templo de la Oscuridad,,Pimeyden temppeli,Le Temple des Ténèbres,A sötétség temploma,Il Tempio dell'Oscurità,暗黒の神殿,어둠의 신전,De tempel van de duisternis,Mørkets tempel,Świątynia Mroku,O Templo da Escuridão,,Templul tenebros,Храм тьмы,Храм таме,Mörkrets tempel,Karanlığın Tapınağı
-PHUSTR_26,,,Bunker,,Bunkr,,,,Bunkro,Búnker,,Bunkkeri,Bunker,Bunker,Bunker,バンカー,방공호,,,Bunkier,Casamata,Bunker,Buncăr,Бункер,Бункер,Bunker,Sığınak
-PHUSTR_27,,,Anti-Christ,,Antikrist,,Antichrist,,Antikristo,Anticristo,,Antikristus,Anti-Christ,Antikrisztus,Anticristo,アンチキリスト,적그리스도,Antichrist,Antikrist,Antychryst,Anticristo,,Antihrist,Антихрист,Антихрист,Antikrist,Mesih Karşıtı
-PHUSTR_28,,,The Sewers,,Kanály,Kloakkerne,Kanäle,,La Kanalo,Las Alcantarillas,,Viemärit,Les Egouts,A kanális,Le Fogne,下水道,하수구,De rioleringen,Kloakken,Ścieki,Os Esgotos,,Canalizarea,Канализация,Канализација,Sjukhusen,Kanalizasyonlar
-PHUSTR_29,,,Odyssey of Noises,,Odysea křiku,Lydenes odyssé,Odyssee der Geräusche,,Vojaĝo de Sonoj,Odisea de Ruidos,,Äänten harharetki,Odysée de Bruits,A moraj ösvénye,Odissea dei Rumori,オデッセイのノイズ,속삭임의 여정,Odyssee van geluiden,Lydenes odyssé,Odyseja Wrzawy,Odisséia de Ruidos,,Odiseea zgomotelor,Одиссея шумов,Одисеја шумова,Ljudets odyssé,Seslerin Odyssey'i
-PHUSTR_30,,,The Gateway of Hell,,Brána pekla,Helvedes port,Tor zur Hölle,,La Pordego de Inferno,La Puerta del Infierno,,Helvetin porttikäytävä,La Porte des Enfers,Átjáró a pokolba,La Porta dell'Inferno,地獄の関門,지옥의 차원문,De poort van de hel,Porten til helvete,Brama Piekieł,O Portão do Inferno,,Poarta spre infern,Врата ада,Пролаз пакла,Helvetets port,Cehennem Kapısı
-PHUSTR_31,,,Cyberden,,Kyberdoupě,,Cyberbau,,Cibernesto,Ciber-guarida,,Kyberpesä,Cyber-Antre,Kiberodú,Cybergabbia,サイバーの巣,사이버소굴,,,Cybernora,Ciberantro,,Cibervizuină,Киберлогово,Сајбер-јазбина,Cyberden,Siber'in ini
-PHUSTR_32,,,Go 2 It,,Jdi do toho,,,,Iru al ĝi!,Ve a x ello,Ve x eso,Iske kii,Go 2 It,Menj oda!,Dacci Dentro,逝ってこい,함 해 봐,Ga ervoor,,Do Dzieła,Vai Fundo,Siga em Frente,Du-te la ei,П0лный вп3рёд,Иди ка њему,Gå till det,Devam Et
-,sigil (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,
-HUSTR_EPI5,,,SIGIL,,,,,,,,,,,,,,,,,,,,,СИГИЛ,,,
-HUSTR_E5M1,,,Baphomet's Demesne,,,,,,,,,,,,,,,,,,,,,Владение Бафомета,,,
-HUSTR_E5M2,,,Sheol,,,,,,,,,,,,,,,,,,,,,Шеол,,,
-HUSTR_E5M3,,,Cages of the Damned,,,,,,,,,,,,,,,,,,,,,Клетки проклятых,,,
-HUSTR_E5M4,,,Paths of Wretchedness,,,,,,,,,,,,,,,,,,,,,Пути убожества,,,
-HUSTR_E5M5,,,Abaddon's Void,,,,,,,,,,,,,,,,,,,,,Пустота Абаддона,,,
-HUSTR_E5M6,,,Unspeakable Persecution,,,,,,,,,,,,,,,,,,,,,Ужасающее угнетение,,,
-HUSTR_E5M7,,,Nightmare Underworld,,,,,,,,,,,,,,,,,,,,,Кошмарная преисподня,,,
-HUSTR_E5M8,,,Halls of Perdition,,,,,,,,,,,,,,,,,,,,,Залы погибели,,,
-HUSTR_E5M9,,,Realm of Iblis,,,,,,,,,,,,,,,,,,,,,Царство Иблиса,,,
+Вы заслужили титул «Мастер разрушения».",,,,,
+,nerve level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,,
+NHUSTR_1,,,The Earth Base,,Pozemská základna,Jordbasen,Die Erd-Basis,,La Tera Bazo,La Base Terrestre,,Maatukikohta,La Base Terrienne,A földi bázis,La Base Terrestre ,地球基地,지구 기지,De basis van de aarde,Jordbasen,Ziemska Baza,A Base Terrestre,,Baza terestră,База на Земле,Земаљска база,Jordbasen,Dünya Üssü,,
+NHUSTR_2,,,The Pain Labs,,Laboratoře bolesti,Smerte laboratorier,Die Folterlabore,,La Doloro-Laboratorio,Los Laboratorios del Dolor,,Tuskalaboratoriot,Les Laboratoires de la Douleur,A kínok laboratóriuma,I Laboratori del Dolore,生物工学実験室,고통의 연구소,De pijnlaboratoria,Smertelaboratoriet,Laboratoria Bólu,Os Laboratórios da Dor,,Laboratoarele durerii,Лаборатории боли,Лабораторије патње,Smärtlaboratorierna,Ağrı Laboratuvarları,,
+NHUSTR_3,,,Canyon of the Dead,,Kaňon mrtvých,De dødes kløft,Schlucht der Toten,,Kanjono de La Mortintoj,Cañón de los Muertos,,Kalmankanjoni,Canyon des Morts,A holtak szurdoka,Il Canyon dei Morti,死の渓谷,죽음의 계곡,Canyon van de doden,De dødes kløft,Kanion Umarłych,Desfiladeiro dos Mortos,,Canionul morților,Каньон мертвецов,Кањон мртваца,De dödas kanjon,Ölüler Kanyonu,,
+NHUSTR_4,,,Hell Mountain,,Pekelná hora,Helvede bjerg,Höllenberg,,Monto de Infero,Montaña Infernal,,Hornanvuori,Montagne Infernale,Pokol-hegy,Montagna Infernale ,地獄山脈,지옥의 산,Helleberg,Helvetesfjellet,Piekielna Góra,Montanha Infernal,,Muntele infernal,Адская гора,Планина пакла,Helvetesberget,Cehennem Dağı,,
+NHUSTR_5,,,Vivisection,,Vivisekce,Vivisektion,Vivisektion,,Vivisekcio,Vivisección,,Vivisektio,Vivisection,Élveboncolás,Vivisezione ,生体解剖,생체 해부,Vivisectie,Viviseksjon,Wiwisekcja,Vivissecção,,Vivisecție,Вивисекция,Вивисекција,Vivisektion,Canlı Kesim,,
+NHUSTR_6,,,Inferno of Blood,,Krvavé inferno,Blodets inferno,Blutiges Inferno,,Brulego de Sango,Hoguera de Sangre,,Veri-inferno,Enfer Sanglant,Véres alvilág,Inferno di Sangue ,血のインフェルノ,연옥의 피,Bloederige inferno,Blodets inferno,Piekło Krwi,Inferno de Sangue,,Infern sângeriu,Кровавая преисподняя,Ватре крви,Blodets inferno,Kan Cehennemi,,
+NHUSTR_7,,,Baron's Banquet,,Baronova hostina,Baron's Banquet,Das Bankett des Barons,,Festeno de Barono,Banquete del Barón,,Paronin pidot,Banquet du Baron,A báró bankettje,Il Banchetto del Barone ,バロンの晩餐,남작의 연회,Baron's banket,Baronens bankett,Bankiet Barona,Banquete do Barão,,Banchetul baronilor,Банкет у барона,Баронова Гозба,Baronens bankett,Baron'un Ziyafeti,,
+NHUSTR_8,,,Tomb of Malevolence,,Hrobka zlovolnosti,Ondskabens grav,Feindselige Gruft,,Tombo de Malbonvolo,Tumba de Malevolencia,,Pahantahdon hauta,Tombe Maléfique,A Gátlástalanság sírja,Tomba della Malevolenza,悪意の墓,증오의 무덤,Graf van kwaadwilligheid,Ondskapens grav,Grobowiec Zła,Tumba da Malevolência,Túmulo da Malevolência,Mormântul răutății,Гробница злобы,Гроб злобе,Ondskans grav,Kötülük Mezarı,,
+NHUSTR_9,,,March of the Demons,,Pochod démonů,Dæmonernes march,Marsch der Dämonen,,Marŝo de La Demonoj,Marcha de los Demonios,,Demonien marssi,Marche des Démons,A démonok parádéja,La Marcia dei Demoni ,デーモンの行進,악마들의 행진,Maart van de demonen,Demonenes marsj,Marsz Demonów,Marcha dos Demônios,,Marșul demonilor,Шествие демонов,Марш демона,Demonernas marsch,Şeytanların Yürüyüşü,,
+,tnt level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,,
+THUSTR_1,,,System Control,,Administrace,Systemkontrol,Systemkontrolle,,Sistema Kontrolo,Control del Sistema,,Järjestelmäohjaamo,Système de Contrôle,Rendszervezérlő,Controllo del Sistema,制御システム,시스템 제어시설,Systeemcontrole,Systemkontroll,Kontrola Systemu,Controle do Sistema,Controlo de Sistema,Control sisteme,Центр управления системой,Контролна система,Systemkontroll,Sistem Kontrolü,,
+THUSTR_2,,,Human BBQ,,Člověčí grilovačka,Menneskelig grill,Menschliches Barbecue,,Homo-Kradrostado,Barbacoa Humana,,Ihmisgrilli,Barbecue Humain,Emberi grill,Barbecue Umano,人肉晩餐会,인간 바비큐,Menselijke BBQ,Menneskelig BBQ,Ludzki Grill,Churrasco Humano,,Oameni la grătar,Барбекю из человечины,Људски роштиљ,Människogrill,İnsan Barbekü,,
+THUSTR_3,,,Power Control,,Napájecí vedení,Kontrol med magten,Energiekontrolle,,Energia Kontrolo,Control de Energía,,Voimalan ohjaamo,Contrôle Energétique,Energiavezérlő,Centrale Energetica,制御室,전력 통제소,Machtscontrole,Kraftkontroll,Kontrola Zasilania,Controle de Energia,,Uzina,Центр управления питанием,Контролна моћ,Maktkontroll,Güç Kontrolü,,
+THUSTR_4,,,Wormhole,,Červí díra,Ormehul,Wurmloch,,Vermtruo,Agujero de Gusano,,Madonreikä,Trou de Ver,Féreglyuk,Wormhole,虫喰い穴,웜홀,Wormgat,Ormehull,Tunel,Buraco de Minhoca,,Gaura de vierme,Червоточина,Црвоточина,Maskhål,Solucan Deliği,,
+THUSTR_5,,,Hanger,,Hangár,,Hangar,,Pendigejo,Colgador,,Lentoalushalli,Hengar,Horog,Hanga,格納庫,격납고,Hangar,Hanger,Hangar,Hangar,,Hangar,Ангар,Вешалица,Hängare,Askı,,
+THUSTR_6,,,Open Season,,Lovecká sezóna,Åben sæson,Jagdsaison,,Ĉasosezono,Temporada Abierta,,Avoin sesonki,La Chasse Est Ouverte,Vadászszezon,Stagione Aperta,狩猟解禁,사냥철,Open seizoen,Åpen sesong,Otwarty Sezon,Temporada Aberta,Época Aberta,Sezon deschis,Сезон охоты,Отворена сезона,Öppen säsong,Açık Sezon,,
+THUSTR_7,,,Prison,,Vězení,Fængsel,Gefängnis,,Malliberejo,Prisión,,Vankila,Prison,Börtön,Prigione,監獄,감옥,Gevangenis,Fengsel,Więzienie,Prisão,,Închisoare,Тюрьма,Затвор,Fängelse,Hapishane,,
+THUSTR_8,,,Metal,,Kov,,Metall,,Metalo,Metal,,Metalli,Métal,Fém,Metallo,メタル,강철,Metaal,Metall,,Metal,,Metal,Металл,Метал,Metall,Metal,,
+THUSTR_9,,,Stronghold,,Pevnost,Borgen,Festung,,Fuorto,Fortaleza,,Linnake,Forteresse,Erőd,Fortezza,牙城,요새,Vesting,Festning,Warownia,Fortaleza,,Bastion,Твердыня,Упориште,Fästning,Kale,,
+THUSTR_10,,,Redemption,,Vykoupení,Forløsning,Erlösung,,Elaĉeto,Redención,,Lunastus,Rédemption,Megváltás,Redenzione,償還,구원,Aflossing,Innløsning,Odkupienie,Redenção,,Răscumpărare,Искупление,Искупљење,Inlösen,Kefaret,,
+THUSTR_11,,,Storage Facility,,Skladiště,Opbevaringsanlæg,Lagerstätte,,Stokejo,Complejo de Almacenes,Almacenes,Varastolaitos,Complexe de Stockage,Raktárépület,Impianto di Stoccaggio,貯蔵施設,저장소,Opslagfaciliteit,Lagringsanlegg,Magazyn,Centro de Armazenamento,,Stația de depozitare,Склад,Складиште,Förvaringsanläggning,Depolama Tesisi,,
+THUSTR_12,,,Crater,,Kráter,Krater,Krater,,Kratero,Cráter,,Kraateri,Cratère,Kráter,Cratere,火口,분화구,Krater,Krater,Krater,Cratera,,Crater,Кратер,Кратер,Krater,Krater,,
+THUSTR_13,,,Nukage Processing,,Jaderné zpracování,Nukageforarbejdning,Nuklearverarbeitung,,Nukleaĵo-Traktejo,Procesamiento de Residuos Nucleares,,Ydinjätekäsittely,Traitement Nucléaire,Atomhulladék-feldolgozó,Trattamento Nucleare,核廃棄物加工所,폐기물 처리소,Nucleaire verwerking,Nukage-prosessering,Przetwórstwo Jądrowe,Processamento Nuclear,,Prelucrarea deșeurilor nucleare,Переработка ядерных отходов,Прерада нуклеарног отпада,Kärnavfall Behandling,Nukage İşleme,,
+THUSTR_14,,,Steel Works,,Ocelárna,Stålværk,Stahlwerk,,Ŝtalejo,Siderúrgica,Siderurgia,Terästehdas,Aciérie,Acélművek,Acciaieria,製鉄所,제강소,Staalfabrieken,Stålverk,Huta,Siderúrgica,,Oțelărie,Сталелитейный завод,Челичана,Stålverk,Çelik İşleri,,
+THUSTR_15,,,Dead Zone,,Mrtvá zóna,Død zone,Tote Zone,,Senvivzono,Zona Muerta,,Kuollut alue,Zone Morte,A holtak zónája,Zona Morta,危険地帯,사각지대,Dode zone,Død sone,Martwa Strefa,Zona Morta,,Zona moartă,Мёртвая зона,Зона смрти,Dödszon,Ölü Bölge,,
+THUSTR_16,,,Deepest Reaches,,Nejhlubší sluje,De dybeste afkroge,Tiefe,,Plejsubejo,Recodos profundos,,Syvyydet,Profondeurs,A legmélyebb pont,Profondità,最深部,깊숙한 강,Diepste reiken,De dypeste områdene,Głębiny,Profundezas,,În adâncuri,Глубочайшие достижения,Најдубља дубина,De djupaste hålen,En Derin Erişimler,,
+THUSTR_17,,,Processing Area,,Kombinát,Forarbejdningsområde,Verarbeitungsbereich,,Traktadareo,Área de Procesamiento,,Käsittelyalue,Zone de Traitement,Feldolgozó,Area di Elaborazione,処理地帯,처리 구역,Verwerkingsgebied,Behandlingsområde,Strefa Przerobowa,Área de Processamento,,Aria de procesare,Зона обработки,Подручје обраде,Bearbetningsområde,İşleme Alanı,,
+THUSTR_18,,,Mill,,Mlýn,Mølle,Mühle,,Muelejo,Molino,,Mylly,Fonderie,Malom,Fonderia,製粉所,제분소,Molen,Mølle,Młyn,Moinho,,Moara,Завод,Млин,Kvarn,Değirmen,,
+THUSTR_19,,,Shipping/Respawning,,Přeprava,Forsendelsescenter,Versandlager,,Ekspedo/Revivado,Enviando/Reapareciendo,,Huolinta/Ylösnostatus,Envoi/Réapparition,Szállítás/újraéledés,Consegna/Respawn,出荷と再生成,운송/리스폰 장소,Verzendingscentrum,Frakt/omlasting,Wysyłka/Reprodukcja,Expedição/reaparecimento,,Livrare/reapariție,Погрузка и отправка,Отпремање/оживљавање,Skeppning,Nakliye Merkezi,,
+THUSTR_20,,,Central Processing,,Centrální zpracování,Central forarbejdning,Zentralverarbeitung,,Centra Eskpedado,Procesamiento Central,,Käsittelykeskus,Organisme Central,Központi feldolgozó,Centrale di Elaborazione,中央処理所,중앙 처리소,Centrale verwerking,Sentral behandling,Centralny Proces,Processamento Central,,Prelucrare centrală,Центральный пункт обработки,Централна обрада,Centralt bearbetningsområde,Merkezi İşlem,,
+THUSTR_21,,,Administration Center,,Administrativní centrum,Administrationscenter,Verwaltungszentrum,,Administracia Centro,Centro de Administración,,Keskushallinto,Centre Administratif,Adminisztrációs központ,Centro Amministrativo,行政センター,관리 센터,Administratief centrum,Administrasjonssenter,Centrum Administracyjne,Centro de Administração,,Centru administrativ,Административный центр,Административни центар,Administrationscenter,Yönetim Merkezi,,
+THUSTR_22,,,Habitat,,,Levested,,,Habitato,Hábitat,,Asuinpaikka,Habitat,Élőhely,Habitat,生息地,서식지,,Habitat,Siedlisko,Habitat,,Habitat,Ареал,Станиште,Livsområde,Habitat,,
+THUSTR_23,,,Lunar Mining Project,,Lunární těžební projekt,Projekt for månens minedrift,Mondbergbauprojekt,,Luna Mino-Projekto,Proyecto de Minería Lunar,,Kuukaivosprojekti,Projet Minier Lunaire,Holdbánya-projekt,Progetto Minerario Lunare,月面探鉱計画,월석 채광 계획,Maanmijnbouw project,Månegruveprosjekt,Projekt Księżycowe Górnictwo,Projeto de Mineração Lunar,Projeto de Escavação Lunar,Proiect minier satelitar,Лунный проект горной добычи,Пројекат лунарног рударства,Gruvprojekt på månen,Ay Madenciliği Projesi,,
+THUSTR_24,,,Quarry,,Kamenolom,Stenbrud,Steinbruch,,Ŝtonejo,Cantera,,Louhos,Carrière,Kőbánya,Caccia,採石場,채석장,Steengroeve,Steinbrudd,Kamieniołom,Pedreira,,Carieră,Карьер,Каменолом,Stenbrott,Taş Ocağı,,
+THUSTR_25,,,Baron's Den,,Baronovo doupě,Baronens hule,Der Bau des Barons,,Nestego de Barono,Guarida del Barón,,Paronin pesä,l'Antre des Barons,A báró odúja,Antro del Barone,バロンの巣窟,남작의 소굴,Het baron's gebouw,Baronens hule,Legowisko Barona,Covil do Barão,,Cuibul Baronului,Логово барона,Баронова јазбина,Baronens lya,Baron'un İni,,
+THUSTR_26,,,Ballistyx,,Balistika,,,,Balistikso,Balístige,,Ballistyks,Ballistyx,Ballisztüx,Ballistige,バリステュクス,탄도스틱스,,,Balistyka,Ballistige,,Ballistyx,Баллистикс,Билистичкикс,Ballistyx,Balistyx,,
+THUSTR_27,,,Mount Pain,,Hora bolesti,Smertefjellet,Berg des Schmerzes,,Monto de Doloro,Monte Dolor,,Tuskavuori,Mont Souffrance,A Gyötrelem Hegye,Monte del Dolore,苦しみの山,등신같은 등산,Pijn in de bergen,Smertefjellet,Góra Bólu,Monte Dor,,Muntele Durerii,Гора Боль,Планина боли,Smärta på berget,Acı Dağı,,
+THUSTR_28,,,Heck,,Sakra,,Zum Teufel,,Diable,Diablos,,Hemmetti,Que Diable?,Rosseb,Al Diavolo,苛立ち,젠장함,,Helvete,Do Diabła,Capeta,Inferno,Naiba,Чертовщина,Пакао,Heck,Cehennem,,
+THUSTR_29,,,River Styx,,Řeka Styx,Floden Styx,Fluss Styx,,Rivero de Stikso,Río Estige,,Styksjoki,Fleuve Styx,A Sztüx folyó,Fiume Stige,三途の川,스틱스 강,Rivier Styx,Elven Styx,Styks,Rio Estige,,Râul Styx,Река Стикс,Река Стикс,Floden Styx,Styx Nehri,,
+THUSTR_30,,,Last Call,,Poslední mise,Sidste opkald,Letzter Aufruf,,Fina Voko,Última Llamada,,Viimeinen koollehuuto,Dernier Appel,Utolsó esély,Ultima Chiamata,最終指令,최후의 호출,Laatste oproep,Siste innkalling,Ostatni Zew,Última Chamada,,Ultimul apel,Последний вызов,Последњи позив,Sista kallelsen,Son Çağrı,,
+THUSTR_31,,,Pharaoh,,Faraón,Farao,Pharao,,Faraono,Faraón,,Faarao,Pharaon,Fáraó,Faraone,ファラオ,파라오,Farao,Farao,Faraon,Faraó,,Faraon,Фараон,Фараон,Farao,Firavun,,
+THUSTR_32,,,Caribbean,,Karibik,Caribien,Karibik,,Karibio,Caribeño,,Karibia,Caraïbes,Karib-térség,Caraibi,カリビアン,카리브해,Caribisch,Karibia,Karaiby,Caribe,Caraíbas,Caraibe,Карибы,Кариби,Karibien,Karayipler,,
+,plutonia level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,,
+PHUSTR_1,,,Congo,,Kongo,,Kongo,,Kongo,Congo,,Kongo,Congo,Kongó,Congo,コンゴ川,콩고,Kongo,Kongo,Kongo,Congo,,Congo,Конго,Конго,Kongo,Kongo,,
+PHUSTR_2,,,Well of Souls,,Studna duší,Sjælebrønden,Seelenbrunnen,,Puto de animoj,Pozo de almas,,Sielujen lähde,Puits des Ames,A lelkek kútja,Pozzo delle Anime,魂の井戸,영혼의 우물,Bron van zielen,Sjelenes brønn,Studnia Dusz,Poço das Almas,Poço de Almas,Fântâna sufletelor,Колодец душ,Бунар душа,Själarnas brunn,Ruhlar Kuyusu,,
+PHUSTR_3,,,Aztec,,Azték,Azteker,Aztekisch,,Azteko,Azteca,,Asteekki,Aztèque,Azték,Aztec,アステカ,아즈텍,Azteken,Aztekisk,Aztek,Asteca,,Aztec,Ацтек,Астек,Azteker,Aztek,,
+PHUSTR_4,,,Caged,,V kleci,Låst op,Eingesperrt,,Enkaĝigita,Enjaulado,,Häkissä,Enfermé,Ketrecbe zárva,Ingabbiato,檻の中,갇히다,Gekooid,Buret,W Klatce,Na Jaula,,Încarcerat,В клетке,Заробљен,Burad,Kafesli,,
+PHUSTR_5,,,Ghost Town,,Město duchů,Spøgelsesby,Geisterstadt,,Fantoma urbeto,Pueblo Fantasma,,Aavekaupunki,Ville Fantôme,Szellemváros,Città Fantasma,ゴーストタウン,유령 도시,Spookstad,Spøkelsesbyen,Miasto Duchów,Cidade Fantasma,,Orașul fantomă,Город-призрак,Град духова,Spökstad,Hayalet Kasaba,,
+PHUSTR_6,,,Baron's Lair,,Baronovo doupě,Baronens hule,Lager des Barons,,Kaŝejo de Barono,Guarida del Barón,,Paronin luola,Repaire du Baron,A báró rejteke,Tana del Barone,バロンの隠れ家,남작의 은신처,Baron's kamp,Baronens hule,Legowisko Barona,Covil do Barão,,Claustrul Baronului,Обитель барона,Баронова јазбина,Baronens lya,Baron'un İni,,
+PHUSTR_7,,,Caughtyard,,Karcer,,Gehege,,Kaptkorto,Campo de Concentración,,Posenpiha,Pris de court,A foglyok udvara,Cortile Prigione,囚われの庭,포획마당,Omheining,Fangegården,Dziedziniec Więzienny,Campo de Concentração,,Capcana curții,Ловчий двор,Замчиште,Fångården,Caughtyard,,
+PHUSTR_8,,,Realm,,Říše,Rige,Bereich,,Regno,Reino,,Valtapiiri,Royaume,Uradalom,Regno,領地,왕국,Rijk,Riket,Królestwo,Reino,,Tărâm,Царство,Царство,Riket,Diyar,,
+PHUSTR_9,,,Abattoire,,Jatka,,Schlachthaus,,Buĉejo,Matadero,,Teurastamo,Abattoir,Vágóhíd,Mattatoio,屠殺場,도축장,Abattoir,Slakteriet,Rzeźnia,Matadouro,,Abator,Абатство,Кланица,Slakthus,Abattoire,,
+PHUSTR_10,,,Onslaught,,Nájezd,Stormløb,Angriff,,Buĉado,Arremetida,,Ryntäys,Assaut,Roham,Assalto,猛襲,맹공격,Aanval,Angrep,Szturm,Investida,,Năvala,Натиск,Јуриш,Angrepp,Saldırı,,
+PHUSTR_11,,,Hunted,,Loven,Jaget,Gehetzt,,Ĉasata,Cazado,,Metsästetty,Traque,Űzött vad,Braccato,逃走,사냥당함,Gejaagd,Jaget,Nawiedzony,Perseguição,,Vânătoarea,Преследуемый,Уловљен,Jaktad,Avlanmış,,
+PHUSTR_12,,,Speed,,Rychlost,Fart,Tempo,,Rapido,Velocidad,,Vauhti,Vitesse,Iram,Velocità,スピード,스피드,Haast,Hastighet,Pęd,Velocidade,,Viteză,Скорость,Брзина,Hastighet,Hız,,
+PHUSTR_13,,,The Crypt,,Krypta,Krypten,Die Gruft,,La kripto,La cripta,,Krypta,La Crypte,A kripta,La Cripta,地下聖堂,봉안당,De crypte,Krypten,Krypta,A Cripta,,Cripta,Склеп,Гробница,Kryptan,Mahzen,,
+PHUSTR_14,,,Genesis,,,,,,Genezo,Génesis,,Luominen,Genèse,Teremtés,Genesi,創世記,창세기,,,Geneza,Gênese,,Geneza,Зарождение,Постанак,Genesis,Yaratılış,,
+PHUSTR_15,,,The Twilight,,Soumrak,Tusmørket,Zwielicht,,La krepusko,El ocaso,,Hämärä,Le Crépuscule,Alkonyat,Il Crepuscolo,黄昏,황혼,De schemering,Skumringen,Zmierzch,O Crepúsculo,,Amurgul,Сумерки,Сумрак,Skymningen,Alacakaranlık,,
+PHUSTR_16,,,The Omen,,Znamení,Omenet,Das Omen,,La Aŭguro,El Presagio,,Enne,Le Présage,Az Ómen,Il Presagio,予兆,징조,De omen,Varselet,Omen,O Presságio,,Prevestirea,Предзнаменование,Знамење,Omen,Omen,,
+PHUSTR_17,,,Compound,,Ústav,Forbindelsen,Anlage,,Konstruaĵaro,Complejo,,Laitos,Installation,Létesítmény,Recinto,調合,복합체,Faciliteit,Forbindelsen,Mieszanka,Complexo,,Complexul,Комплекс,Једињење,Förbandet,Bileşik,,
+PHUSTR_18,,,Neurosphere,,Neurosféra,Neurosfæren,Neurosphäre,,Neŭrosfero,Neuroesfera,,Neurosfääri,Neurosphère,Neuroszféra,Neurosfera,ニューロスフィア,뉴로스피어,Neurosferen,Nevrosfæren,Neurosfera,Neurosfera,,Neurosferă,Нейросфера,Неуросфера,Neurosfären,Nörosfer,,
+PHUSTR_19,,,NME,,Nepřítel,,,,Mal-BN,N-MIGO,,VHLLNN,NMI,LNSG,NMIC,野郎,NOM,,,WRG,N-MIGO,,INMIC,В.Р.А.Г.,Н.Е.П.Р.,FiND,NME,,
+PHUSTR_20,,,The Death Domain,,Panství smrti,Dødsdomænet,Die Todeszone,,La morta regno,El Dominio Mortal,,Kuoleman piiri,Le Domaine de la Mort,A holtak birtoka,Il Dominio della Morte,死の領域,죽음의 영역,Het domein van de dood,Dødens domene,Domena Śmierci,O Domínio da Morte,,Domeniul morții,Владения смерти,Подручије смрти,Dödsdomänen,Ölüm Alanı,,
+PHUSTR_21,,,Slayer,,Zabiják,Slagter,Töter,,Mortigisto,Descuatizador,,Tappaja,Pourfendeur,Halálosztó,Assassino,スレイヤー,슬레이어,Doder,Slakteren,Pogromca,Matador,,Ucigător,Истребитель,Убица,Jägare,Avcı,,
+PHUSTR_22,,,Impossible Mission,,Nemožná mise,Umulig mission,Unmögliche Mission,,Neebla tasko,Misión imposible,,Mahdoton tehtävä,Mission Impossible,Lehetetlen küldetés,Missione Impossibile,不可能な任務,임파서블 미션,Onmogelijke missie,Umulig oppdrag,Niemożliwa Misja,Missão Impossível,,Misiune imposibilă,Невыполнимое задание,Немогућа мисија,Omöjligt uppdrag,İmkansız Görev,,
+PHUSTR_23,,,Tombstone,,Náhrobek,Gravsten,Grabstein,,Tombŝtono,Lápida,,Hautakivi,Pierre Tombale,Sírkő,Pietra Tombale,墓石,묘비,Grafsteen,Gravstein,Nagrobek,Lápide,,Piatra de mormânt,Надгробие,Надгробни споменик,Gravsten,Mezar Taşı,,
+PHUSTR_24,,,The Final Frontier,,Poslední hranice,Den endelige grænse,Die letzte Grenze,,La Fina Limo,La Frontera Final,La Última Frontera,Viimeinen rajamaa,La Frontière Finale,A végső határ,La Frontiera Finale,最後のフロンティア,최후의 개척지,De eindgrens,Den siste grensen,Ostateczna Granica,A Fronteira Final,,Ultima frontieră,Последний рубеж,Коначна граница,Den sista gränsen,Son Sınır,,
+PHUSTR_25,,,The Temple of Darkness,,Chrám temna,Mørkets tempel,Der Tempel der Dunkelheit,,La Idolejo de Mallumo,El Templo de la Oscuridad,,Pimeyden temppeli,Le Temple des Ténèbres,A sötétség temploma,Il Tempio dell'Oscurità,暗黒の神殿,어둠의 신전,De tempel van de duisternis,Mørkets tempel,Świątynia Mroku,O Templo da Escuridão,,Templul tenebros,Храм тьмы,Храм таме,Mörkrets tempel,Karanlığın Tapınağı,,
+PHUSTR_26,,,Bunker,,Bunkr,,,,Bunkro,Búnker,,Bunkkeri,Bunker,Bunker,Bunker,バンカー,방공호,,,Bunkier,Casamata,Bunker,Buncăr,Бункер,Бункер,Bunker,Sığınak,,
+PHUSTR_27,,,Anti-Christ,,Antikrist,,Antichrist,,Antikristo,Anticristo,,Antikristus,Anti-Christ,Antikrisztus,Anticristo,アンチキリスト,적그리스도,Antichrist,Antikrist,Antychryst,Anticristo,,Antihrist,Антихрист,Антихрист,Antikrist,Mesih Karşıtı,,
+PHUSTR_28,,,The Sewers,,Kanály,Kloakkerne,Kanäle,,La Kanalo,Las Alcantarillas,,Viemärit,Les Egouts,A kanális,Le Fogne,下水道,하수구,De rioleringen,Kloakken,Ścieki,Os Esgotos,,Canalizarea,Канализация,Канализација,Sjukhusen,Kanalizasyonlar,,
+PHUSTR_29,,,Odyssey of Noises,,Odysea křiku,Lydenes odyssé,Odyssee der Geräusche,,Vojaĝo de Sonoj,Odisea de Ruidos,,Äänten harharetki,Odysée de Bruits,A moraj ösvénye,Odissea dei Rumori,オデッセイのノイズ,속삭임의 여정,Odyssee van geluiden,Lydenes odyssé,Odyseja Wrzawy,Odisséia de Ruidos,,Odiseea zgomotelor,Одиссея шумов,Одисеја шумова,Ljudets odyssé,Seslerin Odyssey'i,,
+PHUSTR_30,,,The Gateway of Hell,,Brána pekla,Helvedes port,Tor zur Hölle,,La Pordego de Inferno,La Puerta del Infierno,,Helvetin porttikäytävä,La Porte des Enfers,Átjáró a pokolba,La Porta dell'Inferno,地獄の関門,지옥의 차원문,De poort van de hel,Porten til helvete,Brama Piekieł,O Portão do Inferno,,Poarta spre infern,Врата ада,Пролаз пакла,Helvetets port,Cehennem Kapısı,,
+PHUSTR_31,,,Cyberden,,Kyberdoupě,,Cyberbau,,Cibernesto,Ciber-guarida,,Kyberpesä,Cyber-Antre,Kiberodú,Cybergabbia,サイバーの巣,사이버소굴,,,Cybernora,Ciberantro,,Cibervizuină,Киберлогово,Сајбер-јазбина,Cyberden,Siber'in ini,,
+PHUSTR_32,,,Go 2 It,,Jdi do toho,,,,Iru al ĝi!,Ve a x ello,Ve x eso,Iske kii,Go 2 It,Menj oda!,Dacci Dentro,逝ってこい,함 해 봐,Ga ervoor,,Do Dzieła,Vai Fundo,Siga em Frente,Du-te la ei,П0лный вп3рёд,Иди ка њему,Gå till det,Devam Et,,
+,sigil (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HUSTR_EPI5,,,SIGIL,,,,,,,,,,,,,,,,,,,,,,,,,,
+HUSTR_E5M1,,,Baphomet's Demesne,,,,,,,,,,,,,,,,,,,,,Владение Бафомета,,,,,
+HUSTR_E5M2,,,Sheol,,,,,,,,,,,,,,,,,,,,,Шеол,,,,,
+HUSTR_E5M3,,,Cages of the Damned,,,,,,,,,,,,,,,,,,,,,Клетки проклятых,,,,,
+HUSTR_E5M4,,,Paths of Wretchedness,,,,,,,,,,,,,,,,,,,,,Пути убожества,,,,,
+HUSTR_E5M5,,,Abaddon's Void,,,,,,,,,,,,,,,,,,,,,Пустота Абаддона,,,,,
+HUSTR_E5M6,,,Unspeakable Persecution,,,,,,,,,,,,,,,,,,,,,Ужасающее угнетение,,,,,
+HUSTR_E5M7,,,Nightmare Underworld,,,,,,,,,,,,,,,,,,,,,Кошмарная преисподня,,,,,
+HUSTR_E5M8,,,Halls of Perdition,,,,,,,,,,,,,,,,,,,,,Залы погибели,,,,,
+HUSTR_E5M9,,,Realm of Iblis,,,,,,,,,,,,,,,,,,,,,Царство Иблиса,,,,,
 E5TEXT,,,"Baphomet was only doing Satan's bidding
 by bringing you back to Hell. Somehow they
 didn't understand that you're the reason
@@ -284,18 +301,18 @@ Lock and load. Rip and tear.",,,,,,,,,,,,,,,,,,,,,"Бафомет всего л�
 готов встретиться с более продвинутыми
 демонами, посланными на Землю.
 
-Оружие к бою. Рвать и терзать.",,,
-,sigil2 (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,
-HUSTR_EPI6,,,SIGIL II,,,,,,,,,,,,,,,,,,,,,СИГИЛ II,,,
-HUSTR_E6M1,,,Cursed Darkness,,,,,,,,,,,,,,,,,,,,,Проклятая тьма,,,
-HUSTR_E6M2,,,Violent Hatred,,,,,,,,,,,,,,,,,,,,,Яростная ненависть,,,
-HUSTR_E6M3,,,Twilight Desolution,,,,,,,,,,,,,,,,,,,,,Сумерчное запустение,,,
-HUSTR_E6M4,,,Fragments of Sanity,,,,,,,,,,,,,,,,,,,,,Отрывки здравомыслия,,,
-HUSTR_E6M5,,,Wrathful Reckoning,,,,,,,,,,,,,,,,,,,,,Гневная расплата,,,
-HUSTR_E6M6,,,Vengeance Unleashed,,,,,,,,,,,,,,,,,,,,,Вольная месть,,,
-HUSTR_E6M7,,,Descent Into Terror,,,,,,,,,,,,,,,,,,,,,Погружение в страх,,,
-HUSTR_E6M8,,,Abyss of Despair,,,,,,,,,,,,,,,,,,,,,Бездна отчаяния,,,
-HUSTR_E6M9,,,Shattered Homecoming,,,,,,,,,,,,,,,,,,,,,Разрушенное возвращение,,,
+Оружие к бою. Рвать и терзать.",,,,,
+,sigil2 (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HUSTR_EPI6,,,SIGIL II,,,,,,,,,,,,,,,,,,,,,,,,,,
+HUSTR_E6M1,,,Cursed Darkness,,,,,,,,,,,,,,,,,,,,,Проклятая тьма,,,,,
+HUSTR_E6M2,,,Violent Hatred,,,,,,,,,,,,,,,,,,,,,Яростная ненависть,,,,,
+HUSTR_E6M3,,,Twilight Desolution,,,,,,,,,,,,,,,,,,,,,Сумерчное запустение,,,,,
+HUSTR_E6M4,,,Fragments of Sanity,,,,,,,,,,,,,,,,,,,,,Отрывки здравомыслия,,,,,
+HUSTR_E6M5,,,Wrathful Reckoning,,,,,,,,,,,,,,,,,,,,,Гневная расплата,,,,,
+HUSTR_E6M6,,,Vengeance Unleashed,,,,,,,,,,,,,,,,,,,,,Вольная месть,,,,,
+HUSTR_E6M7,,,Descent Into Terror,,,,,,,,,,,,,,,,,,,,,Погружение в страх,,,,,
+HUSTR_E6M8,,,Abyss of Despair,,,,,,,,,,,,,,,,,,,,,Бездна отчаяния,,,,,
+HUSTR_E6M9,,,Shattered Homecoming,,,,,,,,,,,,,,,,,,,,,Разрушенное возвращение,,,,,
 E6TEXT,,,"Satan erred in casting you to Hell's
 darker depths. His plan failed. He has
 tried for so long to destroy you, and he
@@ -313,4 +330,484 @@ Prepare for HELLION!
 демонами и надеяться, что ты
 погибнешь сражаясь.
 
-Приготовся к HELLION!",,,
+Приготовся к HELLION!",,,,,
+,legacy of rust,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+TXT_ID1_EP1,,,The Vulcan Abyss,,,,,,,,,,,,,,,,,,,,,Вулканская бездна,,,,,
+TXT_ID1_EP2,,,Counterfeit Eden,,,,,,,,,,,,,,,,,,,,,Поддельный Эдем,,,,,
+XHUSTR_1,,,Scar Gate,,,,,,,,,,,,,,,,,,,,,Врата шрама,,,,,
+XHUSTR_2,,,Sanguine Wastes,,,,,,,,,,,,,,,,,,,,,Кровавые отходы,,,,,
+XHUSTR_3,,,Spirit Drains,,,,,,,,,,,,,,,,,,,,,Стоки душ,,,,,
+XHUSTR_4,,,Descending Inferno,,,,,,,,,,,,,,,,,,,,,Нисходящий Ад,,,,,
+XHUSTR_5,,,Creeping Hate,,,,,,,,,,,,,,,,,,,,,Крадущаяся ненависть,,,,,
+XHUSTR_6,,,The Coiled City,,,,,,,,,,,,,,,,,,,,,Спиральный город,,,,,
+XHUSTR_7,,,Forfeited Salvation,,,,,,,,,,,,,,,,,,,,,Утраченное спасение,,,,,
+XHUSTR_8,,,Ash Mill,,,,,,,,,,,,,,,,,,,,,Пепельная мельница,,,,,
+XHUSTR_9,,,Second Coming,,,,,,,,,,,,,,,,,,,,,Второе пришествие,,,,,
+XHUSTR_10,,,Falsehood,,,,,,,,,,,,,,,,,,,,,Ложь,,,,,
+XHUSTR_11,,,Dis Union,,,,,,,,,,,,,,,,,,,,,,,,,,
+XHUSTR_12,,,Echoes of Pain,,,,,,,,,,,,,,,,,,,,,Отголоски боли,,,,,
+XHUSTR_13,,,The Rack,,,,,,,,,,,,,,,,,,,,,Стойка,,,,,
+XHUSTR_14,,,Soul Silo,,,,,,,,,,,,,,,,,,,,,Силос душ,,,,,
+XHUSTR_15,,,Brink,,,,,,,,,,,,,,,,,,,,,Грань,,,,,
+XHUSTR_16,,,Panopticon,,,,,,,,,,,,,,,,,,,,,Паноптикум,,,,,
+XHUSTR_99,,,Test Map Please Ignore,,,,,,,,,,,,,,,,,,,,,Тестовая карта прошу проигнорировать,,,,,
+INTERTEXT_ID1_E1,,,"Damn.
+
+The oldest trap in the book, and you fell
+right into it. Even the best make mistakes.
+
+As you fade into unconsciousness, an
+epiphany surges through the pain: the base
+is beyond recovery, and the UAC knew it.
+Why send their best agent on a suicide run?
+There's something else at stake. What are
+they hiding on this barren, bleeding rock?
+
+As they toss your half-conscious form into
+a rusty iron cage, you vow to find answers.
+
+Time to carve a legacy of your own.",,,,"Mist.
+
+Die älteste Falle der Geschichte und
+du bist direkt hineingetappt. Aber kann
+wohl den Besten von uns passieren.
+
+Während du unter Schmerzen in der
+Bewusstlosigkeit versinkst, schießt dir
+auf einmal ein Gedanke durch den Kopf:
+Die Basis ist unrettbar verloren und
+der UAC war das von Anfang an klar.
+Warum haben sie ihren besten Mann in den
+Selbstmord geschickt? Hier steht doch
+noch mehr auf dem Spiel. Was versteckt sich
+auf diesem verdammten Felsen?
+
+Als sie deinen halb ohnmächtigen Körper
+in einen rostigen Eisenkäfig werfen,
+schwörst du, der Sache auf den Grund zu
+gehen. Es wird Zeit, eine Kerbe mit deinem
+Namen drauf in die Geschichte zu schlagen.",,,"Joder.
+
+La trampa más obvia del mundo y caes de
+lleno. Hasta los mejores cometen errores.
+
+En plena inconsciencia, aflora una revelación
+entre el dolor: la base es insalvable y la
+UAC lo sabía. ¿Para qué envían a su mejor
+agente a una misión suicida?
+Hay algo más en juego. ¿Qué están ocultando
+en esta roca yerma y sangrienta?
+
+Cuando arrojan tu cuerpo semiinconsciente
+a una jaula de hierro oxidado, juras
+encontrar respuestas.
+
+Es hora de forjar tu propio legado.","Carajo.
+
+Es la trampa más obvia del mundo y te metes
+de cabeza. Hasta los mejores cometen errores.
+
+En plena inconsciencia, aflora una revelación
+entre el dolor: la base es insalvable y la
+UAC lo sabía. ¿Para qué envían a su mejor
+agente a una misión suicida?
+Hay algo más en juego. ¿Qué están ocultando
+en esta roca yerma y sangrienta?
+
+Cuando arrojan tu cuerpo semiinconsciente
+a una jaula de hierro oxidado, juras
+encontrar respuestas.
+
+Es hora de forjar tu propio legado.",,"Bon sang.
+
+Le plus vieux piège du monde, et vous
+avez sauté dedans. Même les
+meilleurs commettent des erreurs.
+
+Alors que vous sombrez dans l'inconscience,
+la douleur laisse place à une révélation :
+la base est irrécupérable et l'UAC le savait.
+Pourquoi envoyer leur meilleur agent en
+mission suicide ? Il y a autre chose. Que
+cachent-ils sur ce foutu caillou stérile ?
+
+Alors que votre corps à moitié inconscient
+est jeté dans une cage rouillée, vous vous
+jurez de trouver la réponse à ces questions.
+
+Il est temps de forger votre propre héritage.",,"Accidenti.
+
+Il trucco più vecchio del mondo, e ci sei cascato
+con tutte le scarpe. Anche i migliori sbagliano.
+
+Mentre perdi i sensi, un'epifania
+si fa strada attraverso il dolore: la base
+è irrecuperabile, e la UAC lo sapeva. Perché mandare
+il loro miglior agente in una missione suicida?
+C'è qualcos'altro in gioco. Cosa nascondono
+su questa roccia arida e sanguinante?
+
+Mentre gettano il tuo corpo semicosciente in
+una gabbia di ferro arrugginita, giuri di trovare le risposte.
+
+È ora di entrare nella storia.","クソ。
+
+典型的な罠にまんまとかかってしまった。
+サルも木から落ちるとはこのことか。
+
+遠のく意識のなかで、痛みを通してある疑念が頭をよぎる。
+基地はもはや復旧不可能だ。
+UACはそのことを知っていた。
+無駄死にとも呼べるこの状況でなぜ最高のエー
+ジェントを送った？ 何か裏がある。
+このひどい不毛な地に何を隠している？
+
+サビついた鉄の檻に半分意識が飛んでいる体を放り込まれながら、
+その答えを見つけ出すことを心に誓う。
+
+自らの手で遺産をひも解く時が来たのだ","젠장.
+
+책에 나오는 가장 오래된 함정, 바로 그곳에
+당신이 빠졌습니다. 원숭이도 나무에서 떨어지는 법.
+
+의식이 희미해져 갈 때쯤,
+고통 사이로 어떤 개달음이 번뜩 떠오릅니다.
+기지는 복구되려면 멀었고, UAC도 그걸 알고 있죠.
+왜 최강 요원을 자살 임무에 내보낸 걸까요?
+뭔가 다른 꿍꿍이가 있는 겁니다.
+이 황량하고 끔찍한 바위땅에 뭘 숨겨두고 있는 걸까요?
+
+정신이 혼미한 당신을 놈들이 녹슨 철창에 집어넣을 때
+당신은 질문에 대한 답을 찾으리라 다짐합니다.
+
+당신만의 유산을 새겨넣을 시간입니다.",,,"Cholera.
+
+Złapali cię w najprostszą możliwą pułapkę.
+Nawet najlepsi popełniają błędy.
+
+Tracąc przytomność, wśród bólu
+doznajesz objawienia: bazy nie da się uratować,
+a UAC to wiedziało. Po co posyłać
+najlepszego agenta na misję samobójczą?
+Gra toczy się o coś jeszcze. Co ukrywają
+na tej bezludnej, krwawiącej skale?
+
+Gdy wrzucają twoje półświadome ciało do zardzewiałej,
+żelaznej klatki, przysięgasz znaleźć odpowiedzi.
+
+Czas zostać kowalem własnego losu.",,"Droga.
+
+Essa armadilha é clássica, e você
+caiu direitinho. Até os melhores cometem erros.
+
+À medida que você fica inconsciente, uma
+epifania surge em meio à dor: é impossível recuperar
+a base, e a UAC sabia disso.
+Por que enviar seu melhor agente para uma missão suicida?
+Tem alguma outra coisa em jogo. O que
+eles estão escondendo nesta rocha sem vida e devastada
+
+Enquanto eles jogam seu corpo semiconsciente em
+uma jaula enferrujada, você se compromete a descobrir a verdade.
+
+É hora de criar o próprio legado.",,"Чёрт.
+
+Этому трюку уже сто лет, и всё же тебя
+одурачили. Лучшие тоже ошибаются.
+
+Теряя сознание и игнорируя боль, вдруг
+ты понимаешь, что эту базу не спасти,
+и ОАК прекрасно это знала. Но зачем
+отправлять лучшего бойца на смерть?
+На кону что-то ещё. Что они прячут
+в этих пустых, залитых кровью землях?
+
+Твоё едва живое тело бросают в ржавую
+клетку. Но ты клянёшься узнать истину.
+
+Пора оставить собственное наследие.",,,,"见鬼。
+
+不过是最老套的陷阱，你竟然一头栽
+了进去。看来最优秀的人也有失手的
+时候。
+
+当你逐渐失去意识时，突然在痛苦中
+醒悟了一点：基地已经无法恢复，而
+UAC心知肚明。为什么派他们最优
+秀的特工去执行一趟有去无回的自杀
+任务？这其中一定另有隐情。他们在
+这片贫瘠、染血的土地上隐藏了什么？
+
+被他们丢进生锈的铁笼时，你在昏沉
+中发誓要找到真相。
+
+是时候开创属于你自己的传奇了。","該死。
+
+這是最老掉牙的陷阱，結果你
+還是中招了。即使是最強的強者也會犯錯。
+
+就在你陷入昏迷的同時，
+在痛苦當中你突然想到了一件事：
+基地沒救了，UAC也很清楚。
+他們為什麼要派最強的手下出自殺任務？
+一定有其他的利害考量。
+在這個荒涼又流滿鮮血的石頭星球上，他們到底藏了什麼？
+
+他們把半昏半醒的你丟入了
+一座生鏽的鐵籠，此時你發誓一定要找出原因。
+
+壯烈犧牲、名垂千古的時刻近了。"
+INTERTEXT_ID1_E2,,,"Tick. Tock. Tick. Tock.
+
+The air is thick with blood and irony.
+You've turned the UAC's final gambit against
+them, but will they have the last laugh?
+
+Three. Two. One.
+
+Then, with a snap and a puff of ozone, the
+portal winks out of existence, its crimson
+maelstrom yielding to blessed silence.
+
+Zero.
+
+It's done. You've rid the world of two evils
+in a single violent stroke... and survived.
+Legacy can wait. You ain't finished yet.",,,,"Tick, tack, tick, tack.
+
+Der Geruch von Blut und Ironie liegt
+in der Luft. Du hast den letzten Schachzug
+der UAC gegen sie selbst gerichtet,
+aber wer wird jetzt als Letztes lachen?
+
+Drei. Zwei. Eins.
+
+Mit einem Knall und einem Schwall Ozon
+verschwindet das Portal im Nichts und
+der scharlachrote Mahlstrom weicht herrlicher Stille.
+
+Null.
+
+Es ist vollbracht. Du hast die Welt mit
+einem einzigen brutalen Streich von gleich
+zwei Übeln befreit ... und überlebt.
+Dein Vermächtnis kann warten.
+Du bist hier noch nicht fertig.",,,"Tic, tac. Tic, tac.
+
+El ambiente está cargado de sangre e ironía.
+Has puesto en contra de la UAC su propio
+ardid, pero ¿quién reirá el último?
+
+Tres, dos uno...
+
+Entonces, tras un chasquido y una nube de
+ozono, el portal abandona este plano y una
+vorágine carmesí deja un silencio sepulcral.
+
+Cero.
+
+Se acabó. Has librado al mundo de dos males
+de un solo plumazo... y has sobrevivido.
+El legado puede esperar. No has terminado.","Tic, tac. Tic, tac.
+
+El ambiente está cargado de sangre e ironía.
+Tornaste el plan de la UAC en su
+contra, pero ¿quién reirá último?
+
+Tres, dos uno...
+
+Entonces, tras un chasquido y una nube de
+ozono, el portal abandona este plano y una
+vorágine carmesí deja un silencio sepulcral.
+
+Cero.
+
+Se acabó. Libraste al mundo de dos males
+de un solo rapto de violencia... y sobreviviste.
+El legado puede esperar. Esto aún no termina.",,"Tic. Tac. Tic. Tac.
+
+L'air est lourd de sang et d'ironie.
+Vous avez retourné l'ultime pari de l'UAC
+contre eux, mais auront-ils le dernier mot ?
+
+Trois. Deux. Un.
+
+Dans un claquement et un nuage d'ozone,
+le portail disparaît, son tourbillon cramoisi
+faisant place à un silence bienvenu.
+
+Zéro.
+
+C'est fait. D'un seul coup violent, vous
+avez débarrassé le monde de deux maux...
+et avez survécu.
+L'héritage attendra. Ce n'est pas encore terminé.",,"Tic tac. Tic tac.
+
+L'aria è densa di sangue e ironia.
+Hai ribaltato la mossa finale della UAC
+contro di essa, ma chi riderà per ultimo?
+
+Tre. Due. Uno.
+
+Poi, con uno schiocco e uno sbuffo di ozono,
+il portale svanisce, il suo vortice
+cremisi cede il posto al beato silenzio.
+
+Zero.
+
+È fatta. Hai liberato il mondo da due mali
+in un solo poderoso colpo... e sei sopravvissuto.
+La storia può aspettare. Non hai ancora finito.","チク、タク。チク、タク。
+
+血と皮肉で空気がよどんでいる。
+UACの最後の策略が裏切られると知っても、
+連中は最後に笑うだろうか？
+
+3、2、1。
+
+オゾンが激しく吹き込まれる共にポー
+タルが消え失せ、
+その深紅の渦が歓喜の静けさを包み込む。
+
+0。
+
+終わった。暴力的な一撃によりこの世界から2つの悪を取り除いた…
+そして生き延びた。あとは遺産だ。
+しかしその前にまだやるべきことが残っている","째깍. 째깍. 째깍.
+
+공기를 가득 메우는 피와 아이러니.
+UAC가 던진 최후의 도박을 수포로 만들었습니다.
+놈들은 마지막 순간에 웃을 수 있을까요?
+
+3. 2. 1.
+
+딱, 하는 소리와 함께 오존이 터지더니
+포털이 눈 깜짝할 사이에 사라지고
+진홍빛 소용돌이가 축복의 침묵으로 뒤바뀝니다.
+
+0.
+
+끝났습니다. 단 한 번의 무시무시한 공격으로
+두 악마의 세계를 지워버리고... 살아남기까지 했습니다.
+유산은 잠깐 뒤로 미뤄둬야죠. 당신은 아직 끝나지 않았습니다.",,,"Tik. Tak. Tik. Tak.
+
+Powietrze jest gęste od krwi i ironii.
+Udało ci się odwrócić ostateczny podstęp UAC
+przeciw nim, ale czy będą śmiać się ostatni?
+
+Trzy. Dwa. Jeden.
+
+Trzask, obłoczek ozonu i portal
+znika z rzeczywistości, a jego
+purpurowy wir zastępuje błoga cisza.
+
+Zero.
+
+To koniec. Udało ci się oczyścić świat z dwóch zagrożeń
+jednym, agresywnym ciosem... i przeżyć.
+Los zaczeka. Masz jeszcze coś do zrobienia.",,"Tique-taque. Tique-taque.
+
+O ar está cheio de sangue e ironia.
+Você usou a última cartada da UAC contra
+eles mesmos, mas será que eles ainda vão conseguir o que querem?
+
+Três. Dois. Um.
+
+De repente, acompanhado por um estalo e um cheiro de ozônio, o
+portal desaparece completamente, e o turbulento
+vórtice vermelho dá lugar a um silêncio sereno.
+
+Zero.
+
+Está feito. Você livrou o mundo de dois males
+com um único e poderoso golpe... e sobreviveu.
+O legado pode esperar. Você ainda não terminou.",,"Тик-так, тик-так.
+
+Кровь и ирония — твой коктейль на сегодня.
+Ты обернул авантюру ОАК против неё самой.
+И всё же за кем будет последний ход?
+
+Три, два, один.
+
+С треском портал схлопывается, оставляя
+после себя лишь запах озона. Звенящая
+тишина сменяет багровую бурю.
+
+Пустота.
+
+Всё. Ты избавил мир от двух источников
+зла одной мощной атакой... и выжил сам.
+Наследие подождёт: у тебя остались дела.",,,,"滴答。滴答。滴答。滴答。
+
+空气中弥漫着血液和铁锈的味道。你
+用UAC的最后一招反制了他们，但
+他们会笑到最后吗？
+
+三。二。一。
+
+伴随“啪”的一声，一股臭氧的气味
+喷了出来，传送门瞬间收缩消失，猩
+红色的漩涡被神圣的静谧所取代。
+
+零。
+
+搞定了。你靠一记猛攻消灭了世界上
+的两股邪恶势力……而且还活了下来。
+开创传奇什么的晚点再说吧，你还没
+完事呢。","滴、滴、答、答。
+
+空氣中充滿了血與諷刺的味道。
+你把UAC的最終招數拿來反過來對抗他們，
+但最後笑得出來的會是他們嗎？
+
+三、二、一。
+
+然後猛然一聲、在一股臭氧中，
+傳送門一眨眼就消失了，
+其血紅色的旋風也被天賜的寂靜取代。
+
+零。
+
+完成了。你以一次猛擊
+驅除了世上的兩大邪惡......而且還活了下來。
+壯烈犧牲等之後再說吧。你還有事情沒做完。"
+,id24,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ID24_GOTINCINERATOR,,,You got the incinerator!,,,,Du hast den Flammenwerfer!,,,¡Ya tienes la incineradora!,,,Vous avez mis la main sur l'incinérateur !,,Hai ottenuto l'inceneritore!,インシネレーターを入手した！,화염 방사기를 획득했습니다!,,,Znajdujesz spalacz!,,Você obteve o incinerador!,,Ты нашёл сжигатель!,,,,你已获得焚化器！,你拿到了焚化槍！
+ID24_GOTCALAMITYBLADE,,,You got the calamity blade!  Hot damn!,,,,Du hast die Unheilsklinge! Wunderschönes Teil!,,,¡Ya tienes la Cuchilla de la Calamidad! ¡La releche!,¡Ya tienes la Cuchilla de la Calamidad! ¡A trocear!,,Vous avez mis la main sur la Calamity Blade ! Ça va être chaud !,,Hai ottenuto la lama della calamità! Wow!,カラミティブレードを入手した！ やったぜ！,칼라미티 블레이드를 획득했습니다!  겁나 핫하네요!,,,Znajdujesz ostrze niedoli! Ale czad!,,Você obteve a lâmina da calamidade! Minha nossa!,,"Ты нашёл «Клинок погибели»! Ух, чёрт!",,,,你已获得灾刃！酷毙了！,你拿到災厄之刃了！讚啦！
+ID24_GOTFUELCAN,,,Picked up a fuel can.,,,,Treibstoffbehälter eingesammelt.,,,Has recogido una lata de combustible.,Recogiste una lata de combustible.,,Vous avez récupéré un bidon d'essence.,,Hai raccolto una tanica di carburante.,燃料の缶を拾った,연료 캔을 획득했습니다.,,,Podnosisz puszkę z paliwem.,,Pegou um galão de combustível.,,Найдена канистра с топливом.,,,,已拾取1个燃料罐。,撿起了一個燃料罐。
+ID24_GOTFUELTANK,,,Picked up a fuel tank.,,,,Treibstoffkanister eingesammelt.,,,Has recogido un depósito de combustible.,Recogiste un depósito de combustible.,,Vous avez récupéré un réservoir d'essence.,,Hai raccolto un serbatoio.,燃料タンクを拾った,연료 탱크를 획득했습니다.,,,Podnosisz bak z paliwem.,,Pegou um tanque de combustível.,,Найден бак с топливом.,,,,已拾取1个燃料箱。,撿起了一個燃料箱。
+ID24_COLOR_GREEN,,,Green,,,,Grün,,,Verde,,,Vert,,Verde,グリーン,그린,,,Zielony,,Verde,,Зелёный,,,,绿色,綠色
+ID24_COLOR_INDIGO,,,Indigo,,,,Indigoblau,,,Añil,Índigo,,Indigo,,Indaco,インディゴ,인디고,,,Indygo,,Índigo,,Индиго,,,,靛蓝色,靛色
+ID24_COLOR_BROWN,,,Brown,,,,Braun,,,Marrón,Café,,Brun,,Marrone,ブラウン,브라운,,,Brązowy,,Marrom,,Коричневый,,,,棕色,棕色
+ID24_COLOR_RED,,,Red,,,,Rot,,,Rojo,,,Rouge,,Rosso,レッド,빨간색,,,Czerwony,,Vermelho,,Красный,,,,红色,紅色
+ID24_COLOR_YELLOW,,,Yellow,,,,Gelb,,,Amarillo,,,Jaune,,Giallo,イエロー,노란색,,,Żółty,,Amarelo,,Жёлтый,,,,黄色,黃色
+ID24_COLOR_BLUE,,,Blue,,,,Blau,,,Azul,,,Bleu,,Blu,ブルー,블루,,,Niebieski,,Azul,,Синий,,,,蓝色,藍色
+ID24_COLOR_NAVY,,,Navy,,,,Marineblau,,,Azul marino,,,Bleu marine,,Blu marino,ネイビー,네이비,,,Granatowy,,Azul-marinho,,Тёмно-синий,,,,深蓝色,海軍藍
+ID24_COLOR_MAGENTA,,,Magenta,,,,Magenta,,,Magenta,,,Magenta,,Magenta,マゼンタ,마젠타,,,Purpurowy,,Magenta,,Пурпурный,,,,洋红色,洋紅色
+,iddm1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_1,,,One,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_2,,,Surge,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_3,,,Artemis,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_4,,,Lazarus 2024,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_5,,,Baneful Crypt,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_6,,,Ziggurat,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_7,,,Magnificent Seven,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_8,,,High Hopes,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_9,,,Tournament Edition,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_10,,,Purge Facility,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_11,,,Bad Archeology,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_12,,,Catapult Ordeal,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_13,,,Moonbase,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_14,,,X-Factor,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_15,,,Marble and Blood,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_16,,,Wicked Warehouse,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_17,,,Future Shock,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_18,,,Diesel,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_19,,,Blood Offering,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_20,,,Corrupted Outpost,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_21,,,Treatment Station,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_22,,,Luca Doesn't Name Maps,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_23,,,Good Ideas,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_24,,,Static Station,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_25,,,Heckbase Alpha,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_26,,,Shoot to Kill,,,,,,,,,,,,,,,,,,,,,,,,,,

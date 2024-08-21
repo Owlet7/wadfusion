@@ -5,7 +5,8 @@
 RES_FILES = [
     'mapinfo.txt', 'language.csv', 'endoom', 'smooshed.txt',
     'textures.common', 'textures.doom1', 'textures.doom2',
-    'textures.tnt', 'textures.plut', 'animdefs.txt',
+    'textures.tnt', 'textures.plut', 'textures.id1',
+    'animdefs.txt', 'xwinter0.txt', 'xwinter1.txt',
     'graphics/M_DOOM.lmp', 'graphics/TITLEPIC.lmp',
     'graphics/M_HELL.lmp', 'graphics/M_NOREST.lmp',
     'graphics/M_MASTER.lmp', 'graphics/M_TNT.lmp',
@@ -36,6 +37,7 @@ RES_FILES = [
     'mapinfo/xbox_levels.txt', 'mapinfo/nerve_levels.txt',
     'mapinfo/tnt_levels.txt', 'mapinfo/plutonia_levels.txt',
     'mapinfo/sigil_levels.txt', 'mapinfo/sigil2_levels.txt',
+    'mapinfo/id1_levels.txt', 'mapinfo/iddm1_levels.txt',
     'mapinfo/episodes.txt',
     'menudef.txt', 'cvarinfo.txt', 'zscript.zs',
     'zscript/ws_handler.zs', 'zscript/ws_music.zs',
@@ -69,11 +71,11 @@ TIDY_DIR_OGG = {
 
 # list of files we can extract from
 WADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve', 'sigil', 'sigil_shreds',
-        'sigil2', 'sigil2_mp3', 'doomu', 'doom2u', 'nerveu', 'tntu', 'plutoniau', 'extras']
+        'sigil2', 'sigil2_mp3', 'id1', 'iddm1', 'doomu', 'doom2u', 'nerveu', 'tntu', 'plutoniau', 'extras']
 
 # wads to search for and report if found
 REPORT_WADS = ['doom', 'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',
-               'doom2', 'nerve', 'attack', 'tnt', 'plutonia',
+               'doom2', 'attack', 'nerve', 'tnt', 'plutonia', 'id1', 'iddm1',
                'sewers', 'betray', 'doomu', 'doom2u',
                'nerveu', 'tntu', 'plutoniau', 'extras']
 
@@ -95,6 +97,11 @@ DOOM2_LUMPS = [
     'sounds_doom2', 'sprites_doom2', 'txdefs_doom2'
 ]
 
+ID1_LUMPS = [
+    'flats_id1', 'graphics_id1', 'music_id1', 'patches_id1',
+    'sounds_id1', 'sprites_id1'
+]
+
 # lists of lumps to extract from each IWAD
 WAD_LUMP_LISTS = {
     'doom': COMMON_LUMPS + DOOM1_LUMPS,
@@ -105,6 +112,8 @@ WAD_LUMP_LISTS = {
     'sigil_shreds': ['music_sigil_shreds'],
     'sigil2': ['graphics_sigil2', 'music_sigil2', 'patches_sigil2', 'data_sigil2', 'flats_sigil2'],
     'sigil2_mp3': ['music_sigil2_shreds'],
+    'id1': ID1_LUMPS,
+    'iddm1': [],
     # widescreen assets from unity and kex ports
     'doomu': ['graphics_doomu'],
     'doom2u': ['graphics_doom2u'],
@@ -125,7 +134,9 @@ WAD_MAP_PREFIXES = {
     # master levels not processed like other wads, bespoke prefix lookup
     'masterlevels': 'ML_',
     'sigil': '',
-    'sigil2': ''
+    'sigil2': '',
+    'id1': 'ID_',
+    'iddm1': 'DM_'
 }
 
 # texture patches to extract from specific master levels PWADs

@@ -493,10 +493,10 @@ def get_eps(wads_found):
             eps += ['Knee Deep in the Dead', 'The Shores of Hell', 'Inferno', 'Thy Flesh Consumed']
         elif wadname == 'doom2':
             eps += ['Hell on Earth']
-        elif wadname == 'nerve' and 'doom2' in wads_found:
-            eps += ['No Rest for the Living']
         elif wadname == 'attack' and 'doom2' in wads_found:
             eps += ['The Master Levels']
+        elif wadname == 'nerve' and 'doom2' in wads_found:
+            eps += ['No Rest for the Living']
         elif wadname == 'tnt':
             eps += ['TNT: Evilution']
         elif wadname == 'plutonia':
@@ -505,6 +505,10 @@ def get_eps(wads_found):
             eps += ['Sigil']
         elif wadname == 'sigil2' and 'doom' in wads_found:
             eps += ['Sigil II']
+        elif wadname == 'id1' and 'doom2' in wads_found:
+            eps += ['The Vulcan Abyss', 'Counterfeit Eden']
+        elif wadname == 'iddm1' and 'doom2' in wads_found:
+            eps += ['id Deathmatch Pack #1']
     return eps
 
 def pk3_compress():
@@ -591,6 +595,18 @@ def main():
         # if doom 1 also isn't present (weird) extract all common resources
         if not get_wad_filename('doom'):
             WAD_LUMP_LISTS['tnt'] += COMMON_LUMPS
+    # if id1 present but not doom1, extract doom1 resources from it
+    if get_wad_filename('id1') and not get_wad_filename('doom'):
+        WAD_LUMP_LISTS['id1'] += ['patches_doom1']
+    # if iddm1 present but not id1, extract id1 resources from it
+    if get_wad_filename('iddm1') and not get_wad_filename('id1'):
+        WAD_LUMP_LISTS['iddm1'] += ID1_LUMPS
+    # if iddm1 present but not doom1, extract doom1 music from it
+    if get_wad_filename('iddm1') and not get_wad_filename('doom'):
+        WAD_LUMP_LISTS['iddm1'] += ['music_doom1', 'patches_doom1']
+    # if iddm1 present but not tnt, extract tnt music from it
+    if get_wad_filename('iddm1') and not get_wad_filename('tnt'):
+        WAD_LUMP_LISTS['iddm1'] += ['music_iddm1']
     # extract lumps and maps from wads
     for iwad_name in WADS:
         wad_filename = get_wad_filename(iwad_name)
@@ -611,6 +627,12 @@ def main():
             continue
         if iwad_name == 'sigil2_mp3' and not get_wad_filename('sigil2'):
             logg('Skipping sigil2_mp3.wad as sigil2.wad is not present', error=True)
+            continue
+        if iwad_name == 'id1' and not get_wad_filename('doom2'):
+            logg('Skipping id1.wad as doom2.wad is not present', error=True)
+            continue
+        if iwad_name == 'iddm1'and not get_wad_filename('doom2'):
+            logg('Skipping iddm1.wad as doom2.wad is not present', error=True)
             continue
         logg('Processing WAD %s...' % iwad_name)
         if should_extract:

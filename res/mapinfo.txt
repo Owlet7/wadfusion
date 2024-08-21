@@ -8,6 +8,8 @@ include mapinfo/tnt_levels.txt
 include mapinfo/plutonia_levels.txt
 include mapinfo/sigil_levels.txt
 include mapinfo/sigil2_levels.txt
+include mapinfo/id1_levels.txt
+include mapinfo/iddm1_levels.txt
 
 GameInfo
 {

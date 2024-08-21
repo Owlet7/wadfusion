@@ -1,6 +1,7 @@
 user bool ws_finaldoom_texswap = true;
 user bool ws_d2sky_compat = true;
 user bool ws_d1_texswap = true;
+user bool ws_id1_texswap = true;
 user bool ws_s2_spiderboss = true;
 user bool ws_sigil_shreds = false;
 user bool ws_sigil2_shreds = false;
