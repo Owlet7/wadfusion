@@ -401,15 +401,6 @@ def copy_resources_ogg():
             # move Andrew Hulshult's tracks to pk3_ogg
             move_ogg()
             # rename '.ogg' from filenames of pre-authored lumps
-            for src_file in os.listdir(DEST_DIR_OGG):
-                if fnmatch.fnmatch(src_file, '*.ogg.csv'):
-                    old_name = os.path.join(DEST_DIR_OGG, src_file)
-                    new_name = old_name.replace('.ogg.csv', '.csv')
-                    os.rename(old_name, new_name)
-                if fnmatch.fnmatch(src_file, '*.ogg.txt'):
-                    old_name = os.path.join(DEST_DIR_OGG, src_file)
-                    new_name = old_name.replace('.ogg.txt', '.txt')
-                    os.rename(old_name, new_name)
             for src_file in os.listdir(DEST_DIR_OGG + 'mapinfo/'):
                 if fnmatch.fnmatch(src_file, '*.ogg.txt'):
                     old_name = os.path.join(DEST_DIR_OGG + 'mapinfo/', src_file)

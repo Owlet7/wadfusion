@@ -66,7 +66,7 @@ map DM_MAP07 "$MHUSTR_7"
 	Sky1 = "SKY4B"
 	NoIntermission
 	Music = "T_DDTBLU"
-	Author = "$WS_AU_ID_MAYFIELD"
+	Author = "$WS_AU_MCGEE_MAYFIELD"
 }
 
 map DM_MAP08 "$MHUSTR_8"
@@ -237,5 +237,5 @@ map DM_MAP26 "$MHUSTR_26"
 	Sky1 = "SKYX1"
 	Music = "T_RUNNIN"
 	NoIntermission
-	Author = "$WS_AU_ID_MAYFIELD"
+	Author = "$WS_AU_PETERSEN_MAYFIELD"
 }

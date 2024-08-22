@@ -6,3 +6,4 @@ user bool ws_s2_spiderboss = true;
 user bool ws_sigil_shreds = false;
 user bool ws_sigil2_shreds = false;
 user bool ws_xbox_secret_exits = false;
+nosave noarchive int ws_null;

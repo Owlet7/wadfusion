@@ -60,7 +60,7 @@ map ID_MAP02 "$XHUSTR_2"
 	TitlePatch = "XWILV01"
 	Sky1 =  "SKYX3"
 	Music = "D_SHORES"
-	Author = "$WS_AU_ACHERON"
+	Author = "$WS_AU_XASER"
 }
 
 map ID_MAP03 "$XHUSTR_3"
@@ -96,7 +96,7 @@ map ID_MAP06 "$XHUSTR_6"
 	TitlePatch = "XWILV05"
 	Sky1 =  "SKYX4" // supposed to be an animated sky
 	Music = "D_CLOUDY"
-	Author = "$WS_AU_ACHERON"
+	Author = "$WS_AU_XASER"
 }
 
 map ID_MAP07 "$XHUSTR_7"
@@ -116,7 +116,7 @@ map ID_MAP15 "$XHUSTR_8"
 	TitlePatch = "XWILV07"
 	Sky1 =  "SKYX3"
 	Music = "D_OPENIN"
-	Author = "$WS_AU_ACHERON"
+	Author = "$WS_AU_XASER"
 }
 
 // Episode 2
@@ -134,7 +134,7 @@ map ID_MAP08 "$XHUSTR_9"
 	TitlePatch = "XWILV10"
 	Sky1 =  "SKYX2"
 	Music = "D_BONK"
-	Author = "$WS_AU_WATSON & $WS_AU_ACHERON"
+	Author = "$WS_AU_WATSON_XASER"
 }
 
 map ID_MAP09 "$XHUSTR_10"
@@ -197,7 +197,7 @@ map ID_MAP14 "$XHUSTR_15"
 	Music = "D_SKELET"
 	SpecialAction = "Deh_Actor_156", "Floor_LowerToNearest", 666, 8 // TyrantBoss1
 	SpecialAction = "Deh_Actor_157", "Floor_LowerToNearest", 667, 8 // TyrantBoss2
-	Author = "$WS_AU_ACHERON"
+	Author = "$WS_AU_XASER"
 }
 
 // Episode 2 secret map
@@ -208,7 +208,7 @@ map ID_MAP16 "$XHUSTR_16"
 	TitlePatch = "XWILV17"
 	Sky1 =  "SKYX2"
 	Music = "D_HELFOR"
-	Author = "$WS_AU_ACHERON"
+	Author = "$WS_AU_XASER"
 }
 
 // Episode 1 cluster

@@ -45,7 +45,6 @@ RES_FILES = [
 ]
 
 RES_FILES_OGG = [
-    'gameinfo.ogg.txt', 'menudef.ogg.txt', 'language.ogg.csv',
     'mapinfo/plutonia_levels.ogg.txt'
 ]
 
