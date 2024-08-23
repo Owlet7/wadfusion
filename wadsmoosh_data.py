@@ -41,7 +41,7 @@ RES_FILES = [
     'mapinfo/episodes.txt',
     'menudef.txt', 'cvarinfo.txt', 'zscript.zs',
     'zscript/ws_handler.zs', 'zscript/ws_music.zs',
-    'zscript/ws_xbox.zs'
+    'zscript/ws_xbox.zs', 'zscript/id1_weap.zs'
 ]
 
 RES_FILES_OGG = [

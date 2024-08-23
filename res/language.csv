@@ -786,19 +786,6 @@ O legado pode esperar. Você ainda não terminou.",,"Тик-так, тик-та�
 完成了。你以一次猛擊
 驅除了世上的兩大邪惡......而且還活了下來。
 壯烈犧牲等之後再說吧。你還有事情沒做完。"
-,id24,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ID24_GOTINCINERATOR,,,You got the incinerator!,,,,Du hast den Flammenwerfer!,,,¡Ya tienes la incineradora!,,,Vous avez mis la main sur l'incinérateur !,,Hai ottenuto l'inceneritore!,インシネレーターを入手した！,화염 방사기를 획득했습니다!,,,Znajdujesz spalacz!,,Você obteve o incinerador!,,Ты нашёл сжигатель!,,,,你已获得焚化器！,你拿到了焚化槍！
-ID24_GOTCALAMITYBLADE,,,You got the calamity blade!  Hot damn!,,,,Du hast die Unheilsklinge! Wunderschönes Teil!,,,¡Ya tienes la Cuchilla de la Calamidad! ¡La releche!,¡Ya tienes la Cuchilla de la Calamidad! ¡A trocear!,,Vous avez mis la main sur la Calamity Blade ! Ça va être chaud !,,Hai ottenuto la lama della calamità! Wow!,カラミティブレードを入手した！ やったぜ！,칼라미티 블레이드를 획득했습니다!  겁나 핫하네요!,,,Znajdujesz ostrze niedoli! Ale czad!,,Você obteve a lâmina da calamidade! Minha nossa!,,"Ты нашёл «Клинок погибели»! Ух, чёрт!",,,,你已获得灾刃！酷毙了！,你拿到災厄之刃了！讚啦！
-ID24_GOTFUELCAN,,,Picked up a fuel can.,,,,Treibstoffbehälter eingesammelt.,,,Has recogido una lata de combustible.,Recogiste una lata de combustible.,,Vous avez récupéré un bidon d'essence.,,Hai raccolto una tanica di carburante.,燃料の缶を拾った,연료 캔을 획득했습니다.,,,Podnosisz puszkę z paliwem.,,Pegou um galão de combustível.,,Найдена канистра с топливом.,,,,已拾取1个燃料罐。,撿起了一個燃料罐。
-ID24_GOTFUELTANK,,,Picked up a fuel tank.,,,,Treibstoffkanister eingesammelt.,,,Has recogido un depósito de combustible.,Recogiste un depósito de combustible.,,Vous avez récupéré un réservoir d'essence.,,Hai raccolto un serbatoio.,燃料タンクを拾った,연료 탱크를 획득했습니다.,,,Podnosisz bak z paliwem.,,Pegou um tanque de combustível.,,Найден бак с топливом.,,,,已拾取1个燃料箱。,撿起了一個燃料箱。
-ID24_COLOR_GREEN,,,Green,,,,Grün,,,Verde,,,Vert,,Verde,グリーン,그린,,,Zielony,,Verde,,Зелёный,,,,绿色,綠色
-ID24_COLOR_INDIGO,,,Indigo,,,,Indigoblau,,,Añil,Índigo,,Indigo,,Indaco,インディゴ,인디고,,,Indygo,,Índigo,,Индиго,,,,靛蓝色,靛色
-ID24_COLOR_BROWN,,,Brown,,,,Braun,,,Marrón,Café,,Brun,,Marrone,ブラウン,브라운,,,Brązowy,,Marrom,,Коричневый,,,,棕色,棕色
-ID24_COLOR_RED,,,Red,,,,Rot,,,Rojo,,,Rouge,,Rosso,レッド,빨간색,,,Czerwony,,Vermelho,,Красный,,,,红色,紅色
-ID24_COLOR_YELLOW,,,Yellow,,,,Gelb,,,Amarillo,,,Jaune,,Giallo,イエロー,노란색,,,Żółty,,Amarelo,,Жёлтый,,,,黄色,黃色
-ID24_COLOR_BLUE,,,Blue,,,,Blau,,,Azul,,,Bleu,,Blu,ブルー,블루,,,Niebieski,,Azul,,Синий,,,,蓝色,藍色
-ID24_COLOR_NAVY,,,Navy,,,,Marineblau,,,Azul marino,,,Bleu marine,,Blu marino,ネイビー,네이비,,,Granatowy,,Azul-marinho,,Тёмно-синий,,,,深蓝色,海軍藍
-ID24_COLOR_MAGENTA,,,Magenta,,,,Magenta,,,Magenta,,,Magenta,,Magenta,マゼンタ,마젠타,,,Purpurowy,,Magenta,,Пурпурный,,,,洋红色,洋紅色
 ,iddm1,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 MHUSTR_1,,,One,,,,,,,,,,,,,,,,,,,,,,,,,,
 MHUSTR_2,,,Surge,,,,,,,,,,,,,,,,,,,,,,,,,,
@@ -826,3 +813,20 @@ MHUSTR_23,,,Good Ideas,,,,,,,,,,,,,,,,,,,,,,,,,,
 MHUSTR_24,,,Static Station,,,,,,,,,,,,,,,,,,,,,,,,,,
 MHUSTR_25,,,Heckbase Alpha,,,,,,,,,,,,,,,,,,,,,,,,,,
 MHUSTR_26,,,Shoot to Kill,,,,,,,,,,,,,,,,,,,,,,,,,,
+,id24,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ID24_GOTINCINERATOR,,,You got the incinerator!,,,,Du hast den Flammenwerfer!,,,¡Ya tienes la incineradora!,,,Vous avez mis la main sur l'incinérateur !,,Hai ottenuto l'inceneritore!,インシネレーターを入手した！,화염 방사기를 획득했습니다!,,,Znajdujesz spalacz!,,Você obteve o incinerador!,,Ты нашёл сжигатель!,,,,你已获得焚化器！,你拿到了焚化槍！
+ID24_GOTCALAMITYBLADE,,,You got the calamity blade!  Hot damn!,,,,Du hast die Unheilsklinge! Wunderschönes Teil!,,,¡Ya tienes la Cuchilla de la Calamidad! ¡La releche!,¡Ya tienes la Cuchilla de la Calamidad! ¡A trocear!,,Vous avez mis la main sur la Calamity Blade ! Ça va être chaud !,,Hai ottenuto la lama della calamità! Wow!,カラミティブレードを入手した！ やったぜ！,칼라미티 블레이드를 획득했습니다!  겁나 핫하네요!,,,Znajdujesz ostrze niedoli! Ale czad!,,Você obteve a lâmina da calamidade! Minha nossa!,,"Ты нашёл «Клинок погибели»! Ух, чёрт!",,,,你已获得灾刃！酷毙了！,你拿到災厄之刃了！讚啦！
+ID24_GOTFUELCAN,,,Picked up a fuel can.,,,,Treibstoffbehälter eingesammelt.,,,Has recogido una lata de combustible.,Recogiste una lata de combustible.,,Vous avez récupéré un bidon d'essence.,,Hai raccolto una tanica di carburante.,燃料の缶を拾った,연료 캔을 획득했습니다.,,,Podnosisz puszkę z paliwem.,,Pegou um galão de combustível.,,Найдена канистра с топливом.,,,,已拾取1个燃料罐。,撿起了一個燃料罐。
+ID24_GOTFUELTANK,,,Picked up a fuel tank.,,,,Treibstoffkanister eingesammelt.,,,Has recogido un depósito de combustible.,Recogiste un depósito de combustible.,,Vous avez récupéré un réservoir d'essence.,,Hai raccolto un serbatoio.,燃料タンクを拾った,연료 탱크를 획득했습니다.,,,Podnosisz bak z paliwem.,,Pegou um tanque de combustível.,,Найден бак с топливом.,,,,已拾取1个燃料箱。,撿起了一個燃料箱。
+ID24_COLOR_GREEN,,,Green,,,,Grün,,,Verde,,,Vert,,Verde,グリーン,그린,,,Zielony,,Verde,,Зелёный,,,,绿色,綠色
+ID24_COLOR_INDIGO,,,Indigo,,,,Indigoblau,,,Añil,Índigo,,Indigo,,Indaco,インディゴ,인디고,,,Indygo,,Índigo,,Индиго,,,,靛蓝色,靛色
+ID24_COLOR_BROWN,,,Brown,,,,Braun,,,Marrón,Café,,Brun,,Marrone,ブラウン,브라운,,,Brązowy,,Marrom,,Коричневый,,,,棕色,棕色
+ID24_COLOR_RED,,,Red,,,,Rot,,,Rojo,,,Rouge,,Rosso,レッド,빨간색,,,Czerwony,,Vermelho,,Красный,,,,红色,紅色
+ID24_COLOR_YELLOW,,,Yellow,,,,Gelb,,,Amarillo,,,Jaune,,Giallo,イエロー,노란색,,,Żółty,,Amarelo,,Жёлтый,,,,黄色,黃色
+ID24_COLOR_BLUE,,,Blue,,,,Blau,,,Azul,,,Bleu,,Blu,ブルー,블루,,,Niebieski,,Azul,,Синий,,,,蓝色,藍色
+ID24_COLOR_NAVY,,,Navy,,,,Marineblau,,,Azul marino,,,Bleu marine,,Blu marino,ネイビー,네이비,,,Granatowy,,Azul-marinho,,Тёмно-синий,,,,深蓝色,海軍藍
+ID24_COLOR_MAGENTA,,,Magenta,,,,Magenta,,,Magenta,,,Magenta,,Magenta,マゼンタ,마젠타,,,Purpurowy,,Magenta,,Пурпурный,,,,洋红色,洋紅色
+,id1 actor tag names,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+AMMO_FUEL,,,Fuel,,,,,,,,,,,,,,,,,,,,,,,,,,
+TAG_INCINERATOR,,,Incinerator,,,,,,,,,,,,,,,,,,,,,,,,,,
+TAG_CALAMITYBLADE,,,Calamity Blade,,,,,,,,,,,,,,,,,,,,,,,,,,
