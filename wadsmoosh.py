@@ -496,7 +496,7 @@ def get_eps(wads_found):
             eps += ['Sigil']
         elif wadname == 'sigil2' and 'doom' in wads_found:
             eps += ['Sigil II']
-        elif wadname == 'id1' and 'doom2' in wads_found:
+        elif wadname == 'id1' and 'doom2' in wads_found and 'id1-res' in wads_found:
             eps += ['The Vulcan Abyss', 'Counterfeit Eden']
         elif wadname == 'iddm1' and 'doom2' in wads_found:
             eps += ['id Deathmatch Pack #1']
@@ -621,6 +621,9 @@ def main():
             continue
         if iwad_name == 'id1' and not get_wad_filename('doom2'):
             logg('Skipping id1.wad as doom2.wad is not present', error=True)
+            continue
+        if iwad_name == 'id1' and not get_wad_filename('id1-res'):
+            logg('Skipping id1.wad as id1-res.wad is not present', error=True)
             continue
         if iwad_name == 'iddm1'and not get_wad_filename('doom2'):
             logg('Skipping iddm1.wad as doom2.wad is not present', error=True)

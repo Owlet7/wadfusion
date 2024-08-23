@@ -70,13 +70,14 @@ TIDY_DIR_OGG = {
 
 # list of files we can extract from
 WADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve', 'sigil', 'sigil_shreds',
-        'sigil2', 'sigil2_mp3', 'id1', 'iddm1', 'doomu', 'doom2u', 'nerveu', 'tntu', 'plutoniau', 'extras']
+        'sigil2', 'sigil2_mp3', 'id1', 'id1-res', 'iddm1',
+        'doomu', 'doom2u', 'nerveu', 'tntu', 'plutoniau', 'extras']
 
 # wads to search for and report if found
 REPORT_WADS = ['doom', 'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',
-               'doom2', 'attack', 'nerve', 'tnt', 'plutonia', 'id1', 'iddm1',
-               'sewers', 'betray', 'doomu', 'doom2u',
-               'nerveu', 'tntu', 'plutoniau', 'extras']
+               'doom2', 'attack', 'nerve', 'tnt', 'plutonia',
+               'id1', 'id1-res', 'iddm1', 'sewers', 'betray',
+               'doomu', 'doom2u', 'nerveu', 'tntu', 'plutoniau', 'extras']
 
 # lists of lumps common to doom 1+2
 COMMON_LUMPS = [
@@ -112,6 +113,7 @@ WAD_LUMP_LISTS = {
     'sigil2': ['graphics_sigil2', 'music_sigil2', 'patches_sigil2', 'data_sigil2', 'flats_sigil2'],
     'sigil2_mp3': ['music_sigil2_shreds'],
     'id1': ID1_LUMPS,
+    'id1-res': ['data_id1-res'],
     'iddm1': [],
     # widescreen assets from unity and kex ports
     'doomu': ['graphics_doomu'],
