@@ -185,7 +185,7 @@ _graphics     = ['TITLEPIC', 'CWILV*', 'WI*', 'M_*',
                  'INTERPIC', 'BRDR*',  'PFUB?', 'ST*',
                  'VICTORY2', 'CREDIT', 'END?',  'WI*',
                  'BOSSBACK', 'ENDPIC', 'HELP',  'BOX??',
-                 'AMMNUM?',  'HELP1',  'DIG*',  'XWI*']
+                 'AMMNUM?',  'HELP1',  'DIG*']
 
 # The default structure object.
 # Must be in order: markers first, ['*'] name group last

@@ -33,11 +33,11 @@ Here is the official list of WADs that WadSmoosh will recognize:
 - No Rest for the Living (`nerve.wad`)
 - Sigil (`sigil.wad` and its optional music addon `sigil_shreds.wad`)
 - Sigil II (`sigil2.wad` and optionally its MP3 soundtrack version `sigil2_mp3.wad`)
-- Legacy of Rust (`id1.wad`, `id1-res.wad`, and `iddm1.wad` from the KEX-based re-release Doom + Doom II)
+- Legacy of Rust (`id1.wad`, `id1-res.wad`, `id24res.wad` and `iddm1.wad` from the KEX-based re-release Doom + Doom II)
 - `sewers.wad` and `betray.wad` (the [two secret levels](https://classicdoom.com/xboxspec.htm) from the [original Xbox port of Doom](https://doomwiki.org/wiki/Xbox))
 - `extras.wad` (from the [Unity](https://doomwiki.org/wiki/Doom_Classic_Unity_port) or [KEX-based](https://doomwiki.org/wiki/Doom_%2B_Doom_II) re-releases)
 
-WadSmoosh requires `id1-res.wad` for Legacy of Rust.
+WadSmoosh requires `id1-res.wad` and `id24res.wad` for Legacy of Rust.
 
 If WADs from the Unity or KEX-based re-releases are included (`doomu.wad`, `doom2u.wad`, `tntu.wad`, `nerveu.wad`), WadSmoosh will extract widescreen assets from them. These versions of `nerve.wad` include a unique intermission screen.
 

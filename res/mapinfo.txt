@@ -29,5 +29,6 @@ GameInfo
 		"$QUITMSG4", "$QUITMSG5", "$QUITMSG6", "$QUITMSG7", "$QUITMSG8",
 		"$QUITMSG9", "$QUITMSG10", "$QUITMSG11", "$QUITMSG12",
 		"$QUITMSG13", "$QUITMSG14"
-	AddEventHandlers = "WadSmooshHandler", "WadSmooshMusicHandler"
+	AddEventHandlers = "WadSmooshHandler", "WadSmooshMusicHandler"//, "Id1WeaponHandler"
+	StatusBarClass = "WadSmooshStatusBar"
 }

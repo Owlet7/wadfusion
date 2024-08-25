@@ -41,7 +41,7 @@ RES_FILES = [
     'mapinfo/episodes.txt',
     'menudef.txt', 'cvarinfo.txt', 'zscript.zs',
     'zscript/ws_handler.zs', 'zscript/ws_music.zs',
-    'zscript/ws_xbox.zs', 'zscript/id1_weap.zs'
+    'zscript/ws_xbox.zs', 'zscript/ws_sbar.zs'
 ]
 
 RES_FILES_OGG = [
@@ -70,14 +70,14 @@ TIDY_DIR_OGG = {
 
 # list of files we can extract from
 WADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve', 'sigil', 'sigil_shreds',
-        'sigil2', 'sigil2_mp3', 'id1', 'id1-res', 'iddm1',
+        'sigil2', 'sigil2_mp3', 'id1', 'id1-res', 'id24res', 'iddm1',
         'doomu', 'doom2u', 'nerveu', 'tntu', 'plutoniau', 'extras']
 
 # wads to search for and report if found
 REPORT_WADS = ['doom', 'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',
-               'doom2', 'attack', 'nerve', 'tnt', 'plutonia',
-               'id1', 'id1-res', 'iddm1', 'sewers', 'betray',
-               'doomu', 'doom2u', 'nerveu', 'tntu', 'plutoniau', 'extras']
+               'doom2', 'attack', 'nerve', 'id1', 'id1-res', 'id24res',
+               'iddm1', 'tnt', 'plutonia', 'sewers', 'betray', 'extras',
+               'doomu', 'doom2u', 'nerveu', 'tntu', 'plutoniau']
 
 # lists of lumps common to doom 1+2
 COMMON_LUMPS = [
@@ -98,7 +98,7 @@ DOOM2_LUMPS = [
 ]
 
 ID1_LUMPS = [
-    'flats_id1', 'graphics_id1', 'music_id1', 'patches_id1',
+    'data_id1', 'flats_id1', 'graphics_id1', 'music_id1', 'patches_id1',
     'sounds_id1', 'sprites_id1'
 ]
 
@@ -114,6 +114,7 @@ WAD_LUMP_LISTS = {
     'sigil2_mp3': ['music_sigil2_shreds'],
     'id1': ID1_LUMPS,
     'id1-res': ['data_id1-res'],
+    'id24res': ['graphics_id24res'],
     'iddm1': [],
     # widescreen assets from unity and kex ports
     'doomu': ['graphics_doomu'],
@@ -122,7 +123,7 @@ WAD_LUMP_LISTS = {
     'tntu': ['graphics_tntu'],
     'plutoniau': ['graphics_plutoniau'],
     # "found secret" sound from unity and kex ports
-    'extras': ['sounds_extras', 'music_extras']
+    'extras': ['data_extras', 'graphics_extras', 'sounds_extras', 'music_extras']
 }
 
 # prefixes for filenames of maps extracted from IWADs

@@ -133,6 +133,7 @@ def extract_master_levels():
     first_ml_wad = get_wad_filename(ml_map_order[0])
     if not first_ml_wad:
         logg('ERROR: Master Levels not found.', error=True)
+        copyfile(RES_DIR + 'mapinfo/master_levels.txt', DEST_DIR + 'mapinfo/master_levels.txt')
         return
     logg('Processing Master Levels...')
     mapinfo = open(ML_MAPINFO_FILENAME, 'w')
@@ -327,6 +328,12 @@ def extract_lumps(wad_name):
             lump_subdir = DEST_DIR + 'graphics/'
         elif wad_name == 'sigil2' and lump_type == 'data':
             lump_subdir = DEST_DIR + 'graphics/'
+        # legacy of rust statusbar icons and map title patches aren't in graphics namespace but belong in that dir
+        elif wad_name == 'id1' and lump_type == 'data':
+            lump_subdir = DEST_DIR + 'graphics/'
+        # extras.wad statusbar icons aren't in graphics namespace but belong in that dir
+        elif wad_name == 'extras' and lump_type == 'data':
+            lump_subdir = DEST_DIR + 'graphics/'
         # write PLAYPAL, TEXTURE1 etc to pk3 root
         elif lump_type in ['data', 'txdefs']:
             lump_subdir = DEST_DIR
@@ -387,6 +394,27 @@ def copy_resources():
 #    else:
 #        copyfile(RES_DIR + 'mapinfo/doom2_nonbfg_levels.txt',
 #                 DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
+
+def copy_resources_id1():
+    # copy id1 scripts if id1 is present
+    copyfile(RES_DIR + 'zscript/ws_id1weap.zs', DEST_DIR + 'zscript/ws_id1weap.zs')
+    copyfile(RES_DIR + 'zscript/ws_sbar.id1.zs', DEST_DIR + 'zscript/ws_sbar.zs')
+    # uncomment scripts
+    id1_off = '//#include \"zscript/ws_id1weap.zs\"\n//#include \"zscript/ws_sbar.zs\"'
+    id1_on = '#include \"zscript/ws_id1weap.zs\"\n#include \"zscript/ws_sbar.zs\"'
+    with open(DEST_DIR + 'zscript.zs', 'r') as file:
+        tmp_file = file.read()
+        tmp_file = tmp_file.replace(id1_off, id1_on)
+    with open(DEST_DIR + 'zscript.zs', 'w') as file:
+        file.write(tmp_file)
+    # add event handler
+    id1_off = '//, \"Id1WeaponHandler\"\n\tStatusBarClass = \"WadSmooshStatusBar\"'
+    id1_on = ', \"Id1WeaponHandler\"\n\tStatusBarClass = \"WadSmooshStatusBarId24\"'
+    with open(DEST_DIR + 'mapinfo.txt', 'r') as file:
+        tmp_file = file.read()
+        tmp_file = tmp_file.replace(id1_off, id1_on)
+    with open(DEST_DIR + 'mapinfo.txt', 'w') as file:
+        file.write(tmp_file)
 
 def copy_resources_ogg():
     # unity vs kex extras.wad differ, kex has Andrew Hulshult soundtrack
@@ -485,7 +513,7 @@ def get_eps(wads_found):
         elif wadname == 'doom2':
             eps += ['Hell on Earth']
         elif wadname == 'attack' and 'doom2' in wads_found:
-            eps += ['The Master Levels']
+            eps += ['Master Levels']
         elif wadname == 'nerve' and 'doom2' in wads_found:
             eps += ['No Rest for the Living']
         elif wadname == 'tnt':
@@ -496,7 +524,7 @@ def get_eps(wads_found):
             eps += ['Sigil']
         elif wadname == 'sigil2' and 'doom' in wads_found:
             eps += ['Sigil II']
-        elif wadname == 'id1' and 'doom2' in wads_found and 'id1-res' in wads_found:
+        elif wadname == 'id1' and 'doom2' in wads_found and 'id1-res' in wads_found and 'id24res' in wads_found:
             eps += ['The Vulcan Abyss', 'Counterfeit Eden']
         elif wadname == 'iddm1' and 'doom2' in wads_found:
             eps += ['id Deathmatch Pack #1']
@@ -625,6 +653,9 @@ def main():
         if iwad_name == 'id1' and not get_wad_filename('id1-res'):
             logg('Skipping id1.wad as id1-res.wad is not present', error=True)
             continue
+        if iwad_name == 'id1' and not get_wad_filename('id24res'):
+            logg('Skipping id1.wad as id24res.wad is not present', error=True)
+            continue
         if iwad_name == 'iddm1'and not get_wad_filename('doom2'):
             logg('Skipping iddm1.wad as doom2.wad is not present', error=True)
             continue
@@ -640,18 +671,23 @@ def main():
             extract_master_levels()
     else:
         logg('Skipping Master Levels as doom2.wad is not present', error=True)
+        copyfile(RES_DIR + 'mapinfo/master_levels.txt', DEST_DIR + 'mapinfo/master_levels.txt')
     # copy pre-authored lumps eg mapinfo
     if should_extract:
         copy_resources()
+    # copy id1 scripts if id1 is present
+    if get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res') and should_extract:
+        copy_resources_id1()
     # copy pre-authored lumps for Andrew Hulshult's soundtrack supported
     if should_extract:
         copy_resources_ogg()
     # rename file extensions of Sigil mp3 music
-    rename_mp3()
+    if should_extract:
+        rename_mp3()
     # enable Sigil mp3 music options
-    if get_wad_filename('sigil_shreds') and get_wad_filename('sigil'):
+    if get_wad_filename('sigil_shreds') and get_wad_filename('sigil') and should_extract:
         enable_sigil_shreds()
-    if get_wad_filename('sigil2_mp3') and get_wad_filename('sigil2'):
+    if get_wad_filename('sigil2_mp3') and get_wad_filename('sigil2') and should_extract:
         enable_sigil2_shreds()
     # only supported versions of these @ http://classicdoom.com/xboxspec.htm
     if get_wad_filename('sewers') and get_wad_filename('betray') and should_extract:
