@@ -19,7 +19,7 @@
 //-----------------------------------------------------------------------------
 //
 
-class WadSmooshStatusBarId24 : BaseStatusBar
+class WadFusionStatusBarId24 : BaseStatusBar
 {
 	HUDFont mHUDFont;
 	HUDFont mIndexFont;

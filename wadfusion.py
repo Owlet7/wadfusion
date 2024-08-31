@@ -1,3 +1,52 @@
+##-----------------------------------------------------------------------------
+##
+## Copyright 2024 Owlet VII
+##
+## This program is free software: you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation, either version 3 of the License, or
+## (at your option) any later version.
+##
+## This program is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with this program.  If not, see http://www.gnu.org/licenses/
+##
+##-----------------------------------------------------------------------------
+##
+
+##
+## This code is derived from WadSmoosh 1.41, which is covered by the following permissions:
+##
+##------------------------------------------------------------------------------------------
+##
+## The MIT License (MIT)
+## 
+## Copyright (c) 2016-2023 JP LeBreton
+## 
+## Permission is hereby granted, free of charge, to any person obtaining a copy
+## of this software and associated documentation files (the "Software"), to deal
+## in the Software without restriction, including without limitation the rights
+## to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+## copies of the Software, and to permit persons to whom the Software is
+## furnished to do so, subject to the following conditions:
+## 
+## The above copyright notice and this permission notice shall be included in
+## all copies or substantial portions of the Software.
+## 
+## THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+## IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+## FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+## LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+## OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+## THE SOFTWARE.
+##
+##------------------------------------------------------------------------------------------
+##
 
 import os, sys, time, fnmatch
 from shutil import copyfile
@@ -17,9 +66,9 @@ DEST_DIR = TEMP_DIR + 'pk3/'
 DEST_DIR_OGG = TEMP_DIR + 'pk3_ogg/'
 DEST_FILENAME = 'doom_complete.pk3'
 DEST_FILENAME_OGG = 'hulshult_ogg.pk3'
-LOG_FILENAME = 'wadsmoosh.log'
+LOG_FILENAME = 'wadfusion.log'
 RES_DIR = 'res/'
-DATA_TABLES_FILE = 'wadsmoosh_data.py'
+DATA_TABLES_FILE = 'wadfusion_data.py'
 ML_ORDER_FILENAME = 'masterlevels_order_xaser.txt'
 ML_MAPINFO_FILENAME = DEST_DIR + 'mapinfo/master_levels.txt'
 DEST_DIR_OGG_MUS = DEST_DIR_OGG + 'music/'
@@ -408,8 +457,8 @@ def copy_resources_id1():
     with open(DEST_DIR + 'zscript.zs', 'w') as file:
         file.write(tmp_file)
     # add event handler
-    id1_off = '//, \"Id1WeaponHandler\"\n\tStatusBarClass = \"WadSmooshStatusBar\"'
-    id1_on = ', \"Id1WeaponHandler\"\n\tStatusBarClass = \"WadSmooshStatusBarId24\"'
+    id1_off = '//, \"Id1WeaponHandler\"\n\tStatusBarClass = \"WadFusionStatusBar\"'
+    id1_on = ', \"Id1WeaponHandler\"\n\tStatusBarClass = \"WadFusionStatusBarId24\"'
     with open(DEST_DIR + 'mapinfo.txt', 'r') as file:
         tmp_file = file.read()
         tmp_file = tmp_file.replace(id1_off, id1_on)
@@ -565,7 +614,7 @@ def pk3_ogg_compress():
 
 def main():
     version = open(VERSION_FILENAME).readlines()[0].strip()
-    title_line = 'WadSmoosh v%s' % version
+    title_line = 'WadFusion v%s' % version
     logg(title_line + '\n' + '-' * len(title_line))
     found = get_report_found()
     input_func = raw_input if sys.version_info.major < 3 else input
