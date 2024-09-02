@@ -22,7 +22,7 @@ Advanced users can edit `wadfusion_data.py` to customize how and what WadFusion 
 
 ## Supported WADs
 
-WadFusion is not a general-purpose tool for merging Doom WADs; it is for *merging retail content* only - it was created in 2016 out of a desire for a "complete" retail version of Doom and Doom II, and only exists as a program because the IWAD file that it generates cannot be distributed legally. Please do not ask if WadFusion will support any specific WAD. If you want to add your own content to a custom IWAD, please either modify [WadFusion's source code](https://github.com/Owlet7/wadsmoosh) yourself, or simply edit the `doom_complete.pk3` file WadFusion generated on your computer by opening it in a ZIP archive management program. Please do not ask me for support when doing either.
+WadFusion is not a general-purpose tool for merging Doom WADs; it is for *merging retail content* only - it was created out of a desire for a "complete" retail version of Doom and Doom II, and only exists as a program because the IWAD file that it generates cannot be distributed legally. Please do not ask if WadFusion will support any specific WAD. If you want to add your own content to a custom IWAD, please either modify [WadFusion's source code](https://github.com/Owlet7/wadsmoosh) yourself, or simply edit the `doom_complete.pk3` file WadFusion generated on your computer by opening it in a ZIP archive management program. Please do not ask me for support when doing either.
 
 Here is the official list of WADs that WadFusion Fusion will recognize:
 - The Ultimate Doom (`doom.wad`)
@@ -61,4 +61,4 @@ None of the "official add-on" content from the Unity or KEX-based re-releases of
 If you have any issues, the [How_to_download_and_run_Doom](http://doomwiki.org/wiki/How_to_download_and_run_Doom) page on the [Doom wiki](http://doomwiki.org) might be helpful.
 
 ## Acknowledgements
-[WadSmoosh was originally created by JP LeBreton](https://jp.itch.io/wadsmoosh). WadFusion is based on its [source code](https://heptapod.host/jp-lebreton/wadsmoosh).
+[WadSmoosh](https://jp.itch.io/wadsmoosh) was originally created by JP LeBreton. WadFusion is based on its [source code](https://heptapod.host/jp-lebreton/wadsmoosh).

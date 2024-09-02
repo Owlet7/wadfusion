@@ -90,8 +90,8 @@ RES_FILES = [
     'mapinfo/id1_levels.txt', 'mapinfo/iddm1_levels.txt',
     'mapinfo/episodes.txt',
     'menudef.txt', 'cvarinfo.txt', 'zscript.zs',
-    'zscript/ws_handler.zs', 'zscript/ws_music.zs',
-    'zscript/ws_xbox.zs', 'zscript/ws_sbar.zs'
+    'zscript/wf_handler.zs', 'zscript/wf_music.zs',
+    'zscript/wf_xbox.zs', 'zscript/wf_sbar.zs'
 ]
 
 RES_FILES_OGG = [
@@ -264,7 +264,7 @@ cluster 24
 }
 """
 
-MASTER_LEVELS_AUTHOR_PREFIX = 'WS_AU'
+MASTER_LEVELS_AUTHOR_PREFIX = 'WF_AU'
 
 # author strings
 MASTER_LEVELS_AUTHORS = {

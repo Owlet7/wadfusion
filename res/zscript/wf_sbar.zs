@@ -162,20 +162,20 @@ class WadFusionStatusBar : BaseStatusBar
 	protected void DrawFullScreenStuff ()
 	{
 		// Set ultrawide
-		int ultraWide = CVar.FindCVar("ws_hud_ultrawide").GetInt();
+		int ultraWide = CVar.FindCVar("wf_hud_ultrawide").GetInt();
 		
 		Vector2 iconbox = (40, 20);
 		// Draw health
 		let berserk = CPlayer.mo.FindInventory("PowerStrength");
 		int hudArmorOffset;
-		if ( CVar.FindCVar("ws_hud_swaphealtharmor").GetBool() )
+		if ( CVar.FindCVar("wf_hud_swaphealtharmor").GetBool() )
 				hudArmorOffset = 20;
 		DrawImage(berserk? "PSTRA0" : "MEDIA0", (20 + ultraWide, -2 - hudArmorOffset));
 		DrawString(mHUDFont, FormatNumber(CPlayer.health, 3), (44 + ultraWide, -20 - hudArmorOffset));
 		
 		let armor = CPlayer.mo.FindInventory("BasicArmor");
 		int hudHealthOffset;
-		if ( CVar.FindCVar("ws_hud_swaphealtharmor").GetBool() )
+		if ( CVar.FindCVar("wf_hud_swaphealtharmor").GetBool() )
 				hudHealthOffset = 20;
 		if (armor != null && armor.Amount > 0)
 		{

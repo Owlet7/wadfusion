@@ -12,7 +12,7 @@ map DM_MAP01 "$MHUSTR_1"
 	Sky1 = "SKYX2"
 	NoIntermission
 	Music = "D_REGARD"
-	Author = "$WS_AU_VICKERS"
+	Author = "$WF_AU_VICKERS"
 }
 
 map DM_MAP02 "$MHUSTR_2"
@@ -21,7 +21,7 @@ map DM_MAP02 "$MHUSTR_2"
 	Sky1 = "SKYA3"
 	NoIntermission
 	Music = "D_TACTIC"
-	Author = "$WS_AU_CIRIACO"
+	Author = "$WF_AU_CIRIACO"
 }
 
 map DM_MAP03 "$MHUSTR_3"
@@ -30,7 +30,7 @@ map DM_MAP03 "$MHUSTR_3"
 	Sky1 = "SKYE2"
 	NoIntermission
 	Music = "D_E2M1"
-	Author = "$WS_AU_BOUVE_BOYLE"
+	Author = "$WF_AU_BOUVE_BOYLE"
 }
 
 map DM_MAP04 "$MHUSTR_4"
@@ -39,7 +39,7 @@ map DM_MAP04 "$MHUSTR_4"
 	Sky1 = "SKYE4"
 	NoIntermission
 	Music = "T_RUNNIN"
-	Author = "$WS_AU_ARMACANQUI"
+	Author = "$WF_AU_ARMACANQUI"
 }
 
 map DM_MAP05 "$MHUSTR_5"
@@ -48,7 +48,7 @@ map DM_MAP05 "$MHUSTR_5"
 	Sky1 = "SKYX2"
 	NoIntermission
 	Music = "D_SKELET"
-	Author = "$WS_AU_CIBULAS"
+	Author = "$WF_AU_CIBULAS"
 }
 
 map DM_MAP06 "$MHUSTR_6"
@@ -57,7 +57,7 @@ map DM_MAP06 "$MHUSTR_6"
 	Sky1 = "SKYX2"
 	NoIntermission
 	Music = "D_BILGE"
-	Author = "$WS_AU_MURCHISON"
+	Author = "$WF_AU_MURCHISON"
 }
 
 map DM_MAP07 "$MHUSTR_7"
@@ -66,7 +66,7 @@ map DM_MAP07 "$MHUSTR_7"
 	Sky1 = "SKY4B"
 	NoIntermission
 	Music = "T_DDTBLU"
-	Author = "$WS_AU_MCGEE_MAYFIELD"
+	Author = "$WF_AU_MCGEE_MAYFIELD"
 }
 
 map DM_MAP08 "$MHUSTR_8"
@@ -75,7 +75,7 @@ map DM_MAP08 "$MHUSTR_8"
 	Sky1 = "SKY4B"
 	NoIntermission
 	Music = "D_VESPER"
-	Author = "$WS_AU_MAYFIELD"
+	Author = "$WF_AU_MAYFIELD"
 }
 
 map DM_MAP09 "$MHUSTR_9"
@@ -84,7 +84,7 @@ map DM_MAP09 "$MHUSTR_9"
 	Sky1 = "SKYZ1"
 	NoIntermission
 	Music = "D_CLOUDY"
-	Author = "American McGee"
+	Author = "$WF_AU_MCGEE"
 }
 
 map DM_MAP10 "$MHUSTR_10"
@@ -93,7 +93,7 @@ map DM_MAP10 "$MHUSTR_10"
 	Sky1 = "SKY1"
 	NoIntermission
 	Music = "D_BONK"
-	Author = "$WS_AU_CIBULAS"
+	Author = "$WF_AU_CIBULAS"
 }
 
 map DM_MAP11 "$MHUSTR_11"
@@ -102,7 +102,7 @@ map DM_MAP11 "$MHUSTR_11"
 	Sky1 = "SKYA1"
 	NoIntermission
 	Music = "T_DEAD2"
-	Author = "$WS_AU_MAYFIELD"
+	Author = "$WF_AU_MAYFIELD"
 }
 
 map DM_MAP12 "$MHUSTR_12"
@@ -111,7 +111,7 @@ map DM_MAP12 "$MHUSTR_12"
 	Sky1 = "SKYE3"
 	NoIntermission
 	Music = "T_RUNNIN"
-	Author = "$WS_AU_ARMACANQUI"
+	Author = "$WF_AU_ARMACANQUI"
 }
 
 map DM_MAP13 "$MHUSTR_13"
@@ -120,7 +120,7 @@ map DM_MAP13 "$MHUSTR_13"
 	Sky1 = "SKYE1"
 	NoIntermission
 	Music = "D_E2M6"
-	Author = "$WS_AU_BOUVE_BOYLE"
+	Author = "$WF_AU_BOUVE_BOYLE"
 }
 
 map DM_MAP14 "$MHUSTR_14"
@@ -129,7 +129,7 @@ map DM_MAP14 "$MHUSTR_14"
 	Sky1 = "SKYX4"
 	NoIntermission
 	Music = "D_TACTIC"
-	Author = "$WS_AU_VICKERS"
+	Author = "$WF_AU_VICKERS"
 }
 
 map DM_MAP15 "$MHUSTR_15"
@@ -138,7 +138,7 @@ map DM_MAP15 "$MHUSTR_15"
 	Sky1 = "SKYX3"
 	NoIntermission
 	Music = "D_LAUGH"
-	Author = "$WS_AU_CIRIACO"
+	Author = "$WF_AU_CIRIACO"
 }
 
 map DM_MAP16 "$MHUSTR_16"
@@ -147,7 +147,7 @@ map DM_MAP16 "$MHUSTR_16"
 	Sky1 = "SKY2"
 	NoIntermission
 	Music = "D_WIZARD"
-	Author = "$WS_AU_MURCHISON"
+	Author = "$WF_AU_MURCHISON"
 }
 
 map DM_MAP17 "$MHUSTR_17"
@@ -156,7 +156,7 @@ map DM_MAP17 "$MHUSTR_17"
 	Sky1 = "SKYX1"
 	NoIntermission
 	Music = "D_REGARD"
-	Author = "$WS_AU_MAYFIELD"
+	Author = "$WF_AU_MAYFIELD"
 }
 
 map DM_MAP18 "$MHUSTR_18"
@@ -165,7 +165,7 @@ map DM_MAP18 "$MHUSTR_18"
 	Sky1 = "SKYE4"
 	NoIntermission
 	Music = "D_E1M9"
-	Author = "$WS_AU_BOUVE_BOYLE"
+	Author = "$WF_AU_BOUVE_BOYLE"
 }
 
 map DM_MAP19 "$MHUSTR_19"
@@ -174,7 +174,7 @@ map DM_MAP19 "$MHUSTR_19"
 	Sky1 = "SKYZ4"
 	NoIntermission
 	Music = "D_SKELET"
-	Author = "$WS_AU_MAYFIELD"
+	Author = "$WF_AU_MAYFIELD"
 }
 
 map DM_MAP20 "$MHUSTR_20"
@@ -183,7 +183,7 @@ map DM_MAP20 "$MHUSTR_20"
 	Sky1 = "SKYE1"
 	NoIntermission
 	Music = "D_THE_DA"
-	Author = "$WS_AU_ARMACANQUI"
+	Author = "$WF_AU_ARMACANQUI"
 }
 
 map DM_MAP21 "$MHUSTR_21"
@@ -192,7 +192,7 @@ map DM_MAP21 "$MHUSTR_21"
 	Sky1 = "SKYX1"
 	NoIntermission
 	Music = "D_HELFOR"
-	Author = "$WS_AU_VICKERS"
+	Author = "$WF_AU_VICKERS"
 }
 
 map DM_MAP22 "$MHUSTR_22"
@@ -201,7 +201,7 @@ map DM_MAP22 "$MHUSTR_22"
 	Sky1 = "SKYX1"
 	NoIntermission
 	Music = "D_WELCOM"
-	Author = "$WS_AU_CIRIACO"
+	Author = "$WF_AU_CIRIACO"
 }
 
 map DM_MAP23 "$MHUSTR_23"
@@ -210,7 +210,7 @@ map DM_MAP23 "$MHUSTR_23"
 	Sky1 = "SKYZ5"
 	NoIntermission
 	Music = "T_STALKS"
-	Author = "$WS_AU_MAYFIELD"
+	Author = "$WF_AU_MAYFIELD"
 }
 
 map DM_MAP24 "$MHUSTR_24"
@@ -219,7 +219,7 @@ map DM_MAP24 "$MHUSTR_24"
 	Sky1 = "SKYZ1"
 	NoIntermission
 	Music = "D_DRIVER"
-	Author = "$WS_AU_CIBULAS"
+	Author = "$WF_AU_CIBULAS"
 }
 
 map DM_MAP25 "$MHUSTR_25"
@@ -228,7 +228,7 @@ map DM_MAP25 "$MHUSTR_25"
 	Sky1 = "SKYZ2"
 	NoIntermission
 	Music = "D_LAUGH"
-	Author = "$WS_AU_MURCHISON"
+	Author = "$WF_AU_MURCHISON"
 }
 
 map DM_MAP26 "$MHUSTR_26"
@@ -237,5 +237,5 @@ map DM_MAP26 "$MHUSTR_26"
 	Sky1 = "SKYX1"
 	Music = "T_RUNNIN"
 	NoIntermission
-	Author = "$WS_AU_PETERSEN_MAYFIELD"
+	Author = "$WF_AU_PETERSEN_MAYFIELD"
 }

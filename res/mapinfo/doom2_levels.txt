@@ -21,7 +21,7 @@ map MAP01 "$HUSTR_1"
 	TitlePatch = "CWILV00"
 	Par = 30
 	Music = "$MUSIC_RUNNIN"
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 map MAP02 "$HUSTR_2"
@@ -31,7 +31,7 @@ map MAP02 "$HUSTR_2"
 	TitlePatch = "CWILV01"
 	Par = 90
 	Music = "$MUSIC_STALKS"
-	Author = "$WS_AU_MCGEE"
+	Author = "$WF_AU_MCGEE"
 }
 
 map MAP03 "$HUSTR_3"
@@ -40,7 +40,7 @@ map MAP03 "$HUSTR_3"
 	TitlePatch = "CWILV02"
 	Par = 120
 	Music = "$MUSIC_COUNTD"
-	Author = "$WS_AU_MCGEE"
+	Author = "$WF_AU_MCGEE"
 }
 
 map MAP04 "$HUSTR_4"
@@ -49,7 +49,7 @@ map MAP04 "$HUSTR_4"
 	TitlePatch = "CWILV03"
 	Par = 120
 	Music = "$MUSIC_BETWEE"
-	Author = "$WS_AU_MCGEE"
+	Author = "$WF_AU_MCGEE"
 }
 
 map MAP05 "$HUSTR_5"
@@ -58,7 +58,7 @@ map MAP05 "$HUSTR_5"
 	TitlePatch = "CWILV04"
 	Par = 90
 	Music = "$MUSIC_DOOM"
-	Author = "$WS_AU_MCGEE"
+	Author = "$WF_AU_MCGEE"
 }
 
 map MAP06 "$HUSTR_6"
@@ -67,7 +67,7 @@ map MAP06 "$HUSTR_6"
 	TitlePatch = "CWILV05"
 	Par = 150
 	Music = "$MUSIC_THE_DA"
-	Author = "$WS_AU_MCGEE"
+	Author = "$WF_AU_MCGEE"
 }
 
 // Episode 1 Part 2
@@ -84,7 +84,7 @@ map MAP07 "$HUSTR_7"
 	Par = 120
 	Music = "$MUSIC_SHAWN"
 	Map07Special
-	Author = "$WS_AU_MCGEE_PETERSEN"
+	Author = "$WF_AU_MCGEE_PETERSEN"
 }
 
 map MAP08 "$HUSTR_8"
@@ -93,7 +93,7 @@ map MAP08 "$HUSTR_8"
 	TitlePatch = "CWILV07"
 	Par = 120
 	Music = "$MUSIC_DDTBLU"
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 map MAP09 "$HUSTR_9"
@@ -102,7 +102,7 @@ map MAP09 "$HUSTR_9"
 	TitlePatch = "CWILV08"
 	Par = 270
 	Music = "$MUSIC_IN_CIT"
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 map MAP10 "$HUSTR_10"
@@ -111,7 +111,7 @@ map MAP10 "$HUSTR_10"
 	TitlePatch = "CWILV09"
 	Par = 90
 	Music = "$MUSIC_DEAD"
-	Author = "$WS_AU_PETERSEN_HALL"
+	Author = "$WF_AU_PETERSEN_HALL"
 }
 
 map MAP11 "$HUSTR_11"
@@ -120,7 +120,7 @@ map MAP11 "$HUSTR_11"
 	TitlePatch = "CWILV10"
 	Par = 210
 	Music = "$MUSIC_STLKS2"
-	Author = "$WS_AU_ROMERO"
+	Author = "$WF_AU_ROMERO"
 }
 
 // Episode 2
@@ -137,7 +137,7 @@ map MAP12 "$HUSTR_12"
 	TitlePatch = "CWILV11"
 	Par = 150
 	Music = "$MUSIC_THEDA2"
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 map MAP13 "$HUSTR_13"
@@ -146,7 +146,7 @@ map MAP13 "$HUSTR_13"
 	TitlePatch = "CWILV12"
 	Par = 150
 	Music = "$MUSIC_DOOM2"
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 map MAP14 "$HUSTR_14"
@@ -155,7 +155,7 @@ map MAP14 "$HUSTR_14"
 	TitlePatch = "CWILV13"
 	Par = 150
 	Music = "$MUSIC_DDTBL2"
-	Author = "$WS_AU_MCGEE"
+	Author = "$WF_AU_MCGEE"
 }
 
 map MAP15 "$HUSTR_15"
@@ -165,7 +165,7 @@ map MAP15 "$HUSTR_15"
 	TitlePatch = "CWILV14"
 	Par = 210
 	Music = "$MUSIC_RUNNI2"
-	Author = "$WS_AU_ROMERO"
+	Author = "$WF_AU_ROMERO"
 }
 
 map MAP16 "$HUSTR_16"
@@ -174,7 +174,7 @@ map MAP16 "$HUSTR_16"
 	TitlePatch = "CWILV15"
 	Par = 150
 	Music = "$MUSIC_DEAD2"
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 map MAP17 "$HUSTR_17"
@@ -183,7 +183,7 @@ map MAP17 "$HUSTR_17"
 	TitlePatch = "CWILV16"
 	Par = 420
 	Music = "$MUSIC_STLKS3"
-	Author = "$WS_AU_ROMERO"
+	Author = "$WF_AU_ROMERO"
 }
 
 map MAP18 "$HUSTR_18"
@@ -192,7 +192,7 @@ map MAP18 "$HUSTR_18"
 	TitlePatch = "CWILV17"
 	Par = 150
 	Music = "$MUSIC_ROMERO"
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 map MAP19 "$HUSTR_19"
@@ -201,7 +201,7 @@ map MAP19 "$HUSTR_19"
 	TitlePatch = "CWILV18"
 	Par = 210
 	Music = "$MUSIC_SHAWN2"
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 map MAP20 "$HUSTR_20"
@@ -210,7 +210,7 @@ map MAP20 "$HUSTR_20"
 	TitlePatch = "CWILV19"
 	Par = 150
 	Music = "$MUSIC_MESSAG"
-	Author = "$WS_AU_ROMERO"
+	Author = "$WF_AU_ROMERO"
 }
 
 // Episode 3
@@ -227,7 +227,7 @@ map MAP21 "$HUSTR_21"
 	TitlePatch = "CWILV20"
 	Par = 240
 	Music = "$MUSIC_COUNT2"
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 map MAP22 "$HUSTR_22"
@@ -236,7 +236,7 @@ map MAP22 "$HUSTR_22"
 	TitlePatch = "CWILV21"
 	Par = 150
 	Music = "$MUSIC_DDTBL3"
-	Author = "$WS_AU_MCGEE"
+	Author = "$WF_AU_MCGEE"
 }
 
 map MAP23 "$HUSTR_23"
@@ -245,7 +245,7 @@ map MAP23 "$HUSTR_23"
 	TitlePatch = "CWILV22"
 	Par = 180
 	Music = "$MUSIC_AMPIE"
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 map MAP24 "$HUSTR_24"
@@ -254,7 +254,7 @@ map MAP24 "$HUSTR_24"
 	TitlePatch = "CWILV23"
 	Par = 150
 	Music = "$MUSIC_THEDA3"
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 map MAP25 "$HUSTR_25"
@@ -263,7 +263,7 @@ map MAP25 "$HUSTR_25"
 	TitlePatch = "CWILV24"
 	Par = 150
 	Music = "$MUSIC_ADRIAN"
-	Author = "$WS_AU_GREEN"
+	Author = "$WF_AU_GREEN"
 }
 
 map MAP26 "$HUSTR_26"
@@ -272,7 +272,7 @@ map MAP26 "$HUSTR_26"
 	TitlePatch = "CWILV25"
 	Par = 300
 	Music = "$MUSIC_MESSG2"
-	Author = "$WS_AU_ROMERO"
+	Author = "$WF_AU_ROMERO"
 }
 
 map MAP27 "$HUSTR_27"
@@ -281,7 +281,7 @@ map MAP27 "$HUSTR_27"
 	TitlePatch = "CWILV26"
 	Par = 330
 	Music = "$MUSIC_ROMER2"
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 map MAP28 "$HUSTR_28"
@@ -290,7 +290,7 @@ map MAP28 "$HUSTR_28"
 	TitlePatch = "CWILV27"
 	Par = 420
 	Music = "$MUSIC_TENSE"
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 map MAP29 "$HUSTR_29"
@@ -299,7 +299,7 @@ map MAP29 "$HUSTR_29"
 	TitlePatch = "CWILV28"
 	Par = 300
 	Music = "$MUSIC_SHAWN3"
-	Author = "$WS_AU_ROMERO"
+	Author = "$WF_AU_ROMERO"
 }
 
 map MAP30 "$HUSTR_30"
@@ -309,7 +309,7 @@ map MAP30 "$HUSTR_30"
 	Par = 180
 	Music = "$MUSIC_OPENIN"
 	AllowMonsterTelefrags
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 // Secret maps
@@ -322,7 +322,7 @@ map MAP31 "$HUSTR_31"
 	TitlePatch = "CWILV30"
 	Par = 120
 	Music = "$MUSIC_EVIL"
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 map MAP32 "$HUSTR_32"
@@ -332,7 +332,7 @@ map MAP32 "$HUSTR_32"
 	TitlePatch = "CWILV31"
 	Par = 30
 	Music = "$MUSIC_ULTIMA"
-	Author = "$WS_AU_PETERSEN"
+	Author = "$WF_AU_PETERSEN"
 }
 
 // DOOM II first cluster (up thru level 6)

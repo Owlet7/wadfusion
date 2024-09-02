@@ -22,7 +22,7 @@ map PL_MAP01 "$PHUSTR_1"
 	Next = "PL_MAP02"
 	TitlePatch = "PWILV00"
 	Music = "P_RUNNIN"
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 map PL_MAP02 "$PHUSTR_2"
@@ -30,7 +30,7 @@ map PL_MAP02 "$PHUSTR_2"
 	Next = "PL_MAP03"
 	TitlePatch = "PWILV01"
 	Music = "P_STALKS"
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 map PL_MAP03 "$PHUSTR_3"
@@ -38,7 +38,7 @@ map PL_MAP03 "$PHUSTR_3"
 	Next = "PL_MAP04"
 	TitlePatch = "PWILV02"
 	Music = "P_COUNTD"
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 map PL_MAP04 "$PHUSTR_4"
@@ -46,7 +46,7 @@ map PL_MAP04 "$PHUSTR_4"
 	Next = "PL_MAP05"
 	TitlePatch = "PWILV03"
 	Music = "P_BETWEE"
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 map PL_MAP05 "$PHUSTR_5"
@@ -54,7 +54,7 @@ map PL_MAP05 "$PHUSTR_5"
 	Next = "PL_MAP06"
 	TitlePatch = "PWILV04"
 	Music = "P_DOOM"
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 map PL_MAP06 "$PHUSTR_6"
@@ -62,7 +62,7 @@ map PL_MAP06 "$PHUSTR_6"
 	Next = "PL_MAP07"
 	TitlePatch = "PWILV05"
 	Music = "P_THE_DA"
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 // Episode 1 Part 2
@@ -78,7 +78,7 @@ map PL_MAP07 "$PHUSTR_7"
 	TitlePatch = "PWILV06"
 	Music = "P_SHAWN"
 	Map07Special
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 map PL_MAP08 "$PHUSTR_8"
@@ -86,7 +86,7 @@ map PL_MAP08 "$PHUSTR_8"
 	Next = "PL_MAP09"
 	TitlePatch = "PWILV07"
 	Music = "P_DDTBLU"
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 map PL_MAP09 "$PHUSTR_9"
@@ -94,7 +94,7 @@ map PL_MAP09 "$PHUSTR_9"
 	Next = "PL_MAP10"
 	TitlePatch = "PWILV08"
 	Music = "P_IN_CIT"
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 map PL_MAP10 "$PHUSTR_10"
@@ -102,7 +102,7 @@ map PL_MAP10 "$PHUSTR_10"
 	Next = "PL_MAP11"
 	TitlePatch = "PWILV09"
 	Music = "P_DEAD"
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 map PL_MAP11 "$PHUSTR_11"
@@ -110,7 +110,7 @@ map PL_MAP11 "$PHUSTR_11"
 	Next = "PL_MAP12"
 	TitlePatch = "PWILV10"
 	Music = "P_STLKS2"
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 // Episode 2
@@ -126,7 +126,7 @@ map PL_MAP12 "$PHUSTR_12"
 	Next = "PL_MAP13"
 	TitlePatch = "PWILV11"
 	Music = "P_THEDA2"
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 map PL_MAP13 "$PHUSTR_13"
@@ -134,7 +134,7 @@ map PL_MAP13 "$PHUSTR_13"
 	Next = "PL_MAP14"
 	TitlePatch = "PWILV12"
 	Music = "P_DOOM2"
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 map PL_MAP14 "$PHUSTR_14"
@@ -142,7 +142,7 @@ map PL_MAP14 "$PHUSTR_14"
 	Next = "PL_MAP15"
 	TitlePatch = "PWILV13"
 	Music = "P_DDTBL2"
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 map PL_MAP15 "$PHUSTR_15"
@@ -151,7 +151,7 @@ map PL_MAP15 "$PHUSTR_15"
 	SecretNext = "PL_MAP31"
 	TitlePatch = "PWILV14"
 	Music = "P_RUNNI2"
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 map PL_MAP16 "$PHUSTR_16"
@@ -159,7 +159,7 @@ map PL_MAP16 "$PHUSTR_16"
 	Next = "PL_MAP17"
 	TitlePatch = "PWILV15"
 	Music = "P_DEAD2"
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 map PL_MAP17 "$PHUSTR_17"
@@ -167,7 +167,7 @@ map PL_MAP17 "$PHUSTR_17"
 	Next = "PL_MAP18"
 	TitlePatch = "PWILV16"
 	Music = "P_STLKS3"
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 map PL_MAP18 "$PHUSTR_18"
@@ -175,7 +175,7 @@ map PL_MAP18 "$PHUSTR_18"
 	Next = "PL_MAP19"
 	TitlePatch = "PWILV17"
 	Music = "P_ROMERO"
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 map PL_MAP19 "$PHUSTR_19"
@@ -183,7 +183,7 @@ map PL_MAP19 "$PHUSTR_19"
 	Next = "PL_MAP20"
 	TitlePatch = "PWILV18"
 	Music = "P_SHAWN2"
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 map PL_MAP20 "$PHUSTR_20"
@@ -191,7 +191,7 @@ map PL_MAP20 "$PHUSTR_20"
 	Next = "PL_MAP21"
 	TitlePatch = "PWILV19"
 	Music = "P_MESSAG"
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 // Episode 3
@@ -207,7 +207,7 @@ map PL_MAP21 "$PHUSTR_21"
 	Next = "PL_MAP22"
 	TitlePatch = "PWILV20"
 	Music = "P_COUNT2"
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 map PL_MAP22 "$PHUSTR_22"
@@ -215,7 +215,7 @@ map PL_MAP22 "$PHUSTR_22"
 	Next = "PL_MAP23"
 	TitlePatch = "PWILV21"
 	Music = "P_DDTBL3"
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 map PL_MAP23 "$PHUSTR_23"
@@ -223,7 +223,7 @@ map PL_MAP23 "$PHUSTR_23"
 	Next = "PL_MAP24"
 	TitlePatch = "PWILV22"
 	Music = "P_AMPIE"
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 map PL_MAP24 "$PHUSTR_24"
@@ -231,7 +231,7 @@ map PL_MAP24 "$PHUSTR_24"
 	Next = "PL_MAP25"
 	TitlePatch = "PWILV23"
 	Music = "P_THEDA3"
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 map PL_MAP25 "$PHUSTR_25"
@@ -239,7 +239,7 @@ map PL_MAP25 "$PHUSTR_25"
 	Next = "PL_MAP26"
 	TitlePatch = "PWILV24"
 	Music = "P_ADRIAN"
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 map PL_MAP26 "$PHUSTR_26"
@@ -247,7 +247,7 @@ map PL_MAP26 "$PHUSTR_26"
 	Next = "PL_MAP27"
 	TitlePatch = "PWILV25"
 	Music = "P_MESSG2"
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 map PL_MAP27 "$PHUSTR_27"
@@ -255,7 +255,7 @@ map PL_MAP27 "$PHUSTR_27"
 	Next = "PL_MAP28"
 	TitlePatch = "PWILV26"
 	Music = "P_ROMER2"
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 map PL_MAP28 "$PHUSTR_28"
@@ -263,7 +263,7 @@ map PL_MAP28 "$PHUSTR_28"
 	Next = "PL_MAP29"
 	TitlePatch = "PWILV27"
 	Music = "P_TENSE"
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 map PL_MAP29 "$PHUSTR_29"
@@ -271,7 +271,7 @@ map PL_MAP29 "$PHUSTR_29"
 	Next = "PL_MAP30"
 	TitlePatch = "PWILV28"
 	Music = "P_SHAWN3"
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 map PL_MAP30 "$PHUSTR_30"
@@ -285,7 +285,7 @@ map PL_MAP30 "$PHUSTR_30"
 	TitlePatch = "PWILV29"
 	Music = "P_OPENIN"
 	AllowMonsterTelefrags
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 // Secret maps
@@ -297,7 +297,7 @@ map PL_MAP31 "$PHUSTR_31"
 	Cluster = 22
 	TitlePatch = "PWILV30"
 	Music = "P_EVIL"
-	Author = "$WS_AU_DARIO_CASALI"
+	Author = "$WF_AU_DARIO_CASALI"
 }
 
 map PL_MAP32 "$PHUSTR_32"
@@ -306,7 +306,7 @@ map PL_MAP32 "$PHUSTR_32"
 	Cluster = 23
 	TitlePatch = "PWILV31"
 	Music = "P_ULTIMA"
-	Author = "$WS_AU_MILO_CASALI"
+	Author = "$WF_AU_MILO_CASALI"
 }
 
 // Plutonia first cluster (up thru level 6)

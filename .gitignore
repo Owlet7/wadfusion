@@ -1,6 +1,6 @@
+_internal
 source_wads
-pk3
-pk3_ogg
+temp
 wadfusion.log
 build
 dist
@@ -9,3 +9,4 @@ doom_complete.pk3
 hulshult_ogg.pk3
 res/.~lock.language.csv#
 wadfusion_win.zip
+wadfusion.exe

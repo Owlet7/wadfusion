@@ -164,13 +164,13 @@ class WadFusionHandler : EventHandler
 	
 	override void WorldLoaded(WorldEvent e)
 	{
-		if ( CVar.FindCVar("ws_finaldoom_texswap").GetBool() )
+		if ( CVar.FindCVar("wf_finaldoom_texswap").GetBool() )
 			DoFinalDoomTextureReplacements();
-		if ( CVar.FindCVar("ws_d1_texswap").GetBool() )
+		if ( CVar.FindCVar("wf_d1_texswap").GetBool() )
 			DoDoom1TextureReplacements();
-		if ( CVar.FindCVar("ws_id1_texswap").GetBool() )
+		if ( CVar.FindCVar("wf_id1_texswap").GetBool() )
 			DoId1TextureReplacements();
-		if ( CVar.FindCVar("ws_d2sky_compat").GetBool() )
+		if ( CVar.FindCVar("wf_d2sky_compat").GetBool() )
 			DoDoom2SkyReplacements();
 	}
 	
@@ -180,7 +180,7 @@ class WadFusionHandler : EventHandler
 		String mapName = level.MapName.MakeLower();
 		if ( mapName.Left(3) == "e6m" )
 		{
-			if ( CVar.FindCVar("ws_sigil2_spiderboss").GetBool() && e.Thing )
+			if ( CVar.FindCVar("wf_sigil2_spiderboss").GetBool() && e.Thing )
 			{
 				if ( e.Thing.GetClassName() == "SpiderMastermind" )
 				{

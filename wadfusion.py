@@ -279,9 +279,9 @@ def rename_mp3():
 
 def enable_sigil_shreds():
     logg('Enabling Sigil MP3 music...')
-    # switches ws_sigil_shreds cvar default to true
-    shreds_false = 'ws_sigil_shreds = false'
-    shreds_true = 'ws_sigil_shreds = true'
+    # switches wf_sigil_shreds cvar default to true
+    shreds_false = 'wf_sigil_shreds = false'
+    shreds_true = 'wf_sigil_shreds = true'
     with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
         tmp_file = file.read()
         tmp_file = tmp_file.replace(shreds_false, shreds_true)
@@ -290,9 +290,9 @@ def enable_sigil_shreds():
 
 def enable_sigil2_shreds():
     logg('Enabling Sigil II MP3 music...')
-    # switches ws_sigil2_shreds cvar default to true
-    shreds2_false = 'ws_sigil2_shreds = false'
-    shreds2_true = 'ws_sigil2_shreds = true'
+    # switches wf_sigil2_shreds cvar default to true
+    shreds2_false = 'wf_sigil2_shreds = false'
+    shreds2_true = 'wf_sigil2_shreds = true'
     with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
         tmp_file = file.read()
         tmp_file = tmp_file.replace(shreds2_false, shreds2_true)
@@ -322,9 +322,9 @@ def add_xbox_levels():
         add_secret_level('betray', 'MAP01', 'MAP33')
 
 def enable_xbox_levels():
-    # switches ws_xbox_secret_exits cvar default to true
-    xbox_false = 'ws_xbox_secret_exits = false'
-    xbox_true = 'ws_xbox_secret_exits = true'
+    # switches wf_xbox_secret_exits cvar default to true
+    xbox_false = 'wf_xbox_secret_exits = false'
+    xbox_true = 'wf_xbox_secret_exits = true'
     with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
         tmp_file = file.read()
         tmp_file = tmp_file.replace(xbox_false, xbox_true)
@@ -446,11 +446,11 @@ def copy_resources():
 
 def copy_resources_id1():
     # copy id1 scripts if id1 is present
-    copyfile(RES_DIR + 'zscript/ws_id1weap.zs', DEST_DIR + 'zscript/ws_id1weap.zs')
-    copyfile(RES_DIR + 'zscript/ws_sbar.id1.zs', DEST_DIR + 'zscript/ws_sbar.zs')
+    copyfile(RES_DIR + 'zscript/wf_id1weap.zs', DEST_DIR + 'zscript/wf_id1weap.zs')
+    copyfile(RES_DIR + 'zscript/wf_sbar.id1.zs', DEST_DIR + 'zscript/wf_sbar.zs')
     # uncomment scripts
-    id1_off = '//#include \"zscript/ws_id1weap.zs\"\n//#include \"zscript/ws_sbar.zs\"'
-    id1_on = '#include \"zscript/ws_id1weap.zs\"\n#include \"zscript/ws_sbar.zs\"'
+    id1_off = '//#include \"zscript/wf_id1weap.zs\"\n//#include \"zscript/wf_sbar.zs\"'
+    id1_on = '#include \"zscript/wf_id1weap.zs\"\n#include \"zscript/wf_sbar.zs\"'
     with open(DEST_DIR + 'zscript.zs', 'r') as file:
         tmp_file = file.read()
         tmp_file = tmp_file.replace(id1_off, id1_on)

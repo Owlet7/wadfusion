@@ -60,7 +60,7 @@ class WadFusionStatusBarId24 : BaseStatusBar
 	protected void DrawMainBar (double TicFrac)
 	{
 		String mapName = level.MapName.MakeLower();
-		if ( mapName.Left(3) == "id_" && CVar.FindCVar("ws_id1_weapswap").GetBool() )
+		if ( mapName.Left(3) == "id_" && CVar.FindCVar("wf_id1_weapswap").GetBool() )
 			DrawImage("STBRFUEL", (-53, 168), DI_ITEM_OFFSETS);
 		else
 			DrawImage("STBAR", (0, 168), DI_ITEM_OFFSETS);
@@ -134,7 +134,7 @@ class WadFusionStatusBarId24 : BaseStatusBar
 	
 	protected virtual void DrawBarAmmo()
 	{
-		if ( CVar.FindCVar("ws_hud_id24").GetBool() )
+		if ( CVar.FindCVar("wf_hud_id24").GetBool() )
 		{
 			DrawImage("STAMMO24", (249, 168), DI_ITEM_OFFSETS);
 			int amt1, maxamt;
@@ -174,7 +174,7 @@ class WadFusionStatusBarId24 : BaseStatusBar
 			DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 185), DI_TEXT_ALIGN_RIGHT);
 			
 			String mapName = level.MapName.MakeLower();
-			if ( mapName.Left(3) == "id_" && CVar.FindCVar("ws_id1_weapswap").GetBool() )
+			if ( mapName.Left(3) == "id_" && CVar.FindCVar("wf_id1_weapswap").GetBool() )
 			{
 				[amt1, maxamt] = GetAmount("Fuel");
 				DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 191), DI_TEXT_ALIGN_RIGHT);
@@ -203,20 +203,20 @@ class WadFusionStatusBarId24 : BaseStatusBar
 	protected void DrawFullScreenStuff ()
 	{
 		// Set ultrawide
-		int ultraWide = CVar.FindCVar("ws_hud_ultrawide").GetInt();
+		int ultraWide = CVar.FindCVar("wf_hud_ultrawide").GetInt();
 		
 		Vector2 iconbox = (40, 20);
 		// Draw health
 		let berserk = CPlayer.mo.FindInventory("PowerStrength");
 		int hudArmorOffset;
-		if ( CVar.FindCVar("ws_hud_swaphealtharmor").GetBool() )
+		if ( CVar.FindCVar("wf_hud_swaphealtharmor").GetBool() )
 				hudArmorOffset = 20;
 		DrawImage(berserk? "PSTRA0" : "MEDIA0", (20 + ultraWide, -2 - hudArmorOffset));
 		DrawString(mHUDFont, FormatNumber(CPlayer.health, 3), (44 + ultraWide, -20 - hudArmorOffset));
 		
 		let armor = CPlayer.mo.FindInventory("BasicArmor");
 		int hudHealthOffset;
-		if ( CVar.FindCVar("ws_hud_swaphealtharmor").GetBool() )
+		if ( CVar.FindCVar("wf_hud_swaphealtharmor").GetBool() )
 				hudHealthOffset = 20;
 		if (armor != null && armor.Amount > 0)
 		{

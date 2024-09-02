@@ -33,7 +33,7 @@ class WadFusionMusicHandler : EventHandler
 		if ( mapName.Left(3) == "e5m" )
 		{
 			// play the mp3 soundtrack
-			if ( (CVar.FindCVar("ws_sigil_shreds").GetBool() ) )
+			if ( (CVar.FindCVar("wf_sigil_shreds").GetBool() ) )
 			{
 				S_ChangeMusic( mapMusicShreds );
 			}
@@ -47,7 +47,7 @@ class WadFusionMusicHandler : EventHandler
 		if ( mapName.Left(3) == "e6m" )
 		{
 			// play the mp3 soundtrack
-			if ( (CVar.FindCVar("ws_sigil2_shreds").GetBool() ) )
+			if ( (CVar.FindCVar("wf_sigil2_shreds").GetBool() ) )
 			{
 				S_ChangeMusic( mapMusicShreds );
 			}
@@ -70,7 +70,7 @@ class WadFusionMusicHandler : EventHandler
 		if ( mapName.Left(3) == "e5m" )
 		{
 			// play the mp3 soundtrack
-			if ( (CVar.FindCVar("ws_sigil_shreds").GetBool() ) )
+			if ( (CVar.FindCVar("wf_sigil_shreds").GetBool() ) )
 				S_ChangeMusic("s_intera");
 			// play the midi soundtrack
 			else
@@ -80,7 +80,7 @@ class WadFusionMusicHandler : EventHandler
 		if ( mapName.Left(3) == "e6m" )
 		{
 			// play the mp3 soundtrack
-			if ( (CVar.FindCVar("ws_sigil2_shreds").GetBool() ) )
+			if ( (CVar.FindCVar("wf_sigil2_shreds").GetBool() ) )
 				S_ChangeMusic("s2_intea");
 			// play the midi soundtrack
 			else

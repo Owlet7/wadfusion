@@ -22,7 +22,7 @@ class XboxSecretExits : LevelPostProcessor
 {
 	protected void Apply(Name checksum, String mapname)
 	{
-		if ( CVar.FindCVar("ws_xbox_secret_exits").GetBool() )
+		if ( CVar.FindCVar("wf_xbox_secret_exits").GetBool() )
 		{
 			switch (checksum)
 			{

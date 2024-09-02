@@ -15,7 +15,7 @@ defaultmap
 	BorderTexture = "FLOOR7_2"
 	NoJump
 	NoCrouch
-	Author = "$WS_AU_ROMERO"
+	Author = "$WF_AU_ROMERO"
 }
 
 // Sigil 2
