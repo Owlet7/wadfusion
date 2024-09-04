@@ -1,6 +1,6 @@
 //-----------------------------------------------------------------------------
 //
-// Copyright 2024 Owlet VII
+// Copyright 2024 jdbrowndev, Owlet VII
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -18,21 +18,17 @@
 //-----------------------------------------------------------------------------
 //
 
-class Incinerator : PlasmaRifle
+class Incinerator : DoomWeapon
 {
     Default
     {
+		Weapon.SelectionOrder 200;
 		Weapon.SlotNumber 6;
+		Weapon.AmmoUse 1;
+		Weapon.AmmoGive 20;
 		Weapon.AmmoType "Fuel";
 		Inventory.PickupMessage "$ID24_GOTINCINERATOR";
-		//Weapon.AmmoUse 1;
-		//Weapon.SelectionOrder 350;
-		//Inventory.PickupSound "misc/usgpickup";
-		//Weapon.AmmoType "Shell";
-		//Weapon.AmmoGive 12;
-		//Weapon.AmmoUse 4;
-		//Weapon.SlotNumber 3;
-		//AttackSound "weapons/ubersgf"; // This sound will be played automatically by A_FireBullets
+		Tag "$TAG_INCINERATOR";
     }
 
     States
@@ -49,11 +45,12 @@ class Incinerator : PlasmaRifle
 		Fire:
 			FLMF A 0 Bright A_Jump(128, "FireSound2");
 			FLMF A 0 Bright A_StartSound("weapons/incinerator/incfi1");
-			goto FireReal;	
+			Goto FireReal;	
 		FireSound2:
 			FLMF A 0 Bright A_StartSound("weapons/incinerator/incfi2");
-			goto FireReal;
+			Goto FireReal;
 		FireReal:
+			FLMF A 0 Bright A_GunFlash;
 			FLMF A 1 Bright A_FireIncinerator();
 			FLMF B 1 Bright;
 			FLMG A 1;
@@ -63,6 +60,9 @@ class Incinerator : PlasmaRifle
 			TNT1 A 2 A_Light2;
 			TNT1 A 1 A_Light1;
 			Goto LightDone;
+		Spawn:
+			INCN A -1;
+			Stop;
     }
 
 	action void A_FireIncinerator()
@@ -77,12 +77,6 @@ class Incinerator : PlasmaRifle
 		{
 			if (!weap.DepleteAmmo(weap.bAltFire, true))
 				return;
-			
-			State flash = weap.FindState('Flash');
-			if (flash != null)
-			{
-				player.SetSafeFlash(weap, flash, random[FireIncinerator](0, 1));
-			}
 		}
 		
 		SpawnPlayerMissile("IncineratorFlame");
@@ -119,36 +113,36 @@ class IncineratorFlame : Actor
 			IFLM A 2 Bright;
 			IFLM B 2 Bright A_StartSound("weapons/incinerator/incbrn");
 			IFLM CDEFGH 2 Bright;
-			stop;
+			Stop;
 		Death:
 			IFLM A 0 Bright A_Jump(128, "DeathSound2");
 			IFLM A 0 Bright A_StartSound("weapons/incinerator/incht1");
-			goto Burninate;
+			Goto Burninate;
 		DeathSound2:
 			IFLM A 0 Bright A_StartSound("weapons/incinerator/incht2");
-			goto Burninate;
+			Goto Burninate;
 		Burninate:
-			IFLM I 2 bright A_Explode(INCINERATOR_BURN_DAMAGE, INCINERATOR_BURN_RADIUS);
-			IFLM J 2 bright;
-			IFLM I 2 bright;
-			IFLM J 2 bright A_Explode(INCINERATOR_BURN_DAMAGE, INCINERATOR_BURN_RADIUS);
-			IFLM K 2 bright;
-			IFLM J 2 bright;
-			IFLM K 2 bright A_Explode(INCINERATOR_BURN_DAMAGE, INCINERATOR_BURN_RADIUS);
-			IFLM L 2 bright;
-			IFLM K 2 bright A_StartSound("weapons/incinerator/incht3");
-			IFLM L 2 bright A_Explode(INCINERATOR_BURN_DAMAGE, INCINERATOR_BURN_RADIUS);
-			IFLM M 2 bright;
-			IFLM L 2 bright;
-			IFLM M 2 bright A_Explode(INCINERATOR_BURN_DAMAGE, INCINERATOR_BURN_RADIUS);
-			IFLM N 2 bright;
-			IFLM M 2 bright;
-			IFLM N 2 bright A_Explode(INCINERATOR_BURN_DAMAGE, INCINERATOR_BURN_RADIUS);
-			IFLM O 2 bright;
-			IFLM N 2 bright;
-			IFLM O 2 bright;
-			IFLM POP 2 bright;
-			stop;
+			IFLM I 2 Bright A_Explode(INCINERATOR_BURN_DAMAGE, INCINERATOR_BURN_RADIUS);
+			IFLM J 2 Bright;
+			IFLM I 2 Bright;
+			IFLM J 2 Bright A_Explode(INCINERATOR_BURN_DAMAGE, INCINERATOR_BURN_RADIUS);
+			IFLM K 2 Bright;
+			IFLM J 2 Bright;
+			IFLM K 2 Bright A_Explode(INCINERATOR_BURN_DAMAGE, INCINERATOR_BURN_RADIUS);
+			IFLM L 2 Bright;
+			IFLM K 2 Bright A_StartSound("weapons/incinerator/incht3");
+			IFLM L 2 Bright A_Explode(INCINERATOR_BURN_DAMAGE, INCINERATOR_BURN_RADIUS);
+			IFLM M 2 Bright;
+			IFLM L 2 Bright;
+			IFLM M 2 Bright A_Explode(INCINERATOR_BURN_DAMAGE, INCINERATOR_BURN_RADIUS);
+			IFLM N 2 Bright;
+			IFLM M 2 Bright;
+			IFLM N 2 Bright A_Explode(INCINERATOR_BURN_DAMAGE, INCINERATOR_BURN_RADIUS);
+			IFLM O 2 Bright;
+			IFLM N 2 Bright;
+			IFLM O 2 Bright;
+			IFLM POP 2 Bright;
+			Stop;
 	}
 }
 
@@ -205,19 +199,16 @@ class Id1WeaponHandler : EventHandler
 	override void CheckReplacement (ReplaceEvent e)
 	{
 		string mapName = level.MapName.MakeLower();
-		if ( mapName.Left(3) == "id_" )
+		if ( mapName.Left(3) == "id_" &&  CVar.FindCVar("wf_id1_weapswap").GetBool() )
 		{
-			if ( CVar.FindCVar("wf_id1_weapswap").GetBool() )
-			{
-				if (e.Replacee is "PlasmaRifle")
-					e.Replacement = "Incinerator";
-				if (e.Replacee is "BFG9000")
-					e.Replacement = "Heatwave";
-				if (e.Replacee is "Cell")
-					e.Replacement = "Fuel";
-				if (e.Replacee is "CellPack")
-					e.Replacement = "FuelTank";
-			}
+			if (e.Replacee is "PlasmaRifle")
+				e.Replacement = "Incinerator";
+			if (e.Replacee is "BFG9000")
+				e.Replacement = "Heatwave";
+			if (e.Replacee is "Cell")
+				e.Replacement = "Fuel";
+			if (e.Replacee is "CellPack")
+				e.Replacement = "FuelTank";
 		}
 	}
 }
