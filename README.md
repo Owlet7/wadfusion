@@ -1,10 +1,10 @@
 # WadFusion - simple IWAD merge utility
 
-WadFusion merges your provided Ultimate Doom, Doom II, Master Levels, Final Doom, No Rest for the Living, Sigil, Sigil II, and Legacy of Rust data into a single IWAD file that can be played in GZDoom, with each game as its own entry in the episode list. This makes it very convenient to play all of classic Doom's official releases without relaunching the game with different settings.
+WadFusion merges your provided DOOM, DOOM II, Master Levels, Final DOOM, No Rest for the Living, SIGIL, SIGIL II, and Legacy of Rust data into a single IWAD file that can be played in GZDoom, with each game as its own entry in the episode list. This makes it very convenient to play all of classic DOOM's official releases without relaunching the game with different settings.
 
-It's fine if you don't have all of the Doom games, eg you have Doom II but not Final Doom - WadFusion will package up everything it can find.
+It's fine if you don't have all of the DOOM games, eg you have DOOM II but not Final DOOM - WadFusion will package up everything it can find.
 
-If you're not a Doom expert and just bought these games off [Steam](http://store.steampowered.com/sub/18397/) etc, see the **Absolute Beginner's Guide** section below.
+If you're not a DOOM expert and just bought these games off [Steam](http://store.steampowered.com/sub/18397/) etc, see the **Absolute Beginner's Guide** section below.
 
 ## Usage
 
@@ -22,30 +22,30 @@ Advanced users can edit `wadfusion_data.py` to customize how and what WadFusion 
 
 ## Supported WADs
 
-WadFusion is not a general-purpose tool for merging Doom WADs; it is for *merging retail content* only - it was created out of a desire for a "complete" retail version of Doom and Doom II, and only exists as a program because the IWAD file that it generates cannot be distributed legally. Please do not ask if WadFusion will support any specific WAD. If you want to add your own content to a custom IWAD, please either modify [WadFusion's source code](https://github.com/Owlet7/wadsmoosh) yourself, or simply edit the `doom_complete.pk3` file WadFusion generated on your computer by opening it in a ZIP archive management program. Please do not ask me for support when doing either.
+WadFusion is not a general-purpose tool for merging DOOM WADs; it is for *merging retail content* only - it was created out of a desire for a "complete" retail version of DOOM and DOOM II, and only exists as a program because the IWAD file that it generates cannot be distributed legally. Please do not ask if WadFusion will support any specific WAD. If you want to add your own content to a custom IWAD, please either modify [WadFusion's source code](https://github.com/Owlet7/wadsmoosh) yourself, or simply edit the `doom_complete.pk3` file WadFusion generated on your computer by opening it in a ZIP archive management program. Please do not ask me for support when doing either.
 
-Here is the official list of WADs that WadFusion Fusion will recognize:
-- The Ultimate Doom (`doom.wad`)
-- Doom (original registered version of `doom.wad`, containing only episodes 1-3)
-- Doom II (`doom2.wad`)
-- Master Levels for Doom II (the 20 unmodified WAD files from the retail release)
-- Final Doom (`tnt.wad` and `plutonia.wad`)
+Here is the official list of WADs that WadFusion will recognize:
+- The Ultimate DOOM (`doom.wad`)
+- DOOM (original registered version of `doom.wad`, containing only episodes 1-3)
+- DOOM II (`doom2.wad`)
+- Master Levels for DOOM II (the 20 unmodified WAD files from the retail release)
+- Final DOOM (`tnt.wad` and `plutonia.wad`)
 - No Rest for the Living (`nerve.wad`)
-- Sigil (`sigil.wad` and its optional music addon `sigil_shreds.wad`)
-- Sigil II (`sigil2.wad` and optionally its MP3 soundtrack version `sigil2_mp3.wad`)
-- Legacy of Rust (`id1.wad`, `id1-res.wad`, `id24res.wad` and `iddm1.wad` from the KEX-based re-release Doom + Doom II)
-- `sewers.wad` and `betray.wad` (the [two secret levels](https://classicdoom.com/xboxspec.htm) from the [original Xbox port of Doom](https://doomwiki.org/wiki/Xbox))
+- SIGIL (`sigil.wad` and its optional music addon `sigil_shreds.wad`)
+- SIGIL II (`sigil2.wad` and optionally its MP3 soundtrack version `sigil2_mp3.wad`)
+- Legacy of Rust (`id1.wad`, `id1-res.wad`, `id24res.wad`, and `iddm1.wad` from the KEX-based re-release DOOM + DOOM II)
+- `sewers.wad` and `betray.wad` (the [two secret levels](https://classicdoom.com/xboxspec.htm) from the [original Xbox port of DOOM](https://doomwiki.org/wiki/Xbox))
 - `extras.wad` (from the [Unity](https://doomwiki.org/wiki/Doom_Classic_Unity_port) or [KEX-based](https://doomwiki.org/wiki/Doom_%2B_Doom_II) re-releases)
 
 WadFusion requires `id1-res.wad` and `id24res.wad` for Legacy of Rust.
 
-If WADs from the Unity or KEX-based re-releases are included (`doomu.wad`, `doom2u.wad`, `tntu.wad`, `nerveu.wad`), WadFusion will extract widescreen assets from them. These versions of `nerve.wad` include a unique intermission screen.
+If WADs from the Unity or KEX-based re-releases are also included (must be named `doomunity.wad`, `doom2unity.wad`, `tntunity.wad`, `plutoniaunity.wad` or `doomkex.wad`, `doom2kex.wad`, `tntkex.wad`, `plutoniakex.wad`), WadFusion will extract widescreen assets from them. The versions of `nerve.wad` in these releases include a unique intermission screen. These versions can also be used as the main WADs for extraction, but do keep in mind that they are censored.
 
-If `extras.wad` is included, WadFusion will extract the official "secret revealed" sound, and some status bar icons that can be used by custom HUDs. If the version from the KEX-based re-release is used, WadFusion will also create a new file called `hulshult_ogg.pk3`, containing Andrew Hulshult's covers of the Doom and Doom II soundtracks.
+If `extras.wad` from the Unity or KEX-based re-releases is included, WadFusion will extract the official "secret revealed" sound, and some status bar icons that can be used by custom HUDs. If the version from the KEX-based re-release is used, WadFusion will also create a new file called `hulshult_ogg.pk3`, containing Andrew Hulshult's covers of the DOOM and DOOM II soundtracks.
+
+None of the "official add-on" content from the Unity or KEX-based re-releases of DOOM and DOOM II is supported.
 
 For Sigil and Sigil II, all the filenames for different releases of those WADs are also recognized; you shouldn't have to rename your original files. If `sigil_shreds.wad` is included, or if both versions of Sigil II are included, WadFusion will extract both soundtracks, which can be toggled from the WadFusion options mod menu in GZDoom.
-
-None of the "official add-on" content from the Unity or KEX-based re-releases of Doom and Doom II is supported. Only the versions of `doom.wad` and `doom2.wad` in the install folders for these ports are supported; they are virtually identical to the original data files.
 
 ## Absolute Beginner's Guide
 

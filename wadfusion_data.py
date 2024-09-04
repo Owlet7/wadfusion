@@ -120,15 +120,17 @@ TIDY_DIR_OGG = {
 }
 
 # list of files we can extract from
-WADS = ['doom', 'doom2', 'tnt', 'plutonia', 'nerve', 'sigil', 'sigil_shreds',
+WADS = ['doom', 'doom2', 'tnt', 'plutonia', 'sigil', 'sigil_shreds',
         'sigil2', 'sigil2_mp3', 'id1', 'id1-res', 'id24res', 'iddm1',
-        'doomu', 'doom2u', 'nerveu', 'tntu', 'plutoniau', 'extras']
+        'extras', 'doomunity', 'doom2unity', 'tntunity', 'plutoniaunity',
+        'doomkex', 'doom2kex', 'tntkex', 'plutoniakex', 'nerve']
 
 # wads to search for and report if found
 REPORT_WADS = ['doom', 'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',
                'doom2', 'attack', 'nerve', 'id1', 'id1-res', 'id24res',
                'iddm1', 'tnt', 'plutonia', 'sewers', 'betray', 'extras',
-               'doomu', 'doom2u', 'nerveu', 'tntu', 'plutoniau']
+               'doomunity', 'doom2unity', 'tntunity', 'plutoniaunity',
+               'doomkex', 'doom2kex', 'tntkex', 'plutoniakex']
 
 # lists of lumps common to doom 1+2
 COMMON_LUMPS = [
@@ -168,11 +170,15 @@ WAD_LUMP_LISTS = {
     'id24res': ['graphics_id24res'],
     'iddm1': [],
     # widescreen assets from unity and kex ports
-    'doomu': ['graphics_doomu'],
-    'doom2u': ['graphics_doom2u'],
-    'nerveu': ['graphics_nerveu'],
-    'tntu': ['graphics_tntu'],
-    'plutoniau': ['graphics_plutoniau'],
+    'doomunity': ['graphics_doom1unity'],
+    'doom2unity': ['graphics_doom2unity'],
+    'tntunity': ['graphics_tntunity'],
+    'plutoniaunity': ['graphics_plutoniaunity'],
+    'doomkex': ['graphics_doom1unity'],
+    'doom2kex': ['graphics_doom2unity'],
+    'tntkex': ['graphics_tntunity'],
+    'plutoniakex': ['graphics_plutoniaunity'],
+    'nerve': ['graphics_nerveunity'],
     # "found secret" sound from unity and kex ports
     'extras': ['data_extras', 'graphics_extras', 'sounds_extras', 'music_extras']
 }
