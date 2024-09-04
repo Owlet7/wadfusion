@@ -53,7 +53,8 @@
 
 # pre-authored resources to copy
 RES_FILES = [
-    'mapinfo.txt', 'sndinfo.txt', 'language.csv', 'endoom', 'smooshed.txt',
+    'mapinfo.txt', 'sndinfo.txt', 'language.csv',
+    'endoom', 'smooshed.txt',
     'textures.common', 'textures.doom1', 'textures.doom2',
     'textures.tnt', 'textures.plut', 'textures.id1',
     'animdefs.txt', 'xwinter0.txt', 'xwinter1.txt',

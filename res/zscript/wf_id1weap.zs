@@ -199,16 +199,30 @@ class Id1WeaponHandler : EventHandler
 	override void CheckReplacement (ReplaceEvent e)
 	{
 		string mapName = level.MapName.MakeLower();
-		if ( mapName.Left(3) == "id_" &&  CVar.FindCVar("wf_id1_weapswap").GetBool() )
+		if ( CVar.FindCVar("wf_id1_weapswap").GetBool() )
 		{
-			if (e.Replacee is "PlasmaRifle")
-				e.Replacement = "Incinerator";
-			if (e.Replacee is "BFG9000")
-				e.Replacement = "Heatwave";
-			if (e.Replacee is "Cell")
-				e.Replacement = "Fuel";
-			if (e.Replacee is "CellPack")
-				e.Replacement = "FuelTank";
+			if ( mapName.Left(3) == "id_" )
+			{
+				if (e.Replacee is "PlasmaRifle")
+					e.Replacement = "Incinerator";
+				if (e.Replacee is "BFG9000")
+					e.Replacement = "Heatwave";
+				if (e.Replacee is "Cell")
+					e.Replacement = "Fuel";
+				if (e.Replacee is "CellPack")
+					e.Replacement = "FuelTank";
+			}
+			else
+			{
+				if (e.Replacee is "Incinerator")
+					e.Replacement = "PlasmaRifle";
+				if (e.Replacee is "Heatwave")
+					e.Replacement = "BFG9000";
+				if (e.Replacee is "Fuel")
+					e.Replacement = "Cell";
+				if (e.Replacee is "FuelTank")
+					e.Replacement = "CellPack";
+			}
 		}
 	}
 }
