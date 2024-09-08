@@ -260,7 +260,7 @@ class Heatwave : DoomWeapon
 			HETF A 0 Bright A_SpawnHeatwaveRipper(5.0);
 			Goto FireEnd;
 		FireEnd:
-			HETF A 1 Bright A_StartSound("weapons/heatwave/hetsht");
+			HETF A 0 Bright A_StartSound("weapons/heatwave/hetsht");
 			HETF A 3 Bright A_GunFlash;
 			HETF B 5 Bright;
 			HETG D 4;
