@@ -146,14 +146,204 @@ class IncineratorFlame : Actor
 	}
 }
 
-//temp weap
-
-class Heatwave : BFG9000
+class Heatwave : DoomWeapon
 {
-	Default
-	{
-		Weapon.AmmoType "Fuel";
+    Default
+    {
+        Weapon.SelectionOrder 2800;
 		Weapon.SlotNumber 7;
+		Weapon.AmmoUse 10;
+		Weapon.AmmoGive 40;
+		Weapon.AmmoType "Fuel";
+		Inventory.PickupMessage "$ID24_GOTCALAMITYBLADE";
+		Tag "$TAG_CALAMITYBLADE";
+    }
+
+	States
+	{
+		Ready:
+			HETG A 1 A_WeaponReady;
+			Loop;
+		Deselect:
+			HETG A 1 A_Lower;
+			Loop;
+		Select:
+			HETG A 1 A_Raise;
+			Loop;
+		Fire:
+		Charge1:
+			HETG A 0 A_ConsumeAmmo();
+			HETG A 0 A_GunFlash("FlashCharge1");
+			HETG A 20 A_StartSound("weapons/heatwave/hetchg");
+			HETG A 0 A_JumpIfNoAmmo("Fire1");
+			HETG A 0 A_ReFire("Charge2");
+			Goto Fire1;
+		Charge2:
+			HETG A 0 A_ConsumeAmmo();
+			HETG A 0 A_GunFlash("FlashCharge2");
+			HETG A 20 A_StartSound("weapons/heatwave/hetchg");
+			HETG A 0 A_JumpIfNoAmmo("Fire2");
+			HETG A 0 A_ReFire("Charge3");
+			Goto Fire2;
+		Charge3:
+			HETG A 0 A_ConsumeAmmo();
+			HETG A 0 A_GunFlash("FlashCharge3");
+			HETG A 20 A_StartSound("weapons/heatwave/hetchg");
+			HETG A 0 A_JumpIfNoAmmo("Fire3");
+			HETG A 0 A_ReFire("Charge4");
+			Goto Fire3;
+		Charge4:
+			HETG A 0 A_ConsumeAmmo();
+			HETG A 0 A_GunFlash("FlashCharge4");
+			HETG A 20 A_StartSound("weapons/heatwave/hetchg");
+			HETG A 0 A_JumpIfNoAmmo("Fire4");
+			HETG A 0 A_ReFire("Charge5");
+			Goto Fire4;
+		Charge5:
+			HETG A 0 A_ConsumeAmmo();
+			HETG A 0 A_GunFlash("FlashCharge5");
+			HETG A 20 A_StartSound("weapons/heatwave/hetchg");
+			Goto Fire5;
+		Fire5:
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-35.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-30.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-25.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-20.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-15.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-10.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-5.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(0.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(5.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(10.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(15.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(20.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(25.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(30.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(35.0);
+			Goto FireEnd;
+		Fire4:
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-27.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-22.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-17.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-12.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-7.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-2.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(2.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(7.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(12.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(17.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(22.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(27.5);
+			Goto FireEnd;
+		Fire3:
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-20.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-15.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-10.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-5.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(0.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(5.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(10.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(15.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(20.0);
+			Goto FireEnd;
+		Fire2:
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-12.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-7.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-2.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(2.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(7.5);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(12.5);
+			Goto FireEnd;
+		Fire1:
+			HETF A 0 Bright A_SpawnHeatwaveRipper(-5.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(0.0);
+			HETF A 0 Bright A_SpawnHeatwaveRipper(5.0);
+			Goto FireEnd;
+		FireEnd:
+			HETF A 0 Bright A_StartSound("weapons/heatwave/hetsht");
+			HETF A 3 Bright A_GunFlash;
+			HETF B 5 Bright;
+			HETG D 4;
+			HETG C 4;
+			HETG B 4;
+			HETG A 0 A_ReFire;
+			Goto Ready;
+		FlashCharge1:
+			HETC A 6 Bright;
+			HETC BCD 5 Bright;
+			Goto LightDone;
+		FlashCharge2:
+			HETC E 6 Bright;
+			HETC FGH 5 Bright;
+			Goto LightDone;
+		FlashCharge3:
+			HETC I 6 Bright;
+			HETC JKL 5 Bright;
+			Goto LightDone;
+		FlashCharge4:
+			HETC M 6 Bright;
+			HETC NOP 5 Bright;
+			Goto LightDone;
+		FlashCharge5:
+			HETC Q 6 Bright;
+			HETC RST 5 Bright;
+			Goto LightDone;
+		Flash:
+			TNT1 A 3 A_Light1;
+			TNT1 A 5 A_Light2;
+			Goto LightDone;
+	}
+
+    action bool A_ConsumeAmmo()
+    {
+		if (player != null)
+		{
+            Weapon weap = player.ReadyWeapon;
+            if (weap != null && invoker == weap && stateinfo != null && stateinfo.mStateType == STATE_Psprite)
+            {
+                return weap.DepleteAmmo(weap.bAltFire, true);
+            }
+		}
+
+		return false;
+    }
+
+    action void A_SpawnHeatwaveRipper(double angle)
+    {
+        SpawnPlayerMissile("HeatwaveRipper", self.angle + angle, 0, 0, 0, null, false, true);
+    }
+}
+
+class HeatwaveRipper : Actor
+{
+    const HEATWAVE_RIPPER_DAMAGE = 10;
+    const HEATWAVE_RIPPER_VELOCITY = 20;
+
+    Default
+    {
+        Damage HEATWAVE_RIPPER_DAMAGE;
+        Speed HEATWAVE_RIPPER_VELOCITY;
+        Radius 16;
+        Height 8;
+        RenderStyle "Translucent";
+		Alpha 0.65;
+        DeathSound "weapons/heatwave/hetxpl";
+
+        +NOBLOCKMAP
+        +NOGRAVITY
+        +DROPOFF
+        +MISSILE
+        +RIPPER
+    }
+
+	States
+	{
+		Spawn:
+			HETB ABC 3 Bright;
+			Loop;
+		Death:
+			HETB DEFGHI 3 Bright;
+			Stop;
 	}
 }
 
