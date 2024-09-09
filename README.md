@@ -22,7 +22,7 @@ Advanced users can edit `wadfusion_data.py` to customize how and what WadFusion 
 
 ## Supported WADs
 
-WadFusion is not a general-purpose tool for merging DOOM WADs; it is for *merging retail content* only - it was created out of a desire for a "complete" retail version of DOOM and DOOM II, and only exists as a program because the IWAD file that it generates cannot be distributed legally. Please do not ask if WadFusion will support any specific WAD. If you want to add your own content to a custom IWAD, please either modify [WadFusion's source code](https://github.com/Owlet7/wadsmoosh) yourself, or simply edit the `doom_complete.pk3` file WadFusion generated on your computer by opening it in a ZIP archive management program. Please do not ask me for support when doing either.
+WadFusion is not a general-purpose tool for merging DOOM WADs; it is for *merging retail content* only - it was created out of a desire for a "complete" retail version of DOOM and DOOM II, and only exists as a program because the IWAD file that it generates cannot be distributed legally. Please do not ask if WadFusion will support any specific WAD. If you want to add your own content to a custom IWAD, please either modify [WadFusion's source code](https://github.com/Owlet7/wadfusion) yourself, or simply edit the `doom_complete.pk3` file WadFusion generated on your computer by opening it in a ZIP archive management program. Please do not ask me for support when doing either.
 
 Here is the official list of WADs that WadFusion will recognize:
 - The Ultimate DOOM (`doom.wad`)
@@ -49,7 +49,7 @@ For Sigil and Sigil II, all the filenames for different releases of those WADs a
 
 ## Absolute Beginner's Guide
 
-1. [Download WadFusion](https://github.com/Owlet7/wadsmoosh/releases/latest/download/wadsmoosh_win.zip) and extract it to a folder.
+1. [Download WadFusion](https://github.com/Owlet7/wadfusion/releases/latest/download/wadfusion_win.zip) and extract it to a folder.
 2. Find the folder(s) where Steam/GoG installed your game(s). For Steam, this will be something like `<Steam folder>\SteamApps\Common\<game name>\base`.
 3. Copy any files you find with a `.WAD` extension to the `source_wads/` subfolder where you extracted WadFusion.
 4. Double-click `wadfusion.exe`. A console window will pop up to show progress.

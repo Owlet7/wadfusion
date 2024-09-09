@@ -1,2 +1,2 @@
 This file was created by WadFusion:
-https://github.com/Owlet7/wadsmoosh
+https://github.com/Owlet7/wadfusion
