@@ -16,7 +16,7 @@ map NV_MAP01 "$NHUSTR_1"
 	TitlePatch = "NWILV00"
 	Par = 75
 	Music = "$MUSIC_MESSAG"
-	Author = "$WS_AU_MEAKIM"
+	Author = "$WF_AU_MEAKIM"
 }
 
 map NV_MAP02 "$NHUSTR_2"
@@ -26,7 +26,7 @@ map NV_MAP02 "$NHUSTR_2"
 	TitlePatch = "NWILV01"
 	Par = 105
 	Music = "$MUSIC_DDTBLU"
-	Author = "$WS_AU_IWAKURA"
+	Author = "$WF_AU_IWAKURA"
 }
 
 map NV_MAP03 "$NHUSTR_3"
@@ -36,7 +36,7 @@ map NV_MAP03 "$NHUSTR_3"
 	TitlePatch = "NWILV02"
 	Par = 120
 	Music = "$MUSIC_DOOM"
-	Author = "$WS_AU_MEAKIM"
+	Author = "$WF_AU_MEAKIM"
 }
 
 map NV_MAP04 "$NHUSTR_4"
@@ -47,7 +47,7 @@ map NV_MAP04 "$NHUSTR_4"
 	TitlePatch = "NWILV03"
 	Par = 105
 	Music = "$MUSIC_SHAWN"
-	Author = "$WS_AU_MEAKIM"
+	Author = "$WF_AU_MEAKIM"
 }
 
 map NV_MAP05 "$NHUSTR_5"
@@ -57,7 +57,7 @@ map NV_MAP05 "$NHUSTR_5"
 	TitlePatch = "NWILV04"
 	Par = 210
 	Music = "$MUSIC_IN_CIT"
-	Author = "$WS_AU_IWAKURA"
+	Author = "$WF_AU_IWAKURA"
 }
 
 map NV_MAP06 "$NHUSTR_6"
@@ -67,7 +67,7 @@ map NV_MAP06 "$NHUSTR_6"
 	TitlePatch = "NWILV05"
 	Par = 105
 	Music = "$MUSIC_THE_DA"
-	Author = "$WS_AU_IWAKURA"
+	Author = "$WF_AU_IWAKURA"
 }
 
 map NV_MAP07 "$NHUSTR_7"
@@ -78,7 +78,7 @@ map NV_MAP07 "$NHUSTR_7"
 	Par = 165
 	Music = "$MUSIC_IN_CIT"
 	Map07Special
-	Author = "$WS_AU_IWAKURA"
+	Author = "$WF_AU_IWAKURA"
 }
 
 map NV_MAP08 "$NHUSTR_8"
@@ -88,7 +88,7 @@ map NV_MAP08 "$NHUSTR_8"
 	TitlePatch = "NWILV07"
 	Par = 105
 	Music = "$MUSIC_SHAWN"
-	Author = "$WS_AU_IWAKURA"
+	Author = "$WF_AU_IWAKURA"
 }
 
 map NV_MAP09 "$NHUSTR_9"
@@ -98,7 +98,7 @@ map NV_MAP09 "$NHUSTR_9"
 	TitlePatch = "NWILV08"
 	Par = 135
 	Music = "$MUSIC_DDTBLU"
-	Author = "$WS_AU_MEAKIM"
+	Author = "$WF_AU_MEAKIM"
 }
 
 cluster 11

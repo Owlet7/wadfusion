@@ -1,4 +1,4 @@
-// doom 1 switch texture replacements
+// doom 1 and lagacy of rust switch texture replacements
 switch doom 1 SW1BRN1A on pic SW2BRN1A tics 0
 switch doom 1 SW1STARA on pic SW2STARA tics 0
 switch doom 1 SW1STONA on pic SW2STONA tics 0
@@ -8,6 +8,53 @@ switch doom 1 SW1STONB on pic SW2STONB tics 0
 switch doom 3 SW1GSTNT on pic SW2GSTNT tics 0
 switch doom 3 SW1SKULP on pic SW2SKULP tics 0
 switch doom 3 SW1SKULT on pic SW2SKULT tics 0
+
+// legacy of rust switch textures
+switch doom 1 SW1BLK24 on pic SW2BLK24 tics 0
+switch doom 1 SW1BLOCK on pic SW2BLOCK tics 0
+switch doom 1 SW1BLOK8 on pic SW2BLOK8 tics 0
+switch doom 1 SW1BUNK  on pic SW2BUNK  tics 0
+switch doom 1 SW1GBORD on pic SW2GBORD tics 0
+switch doom 1 SW1GRAY2 on pic SW2GRAY2 tics 0
+switch doom 1 SW1POWRB on pic SW2POWRB tics 0
+switch doom 1 SW1POWRG on pic SW2POWRG tics 0
+switch doom 1 SW1POWRS on pic SW2POWRS tics 0
+switch doom 1 SW1QUADB on pic SW2QUADB tics 0
+switch doom 1 SW1QUADG on pic SW2QUADG tics 0
+switch doom 1 SW1QUADS on pic SW2QUADS tics 0
+switch doom 1 SW1SHAWN on pic SW2SHAWN tics 0
+switch doom 1 SW1STRBN on pic SW2STRBN tics 0
+switch doom 1 SW1STRGN on pic SW2STRGN tics 0
+switch doom 1 SW1STRGY on pic SW2STRGY tics 0
+switch doom 1 SW1STRUC on pic SW2STRUC tics 0
+switch doom 1 SW1TEKW1 on pic SW2TEKW1 tics 0
+switch doom 1 SW1TEKW6 on pic SW2TEKW6 tics 0
+switch doom 2 SW1EYE1  on pic SW2EYE1  tics 0
+switch doom 2 SW1EYE2  on pic SW2EYE2  tics 0
+switch doom 2 SW1GSTN2 on pic SW2GSTN2 tics 0
+switch doom 2 SW1ICK2  on pic SW2ICK2  tics 0
+switch doom 2 SW1ICKBD on pic SW2ICKBD tics 0
+switch doom 2 SW1MARB2 on pic SW2MARB2 tics 0
+switch doom 2 SW1MFAC1 on pic SW2MFAC1 tics 0
+switch doom 2 SW1MFAC2 on pic SW2MFAC2 tics 0
+switch doom 2 SW1MFAC3 on pic SW2MFAC3 tics 0
+switch doom 2 SW1RED   on pic SW2RED   tics 0
+switch doom 2 SW1SKIN2 on pic SW2SKIN2 tics 0
+switch doom 2 SW1SNAK1 on pic SW2SNAK1 tics 0
+switch doom 2 SW1SNAK2 on pic SW2SNAK2 tics 0
+switch doom 2 SW1STONW on pic SW2STONW tics 0
+switch doom 2 SW1WDARK on pic SW2WDARK tics 0
+switch doom 2 SW1WOOD4 on pic SW2WOOD4 tics 0
+switch doom 2 SW1WOOD5 on pic SW2WOOD5 tics 0
+switch doom 3 SW1BAS1  on pic SW2BAS1  tics 0
+switch doom 3 SW1GATE  on pic SW2GATE  tics 0
+switch doom 3 SW1GSTBL on pic SW2GSTBL tics 0
+switch doom 3 SW1ICK1  on pic SW2ICK1  tics 0
+switch doom 3 SW1MARBG on pic SW2MARBG tics 0
+switch doom 3 SW1RAIL1 on pic SW2RAIL1 tics 0
+switch doom 3 SW1RAIL2 on pic SW2RAIL2 tics 0
+switch doom 3 SW1ROCK6 on pic SW2ROCK6 tics 0
+switch doom 3 SW1TC1   on pic SW2TC1   tics 0
 
 // TNT animated textures
 
@@ -235,3 +282,49 @@ pic MC17 tics 8
 pic MC18 tics 8
 pic MC19 tics 8
 pic PBRAIN4 tics 8
+
+// legacy of rust animated flats
+
+flat optional XBLOOD1
+pic XBLOOD2 tics 8
+pic XBLOOD3 tics 8
+pic BLOOD4 tics 8
+
+flat optional XNUKAGE1
+pic XNUKAGE2 tics 8
+pic XNUKAGE3 tics 8
+pic NUKAGE4 tics 8
+
+flat optional BLAVAA1  range BLAVAA4  tics 8
+flat optional BLAVAB1  range BLAVAB4  tics 8
+flat optional BLAVAC1  range BLAVAC4  tics 8
+flat optional CONVNA1  range CONVNA4  tics 8
+flat optional CONVSA1  range CONVSA4  tics 8
+flat optional FBLOOD1  range FBLOOD4  tics 8
+flat optional FLOOR8_1 range FLOOR8_4 tics 8
+flat optional NUKWALK1 range NUKWALK4 tics 8
+flat optional SBLOOD1  range SBLOOD3  tics 8
+
+// legacy of rust animated textures
+
+texture optional BFALL1   range BFALL4   tics 8
+texture optional COMP1ON1 range COMP1ON2 tics 8
+texture optional COMP2ON1 range COMP2ON2 tics 8
+texture optional COMP3ON1 range COMP3ON4 tics 8
+texture optional COMP4ON1 range COMP4ON2 tics 8
+texture optional COMPBON1 range COMPBON4 tics 8
+texture optional FIREGLO1 range FIREGLO3 tics 8
+texture optional GSTEYE1  range GSTEYE6  tics 32
+texture optional LAVAWAL1 range LAVAWAL4 tics 8
+texture optional MARBEYE1 range MARBEYE6 tics 32
+texture optional NUKDRIP1 range NUKDRIP4 tics 8
+texture optional NUKSOUL1 range NUKSOUL6 tics 8
+texture optional ROCKEDG1 range ROCKEDG3 tics 8
+texture optional ROCKLAV1 range ROCKLAV3 tics 8
+texture optional SFALL1   range SFALL4   tics 8
+texture optional SKINEYE1 range SKINEYE6 tics 32
+texture optional SKYA4    range SKYA4Z   tics 8
+texture optional SLADFAL1 range SLADFAL3 tics 8
+texture optional WOODFAV1 range WOODFAV3 tics 8
+texture optional XWFALL1  range XWFALL4  tics 8
+texture optional ZZZWARP1 range ZZZWARP4 tics 4

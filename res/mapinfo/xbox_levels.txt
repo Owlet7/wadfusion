@@ -12,14 +12,14 @@ map E1M10 "$HUSTR_E1M10"
 	LevelNum = 10
 	Next = "E1M2"
 	Cluster = 1
-	Sky1 = "SKY1"
+	Sky1 = "SKY3"
 	TitlePatch = "WILV39"
 	Par = 150
 	Music = "$MUSIC_E2M1"
 	ExitPic = "$IN_EPI1"
 	InterMusic = "$MUSIC_INTER"
 	BorderTexture = "FLOOR7_2"
-	Author = "$WS_AU_CALVIN_BLANSHINE"
+	Author = "$WF_AU_CALVIN_BLANSHINE"
 }
 
 map MAP33 "$HUSTR_33"
@@ -30,5 +30,5 @@ map MAP33 "$HUSTR_33"
 	TitlePatch = "CWILV32"
 	Par = 120
 	Music = "D_READ_M"
-	Author = "$WS_AU_BUKOWSKI"
+	Author = "$WF_AU_BUKOWSKI"
 }

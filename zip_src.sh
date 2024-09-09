@@ -1,6 +1,6 @@
 #!/bin/bash
 # builds a source distribution
-PROJECT_NAME=wadsmoosh
+PROJECT_NAME=wadfusion
 rm "$PROJECT_NAME"_src.zip
 zip -ur9 $PROJECT_NAME.zip . -i@zip_src_include -x *.pyc
 # put all this in a containing directory

@@ -1,7 +1,7 @@
-wadsmoosh.py
-wadsmoosh.txt
-wadsmoo.sh
+wadfusion.py
+wadfusion.sh
 data/*
+license/*
 omg/*
 res/*
 source_wads/delete_me.txt

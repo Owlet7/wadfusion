@@ -1,3 +1,52 @@
+##-----------------------------------------------------------------------------
+##
+## Copyright 2024 Owlet VII
+##
+## This program is free software: you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation, either version 3 of the License, or
+## (at your option) any later version.
+##
+## This program is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with this program.  If not, see http://www.gnu.org/licenses/
+##
+##-----------------------------------------------------------------------------
+##
+
+##
+## This code is derived from WadSmoosh 1.41, which is covered by the following permissions:
+##
+##------------------------------------------------------------------------------------------
+##
+## The MIT License (MIT)
+## 
+## Copyright (c) 2016-2023 JP LeBreton
+## 
+## Permission is hereby granted, free of charge, to any person obtaining a copy
+## of this software and associated documentation files (the "Software"), to deal
+## in the Software without restriction, including without limitation the rights
+## to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+## copies of the Software, and to permit persons to whom the Software is
+## furnished to do so, subject to the following conditions:
+## 
+## The above copyright notice and this permission notice shall be included in
+## all copies or substantial portions of the Software.
+## 
+## THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+## IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+## FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+## LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+## OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+## THE SOFTWARE.
+##
+##------------------------------------------------------------------------------------------
+##
 
 import os, sys, time, fnmatch
 from shutil import copyfile
@@ -17,9 +66,9 @@ DEST_DIR = TEMP_DIR + 'pk3/'
 DEST_DIR_OGG = TEMP_DIR + 'pk3_ogg/'
 DEST_FILENAME = 'doom_complete.pk3'
 DEST_FILENAME_OGG = 'hulshult_ogg.pk3'
-LOG_FILENAME = 'wadsmoosh.log'
+LOG_FILENAME = 'wadfusion.log'
 RES_DIR = 'res/'
-DATA_TABLES_FILE = 'wadsmoosh_data.py'
+DATA_TABLES_FILE = 'wadfusion_data.py'
 ML_ORDER_FILENAME = 'masterlevels_order_xaser.txt'
 ML_MAPINFO_FILENAME = DEST_DIR + 'mapinfo/master_levels.txt'
 DEST_DIR_OGG_MUS = DEST_DIR_OGG + 'music/'
@@ -133,6 +182,7 @@ def extract_master_levels():
     first_ml_wad = get_wad_filename(ml_map_order[0])
     if not first_ml_wad:
         logg('ERROR: Master Levels not found.', error=True)
+        copyfile(RES_DIR + 'mapinfo/master_levels.txt', DEST_DIR + 'mapinfo/master_levels.txt')
         return
     logg('Processing Master Levels...')
     mapinfo = open(ML_MAPINFO_FILENAME, 'w')
@@ -229,9 +279,9 @@ def rename_mp3():
 
 def enable_sigil_shreds():
     logg('Enabling Sigil MP3 music...')
-    # switches ws_sigil_shreds cvar default to true
-    shreds_false = 'ws_sigil_shreds = false'
-    shreds_true = 'ws_sigil_shreds = true'
+    # switches wf_sigil_shreds cvar default to true
+    shreds_false = 'wf_sigil_shreds = false'
+    shreds_true = 'wf_sigil_shreds = true'
     with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
         tmp_file = file.read()
         tmp_file = tmp_file.replace(shreds_false, shreds_true)
@@ -240,9 +290,9 @@ def enable_sigil_shreds():
 
 def enable_sigil2_shreds():
     logg('Enabling Sigil II MP3 music...')
-    # switches ws_sigil2_shreds cvar default to true
-    shreds2_false = 'ws_sigil2_shreds = false'
-    shreds2_true = 'ws_sigil2_shreds = true'
+    # switches wf_sigil2_shreds cvar default to true
+    shreds2_false = 'wf_sigil2_shreds = false'
+    shreds2_true = 'wf_sigil2_shreds = true'
     with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
         tmp_file = file.read()
         tmp_file = tmp_file.replace(shreds2_false, shreds2_true)
@@ -272,9 +322,9 @@ def add_xbox_levels():
         add_secret_level('betray', 'MAP01', 'MAP33')
 
 def enable_xbox_levels():
-    # switches ws_xbox_secret_exits cvar default to true
-    xbox_false = 'ws_xbox_secret_exits = false'
-    xbox_true = 'ws_xbox_secret_exits = true'
+    # switches wf_xbox_secret_exits cvar default to true
+    xbox_false = 'wf_xbox_secret_exits = false'
+    xbox_true = 'wf_xbox_secret_exits = true'
     with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
         tmp_file = file.read()
         tmp_file = tmp_file.replace(xbox_false, xbox_true)
@@ -326,6 +376,12 @@ def extract_lumps(wad_name):
         elif wad_name == 'sigil' and lump_type == 'data':
             lump_subdir = DEST_DIR + 'graphics/'
         elif wad_name == 'sigil2' and lump_type == 'data':
+            lump_subdir = DEST_DIR + 'graphics/'
+        # legacy of rust statusbar icons and map title patches aren't in graphics namespace but belong in that dir
+        elif wad_name == 'id1' and lump_type == 'data':
+            lump_subdir = DEST_DIR + 'graphics/'
+        # extras.wad statusbar icons aren't in graphics namespace but belong in that dir
+        elif wad_name == 'extras' and lump_type == 'data':
             lump_subdir = DEST_DIR + 'graphics/'
         # write PLAYPAL, TEXTURE1 etc to pk3 root
         elif lump_type in ['data', 'txdefs']:
@@ -388,6 +444,27 @@ def copy_resources():
 #        copyfile(RES_DIR + 'mapinfo/doom2_nonbfg_levels.txt',
 #                 DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
 
+def copy_resources_id1():
+    # copy id1 scripts if id1 is present
+    copyfile(RES_DIR + 'zscript/wf_id1weap.zs', DEST_DIR + 'zscript/wf_id1weap.zs')
+    copyfile(RES_DIR + 'zscript/wf_sbar.id1.zs', DEST_DIR + 'zscript/wf_sbar.zs')
+    # uncomment scripts
+    id1_off = '//#include \"zscript/wf_id1weap.zs\"\n//#include \"zscript/wf_sbar.zs\"'
+    id1_on = '#include \"zscript/wf_id1weap.zs\"\n#include \"zscript/wf_sbar.zs\"'
+    with open(DEST_DIR + 'zscript.zs', 'r') as file:
+        tmp_file = file.read()
+        tmp_file = tmp_file.replace(id1_off, id1_on)
+    with open(DEST_DIR + 'zscript.zs', 'w') as file:
+        file.write(tmp_file)
+    # add event handler
+    id1_off = '//, \"Id1WeaponHandler\"\n\tStatusBarClass = \"WadFusionStatusBar\"'
+    id1_on = ', \"Id1WeaponHandler\"\n\tStatusBarClass = \"WadFusionStatusBarId24\"'
+    with open(DEST_DIR + 'mapinfo.txt', 'r') as file:
+        tmp_file = file.read()
+        tmp_file = tmp_file.replace(id1_off, id1_on)
+    with open(DEST_DIR + 'mapinfo.txt', 'w') as file:
+        file.write(tmp_file)
+
 def copy_resources_ogg():
     # unity vs kex extras.wad differ, kex has Andrew Hulshult soundtrack
     if get_wad_filename('extras'):
@@ -401,15 +478,6 @@ def copy_resources_ogg():
             # move Andrew Hulshult's tracks to pk3_ogg
             move_ogg()
             # rename '.ogg' from filenames of pre-authored lumps
-            for src_file in os.listdir(DEST_DIR_OGG):
-                if fnmatch.fnmatch(src_file, '*.ogg.csv'):
-                    old_name = os.path.join(DEST_DIR_OGG, src_file)
-                    new_name = old_name.replace('.ogg.csv', '.csv')
-                    os.rename(old_name, new_name)
-                if fnmatch.fnmatch(src_file, '*.ogg.txt'):
-                    old_name = os.path.join(DEST_DIR_OGG, src_file)
-                    new_name = old_name.replace('.ogg.txt', '.txt')
-                    os.rename(old_name, new_name)
             for src_file in os.listdir(DEST_DIR_OGG + 'mapinfo/'):
                 if fnmatch.fnmatch(src_file, '*.ogg.txt'):
                     old_name = os.path.join(DEST_DIR_OGG + 'mapinfo/', src_file)
@@ -493,18 +561,22 @@ def get_eps(wads_found):
             eps += ['Knee Deep in the Dead', 'The Shores of Hell', 'Inferno', 'Thy Flesh Consumed']
         elif wadname == 'doom2':
             eps += ['Hell on Earth']
+        elif wadname == 'attack' and 'doom2' in wads_found:
+            eps += ['Master Levels']
         elif wadname == 'nerve' and 'doom2' in wads_found:
             eps += ['No Rest for the Living']
-        elif wadname == 'attack' and 'doom2' in wads_found:
-            eps += ['The Master Levels']
         elif wadname == 'tnt':
             eps += ['TNT: Evilution']
         elif wadname == 'plutonia':
             eps += ['The Plutonia Experiment']
         elif wadname == 'sigil' and 'doom' in wads_found:
-            eps += ['Sigil']
+            eps += ['SIGIL']
         elif wadname == 'sigil2' and 'doom' in wads_found:
-            eps += ['Sigil II']
+            eps += ['SIGIL II']
+        elif wadname == 'id1' and 'doom2' in wads_found and 'id1-res' in wads_found and 'id24res' in wads_found:
+            eps += ['The Vulcan Abyss', 'Counterfeit Eden']
+        elif wadname == 'iddm1' and 'doom2' in wads_found:
+            eps += ['id Deathmatch Pack #1']
     return eps
 
 def pk3_compress():
@@ -542,7 +614,7 @@ def pk3_ogg_compress():
 
 def main():
     version = open(VERSION_FILENAME).readlines()[0].strip()
-    title_line = 'WadSmoosh v%s' % version
+    title_line = 'WadFusion v%s' % version
     logg(title_line + '\n' + '-' * len(title_line))
     found = get_report_found()
     input_func = raw_input if sys.version_info.major < 3 else input
@@ -591,6 +663,18 @@ def main():
         # if doom 1 also isn't present (weird) extract all common resources
         if not get_wad_filename('doom'):
             WAD_LUMP_LISTS['tnt'] += COMMON_LUMPS
+    # if id1 present but not doom1, extract doom1 resources from it
+    if get_wad_filename('id1') and not get_wad_filename('doom'):
+        WAD_LUMP_LISTS['id1'] += ['patches_doom1']
+    # if iddm1 present but not id1, extract id1 resources from it
+    if get_wad_filename('iddm1') and not get_wad_filename('id1'):
+        WAD_LUMP_LISTS['iddm1'] += ID1_LUMPS
+    # if iddm1 present but not doom1, extract doom1 music from it
+    if get_wad_filename('iddm1') and not get_wad_filename('doom'):
+        WAD_LUMP_LISTS['iddm1'] += ['music_doom1', 'patches_doom1']
+    # if iddm1 present but not tnt, extract tnt music from it
+    if get_wad_filename('iddm1') and not get_wad_filename('tnt'):
+        WAD_LUMP_LISTS['iddm1'] += ['music_iddm1']
     # extract lumps and maps from wads
     for iwad_name in WADS:
         wad_filename = get_wad_filename(iwad_name)
@@ -612,6 +696,18 @@ def main():
         if iwad_name == 'sigil2_mp3' and not get_wad_filename('sigil2'):
             logg('Skipping sigil2_mp3.wad as sigil2.wad is not present', error=True)
             continue
+        if iwad_name == 'id1' and not get_wad_filename('doom2'):
+            logg('Skipping id1.wad as doom2.wad is not present', error=True)
+            continue
+        if iwad_name == 'id1' and not get_wad_filename('id1-res'):
+            logg('Skipping id1.wad as id1-res.wad is not present', error=True)
+            continue
+        if iwad_name == 'id1' and not get_wad_filename('id24res'):
+            logg('Skipping id1.wad as id24res.wad is not present', error=True)
+            continue
+        if iwad_name == 'iddm1'and not get_wad_filename('doom2'):
+            logg('Skipping iddm1.wad as doom2.wad is not present', error=True)
+            continue
         logg('Processing WAD %s...' % iwad_name)
         if should_extract:
             extract_lumps(iwad_name)
@@ -624,18 +720,23 @@ def main():
             extract_master_levels()
     else:
         logg('Skipping Master Levels as doom2.wad is not present', error=True)
+        copyfile(RES_DIR + 'mapinfo/master_levels.txt', DEST_DIR + 'mapinfo/master_levels.txt')
     # copy pre-authored lumps eg mapinfo
     if should_extract:
         copy_resources()
+    # copy id1 scripts if id1 is present
+    if get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res') and should_extract:
+        copy_resources_id1()
     # copy pre-authored lumps for Andrew Hulshult's soundtrack supported
     if should_extract:
         copy_resources_ogg()
     # rename file extensions of Sigil mp3 music
-    rename_mp3()
+    if should_extract:
+        rename_mp3()
     # enable Sigil mp3 music options
-    if get_wad_filename('sigil_shreds') and get_wad_filename('sigil'):
+    if get_wad_filename('sigil_shreds') and get_wad_filename('sigil') and should_extract:
         enable_sigil_shreds()
-    if get_wad_filename('sigil2_mp3') and get_wad_filename('sigil2'):
+    if get_wad_filename('sigil2_mp3') and get_wad_filename('sigil2') and should_extract:
         enable_sigil2_shreds()
     # only supported versions of these @ http://classicdoom.com/xboxspec.htm
     if get_wad_filename('sewers') and get_wad_filename('betray') and should_extract:

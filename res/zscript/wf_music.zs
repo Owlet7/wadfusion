@@ -1,5 +1,24 @@
+//-----------------------------------------------------------------------------
+//
+// Copyright 2024 Owlet VII
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see http://www.gnu.org/licenses/
+//
+//-----------------------------------------------------------------------------
+//
 
-class WadSmooshMusicHandler : EventHandler
+class WadFusionMusicHandler : EventHandler
 {
 	// Sigil's map music should be defined as something invalid in
 	// MAPINFO, that way it keeps playing the last music file
@@ -14,7 +33,7 @@ class WadSmooshMusicHandler : EventHandler
 		if ( mapName.Left(3) == "e5m" )
 		{
 			// play the mp3 soundtrack
-			if ( (CVar.FindCVar("ws_sigil_shreds").GetBool() ) )
+			if ( (CVar.FindCVar("wf_sigil_shreds").GetBool() ) )
 			{
 				S_ChangeMusic( mapMusicShreds );
 			}
@@ -28,7 +47,7 @@ class WadSmooshMusicHandler : EventHandler
 		if ( mapName.Left(3) == "e6m" )
 		{
 			// play the mp3 soundtrack
-			if ( (CVar.FindCVar("ws_sigil2_shreds").GetBool() ) )
+			if ( (CVar.FindCVar("wf_sigil2_shreds").GetBool() ) )
 			{
 				S_ChangeMusic( mapMusicShreds );
 			}
@@ -51,7 +70,7 @@ class WadSmooshMusicHandler : EventHandler
 		if ( mapName.Left(3) == "e5m" )
 		{
 			// play the mp3 soundtrack
-			if ( (CVar.FindCVar("ws_sigil_shreds").GetBool() ) )
+			if ( (CVar.FindCVar("wf_sigil_shreds").GetBool() ) )
 				S_ChangeMusic("s_intera");
 			// play the midi soundtrack
 			else
@@ -61,7 +80,7 @@ class WadSmooshMusicHandler : EventHandler
 		if ( mapName.Left(3) == "e6m" )
 		{
 			// play the mp3 soundtrack
-			if ( (CVar.FindCVar("ws_sigil2_shreds").GetBool() ) )
+			if ( (CVar.FindCVar("wf_sigil2_shreds").GetBool() ) )
 				S_ChangeMusic("s2_intea");
 			// play the midi soundtrack
 			else

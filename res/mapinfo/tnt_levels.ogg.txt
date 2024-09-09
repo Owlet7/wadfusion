@@ -1,4 +1,6 @@
-// TNT maps
+// TNT maps - Andrew Hulshult's music version
+// Not imported by Wadsmoosh by default
+// Add this file to the RES_FILES_OGG array in wadsmoosh_data.py if you wish to use it
 
 defaultmap
 {
@@ -37,7 +39,7 @@ map TN_MAP03 "$THUSTR_3"
 {
 	Next = "TN_MAP04"
 	TitlePatch = "TWILV02"
-	Music = "T_COUNTD"
+	Music = "$MUSIC_MESSAG"
 	Author = "$WF_AU_PATENALL_MINADEO"
 }
 
@@ -125,7 +127,7 @@ map TN_MAP12 "$THUSTR_12"
 {
 	Next = "TN_MAP13"
 	TitlePatch = "TWILV11"
-	Music = "T_THEDA2"
+	Music = "$MUSIC_DDTBLU"
 	Author = "$WF_AU_LOWELL"
 }
 
@@ -182,7 +184,7 @@ map TN_MAP19 "$THUSTR_19"
 {
 	Next = "TN_MAP20"
 	TitlePatch = "TWILV18"
-	Music = "T_SHAWN2"
+	Music = "$MUSIC_COUNTD"
 	Author = "$WF_AU_HALDERMAN"
 }
 
@@ -206,7 +208,7 @@ map TN_MAP21 "$THUSTR_21"
 {
 	Next = "TN_MAP22"
 	TitlePatch = "TWILV20"
-	Music = "T_COUNT2"
+	Music = "$MUSIC_IN_CIT"
 	Author = "$WF_AU_OBRIEN"
 }
 
@@ -222,7 +224,7 @@ map TN_MAP23 "$THUSTR_23"
 {
 	Next = "TN_MAP24"
 	TitlePatch = "TWILV22"
-	Music = "T_AMPIE"
+	Music = "$MUSIC_AMPIE"
 	Author = "$WF_AU_TURNBULL"
 }
 
@@ -230,7 +232,7 @@ map TN_MAP24 "$THUSTR_24"
 {
 	Next = "TN_MAP25"
 	TitlePatch = "TWILV23"
-	Music = "T_THEDA3"
+	Music = "$MUSIC_BETWEE"
 	Author = "$WF_AU_JOHNSON"
 }
 
@@ -238,7 +240,7 @@ map TN_MAP25 "$THUSTR_25"
 {
 	Next = "TN_MAP26"
 	TitlePatch = "TWILV24"
-	Music = "T_ADRIAN"
+	Music = "$MUSIC_DOOM"
 	Author = "$WF_AU_HILL"
 }
 
@@ -308,7 +310,7 @@ map TN_MAP32 "$THUSTR_32"
 	Next = "TN_MAP16"
 	Cluster = 17
 	TitlePatch = "TWILV31"
-	Music = "T_ULTIMA"
+	Music = "$MUSIC_IN_CIT"
 	Author = "$WF_AU_DARIO_CASALI"
 }
 

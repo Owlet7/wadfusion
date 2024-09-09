@@ -1,6 +1,6 @@
 set ZIP_EXE="%ProgramW6432%\7-Zip\7z.exe"
-set PINST_EXE="C:\Python37-32\Scripts\pyinstaller.exe"
-set PROJ_NAME="wadsmoosh"
+set PINST_EXE="pyinstaller.exe"
+set PROJ_NAME="wadfusion"
 
 %PINST_EXE% %PROJ_NAME%.spec
 pause

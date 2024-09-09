@@ -1,1 +1,0 @@
-IWAD = doom_complete.pk3
