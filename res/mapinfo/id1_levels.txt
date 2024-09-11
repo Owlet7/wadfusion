@@ -189,7 +189,7 @@ map ID_MAP14 "$XHUSTR_15"
 	Next = EndGame
 	{
 		Pic = "ID1BOSS"
-		Music = "D_EVIL"
+		Music = "D_EVILX"
 		Cast
 	}
 	TitlePatch = "XWILV16"

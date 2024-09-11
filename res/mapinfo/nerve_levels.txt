@@ -43,7 +43,7 @@ map NV_MAP04 "$NHUSTR_4"
 {
 	Next = "NV_MAP05"
 	SecretNext = "NV_MAP09"
-	Sky1 = "RSKY3"
+	Sky1 = "RSKY1"
 	TitlePatch = "NWILV03"
 	Par = 105
 	Music = "$MUSIC_SHAWN"

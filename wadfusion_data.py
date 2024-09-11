@@ -61,7 +61,7 @@ RES_FILES = [
     'graphics/M_DOOM.lmp', 'graphics/TITLEPIC.lmp',
     'graphics/M_HELL.lmp', 'graphics/M_NOREST.lmp',
     'graphics/M_MASTER.lmp', 'graphics/M_TNT.lmp',
-    'graphics/M_PLUT.lmp',
+    'graphics/M_PLUT.lmp', 'graphics/M_EPI5.lmp',
     'graphics/WILV39.lmp', 'graphics/WILV50.lmp',
     'graphics/WILV51.lmp', 'graphics/WILV52.lmp',
     'graphics/WILV53.lmp', 'graphics/WILV54.lmp',
