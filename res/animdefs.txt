@@ -328,3 +328,73 @@ texture optional SLADFAL1 range SLADFAL3 tics 8
 texture optional WOODFAV1 range WOODFAV3 tics 8
 texture optional XWFALL1  range XWFALL4  tics 8
 texture optional ZZZWARP1 range ZZZWARP4 tics 4
+
+// id1 fire sky textures
+
+firetexture SKYX4A tics 2.00025
+palette 0
+palette 47
+palette 191
+palette 187
+palette 235
+palette 234
+palette 232
+palette 167
+palette 166
+palette 165
+palette 223
+palette 221
+palette 220
+palette 219
+palette 217
+palette 216
+palette 215
+palette 214
+palette 213
+palette 164
+palette 163
+palette 162
+palette 161
+palette 160
+palette 231
+palette 230
+palette 229
+palette 228
+palette 227
+palette 226
+palette 225
+palette 224
+
+firetexture SKYX5A tics 2.00025
+palette 0
+palette 127
+palette 126
+palette 125
+palette 124
+palette 123
+palette 122
+palette 121
+palette 120
+palette 119
+palette 118
+palette 117
+palette 116
+palette 115
+palette 114
+palette 115
+palette 116
+palette 117
+palette 119
+palette 121
+palette 123
+palette 124
+palette 125
+palette 124
+palette 125
+palette 126
+palette 126
+palette 125
+palette 126
+palette 127
+palette 126
+palette 125

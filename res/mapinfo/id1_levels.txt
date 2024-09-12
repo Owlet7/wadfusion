@@ -94,7 +94,7 @@ map ID_MAP06 "$XHUSTR_6"
 {
 	Next = "ID_MAP07"
 	TitlePatch = "XWILV05"
-	Sky1 =  "SKYX4" // supposed to be an animated sky
+	Sky1 =  "SKYX4A"
 	Music = "D_CLOUDY"
 	Author = "$WF_AU_XASER"
 }
@@ -103,7 +103,7 @@ map ID_MAP07 "$XHUSTR_7"
 {
 	Next = EndPic, "XCREDIT"
 	TitlePatch = "XWILV06"
-	Sky1 =  "SKYX4" // supposed to be an animated sky
+	Sky1 =  "SKYX4A"
 	Music = "D_TACTIC"
 	Author = "$WF_AU_VILLARREAL"
 }
@@ -169,7 +169,7 @@ map ID_MAP12 "$XHUSTR_13"
 {
 	Next = "ID_MAP13"
 	TitlePatch = "XWILV14"
-	Sky1 =  "SKYX4" // supposed to be an animated sky
+	Sky1 =  "SKYX4A"
 	Music = "D_DISGUS"
 	Author = "$WF_AU_VILLARREAL"
 }
@@ -178,7 +178,7 @@ map ID_MAP13 "$XHUSTR_14"
 {
 	Next = "ID_MAP14"
 	TitlePatch = "XWILV15"
-	Sky1 =  "SKYX4" // supposed to be an animated sky
+	Sky1 =  "SKYX4A"
 	Music = "D_VESPER"
 	SpecialAction = "Cyberdemon", "Floor_LowerToNearest", 666, 8
 	Author = "$WF_AU_DUNLOP"
@@ -193,7 +193,7 @@ map ID_MAP14 "$XHUSTR_15"
 		Cast
 	}
 	TitlePatch = "XWILV16"
-	Sky1 =  "SKYX5" // supposed to be an animated sky
+	Sky1 =  "SKYX5A"
 	Music = "D_SKELET"
 	SpecialAction = "Deh_Actor_156", "Floor_LowerToNearest", 666, 8 // TyrantBoss1
 	SpecialAction = "Deh_Actor_157", "Floor_LowerToNearest", 667, 8 // TyrantBoss2
