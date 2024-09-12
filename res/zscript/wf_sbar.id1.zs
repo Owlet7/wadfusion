@@ -60,7 +60,7 @@ class WadFusionStatusBarId24 : BaseStatusBar
 	protected void DrawMainBar (double TicFrac)
 	{
 		String mapName = level.MapName.MakeLower();
-		if ( mapName.Left(3) == "id_" && CVar.FindCVar("wf_id1_weapswap").GetBool() )
+		if ( mapName.Left(3) == "lr_" && CVar.FindCVar("wf_id1_weapswap").GetBool() )
 			DrawImage("STBRFUEL", (-53, 168), DI_ITEM_OFFSETS);
 		else
 			DrawImage("STBAR", (0, 168), DI_ITEM_OFFSETS);
@@ -174,7 +174,7 @@ class WadFusionStatusBarId24 : BaseStatusBar
 			DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 185), DI_TEXT_ALIGN_RIGHT);
 			
 			String mapName = level.MapName.MakeLower();
-			if ( mapName.Left(3) == "id_" && CVar.FindCVar("wf_id1_weapswap").GetBool() )
+			if ( mapName.Left(3) == "lr_" && CVar.FindCVar("wf_id1_weapswap").GetBool() )
 			{
 				[amt1, maxamt] = GetAmount("Fuel");
 				DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 191), DI_TEXT_ALIGN_RIGHT);

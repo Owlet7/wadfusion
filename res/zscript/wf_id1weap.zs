@@ -393,7 +393,7 @@ class Id1WeaponHandler : EventHandler
 		string mapName = level.MapName.MakeLower();
 		if ( CVar.FindCVar("wf_id1_weapswap").GetBool() )
 		{
-			if ( mapName.Left(3) == "id_" )
+			if ( mapName.Left(3) == "lr_" )
 			{
 				if (e.Replacee is "PlasmaRifle")
 					e.Replacement = "Incinerator";

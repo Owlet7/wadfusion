@@ -71,14 +71,14 @@ episode NV_MAP01
 	optional
 }
 
-episode ID_MAP01
+episode LR_MAP01
 {
 	picname = "M_XEPI1"
 	name = "$TXT_ID1_EP1"
 	optional
 }
 
-episode ID_MAP08
+episode LR_MAP08
 {
 	picname = "M_XEPI2"
 	name = "$TXT_ID1_EP2"

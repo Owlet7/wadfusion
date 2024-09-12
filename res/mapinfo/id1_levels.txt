@@ -27,9 +27,9 @@ defaultmap
 
 // Test map
 
-map ID_MAP99 "$XHUSTR_99"
+map LR_MAP99 "$XHUSTR_99"
 {
-	Next = "ID_MAP99"
+	Next = "LR_MAP99"
 	Sky1 =  "SKYX2"
 	Music = "D_BLANK"
 	Author = "$WF_AU_ID1TEST"
@@ -44,62 +44,62 @@ adddefaultmap
 	EnterPic = "$XWINTER0"
 }
 
-map ID_MAP01 "$XHUSTR_1"
+map LR_MAP01 "$XHUSTR_1"
 {
-	Next = "ID_MAP02"
+	Next = "LR_MAP02"
 	TitlePatch = "XWILV00"
 	Sky1 =  "SKYX1"
 	Music = "D_WELCOM"
 	Author = "$WF_AU_VILLARREAL"
 }
 
-map ID_MAP02 "$XHUSTR_2"
+map LR_MAP02 "$XHUSTR_2"
 {
-	Next = "ID_MAP03"
-	SecretNext = "ID_MAP15"
+	Next = "LR_MAP03"
+	SecretNext = "LR_MAP15"
 	TitlePatch = "XWILV01"
 	Sky1 =  "SKYX3"
 	Music = "D_SHORES"
 	Author = "$WF_AU_XASER"
 }
 
-map ID_MAP03 "$XHUSTR_3"
+map LR_MAP03 "$XHUSTR_3"
 {
-	Next = "ID_MAP04"
+	Next = "LR_MAP04"
 	TitlePatch = "XWILV02"
 	Sky1 =  "SKYX3"
 	Music = "D_BILGE"
 	Author = "$WF_AU_CARTER"
 }
 
-map ID_MAP04 "$XHUSTR_4"
+map LR_MAP04 "$XHUSTR_4"
 {
-	Next = "ID_MAP05"
+	Next = "LR_MAP05"
 	TitlePatch = "XWILV03"
 	Sky1 =  "SKYX3"
 	Music = "D_REGARD"
 	Author = "$WF_AU_VILLARREAL"
 }
 
-map ID_MAP05 "$XHUSTR_5"
+map LR_MAP05 "$XHUSTR_5"
 {
-	Next = "ID_MAP06"
+	Next = "LR_MAP06"
 	TitlePatch = "XWILV04"
 	Sky1 =  "SKYZ4"
 	Music = "D_LAUGH"
 	Author = "$WF_AU_VILLARREAL"
 }
 
-map ID_MAP06 "$XHUSTR_6"
+map LR_MAP06 "$XHUSTR_6"
 {
-	Next = "ID_MAP07"
+	Next = "LR_MAP07"
 	TitlePatch = "XWILV05"
 	Sky1 =  "SKYX4A"
 	Music = "D_CLOUDY"
 	Author = "$WF_AU_XASER"
 }
 
-map ID_MAP07 "$XHUSTR_7"
+map LR_MAP07 "$XHUSTR_7"
 {
 	Next = EndPic, "XCREDIT"
 	TitlePatch = "XWILV06"
@@ -110,9 +110,9 @@ map ID_MAP07 "$XHUSTR_7"
 
 // Episode 1 secret map
 
-map ID_MAP15 "$XHUSTR_8"
+map LR_MAP15 "$XHUSTR_8"
 {
-	Next = "ID_MAP03"
+	Next = "LR_MAP03"
 	TitlePatch = "XWILV07"
 	Sky1 =  "SKYX3"
 	Music = "D_OPENIN"
@@ -128,55 +128,55 @@ adddefaultmap
 	EnterPic = "$XWINTER1"
 }
 
-map ID_MAP08 "$XHUSTR_9"
+map LR_MAP08 "$XHUSTR_9"
 {
-	Next = "ID_MAP09"
+	Next = "LR_MAP09"
 	TitlePatch = "XWILV10"
 	Sky1 =  "SKYX2"
 	Music = "D_BONK"
 	Author = "$WF_AU_WATSON_XASER"
 }
 
-map ID_MAP09 "$XHUSTR_10"
+map LR_MAP09 "$XHUSTR_10"
 {
-	Next = "ID_MAP10"
+	Next = "LR_MAP10"
 	TitlePatch = "XWILV11"
 	Sky1 =  "SKYX2"
 	Music = "D_DRIVER"
 	Author = "$WF_AU_VILLARREAL"
 }
 
-map ID_MAP10 "$XHUSTR_11"
+map LR_MAP10 "$XHUSTR_11"
 {
-	Next = "ID_MAP11"
-	SecretNext = "ID_MAP16"
+	Next = "LR_MAP11"
+	SecretNext = "LR_MAP16"
 	TitlePatch = "XWILV12"
 	Sky1 =  "SKYX2"
 	Music = "D_WIZARD"
 	Author = "$WF_AU_WATSON"
 }
 
-map ID_MAP11 "$XHUSTR_12"
+map LR_MAP11 "$XHUSTR_12"
 {
-	Next = "ID_MAP12"
+	Next = "LR_MAP12"
 	TitlePatch = "XWILV13"
 	Sky1 =  "SKYX2"
 	Music = "D_DEJAVU"
 	Author = "$WF_AU_VILLARREAL"
 }
 
-map ID_MAP12 "$XHUSTR_13"
+map LR_MAP12 "$XHUSTR_13"
 {
-	Next = "ID_MAP13"
+	Next = "LR_MAP13"
 	TitlePatch = "XWILV14"
 	Sky1 =  "SKYX4A"
 	Music = "D_DISGUS"
 	Author = "$WF_AU_VILLARREAL"
 }
 
-map ID_MAP13 "$XHUSTR_14"
+map LR_MAP13 "$XHUSTR_14"
 {
-	Next = "ID_MAP14"
+	Next = "LR_MAP14"
 	TitlePatch = "XWILV15"
 	Sky1 =  "SKYX4A"
 	Music = "D_VESPER"
@@ -184,7 +184,7 @@ map ID_MAP13 "$XHUSTR_14"
 	Author = "$WF_AU_DUNLOP"
 }
 
-map ID_MAP14 "$XHUSTR_15"
+map LR_MAP14 "$XHUSTR_15"
 {
 	Next = EndGame
 	{
@@ -202,9 +202,9 @@ map ID_MAP14 "$XHUSTR_15"
 
 // Episode 2 secret map
 
-map ID_MAP16 "$XHUSTR_16"
+map LR_MAP16 "$XHUSTR_16"
 {
-	Next = "ID_MAP11"
+	Next = "LR_MAP11"
 	TitlePatch = "XWILV17"
 	Sky1 =  "SKYX2"
 	Music = "D_HELFOR"

@@ -196,7 +196,7 @@ WAD_MAP_PREFIXES = {
     'masterlevels': 'ML_',
     'sigil': '',
     'sigil2': '',
-    'id1': 'ID_',
+    'id1': 'LR_',
     'iddm1': 'DM_'
 }
 
