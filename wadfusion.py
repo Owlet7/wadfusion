@@ -69,8 +69,7 @@ DEST_FILENAME_OGG = 'hulshult_ogg.pk3'
 LOG_FILENAME = 'wadfusion.log'
 RES_DIR = 'res/'
 DATA_TABLES_FILE = 'wadfusion_data.py'
-ML_ORDER_FILENAME = 'masterlevels_order_xaser.txt'
-ML_MAPINFO_FILENAME = DEST_DIR + 'mapinfo/master_levels.txt'
+DEST_DIR_MUS = DEST_DIR + 'music/'
 DEST_DIR_OGG_MUS = DEST_DIR_OGG + 'music/'
 
 # forward-declare all the stuff in DATA_TABLES_FILE for clarity
@@ -84,13 +83,8 @@ DOOM2_LUMPS = []
 WAD_LUMP_LISTS = {}
 WAD_MAP_PREFIXES = {}
 MAP_NAME_GRAPHICS_DIRS = []
+MASTER_LEVELS_ORDER = []
 MASTER_LEVELS_PATCHES = {}
-MASTER_LEVELS_SKIES = {}
-MASTER_LEVELS_MUSIC = {}
-MASTER_LEVELS_MAP07_SPECIAL = []
-MASTER_LEVELS_AUTHOR_PREFIX = ''
-MASTER_LEVELS_AUTHORS = {}
-MASTER_LEVELS_MAPINFO_HEADER = []
 SIGIL_ALT_FILENAMES = []
 SIGIL2_ALT_FILENAMES = []
 SIGIL2_MP3_ALT_FILENAMES = []
@@ -125,103 +119,33 @@ def get_wad_filename(wad_name):
             return SRC_WAD_DIR + filename
     return None
 
-def get_master_levels_map_order():
-    order = []
-    if len(sys.argv) > 1:
-        order_file = ' '.join(sys.argv[1:])
-        if not os.path.exists(order_file):
-            order_file = ML_ORDER_FILENAME
-    else:
-        order_file = ML_ORDER_FILENAME
-    if not os.path.exists(order_file):
-        return order_file, []
-    logg('Using Master Levels ordering from %s' % order_file)
-    for line in open(order_file).readlines():
-        line = line.strip().lower()
-        if line.startswith('//') or line == '':
-            continue
-        if not line in MASTER_LEVELS_MUSIC:
-            logg('ERROR: Unrecognized Master Level %s' % line, error=True)
-            continue
-        order.append(line)
-    return order_file, order
-
-def get_ml_mapinfo(wad_name, map_number):
-    lines = []
-    prefix = MASTER_LEVELS_MAP_PREFIX.upper()
-    mapnum = str(map_number).rjust(2, '0')
-    picnum = str(map_number - 1).rjust(2, '0')
-    nextnum = str(map_number + 1).rjust(2, '0')
-    lines.append('map %sMAP%s lookup "%s%s"' % (prefix, mapnum, prefix, wad_name.upper()))
-    lines.append('{')
-    next_map = '%sMAP%s' % (prefix, nextnum) if map_number < 20 else 'EndGameC'
-    sky = MASTER_LEVELS_SKIES.get(wad_name, None) or 'RSKY1'
-    music = MASTER_LEVELS_MUSIC[wad_name]
-    author_lc = '%s_%s' % (MASTER_LEVELS_AUTHOR_PREFIX, MASTER_LEVELS_AUTHORS[wad_name])
-    lines.append('    next = "%s"' % next_map)
-    if wad_name == 'teeth':
-        lines.append('    secretnext = "ML_MAP21"')
-    lines.append('    sky1 = "%s"' % sky)
-    lines.append('    music = "$MUSIC_%s"' % music)
-    # (cluster # is defined in MASTER_LEVELS_MAPINFO_HEADER)
-    lines.append('    Author = "$%s"' % author_lc)
-    if wad_name in MASTER_LEVELS_MAP07_SPECIAL:
-        lines.append('    map07special')
-    # don't reset player for secret level
-    if map_number != 21:
-        lines.append('    ResetHealth')
-        lines.append('    ResetInventory')
-    lines.append('}')
-    return lines
-
 def extract_master_levels():
     # check if present first
-    order_file, ml_map_order = get_master_levels_map_order()
-    if len(ml_map_order) == 0:
-        return
-    first_ml_wad = get_wad_filename(ml_map_order[0])
-    if not first_ml_wad:
-        logg('ERROR: Master Levels not found.', error=True)
-        copyfile(RES_DIR + 'mapinfo/master_levels.txt', DEST_DIR + 'mapinfo/master_levels.txt')
-        return
-    logg('Processing Master Levels...')
-    mapinfo = open(ML_MAPINFO_FILENAME, 'w')
-    mapinfo.write(MASTER_LEVELS_MAPINFO_HEADER % order_file)
-    for i,wad_name in enumerate(ml_map_order):
+    for i,wad_name in enumerate(MASTER_LEVELS_ORDER):
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         if not wad_filename:
-            logg("ERROR: Couldn't find %s" % wad_name, error=True)
-            continue
+            logg("  ERROR: Skipping Master Levels as %s is not present" % wad_name, error=True)
+            return
+    logg('Processing Master Levels...')
+    for i,wad_name in enumerate(MASTER_LEVELS_ORDER):
+        in_wad = omg.WAD()
+        wad_filename = get_wad_filename(wad_name)
         in_wad.from_file(wad_filename)
-        out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'map'
+        out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'MAP'
         # extra zero for <10 map numbers, eg map01
         out_wad_filename += str(i + 1).rjust(2, '0') + '.wad'
         logg('  Extracting %s to %s' % (wad_filename, out_wad_filename))
         # grab first map we find in each wad
         map_name = in_wad.maps.find('*')[0]
         extract_map(in_wad, map_name, out_wad_filename)
-        # write data to mapinfo based on ordering
-        mapinfo.writelines('\n'.join(get_ml_mapinfo(wad_name, i+1)))
-        mapinfo.write('\n\n')
     # save teeth map32 to map21
     wad_filename = get_wad_filename('teeth')
-    out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'map21' + '.wad'
+    out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'MAP21' + '.wad'
     logg('  Extracting %s map32 to %s' % (wad_filename, out_wad_filename))
     in_wad = omg.WAD()
     in_wad.from_file(wad_filename)
     extract_map(in_wad, in_wad.maps.find('*')[1], out_wad_filename)
-    # write map21 mapinfo
-    if ml_map_order.index('teeth') == 19:
-        next_map = 'EndGameC'
-    else:
-        next_map = '%sMAP%s' % (MASTER_LEVELS_MAP_PREFIX.upper(),
-                                ml_map_order.index('teeth') + 2)
-    mapinfo.write(MASTER_LEVELS_SECRET_DEF % (next_map, MASTER_LEVELS_MUSIC['teeth2'],
-                                              MASTER_LEVELS_AUTHOR_PREFIX, MASTER_LEVELS_AUTHORS['teeth2']))
-    # finish mapinfo
-    mapinfo.writelines([MASTER_LEVELS_CLUSTER_DEF])
-    mapinfo.close()
     # extract sky lumps
     for wad_name,patch_replace in MASTER_LEVELS_PATCHES.items():
         wad = omg.WAD()
@@ -238,11 +162,17 @@ def extract_master_levels():
                                                    patch_replace[1]))
         lump.to_file(out_filename)
 
+def copy_master_levels_doom1_music():
+    copyfile(DEST_DIR_MUS + 'D_RUNNIN.mus', DEST_DIR_MUS + 'D_E2M2.mus')
+    copyfile(DEST_DIR_MUS + 'D_RUNNIN.mus', DEST_DIR_MUS + 'D_E1M6.mus')
+    copyfile(DEST_DIR_MUS + 'D_RUNNIN.mus', DEST_DIR_MUS + 'D_E3M3.mus')
+    copyfile(DEST_DIR_MUS + 'D_RUNNIN.mus', DEST_DIR_MUS + 'D_E1M7.mus')
+
 def move_ogg():
     # move Andrew Hulshult's tracks to separate dest dir and remove .mus file extension from .ogg music
-    for filename in os.listdir(DEST_DIR + 'music/'):
+    for filename in os.listdir(DEST_DIR_MUS):
         if fnmatch.fnmatch(filename, '*.ogg.mus'):
-            os.replace(DEST_DIR + 'music/' + filename, DEST_DIR_OGG_MUS + filename)
+            os.replace(DEST_DIR_MUS + filename, DEST_DIR_OGG_MUS + filename)
             old_name = os.path.join(DEST_DIR_OGG_MUS, filename)
             new_name = old_name.replace('.ogg.mus', '.ogg')
             os.rename(old_name, new_name)
@@ -272,8 +202,8 @@ def move_ogg():
 
 def rename_mp3():
     # remove .mus file extension from Sigil's .mp3 music if it's present
-    for filename in os.listdir(DEST_DIR + 'music/'):
-        old_name = os.path.join(DEST_DIR + 'music/', filename)
+    for filename in os.listdir(DEST_DIR_MUS):
+        old_name = os.path.join(DEST_DIR_MUS, filename)
         new_name = old_name.replace('.mp3.mus', '.mp3')
         os.rename(old_name, new_name)
 
@@ -314,10 +244,10 @@ def add_secret_level(map_src_filename, map_src_name, map_dest_name):
 def add_xbox_levels():
     # :P
     logg('Adding Xbox bonus levels...')
-    if get_wad_filename('doom'):
+    if get_wad_filename('doom') and get_wad_filename('sewers'):
         logg('  Adding SEWERS.WAD as E1M10')
         add_secret_level('sewers', 'E3M1', 'E1M10')
-    if get_wad_filename('doom2'):
+    if get_wad_filename('doom2') and get_wad_filename('betray'):
         logg('  Adding BETRAY.WAD as MAP33')
         add_secret_level('betray', 'MAP01', 'MAP33')
 
@@ -359,7 +289,7 @@ def extract_lumps(wad_name):
         try:
             lump_type = lump_list[:lump_list.index('_')]
         except ValueError:
-            logg("ERROR: Couldn't identify type of lump list %s" % lump_list, error=True)
+            logg("  ERROR: Couldn't identify type of lump list %s" % lump_list, error=True)
             continue
         # sigil sky lump isn't in patch namespace
         if lump_list == 'patches_sigil':
@@ -427,22 +357,6 @@ def copy_resources():
             continue
         logg('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
-#    # doom2 vs doom2bfg map31/32 names differ, different mapinfos with same name
-#    d2wad = omg.WAD()
-#    d2_wad_filename = get_wad_filename('doom2')
-#    # neither doom2: mapinfo still wants a file for the secret levels
-#    if not d2_wad_filename:
-#        copyfile(RES_DIR + 'mapinfo/doom2_nonbfg_levels.txt',
-#                 DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
-#        return
-#    d2wad.from_file(d2_wad_filename)
-#    # bfg version?
-#    if d2wad.graphics.get(BFG_ONLY_LUMP, None):
-#        copyfile(RES_DIR + 'mapinfo/doom2_bfg_levels.txt',
-#                 DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
-#    else:
-#        copyfile(RES_DIR + 'mapinfo/doom2_nonbfg_levels.txt',
-#                 DEST_DIR + 'mapinfo/doom2_secret_levels.txt')
 
 def copy_resources_id1():
     # copy id1 scripts if id1 is present
@@ -561,7 +475,7 @@ def get_eps(wads_found):
             eps += ['Knee Deep in the Dead', 'The Shores of Hell', 'Inferno', 'Thy Flesh Consumed']
         elif wadname == 'doom2':
             eps += ['Hell on Earth']
-        elif wadname == 'attack' and 'doom2' in wads_found:
+        elif (wadname == 'attack' or wadname == 'masterlevels') and 'doom2' in wads_found:
             eps += ['Master Levels']
         elif wadname == 'nerve' and 'doom2' in wads_found:
             eps += ['No Rest for the Living']
@@ -681,32 +595,41 @@ def main():
         if not wad_filename:
             logg('WAD %s not found' % iwad_name)
             continue
+        if iwad_name == 'masterlevels' and not get_wad_filename('doom2'):
+            logg('  ERROR: Skipping masterlevels.wad as doom2.wad is not present', error=True)
+            continue
         if iwad_name == 'nerve' and not get_wad_filename('doom2'):
-            logg('Skipping nerve.wad as doom2.wad is not present', error=True)
+            logg('  ERROR: Skipping nerve.wad as doom2.wad is not present', error=True)
             continue
         if iwad_name == 'sigil' and not get_wad_filename('doom'):
-            logg('Skipping sigil.wad as doom.wad is not present', error=True)
+            logg('  ERROR: Skipping sigil.wad as doom.wad is not present', error=True)
             continue
         if iwad_name == 'sigil_shreds' and not get_wad_filename('sigil'):
-            logg('Skipping sigil_shreds.wad as sigil.wad is not present', error=True)
+            logg('  ERROR: Skipping sigil_shreds.wad as sigil.wad is not present', error=True)
+            continue
+        if iwad_name == 'sigil_shreds' and not get_wad_filename('doom'):
+            logg('  ERROR: Skipping sigil_shreds.wad as doom.wad is not present', error=True)
             continue
         if iwad_name == 'sigil2' and not get_wad_filename('doom'):
-            logg('Skipping sigil2.wad as doom.wad is not present', error=True)
+            logg('  ERROR: Skipping sigil2.wad as doom.wad is not present', error=True)
             continue
         if iwad_name == 'sigil2_mp3' and not get_wad_filename('sigil2'):
-            logg('Skipping sigil2_mp3.wad as sigil2.wad is not present', error=True)
+            logg('  ERROR: Skipping sigil2_mp3.wad as sigil2.wad is not present', error=True)
+            continue
+        if iwad_name == 'sigil2_mp3' and not get_wad_filename('doom'):
+            logg('  ERROR: Skipping sigil2_mp3.wad as doom.wad is not present', error=True)
             continue
         if iwad_name == 'id1' and not get_wad_filename('doom2'):
-            logg('Skipping id1.wad as doom2.wad is not present', error=True)
+            logg('  ERROR: Skipping id1.wad as doom2.wad is not present', error=True)
             continue
         if iwad_name == 'id1' and not get_wad_filename('id1-res'):
-            logg('Skipping id1.wad as id1-res.wad is not present', error=True)
+            logg('  ERROR: Skipping id1.wad as id1-res.wad is not present', error=True)
             continue
         if iwad_name == 'id1' and not get_wad_filename('id24res'):
-            logg('Skipping id1.wad as id24res.wad is not present', error=True)
+            logg('  ERROR: Skipping id1.wad as id24res.wad is not present', error=True)
             continue
         if iwad_name == 'iddm1'and not get_wad_filename('doom2'):
-            logg('Skipping iddm1.wad as doom2.wad is not present', error=True)
+            logg('  ERROR: Skipping iddm1.wad as doom2.wad is not present', error=True)
             continue
         logg('Processing WAD %s...' % iwad_name)
         if should_extract:
@@ -715,12 +638,13 @@ def main():
             # check None, not empty string!
             if prefix is not None:
                 extract_iwad_maps(iwad_name, prefix)
-    if get_wad_filename('doom2'):
+    if get_wad_filename('attack') and get_wad_filename('doom2') and not get_wad_filename('masterlevels'):
         if should_extract:
             extract_master_levels()
-    else:
-        logg('Skipping Master Levels as doom2.wad is not present', error=True)
-        copyfile(RES_DIR + 'mapinfo/master_levels.txt', DEST_DIR + 'mapinfo/master_levels.txt')
+    elif get_wad_filename('attack') and not get_wad_filename('doom2'):
+        logg('  ERROR: Skipping Master Levels as doom2.wad is not present', error=True)
+    if (get_wad_filename('attack') or get_wad_filename('masterlevels')) and not get_wad_filename('doom') and should_extract:
+        copy_master_levels_doom1_music()
     # copy pre-authored lumps eg mapinfo
     if should_extract:
         copy_resources()
@@ -739,7 +663,7 @@ def main():
     if get_wad_filename('sigil2_mp3') and get_wad_filename('sigil2') and should_extract:
         enable_sigil2_shreds()
     # only supported versions of these @ http://classicdoom.com/xboxspec.htm
-    if get_wad_filename('sewers') and get_wad_filename('betray') and should_extract:
+    if (get_wad_filename('sewers') or get_wad_filename('betray')) and should_extract:
         add_xbox_levels()
         enable_xbox_levels()
     # copy custom GENMIDI, if user hasn't deleted it

@@ -2,7 +2,7 @@
 
 defaultmap
 {
-	Cluster = 26
+	Cluster = 27
 	Sky1 = "SKY6"
 	SuckTime = 1
 	// to allow switching between the midi and mp3 soundtracks,
@@ -96,7 +96,7 @@ map E6M9 "$HUSTR_E6M9"
 
 // Sigil 2 cluster
 
-cluster 26
+cluster 27
 {
 	Flat = "FLOOR7_2"
 	Music = "$MUSIC_VICTOR"

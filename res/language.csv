@@ -197,7 +197,7 @@ ML_BLACKTWR,,,Black Tower,,,,,,,,,,,,,,,,,,,,,Черная Башня,,,,,
 ML_TEETH,,,The Express Elevator To Hell,,,,,,,,,,,,,,,,,,,,,Экспресс-лифт в Ад,,,,,
 ML_TEETH_SECRET,,,Bad Dream,,,,,,,,,,,,,,,,,,,,,Плохой сон,,,,,
 ,master levels victory text (from PSX doom),,,,,,,,,,,,,,,,,,,,,,,,,,,,
-M1TEXT,,,"You have assaulted and triumphed over the
+MLEND,,,"You have assaulted and triumphed over the
 most vicious realms that the demented minds
 of our designers could devise.
 
@@ -215,6 +215,24 @@ You have earned the title of
 дань уважения вашему мастерству.
 
 Вы заслужили титул «Мастер разрушения».",,,,,
+,teeth.wad secret level,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MLSECRET,,,"Congratulations, you've found the
+super secret level!",,"Gratulujeme, objevil@[ao_cs] jsi supertajný level!","Tillykke, du har fundet det
+superhemmelige niveau!","Herzlichen Glückwunsch, du hast den
+Super-Geheimlevel gefunden.",,"Gratulon! Vi trovis la super-sekretan
+nivelon!","¡Enorabuena, has encontrado el nivel
+súper secreto!","¡Felicitaciones, has encontrado el nivel
+súper secreto!","Onneksi olkoon; olet löytänyt
+supersalaisen tason!","Félicitations, vous avez trouvé le 
+niveau super secret!","Gratulálunk, megtaláltad a szupertitkos pályát!","Congratulazioni, hai trovato il
+livello super segreto!",おめでとう、君はスーパー隠しステージを発見した!,축하한다. 당신은 특급 비밀 레벨을 찾아냈다!,"Gefeliciteerd, je hebt het super geheime
+niveau gevonden!","Gratulerer, du har funnet det
+superhemmelige nivået!","Gratulacje, znalazłeś super sekretny
+poziom!",Parabéns! Você achou a fase super secreta!,Parabéns! Achaste o nível super secreta!,"Felicitări, ai găsit nivelul super secret!","Поздравляем, вы нашли сверхсекретный
+уровень!","Честитамо, пронашли сте
+супер скривени ниво!","Grattis, du har hittat den superhemliga
+nivån!","Tebrikler, süper gizli seviyeyi
+buldunuz!",,
 ,nerve level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,,
 NHUSTR_1,,,The Earth Base,,Pozemská základna,Jordbasen,Die Erd-Basis,,La Tera Bazo,La Base Terrestre,,Maatukikohta,La Base Terrienne,A földi bázis,La Base Terrestre ,地球基地,지구 기지,De basis van de aarde,Jordbasen,Ziemska Baza,A Base Terrestre,,Baza terestră,База на Земле,Земаљска база,Jordbasen,Dünya Üssü,,
 NHUSTR_2,,,The Pain Labs,,Laboratoře bolesti,Smerte laboratorier,Die Folterlabore,,La Doloro-Laboratorio,Los Laboratorios del Dolor,,Tuskalaboratoriot,Les Laboratoires de la Douleur,A kínok laboratóriuma,I Laboratori del Dolore,生物工学実験室,고통의 연구소,De pijnlaboratoria,Smertelaboratoriet,Laboratoria Bólu,Os Laboratórios da Dor,,Laboratoarele durerii,Лаборатории боли,Лабораторије патње,Smärtlaboratorierna,Ağrı Laboratuvarları,,

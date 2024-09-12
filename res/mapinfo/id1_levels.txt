@@ -39,7 +39,7 @@ map ID_MAP99 "$XHUSTR_99"
 
 adddefaultmap
 {
-	Cluster = 27
+	Cluster = 28
 	ExitPic = "XWIMAP0"
 	EnterPic = "$XWINTER0"
 }
@@ -123,7 +123,7 @@ map ID_MAP15 "$XHUSTR_8"
 
 adddefaultmap
 {
-	Cluster = 28
+	Cluster = 29
 	ExitPic = "XWIMAP1"
 	EnterPic = "$XWINTER1"
 }
@@ -213,7 +213,7 @@ map ID_MAP16 "$XHUSTR_16"
 
 // Episode 1 cluster
 
-cluster 27
+cluster 28
 {
 	ExitText = "$INTERTEXT_ID1_E1"
 	Music = "D_SHORES"
@@ -222,7 +222,7 @@ cluster 27
 
 // Episode 2 cluster
 
-cluster 28
+cluster 29
 {
 	ExitText = "$INTERTEXT_ID1_E2"
 	Music = "D_SHORES"
