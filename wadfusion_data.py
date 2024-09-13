@@ -237,7 +237,7 @@ SIGIL2_ALT_FILENAMES = ['sigil_ii_v1_0']
 # sigil2 version with MP3 music (no sigil_shreds equivalent; MP3 music just an alternate wad)
 SIGIL2_MP3_ALT_FILENAMES = ['sigil_ii_mp3_v1_0']
 
-# lump whose presence distinguishes BFG, Unity, and KEX vs original
-BFG_ONLY_LUMP = 'DMENUPIC'
+# lump whose presence distinguishes original vs Ultimate Doom
+ULTIMATE_DOOM_ONLY_LUMP = 'M_EPI4'
 # lump whose presence distinguishes Unity vs KEX extras.wad
 EXTRAS_KEX_ONLY_LUMP = 'WATERMAP'

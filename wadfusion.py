@@ -88,7 +88,7 @@ MASTER_LEVELS_PATCHES = {}
 SIGIL_ALT_FILENAMES = []
 SIGIL2_ALT_FILENAMES = []
 SIGIL2_MP3_ALT_FILENAMES = []
-BFG_ONLY_LUMP = ''
+ULTIMATE_DOOM_ONLY_LUMP = ''
 EXTRAS_KEX_ONLY_LUMP = ''
 
 logfile = None
@@ -469,10 +469,15 @@ def clear_pk3():
         logg('Removed %s files from a previous run.' % files_tidied)
 
 def get_eps(wads_found):
+    d1_wad = omg.WAD()
+    d1_wad_filename = get_wad_filename('doom')
+    d1_wad.from_file(d1_wad_filename)
     eps = []
     for wadname in wads_found:
         if wadname == 'doom':
-            eps += ['Knee Deep in the Dead', 'The Shores of Hell', 'Inferno', 'Thy Flesh Consumed']
+            eps += ['Knee Deep in the Dead', 'The Shores of Hell', 'Inferno']
+            if d1_wad.graphics.get(ULTIMATE_DOOM_ONLY_LUMP, None):
+                eps += ['Thy Flesh Consumed']
         elif wadname == 'doom2':
             eps += ['Hell on Earth']
         elif (wadname == 'attack' or wadname == 'masterlevels') and 'doom2' in wads_found:
