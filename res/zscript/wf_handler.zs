@@ -93,7 +93,7 @@ class WadFusionHandler : EventHandler
 			// replace doom1 textures that are different from doom2
 			Level.ReplaceTextures("BRNPOIS", "BRNPOIS1", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("NUKEPOIS", "NUKPOIS1", TexMan.NOT_FLAT);
-			Level.ReplaceTextures("BIGDOOR7", "BIGDOORA", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("BIGDOOR7", "BIGDOR7A", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SHAWN1", "SHAWN1A", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("STEP1", "STEP1A", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("STEP2", "STEP2A", TexMan.NOT_FLAT);
@@ -115,7 +115,7 @@ class WadFusionHandler : EventHandler
 		// detect id1 or iddm1 style map name
 		String mapPrefix = level.MapName.Left(3);
 		mapPrefix = mapPrefix.MakeLower();
-		if ( mapPrefix == "id_" || mapPrefix == "dm_" )
+		if ( mapPrefix == "lr_" || mapPrefix == "dm_" )
 		{
 			// replace id1 textures that are different from doom2
 			Level.ReplaceTextures("BLOOD1", "XBLOOD1", TexMan.NOT_WALL);

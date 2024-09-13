@@ -450,7 +450,7 @@ Texture "NUKPOIS1", 64, 128
 
 // renamed from BIGDOOR7
 // patches originally had -4 y offset, didn't look right for some reason
-Texture "BIGDOORA", 128, 128
+Texture "BIGDOR7A", 128, 128
 {
 	Patch "W105_1", -4, 0
 	Patch "W105_1", 124, 0
