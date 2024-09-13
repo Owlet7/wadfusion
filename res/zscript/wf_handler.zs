@@ -56,31 +56,31 @@ class WadFusionHandler : EventHandler
 		mapPrefix = mapPrefix.MakeLower();
 		if ( mapPrefix == "tn_" )
 		{
-			Level.ReplaceTextures("SKY1", "TSKY1", 0);			// different from doom1
-			Level.ReplaceTextures("SKY2", "TSKY2", 0);			// different from doom1
-			Level.ReplaceTextures("SKY3", "TSKY3", 0);			// different from doom1
-			Level.ReplaceTextures("SW1GSTON", "SW1GSTNT", 0);	// different from doom2
-			Level.ReplaceTextures("SW2GSTON", "SW2GSTNT", 0);	// different from doom2
-			Level.ReplaceTextures("SW1SKULL", "SW1SKULT", 0);	// different from doom2
-			Level.ReplaceTextures("SW2SKULL", "SW2SKULT", 0);	// different from doom2
-			Level.ReplaceTextures("SLADRIP1", "SLADRPT1", 0);	// different from doom1
-			Level.ReplaceTextures("SLADRIP3", "SLADRPT3", 0);	// different from doom1
-			Level.ReplaceTextures("BLODGR1", "BLODGRT1", 0);	// different from doom1
-			Level.ReplaceTextures("BLODGR4", "BLODGRT4", 0);	// different from doom1
-			Level.ReplaceTextures("WFALL1", "TWFALL1", 0);		// different from plutonia
-			Level.ReplaceTextures("WFALL4", "TWFALL4", 0);		// different from plutonia
+			Level.ReplaceTextures("SKY1", "TSKY1", TexMan.NOT_FLAT);		// different from doom1
+			Level.ReplaceTextures("SKY2", "TSKY2", TexMan.NOT_FLAT);		// different from doom1
+			Level.ReplaceTextures("SKY3", "TSKY3", TexMan.NOT_FLAT);		// different from doom1
+			Level.ReplaceTextures("SW1GSTON", "SW1GSTNT", TexMan.NOT_FLAT);	// different from doom2
+			Level.ReplaceTextures("SW2GSTON", "SW2GSTNT", TexMan.NOT_FLAT);	// different from doom2
+			Level.ReplaceTextures("SW1SKULL", "SW1SKULT", TexMan.NOT_FLAT);	// different from doom2
+			Level.ReplaceTextures("SW2SKULL", "SW2SKULT", TexMan.NOT_FLAT);	// different from doom2
+			Level.ReplaceTextures("SLADRIP1", "SLADRPT1", TexMan.NOT_FLAT);	// different from doom1
+			Level.ReplaceTextures("SLADRIP3", "SLADRPT3", TexMan.NOT_FLAT);	// different from doom1
+			Level.ReplaceTextures("BLODGR1", "BLODGRT1", TexMan.NOT_FLAT);	// different from doom1
+			Level.ReplaceTextures("BLODGR4", "BLODGRT4", TexMan.NOT_FLAT);	// different from doom1
+			Level.ReplaceTextures("WFALL1", "TWFALL1", TexMan.NOT_FLAT);	// different from plutonia
+			Level.ReplaceTextures("WFALL4", "TWFALL4", TexMan.NOT_FLAT);	// different from plutonia
 		}
 		else if ( mapPrefix == "pl_" )
 		{
-			Level.ReplaceTextures("DBRAIN1", "PBRAIN1", 0);		// different from doom2
-			Level.ReplaceTextures("DBRAIN4", "PBRAIN4", 0);		// different from doom2
-			Level.ReplaceTextures("FIREBLU1", "FIREPLU1", 0);	// different from doom2
-			Level.ReplaceTextures("FIREBLU2", "FIREPLU2", 0);	// different from doom2
-			Level.ReplaceTextures("SKY1", "PSKY1", 0);			// different from doom1
-			Level.ReplaceTextures("SKY2", "PSKY2", 0);			// different from doom1
-			Level.ReplaceTextures("SKY3", "PSKY3", 0);			// different from doom1
-			Level.ReplaceTextures("SW1SKULL", "SW1SKULP", 0);	// different from doom2
-			Level.ReplaceTextures("SW2SKULL", "SW2SKULP", 0);	// different from doom2
+			Level.ReplaceTextures("DBRAIN1", "PBRAIN1", TexMan.NOT_FLAT);	// different from doom2
+			Level.ReplaceTextures("DBRAIN4", "PBRAIN4", TexMan.NOT_FLAT);	// different from doom2
+			Level.ReplaceTextures("FIREBLU1", "FIREPLU1", TexMan.NOT_FLAT);	// different from doom2
+			Level.ReplaceTextures("FIREBLU2", "FIREPLU2", TexMan.NOT_FLAT);	// different from doom2
+			Level.ReplaceTextures("SKY1", "PSKY1", TexMan.NOT_FLAT);		// different from doom1
+			Level.ReplaceTextures("SKY2", "PSKY2", TexMan.NOT_FLAT);		// different from doom1
+			Level.ReplaceTextures("SKY3", "PSKY3", TexMan.NOT_FLAT);		// different from doom1
+			Level.ReplaceTextures("SW1SKULL", "SW1SKULP", TexMan.NOT_FLAT);	// different from doom2
+			Level.ReplaceTextures("SW2SKULL", "SW2SKULP", TexMan.NOT_FLAT);	// different from doom2
 		}
 	}
 	
@@ -91,22 +91,22 @@ class WadFusionHandler : EventHandler
 		if ( mapName.Left(1) == "e" && mapName.Mid(2, 1) == "m" )
 		{
 			// replace doom1 textures that are different from doom2
-			Level.ReplaceTextures("BRNPOIS", "BRNPOIS1", 0);
-			Level.ReplaceTextures("NUKEPOIS", "NUKPOIS1", 0);
-			Level.ReplaceTextures("BIGDOOR7", "BIGDOORA", 0);
-			Level.ReplaceTextures("SHAWN1", "SHAWN1A", 0);
-			Level.ReplaceTextures("STEP1", "STEP1A", 0);
-			Level.ReplaceTextures("STEP2", "STEP2A", 0);
-			Level.ReplaceTextures("STEP3", "STEP3A", 0);
-			Level.ReplaceTextures("STEP5", "STEP5A", 0);
-			Level.ReplaceTextures("SW1BRN1", "SW1BRN1A", 0);
-			Level.ReplaceTextures("SW1STARG", "SW1STARA", 0);
-			Level.ReplaceTextures("SW1STONE", "SW1STONA", 0);
-			Level.ReplaceTextures("SW1STON2", "SW1STONB", 0);
-			Level.ReplaceTextures("SW2BRN1", "SW2BRN1A", 0);
-			Level.ReplaceTextures("SW2STARG", "SW2STARA", 0);
-			Level.ReplaceTextures("SW2STONE", "SW2STONA", 0);
-			Level.ReplaceTextures("SW2STON2", "SW2STONB", 0);
+			Level.ReplaceTextures("BRNPOIS", "BRNPOIS1", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("NUKEPOIS", "NUKPOIS1", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("BIGDOOR7", "BIGDOORA", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SHAWN1", "SHAWN1A", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("STEP1", "STEP1A", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("STEP2", "STEP2A", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("STEP3", "STEP3A", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("STEP5", "STEP5A", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW1BRN1", "SW1BRN1A", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW1STARG", "SW1STARA", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW1STONE", "SW1STONA", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW1STON2", "SW1STONB", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW2BRN1", "SW2BRN1A", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW2STARG", "SW2STARA", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW2STONE", "SW2STONA", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW2STON2", "SW2STONB", TexMan.NOT_FLAT);
 		}
 	}
 	
@@ -118,20 +118,20 @@ class WadFusionHandler : EventHandler
 		if ( mapPrefix == "id_" || mapPrefix == "dm_" )
 		{
 			// replace id1 textures that are different from doom2
-			Level.ReplaceTextures("BLOOD1", "XBLOOD1", 0);
-			Level.ReplaceTextures("NUKAGE1", "XNUKAGE1", 0);
-			Level.ReplaceTextures("BRNPOIS2", "BRNPOIS3", 0);
-			Level.ReplaceTextures("DOORSTOP", "DOORSTP1", 0);
-			Level.ReplaceTextures("LITERED2", "LITERED6", 0);
-			Level.ReplaceTextures("WFALL1", "XWFALL1", 0);
-			Level.ReplaceTextures("SW1BRN1", "SW1BRN1A", 0);
-			Level.ReplaceTextures("SW1STARG", "SW1STARA", 0);
-			Level.ReplaceTextures("SW1STONE", "SW1STONA", 0);
-			Level.ReplaceTextures("SW1STON2", "SW1STONB", 0);
-			Level.ReplaceTextures("SW2BRN1", "SW2BRN1A", 0);
-			Level.ReplaceTextures("SW2STARG", "SW2STARA", 0);
-			Level.ReplaceTextures("SW2STONE", "SW2STONA", 0);
-			Level.ReplaceTextures("SW2STON2", "SW2STONB", 0);
+			Level.ReplaceTextures("BLOOD1", "XBLOOD1", TexMan.NOT_WALL);
+			Level.ReplaceTextures("NUKAGE1", "XNUKAGE1", TexMan.NOT_WALL);
+			Level.ReplaceTextures("BRNPOIS2", "BRNPOIS3", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("DOORSTOP", "DOORSTP1", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("LITERED2", "LITERED6", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("WFALL1", "XWFALL1", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW1BRN1", "SW1BRN1A", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW1STARG", "SW1STARA", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW1STONE", "SW1STONA", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW1STON2", "SW1STONB", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW2BRN1", "SW2BRN1A", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW2STARG", "SW2STARA", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW2STONE", "SW2STONA", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW2STON2", "SW2STONB", TexMan.NOT_FLAT);
 		}
 	}
 	
