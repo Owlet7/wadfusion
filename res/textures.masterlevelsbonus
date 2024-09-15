@@ -1,0 +1,319 @@
+
+// ANOMALY.WAD, FARSIDE.WAD, and TROUBLE.WAD
+Texture BLACK, 64, 128
+{
+	Patch BLACK, 0, 0
+}
+
+Texture FIRELV, 64, 128
+{
+	Patch FIRELV, 0, 0
+}
+
+// ANOMALY.WAD and TROUBLE.WAD
+// renamed from SKY1 to avoid Doom 1 conflict
+Texture MSKY5, 1024, 128
+{
+	Patch STARS1, 768, 0
+	Patch STARS, 512, 0
+	Patch STARSAT, 256, 0
+	Patch STARS, 0, 0
+}
+
+// renamed from SW1STON2 and SW1STON1 to avoid Doom 2 conflict
+Texture SW1STONC, 64, 128
+{
+	Patch FIRELV, 0, 0
+	Patch SW1S0, 16, 78
+}
+
+// renamed from SW2STON2 and SW2STON1 to avoid Doom 2 conflict
+Texture SW2STONC, 64, 128
+{
+	Patch FIRELV, 0, 0
+	Patch SW1S1, 16, 78
+}
+
+// MINES.WAD
+Texture DBRAIN5, 64, 16
+{
+	Patch WF5, 0, 0
+}
+
+Texture DBRAIN6, 64, 16
+{
+	Patch WF4, 0, 0
+}
+
+Texture DBRAIN7, 64, 16
+{
+	Patch WF3, 0, 0
+}
+
+Texture DBRAIN8, 64, 16
+{
+	Patch WF2, 0, 0
+}
+
+Texture WATER, 64, 128
+{
+	Patch TWF, 0, 0
+}
+
+// renamed from DBRAIN1 to avoid Doom 2 conflict
+Texture MBRAIN1, 64, 16
+{
+	Patch WF8, 0, 0
+}
+
+// renamed from DBRAIN2 to avoid Doom 2 conflict
+Texture MBRAIN2, 64, 16
+{
+	Patch WF7, 0, 0
+}
+
+// renamed from DBRAIN3 to avoid Doom 2 conflict
+Texture MBRAIN3, 64, 16
+{
+	Patch WF6, 0, 0
+}
+
+// renamed from DBRAIN4 to avoid Doom 2 conflict
+Texture MBRAIN4, 64, 16
+{
+	Patch WF1, 0, 0
+}
+
+// renamed from SKY1 to avoid Doom 1 conflict
+Texture MSKY4, 1024, 128
+{
+	Patch STARS, 768, 0
+	Patch STARS1, 512, 0
+	Patch STARS, 256, 0
+	Patch STARSAT, 0, 0
+}
+
+// renamed from SW1COMP to avoid Doom 2 conflict
+Texture SW1COMPM, 64, 128
+{
+	Patch W13_1, 0, 0
+	Patch SW1S0, -1, 18
+}
+
+// renamed from SW2COMP to avoid Doom 2 conflict
+Texture SW2COMPM, 64, 128
+{
+	Patch W13_1, 0, 0
+	Patch SW1S1, -1, 18
+}
+
+// renamed from SW1STON1 to avoid Doom 2 conflict
+Texture SW1STOND, 64, 128
+{
+	Patch W104_1, 0, 0
+	Patch SW1S0, 16, 78
+}
+
+// renamed from SW2STON1 to avoid Doom 2 conflict
+Texture SW2STOND, 64, 128
+{
+	Patch W104_1, 0, 0
+	Patch SW1S1, 16, 78
+}
+
+// renamed from SW1STON2 to avoid Doom 2 conflict
+Texture SW1STONF, 64, 128
+{
+	Patch W15_4, 0, 56
+	Patch W15_5, 64, 56
+	Patch W15_4, 0, 0
+	Patch W15_5, 64, 0
+	Patch SW1S0, 16, 78
+}
+
+// renamed from SW2STON2 to avoid Doom 2 conflict
+Texture SW2STONF, 64, 128
+{
+	Patch W15_4, 0, 56
+	Patch W15_5, 64, 56
+	Patch W15_4, 0, 0
+	Patch W15_5, 64, 0
+	Patch SW1S1, 16, 78
+}
+
+// ANOMALY.WAD
+Texture PIC1, 256, 128
+{
+	Patch S_DOOM09, 0, 0
+}
+
+Texture PIC2, 256, 128
+{
+	Patch S_DOOM10, 0, 0
+}
+
+Texture PIC3, 256, 128
+{
+	Patch S_DOOM11, 0, 0
+}
+
+Texture PIC4, 256, 128
+{
+	Patch S_DOOM12, 0, 0
+}
+
+Texture PIC5, 256, 128
+{
+	Patch S_DOOM13, 0, 0
+}
+
+Texture PIC6, 256, 128
+{
+	Patch S_DOOM14, 0, 0
+}
+
+Texture PIC7, 256, 128
+{
+	Patch S_DOOM15, 0, 0
+}
+
+Texture PIC8, 256, 128
+{
+	Patch S_DOOM16, 0, 0
+}
+
+// FARSIDE.WAD
+// renamed from SKY1 to avoid Doom 1 conflict
+Texture MSKY6, 256, 128
+{
+	Patch STARS, 0, 0
+}
+
+// renamed from SW1BRIK to avoid Doom 2 conflict
+Texture SW1BRIKM, 64, 128
+{
+	Patch RW23_3, 0, 0
+	Patch SW1S0, 16, 72
+}
+
+// renamed from SW2BRIK to avoid Doom 2 conflict
+Texture SW2BRIKM, 64, 128
+{
+	Patch RW23_3, 0, 0
+	Patch SW1S1, 16, 72
+}
+
+// renamed from SW1STON2 to avoid Doom 2 conflict
+Texture SW1STONG, 64, 128
+{
+	Patch RW34_1, 0, 0
+	Patch SW1S0, 16, 78
+}
+
+// renamed from SW2STON2 to avoid Doom 2 conflict
+Texture SW2STONG, 64, 128
+{
+	Patch RW34_1, 0, 0
+	Patch SW1S1, 16, 78
+}
+
+// TROUBLE.WAD
+Texture PIC00, 256, 128
+{
+	Patch TROU00, 0, 0
+}
+
+Texture PIC01, 256, 128
+{
+	Patch TROU01, 0, 0
+}
+
+Texture PIC06, 256, 128
+{
+	Patch TROU06, 0, 0
+}
+
+Texture PIC07, 256, 128
+{
+	Patch TROU07, 0, 0
+}
+
+Texture PIC13, 256, 128
+{
+	Patch TROU13, 0, 0
+}
+
+Texture SAVED, 64, 64
+{
+	Patch SAVED, 0, 0
+}
+
+// renamed from SW1PIPE to avoid Doom 2 conflict
+Texture SW1PIPEM, 64, 128
+{
+	Patch RW41_3, 0, 0
+	Patch SW1S0, 16, 78
+}
+
+// renamed from SW2PIPE to avoid Doom 2 conflict
+Texture SW2PIPEM, 64, 128
+{
+	Patch RW41_3, 0, 0
+	Patch SW1S1, 16, 78
+}
+
+// renamed from SW1STON2 to avoid Doom 2 conflict
+Texture SW1STONH, 64, 128
+{
+	Patch RW24_2, 0, 0
+	Patch SW1S0, 16, 78
+}
+
+// renamed from SW2STON2 to avoid Doom 2 conflict
+Texture SW2STONH, 64, 128
+{
+	Patch RW24_2, 0, 0
+	Patch SW1S1, 16, 78
+}
+
+// renamed from SW1STON6 to avoid Doom 2 conflict
+Texture SW1STONI, 64, 128
+{
+	Patch RW1_1, 0, 0
+	Patch SW2_7, 14, 66
+}
+
+// renamed from SW2STON6 to avoid Doom 2 conflict
+Texture SW2STONI, 64, 128
+{
+	Patch RW1_1, 0, 0
+	Patch SW2_8, 14, 66
+}
+
+// renamed from SW1STONE to avoid Doom 2 conflict
+Texture SW1STONJ, 64, 128
+{
+	Patch RW23_3, 0, 0
+	Patch SW1S0, 16, 72
+}
+
+// renamed from SW2STONE to avoid Doom 2 conflict
+Texture SW2STONJ, 64, 128
+{
+	Patch RW23_3, 0, 0
+	Patch SW1S1, 16, 72
+}
+
+// renamed from SW1VINE to avoid Doom 2 conflict
+Texture SW1VINEM, 64, 128
+{
+	Patch RW34_2, 0, 0
+	Patch SW4S0, 20, 72
+}
+
+// renamed from SW2VINE to avoid Doom 2 conflict
+Texture SW2VINEM, 64, 128
+{
+	Patch RW34_2, 0, 0
+	Patch SW4S1, 20, 72
+}

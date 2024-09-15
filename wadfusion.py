@@ -343,10 +343,16 @@ def extract_lumps(wad_name):
             lump.to_file(lump_subdir + out_filename)
 
 def copy_resources():
+    d1_wad = omg.WAD()
+    if get_wad_filename('doom'):
+        d1_wad_filename = get_wad_filename('doom')
+        d1_wad.from_file(d1_wad_filename)
     for src_file in RES_FILES:
         # don't copy texture lumps for files that aren't present
-        if src_file.startswith('textures.doom1') and not get_wad_filename('doom'):
-            continue
+        if src_file == 'textures.doom1' and not get_wad_filename('doom'):
+            # DO copy if id1 or iddm1 exists and doom1 doesn't
+            if not ((get_wad_filename('doom2') and get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res')) or (get_wad_filename('doom2') and get_wad_filename('iddm1'))):
+                continue
         elif src_file == 'textures.doom2' and not get_wad_filename('doom2'):
             # DO copy if final doom exists and doom2 doesn't
             if not get_wad_filename('tnt'):
@@ -354,6 +360,13 @@ def copy_resources():
         elif src_file == 'textures.tnt' and not get_wad_filename('tnt'):
             continue
         elif src_file == 'textures.plut' and not get_wad_filename('plutonia'):
+            continue
+        elif src_file == 'textures.id1' and not (get_wad_filename('doom2') and get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res')):
+            if not (get_wad_filename('doom2') and get_wad_filename('iddm1')):
+                continue
+        elif src_file == 'textures.masterlevels' and not (get_wad_filename('doom2') and (get_wad_filename('attack') or get_wad_filename('masterlevels'))):
+            continue
+        elif src_file == 'textures.masterlevelsbonus' and not (get_wad_filename('doom') and get_wad_filename('doom2') and (get_wad_filename('attack') or get_wad_filename('masterlevels')) and get_wad_filename('mines') and d1_wad.graphics.get(ULTIMATE_DOOM_ONLY_LUMP, None)):
             continue
         logg('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
@@ -363,8 +376,8 @@ def copy_resources_id1():
     copyfile(RES_DIR + 'zscript/wf_id1weap.zs', DEST_DIR + 'zscript/wf_id1weap.zs')
     copyfile(RES_DIR + 'zscript/wf_sbar.id1.zs', DEST_DIR + 'zscript/wf_sbar.zs')
     # uncomment scripts
-    id1_off = '//#include \"zscript/wf_id1weap.zs\"\n//#include \"zscript/wf_sbar.zs\"'
-    id1_on = '#include \"zscript/wf_id1weap.zs\"\n#include \"zscript/wf_sbar.zs\"'
+    id1_off = '//#include \"zscript/wf_id1weap.zs\"'
+    id1_on = '#include \"zscript/wf_id1weap.zs\"'
     with open(DEST_DIR + 'zscript.zs', 'r') as file:
         tmp_file = file.read()
         tmp_file = tmp_file.replace(id1_off, id1_on)
@@ -378,6 +391,12 @@ def copy_resources_id1():
         tmp_file = tmp_file.replace(id1_off, id1_on)
     with open(DEST_DIR + 'mapinfo.txt', 'w') as file:
         file.write(tmp_file)
+    # duplicate doom1 sky patches to suppress errors
+    if not get_wad_filename('doom'):
+        copyfile(DEST_DIR + 'patches/SKYE1.lmp', DEST_DIR + 'patches/SKY1.lmp')
+        copyfile(DEST_DIR + 'patches/SKYE2.lmp', DEST_DIR + 'patches/SKY2.lmp')
+        copyfile(DEST_DIR + 'patches/SKYE3.lmp', DEST_DIR + 'patches/SKY3.lmp')
+        copyfile(DEST_DIR + 'patches/SKYE4.lmp', DEST_DIR + 'patches/SKY4.lmp')
 
 def copy_resources_ogg():
     # unity vs kex extras.wad differ, kex has Andrew Hulshult soundtrack
@@ -466,12 +485,13 @@ def clear_pk3():
             os.remove(filename)
             files_tidied += 1
     if files_tidied > 0:
-        logg('Removed %s files from a previous run.' % files_tidied)
+        logg('Removed %s files from a previous run.\n' % files_tidied)
 
 def get_eps(wads_found):
     d1_wad = omg.WAD()
-    d1_wad_filename = get_wad_filename('doom')
-    d1_wad.from_file(d1_wad_filename)
+    if get_wad_filename('doom'):
+        d1_wad_filename = get_wad_filename('doom')
+        d1_wad.from_file(d1_wad_filename)
     eps = []
     for wadname in wads_found:
         if wadname == 'doom':
@@ -480,7 +500,9 @@ def get_eps(wads_found):
                 eps += ['Thy Flesh Consumed']
         elif wadname == 'doom2':
             eps += ['Hell on Earth']
-        elif (wadname == 'attack' or wadname == 'masterlevels') and 'doom2' in wads_found:
+        elif wadname == 'attack' and not 'masterlevels' in wads_found and 'doom2' in wads_found:
+            eps += ['Master Levels']
+        elif wadname == 'masterlevels' and 'doom2' in wads_found:
             eps += ['Master Levels']
         elif wadname == 'nerve' and 'doom2' in wads_found:
             eps += ['No Rest for the Living']
@@ -528,29 +550,35 @@ def pk3_ogg_compress():
     else:
         return
     elapsed_time_ogg = time.time() - start_time
-    ipk3_ogg_size =  os.path.getsize(DEST_FILENAME_OGG) / 1000000
-    logg('Generated %s (%.1f MB) in %.2f seconds.' % (DEST_FILENAME_OGG, ipk3_ogg_size, elapsed_time_ogg))
+    ipk3_ogg_size = os.path.getsize(DEST_FILENAME_OGG) / 1048576
+    logg('Generated %s (%.1f MiB) in %.2f seconds.' % (DEST_FILENAME_OGG, ipk3_ogg_size, elapsed_time_ogg))
 
 def main():
     version = open(VERSION_FILENAME).readlines()[0].strip()
     title_line = 'WadFusion v%s' % version
-    logg(title_line + '\n' + '-' * len(title_line))
+    logg(title_line + '\n' + '-' * len(title_line) + '\n')
     found = get_report_found()
     input_func = raw_input if sys.version_info.major < 3 else input
+    # clear out pk3 dir from previous runs
+    clear_pk3()
     # bail if no wads in SRC_WAD_DIR
     if len(found) == 0:
         logg('No source WADs found!\nPlease place your WAD files into %s.' % os.path.realpath(SRC_WAD_DIR))
         logfile.close()
         input_func('Press Enter to exit.\n')
         return
-    # clear out pk3 dir from previous runs
-    clear_pk3()
-    logg('Found in %s:\n  ' % SRC_WAD_DIR + ', '.join(found))
-    print('A new PK3 format IWAD will be generated with the following episodes:')
+    logg('Found in %s:\n  ' % SRC_WAD_DIR + ', '.join(found) + '\n')
+    # bail if no iwads in SRC_WAD_DIR
+    if not get_wad_filename('doom') and not get_wad_filename('doom2') and not get_wad_filename('tnt') and not get_wad_filename('plutonia'):
+        logg('No source IWADs found!\nPlease place your IWAD files into %s.' % os.path.realpath(SRC_WAD_DIR))
+        logfile.close()
+        input_func('Press Enter to exit.\n')
+        return
+    print('A new IPK3 will be generated with the following episodes:')
     for num_eps,ep_name in enumerate(get_eps(found)):
         print('- %s' % ep_name)
     num_eps += 1
-    i = input_func('Press Y and then Enter to proceed, anything else to cancel: ')
+    i = input_func('\nPress Y and then Enter to proceed, anything else to cancel: ')
     if i.lower() != 'y':
         logg('Canceled.')
         logfile.close()
@@ -680,8 +708,8 @@ def main():
     start_time = time.time()
     pk3_compress()
     elapsed_time = time.time() - start_time
-    ipk3_size =  os.path.getsize(DEST_FILENAME) / 1000000
-    logg('Generated %s (%.1f MB) with %s maps in %s episodes in %.2f seconds.' % (DEST_FILENAME, ipk3_size, num_maps, num_eps, elapsed_time))
+    ipk3_size = os.path.getsize(DEST_FILENAME) / 1048576
+    logg('Generated %s (%.1f MiB) with %s maps in %s episodes in %.2f seconds.' % (DEST_FILENAME, ipk3_size, num_maps, num_eps, elapsed_time))
     # create pk3_ogg
     if get_wad_filename('extras'):
         pk3_ogg_compress()

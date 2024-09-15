@@ -56,6 +56,30 @@ switch doom 3 SW1RAIL2 on pic SW2RAIL2 tics 0
 switch doom 3 SW1ROCK6 on pic SW2ROCK6 tics 0
 switch doom 3 SW1TC1   on pic SW2TC1   tics 0
 
+// Jim Flynn's custom switch texture replacements
+switch doom 3 SW1BRIKM on pic SW2BRIKM tics 0
+switch doom 1 SW1COMPM on pic SW2COMPM tics 0
+switch doom 1 SW1PIPEM on pic SW2PIPEM tics 0
+switch doom 1 SW1STONC on pic SW2STONC tics 0
+switch doom 1 SW1STOND on pic SW2STOND tics 0
+switch doom 1 SW1STONF on pic SW2STONF tics 0
+switch doom 1 SW1STONG on pic SW2STONG tics 0
+switch doom 1 SW1STONH on pic SW2STONH tics 0
+switch doom 3 SW1STONI on pic SW2STONI tics 0
+switch doom 1 SW1STONJ on pic SW2STONJ tics 0
+switch doom 2 SW1VINEM on pic SW2VINEM tics 0
+
+// mines.wad animated waterfall
+texture optional MBRAIN1
+pic MBRAIN1 tics 8
+pic MBRAIN2 tics 8
+pic MBRAIN3 tics 8
+pic DBRAIN5 tics 8
+pic DBRAIN6 tics 8
+pic DBRAIN7 tics 8
+pic DBRAIN8 tics 8
+pic MBRAIN4 tics 8
+
 // TNT animated textures
 
 texture optional SW1SKULT

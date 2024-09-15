@@ -1,0 +1,24 @@
+
+// COMBINE.WAD
+// patch renamed (in WadFusion) from RSKY1 to avoid Doom 2 conflict
+Texture MSKY1, 256, 128
+{
+	Patch MSKY1, 0, 0
+}
+
+// MANOR.WAD and TTRAP.WAD
+// renamed from SKY1 to avoid Doom 1 conflict
+Texture MSKY2, 256, 128
+{
+	Patch STARS, 0, 0
+	Patch STARS, 256, 0
+	Patch STARS, 512, 0
+	Patch STARS, 768, 0
+}
+
+// ACHRON.WAD, VIRGIL.WAD, MINOS.WAD, NESSUS.WAD, GERYON.WAD, and VESPERAS.WAD
+// patch renamed (in WadFusion) from RSKY1 to avoid Doom 2 conflict
+Texture MSKY3, 256, 128
+{
+	Patch MSKY3, 0, 0
+}

@@ -57,6 +57,7 @@ RES_FILES = [
     'endoom', 'smooshed.txt',
     'textures.common', 'textures.doom1', 'textures.doom2',
     'textures.tnt', 'textures.plut', 'textures.id1',
+    'textures.masterlevels', 'textures.masterlevelsbonus',
     'animdefs.txt', 'xwinter0.txt', 'xwinter1.txt',
     'graphics/M_DOOM.lmp', 'graphics/TITLEPIC.lmp',
     'graphics/M_HELL.lmp', 'graphics/M_NOREST.lmp',
@@ -226,7 +227,7 @@ MASTER_LEVELS_ORDER = [
 # texture patches to extract from specific master levels PWADs
 MASTER_LEVELS_PATCHES = {
     'combine': ('RSKY1', 'MSKY1'),
-    'manor': ('STARS', 'MSKY2'),
+    'manor': ('STARS', 'STARS'),
     'virgil': ('RSKY1', 'MSKY3')
 }
 
