@@ -134,7 +134,18 @@ class WadFusionStatusBarId24 : BaseStatusBar
 	
 	protected virtual void DrawBarAmmo()
 	{
-		if ( CVar.FindCVar("wf_hud_id24").GetBool() )
+		String mapName = level.MapName.MakeLower();
+		let cell = CPlayer.mo.FindInventory("Cell");
+		let fuel = CPlayer.mo.FindInventory("Fuel");
+		let plasmaRifle = CPlayer.mo.FindInventory("PlasmaRifle");
+		let bfg9000 = CPlayer.mo.FindInventory("BFG9000");
+		let incinerator = CPlayer.mo.FindInventory("Incinerator");
+		let heatwave = CPlayer.mo.FindInventory("Heatwave");
+		// Only show id24 style ammo if the player has both cell and fuel ammo, or if wf_hud_id24 is true
+		if ( CVar.FindCVar("wf_hud_id24").GetBool() ||
+			( mapName.Left(3) == "lr_" && CVar.FindCVar("wf_id1_weapswap").GetBool() && cell != null && (plasmaRifle || bfg9000) ) ||
+			( mapName.Left(3) == "lr_" && !CVar.FindCVar("wf_id1_weapswap").GetBool() && fuel != null && (incinerator || heatwave) ) ||
+			( mapName.Left(3) != "lr_" && fuel != null && (incinerator || heatwave) ) )
 		{
 			DrawImage("STAMMO24", (249, 168), DI_ITEM_OFFSETS);
 			int amt1, maxamt;
@@ -173,7 +184,6 @@ class WadFusionStatusBarId24 : BaseStatusBar
 			DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 185), DI_TEXT_ALIGN_RIGHT);
 			DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 185), DI_TEXT_ALIGN_RIGHT);
 			
-			String mapName = level.MapName.MakeLower();
 			if ( mapName.Left(3) == "lr_" && CVar.FindCVar("wf_id1_weapswap").GetBool() )
 			{
 				[amt1, maxamt] = GetAmount("Fuel");

@@ -393,7 +393,7 @@ class Id1WeaponHandler : EventHandler
 		string mapName = level.MapName.MakeLower();
 		if ( CVar.FindCVar("wf_id1_weapswap").GetBool() )
 		{
-			if ( mapName.Left(3) == "lr_" )
+			if ( mapName.Left(3) == "lr_" && Level.MapTime == 0 )
 			{
 				if (e.Replacee is "PlasmaRifle")
 					e.Replacement = "Incinerator";
@@ -403,17 +403,6 @@ class Id1WeaponHandler : EventHandler
 					e.Replacement = "Fuel";
 				if (e.Replacee is "CellPack")
 					e.Replacement = "FuelTank";
-			}
-			else
-			{
-				if (e.Replacee is "Incinerator")
-					e.Replacement = "PlasmaRifle";
-				if (e.Replacee is "Heatwave")
-					e.Replacement = "BFG9000";
-				if (e.Replacee is "Fuel")
-					e.Replacement = "Cell";
-				if (e.Replacee is "FuelTank")
-					e.Replacement = "CellPack";
 			}
 		}
 	}
