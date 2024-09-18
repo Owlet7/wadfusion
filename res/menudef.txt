@@ -28,7 +28,7 @@ OptionMenu "WadFusionHudOptions"
 {
 	Title "$WF_MENU_HUD"
 	Option "$WF_MENU_HUD_ID24", "wf_hud_id24", "OnOff"
-	Option "$ALTHUDMNU_SWAPHEALTHARMOR", "wf_hud_swaphealtharmor", "OnOff"
+	Option "$WS_MENU_HUD_SWAPHEALTHARMOR", "wf_hud_swaphealtharmor", "OnOff"
 	Slider "$WF_MENU_HUD_ULTRAWIDE", "wf_hud_ultrawide", 0, 255, 1
 }
 

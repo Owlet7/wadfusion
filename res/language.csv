@@ -1,7 +1,7 @@
 Identifier,Remarks,Filter,default,eng enc ena enz eni ens enj enb enl ent enw,cs,da,de,el,eo,es,esm esn esg esc esa esd esv eso esr ess esf esl esy esz esb ese esh esi esu,fi,fr,hu,it,jp,ko,nl,no nb,pl,pt,ptg,ro,ru,sr,sv,tr,zh,zht
 ,options menu text,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 WF_MENU_TITLE,,,WadFusion Options,,,,,,,,,,,,,,,,,,,,,Настройки WadFusion,,,,,
-WF_RESTART_TEXT,,,Note: Changing any of these compatibility options requires a level restart.,,,,,,,,,,,,,,,,,,,,,Примечание: Для применения данных настроек требуется перезапуск уровня.,,,,,
+WF_RESTART_TEXT,,,Note: Changing any of these compatibility options requires a level restart.,,,,,,,,,,,,,,,,,,,,,Примечание: Для применения данных настроек совместимости требуется перезапуск уровня.,,,,,
 WF_MENU_FD_TEXSWAP,,,Final DOOM texture substitutions,,,,,,,,,,,,,,,,,,,,,Замена текстур в Финальном DOOM,,,,,
 WF_MENU_D2SKY_COMPAT,,,DOOM II custom sky compatibility,,,,,,,,,,,,,,,,,,,,,Совместимость с пользовательскими текстурами неба в DOOM II,,,,,
 WF_MENU_D1_TEXSWAP,,,DOOM 1 texture substitutions,,,,,,,,,,,,,,,,,,,,,Замена текстур в DOOM 1,,,,,
@@ -15,6 +15,7 @@ WF_MENU_SIGIL2_SHDERS,,,THORR soundtrack for SIGIL II,,,,,,,,,,,,,,,,,,,,,Сау
 WF_MENU_HULSHULT_IDKFA,,,Andrew Hulshult’s IDKFA soundtrack,,,,,,,,,,,,,,,,,,,,,Саундтрек IDKFA Эндрю Хулшульта,,,,,
 WF_MENU_HUD,,,WadFusion HUD Options,,,,,,,,,,,,,,,,,,,,,Настройки отображения информации WadFusion,,,,,
 WF_MENU_HUD_ID24,,,Always show cell and fuel ammo in status bar,,,,,,,,,,,,,,,,,,,,,Всегда показывать энергобатареи и топливо в строке состояния,,,,,
+WS_MENU_HUD_SWAPHEALTHARMOR,,,Swap health and armor in fullscreen HUD,Swap health and armour in fullscreen HUD,,,,,,,,,,,,,,,,,,,,Поменять отображение здоровья и брони местами в полноэкранного отображения информации,,,,,
 WF_MENU_HUD_ULTRAWIDE,,,Horizontal fullscreen HUD offset,,,,,,,,,,,,,,,,,,,,,Горизонтальное смещение полноэкранного отображения информации,,,,,
 WF_MENU_CREDITS,,,WadFusion Credits,,,,,,,,,,,,,,,,,,,,,Разработчики WadFusion,,,,,
 WF_CREDITS,,,Credits,,,,,,,,,,,,,,,,,,,,,Разработчики,,,,,
