@@ -1,7 +1,7 @@
 Identifier,Remarks,Filter,default,eng enc ena enz eni ens enj enb enl ent enw,cs,da,de,el,eo,es,esm esn esg esc esa esd esv eso esr ess esf esl esy esz esb ese esh esi esu,fi,fr,hu,it,jp,ko,nl,no nb,pl,pt,ptg,ro,ru,sr,sv,tr,zh,zht
 ,options menu text,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 WF_MENU_TITLE,,,WadFusion Options,,,,,,,,,,,,,,,,,,,,,Настройки WadFusion,,,,,
-WF_RESTART_TEXT,,,Note: Changing any of these requires a level restart.,,,,,,,,,,,,,,,,,,,,,Примечание: Для применения данных настроек требуется перезапуск уровня.,,,,,
+WF_RESTART_TEXT,,,Note: Changing any of these compatibility options requires a level restart.,,,,,,,,,,,,,,,,,,,,,Примечание: Для применения данных настроек требуется перезапуск уровня.,,,,,
 WF_MENU_FD_TEXSWAP,,,Final DOOM texture substitutions,,,,,,,,,,,,,,,,,,,,,Замена текстур в Финальном DOOM,,,,,
 WF_MENU_D2SKY_COMPAT,,,DOOM II custom sky compatibility,,,,,,,,,,,,,,,,,,,,,Совместимость с пользовательскими текстурами неба в DOOM II,,,,,
 WF_MENU_D1_TEXSWAP,,,DOOM 1 texture substitutions,,,,,,,,,,,,,,,,,,,,,Замена текстур в DOOM 1,,,,,
@@ -12,7 +12,7 @@ WF_MENU_ID1_WEAPSWAP,,,Legacy of Rust weapon substitutions,,,,,,,,,,,,,,,,,,,,,�
 WF_MENU_SIGIL2_SPIDERBOSS,,,SIGIL II Spider Mastermind buff,,,,,,,,,,,,,,,,,,,,,Усиление Паука-предводителя в SIGIL II,,,,,
 WF_MENU_SIGIL_SHDERS,,,Buckethead soundtrack for SIGIL,,,,,,,,,,,,,,,,,,,,,Саундтрек Buckethead к SIGIL,,,,,
 WF_MENU_SIGIL2_SHDERS,,,THORR soundtrack for SIGIL II,,,,,,,,,,,,,,,,,,,,,Саундтрек THORR к SIGIL II,,,,,
-WF_MENU_HULSHULT_IDKFA,,,Andrew Hulshult soundtrack for DOOM + DOOM II,,,,,,,,,,,,,,,,,,,,,Саундтрек Эндрю Хулшульта к DOOM + DOOM II,,,,,
+WF_MENU_HULSHULT_IDKFA,,,Andrew Hulshult’s IDKFA soundtrack,,,,,,,,,,,,,,,,,,,,,Саундтрек IDKFA Эндрю Хулшульта,,,,,
 WF_MENU_HUD,,,WadFusion HUD Options,,,,,,,,,,,,,,,,,,,,,Настройки отображения информации WadFusion,,,,,
 WF_MENU_HUD_ID24,,,Always show cell and fuel ammo in status bar,,,,,,,,,,,,,,,,,,,,,Всегда показывать энергобатареи и топливо в строке состояния,,,,,
 WF_MENU_HUD_ULTRAWIDE,,,Horizontal fullscreen HUD offset,,,,,,,,,,,,,,,,,,,,,Горизонтальное смещение полноэкранного отображения информации,,,,,

@@ -1,14 +1,12 @@
-// Sigil maps
+// Sigil 2 maps
 
 defaultmap
 {
 	Cluster = 27
 	Sky1 = "SKY6"
 	SuckTime = 1
-	// to allow switching between the midi and mp3 soundtracks,
 	// the music is intentionally set to something invalid,
-	// instead to be started through zscript
-	Music = NULL
+	// instead to be started and changed through zscript
 	InterMusic = NULL
 	EnterPic = "SIGILIN2"
 	ExitPic = "SIGILIN2"
@@ -17,8 +15,6 @@ defaultmap
 	NoCrouch
 	Author = "$WF_AU_ROMERO"
 }
-
-// Sigil 2
 
 map E6M1 "$HUSTR_E6M1"
 {

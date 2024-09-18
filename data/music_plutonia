@@ -1,4 +1,4 @@
-// rename TNT doom2 music replacements to T_*
+// rename Plutonia doom2 music replacements to P_*
 D_ADRIAN : P_ADRIAN
 D_AMPIE : P_AMPIE
 D_BETWEE : P_BETWEE
@@ -9,6 +9,8 @@ D_DDTBL2 : P_DDTBL2
 D_DDTBLU : P_DDTBLU
 D_DEAD2 : P_DEAD2
 D_DEAD : P_DEAD
+D_DM2INT : P_DM2INT
+D_DM2TTL : P_DM2TTL
 D_DOOM2 : P_DOOM2
 D_DOOM : P_DOOM
 D_EVIL : P_EVIL
@@ -32,5 +34,3 @@ D_THEDA3 : P_THEDA3
 D_THEDA2 : P_THEDA2
 D_THE_DA : P_THE_DA
 D_ULTIMA : P_ULTIMA
-// separate intermission music
-D_DM2INT : P_DM2INT

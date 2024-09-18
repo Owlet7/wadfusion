@@ -5,10 +5,8 @@ defaultmap
 	Cluster = 26
 	Sky1 = "SKY5"
 	SuckTime = 1
-	// to allow switching between the midi and mp3 soundtracks,
 	// the music is intentionally set to something invalid,
-	// instead to be started through zscript
-	Music = NULL
+	// instead to be started and changed through zscript
 	InterMusic = NULL
 	EnterPic = "SIGILINT"
 	ExitPic = "SIGILINT"
@@ -17,8 +15,6 @@ defaultmap
 	NoCrouch
 	Author = "$WF_AU_ROMERO"
 }
-
-// Sigil 1
 
 map E5M1 "$HUSTR_E5M1"
 {

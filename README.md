@@ -39,7 +39,7 @@ WadFusion requires `id1-res.wad` and `id24res.wad` for Legacy of Rust.
 
 If WADs from the Unity or KEX-based re-releases are also included (must be named `doomunity.wad`, `doom2unity.wad`, `tntunity.wad`, `plutoniaunity.wad` or `doomkex.wad`, `doom2kex.wad`, `tntkex.wad`, `plutoniakex.wad`), WadFusion will extract widescreen assets from them. The versions of `nerve.wad` in these releases include a unique intermission screen. These versions can also be used as the main WADs for extraction, but do keep in mind that they are censored.
 
-If `extras.wad` from the Unity or KEX-based re-releases is included, WadFusion will extract the official "secret revealed" sound, and some status bar icons that can be used by custom HUDs. If the version from the KEX-based re-release is used, WadFusion will also create a new file called `hulshult_ogg.pk3`, containing Andrew Hulshult's covers of the DOOM and DOOM II soundtracks.
+If `extras.wad` from the Unity or KEX-based re-releases is included, WadFusion will extract the official "secret revealed" sound, and some status bar icons that can be used by custom HUDs. If the version from the KEX-based re-release is used, WadFusion will also extract Andrew Hulshult's "IDKFA" covers of the DOOM and DOOM II soundtracks, which can be toggled from the WadFusion options mod menu in GZDoom.
 
 None of the "official add-on" content from the Unity or KEX-based re-releases of DOOM and DOOM II is supported.
 

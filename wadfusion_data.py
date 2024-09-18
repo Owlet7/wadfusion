@@ -56,8 +56,8 @@ RES_FILES = [
     'mapinfo.txt', 'sndinfo.txt', 'language.csv',
     'endoom', 'smooshed.txt',
     'textures.common', 'textures.doom1', 'textures.doom2',
-    'textures.tnt', 'textures.plut', 'textures.id1',
     'textures.masterlevels', 'textures.masterlevelsbonus',
+    'textures.tnt', 'textures.plut', 'textures.id1',
     'animdefs.txt', 'xwinter0.txt', 'xwinter1.txt',
     'graphics/M_DOOM.lmp', 'graphics/TITLEPIC.lmp',
     'graphics/M_HELL.lmp', 'graphics/M_NOREST.lmp',
@@ -96,10 +96,6 @@ RES_FILES = [
     'zscript/wf_xbox.zs', 'zscript/wf_sbar.zs'
 ]
 
-RES_FILES_OGG = [
-    'mapinfo/plutonia_levels.ogg.txt'
-]
-
 # files within pk3 dir that will be removed before a new run
 TIDY_DIR_EXTENSIONS = {
     'flats/': ['lmp'],
@@ -107,17 +103,11 @@ TIDY_DIR_EXTENSIONS = {
     'patches/': ['lmp'],
     'sounds/': ['lmp'],
     'sprites/': ['lmp'],
-    'music/': ['mus', 'mp3'],
+    'music/': ['mus', 'mp3', 'ogg'],
     'mapinfo/': ['txt'],
     'maps/': ['wad'],
     'zscript/': ['zs'],
     './': ['csv', 'lmp', 'txt', 'zs']
-}
-
-TIDY_DIR_OGG = {
-    'music/': ['ogg'],
-    'mapinfo/': ['txt'],
-    './': ['csv', 'txt']
 }
 
 # list of files we can extract from
