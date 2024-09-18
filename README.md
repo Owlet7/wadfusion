@@ -1,10 +1,12 @@
 # WadFusion — simple IWAD merge utility
 
-WadFusion merges your provided DOOM, DOOM II, Master Levels, Final DOOM, No Rest for the Living, SIGIL, SIGIL II, and Legacy of Rust data into a single IPK3 file that can be played in GZDoom, with each game as its own entry in the episode list. This makes it very convenient to play all of classic DOOM's official releases without re-launching the game with different settings.
+WadFusion merges your provided DOOM, DOOM II, Master Levels, Final DOOM, No Rest for the Living, SIGIL, SIGIL II, and Legacy of Rust data into a single IPK3 file that can be played in [GZDoom](https://zdoom.org/index), with each game as its own entry in the episode list. This makes it very convenient to play all of classic DOOM's official releases without re-launching the game with different settings.
 
 It's fine if you don't have all of the DOOM games, e.g. you have DOOM II but not Final DOOM — WadFusion will package up everything it can find.
 
 If you're not a DOOM expert and just bought these games from [GOG](https://www.gog.com/en/game/doom_doom_ii), or [Steam](https://store.steampowered.com/app/2280/), etc., see the **Absolute Beginner's Guide** section below.
+
+** Note: WadFusion currently requires a development build of GZDoom, version g4.13pre-130 or newer. WadFusion will not work with other engines.**
 
 ## Usage
 
@@ -14,7 +16,7 @@ If you're on Windows, click `wadfusion.exe`.
 
 If you're on macOS or GNU/Linux, run the `wadfusion.sh` shell script — Python 2 and 3 are both supported now.
 
-WadFusion will create a new file called `doom_complete.pk3`, with all the game content in it. GZDoom 2.4 and later will recognize the `doom_complete.pk3` file as a valid IPK3 without any name change needed.
+WadFusion will create a new file called `doom_complete.pk3`, with all the game content in it. GZDoom will recognize the `doom_complete.pk3` file as a valid IPK3 without any name change needed.
 
 In rare cases, you may need to uncheck the `source_wads` folder's read-only status.
 
@@ -52,7 +54,7 @@ For SIGIL and SIGIL II, all the filenames for different releases of those WADs a
 3. Copy any files you find with a `.WAD` extension to the `source_wads` subfolder where you extracted WadFusion.
 4. Double-click `wadfusion.exe`. A terminal window will pop up, showing which WAD files were found, and which episodes can be extracted. Press Y and then Enter to proceed. The terminal window will show progress as it generates the IPK3.
 5. When it finishes, press Enter to close the window. You should now have a file in the WadFusion folder called `doom_complete.pk3`.
-6. Download [GZDoom](https://zdoom.org/downloads) and extract it to a folder.
+6. Download the latest [GZDoom development build](https://devbuilds.drdteam.org/gzdoom/) and extract it to a folder.
 7. Copy the `doom_complete.pk3` file to GZDoom's folder.
 8. Launch GZDoom and play!
 
