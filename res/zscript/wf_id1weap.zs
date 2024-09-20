@@ -390,10 +390,11 @@ class Id1WeaponHandler : EventHandler
 {
 	override void CheckReplacement (ReplaceEvent e)
 	{
+		int weapswap = CVar.FindCVar("wf_id1_weapswap").GetInt();
 		string mapName = level.MapName.MakeLower();
-		if ( CVar.FindCVar("wf_id1_weapswap").GetBool() )
+		if ( ( weapswap == 1 && mapName.Left(3) == "lr_" ) || weapswap >= 2 )
 		{
-			if ( mapName.Left(3) == "lr_" && Level.MapTime == 0 )
+			if ( Level.MapTime == 0 )
 			{
 				if (e.Replacee is "PlasmaRifle")
 					e.Replacement = "Incinerator";
