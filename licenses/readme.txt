@@ -8,4 +8,5 @@ The ZScript code is derived from GZDoom and is used under the terms of the GPL v
 unless noted differently in the individual files.
 See gpl.txt
 
-WadFusion is released as a combined work under the terms of the GPL v3.
+WadFusion is released as a combined work under the terms of the GPL v3 or later.
+Its source code can be found at https://github.com/Owlet7/wadfusion

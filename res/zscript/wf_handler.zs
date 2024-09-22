@@ -135,6 +135,7 @@ class WadFusionHandler : EventHandler
 		}
 	}
 	
+	/*
 	void DoMasterLevelsTitanTextureReplacements()
 	{
 		String mapName = level.MapName.MakeLower();
@@ -179,6 +180,7 @@ class WadFusionHandler : EventHandler
 			Level.ReplaceTextures("SW2VINE", "SW2VINEM", TexMan.NOT_FLAT);
 		}
 	}
+	*/
 	
 	// check if the given sky is the level's current sky, see if that is
 	// being overriden, and if so change it. return whether this happened.
@@ -215,8 +217,8 @@ class WadFusionHandler : EventHandler
 			DoDoom1TextureReplacements();
 		if ( CVar.FindCVar("wf_id1_texswap").GetBool() )
 			DoId1TextureReplacements();
-		if ( CVar.FindCVar("wf_ml_texswap").GetBool() )
-			DoMasterLevelsTitanTextureReplacements();
+//		if ( CVar.FindCVar("wf_masterlevels_texswap").GetBool() )
+//			DoMasterLevelsTitanTextureReplacements();
 		if ( CVar.FindCVar("wf_d2sky_compat").GetBool() )
 			DoDoom2SkyReplacements();
 	}

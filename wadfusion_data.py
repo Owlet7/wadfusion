@@ -171,7 +171,7 @@ WAD_LUMP_LISTS = {
     'doom2kex': ['graphics_doom2unity'],
     'tntkex': ['graphics_tntunity'],
     'plutoniakex': ['graphics_plutoniaunity'],
-    'nerve': ['graphics_nerveunity'],
+    'nerve': [],
     # extras.wad assets from unity and kex ports
     'extras': ['data_extras', 'graphics_extras', 'sounds_extras', 'music_extras']
 }
@@ -230,5 +230,9 @@ SIGIL2_MP3_ALT_FILENAMES = ['sigil_ii_mp3_v1_0']
 
 # lump whose presence distinguishes original vs Ultimate Doom
 ULTIMATE_DOOM_ONLY_LUMP = 'M_EPI4'
+
+# lump whose presence distinguishes Unity & KEX vs original nerve.wad
+NERVE_UNITY_KEX_ONLY_LUMP = 'INTERPIC'
+
 # lump whose presence distinguishes Unity vs KEX extras.wad
 EXTRAS_KEX_ONLY_LUMP = 'WATERMAP'

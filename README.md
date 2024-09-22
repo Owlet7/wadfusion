@@ -12,9 +12,9 @@ If you're not a DOOM expert and just bought these games from [GOG](https://www.g
 
 Simply copy all of your WADs into the `source_wads` subfolder, then run WadFusion. A log will appear showing progress and any errors that arise.
 
-If you're on Windows, click `wadfusion.exe`.
+If you're on Windows, run `wadfusion.exe`.
 
-If you're on macOS or GNU/Linux, run the `wadfusion.sh` shell script — Python 2 and 3 are both supported now.
+If you're on macOS or GNU/Linux, run the `wadfusion.py` Python script — Python 2 and 3 are both supported now.
 
 WadFusion will create a new file called `doom_complete.pk3`, with all the game content in it. GZDoom will recognize the `doom_complete.pk3` file as a valid IPK3 without any name change needed.
 

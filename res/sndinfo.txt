@@ -7,3 +7,4 @@ weapons/incinerator/incht3 = DSINCHT3
 weapons/heatwave/hetchg = DSHETCHG
 weapons/heatwave/hetsht = DSHETSHT
 weapons/heatwave/hetxpl = DSHETXPL
+monsters/vassago/vasatk = DSVASATK

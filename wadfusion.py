@@ -51,10 +51,11 @@
 import os, sys, time, fnmatch
 from shutil import copyfile
 from zipfile import ZipFile, ZIP_DEFLATED
+from os import path
 
 import omg
 
-VERSION_FILENAME = 'version'
+VERSION = '1.0'
 
 # if False, do a dry run with no actual file writing
 should_extract = True
@@ -65,8 +66,9 @@ DEST_DIR = 'temp/'
 DEST_FILENAME = 'doom_complete.pk3'
 LOG_FILENAME = 'wadfusion.log'
 RES_DIR = 'res/'
-DATA_TABLES_FILE = 'wadfusion_data.py'
 DEST_DIR_MUS = DEST_DIR + 'music/'
+# abspath is used for the sake of the Windows executable, which bundles wadfusion_data.py
+DATA_TABLES_FILE = path.abspath(path.join(path.dirname(__file__), 'wadfusion_data.py'))
 
 # forward-declare all the stuff in DATA_TABLES_FILE for clarity
 RES_FILES = []
@@ -84,6 +86,7 @@ SIGIL_ALT_FILENAMES = []
 SIGIL2_ALT_FILENAMES = []
 SIGIL2_MP3_ALT_FILENAMES = []
 ULTIMATE_DOOM_ONLY_LUMP = ''
+NERVE_UNITY_KEX_ONLY_LUMP = ''
 EXTRAS_KEX_ONLY_LUMP = ''
 
 logfile = None
@@ -486,8 +489,7 @@ def pk3_compress():
 
 def main():
     start_time = time.time()
-    version = open(VERSION_FILENAME).readlines()[0].strip()
-    title_line = 'WadFusion v%s' % version
+    title_line = 'WadFusion v%s' % VERSION
     logg(title_line + '\n' + '-' * len(title_line) + '\n')
     found = get_report_found()
     input_func = raw_input if sys.version_info.major < 3 else input
@@ -540,6 +542,13 @@ def main():
     # if iddm1 present but not tnt, extract tnt music from it
     if get_wad_filename('iddm1') and not get_wad_filename('tnt'):
         WAD_LUMP_LISTS['iddm1'] += ['music_iddm1']
+    # if nerve is the unity or kex version
+    if get_wad_filename('nerve'):
+        nerve_wad = omg.WAD()
+        nerve_wad_filename = get_wad_filename('nerve')
+        nerve_wad.from_file(nerve_wad_filename)
+        if nerve_wad.graphics.get(NERVE_UNITY_KEX_ONLY_LUMP, None):
+            WAD_LUMP_LISTS['nerve'] += ['graphics_nerveunity']
     # extract lumps and maps from wads
     for iwad_name in WADS:
         wad_filename = get_wad_filename(iwad_name)
@@ -633,7 +642,7 @@ def main():
     pk3_compress()
     elapsed_time = time.time() - start_time
     ipk3_size = os.path.getsize(DEST_FILENAME) / 1048576
-    logg('Generated %s (%.1f MiB) with %s maps in %s episodes in %.2f seconds.' % (DEST_FILENAME, ipk3_size, num_maps, num_eps, elapsed_time))
+    logg('Generated %s (%.2f MiB) with %s maps in %s episodes in %.2f seconds.' % (DEST_FILENAME, ipk3_size, num_maps, num_eps, elapsed_time))
     logg('Done!')
     if num_errors > 0:
         logg('%s errors found, see %s for details.' % (num_errors, LOG_FILENAME))

@@ -1,12 +1,11 @@
-_internal
-source_wads
+source_wads/*
+!source_wads/delete_me.txt
 temp
 wadfusion.log
 build
 dist
 *.pyc
 doom_complete.pk3
-hulshult_ogg.pk3
 res/.~lock.language.csv#
 wadfusion_win.zip
 wadfusion.exe
