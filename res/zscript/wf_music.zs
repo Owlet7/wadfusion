@@ -473,7 +473,6 @@ class WadFusionMusicHandler : StaticEventHandler
 			if ( music == "p_dm2int" )
 				music = "h_dm2int";
 			
-			/*
 			// TNT Evilution
 			
 			if ( music == "t_countd" )
@@ -499,7 +498,6 @@ class WadFusionMusicHandler : StaticEventHandler
 			
 			if ( music == "t_ultima" )
 				music = "h_in_cit";
-			*/
 			
 			S_ChangeMusic(music);
 		}
@@ -862,7 +860,6 @@ class WadFusionMusicHandler : StaticEventHandler
 					music = "p_dm2int";
 			}
 			
-			/*
 			// check if on a TNT Evilution map, which are meant to play music with a "t_" prefix
 			if ( mapName.Left(3) == "tn_" )
 			{
@@ -892,7 +889,6 @@ class WadFusionMusicHandler : StaticEventHandler
 				if ( music == "h_doom" )
 					music = "t_adrian";
 			}
-			*/
 			
 			S_ChangeMusic(music);
 		}
