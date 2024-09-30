@@ -237,5 +237,29 @@ class WadFusionHandler : EventHandler
 				}
 			}
 		}
+		
+		// don't count spawned enemies e.g. icon of sin summons
+		if ( CVar.FindCVar("wf_killcountfix").GetBool() )
+		{
+			if (Level.MapTime > 0)
+				RevertKillCounter(e);
+		}
+	}
+	
+	// don't count revived enemies
+	override void WorldThingRevived(WorldEvent e)
+	{
+		if ( CVar.FindCVar("wf_killcountfix").GetBool() )
+			RevertKillCounter(e);
+	}
+	
+	// https://forum.zdoom.org/viewtopic.php?t=78533
+	private void RevertKillCounter(WorldEvent e)
+	{
+		if (e.Thing.bCountKill)
+		{
+			e.Thing.bCountKill = false;
+			Level.Total_Monsters -= 1;			
+		}
 	}
 }

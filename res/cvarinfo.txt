@@ -6,6 +6,7 @@ user bool wf_masterlevels_texswap = true;
 user bool wf_finaldoom_texswap = true;
 user bool wf_id1_texswap = true;
 user bool wf_d2sky_compat = true;
+server bool wf_killcountfix = false;
 server bool wf_sigil2_spiderboss = true;
 server int wf_id1_weapswap = 1;
 server bool wf_xbox_secret_exits = false;
