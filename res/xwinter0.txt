@@ -5,59 +5,59 @@ Splat XWISPLAT
 
 Spots
 {
-	ID_MAP01 26 186
-	ID_MAP02 81 177
-	ID_MAP03 101 134
-	ID_MAP04 204 132
-	ID_MAP05 185 84
-	ID_MAP06 201 51
-	ID_MAP07 158 43
-	ID_MAP15 58 115
+	LR_MAP01 26 186
+	LR_MAP02 81 177
+	LR_MAP03 101 134
+	LR_MAP04 204 132
+	LR_MAP05 185 84
+	LR_MAP06 201 51
+	LR_MAP07 158 43
+	LR_MAP15 58 115
 }
 
-IfEntering ID_MAP01 Animation 26 186 17
+IfEntering LR_MAP01 Animation 26 186 17
 {
 	XWIURH0
 	TNT1A0
 }
 
-IfEntering ID_MAP02 Animation 81 177 17
+IfEntering LR_MAP02 Animation 81 177 17
 {
 	XWIURH0
 	TNT1A0
 }
 
-IfEntering ID_MAP03 Animation 101 134 17
+IfEntering LR_MAP03 Animation 101 134 17
 {
 	XWIURH0
 	TNT1A0
 }
 
-IfEntering ID_MAP04 Animation 204 132 17
+IfEntering LR_MAP04 Animation 204 132 17
 {
 	XWIURH1
 	TNT1A0
 }
 
-IfEntering ID_MAP05 Animation 185 84 17
+IfEntering LR_MAP05 Animation 185 84 17
 {
 	XWIURH1
 	TNT1A0
 }
 
-IfEntering ID_MAP06 Animation 201 51 17
+IfEntering LR_MAP06 Animation 201 51 17
 {
 	XWIURH3
 	TNT1A0
 }
 
-IfEntering ID_MAP07 Animation 158 43 17
+IfEntering LR_MAP07 Animation 158 43 17
 {
 	XWIURH2
 	TNT1A0
 }
 
-IfEntering ID_MAP15 Animation 58 115 17
+IfEntering LR_MAP15 Animation 58 115 17
 {
 	XWIURH0
 	TNT1A0
