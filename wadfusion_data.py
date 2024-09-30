@@ -84,7 +84,7 @@ RES_FILES = [
     'graphics/NWILV03.lmp', 'graphics/NWILV04.lmp',
     'graphics/NWILV05.lmp', 'graphics/NWILV06.lmp',
     'graphics/NWILV07.lmp', 'graphics/NWILV08.lmp',
-    'graphics/PWILV01.lmp',
+    'graphics/PWILV01.lmp', 'graphics/CONBACK.lmp',
     'mapinfo/doom1_levels.txt', 'mapinfo/doom2_levels.txt',
     'mapinfo/master_levels.txt', 'mapinfo/nerve_levels.txt',
     'mapinfo/tnt_levels.txt', 'mapinfo/plutonia_levels.txt',
