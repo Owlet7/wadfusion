@@ -81,6 +81,7 @@ WAD_LUMP_LISTS = {}
 WAD_MAP_PREFIXES = {}
 MAP_NAME_GRAPHICS_DIRS = []
 MASTER_LEVELS_ORDER = []
+MASTER_LEVELS_REJECTS_ORDER = []
 MASTER_LEVELS_PATCHES = {}
 SIGIL_ALT_FILENAMES = []
 SIGIL2_ALT_FILENAMES = []
@@ -352,7 +353,7 @@ def copy_resources():
                 continue
         elif src_file == 'textures.masterlevels' and not (get_wad_filename('doom2') and (get_wad_filename('attack') or get_wad_filename('masterlevels'))):
             continue
-        elif src_file == 'textures.masterlevelsbonus' and not (get_wad_filename('doom') and get_wad_filename('doom2') and (get_wad_filename('attack') or get_wad_filename('masterlevels')) and get_wad_filename('mines') and d1_wad.graphics.get(ULTIMATE_DOOM_ONLY_LUMP, None)):
+        elif src_file == 'textures.masterlevelsbonus' and not (get_wad_filename('doom') and get_wad_filename('doom2') and (get_wad_filename('attack') or get_wad_filename('masterlevels')) and get_wad_filename('mines2') and d1_wad.graphics.get(ULTIMATE_DOOM_ONLY_LUMP, None)):
             continue
         logg('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
