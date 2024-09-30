@@ -2,7 +2,14 @@
 WadFusion Changelog
 ===================
 
-WadFusion 1.0
+WadFusion 1.0.1
+30 September 2024
+- Enabled Remix soundtrack in TNT Evilution.
+- Fixed map names in LoR intermission scripts.
+- Improved LoR HUD logic.
+- Removed redundant localisation strings.
+
+WadFusion 1.0.0
 22 September 2024
 - Now that WadSmoosh has ended its development, forked and rebranded the project
   under a new name -- WadFusion.

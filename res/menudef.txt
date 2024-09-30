@@ -10,7 +10,7 @@ OptionMenu "WadFusionOptions"
 	Option "$WF_MENU_SIGIL2_SHDERS", "wf_sigil2_shreds", "OnOff"
 	Option "$WF_MENU_HULSHULT_IDKFA", "wf_hulshult_idkfa", "OnOff"
 	StaticText " "
-	StaticText "$WF_RESTART_TEXT", "Gold"
+	StaticText "$WF_MENU_RESTART_TEXT", "Gold"
 	Option "$WF_MENU_D1_TEXSWAP", "wf_d1_texswap", "OnOff"
 //	Option "$WF_MENU_MASTERLEVELS_TEXSWAP", "wf_masterlevels_texswap", "OnOff"
 	Option "$WF_MENU_FD_TEXSWAP", "wf_finaldoom_texswap", "OnOff"
@@ -22,14 +22,14 @@ OptionMenu "WadFusionOptions"
 	Option "$WF_MENU_XBOX_SECRET_EXITS", "wf_xbox_secret_exits", "OnOff"
 	StaticText " "
 	Submenu "$HUDMNU_TITLE", "WadFusionHudOptions"
-	Submenu "$WF_CREDITS", "WadFusionCredits"
+	Submenu "$WF_MENU_CREDITS_TITLE", "WadFusionCredits"
 }
 
 OptionMenu "WadFusionHudOptions"
 {
 	Title "$WF_MENU_HUD"
 	Option "$WF_MENU_HUD_ID24", "wf_hud_id24", "OnOff"
-	Option "$WS_MENU_HUD_SWAPHEALTHARMOR", "wf_hud_swaphealtharmor", "OnOff"
+	Option "$WF_MENU_HUD_SWAPHEALTHARMOR", "wf_hud_swaphealtharmor", "OnOff"
 	Slider "$WF_MENU_HUD_ULTRAWIDE", "wf_hud_ultrawide", 0, 255, 1
 }
 
@@ -48,20 +48,20 @@ OptionValue "WF_NULL"
 OptionMenu "WadFusionCredits"
 {
 	Title "$WF_MENU_CREDITS"
-	Submenu "$UD1NAME", "UDCredits"
-	Submenu "$D2E1NAME", "D2Credits"
-	Submenu "$D2MLEPNAME", "MLCredits"
-	Submenu "$FDNAME", "FDCredits"
-	Submenu "$D2E2NAME", "NVCredits"
-	Submenu "$EP5NAME", "SCredits"
-	Submenu "$EP6NAME", "S2Credits"
-	Submenu "$XEPNAME", "XCredits"
+	Submenu "$WF_MENU_CAMPAIGN_UDOOM", "UDCredits"
+	Submenu "$WF_MENU_CREDITS_DOOM2", "D2Credits"
+	Submenu "$WF_MENU_CREDITS_D2ML", "MLCredits"
+	Submenu "$WF_MENU_GAME_FDOOM", "FDCredits"
+	Submenu "$TXT_D2E2", "NVCredits"
+	Submenu "$HUSTR_EPI5", "SCredits"
+	Submenu "$HUSTR_EPI6", "S2Credits"
+	Submenu "$WF_MENU_CAMPAIGN_ID1", "XCredits"
 	Submenu "$WF_NAME", "WFCredits"
 }
 
 OptionMenu "UDCredits"
 {
-	Title "$UD1NAME"
+	Title "$WF_MENU_CAMPAIGN_UDOOM"
 	StaticText "$WF_CRED_DEV", "Red"
 	StaticText "$WF_CRED_ID", "White"
 	StaticText " "
@@ -111,7 +111,7 @@ OptionMenu "UDCredits"
 
 OptionMenu "D2Credits"
 {
-	Title "$D2E1NAME"
+	Title "$WF_MENU_CREDITS_DOOM2"
 	StaticText "$WF_CRED_DEV", "Red"
 	StaticText "$WF_CRED_ID", "White"
 	StaticText " "
@@ -154,7 +154,7 @@ OptionMenu "D2Credits"
 
 OptionMenu "MLCredits"
 {
-	Title "$D2MLEPNAME"
+	Title "$WF_MENU_CREDITS_D2ML"
 	StaticText "$WF_CRED_PUB", "Red"
 	StaticText "$WF_CRED_ID", "White"
 	StaticText "$WF_CRED_GTINTERACTIVE", "White"
@@ -181,7 +181,7 @@ OptionMenu "MLCredits"
 
 OptionMenu "FDCredits"
 {
-	Title "$FDNAME"
+	Title "$WF_MENU_GAME_FDOOM"
 	StaticText "$WF_CRED_DEV", "Red"
 	StaticText "$WF_CRED_TNT", "White"
 	StaticText " "
@@ -230,7 +230,7 @@ OptionMenu "FDCredits"
 
 OptionMenu "NVCredits"
 {
-	Title "$D2E2NAME"
+	Title "$TXT_D2E2"
 	StaticText "$WF_CRED_DEV", "Red"
 	StaticText "$WF_CRED_NERVE", "White"
 	StaticText " "
@@ -254,7 +254,7 @@ OptionMenu "NVCredits"
 
 OptionMenu "SCredits"
 {
-	Title "$EP5NAME"
+	Title "$HUSTR_EPI5"
 	StaticText "$WF_CRED_DEVPUB", "Red"
 	StaticText "$WF_CRED_ROMEROGAMES", "White"
 	StaticText " "
@@ -285,7 +285,7 @@ OptionMenu "SCredits"
 
 OptionMenu "S2Credits"
 {
-	Title "$EP6NAME"
+	Title "$HUSTR_EPI6"
 	StaticText "$WF_CRED_DEVPUB", "Red"
 	StaticText "$WF_CRED_ROMEROGAMES", "White"
 	StaticText " "
@@ -319,7 +319,7 @@ OptionMenu "S2Credits"
 
 OptionMenu "XCredits"
 {
-	Title "$XEPNAME"
+	Title "$WF_MENU_CAMPAIGN_ID1"
 	StaticText "$WF_CRED_DEV", "Red"
 	StaticText "$WF_CRED_ID", "White"
 	StaticText "$WF_CRED_NIGHTDIVE", "White"
