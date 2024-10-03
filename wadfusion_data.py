@@ -131,8 +131,9 @@ WADS = ['doom', 'doom2', 'masterlevels', 'tnt', 'plutonia',
 
 # wads to search for and report if found
 REPORT_WADS = ['doom', 'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',
-               'doom2', 'attack', 'masterlevels', 'nerve', 'id1', 'id1-res', 'id24res',
-               'iddm1', 'tnt', 'plutonia', 'sewers', 'betray', 'extras',
+               'doom2', 'attack', 'masterlevels', 'device_1', 'nerve',
+               'id1', 'id1-res', 'id24res', 'iddm1',
+               'tnt', 'plutonia', 'sewers', 'betray', 'extras',
                'doomunity', 'doom2unity', 'tntunity', 'plutoniaunity',
                'doomkex', 'doom2kex', 'tntkex', 'plutoniakex']
 
@@ -234,7 +235,7 @@ MASTER_LEVELS_REJECTS_ORDER = [
     'cdk_fury',
     'hive',
     'twm01',
-    'mines2',
+    'mines',
     'anomaly',
     'farside',
     'trouble',

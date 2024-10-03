@@ -2,6 +2,28 @@
 WadFusion Changelog
 ===================
 
+
+
+WadFusion 1.1.0
+00 October 2024
+- Added support for the Master Levels rejects.
+  - Christen Klie's rejected levels (device_1.wad, cpu.wad, dmz.wad,
+    e_inside.wad, cdk_fury.wad, hive.wad).
+  - Tom Mustaine's rejected Doom2 Map14 Homage (twm01.wad).
+  - Jim Flynn's Titan series of maps (mines.wad, anomaly.wad, farside.wad,
+    trouble.wad).
+  - The rest of John Anderson's Inferno series (dante25.wad, achron22.wad).
+    Ultimate Doom the Way id Did's E4M8 substitutes the final map (udtwid.wad).
+  - The rejected levels from Sverre André Kvernmo's Cabal series (caball.wad).
+- Added optional kill count fix -- enemies that are revived (e.g. by an
+  Arch-Vile, or on Nightmare skill) or summoned (e.g. by the Icon of Sin) won't
+  count towards the level's statistics and end of level tally.
+- Added CONBACK graphic.
+- Simplified Xbox map extraction.
+- iddm1.wad will no longer count towards the number of extracted episodes, since
+  it won't show up in the in-game menu.
+- The timer will now start only after the user presses Y to proceed.
+
 WadFusion 1.0.1
 30 September 2024
 - Enabled Remix soundtrack in TNT Evilution.

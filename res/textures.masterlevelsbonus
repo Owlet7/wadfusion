@@ -317,3 +317,10 @@ Texture SW2VINEM, 64, 128
 	Patch RW34_2, 0, 0
 	Patch SW4S1, 20, 72
 }
+
+// UDTWiD.WAD
+// renamed from SKY4 to avoid Doom 1 conflict
+Texture MSKY7, 256, 128
+{
+	Patch MSKY7, 0, 0
+}

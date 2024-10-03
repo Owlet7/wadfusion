@@ -29,6 +29,7 @@ Here is the official list of WADs that WadFusion will recognize:
 - The Ultimate DOOM (retail version of `doom.wad`, containing episodes 1-4)
 - DOOM II (`doom2.wad`)
 - Master Levels for DOOM II (the original 20 WAD files, or `masterlevels.wad` from the [KEX-based re-release](https://doomwiki.org/wiki/Doom_%2B_Doom_II))
+- Master Levels Rejects (see below for a full list of supported WADs)
 - Final DOOM (`tnt.wad` and `plutonia.wad`)
 - No Rest for the Living (`nerve.wad`)
 - SIGIL (`sigil.wad` and its optional music addon `sigil_shreds.wad`)
@@ -47,6 +48,28 @@ None of the "official add-on" content from the Unity or KEX-based re-releases of
 
 For SIGIL and SIGIL II, all the filenames for different releases of those WADs are also recognized; you shouldn't have to rename your original files. If `sigil_shreds.wad` is included, or if both versions of SIGIL II are included, WadFusion will extract both soundtracks, which can be toggled from the WadFusion options mod menu in GZDoom.
 
+## Master Levels Rejects
+
+For the Master Levels Rejects to be integrated, *all* of the following WADs must be included:
+- Master Levels for DOOM II (the original 20 WAD files, or `masterlevels.wad` from the [KEX-based re-release](https://doomwiki.org/wiki/Doom_%2B_Doom_II))
+- DOOM II (`doom2.wad`)
+- The Ultimate DOOM (`doom.wad`)
+- [Device One](https://www.doomworld.com/idgames/levels/doom2/d-f/device_1) (`device_1.wad`)
+- [The C.P.U.](https://www.doomworld.com/idgames/levels/doom2/a-c/cpu) (`cpu.wad`)
+- [The D.M.Z.](https://www.doomworld.com/idgames/levels/doom2/d-f/dmz) (`dmz.wad`)
+- [The Enemy Inside](https://www.doomworld.com/idgames/levels/doom2/d-f/e_inside) (`e_inside.wad`)
+- [The Fury](https://www.doomworld.com/idgames/levels/doom2/a-c/cdk_fury) (`cdk_fury.wad`)
+- [The Hive](https://www.doomworld.com/idgames/levels/doom2/g-i/hive) (`hive.wad`)
+- [Doom2 Map14 Homage](https://www.doomworld.com/idgames/levels/doom2/s-u/twm01) (`twm01.wad`)
+- [Mines of Titan](https://www.doomworld.com/idgames/levels/doom2/m-o/mines2) (`mines.wad`)
+- [The Titan Anomaly](https://www.doomworld.com/idgames/levels/doom2/a-c/anomaly) (`anomaly.wad`)
+- [The Farside of Titan](https://www.doomworld.com/idgames/levels/doom2/d-f/farside) (`farside.wad`)
+- [Trouble on Titan](https://www.doomworld.com/idgames/levels/doom2/s-u/trouble) (`trouble.wad`)
+- [Dante's Gate](https://www.doomworld.com/idgames/levels/doom2/d-f/dante25) (`dante25.wad`)
+- [Crossing Acheron](https://www.doomworld.com/idgames/levels/doom2/a-c/achron22) (`achron22.wad`)
+- [Caball](https://doomshack.org/uploads/caball.zip) (`caball.wad`)
+- [Ultimate Doom the Way id Did](https://www.doomworld.com/idgames/levels/doom/s-u/udtwid) (`udtwid.wad`)
+
 ## Absolute Beginner's Guide
 
 1. [Download WadFusion](https://github.com/Owlet7/wadfusion/releases/latest/download/wadfusion_win.zip) and extract it to a folder.
@@ -63,3 +86,4 @@ If you have any issues, the [How_to_download_and_run_Doom](https://doomwiki.org/
 ## Acknowledgements
 
 [WadSmoosh](https://jp.itch.io/wadsmoosh) was originally created by JP LeBreton. WadFusion is based on its [source code](https://heptapod.host/jp-lebreton/wadsmoosh).
+WadFusion uses the [Omgifol Python library](https://github.com/devinacker/omgifol) by Fredrik Johansson and Devin Acker.
