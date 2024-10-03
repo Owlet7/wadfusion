@@ -252,8 +252,8 @@ MASTER_LEVELS_REJECTS_ORDER = [
 # texture patches to extract from specific master levels PWADs
 MASTER_LEVELS_PATCHES = {
     'combine': ('RSKY1', 'MSKY1'),
-    'manor': ('STARS', 'STARS'),
-    'virgil': ('RSKY1', 'MSKY3')
+    'virgil': ('RSKY1', 'MSKY2'),
+    'manor': ('STARS', 'STARS')
 }
 
 # help the initial source wad reporting find sigil by any of its released names

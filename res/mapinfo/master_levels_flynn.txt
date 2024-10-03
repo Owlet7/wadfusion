@@ -45,7 +45,7 @@ map ML_MAP32 "$ML_TROUBLE" // bonus level
 map ML_MAP16 "$ML_MANOR"
 {
 	Next = "ML_MAP17"
-	Sky1 = "MSKY2"
+	Sky1 = "MSKY3"
 	TitlePatch = "MWILV15"
 	Music = "$MUSIC_MESSAG"
 }
@@ -53,7 +53,7 @@ map ML_MAP16 "$ML_MANOR"
 map ML_MAP17 "$ML_TTRAP"
 {
 	Next = "EndTitle"
-	Sky1 = "MSKY2"
+	Sky1 = "MSKY3"
 	TitlePatch = "MWILV16"
 	Music = "$MUSIC_E1M7"
 }

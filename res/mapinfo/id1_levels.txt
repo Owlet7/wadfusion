@@ -232,7 +232,7 @@ Intermission Id1Cast
 	{
 		Background = "ID1BOSS"
 		Time = -1
-		Music = "D_EVILX"
+		Music = "D_DEJAVU"
 	}
 	Cast
 	{

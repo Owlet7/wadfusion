@@ -19,7 +19,7 @@ map ML_MAP33 "$ML_DANTE" // bonus level
 map ML_MAP34 "$ML_ACHRON" // bonus level
 {
 	Next = "ML_MAP11"
-	Sky1 = "MSKY3"
+	Sky1 = "MSKY2"
 	TitlePatch = "MWILV33"
 	Music = "$MUSIC_COUNTD"
 }
@@ -27,7 +27,7 @@ map ML_MAP34 "$ML_ACHRON" // bonus level
 map ML_MAP11 "$ML_VIRGIL"
 {
 	Next = "ML_MAP12"
-	Sky1 = "MSKY3"
+	Sky1 = "MSKY2"
 	TitlePatch = "MWILV10"
 	Music = "$MUSIC_COUNTD"
 }
@@ -35,7 +35,7 @@ map ML_MAP11 "$ML_VIRGIL"
 map ML_MAP12 "$ML_MINOS"
 {
 	Next = "ML_MAP13"
-	Sky1 = "MSKY3"
+	Sky1 = "MSKY2"
 	TitlePatch = "MWILV11"
 	Music = "$MUSIC_DOOM"
 }
@@ -43,7 +43,7 @@ map ML_MAP12 "$ML_MINOS"
 map ML_MAP13 "$ML_NESSUS"
 {
 	Next = "ML_MAP14"
-	Sky1 = "MSKY3"
+	Sky1 = "MSKY2"
 	TitlePatch = "MWILV12"
 	Music = "$MUSIC_SHAWN"
 	Map07Special
@@ -52,7 +52,7 @@ map ML_MAP13 "$ML_NESSUS"
 map ML_MAP14 "$ML_GERYON"
 {
 	Next = "ML_MAP15"
-	Sky1 = "MSKY3"
+	Sky1 = "MSKY2"
 	TitlePatch = "MWILV13"
 	Music = "$MUSIC_DDTBLU"
 }
@@ -60,7 +60,7 @@ map ML_MAP14 "$ML_GERYON"
 map ML_MAP15 "$ML_VESPERAS"
 {
 	Next = "ML_MAP35"
-	Sky1 = "MSKY3"
+	Sky1 = "MSKY2"
 	TitlePatch = "MWILV14"
 	Music = "$MUSIC_IN_CIT"
 }

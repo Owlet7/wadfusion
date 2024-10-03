@@ -18,6 +18,7 @@ WadFusion 1.1.0
 - Added optional kill count fix -- enemies that are revived (e.g. by an
   Arch-Vile, or on Nightmare skill) or summoned (e.g. by the Icon of Sin) won't
   count towards the level's statistics and end of level tally.
+- DOOM + DOOM II Update 1 support.
 - Added CONBACK graphic.
 - Simplified Xbox map extraction.
 - iddm1.wad will no longer count towards the number of extracted episodes, since
