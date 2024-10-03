@@ -162,6 +162,7 @@ def extract_master_levels():
         lump.to_file(out_filename)
 
 def copy_master_levels_doom1_music():
+    logg('Duplicating D_RUNNIN.mus to to use in the Master Levels in place of Doom1 music...')
     copyfile(DEST_DIR_MUS + 'D_RUNNIN.mus', DEST_DIR_MUS + 'D_E2M2.mus')
     copyfile(DEST_DIR_MUS + 'D_RUNNIN.mus', DEST_DIR_MUS + 'D_E1M6.mus')
     copyfile(DEST_DIR_MUS + 'D_RUNNIN.mus', DEST_DIR_MUS + 'D_E3M3.mus')
@@ -207,7 +208,9 @@ def extract_master_levels_rejects():
         map_name = in_wad.maps.find('*')[0]
         extract_map(in_wad, map_name, out_wad_filename)
     # copy E4M7 to use as John Anderson's 8th Canto
-    copyfile(DEST_DIR + 'maps/' + 'E4M7.wad', DEST_DIR + 'maps/' + 'ML_MAP35.wad')
+    out_wad_filename = DEST_DIR + 'maps/' + 'ML_MAP35.wad'
+    logg('  Copying %s map E4M8 to %s' % (get_wad_filename('doom'), out_wad_filename))
+    copyfile(DEST_DIR + 'maps/' + 'E4M7.wad', out_wad_filename)
     num_maps += 1
     # copy UDTWiD E4M8 into dest dir and sets its map lump name
     in_wad = omg.WAD()
@@ -230,8 +233,23 @@ def extract_master_levels_rejects():
         extract_map(in_wad, map_name, out_wad_filename)
         i += 1
 
+def enable_master_levels_rejects():
+    logg('Enabling Master Levels Rejects...')
+    # copy rejects-specific mapinfo
+    copyfile(RES_DIR + 'mapinfo/episodes.rejects.txt', DEST_DIR + 'mapinfo/episodes.txt')
+    copyfile(RES_DIR + 'mapinfo/master_levels.rejects.txt', DEST_DIR + 'mapinfo/master_levels.txt')
+    # enables the additional mapinfo lumps
+    rejects_false = '//include mapinfo/master_levels_flynn.txt\n//include mapinfo/master_levels_anderson.txt\n//include mapinfo/master_levels_kvernmo.txt'
+    rejects_true = 'include mapinfo/master_levels_flynn.txt\ninclude mapinfo/master_levels_anderson.txt\ninclude mapinfo/master_levels_kvernmo.txt'
+    with open(DEST_DIR + 'mapinfo.txt', 'r') as file:
+        tmp_file = file.read()
+        tmp_file = tmp_file.replace(rejects_false, rejects_true)
+    with open(DEST_DIR + 'mapinfo.txt', 'w') as file:
+        file.write(tmp_file)
+
 def rename_ogg():
     # remove .mus file extension from Andrew Hulshult's .ogg music if it's present
+    logg('Renaming OGG music files...')
     for filename in os.listdir(DEST_DIR_MUS):
         if fnmatch.fnmatch(filename, '*.ogg.mus'):
             old_name = os.path.join(DEST_DIR_MUS, filename)
@@ -240,6 +258,7 @@ def rename_ogg():
 
 def rename_mp3():
     # remove .mus file extension from Sigil's .mp3 music if it's present
+    logg('Renaming MP3 music files...')
     for filename in os.listdir(DEST_DIR_MUS):
         if fnmatch.fnmatch(filename, '*.mp3.mus'):
             old_name = os.path.join(DEST_DIR_MUS, filename)
@@ -413,9 +432,11 @@ def copy_resources():
 
 def copy_resources_id1():
     # copy id1 scripts if id1 is present
+    logg('Copying id1 resources...')
     copyfile(RES_DIR + 'zscript/wf_id1weap.zs', DEST_DIR + 'zscript/wf_id1weap.zs')
     copyfile(RES_DIR + 'zscript/wf_sbar.id1.zs', DEST_DIR + 'zscript/wf_sbar.zs')
     # uncomment scripts
+    logg('Enabling id1 scripts...')
     id1_off = '//#include \"zscript/wf_id1weap.zs\"'
     id1_on = '#include \"zscript/wf_id1weap.zs\"'
     with open(DEST_DIR + 'zscript.zs', 'r') as file:
@@ -433,6 +454,7 @@ def copy_resources_id1():
         file.write(tmp_file)
     # duplicate doom1 sky patches to suppress errors
     if not get_wad_filename('doom'):
+        logg('Duplicating doom1 sky patches to suppress errors...')
         copyfile(DEST_DIR + 'patches/SKYE1.lmp', DEST_DIR + 'patches/SKY1.lmp')
         copyfile(DEST_DIR + 'patches/SKYE2.lmp', DEST_DIR + 'patches/SKY2.lmp')
         copyfile(DEST_DIR + 'patches/SKYE3.lmp', DEST_DIR + 'patches/SKY3.lmp')
@@ -677,6 +699,10 @@ def main():
     # copy id1 scripts if id1 is present
     if get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res') and should_extract:
         copy_resources_id1()
+    # copy and enable Master levels Rejects mapinfo
+    if get_wad_filename('device_1') and (get_wad_filename('attack') or get_wad_filename('masterlevels')) and get_wad_filename('doom2'):
+        if should_extract:
+            enable_master_levels_rejects()
     # rename file extensions of Sigil mp3 music
     if should_extract:
         rename_mp3()

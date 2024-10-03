@@ -135,11 +135,10 @@ class WadFusionHandler : EventHandler
 		}
 	}
 	
-	/*
 	void DoMasterLevelsTitanTextureReplacements()
 	{
 		String mapName = level.MapName.MakeLower();
-		if ( mapName == "ml_map22" )      // MINES.WAD
+		if ( mapName == "ml_map29" )      // MINES.WAD
 		{
 			Level.ReplaceTextures("DBRAIN1", "MBRAIN1", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("DBRAIN2", "MBRAIN2", TexMan.NOT_FLAT);
@@ -152,19 +151,19 @@ class WadFusionHandler : EventHandler
 			Level.ReplaceTextures("SW2STON1", "SW2STOND", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STON2", "SW2STONF", TexMan.NOT_FLAT);
 		}
-		else if ( mapName == "ml_map23" ) // ANOMALY.WAD
+		else if ( mapName == "ml_map30" ) // ANOMALY.WAD
 		{
 			Level.ReplaceTextures("SW1STON2", "SW1STONC", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STON2", "SW2STONC", TexMan.NOT_FLAT);
 		}
-		else if ( mapName == "ml_map24" ) // FARSIDE.WAD
+		else if ( mapName == "ml_map31" ) // FARSIDE.WAD
 		{
 			Level.ReplaceTextures("SW1BRIK", "SW1BRIKM", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1STON2", "SW1STONG", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2BRIK", "SW2BRIKM", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STON2", "SW2STONG", TexMan.NOT_FLAT);
 		}
-		else if ( mapName == "ml_map25" ) // TROUBLE.WAD
+		else if ( mapName == "ml_map32" ) // TROUBLE.WAD
 		{
 			Level.ReplaceTextures("SW1PIPE", "SW1PIPEM", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1STON1", "SW1STONC", TexMan.NOT_FLAT);
@@ -180,7 +179,6 @@ class WadFusionHandler : EventHandler
 			Level.ReplaceTextures("SW2VINE", "SW2VINEM", TexMan.NOT_FLAT);
 		}
 	}
-	*/
 	
 	// check if the given sky is the level's current sky, see if that is
 	// being overriden, and if so change it. return whether this happened.
@@ -217,8 +215,8 @@ class WadFusionHandler : EventHandler
 			DoDoom1TextureReplacements();
 		if ( CVar.FindCVar("wf_id1_texswap").GetBool() )
 			DoId1TextureReplacements();
-//		if ( CVar.FindCVar("wf_masterlevels_texswap").GetBool() )
-//			DoMasterLevelsTitanTextureReplacements();
+		if ( CVar.FindCVar("wf_masterlevels_texswap").GetBool() )
+			DoMasterLevelsTitanTextureReplacements();
 		if ( CVar.FindCVar("wf_d2sky_compat").GetBool() )
 			DoDoom2SkyReplacements();
 	}

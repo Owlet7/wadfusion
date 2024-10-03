@@ -50,8 +50,43 @@ episode MAP01
 
 episode ML_MAP01
 {
-	Name = "$D2MLNAME"
-	PicName = "M_MASTER"
+	Name = "$TEMP_ML_EP1"
+	PicName = "M_MASTR1"
+	Optional
+}
+
+episode ML_MAP03
+{
+	Name = "$TEMP_ML_EP2"
+	PicName = "M_MASTR2"
+	Optional
+}
+
+episode ML_MAP07
+{
+	Name = "$TEMP_ML_EP3"
+	PicName = "M_MASTR3"
+	Optional
+}
+
+episode ML_MAP29
+{
+	Name = "$TEMP_ML_EP4"
+	PicName = "M_MASTR4"
+	Optional
+}
+
+episode ML_MAP33
+{
+	Name = "$TEMP_ML_EP5"
+	PicName = "M_MASTR5"
+	Optional
+}
+
+episode ML_MAP19
+{
+	Name = "$TEMP_ML_EP6"
+	PicName = "M_MASTR6"
 	Optional
 }
 

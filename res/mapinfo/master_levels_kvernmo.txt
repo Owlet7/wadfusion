@@ -1,0 +1,109 @@
+// Master Levels for Doom 2 maps - Sverre André Kvernmo's CABAL
+
+defaultmap
+{
+	Sky1 = "RSKY3"
+	SuckTime = 1
+	NoJump
+	NoCrouch
+	Author = "$WF_AU_KVERNMO"
+}
+
+map ML_MAP19 "$ML_BLOODSEA"
+{
+	Next = "ML_MAP37"
+	TitlePatch = "MWILV18"
+	Music = "$MUSIC_SHAWN"
+	Map07Special
+}
+
+map ML_MAP37 "$ML_FLOOD" // reject level
+{
+	Next = "ML_MAP38"
+	TitlePatch = "MWILV36"
+	Music = "$MUSIC_COUNTD"
+}
+
+map ML_MAP38 "$ML_DERELICT" // reject level
+{
+	Next = "ML_MAP39"
+	TitlePatch = "MWILV37"
+	Music = "$MUSIC_STALKS"
+	Author = "$AU_KVERNMO_HYNE"
+}
+
+map ML_MAP39 "$ML_WATCHTWR" // reject level
+{
+	Next = "ML_MAP20"
+	TitlePatch = "MWILV38"
+	Music = "$MUSIC_BETWEE"
+	Author = "$AU_KVERNMO_HYNE"
+}
+
+map ML_MAP20 "$ML_MEPHISTO"
+{
+	Next = "ML_MAP40"
+	TitlePatch = "MWILV19"
+	Music = "$MUSIC_SHAWN"
+	AllowMonsterTelefrags
+	Map07Special
+}
+
+map ML_MAP40 "$ML_TODEATH" // reject level
+{
+	Next = "ML_MAP18"
+	TitlePatch = "MWILV39"
+	Music = "$MUSIC_DOOM"
+}
+
+map ML_MAP18 "$ML_TEETH"
+{
+	Next = "ML_MAP41"
+	SecretNext = "ML_MAP21"
+	TitlePatch = "MWILV17"
+	Music = "$MUSIC_EVIL"
+}
+
+map ML_MAP41 "$ML_ARENA" // reject level
+{
+	Next = "ML_MAP42"
+	TitlePatch = "MWILV40"
+	Music = "$MUSIC_THE_DA"
+}
+
+map ML_MAP42 "$ML_STORM" // reject level
+{
+	Next = "ML_MAP10"
+	TitlePatch = "MWILV41"
+	Music = "$MUSIC_IN_CIT"
+}
+
+map ML_MAP10 "$ML_BLACKTWR"
+{
+	Next = "ML_MAP43"
+	TitlePatch = "MWILV09"
+	Music = "$MUSIC_ADRIAN"
+}
+
+map ML_MAP43 "$ML_THE_EVIL" // reject level
+{
+	Next = "EndTitle"
+	TitlePatch = "MWILV42"
+	Music = "$MUSIC_OPENIN"
+	AllowMonsterTelefrags
+}
+
+map ML_MAP21 "$ML_TEETH_SECRET"
+{
+	Next = "ML_MAP41"
+	Cluster = 25
+	TitlePatch = "MWILV20"
+	Music = "$MUSIC_ULTIMA"
+}
+
+cluster 25
+{
+	EnterText = "$MLSECRET"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT31"
+}

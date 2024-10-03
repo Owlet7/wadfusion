@@ -1,0 +1,88 @@
+// Master Levels for Doom 2 maps - John Anderson's INFERNO
+
+defaultmap
+{
+	SuckTime = 1
+	NoJump
+	NoCrouch
+	Author = "$WF_AU_ANDERSON"
+}
+
+map ML_MAP33 "$ML_DANTE" // bonus level
+{
+	Next = "ML_MAP34"
+	Sky1 = "RSKY1"
+	TitlePatch = "MWILV32"
+	Music = "$MUSIC_STALKS"
+}
+
+map ML_MAP34 "$ML_ACHRON" // bonus level
+{
+	Next = "ML_MAP11"
+	Sky1 = "MSKY3"
+	TitlePatch = "MWILV33"
+	Music = "$MUSIC_COUNTD"
+}
+
+map ML_MAP11 "$ML_VIRGIL"
+{
+	Next = "ML_MAP12"
+	Sky1 = "MSKY3"
+	TitlePatch = "MWILV10"
+	Music = "$MUSIC_COUNTD"
+}
+
+map ML_MAP12 "$ML_MINOS"
+{
+	Next = "ML_MAP13"
+	Sky1 = "MSKY3"
+	TitlePatch = "MWILV11"
+	Music = "$MUSIC_DOOM"
+}
+
+map ML_MAP13 "$ML_NESSUS"
+{
+	Next = "ML_MAP14"
+	Sky1 = "MSKY3"
+	TitlePatch = "MWILV12"
+	Music = "$MUSIC_SHAWN"
+	Map07Special
+}
+
+map ML_MAP14 "$ML_GERYON"
+{
+	Next = "ML_MAP15"
+	Sky1 = "MSKY3"
+	TitlePatch = "MWILV13"
+	Music = "$MUSIC_DDTBLU"
+}
+
+map ML_MAP15 "$ML_VESPERAS"
+{
+	Next = "ML_MAP35"
+	Sky1 = "MSKY3"
+	TitlePatch = "MWILV14"
+	Music = "$MUSIC_IN_CIT"
+}
+
+map ML_MAP35 "$HUSTR_E4M7" // diplicate of E4M7
+{
+	Next = "ML_MAP36"
+	Sky1 = "SKY4"
+	TitlePatch = "MWILV34"
+	Par = 135
+	Music = "$MUSIC_E2M6"
+}
+
+map ML_MAP36 "$HUSTR_E4M8" // bonus level - UDTWiD's E4M8
+{
+	Next = "EndTitle"
+	Sky1 = "MSKY7"
+	TitlePatch = "MWILV35"
+	Par = 105
+	Music = "$MUSIC_E2M5"
+	SpiderMastermindSpecial
+	SpecialAction_LowerFloor
+	NoSoundClipping
+	Author = "$WF_AU_XASER"
+}
