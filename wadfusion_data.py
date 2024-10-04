@@ -256,6 +256,16 @@ MASTER_LEVELS_PATCHES = {
     'manor': ('STARS', 'STARS')
 }
 
+MASTER_LEVELS_TITAN_PATCHES = {
+    'mines': ('TWF', 'WF1', 'WF2', 'WF3', 'WF4', 'WF5', 'WF6', 'WF7', 'WF8'),
+    'anomaly': ('BLACK', 'S_DOOM09', 'S_DOOM10', 'S_DOOM11', 'S_DOOM12', 'S_DOOM13', 'S_DOOM14', 'S_DOOM15', 'S_DOOM16'),
+    'trouble': ('FIRELV', 'SAVED', 'STARS1', 'STARSAT', 'TROU00', 'TROU01', 'TROU06', 'TROU07', 'TROU13')
+}
+
+MASTER_LEVELS_UDTWID_PATCHES = {
+    'udtwid': ('SKY4', 'MSKY7')
+}
+
 # help the initial source wad reporting find sigil by any of its released names
 SIGIL_ALT_FILENAMES = ['sigil_v1_0', 'sigil_v1_1', 'sigil_v1_2', 'sigil_v1_21']
 # same for sigil2 - version with MIDI music

@@ -65,7 +65,7 @@ map ML_MAP15 "$ML_VESPERAS"
 	Music = "$MUSIC_IN_CIT"
 }
 
-map ML_MAP35 "$HUSTR_E4M7" // diplicate of E4M7
+map ML_MAP35 "$ML_CHIRON" // diplicate of E4M7
 {
 	Next = "ML_MAP36"
 	Sky1 = "SKY4"
@@ -74,7 +74,7 @@ map ML_MAP35 "$HUSTR_E4M7" // diplicate of E4M7
 	Music = "$MUSIC_E2M6"
 }
 
-map ML_MAP36 "$HUSTR_E4M8" // bonus level - UDTWiD's E4M8
+map ML_MAP36 "$ML_LETHE" // bonus level - UDTWiD's E4M8
 {
 	Next = "EndTitle"
 	Sky1 = "MSKY7"

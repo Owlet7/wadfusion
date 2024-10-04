@@ -83,6 +83,8 @@ MAP_NAME_GRAPHICS_DIRS = []
 MASTER_LEVELS_ORDER = []
 MASTER_LEVELS_REJECTS_ORDER = []
 MASTER_LEVELS_PATCHES = {}
+MASTER_LEVELS_TITAN_PATCHES = {}
+MASTER_LEVELS_UDTWID_PATCHES = {}
 SIGIL_ALT_FILENAMES = []
 SIGIL2_ALT_FILENAMES = []
 SIGIL2_MP3_ALT_FILENAMES = []
@@ -120,14 +122,14 @@ def get_wad_filename(wad_name):
 
 def extract_master_levels():
     # check if present first
-    for i,wad_name in enumerate(MASTER_LEVELS_ORDER):
+    for i, wad_name in enumerate(MASTER_LEVELS_ORDER):
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         if not wad_filename:
             logg("  ERROR: Skipping Master Levels as %s is not present" % wad_name, error=True)
             return
     logg('Processing Master Levels...')
-    for i,wad_name in enumerate(MASTER_LEVELS_ORDER):
+    for i, wad_name in enumerate(MASTER_LEVELS_ORDER):
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         in_wad.from_file(wad_filename)
@@ -146,7 +148,7 @@ def extract_master_levels():
     in_wad.from_file(wad_filename)
     extract_map(in_wad, in_wad.maps.find('*')[1], out_wad_filename)
     # extract sky lumps
-    for wad_name,patch_replace in MASTER_LEVELS_PATCHES.items():
+    for wad_name, patch_replace in MASTER_LEVELS_PATCHES.items():
         wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         wad.from_file(wad_filename)
@@ -162,7 +164,7 @@ def extract_master_levels():
         lump.to_file(out_filename)
 
 def copy_master_levels_doom1_music():
-    logg('Duplicating D_RUNNIN.mus to to use in the Master Levels in place of Doom1 music...')
+    logg('Duplicating D_RUNNIN.mus to use in the Master Levels in place of Doom1 music...')
     copyfile(DEST_DIR_MUS + 'D_RUNNIN.mus', DEST_DIR_MUS + 'D_E2M2.mus')
     copyfile(DEST_DIR_MUS + 'D_RUNNIN.mus', DEST_DIR_MUS + 'D_E1M6.mus')
     copyfile(DEST_DIR_MUS + 'D_RUNNIN.mus', DEST_DIR_MUS + 'D_E3M3.mus')
@@ -171,13 +173,13 @@ def copy_master_levels_doom1_music():
 def extract_master_levels_rejects():
     global num_maps
     # check if present first
-    for i,wad_name in enumerate(MASTER_LEVELS_ORDER):
+    for i, wad_name in enumerate(MASTER_LEVELS_ORDER):
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         if not (wad_filename or get_wad_filename('masterlevels')):
             logg("  ERROR: Skipping Master Levels Rejects as the Master Levels are not present", error=True)
             return
-    for i,wad_name in enumerate(MASTER_LEVELS_REJECTS_ORDER):
+    for i, wad_name in enumerate(MASTER_LEVELS_REJECTS_ORDER):
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         if not wad_filename:
@@ -197,7 +199,7 @@ def extract_master_levels_rejects():
         logg("  ERROR: Skipping Master Levels Rejects as The Ultimate DOOM is not present", error=True)
         return
     logg('Processing Master Levels Rejects...')
-    for i,wad_name in enumerate(MASTER_LEVELS_REJECTS_ORDER):
+    for i, wad_name in enumerate(MASTER_LEVELS_REJECTS_ORDER):
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         in_wad.from_file(wad_filename)
@@ -232,6 +234,34 @@ def extract_master_levels_rejects():
         logg('  Extracting %s map %s to %s' % (wad_filename, map_name, out_wad_filename))
         extract_map(in_wad, map_name, out_wad_filename)
         i += 1
+    # extract Titan lumps
+    for wad_name, patch_extract in MASTER_LEVELS_TITAN_PATCHES.items():
+        wad = omg.WAD()
+        wad_filename = get_wad_filename(wad_name)
+        wad.from_file(wad_filename)
+        for i in patch_extract:
+            lump = wad.patches[i]
+            out_filename = DEST_DIR + 'patches/' + i + '.lmp'
+            logg('  Extracting %s lump from %s' % (i, wad_filename))
+            lump.to_file(out_filename)
+    # extract UDTWiD lumps
+    wad = omg.WAD()
+    wad_filename = get_wad_filename('udtwid')
+    wad.from_file(wad_filename)
+    lump = wad.patches['DRSLEEP']
+    out_filename = DEST_DIR + 'patches/DRSLEEP.lmp'
+    logg('  Extracting DRSLEEP lump from %s' % wad_filename)
+    lump.to_file(out_filename)
+    for wad_name, patch_replace in MASTER_LEVELS_UDTWID_PATCHES.items():
+        wad = omg.WAD()
+        wad_filename = get_wad_filename(wad_name)
+        wad.from_file(wad_filename)
+        lump = wad.patches[patch_replace[0]]
+        out_filename = DEST_DIR + 'patches/' + patch_replace[1] + '.lmp'
+        logg('  Extracting %s lump from %s as %s' % (patch_replace[0],
+                                                   wad_filename,
+                                                   patch_replace[1]))
+        lump.to_file(out_filename)
 
 def enable_master_levels_rejects():
     logg('Enabling Master Levels Rejects...')
@@ -249,7 +279,7 @@ def enable_master_levels_rejects():
 
 def rename_ogg():
     # remove .mus file extension from Andrew Hulshult's .ogg music if it's present
-    logg('Renaming OGG music files...')
+    logg('Renaming OGG music files if present...')
     for filename in os.listdir(DEST_DIR_MUS):
         if fnmatch.fnmatch(filename, '*.ogg.mus'):
             old_name = os.path.join(DEST_DIR_MUS, filename)
@@ -258,7 +288,7 @@ def rename_ogg():
 
 def rename_mp3():
     # remove .mus file extension from Sigil's .mp3 music if it's present
-    logg('Renaming MP3 music files...')
+    logg('Renaming MP3 music files if present...')
     for filename in os.listdir(DEST_DIR_MUS):
         if fnmatch.fnmatch(filename, '*.mp3.mus'):
             old_name = os.path.join(DEST_DIR_MUS, filename)
@@ -586,7 +616,7 @@ def main():
         input_func('Press Enter to exit.\n')
         return
     print('A new IPK3 will be generated with the following episodes:')
-    for num_eps,ep_name in enumerate(get_eps(found)):
+    for num_eps, ep_name in enumerate(get_eps(found)):
         print('- %s' % ep_name)
     num_eps += 1
     # deduct iddm1 from the episode tally, since it won't show up in the menu

@@ -319,6 +319,11 @@ Texture SW2VINEM, 64, 128
 }
 
 // UDTWiD.WAD
+Texture DRSLEEP, 256, 128
+{
+	Patch DRSLEEP, 0, 0
+}
+
 // renamed from SKY4 to avoid Doom 1 conflict
 Texture MSKY7, 256, 128
 {
