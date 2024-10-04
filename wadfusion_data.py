@@ -234,11 +234,11 @@ MASTER_LEVELS_ORDER = [
 ]
 
 MASTER_LEVELS_REJECTS_ORDER = [
-    'device_1',
     'cpu',
+    'device_1',
     'dmz',
-    'e_inside',
     'cdk_fury',
+    'e_inside',
     'hive',
     'twm01',
     'mines',

@@ -12,12 +12,16 @@ defaultmap
 
 // Tim Willits's Master Levels
 
+adddefaultmap
+{
+	Author = "$WF_AU_WILLITS_CHASAR"
+}
+
 map ML_MAP01 "$ML_ATTACK"
 {
 	Next = "ML_MAP02"
 	TitlePatch = "MWILV00"
 	Music = "$MUSIC_RUNNIN"
-	Author = "$WF_AU_WILLITS_CHASAR"
 }
 
 map ML_MAP02 "$ML_CANYON"
@@ -25,17 +29,20 @@ map ML_MAP02 "$ML_CANYON"
 	Next = "EndTitle"
 	TitlePatch = "MWILV01"
 	Music = "$MUSIC_E2M2"
-	Author = "$WF_AU_WILLITS_CHASAR"
 }
 
 // Christen Klie's Master Levels
+
+adddefaultmap
+{
+	Author = "$WF_AU_KLIE"
+}
 
 map ML_MAP03 "$ML_CATWALK"
 {
 	Next = "ML_MAP04"
 	TitlePatch = "MWILV02"
 	Music = "$MUSIC_THE_DA"
-	Author = "$WF_AU_KLIE"
 }
 
 map ML_MAP04 "$ML_FISTULA"
@@ -43,7 +50,6 @@ map ML_MAP04 "$ML_FISTULA"
 	Next = "ML_MAP05"
 	TitlePatch = "MWILV03"
 	Music = "$MUSIC_E1M6"
-	Author = "$WF_AU_KLIE"
 }
 
 map ML_MAP05 "$ML_COMBINE"
@@ -52,7 +58,6 @@ map ML_MAP05 "$ML_COMBINE"
 	Sky1 = "MSKY1"
 	TitlePatch = "MWILV04"
 	Music = "$MUSIC_DEAD"
-	Author = "$WF_AU_KLIE"
 }
 
 map ML_MAP06 "$ML_SUBSPACE"
@@ -60,7 +65,6 @@ map ML_MAP06 "$ML_SUBSPACE"
 	Next = "ML_MAP08"
 	TitlePatch = "MWILV05"
 	Music = "$MUSIC_STALKS"
-	Author = "$WF_AU_KLIE"
 }
 
 map ML_MAP08 "$ML_SUBTERRA"
@@ -68,7 +72,6 @@ map ML_MAP08 "$ML_SUBTERRA"
 	Next = "ML_MAP09"
 	TitlePatch = "MWILV07"
 	Music = "$MUSIC_DDTBLU"
-	Author = "$WF_AU_KLIE"
 }
 
 map ML_MAP09 "$ML_GARRISON"
@@ -76,23 +79,20 @@ map ML_MAP09 "$ML_GARRISON"
 	Next = "ML_MAP22"
 	TitlePatch = "MWILV08"
 	Music = "$MUSIC_E3M3"
-	Author = "$WF_AU_KLIE"
 }
 
-map ML_MAP22 "$ML_DEVICE1" // reject level
+map ML_MAP22 "$ML_CPU" // reject level
 {
 	Next = "ML_MAP23"
 	TitlePatch = "MWILV21"
-	Music = "$MUSIC_E2M2"
-	Author = "$WF_AU_KLIE"
+	Music = "$MUSIC_E1M3"
 }
 
-map ML_MAP23 "$ML_CPU" // reject level
+map ML_MAP23 "$ML_DEVICE1" // reject level
 {
 	Next = "ML_MAP24"
 	TitlePatch = "MWILV22"
-	Music = "$MUSIC_E1M3"
-	Author = "$WF_AU_KLIE"
+	Music = "$MUSIC_E2M2"
 }
 
 map ML_MAP24 "$ML_DMZ" // reject level
@@ -100,23 +100,20 @@ map ML_MAP24 "$ML_DMZ" // reject level
 	Next = "ML_MAP25"
 	TitlePatch = "MWILV23"
 	Music = "$MUSIC_E1M6"
-	Author = "$WF_AU_KLIE"
 }
 
-map ML_MAP25 "$ML_EINSIDE" // reject level
+map ML_MAP25 "$ML_FURY" // reject level
 {
 	Next = "ML_MAP26"
 	TitlePatch = "MWILV24"
-	Music = "$MUSIC_E1M5"
-	Author = "$WF_AU_KLIE"
+	Music = "$MUSIC_SHAWN"
 }
 
-map ML_MAP26 "$ML_FURY" // reject level
+map ML_MAP26 "$ML_EINSIDE" // reject level
 {
 	Next = "ML_MAP27"
 	TitlePatch = "MWILV25"
-	Music = "$MUSIC_SHAWN"
-	Author = "$WF_AU_KLIE"
+	Music = "$MUSIC_E1M5"
 }
 
 map ML_MAP27 "$ML_HIVE" // reject level
@@ -124,23 +121,26 @@ map ML_MAP27 "$ML_HIVE" // reject level
 	Next = "EndTitle"
 	TitlePatch = "MWILV26"
 	Music = "$MUSIC_E3M3"
-	Author = "$WF_AU_KLIE"
 }
 
 // Tom Mustaines's Master Levels
 
-map ML_MAP07 "$ML_PARADOX"
+adddefaultmap
 {
-	Next = "ML_MAP28"
-	TitlePatch = "MWILV06"
-	Music = "$MUSIC_IN_CIT"
-	Author = "$WF_AU_MUSTAINES"
+	Author = "$WF_AU_MUSTAINE"
 }
 
 map ML_MAP28 "$ML_TWM01" // reject level
 {
-	Next = "EndTitle"
+	Next = "ML_MAP28"
 	TitlePatch = "MWILV27"
 	Music = "$MUSIC_COUNTD"
-	Author = "$WF_AU_MUSTAINE"
+}
+
+map ML_MAP07 "$ML_PARADOX"
+{
+	Next = "EndTitle"
+	TitlePatch = "MWILV06"
+	Music = "$MUSIC_IN_CIT"
+	Author = "$WF_AU_MUSTAINES"
 }
