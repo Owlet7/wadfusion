@@ -83,7 +83,7 @@ map ML_MAP22 "$ML_DEVICE1" // reject level
 {
 	Next = "ML_MAP23"
 	TitlePatch = "MWILV21"
-	Music = "$MUSIC_RENAMEME"
+	Music = "$MUSIC_E2M2"
 	Author = "$WF_AU_KLIE"
 }
 
@@ -91,7 +91,7 @@ map ML_MAP23 "$ML_CPU" // reject level
 {
 	Next = "ML_MAP24"
 	TitlePatch = "MWILV22"
-	Music = "$MUSIC_RENAMEME"
+	Music = "$MUSIC_E1M3"
 	Author = "$WF_AU_KLIE"
 }
 
@@ -99,7 +99,7 @@ map ML_MAP24 "$ML_DMZ" // reject level
 {
 	Next = "ML_MAP25"
 	TitlePatch = "MWILV23"
-	Music = "$MUSIC_RENAMEME"
+	Music = "$MUSIC_E1M6"
 	Author = "$WF_AU_KLIE"
 }
 
@@ -107,7 +107,7 @@ map ML_MAP25 "$ML_EINSIDE" // reject level
 {
 	Next = "ML_MAP26"
 	TitlePatch = "MWILV24"
-	Music = "$MUSIC_RENAMEME"
+	Music = "$MUSIC_E1M5"
 	Author = "$WF_AU_KLIE"
 }
 
@@ -115,7 +115,7 @@ map ML_MAP26 "$ML_FURY" // reject level
 {
 	Next = "ML_MAP27"
 	TitlePatch = "MWILV25"
-	Music = "$MUSIC_RENAMEME"
+	Music = "$MUSIC_SHAWN"
 	Author = "$WF_AU_KLIE"
 }
 
@@ -123,7 +123,7 @@ map ML_MAP27 "$ML_HIVE" // reject level
 {
 	Next = "EndTitle"
 	TitlePatch = "MWILV26"
-	Music = "$MUSIC_RENAMEME"
+	Music = "$MUSIC_E3M3"
 	Author = "$WF_AU_KLIE"
 }
 

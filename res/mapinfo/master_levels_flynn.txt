@@ -23,7 +23,7 @@ map ML_MAP30 "$ML_ANOMALY" // bonus level
 	Next = "ML_MAP31"
 	Sky1 = "MSKY5"
 	TitlePatch = "MWILV29"
-	Music = "$MUSIC_RENAMEME"
+	Music = "$MUSIC_DOOM"
 }
 
 map ML_MAP31 "$ML_FARSIDE" // bonus level
