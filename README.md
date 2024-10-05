@@ -68,7 +68,7 @@ For the Master Levels Rejects to be integrated, *all* of the following WADs must
 - [Dante's Gate](https://www.doomworld.com/idgames/levels/doom2/d-f/dante25) (`dante25.wad`)
 - [Crossing Acheron](https://www.doomworld.com/idgames/levels/doom2/a-c/achron22) (`achron22.wad`)
 - [Caball](https://doomshack.org/uploads/caball.zip) (`caball.wad`)
-- [Ultimate Doom the Way id Did](https://www.doomworld.com/idgames/levels/doom/s-u/udtwid) (`udtwid.wad`)
+- [Ultimate Doom The Way id Did](https://www.doomworld.com/idgames/levels/doom/s-u/udtwid) (`udtwid.wad`)
 
 ## Absolute Beginner's Guide
 
@@ -80,8 +80,6 @@ For the Master Levels Rejects to be integrated, *all* of the following WADs must
 6. Download the latest [GZDoom development build](https://devbuilds.drdteam.org/gzdoom/) and extract it to a folder.
 7. Copy the `doom_complete.pk3` file to GZDoom's folder.
 8. Launch GZDoom and play!
-
-If you have any issues, the [How_to_download_and_run_Doom](https://doomwiki.org/wiki/How_to_download_and_run_Doom) page on the [Doom Wiki](https://doomwiki.org) might be helpful.
 
 ## Acknowledgements
 
