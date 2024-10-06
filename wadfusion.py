@@ -740,7 +740,7 @@ def main():
     if should_extract:
         copy_resources()
     # copy id1 scripts if id1 is present
-    if get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res') and should_extract:
+    if get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res') and get_wad_filename('doom2') and should_extract:
         copy_resources_id1()
     # copy and enable Master levels Rejects mapinfo
     if get_wad_filename('device_1') and (get_wad_filename('attack') or get_wad_filename('masterlevels')) and get_wad_filename('doom2'):
