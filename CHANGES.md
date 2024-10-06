@@ -1,11 +1,12 @@
-===================
-WadFusion Changelog
-===================
+# WadFusion Changelog
 
+<!--## [WIP](https://github.com/Owlet7/wadfusion/tree/HEAD)
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.1.0...HEAD)-->
 
+## [WadFusion 1.1.0](https://github.com/Owlet7/wadfusion/tree/v1.1.0)
+[**07 October 2024**](https://github.com/Owlet7/wadfusion/releases/tag/v1.1.0)
 
-WadFusion 1.1.0
-00 October 2024
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.0.1...v1.1.0)
 - Added support for the Master Levels rejects.
   - Christen Klie's rejected levels (device_1.wad, cpu.wad, dmz.wad,
     e_inside.wad, cdk_fury.wad, hive.wad).
@@ -24,16 +25,23 @@ WadFusion 1.1.0
 - iddm1.wad will no longer count towards the number of extracted episodes, since
   it won't show up in the in-game menu.
 - The timer will now start only after the user presses Y to proceed.
+- Updated Omgifol library to version 0.5.1.
+- Dropped Python 2 support.
+- Updated the Windows executable to Python 3.13.0.
 
-WadFusion 1.0.1
-30 September 2024
+## [WadFusion 1.0.1](https://github.com/Owlet7/wadfusion/tree/v1.0.1)
+[**30 September 2024**](https://github.com/Owlet7/wadfusion/releases/tag/v1.0.1)
+
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.0.0...v1.0.1)
 - Enabled Remix soundtrack in TNT Evilution.
 - Fixed map names in LoR intermission scripts.
 - Improved LoR HUD logic.
 - Removed redundant localisation strings.
 
-WadFusion 1.0.0
-22 September 2024
+## [WadFusion 1.0.0](https://github.com/Owlet7/wadfusion/tree/v1.0.0)
+[**22 September 2024**](https://github.com/Owlet7/wadfusion/releases/tag/v1.0.0)
+
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/963b5f47e631494e0b55930ace8f286ccd377574...v1.0.0)
 - Now that WadSmoosh has ended its development, forked and rebranded the project
   under a new name -- WadFusion.
 - Updated the project's license to the GNU GPLv3 or later.
@@ -116,20 +124,22 @@ WadFusion 1.0.0
   builds.
 - Known bug: The drag on the lava floor in LR_MAP08 isn't strong enough.
 
+<details>
+<summary>WadSmoosh versions</summary>
 
-WadSmoosh 1.41
+## WadSmoosh 1.41
 31 December 2023
 - fixed SW*BRN1 -> SW*BRWN1 doom1 switch texture replacement
 
 
-WadSmoosh 1.4
+## WadSmoosh 1.4
 26 December 2023
 - Sigil II support, thanks to jdbrown
 - Force graphical (larger) names in episode list
 - Properly handle Ultimate Doom texture substitutions
 
 
-WadSmoosh 1.31
+## WadSmoosh 1.31
 16 August 2023
 - Add the "Ultra-Violence+" skill level from the Unity ports, which adds Fast
   Monsters and the multiplayer-only weapon spawns to Ultra Violence difficulty
@@ -139,7 +149,7 @@ WadSmoosh 1.31
   since more detailed credit information has come to light.
 
 
-WadSmoosh 1.3
+## WadSmoosh 1.3
 03 November 2020
 - Recognize the Unity-based official Doom port IWADs same as the BFG Edition
   IWADs. The recently released GZDoom 4.5 properly supports the widescreen title
@@ -169,14 +179,14 @@ WadSmoosh 1.3
   release, this change just makes it give a more comprehensible error message.
 
 
-WadSmoosh 1.26
+## WadSmoosh 1.26
 13 September 2020
 - Fix issue caused by 1.25's "don't extract PNAMES and TEXTUREx lumps" change
   that broke MAP07 and Plutonia MAP30. After some investigation and technical
   advice, reverting to the previous behavior of extracting PNAMES and TEXTURE1.
 
 
-WadSmoosh 1.25
+## WadSmoosh 1.25
 01 September 2020
 - Ultimate Doom + SIGIL should use FLOOR7_2 as the screen border graphic, all
   other episodes should use GRNROCK.
@@ -185,7 +195,7 @@ WadSmoosh 1.25
 - No longer necessary to extract TEXTURE1 and PNAMES lumps from doom2.wad.
 
 
-WadSmoosh 1.24
+## WadSmoosh 1.24
 06 August 2020
 - Fixed texture replacements in Final Doom not working after level transitions.
   (Case sensitivity issue with MapNames)
@@ -194,18 +204,18 @@ WadSmoosh 1.24
   completion.
 
 
-WadSmoosh 1.23
+## WadSmoosh 1.23
 04 August 2020
 - Fixed incorrect finale music for TNT and Plutonia.
 
 
-WadSmoosh 1.22
+## WadSmoosh 1.22
 01 August 2020
 - No Rest For The Living maps 04-08 should use hell sky (RSKY3) as per recent
   change to the official Unity port.
 
 
-WadSmoosh 1.21
+## WadSmoosh 1.21
 25 July 2020
 - Safely clean up anything in pk3/ working subdirectory from any previous runs.
   Only remove files that WadSmoosh has placed there. This prevents any issues
@@ -220,7 +230,7 @@ WadSmoosh 1.21
   and re-run WadSmoosh, and you'll get the previous behavior.
 
 
-WadSmoosh 1.2
+## WadSmoosh 1.2
 17 July 2020
 - Fixed various issues with the ways certain user WADs defined custom skies for
   Doom 2 levels. New, simpler ZScript-based detection and substitution logic
@@ -238,37 +248,37 @@ WadSmoosh 1.2
 - Windows EXE uses latest 32-bit Python 3.7.8.
 
 
-WadSmoosh 1.16
+## WadSmoosh 1.16
 14 March 2020
 - TNT Evilution: Fixed a linecode typo for Ty Halderman's name.
 - Added SIGIL 1.2 par times.
 
 
-WadSmoosh 1.15
+## WadSmoosh 1.15
 17 February 2020
 - This release fixes a switch texture error in SW1STARG, used once each in TNT
   MAP15 and Plutonia MAP04. Before this fix those switches functioned, they just
   looked out of place if you knew what the vanilla IWADs looked like. 
 
 
-WadSmoosh 1.14
+## WadSmoosh 1.14
 05 January 2020
 - Correctly extract the new exit graphic in SIGIL 1.2
 - Replaced the custom-made map author lumps with text data that uses GZDoom's
   semi-recently-added author name display functionality.
 
 
-WadSmoosh 1.13
+## WadSmoosh 1.13
 04 August 2019
 - Fixed MAP02 par time
 
 
-WadSmoosh 1.12
+## WadSmoosh 1.12
 14 July 2019
 - Fixed Plutonia's animated waterfall textures sometimes not animating.
 
 
-WadSmoosh 1.11
+## WadSmoosh 1.11
 02 July 2019
 - Master Levels: fixed incorrect text and music at end of episode (cluster
   number collision with Sigil)
@@ -277,7 +287,7 @@ WadSmoosh 1.11
 - Xbox secret levels: sewers exits to e1m2 instead of e1m1
 
 
-WadSmoosh 1.1
+## WadSmoosh 1.1
 01 June 2019
 - Full SIGIL support! Provide your own SIGIL.wad and (optionally)
   SIGIL_SHREDS.wad and it will be included in the episode list. Please note
@@ -291,7 +301,7 @@ WadSmoosh 1.1
   you're not running from the command line).
 
 
-WadSmoosh 1.0
+## WadSmoosh 1.0
 19 May 2019
 - builds now have version numbers, let's call this 1.0
 - added Theresa Chasar co-credit for E4M5, ATTACK.WAD and CANYON.WAD
@@ -302,13 +312,13 @@ WadSmoosh 1.0
   prompt for Y before continuing
 
 
-WadSmoosh
+## WadSmoosh
 07 May 2019
 - Fixed Master Levels MAP21 (Bad Dream) credit image not appearing.
 - Used PNGcrush to reduce size (25kb) of included graphic lumps.
 
 
-WadSmoosh
+## WadSmoosh
 05 May 2019
 - Windows exe now uses Python 3.7.3
 - "Xaser ordering" for Master Levels is now the default
@@ -316,12 +326,12 @@ WadSmoosh
 - Map credit images for intermission screen
 
 
-WadSmoosh
+## WadSmoosh
 11 May 2018
 - separate Final Doom intermission music
 
 
-WadSmoosh
+## WadSmoosh
 29 April 2018
 - Fixed missing par times for Thy Flesh Consumed
 - Don't show par times for E1M10 and MAP33
@@ -330,5 +340,6 @@ WadSmoosh
   ("IDFKA", "Keen") instead of the original names
 
 
-WadSmoosh Initial Release
+## WadSmoosh Initial Release
 11 August 2016
+</details>

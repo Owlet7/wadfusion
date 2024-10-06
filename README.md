@@ -4,7 +4,7 @@ WadFusion merges your provided DOOM, DOOM II, Master Levels, Final DOOM, No Rest
 
 It's fine if you don't have all of the DOOM games, e.g. you have DOOM II but not Final DOOM — WadFusion will package up everything it can find.
 
-If you're not a DOOM expert and just bought these games from [GOG](https://www.gog.com/en/game/doom_doom_ii), or [Steam](https://store.steampowered.com/app/2280/), etc., see the **Absolute Beginner's Guide** section below.
+If you just bought these games from [GOG](https://www.gog.com/en/game/doom_doom_ii), or [Steam](https://store.steampowered.com/app/2280/), etc., and you aren't familiar with GZDoom and DOOM modding, see the [**Absolute Beginner's Guide**](#absolute-beginners-guide) section below.
 
 ### Note: WadFusion currently requires a development build of GZDoom, version g4.13pre-130 or newer. WadFusion will not work with other engines.
 
@@ -14,7 +14,7 @@ Simply copy all of your WADs into the `source_wads` subfolder, then run WadFusio
 
 If you're on Windows, run `wadfusion.exe`.
 
-If you're on macOS or GNU/Linux, run the `wadfusion.py` Python script — Python 2 and 3 are both supported now.
+If you're on macOS or GNU/Linux, run the `wadfusion.py` Python 3 script.
 
 WadFusion will create a new file called `doom_complete.pk3`, with all the game content in it. GZDoom will recognize the `doom_complete.pk3` file as a valid IPK3 without any name change needed.
 
@@ -29,7 +29,7 @@ Here is the official list of WADs that WadFusion will recognize:
 - The Ultimate DOOM (retail version of `doom.wad`, containing episodes 1-4)
 - DOOM II (`doom2.wad`)
 - Master Levels for DOOM II (the original 20 WAD files, or `masterlevels.wad` from the [KEX-based re-release](https://doomwiki.org/wiki/Doom_%2B_Doom_II))
-- Master Levels Rejects (see below for a full list of supported WADs)
+- Master Levels Rejects ([see below](#absolute-beginners-guide) for a full list of supported WADs)
 - Final DOOM (`tnt.wad` and `plutonia.wad`)
 - No Rest for the Living (`nerve.wad`)
 - SIGIL (`sigil.wad` and its optional music addon `sigil_shreds.wad`)
@@ -73,7 +73,8 @@ For the Master Levels Rejects to be integrated, *all* of the following WADs must
 ## Absolute Beginner's Guide
 
 1. [Download WadFusion](https://github.com/Owlet7/wadfusion/releases/latest/download/wadfusion_win.zip) and extract it to a folder.
-2. Find the folder(s) where GOG / Steam installed your game(s). For Steam, this will be something like `C:\Program Files (x86)\Steam\steamapps\common\Ultimate Doom\base`.
+2. Find the folder(s) where GOG / Steam installed your game(s).
+   - For Steam, this will be something like `C:\Program Files (x86)\Steam\steamapps\common\Ultimate Doom\base`.
 3. Copy any files you find with a `.WAD` extension to the `source_wads` subfolder where you extracted WadFusion.
 4. Double-click `wadfusion.exe`. A terminal window will pop up, showing which WAD files were found, and which episodes can be extracted. Press Y and then Enter to proceed. The terminal window will show progress as it generates the IPK3.
 5. When it finishes, press Enter to close the window. You should now have a file in the WadFusion folder called `doom_complete.pk3`.
@@ -84,4 +85,5 @@ For the Master Levels Rejects to be integrated, *all* of the following WADs must
 ## Acknowledgements
 
 [WadSmoosh](https://jp.itch.io/wadsmoosh) was originally created by JP LeBreton. WadFusion is based on its [source code](https://heptapod.host/jp-lebreton/wadsmoosh).
+
 WadFusion uses the [Omgifol Python library](https://github.com/devinacker/omgifol) by Fredrik Johansson and Devin Acker.

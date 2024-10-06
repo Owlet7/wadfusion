@@ -1,36 +1,42 @@
 import os, hashlib, time
 from omg.util import *
 
-Header = make_struct(
-  "Header",
-  """Class for WAD file headers""",
-  [["type",    '4s', "PWAD"],
-   ["dir_len", 'i',  0     ],
-   ["dir_ptr", 'i',  12    ]]
-)
+class Header(WADStruct):
+    """Class for WAD file headers."""
+    _fields_ = [
+        ("type",    ctypes.c_char * 4),
+        ("dir_len", ctypes.c_uint32),
+        ("dir_ptr", ctypes.c_uint32)
+    ]
 
-Entry = make_struct(
-  "Entry",
-  """Class for WAD entries""",
-  [["ptr",       'i',  0 ],
-   ["size",      'i',  0 ],
-   ["name",      '8s', ""],
-   ["been_read", 'x',  False]]   # Used by WAD loader
-)
+    def __init__(self, *args, **kwargs):
+        self.type = "PWAD"
+        super().__init__(*args, **kwargs)
 
+class Entry(WADStruct):
+    """Class for WAD file entries."""
+    _fields_ = [
+        ("ptr",  ctypes.c_uint32),
+        ("size", ctypes.c_uint32),
+        ("name", ctypes.c_char * 8),
+    ]
+
+    def __init__(self, *args, **kwargs):
+        self.been_read = False # Used by WAD loader
+        super().__init__(*args, **kwargs)
 
 # WadIO.open() behaves just like open(). Sometimes it is
 # useful to specifically either open an existing file
 # or create a new one.
 
 def open_wad():
-    """Open an existing WAD, raise IOError if not found"""
+    """Open an existing WAD, raise IOError if not found."""
     if not os.path.exists(location):
         raise IOError
     return WadIO(location)
 
 def create_wad(location):
-    """Create a new WAD, raise IOError if exists"""
+    """Create a new WAD, raise IOError if exists."""
     if os.path.exists(location):
         raise IOError
     return WadIO(location)
@@ -46,7 +52,7 @@ class WadIO:
     saving by reading the value of the boolean attribute .issafe
 
     WadIO objects work on the WAD directory level. There is
-    very little magic available- you can't do things like automatic
+    very little magic available - you can't do things like automatic
     merging or managing sections, and Omgifol is never aware of
     what types lumps are. In other words, you're doing things more
     or less manually, with the hard binary content of lumps and
@@ -90,15 +96,15 @@ class WadIO:
             except IOError:
                 # assume file is read-only
                 self.basefile = open(filename, 'rb')
-            
+
             filesize = os.stat(self.basefile.name)[6]
-            self.header = h = Header(bytes=self.basefile.read(Header._fmtsize))
+            self.header = h = Header(bytes=self.basefile.read(ctypes.sizeof(Header)))
             if (not h.type in ("PWAD", "IWAD")) or filesize < 12:
                 raise IOError("The file is not a valid WAD file.")
-            if filesize < h.dir_ptr + h.dir_len*Entry._fmtsize:
+            if filesize < h.dir_ptr + h.dir_len*ctypes.sizeof(Entry):
                 raise IOError("Invalid directory information in header.")
             self.basefile.seek(h.dir_ptr)
-            self.entries = [Entry(bytes=self.basefile.read(Entry._fmtsize)) \
+            self.entries = [Entry(bytes=self.basefile.read(ctypes.sizeof(Entry))) \
                 for i in range(h.dir_len)]
         # Create new
         else:
@@ -107,7 +113,7 @@ class WadIO:
             self.basefile.flush()
 
     def close(self):
-        """Close the base file"""
+        """Close the base file."""
         assert self.basefile
         # Unfortunately, a save can't be forced here.
         if not self.issafe:
@@ -163,6 +169,7 @@ class WadIO:
         """Remove an entry."""
         assert self.basefile
         del (self.entries[self.select(id)])
+        self.issafe = False
 
     def rename(self, id, new):
         """Rename an entry."""
@@ -176,22 +183,52 @@ class WadIO:
         self.basefile.write(data)
 
     def write_append(self, data):
-        """Write data at the end of the file"""
+        """Write data at the end of the file."""
         self.basefile.seek(0, 2)
         self.basefile.write(data)
 
-    def insert(self, name, data, index=None):
+    def write_free(self, data):
+        """Write data to empty space in the file, if available,
+        otherwise write to the end of the file.
+        Returns the position that was written to.
+        """
+        self.basefile.seek(0, 2)
+        pos = self.basefile.tell()
+
+        # Find the earliest available free space
+        # (or, if free space reaches to the end of the file, use it)
+        for p in self.calc_waste()[1]:
+            if p[1] - p[0] >= len(data) or p[1] == pos:
+                pos = p[0]
+                self.basefile.seek(pos)
+                break
+
+        self.basefile.write(data)
+        return pos
+
+    def insert(self, name, data, index=None, use_free=True):
         """Insert a new entry at the optional index (defaults to
-        appending)."""
+        appending).
+
+        If use_free is true, existing free space in the WAD will
+        be used, if possible."""
         assert self.basefile
         try:
             index = self.select(index)
         except:
             index = None
         self.issafe = False
-        self.basefile.seek(0, 2)
-        pos = self.basefile.tell()
-        self.basefile.write(data)
+
+        if len(data) == 0:
+            pos = 0
+        elif use_free:
+            # write data to end of file or use free space if possible
+            pos = self.write_free(data)
+        else:
+            self.basefile.seek(0, 2)
+            pos = self.basefile.tell()
+            self.basefile.write(data)
+
         if index is None:
             self.entries.append(Entry(pos, len(data), name))
         else:
@@ -206,14 +243,17 @@ class WadIO:
         id = self.select(id)
         if len(data) != self.entries[id].size:
             self.issafe = False
-        if len(data) <= self.entries[id].size:
+
+        if len(data) == 0:
+            self.entries[i].ptr = 0
+        elif len(data) <= self.entries[id].size:
             self.write_at(self.entries[id].ptr, data)
         else:
-            # Currently, the lump simply gets placed at the end of the file.
-            # Instead, calc_waste() could be used to find empty space
-            self.basefile.seek(0, 2)
-            self.entries[id].ptr = self.basefile.tell()
-            self.basefile.write(data)
+            # temporarily mark existing entry as free, its current space will
+            # be combined with any adjacent free space
+            self.entries[id].size = 0
+            # write data to end of file or use free space if possible
+            self.entries[id].ptr = self.write_free(data)
         self.entries[id].size = len(data)
         self.basefile.flush()
 
@@ -221,12 +261,9 @@ class WadIO:
         """Save directory and header changes to the WAD file."""
         assert self.basefile
         if self.issafe: return
-        self.basefile.seek(0, 2)
-        endpos = self.basefile.tell()
-        for entry in self.entries:
-            self.basefile.write(entry.pack())
+        dir = join([e.pack() for e in self.entries])
         self.header.dir_len = len(self.entries)
-        self.header.dir_ptr = endpos
+        self.header.dir_ptr = self.write_free(dir)
         self.write_at(0, self.header.pack())
         self.basefile.flush()
         self.issafe = True
@@ -242,7 +279,7 @@ class WadIO:
         tmppath = os.path.join(os.path.dirname(fpath), tmppath)
         outwad = create_wad(tmppath)
         for i in range(len(self.entries)):
-            outwad.insert(self.entries[i].name, self.read(i))
+            outwad.insert(self.entries[i].name, self.read(i), use_free=False)
         outwad.save()
         outwad.close()
         self.close()
@@ -265,9 +302,10 @@ class WadIO:
         chunks.append((filesize, filesize + 1))
         # Add to the list the chunks that are occupied by lump data
         chunks.append((self.header.dir_ptr, self.header.dir_ptr + \
-            len(self.entries)*Entry._fmtsize))
+            len(self.entries)*ctypes.sizeof(Entry)))
         for entry in self.entries:
-            chunks.append((entry.ptr, entry.ptr + entry.size))
+            if entry.size > 0:
+                chunks.append((entry.ptr, entry.ptr + entry.size))
         # Sort it so we can go through it linearly and check for gaps
         chunks.sort()
         positions = []
@@ -299,8 +337,8 @@ class WadIO:
         # Add info about wasted space in the WAD, to find out how much of an
         # improvement a rewrite() would make
         total, wasted = self.calc_waste()
-        s.append("\n\nWasted space:\n\n")
+        s.append("\nWasted space:\n\n")
         s.append("    %s bytes total\n" % str(total))
         for w in wasted:
             s.append("    %i bytes starting at 0x%x\n" % (w[1]-w[0], w[0]))
-        return join(s)
+        return ''.join(s)

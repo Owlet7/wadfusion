@@ -121,7 +121,7 @@ TIDY_DIR_EXTENSIONS = {
     'patches/': ['lmp'],
     'sounds/': ['lmp'],
     'sprites/': ['lmp'],
-    'music/': ['mus', 'mp3', 'ogg'],
+    'music/': ['lmp', 'mus', 'mp3', 'ogg'],
     'mapinfo/': ['txt'],
     'maps/': ['wad'],
     'zscript/': ['zs'],
@@ -192,7 +192,7 @@ WAD_LUMP_LISTS = {
     'plutoniakex': ['graphics_plutoniaunity'],
     'nerve': [],
     # extras.wad assets from unity and kex ports
-    'extras': ['data_extras', 'graphics_extras', 'sounds_extras', 'music_extras']
+    'extras': ['data_extras', 'sounds_extras']
 }
 
 # prefixes for filenames of maps extracted from IWADs

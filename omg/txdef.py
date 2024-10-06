@@ -1,30 +1,37 @@
 from omg.lump import Lump
 from omg.util import *
 from omg.wad  import TxdefGroup
-from omg      import six
 
-TextureDef = make_struct(
-  "TextureDef",
-  """Class for texture definitions""",
-  [["name",     '8s', "-"],
-   ["dummy1",   'i',  0  ],
-   ["width",    'h',  0  ],
-   ["height",   'h',  0  ],
-   ["dummy2",   'i',  0  ],
-   ["npatches", 'h',  0  ]],
-  init_exec = "self.patches = []"
-)
+class TextureDef(WADStruct):
+    """Class for texture definitions."""
+    _fields_ = [
+        ("name",     ctypes.c_char * 8),
+        ("dummy1",   ctypes.c_uint32),
+        ("width",    ctypes.c_int16),
+        ("height",   ctypes.c_int16),
+        ("dummy2",   ctypes.c_uint32),
+        ("npatches", ctypes.c_int16),
+    ]
 
-PatchDef = make_struct(
-  "PatchDef",
-  """Class for patches""",
-  [["x",      'h',  0],
-   ["y",      'h',  0],
-   ["id",     'h',  -1],
-   ["dummy1", 'h',  1],
-   ["dummy2", 'h',  0],
-   ["name",   'x',  "-"]]
-)
+    def __init__(self, *args, **kwargs):
+        self.name = "-"
+        self.patches = []
+        super().__init__(*args, **kwargs)
+
+class PatchDef(WADStruct):
+    """Class for patches."""
+    _fields_ = [
+        ("x",      ctypes.c_int16),
+        ("y",      ctypes.c_int16),
+        ("id",     ctypes.c_int16),
+        ("dummy1", ctypes.c_uint16),
+        ("dummy2", ctypes.c_uint16)
+    ]
+
+    def __init__(self, *args, **kwargs):
+        self.name = "-"
+        self.id = -1
+        super().__init__(*args, **kwargs)
 
 # TODO: integrate with textures lump group instead?
 
@@ -72,7 +79,7 @@ class Textures(OrderedDict):
             self[texture.name] = texture
 
     def to_lumps(self):
-        """Returns two lumps TEXTURE1, PNAMES"""
+        """Returns two lumps TEXTURE1, PNAMES."""
         textures = self.items()
         textures.sort()
 
@@ -84,7 +91,7 @@ class Textures(OrderedDict):
                 if p.name not in used_pnames:
                     used_pnames[p.name] = len(used_pnames)
                 p.id = used_pnames[p.name]
-        pnmap = sorted([(i, name) for (name, i) in six.iteritems(used_pnames)])
+        pnmap = sorted([(i, name) for (name, i) in used_pnames.items()])
         pnames = pack32(len(pnmap)) + \
             bytes().join(zpad(safe_name(name)) for i, name in pnmap)
 
@@ -115,6 +122,5 @@ class Textures(OrderedDict):
         """Create a simple texture with a given name, from a given lump."""
         self[name] = TextureDef()
         self[name].patches.append(PatchDef())
-        self[name].patches[0].name = name
+        self[name].patches[0].name = self[name].name = name
         self[name].width, self[name].height = plump.dimensions
-

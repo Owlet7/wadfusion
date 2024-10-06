@@ -278,12 +278,12 @@ def enable_master_levels_rejects():
         file.write(tmp_file)
 
 def rename_ogg():
-    # remove .mus file extension from Andrew Hulshult's .ogg music if it's present
+    # remove .lmp file extension from Andrew Hulshult's IDKFA .ogg music if it's present
     logg('Renaming OGG music files if present...')
     for filename in os.listdir(DEST_DIR_MUS):
-        if fnmatch.fnmatch(filename, '*.ogg.mus'):
+        if fnmatch.fnmatch(filename, '*.ogg.lmp'):
             old_name = os.path.join(DEST_DIR_MUS, filename)
-            new_name = old_name.replace('.ogg.mus', '.ogg')
+            new_name = old_name.replace('.ogg.lmp', '.ogg')
             os.rename(old_name, new_name)
 
 def rename_mp3():
@@ -383,6 +383,9 @@ def extract_lumps(wad_name):
         # sigil sky lump isn't in patch namespace
         if lump_list == 'patches_sigil':
             lump_type = 'data'
+        # the IDKFA soundtrack isn't in music namespace
+        if lump_list == 'music_extras':
+            lump_type = 'data'
         lump_table = getattr(wad, lump_type, None)
         if not lump_table:
             logg('  ERROR: Lump type %s not found' % lump_type, error=True)
@@ -396,6 +399,9 @@ def extract_lumps(wad_name):
             lump_subdir = DEST_DIR + 'graphics/'
         elif wad_name == 'sigil2' and lump_type == 'data':
             lump_subdir = DEST_DIR + 'graphics/'
+        # the IDKFA soundtrack in data namespace but we want it in music dir
+        if wad_name == 'extras' and lump_list == 'music_extras':
+            lump_subdir = DEST_DIR + 'music/'
         # legacy of rust statusbar icons and map title patches aren't in graphics namespace but belong in that dir
         elif wad_name == 'id1' and lump_type == 'data':
             lump_subdir = DEST_DIR + 'graphics/'
@@ -660,6 +666,13 @@ def main():
         nerve_wad.from_file(nerve_wad_filename)
         if nerve_wad.graphics.get(NERVE_UNITY_KEX_ONLY_LUMP, None):
             WAD_LUMP_LISTS['nerve'] += ['graphics_nerveunity']
+    # if extras is the kex version
+    if get_wad_filename('extras') and should_extract:
+        extras_wad = omg.WAD()
+        extras_wad_filename = get_wad_filename('extras')
+        extras_wad.from_file(extras_wad_filename)
+        if extras_wad.colormaps.get(EXTRAS_KEX_ONLY_LUMP, None):
+            WAD_LUMP_LISTS['extras'] += ['graphics_extras', 'music_extras']
     # extract lumps and maps from wads
     for iwad_name in WADS:
         wad_filename = get_wad_filename(iwad_name)
@@ -736,7 +749,7 @@ def main():
     # rename file extensions of Sigil mp3 music
     if should_extract:
         rename_mp3()
-    # rename file extensions of Andrew Hulshult's ogg music
+    # rename file extensions of Andrew Hulshult's IDKFA soundtrack ogg music
     if should_extract:
         rename_ogg()
     # enable Sigil mp3 music options
@@ -744,7 +757,7 @@ def main():
         enable_sigil_shreds()
     if get_wad_filename('sigil2_mp3') and get_wad_filename('sigil2') and should_extract:
         enable_sigil2_shreds()
-    # unity vs kex extras.wad differ, kex has Andrew Hulshult soundtrack
+    # unity vs kex extras.wad differ, kex has IDKFA soundtrack
     if get_wad_filename('extras') and should_extract:
         extras_wad = omg.WAD()
         extras_wad_filename = get_wad_filename('extras')
