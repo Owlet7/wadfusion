@@ -29,7 +29,7 @@ map ML_MAP38 "$ML_DERELICT" // reject level
 	Next = "ML_MAP39"
 	TitlePatch = "MWILV37"
 	Music = "$MUSIC_STALKS"
-	Author = "$AU_KVERNMO_HYNE"
+	Author = "$WF_AU_KVERNMO_HYNE"
 }
 
 map ML_MAP39 "$ML_WATCHTWR" // reject level
@@ -37,7 +37,7 @@ map ML_MAP39 "$ML_WATCHTWR" // reject level
 	Next = "ML_MAP20"
 	TitlePatch = "MWILV38"
 	Music = "$MUSIC_BETWEE"
-	Author = "$AU_KVERNMO_HYNE"
+	Author = "$WF_AU_KVERNMO_HYNE"
 }
 
 map ML_MAP20 "$ML_MEPHISTO"
