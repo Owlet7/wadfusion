@@ -21,6 +21,7 @@
   count towards the level's statistics and end of level tally.
 - DOOM + DOOM II Update 1 support.
 - Added CONBACK graphic.
+- Corrected typo in "Mephisto's Maosoleum".
 - Added localisations for the Master Levels ending from the KEX port.
 - Will now extract widescreen status bar from Unity/KEX versions of Final DOOM.
 - Will now check if doom2.wad is present before copying LoR scripts.
