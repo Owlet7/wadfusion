@@ -21,12 +21,14 @@
   count towards the level's statistics and end of level tally.
 - DOOM + DOOM II Update 1 support.
 - Added CONBACK graphic.
+- Added localisations for the Master Levels ending from the KEX port.
 - Will now extract widescreen status bar from Unity/KEX versions of Final DOOM.
 - Will now check if doom2.wad is present before copying LoR scripts.
 - Simplified Xbox map extraction.
 - iddm1.wad will no longer count towards the number of extracted episodes, since
   it won't show up in the in-game menu.
 - The timer will now start only after the user presses Y to proceed.
+- Moved story text to language.story.csv file.
 - Updated Omgifol library to version 0.5.1.
 - Dropped Python 2 support.
 - Updated the Windows executable to Python 3.13.0.

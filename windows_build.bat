@@ -7,7 +7,7 @@ pause
 xcopy /E data\*.* dist\data\
 xcopy /E res\*.* dist\res\
 xcopy README.md dist\
-xcopy changelog.txt dist\
+xcopy CHANGES.md dist\
 xcopy source_wads\delete_me.txt dist\source_wads\
 %ZIP_EXE% a -r dist\licenses.zip .\licenses\*
 %ZIP_EXE% a -r %PROJ_NAME%_win.zip .\dist\*
