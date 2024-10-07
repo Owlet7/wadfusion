@@ -132,7 +132,7 @@ adddefaultmap
 
 map ML_MAP28 "$ML_TWM01" // reject level
 {
-	Next = "ML_MAP28"
+	Next = "ML_MAP07"
 	TitlePatch = "MWILV27"
 	Music = "$MUSIC_COUNTD"
 }

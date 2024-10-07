@@ -62,7 +62,7 @@ episode ML_MAP03
 	Optional
 }
 
-episode ML_MAP07
+episode ML_MAP28
 {
 	Name = "$TEMP_ML_EP3"
 	PicName = "M_MASTR3"
