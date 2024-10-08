@@ -17,7 +17,7 @@ a = Analysis(
     runtime_hooks=[],
     # junk we don't need - omg requires hashlib tho!
     excludes=['FixTk', 'tcl', 'tk', '_tkinter', 'tkinter', 'Tkinter',
-              'PIL', 'bz2', 'ctypes', 'lzma', 'socket', 'ssl'],
+              'PIL', 'bz2', 'lzma', 'socket', 'ssl'],
     noarchive=False,
     optimize=0,
     win_no_prefer_redirects=False,

@@ -4,7 +4,7 @@
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.1.0...HEAD)-->
 
 ## [WadFusion 1.1.0](https://github.com/Owlet7/wadfusion/tree/v1.1.0)
-[**07 October 2024**](https://github.com/Owlet7/wadfusion/releases/tag/v1.1.0)
+[**08 October 2024**](https://github.com/Owlet7/wadfusion/releases/tag/v1.1.0)
 
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.0.1...v1.1.0)
 - Added support for the Master Levels rejects.
