@@ -67,6 +67,7 @@ DEST_FILENAME = 'doom_complete.pk3'
 LOG_FILENAME = 'wadfusion.log'
 RES_DIR = 'res/'
 DEST_DIR_MUS = DEST_DIR + 'music/'
+DEST_DIR_GRAPHICS = DEST_DIR + 'graphics/'
 # abspath is used for the sake of the Windows executable, which bundles wadfusion_data.py
 DATA_TABLES_FILE = path.abspath(path.join(path.dirname(__file__), 'wadfusion_data.py'))
 
@@ -280,10 +281,14 @@ def enable_master_levels_rejects():
 def rename_ogg():
     # remove .lmp file extension from Andrew Hulshult's IDKFA .ogg music if it's present
     logg('Renaming OGG music files if present...')
-    for filename in os.listdir(DEST_DIR_MUS):
+    # the music gets extracted to the graphics folder first
+    for filename in os.listdir(DEST_DIR_GRAPHICS):
         if fnmatch.fnmatch(filename, '*.ogg.lmp'):
-            old_name = os.path.join(DEST_DIR_MUS, filename)
+            old_name = os.path.join(DEST_DIR_GRAPHICS, filename)
             new_name = old_name.replace('.ogg.lmp', '.ogg')
+            # set the destination for the music files to the music folder
+            new_name = new_name.replace('graphics', 'music')
+            logg('  Moving %s lump to %s' % (old_name, new_name))
             os.rename(old_name, new_name)
 
 def rename_mp3():
@@ -293,6 +298,7 @@ def rename_mp3():
         if fnmatch.fnmatch(filename, '*.mp3.mus'):
             old_name = os.path.join(DEST_DIR_MUS, filename)
             new_name = old_name.replace('.mp3.mus', '.mp3')
+            logg('  Moving %s lump to %s' % (old_name, new_name))
             os.rename(old_name, new_name)
 
 def enable_sigil_shreds():
@@ -399,9 +405,6 @@ def extract_lumps(wad_name):
             lump_subdir = DEST_DIR + 'graphics/'
         elif wad_name == 'sigil2' and lump_type == 'data':
             lump_subdir = DEST_DIR + 'graphics/'
-        # the IDKFA soundtrack in data namespace but we want it in music dir
-        if wad_name == 'extras' and lump_list == 'music_extras':
-            lump_subdir = DEST_DIR + 'music/'
         # legacy of rust statusbar icons and map title patches aren't in graphics namespace but belong in that dir
         elif wad_name == 'id1' and lump_type == 'data':
             lump_subdir = DEST_DIR + 'graphics/'
