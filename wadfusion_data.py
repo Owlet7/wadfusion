@@ -188,8 +188,8 @@ WAD_LUMP_LISTS = {
     'plutoniaunity': ['graphics_plutoniaunity'],
     'doomkex': ['graphics_doom1unity'],
     'doom2kex': ['graphics_doom2unity'],
-    'tntkex': ['graphics_tntunity'],
-    'plutoniakex': ['graphics_plutoniaunity'],
+    'tntkex': ['graphics_tntkex'],
+    'plutoniakex': ['graphics_plutoniakex'],
     'nerve': [],
     # extras.wad assets from unity and kex ports
     'extras': ['data_extras', 'sounds_extras']
