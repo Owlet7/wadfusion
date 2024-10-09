@@ -1,8 +1,12 @@
 # WadFusion Changelog
 
-## [Unreleased Changes](https://github.com/Owlet7/wadfusion/tree/HEAD)
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.1.0...HEAD)
+<!--## [Unreleased Changes](https://github.com/Owlet7/wadfusion/tree/HEAD)
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.1.1...HEAD)-->
+
+## [WadFusion 1.1.1](https://github.com/Owlet7/wadfusion/tree/v1.1.1) — [09 October 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.1.1)
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.1.0...v1.1.1)
 - Enabled the "Master Levels texture substitutions" option in WadFusion Options.
+- Added SIGIL localisations from the DOOM + DOOM II port.
 
 ## [WadFusion 1.1.0](https://github.com/Owlet7/wadfusion/tree/v1.1.0) — [08 October 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.1.0)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.0.1...v1.1.0)
