@@ -1,10 +1,11 @@
 # WadFusion Changelog
 
-## [Unreleased Changes](https://github.com/Owlet7/wadfusion/tree/HEAD)
+## Unreleased Changes
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.1.1...HEAD)
 - Will no longer attempt extracting widescreen status bars from the Unity
   versions of Final DOOM, as they don't have them. Will only do so with the KEX
   versions.
+- Updated ENDOOM screen with Legacy of Rust credits.
 
 ## [WadFusion 1.1.1](https://github.com/Owlet7/wadfusion/tree/v1.1.1) — [09 October 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.1.1)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.1.0...v1.1.1)

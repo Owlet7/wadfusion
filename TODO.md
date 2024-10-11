@@ -4,7 +4,6 @@
 [Planned menu structure](https://github.com/user-attachments/assets/7b7a4fdc-a4af-42fa-a612-817c53c126e4)
 
 ## Story screens
-opening title and story screens `TITLEPIC`
 
 ### Episode intros
 - Draw the episode's `TITLEPIC` and play its intro music when starting a new game (should be skippable)
