@@ -563,6 +563,21 @@ def copy_resources_romero():
         tmp_file = tmp_file.replace(romero_event_off, romero_event_on)
     with open(DEST_DIR + 'mapinfo.txt', 'w') as file:
         file.write(tmp_file)
+    # uncomment options menu
+    romero_4bopt_off = '//Option \"$WF_MENU_E1M4B\", \"wf_e1m4b\", \"OnOff\"'
+    romero_4bopt_on = 'Option \"$WF_MENU_E1M4B\", \"wf_e1m4b\", \"OnOff\"'
+    with open(DEST_DIR + 'menudef.txt', 'r') as file:
+        tmp_file = file.read()
+        tmp_file = tmp_file.replace(romero_4bopt_off, romero_4bopt_on)
+    with open(DEST_DIR + 'menudef.txt', 'w') as file:
+        file.write(tmp_file)
+    romero_8bopt_off = '//Option \"$WF_MENU_E1M8B\", \"wf_e1m8b\", \"OnOff\"'
+    romero_8bopt_on = 'Option \"$WF_MENU_E1M8B\", \"wf_e1m8b\", \"OnOff\"'
+    with open(DEST_DIR + 'menudef.txt', 'r') as file:
+        tmp_file = file.read()
+        tmp_file = tmp_file.replace(romero_8bopt_off, romero_8bopt_on)
+    with open(DEST_DIR + 'menudef.txt', 'w') as file:
+        file.write(tmp_file)
 
 def get_report_found():
     found = []
