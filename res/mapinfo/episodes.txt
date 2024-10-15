@@ -1,91 +1,91 @@
 clearepisodes
 episode E1M1
 {
-	Name = "$TXT_D1E1"
+	Name = "$WF_EPISODE_EPI1"
 	PicName = "M_EPI1"
 	Optional
 }
 
 episode E2M1
 {
-	Name = "$TXT_D1E2"
+	Name = "$WF_EPISODE_EPI2"
 	PicName = "M_EPI2"
 	Optional
 }
 
 episode E3M1
 {
-	Name = "$TXT_D1E3"
+	Name = "$WF_EPISODE_EPI3"
 	PicName = "M_EPI3"
 	Optional
 }
 
 episode E4M1
 {
-	Name = "$TXT_D1E4"
+	Name = "$WF_EPISODE_EPI4"
 	PicName = "M_EPI4"
 	Optional
 }
 
 episode E5M1
 {
-	Name = "$HUSTR_EPI5"
+	Name = "$WF_EPISODE_EPI5"
 	PicName = "M_EPI5"
 	Optional
 }
 
 episode E6M1
 {
-	Name = "$HUSTR_EPI6"
+	Name = "$WF_EPISODE_EPI6"
 	PicName = "M_EPI6"
 	Optional
 }
 
 episode MAP01
 {
-	Name = "$TXT_D2E1"
+	Name = "$WF_CAMPAIGN_DOOM2"
 	PicName = "M_HELL"
 	Optional
 }
 
 episode ML_MAP01
 {
-	Name = "$D2MLNAME"
+	Name = "$WF_CAMPAIGN_MASTER"
 	PicName = "M_MASTER"
 	Optional
 }
 
 episode NV_MAP01
 {
-	Name = "$TXT_D2E2"
+	Name = "$WF_CAMPAIGN_NERVE"
 	PicName = "M_NOREST"
 	Optional
 }
 
 episode LR_MAP01
 {
-	Name = "$TXT_ID1_EP1"
+	Name = "$WF_EPISODE_ID1EP1"
 	PicName = "M_XEPI1"
 	Optional
 }
 
 episode LR_MAP08
 {
-	Name = "$TXT_ID1_EP2"
+	Name = "$WF_EPISODE_ID1EP2"
 	PicName = "M_XEPI2"
 	Optional
 }
 
 episode TN_MAP01
 {
-	Name = "$TXT_TNT_EP"
+	Name = "$WF_CAMPAIGN_TNT"
 	PicName = "M_TNT"
 	Optional
 }
 
 episode PL_MAP01
 {
-	Name = "$TXT_PLUT_EP"
+	Name = "$WF_CAMPAIGN_PLU"
 	PicName = "M_PLUT"
 	Optional
 }

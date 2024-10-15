@@ -55,7 +55,7 @@ from os import path
 
 import omg
 
-VERSION = '1.1.1'
+VERSION = '1.2.0'
 
 # if False, do a dry run with no actual file writing
 should_extract = True
@@ -63,7 +63,7 @@ should_extract = True
 SRC_WAD_DIR = 'source_wads/'
 DATA_DIR = 'data/'
 DEST_DIR = 'temp/'
-DEST_FILENAME = 'doom_complete.pk3'
+DEST_FILENAME = 'doom_fusion.ipk3'
 LOG_FILENAME = 'wadfusion.log'
 RES_DIR = 'res/'
 DEST_DIR_MUS = DEST_DIR + 'music/'
@@ -588,7 +588,7 @@ def get_eps(wads_found):
         elif wadname == 'masterlevels' and 'doom2' in wads_found and not 'device_1' in wads_found:
             eps += ['Master Levels']
         elif wadname == 'device_1' and ('attack' in wads_found or 'masterlevels' in wads_found) and 'doom2' in wads_found:
-            eps += ['Master Levels - Tim Willits', 'Master Levels - Christen Klie', 'Master Levels - Tom Mustaine', 'Master Levels - Jim Flynn\'s Titan', 'Master Levels - John Anderson\'s INFERNO', 'Master Levels - Sverre André Kvernmo\'s CABAL']
+            eps += ['Tim Willits (Master Levels)', 'Christen Klie (Master Levels)', 'Tom Mustaine (Master Levels)', 'Jim Flynn\'s Titan (Master Levels)', 'John Anderson\'s INFERNO (Master Levels)', 'Sverre André Kvernmo\'s CABAL (Master Levels)']
         elif wadname == 'nerve' and 'doom2' in wads_found:
             eps += ['No Rest for the Living']
         elif wadname == 'tnt':

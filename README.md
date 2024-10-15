@@ -16,13 +16,13 @@ If you're on Windows, run `wadfusion.exe`.
 
 If you're on macOS or GNU/Linux, run the `wadfusion.py` Python 3 script.
 
-WadFusion will create a new file called `doom_complete.pk3`, with all the game content in it. GZDoom will recognize the `doom_complete.pk3` file as a valid IPK3 without any name change needed.
+WadFusion will create a new file called `doom_fusion.ipk3`, with all the game content in it. It should be selectable as a game in GZDoom.
 
 In rare cases, you may need to uncheck the `source_wads` folder's read-only status.
 
 ## Supported WADs
 
-WadFusion is not a general-purpose tool for merging DOOM WADs; it is for *merging official content* only — it was created out of a desire for a "complete" version of retail DOOM and DOOM II. Please do not ask if WadFusion will support any specific WAD. If you want to add your own content to a custom IWAD, please either modify [WadFusion's source code](https://github.com/Owlet7/wadfusion) yourself, or simply edit the `doom_complete.pk3` file that WadFusion generated. Please do not ask us for support when doing either, try consulting the [ZDoom Wiki](https://zdoom.org/wiki/Main_Page) instead.
+WadFusion is not a general-purpose tool for merging DOOM WADs; it is for *merging official content* only — it was created out of a desire for a "complete" version of retail DOOM and DOOM II. Please do not ask if WadFusion will support any specific WAD. If you want to add your own content to a custom IWAD, please either modify [WadFusion's source code](https://github.com/Owlet7/wadfusion) yourself, or simply edit the `doom_fusion.ipk3` file that WadFusion generated. Please do not ask us for support when doing either, try consulting the [ZDoom Wiki](https://zdoom.org/wiki/Main_Page) instead.
 
 Here is the official list of WADs that WadFusion will recognize:
 - DOOM (original registered version of `doom.wad`, containing only episodes 1-3)
@@ -80,9 +80,9 @@ For the Master Levels Rejects to be integrated, *all* of the following WADs must
    - For Steam, this will be something like `C:\Program Files (x86)\Steam\steamapps\common\Ultimate Doom\base`.
 3. Copy any files you find with a `.WAD` extension to the `source_wads` subfolder where you extracted WadFusion.
 4. Double-click `wadfusion.exe`. A terminal window will pop up, showing which WAD files were found, and which episodes can be extracted. Press Y and then Enter to proceed. The terminal window will show progress as it generates the IPK3.
-5. When it finishes, press Enter to close the window. You should now have a file in the WadFusion folder called `doom_complete.pk3`.
+5. When it finishes, press Enter to close the window. You should now have a file in the WadFusion folder called `doom_fusion.ipk3`.
 6. Download the latest [GZDoom development build](https://devbuilds.drdteam.org/gzdoom/) and extract it to a folder.
-7. Copy the `doom_complete.pk3` file to GZDoom's folder.
+7. Copy the `doom_fusion.ipk3` file to GZDoom's folder.
 8. Launch GZDoom and play!
 
 ## Acknowledgements

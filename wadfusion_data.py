@@ -53,8 +53,8 @@
 
 # pre-authored resources to copy
 RES_FILES = [
-    'mapinfo.txt', 'sndinfo.txt', 'language.csv',
-    'language.story.csv', 'endoom', 'smooshed.txt',
+    'iwadinfo.txt', 'mapinfo.txt', 'sndinfo.txt',
+    'language.csv', 'language.story.csv', 'endoom',
     'textures.common', 'textures.doom1', 'textures.doom2',
     'textures.masterlevels', 'textures.masterlevelsbonus',
     'textures.tnt', 'textures.plut', 'textures.id1',
@@ -112,7 +112,8 @@ RES_FILES = [
     'mapinfo/master_levels_kvernmo.txt',
     'menudef.txt', 'cvarinfo.txt', 'zscript.zs',
     'zscript/wf_handler.zs', 'zscript/wf_music.zs',
-    'zscript/wf_xbox.zs', 'zscript/wf_sbar.zs'
+    'zscript/wf_xbox.zs', 'zscript/wf_sbar.zs',
+    'wadfused.txt'
 ]
 
 # files within pk3 dir that will be removed before a new run

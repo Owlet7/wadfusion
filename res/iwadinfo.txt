@@ -1,0 +1,11 @@
+IWad
+{
+	Name = "DOOM Fusion"
+	Autoname = "doom.id.wadsmoosh"
+	Game = "Doom"
+	Config = "Doom"
+	Mapinfo = "mapinfo/doom2.txt"
+	Compatibility = "Shorttex"
+	BannerColors = "a8 00 00", "a8 a8 a8"
+	IgnoreTitlePatches = 1
+}

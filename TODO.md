@@ -70,7 +70,6 @@ Show introduction story text after the `TITLEPIC` intros (should be possible to 
   - Hey, not too rough -> Hurt me plenty
   - Hurt me plenty -> Ultra-violence
   - Ultra-violence -> Total carnage
-- New M_DOOM graphic? "DOOM Fusion"
 
 ## [Localisation](https://github.com/Owlet7/wadfusion/issues/13)
 <details>
