@@ -14,3 +14,5 @@ nosave bool wf_hud_id24 = false;
 nosave bool wf_hud_swaphealtharmor = false;
 nosave int wf_hud_ultrawide = 0;
 nosave noarchive int wf_null;
+server bool wf_e1m4b = false;
+server bool wf_e1m8b = false;

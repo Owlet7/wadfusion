@@ -219,6 +219,17 @@ class WadFusionHandler : EventHandler
 			DoMasterLevelsTitanTextureReplacements();
 		if ( CVar.FindCVar("wf_d2sky_compat").GetBool() )
 			DoDoom2SkyReplacements();
+		if ( level.MapName == "E1M3" )
+		{
+			if ( (CVar.FindCVar("wf_e1m4b").GetBool() ) )
+			{ level.NextMap = "e1m4b"; }
+		}
+
+		if ( level.MapName == "E1M7" )
+		{
+			if ( (CVar.FindCVar("wf_e1m8b").GetBool() ) )
+			{ level.NextMap = "e1m8b"; }
+		}
 	}
 	
 	override void WorldThingSpawned(WorldEvent e)
