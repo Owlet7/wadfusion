@@ -356,15 +356,15 @@ def enable_xbox_levels():
     with open(DEST_DIR + 'cvarinfo.txt', 'w') as file:
         file.write(tmp_file)
 
-def add_romero_levels():
+def add_blackroom_levels():
     global num_maps
-    logg('Adding Romero levels...')
+    logg('Adding Blackroom warm-up levels...')
     if get_wad_filename('doom') and get_wad_filename('e1m4b'):
-        logg('  Adding E1M4B Phobos Mission Control...')
+        logg('  Adding E1M4B.WAD as E1M4B')
         copyfile(SRC_WAD_DIR + 'e1m4b.wad', DEST_DIR + 'maps/E1M4B.wad')
         num_maps += 1    
     if get_wad_filename('doom') and get_wad_filename('e1m8b'):
-        logg('  Adding E1M8B Tech Gone Bad...')
+        logg('  Adding E1M8B.WAD as E1M8B')
         copyfile(SRC_WAD_DIR + 'e1m8b.wad', DEST_DIR + 'maps/E1M8B.wad')
         num_maps += 1
 
@@ -783,9 +783,9 @@ def main():
     if (get_wad_filename('sewers') or get_wad_filename('betray')) and should_extract:
         add_xbox_levels()
         enable_xbox_levels()
-    # add romero levels if present
+    # add romero's blackroom warm-up levels if present
     if (get_wad_filename('e1m4b') or get_wad_filename('e1m8b')) and should_extract:
-        add_romero_levels() 
+        add_blackroom_levels() 
     # copy custom GENMIDI, if user hasn't deleted it
     genmidi_filename = 'GENMIDI.lmp'
     if os.path.exists(RES_DIR + genmidi_filename):

@@ -207,6 +207,22 @@ class WadFusionHandler : EventHandler
 		CheckSkyOverriden("RSKY3", "SKY3");
 	}
 	
+	// replace e1m4 or e1m8 with the maps that Romero authored
+	// as a warm-up exercise for the cancelled game Blackroom
+	void DoBlackroomE1M8Replacement()
+	{
+		String mapName = level.MapName.MakeLower();
+		if ( mapName == "e1m7" )
+			level.NextMap = "e1m8b";
+	}
+	
+	void DoBlackroomE1M4Replacement()
+	{
+		String mapName = level.MapName.MakeLower();
+		if ( mapName == "e1m3" )
+			level.NextMap = "e1m4b";
+	}
+	
 	override void WorldLoaded(WorldEvent e)
 	{
 		if ( CVar.FindCVar("wf_finaldoom_texswap").GetBool() )
@@ -219,17 +235,10 @@ class WadFusionHandler : EventHandler
 			DoMasterLevelsTitanTextureReplacements();
 		if ( CVar.FindCVar("wf_d2sky_compat").GetBool() )
 			DoDoom2SkyReplacements();
-		if ( level.MapName == "E1M3" )
-		{
-			if ( (CVar.FindCVar("wf_e1m4b").GetBool() ) )
-			{ level.NextMap = "e1m4b"; }
-		}
-
-		if ( level.MapName == "E1M7" )
-		{
-			if ( (CVar.FindCVar("wf_e1m8b").GetBool() ) )
-			{ level.NextMap = "e1m8b"; }
-		}
+		if ( CVar.FindCVar("wf_blackroomswap_e1m8b").GetBool() )
+			DoBlackroomE1M8Replacement();
+		if ( CVar.FindCVar("wf_blackroomswap_e1m4b").GetBool() )
+			DoBlackroomE1M4Replacement();
 	}
 	
 	override void WorldThingSpawned(WorldEvent e)

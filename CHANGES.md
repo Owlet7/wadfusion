@@ -2,6 +2,10 @@
 
 ## Unreleased Changes
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.1.1...HEAD)
+- Added support for E1M8B and E1M4B, John Romero's levels that were made as a
+  warm-up exercise for the cancelled game Blackroom. Enabling them in the
+  options will replace the corresponding level in the Knee-Deep in the Dead
+  episode. Thanks to @domyoji81 for implementing the feature.
 - Will no longer attempt extracting widescreen status bars from the Unity
   versions of Final DOOM, as they don't have them. Will only do so with the KEX
   versions.

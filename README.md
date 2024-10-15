@@ -36,6 +36,7 @@ Here is the official list of WADs that WadFusion will recognize:
 - SIGIL II (`sigil2.wad` and optionally its MP3 soundtrack version `sigil2_mp3.wad`)
 - Legacy of Rust (`id1.wad`, `id1-res.wad`, `id24res.wad`, and `iddm1.wad` from the [KEX-based re-release](https://doomwiki.org/wiki/Doom_%2B_Doom_II))
 - `sewers.wad` and `betray.wad` (the [two secret levels](https://classicdoom.com/xboxspec.htm) from the [original Xbox port of DOOM](https://doomwiki.org/wiki/Xbox))
+- `e1m8b.wad` and `e1m4b.wad` (John Romero's map remakes, [Tech Gone Bad](https://www.doomworld.com/idgames/levels/doom/Ports/d-f/e1m8b) and [Phobos Mission Control](https://www.doomworld.com/idgames/levels/doom/Ports/d-f/e1m4b))
 - `extras.wad` (from the [Unity](https://doomwiki.org/wiki/Doom_Classic_Unity_port) or [KEX-based](https://doomwiki.org/wiki/Doom_%2B_Doom_II) re-releases)
 
 WadFusion requires `id1-res.wad` and `id24res.wad` for Legacy of Rust.
@@ -47,6 +48,8 @@ If `extras.wad` from the Unity or KEX-based re-releases is included, WadFusion w
 None of the "official add-on" content from the Unity or KEX-based re-releases of DOOM and DOOM II is supported.
 
 For SIGIL and SIGIL II, all the filenames for different releases of those WADs are also recognized; you shouldn't have to rename your original files. If `sigil_shreds.wad` is included, or if both versions of SIGIL II are included, WadFusion will extract both soundtracks, which can be toggled from the WadFusion options mod menu in GZDoom.
+
+[E1M8B: Tech Gone Bad](https://doomwiki.org/wiki/Tech_Gone_Bad) and [E1M4B: Phobos Mission Control](https://doomwiki.org/wiki/Phobos_Mission_Control) are levels that were made as a warm-up exercise for John Romero's cancelled game, Blackroom. Enabling them in the WadFusion options menu will replace E1M8 or E1M4 in the Knee-Deep in the Dead episode.
 
 ## Master Levels Rejects
 

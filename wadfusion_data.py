@@ -67,6 +67,7 @@ RES_FILES = [
     'graphics/M_MASTR4.lmp', 'graphics/M_MASTR5.lmp',
     'graphics/M_MASTR6.lmp', 'graphics/M_TNT.lmp',
     'graphics/M_PLUT.lmp', 'graphics/M_EPI5.lmp',
+    'graphics/WILV03B.lmp', 'graphics/WILV07B.lmp',
     'graphics/WILV39.lmp', 'graphics/WILV50.lmp',
     'graphics/WILV51.lmp', 'graphics/WILV52.lmp',
     'graphics/WILV53.lmp', 'graphics/WILV54.lmp',
@@ -138,10 +139,10 @@ WADS = ['doom', 'doom2', 'masterlevels', 'tnt', 'plutonia',
 # wads to search for and report if found
 REPORT_WADS = ['doom', 'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',
                'doom2', 'attack', 'masterlevels', 'device_1', 'nerve',
-               'id1', 'id1-res', 'id24res', 'iddm1',
-               'tnt', 'plutonia', 'sewers', 'betray', 'extras',
+               'id1', 'id1-res', 'id24res', 'iddm1', 'tnt', 'plutonia',
+               'sewers', 'betray', 'e1m4b', 'e1m8b', 'extras',
                'doomunity', 'doom2unity', 'tntunity', 'plutoniaunity',
-               'doomkex', 'doom2kex', 'tntkex', 'plutoniakex', 'e1m4b', 'e1m8b']
+               'doomkex', 'doom2kex', 'tntkex', 'plutoniakex']
 
 # lists of lumps common to doom 1+2
 COMMON_LUMPS = [
