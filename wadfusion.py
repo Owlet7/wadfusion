@@ -356,39 +356,17 @@ def enable_xbox_levels():
     with open(DEST_DIR + 'cvarinfo.txt', 'w') as file:
         file.write(tmp_file)
 
-def add_e1m4b_level():
+def add_romero_levels():
     global num_maps
-    logg('Adding E1M4B Phobos Mission Control...')
+    logg('Adding Romero levels...')
     if get_wad_filename('doom') and get_wad_filename('e1m4b'):
+        logg('  Adding E1M4B Phobos Mission Control...')
         copyfile(SRC_WAD_DIR + 'e1m4b.wad', DEST_DIR + 'maps/E1M4B.wad')
-        num_maps += 1
-        
-def add_e1m8b_level():
-    global num_maps
-    logg('Adding E1M8B Tech Gone Bad...')
+        num_maps += 1    
     if get_wad_filename('doom') and get_wad_filename('e1m8b'):
+        logg('  Adding E1M8B Tech Gone Bad...')
         copyfile(SRC_WAD_DIR + 'e1m8b.wad', DEST_DIR + 'maps/E1M8B.wad')
         num_maps += 1
-        
-def enable_e1m4b_level():
-    # switches wf_e1m4b cvar default to true
-    e1m4b_false = 'wf_e1m4b = false'
-    e1m4b_true = 'wf_e1m4b = true'
-    with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
-        tmp_file = file.read()
-        tmp_file = tmp_file.replace(e1m4b_false, e1m4b_true)
-    with open(DEST_DIR + 'cvarinfo.txt', 'w') as file:
-        file.write(tmp_file)
-
-def enable_e1m8b_level():
-    # switches wf_e1m8b cvar default to true
-    e1m8b_false = 'wf_e1m8b = false'
-    e1m8b_true = 'wf_e1m8b = true'
-    with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
-        tmp_file = file.read()
-        tmp_file = tmp_file.replace(e1m8b_false, e1m8b_true)
-    with open(DEST_DIR + 'cvarinfo.txt', 'w') as file:
-        file.write(tmp_file) 
 
 def extract_map(in_wad, map_name, out_filename):
     global num_maps
@@ -532,52 +510,6 @@ def copy_resources_id1():
         copyfile(DEST_DIR + 'patches/SKYE2.lmp', DEST_DIR + 'patches/SKY2.lmp')
         copyfile(DEST_DIR + 'patches/SKYE3.lmp', DEST_DIR + 'patches/SKY3.lmp')
         copyfile(DEST_DIR + 'patches/SKYE4.lmp', DEST_DIR + 'patches/SKY4.lmp')
-
-def copy_resources_romero():
-    # copy script and mapinfo
-    logg('Copying Romero levels resources...')
-    copyfile(RES_DIR + 'zscript/wf_romero.zs', DEST_DIR + 'zscript/wf_romero.zs')
-    copyfile(RES_DIR + 'mapinfo/romero_levels.txt', DEST_DIR + 'mapinfo/romero_levels.txt')
-    # uncomment script
-    logg('Enabling Romero levels resources...')
-    romero_script_off = '//#include \"zscript/wf_romero.zs\"'
-    romero_script_on = '#include \"zscript/wf_romero.zs\"'
-    with open(DEST_DIR + 'zscript.zs', 'r') as file:
-        tmp_file = file.read()
-        tmp_file = tmp_file.replace(romero_script_off, romero_script_on)
-    with open(DEST_DIR + 'zscript.zs', 'w') as file:
-        file.write(tmp_file)
-    # uncomment map info
-    romero_info_off = '//include mapinfo/romero_levels.txt'
-    romero_info_on = 'include mapinfo/romero_levels.txt'
-    with open(DEST_DIR + 'mapinfo.txt', 'r') as file:
-        tmp_file = file.read()
-        tmp_file = tmp_file.replace(romero_info_off, romero_info_on)
-    with open(DEST_DIR + 'mapinfo.txt', 'w') as file:
-        file.write(tmp_file)
-    # uncomment event handler
-    romero_event_off = '//AddEventHandlers = \"WadFusionRomeroHandler\"'
-    romero_event_on = 'AddEventHandlers = \"WadFusionRomeroHandler\"'
-    with open(DEST_DIR + 'mapinfo.txt', 'r') as file:
-        tmp_file = file.read()
-        tmp_file = tmp_file.replace(romero_event_off, romero_event_on)
-    with open(DEST_DIR + 'mapinfo.txt', 'w') as file:
-        file.write(tmp_file)
-    # uncomment options menu
-    romero_4bopt_off = '//Option \"$WF_MENU_E1M4B\", \"wf_e1m4b\", \"OnOff\"'
-    romero_4bopt_on = 'Option \"$WF_MENU_E1M4B\", \"wf_e1m4b\", \"OnOff\"'
-    with open(DEST_DIR + 'menudef.txt', 'r') as file:
-        tmp_file = file.read()
-        tmp_file = tmp_file.replace(romero_4bopt_off, romero_4bopt_on)
-    with open(DEST_DIR + 'menudef.txt', 'w') as file:
-        file.write(tmp_file)
-    romero_8bopt_off = '//Option \"$WF_MENU_E1M8B\", \"wf_e1m8b\", \"OnOff\"'
-    romero_8bopt_on = 'Option \"$WF_MENU_E1M8B\", \"wf_e1m8b\", \"OnOff\"'
-    with open(DEST_DIR + 'menudef.txt', 'r') as file:
-        tmp_file = file.read()
-        tmp_file = tmp_file.replace(romero_8bopt_off, romero_8bopt_on)
-    with open(DEST_DIR + 'menudef.txt', 'w') as file:
-        file.write(tmp_file)
 
 def get_report_found():
     found = []
@@ -851,16 +783,9 @@ def main():
     if (get_wad_filename('sewers') or get_wad_filename('betray')) and should_extract:
         add_xbox_levels()
         enable_xbox_levels()
-    # copy romero levels scripts and mapinfo if present
-    if (get_wad_filename('e1m4b') or get_wad_filename('e1m8b')) and get_wad_filename('doom') and should_extract:
-        copy_resources_romero()
-    # enable romero levels if present
-    if (get_wad_filename('e1m4b')) and should_extract:
-        add_e1m4b_level()
-        enable_e1m4b_level()
-    if (get_wad_filename('e1m8b')) and should_extract:
-        add_e1m8b_level()
-        enable_e1m8b_level()     
+    # add romero levels if present
+    if (get_wad_filename('e1m4b') or get_wad_filename('e1m8b')) and should_extract:
+        add_romero_levels() 
     # copy custom GENMIDI, if user hasn't deleted it
     genmidi_filename = 'GENMIDI.lmp'
     if os.path.exists(RES_DIR + genmidi_filename):
