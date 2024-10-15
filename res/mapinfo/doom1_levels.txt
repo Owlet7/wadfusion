@@ -60,6 +60,19 @@ map E1M4 "$HUSTR_E1M4"
 	Author = "$WF_AU_ROMERO_HALL"
 }
 
+map E1M4B "$HUSTR_E1M4B"
+{
+	LevelLum = 4
+	Next = "E1M5"
+	SecretNext = "E1M9"
+	Sky1 = "SKY1"
+	Cluster = 1
+	Par = 90
+	Music = "$MUSIC_E1M4"
+	ExitPic = "$IN_EPI1"
+	Author = "$WF_AU_ROMERO"
+}
+
 map E1M5 "$HUSTR_E1M5"
 {
 	LevelNum = 5
@@ -102,6 +115,23 @@ map E1M8 "$HUSTR_E1M8"
 	SpecialAction_LowerFloor
 	NoSoundClipping
 	Author = "$WF_AU_PETERSEN_HALL"
+}
+
+map E1M8B "$HUSTR_E1M8B"
+{
+	LevelNum = 8
+	Next = "EndGame1"
+	SecretNext = "E1M9"
+	Sky1 = "SKY1"
+	Cluster = 1
+	Par = 165
+	NoIntermission
+	NoSoundClipping
+	baronspecial
+	SpecialAction_LowerFloor
+	Music = "$MUSIC_E1M8"
+	ExitPic = "$IN_EPI1"
+	Author = "$WF_AU_ROMERO"
 }
 
 map E1M9 "$HUSTR_E1M9"
