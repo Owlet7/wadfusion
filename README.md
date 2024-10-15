@@ -6,7 +6,7 @@ It's fine if you don't have all of the DOOM games, e.g. you have DOOM II but not
 
 If you just bought these games from [GOG](https://www.gog.com/en/game/doom_doom_ii), or [Steam](https://store.steampowered.com/app/2280/), etc., and you aren't familiar with GZDoom and DOOM modding, see the [**Absolute Beginner's Guide**](#absolute-beginners-guide) section below.
 
-### Note: WadFusion currently requires a development build of GZDoom, version g4.13pre-130 or newer. WadFusion will not work with other engines.
+### Note: WadFusion requires GZDoom v4.13.0 or newer, it will not work with other engines.
 
 ## Usage
 
@@ -49,7 +49,7 @@ None of the "official add-on" content from the Unity or KEX-based re-releases of
 
 For SIGIL and SIGIL II, all the filenames for different releases of those WADs are also recognized; you shouldn't have to rename your original files. If `sigil_shreds.wad` is included, or if both versions of SIGIL II are included, WadFusion will extract both soundtracks, which can be toggled from the WadFusion options mod menu in GZDoom.
 
-[E1M8B: Tech Gone Bad](https://doomwiki.org/wiki/Tech_Gone_Bad) and [E1M4B: Phobos Mission Control](https://doomwiki.org/wiki/Phobos_Mission_Control) are levels that were made as a warm-up exercise for John Romero's cancelled game, Blackroom. Enabling them in the WadFusion options menu will replace E1M8 or E1M4 in the Knee-Deep in the Dead episode.
+[Tech Gone Bad](https://doomwiki.org/wiki/Tech_Gone_Bad) and [Phobos Mission Control](https://doomwiki.org/wiki/Phobos_Mission_Control) are levels that were made as a warm-up exercise for John Romero's cancelled game, Blackroom. If they're included, enabling them in the WadFusion options mod menu in GZDoom will replace E1M8 or E1M4 in the Knee-Deep in the Dead episode.
 
 ## Master Levels Rejects
 
