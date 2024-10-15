@@ -13,7 +13,6 @@ include mapinfo/sigil_levels.txt
 include mapinfo/sigil2_levels.txt
 include mapinfo/id1_levels.txt
 include mapinfo/iddm1_levels.txt
-//include mapinfo/romero_levels.txt
 
 GameInfo
 {
@@ -33,7 +32,6 @@ GameInfo
 		"$QUITMSG4", "$QUITMSG5", "$QUITMSG6", "$QUITMSG7", "$QUITMSG8",
 		"$QUITMSG9", "$QUITMSG10", "$QUITMSG11", "$QUITMSG12",
 		"$QUITMSG13", "$QUITMSG14"
-	AddEventHandlers = "WadFusionHandler", "WadFusionMusicHandler"//, "Id1WeaponHandler"
-	//AddEventHandlers = "WadFusionRomeroHandler"
+	AddEventHandlers = "WadFusionHandler", "WadFusionMusicHandler"//, "Id1WeaponHandler"	
 	StatusBarClass = "WadFusionStatusBar"
 }
