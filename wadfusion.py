@@ -478,6 +478,9 @@ def copy_resources():
             continue
         elif src_file == 'textures.masterlevelsbonus' and not (get_wad_filename('doom') and get_wad_filename('doom2') and (get_wad_filename('attack') or get_wad_filename('masterlevels')) and get_wad_filename('mines') and d1_wad.graphics.get(ULTIMATE_DOOM_ONLY_LUMP, None)):
             continue
+        # don't copy modified intermission script if alternate levels aren't present
+        elif src_file == 'in_epi1.txt' and not (get_wad_filename('e1m4b') or get_wad_filename('e1m8b')):
+            continue
         logg('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
 
