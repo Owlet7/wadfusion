@@ -113,7 +113,7 @@ RES_FILES = [
     'menudef.txt', 'cvarinfo.txt', 'zscript.zs',
     'zscript/wf_handler.zs', 'zscript/wf_music.zs',
     'zscript/wf_xbox.zs', 'zscript/wf_sbar.zs',
-    'wadfused.txt'
+    'wadfused.txt', 'in_epi1.txt'
 ]
 
 # files within pk3 dir that will be removed before a new run
