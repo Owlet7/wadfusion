@@ -323,6 +323,7 @@ def enable_sigil2_shreds():
     with open(DEST_DIR + 'cvarinfo.txt', 'w') as file:
         file.write(tmp_file)
 
+"""
 def enable_hulshult_idkfa():
     logg('Enabling IDKFA OGG music...')
     # switches wf_hulshult_idkfa cvar default to true
@@ -333,6 +334,7 @@ def enable_hulshult_idkfa():
         tmp_file = tmp_file.replace(idkfa_false, idkfa_true)
     with open(DEST_DIR + 'cvarinfo.txt', 'w') as file:
         file.write(tmp_file)
+"""
 
 def add_xbox_levels():
     global num_maps
@@ -772,6 +774,7 @@ def main():
         enable_sigil_shreds()
     if get_wad_filename('sigil2_mp3') and get_wad_filename('sigil2') and should_extract:
         enable_sigil2_shreds()
+    """
     # unity vs kex extras.wad differ, kex has IDKFA soundtrack
     if get_wad_filename('extras') and should_extract:
         extras_wad = omg.WAD()
@@ -779,6 +782,7 @@ def main():
         extras_wad.from_file(extras_wad_filename)
         if extras_wad.colormaps.get(EXTRAS_KEX_ONLY_LUMP, None):
             enable_hulshult_idkfa()
+    """
     # only supported versions of these @ http://classicdoom.com/xboxspec.htm
     if (get_wad_filename('sewers') or get_wad_filename('betray')) and should_extract:
         add_xbox_levels()
