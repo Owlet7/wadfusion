@@ -523,7 +523,7 @@ def get_report_found():
             # rather than handle variable filename for it, just create
             # a copy in source_wads/ with the expected name
             if sigil_alt:
-                copyfile(sigil_alt, SRC_WAD_DIR + 'sigil.wad')
+                os.rename(sigil_alt, SRC_WAD_DIR + 'SIGIL.WAD')
                 found.insert(1, 'sigil')
                 break
     # same with sigil2
@@ -532,7 +532,7 @@ def get_report_found():
         for alt_name in SIGIL2_ALT_FILENAMES:
             sigil2_alt = get_wad_filename(alt_name)
             if sigil2_alt:
-                copyfile(sigil2_alt, SRC_WAD_DIR + 'sigil2.wad')
+                os.rename(sigil2_alt, SRC_WAD_DIR + 'SIGIL2.WAD')
                 found.insert(2, 'sigil2')
                 break
     # ... and sigil2 mp3 soundtrack version
@@ -540,7 +540,7 @@ def get_report_found():
         for alt_name in SIGIL2_MP3_ALT_FILENAMES:
             sigil2_mp3_alt = get_wad_filename(alt_name)
             if sigil2_mp3_alt:
-                copyfile(sigil2_mp3_alt, SRC_WAD_DIR + 'sigil2_mp3.wad')
+                os.rename(sigil2_mp3_alt, SRC_WAD_DIR + 'SIGIL2_MP3.WAD')
                 found.insert(3, 'sigil2_mp3')
                 break
     return found
