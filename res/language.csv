@@ -59,7 +59,7 @@ WF_MENU_BLACKROOMSWAP_E1M4B,,,Replace E1M4 with E1M4B,,,,,,,,,,,,,,,,,,,,,Зам
 WF_MENU_BLACKROOMSWAP_E1M8B,,,Replace E1M8 with E1M8B,,,,,,,,,,,,,,,,,,,,,Заменить E1M8 на E1M8B,,,,,
 WF_MENU_HUD,,,WadFusion HUD Options,,,,,,,,,,,,,,,,,,,,,Настройки отображения информации WadFusion,,,,,
 WF_MENU_HUD_ID24,,,Always show cell and fuel ammo in status bar,,,,,,,,,,,,,,,,,,,,,Всегда показывать энергобатареи и топливо в строке состояния,,,,,
-WF_MENU_HUD_SWAPHEALTHARMOR,,,Swap health and armor in fullscreen HUD,Swap health and armour in fullscreen HUD,,,,,,,,,,,,,,,,,,,,Поменять отображение здоровья и брони местами в полноэкранного отображения информации,,,,,
+WF_MENU_HUD_SWAPHEALTHARMOR,,,Swap health and armor in fullscreen HUD,Swap health and armour in fullscreen HUD,,,,,,,,,,,,,,,,,,,,Поменять здоровье и броню местами в полноэкранном отображении информации,,,,,
 WF_MENU_HUD_ULTRAWIDE,,,Horizontal fullscreen HUD offset,,,,,,,,,,,,,,,,,,,,,Горизонтальное смещение полноэкранного отображения информации,,,,,
 WF_MENU_CREDITS,,,WadFusion Credits,,,,,,,,,,,,,,,,,,,,,Разработчики WadFusion,,,,,
 WF_MENU_CREDITS_TITLE,,,Credits,,,,,,,,,,,,,,,,,,,,,Разработчики,,,,,
