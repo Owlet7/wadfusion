@@ -3,7 +3,7 @@
 ## [Group episodes into "Which game?" and "Which campaign?" menus](https://github.com/Owlet7/wadfusion/issues/6)
 [Planned menu structure](https://github.com/user-attachments/assets/7b7a4fdc-a4af-42fa-a612-817c53c126e4)
 
-## Story screens
+## [Story screens](https://github.com/Owlet7/wadfusion/issues/20)
 
 ### Episode intros
 - Draw the episode's `TITLEPIC` and play its intro music when starting a new game (should be skippable)

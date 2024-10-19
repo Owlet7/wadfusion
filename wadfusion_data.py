@@ -58,9 +58,9 @@ RES_FILES = [
     'textures.common', 'textures.doom1', 'textures.doom2',
     'textures.masterlevels', 'textures.masterlevelsbonus',
     'textures.tnt', 'textures.plut', 'textures.id1',
-    'animdefs.txt', 'xwinter0.txt', 'xwinter1.txt',
-    'graphics/CONBACK.lmp', 'graphics/TITLEPIC.lmp',
-    'graphics/M_DOOM.lmp',
+    'in_epi1.txt', 'xwinter0.txt', 'xwinter1.txt',
+    'animdefs.txt', 'graphics/CONBACK.lmp',
+    'graphics/TITLEPIC.lmp', 'graphics/M_DOOM.lmp',
     'graphics/M_HELL.lmp', 'graphics/M_NOREST.lmp',
     'graphics/M_MASTER.lmp', 'graphics/M_MASTR1.lmp',
     'graphics/M_MASTR2.lmp', 'graphics/M_MASTR3.lmp',
@@ -113,7 +113,7 @@ RES_FILES = [
     'menudef.txt', 'cvarinfo.txt', 'zscript.zs',
     'zscript/wf_handler.zs', 'zscript/wf_music.zs',
     'zscript/wf_xbox.zs', 'zscript/wf_sbar.zs',
-    'wadfused.txt', 'in_epi1.txt'
+    'wadfused.txt'
 ]
 
 # files within pk3 dir that will be removed before a new run
