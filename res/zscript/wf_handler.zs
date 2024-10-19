@@ -233,7 +233,7 @@ class WadFusionHandler : EventHandler
 			else
 				level.NextMap = "e1m8b";
 		}
-		if ( mapName == "e1m3" )
+		if ( mapName == "e1m3" || mapName == "e1m9" )
 		{
 			if ( !CVar.FindCVar("wf_blackroomswap_e1m4b").GetBool() )
 				level.NextMap = "e1m4";
