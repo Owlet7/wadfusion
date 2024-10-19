@@ -1,13 +1,19 @@
 # WadFusion Changelog
 
-## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.1.1...HEAD)
+<!--## Unreleased Changes
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.0...HEAD)-->
+
+## [WadFusion 1.2.0](https://github.com/Owlet7/wadfusion/tree/v1.2.0) — [19 October 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.2.0)
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.1.1...v1.2.0)
 - Renamed the IPK3 that WadFusion generates to `doom_fusion.ipk3`. Renamed the
   resulting game to "DOOM Fusion".
 - Added support for E1M8B and E1M4B, John Romero's levels that were made as a
   warm-up exercise for the cancelled game Blackroom. Enabling them in the
   options will replace the corresponding level in the Knee-Deep in the Dead
   episode. Thanks to @domyoji81 for implementing the feature.
+- Fixed Legacy of Rust flame projectiles going through teleporters.
+- If included, Andrew Hulshult's IDKFA soundtrack won't be enabled by default
+  anymore. Enable it in the WadFusion options if you wish to use it!
 - Will no longer attempt extracting widescreen status bars from the Unity
   versions of Final DOOM, as they don't have them. Will only do so with the KEX
   versions.
