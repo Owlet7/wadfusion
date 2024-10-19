@@ -79,7 +79,7 @@ class Incinerator : DoomWeapon
 		{
 			return;
 		}
-
+		
 		Weapon weap = player.ReadyWeapon;
 		if (weap != null && invoker == weap && stateinfo != null && stateinfo.mStateType == STATE_Psprite)
 		{
@@ -101,7 +101,8 @@ class IncineratorFlame : Actor
 		Height 8;
 		RenderStyle "Translucent";
 		Alpha 0.65;
-
+		
+		+NOTELEPORT
 		+NOBLOCKMAP
 		+NOGRAVITY
 		+DROPOFF
@@ -331,7 +332,8 @@ class HeatwaveRipper : Actor
 		RenderStyle "Translucent";
 		Alpha 0.65;
 		DeathSound "weapons/heatwave/hetxpl";
-
+		
+		+NOTELEPORT
 		+NOBLOCKMAP
 		+NOGRAVITY
 		+DROPOFF
