@@ -339,11 +339,11 @@ def add_xbox_levels():
     logg('Adding Xbox bonus levels...')
     if get_wad_filename('doom') and get_wad_filename('sewers'):
         logg('  Adding SEWERS.WAD as E1M10')
-        copyfile(SRC_WAD_DIR + 'sewers.wad', DEST_DIR + 'maps/E1M10.wad')
+        copyfile(get_wad_filename('sewers'), DEST_DIR + 'maps/E1M10.wad')
         num_maps += 1
     if get_wad_filename('doom2') and get_wad_filename('betray'):
         logg('  Adding BETRAY.WAD as MAP33')
-        copyfile(SRC_WAD_DIR + 'betray.wad', DEST_DIR + 'maps/MAP33.wad')
+        copyfile(get_wad_filename('betray'), DEST_DIR + 'maps/MAP33.wad')
         num_maps += 1
 
 def enable_xbox_levels():
@@ -361,11 +361,11 @@ def add_blackroom_levels():
     logg('Adding Blackroom warm-up levels...')
     if get_wad_filename('doom') and get_wad_filename('e1m4b'):
         logg('  Adding E1M4B.WAD as E1M4B')
-        copyfile(SRC_WAD_DIR + 'e1m4b.wad', DEST_DIR + 'maps/E1M4B.wad')
+        copyfile(get_wad_filename('e1m4b'), DEST_DIR + 'maps/E1M4B.wad')
         num_maps += 1    
     if get_wad_filename('doom') and get_wad_filename('e1m8b'):
         logg('  Adding E1M8B.WAD as E1M8B')
-        copyfile(SRC_WAD_DIR + 'e1m8b.wad', DEST_DIR + 'maps/E1M8B.wad')
+        copyfile(get_wad_filename('e1m8b'), DEST_DIR + 'maps/E1M8B.wad')
         num_maps += 1
 
 def extract_map(in_wad, map_name, out_filename):
