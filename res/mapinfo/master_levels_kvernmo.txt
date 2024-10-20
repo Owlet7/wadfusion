@@ -91,8 +91,6 @@ map ML_MAP43 "$ML_THE_EVIL" // reject level
 	TitlePatch = "MWILV42"
 	Music = "$MUSIC_OPENIN"
 	AllowMonsterTelefrags
-	ResetHealth
-	ResetInventory
 }
 
 map ML_MAP21 "$ML_TEETH_SECRET"

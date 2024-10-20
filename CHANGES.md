@@ -2,6 +2,7 @@
 
 ## Unreleased Changes
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.0...HEAD)
+- Removed forced pistol start from THE_EVIL (ML_MAP43).
 - Moved WidePix readme to the licenses folder.
 
 ## [WadFusion 1.2.0](https://github.com/Owlet7/wadfusion/tree/v1.2.0) — [19 October 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.2.0)
