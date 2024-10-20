@@ -8,5 +8,9 @@ The ZScript code is derived from GZDoom and is used under the terms of the GPL v
 unless noted differently in the individual files.
 See gpl.txt
 
-WadFusion is released as a combined work under the terms of the GPL v3 or later.
+WadFusion uses several graphics assets that were derived from Nash Muhandes's WidePix,
+which is released under a non-free license.
+See widepix.txt and widepix_credits.txt
+
+WadFusion is released as a combined work (except the graphics assets) under the terms of the GPL v3 or later.
 Its source code can be found at https://github.com/Owlet7/wadfusion

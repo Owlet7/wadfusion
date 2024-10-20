@@ -77,4 +77,7 @@ Simon "fragglet" Howard: High res versions of the original cover artwork.
 
 -------------------------------------------------------------------------------
 
-TITLEPIC.lmp based on id Software's DOOM II
+WadFusion:
+----------
+
+TITLEPIC.lmp and CONBACK.lmp are based on id Software's DOOM II
