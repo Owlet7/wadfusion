@@ -22,7 +22,7 @@ In rare cases, you may need to uncheck the `source_wads` folder's read-only stat
 
 ## Supported WADs
 
-WadFusion is not a general-purpose tool for merging DOOM WADs; it is for *merging official content* only — it was created out of a desire for a "complete" version of retail DOOM and DOOM II. Please do not ask if WadFusion will support any specific WAD. If you want to add your own content to a custom IWAD, please either modify [WadFusion's source code](https://github.com/Owlet7/wadfusion) yourself, or simply edit the `doom_fusion.ipk3` file that WadFusion generated. Please do not ask us for support when doing either, try consulting the [ZDoom Wiki](https://zdoom.org/wiki/Main_Page) instead.
+WadFusion is not a general-purpose tool for merging DOOM WADs; it is for *merging official content* only — it was created out of a desire for a "complete" version of retail DOOM and DOOM II. Please do not ask if WadFusion will support any specific WAD. **This includes any content from the 5th generation console ports.** If you want to add your own content to a custom IPK3, either modify WadFusion's code yourself, or simply edit the IPK3 that WadFusion generates. Please do not ask us for support when doing either, try consulting the [ZDoom Wiki](https://zdoom.org/wiki/Main_Page) instead.
 
 Here is the official list of WADs that WadFusion will recognize:
 - DOOM (original registered version of `doom.wad`, containing only episodes 1-3)
