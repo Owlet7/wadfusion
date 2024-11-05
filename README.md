@@ -2,7 +2,7 @@
 
 WadFusion merges your provided DOOM, DOOM II, Master Levels, Final DOOM, No Rest for the Living, SIGIL, SIGIL II, and Legacy of Rust data into a single IPK3 file that can be played in [GZDoom](https://zdoom.org/index), with each game as its own entry in the episode list. This makes it very convenient to play all of classic DOOM's official releases without re-launching the game with different settings.
 
-It's fine if you don't have all of the DOOM games, e.g. you have DOOM II but not Final DOOM — WadFusion will package up everything it can find.
+It's fine if you don't have all of the DOOM games, e.g. you have DOOM II but not Final DOOM—WadFusion will package up everything it can find.
 
 If you just bought these games from [GOG](https://www.gog.com/en/game/doom_doom_ii), or [Steam](https://store.steampowered.com/app/2280/), etc., and you aren't familiar with GZDoom and DOOM modding, see the [**Absolute Beginner's Guide**](#absolute-beginners-guide) section below.
 
@@ -22,7 +22,7 @@ In rare cases, you may need to uncheck the `source_wads` folder's read-only stat
 
 ## Supported WADs
 
-WadFusion is not a general-purpose tool for merging DOOM WADs; it is for *merging official content* only — it was created out of a desire for a "complete" version of retail DOOM and DOOM II. Please do not ask if WadFusion will support any specific WAD. **This includes any content from the 5th generation console ports.** If you want to add your own content to a custom IPK3, either modify WadFusion's code yourself, or simply edit the IPK3 that WadFusion generates. Please do not ask us for support when doing either, try consulting the [ZDoom Wiki](https://zdoom.org/wiki/Main_Page) instead.
+WadFusion is not a general-purpose tool for merging DOOM WADs; it is for *merging official content* only—it was created out of a desire for a "complete" version of retail DOOM and DOOM II. Please do not ask if WadFusion will support any specific WAD. **This includes any content from the 5th generation console ports.** If you want to add your own content to a custom IPK3, either modify WadFusion's code yourself, or simply edit the IPK3 that WadFusion generates. Please do not ask us for support when doing either, try consulting the [ZDoom Wiki](https://zdoom.org/wiki/Main_Page) instead.
 
 Here is the official list of WADs that WadFusion will recognize:
 - DOOM (original registered version of `doom.wad`, containing only episodes 1-3)
@@ -41,7 +41,7 @@ Here is the official list of WADs that WadFusion will recognize:
 
 WadFusion requires `id1-res.wad` and `id24res.wad` for Legacy of Rust.
 
-If WADs from the Unity or KEX-based re-releases are also included (must be named `doomunity.wad`, `doom2unity.wad`, `tntunity.wad`, `plutoniaunity.wad` or `doomkex.wad`, `doom2kex.wad`, `tntkex.wad`, `plutoniakex.wad`), WadFusion will extract widescreen assets from them. The versions of `nerve.wad` in these releases include a unique intermission screen. These versions can also be used as the main WADs for extraction, but do keep in mind that they are censored.
+If IWADs from the Unity or KEX-based re-releases are also included (must be named `doomunity.wad`, `doom2unity.wad`, `tntunity.wad`, `plutoniaunity.wad` or `doomkex.wad`, `doom2kex.wad`, `tntkex.wad`, `plutoniakex.wad`), WadFusion will extract widescreen assets from them. These versions can also be used as the main WADs for extraction, but do keep in mind that they are censored. The versions of `nerve.wad` in these releases include a unique intermission screen, but renaming them isn't necessary—WadFusion will recognize them, and they aren't censored the way the IWADs are.
 
 If `extras.wad` from the Unity or KEX-based re-releases is included, WadFusion will extract the official "secret revealed" sound, and some status bar icons that can be used by custom HUDs. If the version from the KEX-based re-release is used, WadFusion will also extract Andrew Hulshult's "IDKFA" covers of the DOOM and DOOM II soundtracks, which can be toggled from the WadFusion options mod menu in GZDoom.
 
