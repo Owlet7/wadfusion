@@ -246,7 +246,7 @@ ML_FLOOD,,,Bloodflood,,,,,,,,,,,,,,,,,Krwotok,,,,Кроводнение,,,,,
 ML_DERELICT,,,Derelict Station,,,,,,,,,,,,,,,,,Opuszczona stacja,,,,Заброшенная станция,,,,,
 ML_WATCHTWR,,,The Watchtower,,,,,,,,,,,,,,,,,Strażnica,,,,Сторожевая башня,,,,,
 ML_TODEATH,,,Temple of Death,,,,,,,,,,,,,,,,,Świątynia Śmierci,,,,Храм Смерти,,,,,
-"ML_ARENA,,,We who are About to Die,,,,,,,,,,,,,,,,,""My, którzy zaraz umrzemy"",,,,""Мы, которые скоро умрут"",,,,,"
+ML_ARENA,,,We who are About to Die,,,,,,,,,,,,,,,,,"My, którzy zaraz umrzemy",,,,"Мы, которые скоро умрут",,,,,
 ML_STORM,,,Eye of the Storm,,,,,,,,,,,,,,,,,Oko burzy,,,,Глаз бури,,,,,
 ML_THE_EVIL,,,The Image of Evil,,,,,,,,,,,,,,,,,Obraz zła,,,,Образ зла,,,,,
 ML_DANTE,,,Dante's Gate,,,,,,,,,,,,,,,,,Brama Dantego,,,,Врата Данте,,,,,
