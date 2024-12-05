@@ -97,7 +97,7 @@ class WadFusionMusicHandler : StaticEventHandler
 		string mapName = level.MapName.MakeLower();
 		string music = MusPlaying.Name.MakeLower();
 		
-		// play to the Sigil mp3 soundtrack if the option it enabled mid-game
+		// play the Sigil mp3 soundtrack if the option is enabled mid-game
 		if ( (CVar.FindCVar("wf_sigil_shreds").GetBool() ) )
 		{
 			if ( music == "d_e5m1" )
@@ -135,7 +135,7 @@ class WadFusionMusicHandler : StaticEventHandler
 			
 			S_ChangeMusic(music);
 		}
-		// play to the Sigil midi soundtrack if the option it disabled mid-game
+		// play the Sigil midi soundtrack if the option is disabled mid-game
 		else
 		{
 			if ( music == "d_e5m1a" )
@@ -174,7 +174,7 @@ class WadFusionMusicHandler : StaticEventHandler
 			S_ChangeMusic(music);
 		}
 		
-		// play to the Sigil2 mp3 soundtrack if the option it enabled mid-game
+		// play the Sigil2 mp3 soundtrack if the option is enabled mid-game
 		if ( (CVar.FindCVar("wf_sigil2_shreds").GetBool() ) )
 		{
 			if ( music == "d_e6m1" )
@@ -212,7 +212,7 @@ class WadFusionMusicHandler : StaticEventHandler
 			
 			S_ChangeMusic(music);
 		}
-		// play to the Sigil2 midi soundtrack if the option it disabled mid-game
+		// play the Sigil2 midi soundtrack if the option is disabled mid-game
 		else
 		{
 			if ( music == "d_e6m1a" )
