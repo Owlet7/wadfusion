@@ -89,7 +89,7 @@ Show introduction story text after the `TITLEPIC` intros (should be possible to 
 - [ ] Korean
 - [ ] Dutch
 - [ ] Norwegian
-- [ ] Polish
+- [x] Polish
 - [ ] Portuguese
 - [ ] Portuguese Brazilian
 - [ ] Romanian

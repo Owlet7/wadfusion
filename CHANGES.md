@@ -1,8 +1,18 @@
 # WadFusion Changelog
 
-## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.0...HEAD)
+<!--## Unreleased Changes
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.1...HEAD)-->
+
+## [WadFusion 1.2.1](https://github.com/Owlet7/wadfusion/tree/v1.2.1) — [19 October 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.2.1)
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.0...v1.2.1)
+- Added Final DOOM map fixes from the id Anthology / GOG / KEX versions.
+  - Removed redundant duplicate secrets from tnt.wad MAP10.
+  - Added deathmatch spawns to plutonia.wad MAP12 and MAP23.
+  - These fixes are only applied to the original version of Final DOOM.
 - Removed forced pistol start from THE_EVIL (ML_MAP43).
+- Added Polish localisation. Thanks to @justtoask for the translation.
+- Updated Russian localisation.
+- Corrected a typo in E6M3's level title.
 - Moved WidePix readme to the licenses folder.
 
 ## [WadFusion 1.2.0](https://github.com/Owlet7/wadfusion/tree/v1.2.0) — [19 October 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.2.0)
