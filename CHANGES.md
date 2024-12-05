@@ -3,7 +3,7 @@
 <!--## Unreleased Changes
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.1...HEAD)-->
 
-## [WadFusion 1.2.1](https://github.com/Owlet7/wadfusion/tree/v1.2.1) — [19 October 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.2.1)
+## [WadFusion 1.2.1](https://github.com/Owlet7/wadfusion/tree/v1.2.1) — [06 December 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.2.1)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.0...v1.2.1)
 - Added Final DOOM map fixes from the id Anthology / GOG / KEX versions.
   - Removed redundant duplicate secrets from tnt.wad MAP10.
