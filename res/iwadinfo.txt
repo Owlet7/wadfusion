@@ -1,7 +1,7 @@
 IWad
 {
 	Name = "DOOM Fusion"
-	Autoname = "doom.id.wadsmoosh"
+	Autoname = "doom.id.wadsmoosh.fusion"
 	Game = "Doom"
 	Config = "Doom"
 	Mapinfo = "mapinfo/doom2.txt"

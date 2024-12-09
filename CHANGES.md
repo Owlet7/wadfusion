@@ -1,7 +1,17 @@
 # WadFusion Changelog
 
-<!--## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.1...HEAD)-->
+## Unreleased Changes
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.1...HEAD)
+- Added compatibility option to force texture substitutions on all levels.
+  - Enabling this option disable the regular texture substitution.
+  - This feature was added for compatibility with mods that target Final DOOM,
+    DOOM 1, or Legacy of Rust.
+  - Each texture substitution can be toggled individually, in case a mod needs
+    to replace some of them.
+- Moved all compatibility options to a sub-menu.
+- Created an autoload sub-category for DOOM Fusion. If you wish to add files to
+  be autoloaded only with DOOM Fusion, they can be added under a section titled
+  `[doom.id.wadsmoosh.fusion.Autoload]`.
 
 ## [WadFusion 1.2.1](https://github.com/Owlet7/wadfusion/tree/v1.2.1) — [06 December 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.2.1)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.0...v1.2.1)
