@@ -56,17 +56,17 @@ class WadFusionHandler : EventHandler
 		mapPrefix = mapPrefix.MakeLower();
 		if ( mapPrefix == "tn_" )
 		{
+			Level.ReplaceTextures("BLODGR1", "BLODGRT1", TexMan.NOT_FLAT);	// different from doom1
+			Level.ReplaceTextures("BLODGR4", "BLODGRT4", TexMan.NOT_FLAT);	// different from doom1
 			Level.ReplaceTextures("SKY1", "TSKY1", TexMan.NOT_FLAT);		// different from doom1
 			Level.ReplaceTextures("SKY2", "TSKY2", TexMan.NOT_FLAT);		// different from doom1
 			Level.ReplaceTextures("SKY3", "TSKY3", TexMan.NOT_FLAT);		// different from doom1
+			Level.ReplaceTextures("SLADRIP1", "SLADRPT1", TexMan.NOT_FLAT);	// different from doom1
+			Level.ReplaceTextures("SLADRIP3", "SLADRPT3", TexMan.NOT_FLAT);	// different from doom1
 			Level.ReplaceTextures("SW1GSTON", "SW1GSTNT", TexMan.NOT_FLAT);	// different from doom2
 			Level.ReplaceTextures("SW2GSTON", "SW2GSTNT", TexMan.NOT_FLAT);	// different from doom2
 			Level.ReplaceTextures("SW1SKULL", "SW1SKULT", TexMan.NOT_FLAT);	// different from doom2
 			Level.ReplaceTextures("SW2SKULL", "SW2SKULT", TexMan.NOT_FLAT);	// different from doom2
-			Level.ReplaceTextures("SLADRIP1", "SLADRPT1", TexMan.NOT_FLAT);	// different from doom1
-			Level.ReplaceTextures("SLADRIP3", "SLADRPT3", TexMan.NOT_FLAT);	// different from doom1
-			Level.ReplaceTextures("BLODGR1", "BLODGRT1", TexMan.NOT_FLAT);	// different from doom1
-			Level.ReplaceTextures("BLODGR4", "BLODGRT4", TexMan.NOT_FLAT);	// different from doom1
 			Level.ReplaceTextures("WFALL1", "TWFALL1", TexMan.NOT_FLAT);	// different from plutonia
 			Level.ReplaceTextures("WFALL4", "TWFALL4", TexMan.NOT_FLAT);	// different from plutonia
 		}
@@ -91,9 +91,9 @@ class WadFusionHandler : EventHandler
 		if ( mapName.Left(1) == "e" && mapName.Mid(2, 1) == "m" )
 		{
 			// replace doom1 textures that are different from doom2
+			Level.ReplaceTextures("BIGDOOR7", "BIGDOR7A", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("BRNPOIS", "BRNPOIS1", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("NUKEPOIS", "NUKPOIS1", TexMan.NOT_FLAT);
-			Level.ReplaceTextures("BIGDOOR7", "BIGDOR7A", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SHAWN1", "SHAWN1A", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("STEP1", "STEP1A", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("STEP2", "STEP2A", TexMan.NOT_FLAT);
@@ -123,7 +123,6 @@ class WadFusionHandler : EventHandler
 			Level.ReplaceTextures("BRNPOIS2", "BRNPOIS3", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("DOORSTOP", "DOORSTP1", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("LITERED2", "LITERED6", TexMan.NOT_FLAT);
-			Level.ReplaceTextures("WFALL1", "XWFALL1", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1BRN1", "SW1BRN1A", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1STARG", "SW1STARA", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1STONE", "SW1STONA", TexMan.NOT_FLAT);
@@ -132,6 +131,7 @@ class WadFusionHandler : EventHandler
 			Level.ReplaceTextures("SW2STARG", "SW2STARA", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STONE", "SW2STONA", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STON2", "SW2STONB", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("WFALL1", "XWFALL1", TexMan.NOT_FLAT);	// different from plutonia
 		}
 	}
 	
@@ -207,18 +207,150 @@ class WadFusionHandler : EventHandler
 		CheckSkyOverriden("RSKY3", "SKY3");
 	}
 	
+	// force texture substitutions on all levels
+	// this feature mostly exists for compatibility with final doom mods
+	// these disable the regular texture substitutions
+	// each texture substitution can be toggled individually, in case a mod needs to replace some of them
+	void DoTextureReplacementsAll()
+	{
+		int texSwapAll = CVar.FindCVar("wf_texswap_all").GetInt();
+		// doom1
+		if ( texSwapAll == 1 )
+		{
+			if ( CVar.FindCVar("wf_texswap_d1_00").GetBool() ) Level.ReplaceTextures("BIGDOOR7", "BIGDOR7A", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_d1_01").GetBool() ) Level.ReplaceTextures("BRNPOIS", "BRNPOIS1", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_d1_02").GetBool() ) Level.ReplaceTextures("NUKEPOIS", "NUKPOIS1", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_d1_03").GetBool() ) Level.ReplaceTextures("SHAWN1", "SHAWN1A", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_d1_04").GetBool() ) Level.ReplaceTextures("STEP1", "STEP1A", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_d1_05").GetBool() ) Level.ReplaceTextures("STEP2", "STEP2A", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_d1_06").GetBool() ) Level.ReplaceTextures("STEP3", "STEP3A", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_d1_07").GetBool() ) Level.ReplaceTextures("STEP5", "STEP5A", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_d1_08").GetBool() ) Level.ReplaceTextures("SW1BRN1", "SW1BRN1A", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_d1_09").GetBool() ) Level.ReplaceTextures("SW1STARG", "SW1STARA", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_d1_10").GetBool() ) Level.ReplaceTextures("SW1STONE", "SW1STONA", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_d1_11").GetBool() ) Level.ReplaceTextures("SW1STON2", "SW1STONB", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_d1_12").GetBool() ) Level.ReplaceTextures("SW2BRN1", "SW2BRN1A", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_d1_13").GetBool() ) Level.ReplaceTextures("SW2STARG", "SW2STARA", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_d1_14").GetBool() ) Level.ReplaceTextures("SW2STONE", "SW2STONA", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_d1_15").GetBool() ) Level.ReplaceTextures("SW2STON2", "SW2STONB", TexMan.NOT_FLAT);
+		}
+		// tnt
+		else if ( texSwapAll == 2 )
+		{
+			if ( CVar.FindCVar("wf_texswap_tn_00").GetBool() ) Level.ReplaceTextures("BLODGR1", "BLODGRT1", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_tn_01").GetBool() ) Level.ReplaceTextures("BLODGR4", "BLODGRT4", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_tn_05").GetBool() ) Level.ReplaceTextures("SLADRIP1", "SLADRPT1", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_tn_06").GetBool() ) Level.ReplaceTextures("SLADRIP3", "SLADRPT3", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_tn_07").GetBool() ) Level.ReplaceTextures("SW1GSTON", "SW1GSTNT", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_tn_08").GetBool() ) Level.ReplaceTextures("SW2GSTON", "SW2GSTNT", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_tn_09").GetBool() ) Level.ReplaceTextures("SW1SKULL", "SW1SKULT", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_tn_10").GetBool() ) Level.ReplaceTextures("SW2SKULL", "SW2SKULT", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_tn_11").GetBool() ) Level.ReplaceTextures("WFALL1", "TWFALL1", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_tn_12").GetBool() ) Level.ReplaceTextures("WFALL4", "TWFALL4", TexMan.NOT_FLAT);
+			
+			// override skies
+			if ( CVar.FindCVar("wf_texswap_tn_02").GetBool() )
+			{
+				Level.ReplaceTextures("SKY1", "TSKY1", TexMan.NOT_FLAT);
+				if ( TexMan.GetName(level.skytexture1) == "SKY1" || TexMan.GetName(level.skytexture1) == "RSKY1" )
+				{
+					TextureID sky2 = level.skytexture2;
+					level.ChangeSky(TexMan.CheckForTexture("TSKY1"), sky2);
+				}
+			}
+			if ( CVar.FindCVar("wf_texswap_tn_03").GetBool() )
+			{
+				Level.ReplaceTextures("SKY2", "TSKY2", TexMan.NOT_FLAT);
+				if ( TexMan.GetName(level.skytexture1) == "SKY2" || TexMan.GetName(level.skytexture1) == "RSKY2" )
+				{
+					TextureID sky2 = level.skytexture2;
+					level.ChangeSky(TexMan.CheckForTexture("TSKY2"), sky2);
+				}
+			}
+			if ( CVar.FindCVar("wf_texswap_tn_04").GetBool() )
+			{
+				Level.ReplaceTextures("SKY3", "TSKY3", TexMan.NOT_FLAT);
+				if ( TexMan.GetName(level.skytexture1) == "SKY3" || TexMan.GetName(level.skytexture1) == "RSKY3" )
+				{
+					TextureID sky2 = level.skytexture2;
+					level.ChangeSky(TexMan.CheckForTexture("TSKY3"), sky2);
+				}
+			}
+		}
+		// plutonia
+		else if ( texSwapAll == 3 )
+		{
+			if ( CVar.FindCVar("wf_texswap_pl_00").GetBool() ) Level.ReplaceTextures("DBRAIN1", "PBRAIN1", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_pl_01").GetBool() ) Level.ReplaceTextures("DBRAIN4", "PBRAIN4", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_pl_02").GetBool() ) Level.ReplaceTextures("FIREBLU1", "FIREPLU1", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_pl_03").GetBool() ) Level.ReplaceTextures("FIREBLU2", "FIREPLU2", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_pl_07").GetBool() ) Level.ReplaceTextures("SW1SKULL", "SW1SKULP", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_pl_08").GetBool() ) Level.ReplaceTextures("SW2SKULL", "SW2SKULP", TexMan.NOT_FLAT);
+			
+			// override skies
+			if ( CVar.FindCVar("wf_texswap_pl_04").GetBool() )
+			{
+				Level.ReplaceTextures("SKY1", "PSKY1", TexMan.NOT_FLAT);
+				if ( TexMan.GetName(level.skytexture1) == "SKY1" || TexMan.GetName(level.skytexture1) == "RSKY1" )
+				{
+					TextureID sky2 = level.skytexture2;
+					level.ChangeSky(TexMan.CheckForTexture("PSKY1"), sky2);
+				}
+			}
+			if ( CVar.FindCVar("wf_texswap_pl_05").GetBool() )
+			{
+				Level.ReplaceTextures("SKY2", "PSKY2", TexMan.NOT_FLAT);
+				if ( TexMan.GetName(level.skytexture1) == "SKY2" || TexMan.GetName(level.skytexture1) == "RSKY2" )
+				{
+					TextureID sky2 = level.skytexture2;
+					level.ChangeSky(TexMan.CheckForTexture("PSKY2"), sky2);
+				}
+			}
+			if ( CVar.FindCVar("wf_texswap_pl_06").GetBool() )
+			{
+				Level.ReplaceTextures("SKY3", "PSKY3", TexMan.NOT_FLAT);
+				if ( TexMan.GetName(level.skytexture1) == "SKY3" || TexMan.GetName(level.skytexture1) == "RSKY3" )
+				{
+					TextureID sky2 = level.skytexture2;
+					level.ChangeSky(TexMan.CheckForTexture("PSKY3"), sky2);
+				}
+			}
+		}
+		// id1
+		else if ( texSwapAll == 4 )
+		{
+			if ( CVar.FindCVar("wf_texswap_id1_00").GetBool() ) Level.ReplaceTextures("BLOOD1", "XBLOOD1", TexMan.NOT_WALL);
+			if ( CVar.FindCVar("wf_texswap_id1_01").GetBool() ) Level.ReplaceTextures("NUKAGE1", "XNUKAGE1", TexMan.NOT_WALL);
+			if ( CVar.FindCVar("wf_texswap_id1_02").GetBool() ) Level.ReplaceTextures("BRNPOIS2", "BRNPOIS3", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_id1_03").GetBool() ) Level.ReplaceTextures("DOORSTOP", "DOORSTP1", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_id1_04").GetBool() ) Level.ReplaceTextures("LITERED2", "LITERED6", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_id1_05").GetBool() ) Level.ReplaceTextures("SW1BRN1", "SW1BRN1A", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_id1_06").GetBool() ) Level.ReplaceTextures("SW1STARG", "SW1STARA", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_id1_07").GetBool() ) Level.ReplaceTextures("SW1STONE", "SW1STONA", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_id1_08").GetBool() ) Level.ReplaceTextures("SW1STON2", "SW1STONB", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_id1_09").GetBool() ) Level.ReplaceTextures("SW2BRN1", "SW2BRN1A", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_id1_10").GetBool() ) Level.ReplaceTextures("SW2STARG", "SW2STARA", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_id1_11").GetBool() ) Level.ReplaceTextures("SW2STONE", "SW2STONA", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_id1_12").GetBool() ) Level.ReplaceTextures("SW2STON2", "SW2STONB", TexMan.NOT_FLAT);
+			if ( CVar.FindCVar("wf_texswap_id1_13").GetBool() ) Level.ReplaceTextures("WFALL1", "XWFALL1", TexMan.NOT_FLAT);
+		}
+	}
+	
 	override void WorldLoaded(WorldEvent e)
 	{
-		if ( CVar.FindCVar("wf_finaldoom_texswap").GetBool() )
+		bool texSwapAll = CVar.FindCVar("wf_texswap_all").GetInt();
+		if ( CVar.FindCVar("wf_finaldoom_texswap").GetBool() && !texSwapAll )
 			DoFinalDoomTextureReplacements();
-		if ( CVar.FindCVar("wf_d1_texswap").GetBool() )
+		if ( CVar.FindCVar("wf_d1_texswap").GetBool() && !texSwapAll )
 			DoDoom1TextureReplacements();
-		if ( CVar.FindCVar("wf_id1_texswap").GetBool() )
+		if ( CVar.FindCVar("wf_id1_texswap").GetBool() && !texSwapAll )
 			DoId1TextureReplacements();
-		if ( CVar.FindCVar("wf_masterlevels_texswap").GetBool() )
+		if ( CVar.FindCVar("wf_masterlevels_texswap").GetBool() && !texSwapAll )
 			DoMasterLevelsTitanTextureReplacements();
 		if ( CVar.FindCVar("wf_d2sky_compat").GetBool() )
 			DoDoom2SkyReplacements();
+		if ( texSwapAll )
+			DoTextureReplacementsAll();
 	}
 	
 	override void WorldTick()
