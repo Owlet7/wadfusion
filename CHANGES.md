@@ -12,6 +12,9 @@
 - Created an autoload sub-category for DOOM Fusion. If you wish to add files to
   be autoloaded only with DOOM Fusion, they can be added under a section titled
   `[doom.id.wadsmoosh.fusion.Autoload]`.
+  - Existing saves need to be moved from the `doom.id.wadsmoosh` subfolder to
+    the new `doom.id.wadsmoosh.fusion` subfolder.
+- Corrected a typo in E6M3's level title, again.
 
 ## [WadFusion 1.2.1](https://github.com/Owlet7/wadfusion/tree/v1.2.1) — [06 December 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.2.1)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.0...v1.2.1)
