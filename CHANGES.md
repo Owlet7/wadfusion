@@ -8,6 +8,8 @@
     DOOM 1, or Legacy of Rust.
   - Each texture substitution can be toggled individually, in case a mod needs
     to replace some of them.
+- Added compatibility option to disable WadFusion scripts that handle music
+  changing and map transitions.
 - Moved all compatibility options to a sub-menu.
 - Created an autoload sub-category for DOOM Fusion. If you wish to add files to
   be autoloaded only with DOOM Fusion, they can be added under a section titled

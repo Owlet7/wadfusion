@@ -1,6 +1,6 @@
 //-----------------------------------------------------------------------------
 //
-// Copyright 2024 Owlet VII
+// Copyright 2024-2025 Owlet VII
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -358,19 +358,23 @@ class WadFusionHandler : EventHandler
 		// replace e1m8 or e1m4 with the maps that Romero authored
 		// as a warm-up exercise for the cancelled game Blackroom
 		String mapName = level.MapName.MakeLower();
-		if ( mapName == "e1m7" )
+		// only if compatibility option isn't off
+		if ( CVar.FindCVar("wf_nextmap").GetBool() )
 		{
-			if ( !CVar.FindCVar("wf_blackroomswap_e1m8b").GetBool() )
-				level.NextMap = "e1m8";
-			else
-				level.NextMap = "e1m8b";
-		}
-		if ( mapName == "e1m3" || mapName == "e1m9" )
-		{
-			if ( !CVar.FindCVar("wf_blackroomswap_e1m4b").GetBool() )
-				level.NextMap = "e1m4";
-			else
-				level.NextMap = "e1m4b";
+			if ( mapName == "e1m7" )
+			{
+				if ( !CVar.FindCVar("wf_blackroomswap_e1m8b").GetBool() )
+					level.NextMap = "e1m8";
+				else
+					level.NextMap = "e1m8b";
+			}
+			if ( mapName == "e1m3" || mapName == "e1m9" )
+			{
+				if ( !CVar.FindCVar("wf_blackroomswap_e1m4b").GetBool() )
+					level.NextMap = "e1m4";
+				else
+					level.NextMap = "e1m4b";
+			}
 		}
 	}
 	
