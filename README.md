@@ -29,7 +29,7 @@ Here is the official list of WADs that WadFusion will recognize:
 - The Ultimate DOOM (retail version of `doom.wad`, containing episodes 1-4)
 - DOOM II (`doom2.wad`)
 - Master Levels for DOOM II (the original 20 WAD files, or `masterlevels.wad` from the [KEX-based re-release](https://doomwiki.org/wiki/Doom_%2B_Doom_II))
-- Master Levels Rejects ([see below](#absolute-beginners-guide) for a full list of supported WADs)
+- Master Levels Rejects ([see below](#master-levels-rejects) for a full list of supported WADs)
 - Final DOOM (`tnt.wad` and `plutonia.wad`)
 - No Rest for the Living (`nerve.wad`)
 - SIGIL (`sigil.wad` and its optional music addon `sigil_shreds.wad`)

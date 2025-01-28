@@ -1,7 +1,7 @@
 # WadFusion TODO
 
 ## [Group episodes into "Which game?" and "Which campaign?" menus](https://github.com/Owlet7/wadfusion/issues/6)
-[Planned menu structure](https://github.com/user-attachments/assets/7b7a4fdc-a4af-42fa-a612-817c53c126e4)
+[Planned menu structure](https://github.com/user-attachments/assets/f9214733-47e5-4079-a05d-3efc162765fe)
 
 ## [Story screens](https://github.com/Owlet7/wadfusion/issues/20)
 
