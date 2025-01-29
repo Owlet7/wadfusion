@@ -3,7 +3,7 @@
 <!--## Unreleased Changes
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.3.0...HEAD)-->
 
-## [WadFusion 1.3.0](https://github.com/Owlet7/wadfusion/tree/v1.3.0) — [29 January 2025](https://github.com/Owlet7/wadfusion/releases/tag/v1.3.0)
+## [WadFusion 1.3.0](https://github.com/Owlet7/wadfusion/releases/tag/v1.3.0) — [29 January 2025](https://github.com/Owlet7/wadfusion/tree/v1.3.0)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.1...v1.3.0)
 - Added compatibility option to force texture substitutions on all levels.
   - Enabling this option disables the regular texture substitution.
@@ -22,7 +22,7 @@
 - Updated localisations (Polish by @justtoask).
 - Corrected a typo in E6M3's level title, again.
 
-## [WadFusion 1.2.1](https://github.com/Owlet7/wadfusion/tree/v1.2.1) — [06 December 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.2.1)
+## [WadFusion 1.2.1](https://github.com/Owlet7/wadfusion/releases/tag/v1.2.1) — [06 December 2024](https://github.com/Owlet7/wadfusion/tree/v1.2.1)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.0...v1.2.1)
 - Added Final DOOM map fixes from the id Anthology / GOG / KEX versions.
   - Removed redundant duplicate secrets from tnt.wad MAP10.
@@ -34,7 +34,7 @@
 - Corrected a typo in E6M3's level title.
 - Moved WidePix readme to the licenses folder.
 
-## [WadFusion 1.2.0](https://github.com/Owlet7/wadfusion/tree/v1.2.0) — [19 October 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.2.0)
+## [WadFusion 1.2.0](https://github.com/Owlet7/wadfusion/releases/tag/v1.2.0) — [19 October 2024](https://github.com/Owlet7/wadfusion/tree/v1.2.0)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.1.1...v1.2.0)
 - Renamed the IPK3 that WadFusion generates to `doom_fusion.ipk3`. Renamed the
   resulting game to "DOOM Fusion".
@@ -50,12 +50,12 @@
   versions.
 - Updated ENDOOM screen with Legacy of Rust credits.
 
-## [WadFusion 1.1.1](https://github.com/Owlet7/wadfusion/tree/v1.1.1) — [09 October 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.1.1)
+## [WadFusion 1.1.1](https://github.com/Owlet7/wadfusion/releases/tag/v1.1.1) — [09 October 2024](https://github.com/Owlet7/wadfusion/tree/v1.1.1)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.1.0...v1.1.1)
 - Enabled the "Master Levels texture substitutions" option in WadFusion Options.
 - Added SIGIL localisations from the DOOM + DOOM II port.
 
-## [WadFusion 1.1.0](https://github.com/Owlet7/wadfusion/tree/v1.1.0) — [08 October 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.1.0)
+## [WadFusion 1.1.0](https://github.com/Owlet7/wadfusion/releases/tag/v1.1.0) — [08 October 2024](https://github.com/Owlet7/wadfusion/tree/v1.1.0)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.0.1...v1.1.0)
 - Added support for the Master Levels rejects.
   - Christen Klie's rejected levels (device_1.wad, cpu.wad, dmz.wad,
@@ -84,14 +84,14 @@
 - Dropped Python 2 support.
 - Updated the Windows executable to Python 3.13.0.
 
-## [WadFusion 1.0.1](https://github.com/Owlet7/wadfusion/tree/v1.0.1) — [30 September 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.0.1)
+## [WadFusion 1.0.1](https://github.com/Owlet7/wadfusion/releases/tag/v1.0.1) — [30 September 2024](https://github.com/Owlet7/wadfusion/tree/v1.0.1)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.0.0...v1.0.1)
 - Enabled Remix soundtrack in TNT Evilution.
 - Fixed map names in LoR intermission scripts.
 - Improved LoR HUD logic.
 - Removed redundant localisation strings.
 
-## [WadFusion 1.0.0](https://github.com/Owlet7/wadfusion/tree/v1.0.0) — [22 September 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.0.0)
+## [WadFusion 1.0.0](https://github.com/Owlet7/wadfusion/releases/tag/v1.0.0) — [22 September 2024](https://github.com/Owlet7/wadfusion/tree/v1.0.0)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/963b5f47e631494e0b55930ace8f286ccd377574...v1.0.0)
 - Now that WadSmoosh has ended its development, forked and rebranded the project
   under a new name — WadFusion.
