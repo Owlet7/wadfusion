@@ -1,9 +1,12 @@
 # WadFusion Changelog
 
-## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.1...HEAD)
+<!--## Unreleased Changes
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.3.0...HEAD)-->
+
+## [WadFusion 1.3.0](https://github.com/Owlet7/wadfusion/tree/v1.3.0) — [29 January 2025](https://github.com/Owlet7/wadfusion/releases/tag/v1.3.0)
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.1...v1.3.0)
 - Added compatibility option to force texture substitutions on all levels.
-  - Enabling this option disable the regular texture substitution.
+  - Enabling this option disables the regular texture substitution.
   - This feature was added for compatibility with mods that target Final DOOM,
     DOOM 1, or Legacy of Rust.
   - Each texture substitution can be toggled individually, in case a mod needs
@@ -16,6 +19,7 @@
   `[doom.id.wadsmoosh.fusion.Autoload]`.
   - Existing saves need to be moved from the `doom.id.wadsmoosh` subfolder to
     the new `doom.id.wadsmoosh.fusion` subfolder.
+- Updated localisations (Polish by @justtoask).
 - Corrected a typo in E6M3's level title, again.
 
 ## [WadFusion 1.2.1](https://github.com/Owlet7/wadfusion/tree/v1.2.1) — [06 December 2024](https://github.com/Owlet7/wadfusion/releases/tag/v1.2.1)
