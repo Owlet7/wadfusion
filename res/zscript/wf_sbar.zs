@@ -1,7 +1,7 @@
 //-----------------------------------------------------------------------------
 //
 // Copyright 1993-2023 id Software, Randy Heit, Christoph Oelckers et.al.
-// Copyright 2024 Owlet VII
+// Copyright 2024-2025 Owlet VII
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -26,7 +26,7 @@ class WadFusionStatusBar : BaseStatusBar
 	HUDFont mAmountFont;
 	InventoryBarState diparms;
 	
-
+	
 	override void Init()
 	{
 		Super.Init();
@@ -59,7 +59,15 @@ class WadFusionStatusBar : BaseStatusBar
 
 	protected void DrawMainBar (double TicFrac)
 	{
-		DrawImage("STBAR", (0, 168), DI_ITEM_OFFSETS);
+		String mapName = level.MapName.MakeLower();
+		let isId1 = mapName.Left(3) == "lr_";
+		let id1WeapSwap = CVar.FindCVar("wf_id1_weapswap").GetInt() == 1;
+		let id1WeapSwapAlways = CVar.FindCVar("wf_id1_weapswap").GetInt() >= 2;
+		
+		if ( ( isId1 && id1WeapSwap ) || id1WeapSwapAlways )
+			DrawImage("STBRFUEL", (-128, 168), DI_ITEM_OFFSETS);
+		else
+			DrawImage("STBAR", (0, 168), DI_ITEM_OFFSETS);
 		DrawImage("STTPRCNT", (90, 171), DI_ITEM_OFFSETS);
 		DrawImage("STTPRCNT", (221, 171), DI_ITEM_OFFSETS);
 		
@@ -130,22 +138,74 @@ class WadFusionStatusBar : BaseStatusBar
 	
 	protected virtual void DrawBarAmmo()
 	{
-		int amt1, maxamt;
-		[amt1, maxamt] = GetAmount("Clip");
-		DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 173), DI_TEXT_ALIGN_RIGHT);
-		DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 173), DI_TEXT_ALIGN_RIGHT);
+		String mapName = level.MapName.MakeLower();
+		let isId1 = mapName.Left(3) == "lr_";
+		let id1WeapSwap = CVar.FindCVar("wf_id1_weapswap").GetInt() == 1;
+		let id1WeapSwapAlways = CVar.FindCVar("wf_id1_weapswap").GetInt() >= 2;
+		let cell = CPlayer.mo.FindInventory("Cell");
+		let fuel = CPlayer.mo.FindInventory("ID24Fuel");
+		let hasPlasmaRifle = CPlayer.mo.FindInventory("PlasmaRifle");
+		let hasBfg9000 = CPlayer.mo.FindInventory("BFG9000");
+		let hasIncinerator = CPlayer.mo.FindInventory("ID24Incinerator");
+		let hasHeatwave = CPlayer.mo.FindInventory("ID24CalamityBlade");
 		
-		[amt1, maxamt] = GetAmount("Shell");
-		DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 179), DI_TEXT_ALIGN_RIGHT);
-		DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 179), DI_TEXT_ALIGN_RIGHT);
-		
-		[amt1, maxamt] = GetAmount("RocketAmmo");
-		DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 185), DI_TEXT_ALIGN_RIGHT);
-		DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 185), DI_TEXT_ALIGN_RIGHT);
-		
-		[amt1, maxamt] = GetAmount("Cell");
-		DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 191), DI_TEXT_ALIGN_RIGHT);
-		DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 191), DI_TEXT_ALIGN_RIGHT);
+		// Only show id24 style ammo if the player has both cell and fuel ammo, or if wf_hud_id24 is true
+		if ( CVar.FindCVar("wf_hud_id24").GetBool() ||
+			( isId1 && id1WeapSwap && cell != null && ( hasPlasmaRifle || hasBfg9000 ) ) ||
+			( isId1 && !id1WeapSwap && fuel != null && ( hasIncinerator || hasHeatwave ) ) ||
+			( !isId1 && id1WeapSwapAlways && cell != null && ( hasPlasmaRifle || hasBfg9000 ) ) ||
+			( !isId1 && !id1WeapSwapAlways && fuel != null && ( hasIncinerator || hasHeatwave ) ) )
+		{
+			DrawImage("STAMMO24", (249, 168), DI_ITEM_OFFSETS);
+			int amt1, maxamt;
+			[amt1, maxamt] = GetAmount("Clip");
+			DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 169), DI_TEXT_ALIGN_RIGHT);
+			DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 169), DI_TEXT_ALIGN_RIGHT);
+			
+			[amt1, maxamt] = GetAmount("Shell");
+			DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 175), DI_TEXT_ALIGN_RIGHT);
+			DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 175), DI_TEXT_ALIGN_RIGHT);
+			
+			[amt1, maxamt] = GetAmount("RocketAmmo");
+			DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 181), DI_TEXT_ALIGN_RIGHT);
+			DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 181), DI_TEXT_ALIGN_RIGHT);
+			
+			[amt1, maxamt] = GetAmount("Cell");
+			DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 187), DI_TEXT_ALIGN_RIGHT);
+			DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 187), DI_TEXT_ALIGN_RIGHT);
+			
+			[amt1, maxamt] = GetAmount("ID24Fuel");
+			DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 193), DI_TEXT_ALIGN_RIGHT);
+			DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 193), DI_TEXT_ALIGN_RIGHT);
+		}
+		else
+		{
+			int amt1, maxamt;
+			[amt1, maxamt] = GetAmount("Clip");
+			DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 173), DI_TEXT_ALIGN_RIGHT);
+			DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 173), DI_TEXT_ALIGN_RIGHT);
+			
+			[amt1, maxamt] = GetAmount("Shell");
+			DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 179), DI_TEXT_ALIGN_RIGHT);
+			DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 179), DI_TEXT_ALIGN_RIGHT);
+			
+			[amt1, maxamt] = GetAmount("RocketAmmo");
+			DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 185), DI_TEXT_ALIGN_RIGHT);
+			DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 185), DI_TEXT_ALIGN_RIGHT);
+			
+			if ( ( isId1 && id1WeapSwap ) || id1WeapSwapAlways )
+			{
+				[amt1, maxamt] = GetAmount("ID24Fuel");
+				DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 191), DI_TEXT_ALIGN_RIGHT);
+				DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 191), DI_TEXT_ALIGN_RIGHT);
+			}
+			else
+			{
+				[amt1, maxamt] = GetAmount("Cell");
+				DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 191), DI_TEXT_ALIGN_RIGHT);
+				DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 191), DI_TEXT_ALIGN_RIGHT);
+			}
+		}
 	}
 	
 	protected virtual void DrawBarWeapons()

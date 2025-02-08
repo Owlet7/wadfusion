@@ -1,10 +1,1 @@
-weapons/incinerator/incfi1 = DSINCFI1
-weapons/incinerator/incfi2 = DSINCFI2
-weapons/incinerator/incbrn = DSINCBRN
-weapons/incinerator/incht1 = DSINCHT1
-weapons/incinerator/incht2 = DSINCHT2
-weapons/incinerator/incht3 = DSINCHT3
-weapons/heatwave/hetchg = DSHETCHG
-weapons/heatwave/hetsht = DSHETSHT
-weapons/heatwave/hetxpl = DSHETXPL
 monsters/vassago/vasatk = DSVASATK

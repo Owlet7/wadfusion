@@ -6,7 +6,7 @@ It's fine if you don't have all of the DOOM games, e.g. you have DOOM II but not
 
 If you just bought these games from [GOG](https://www.gog.com/en/game/doom_doom_ii), or [Steam](https://store.steampowered.com/app/2280/), etc., and you aren't familiar with GZDoom and DOOM modding, see the [**Absolute Beginner's Guide**](#absolute-beginners-guide) section below.
 
-### Note: WadFusion requires GZDoom v4.13.0 or newer, it will not work with other engines.
+### Note: WadFusion requires GZDoom v4.15pre-69 or newer, it will not work with other engines.
 
 ## Usage
 

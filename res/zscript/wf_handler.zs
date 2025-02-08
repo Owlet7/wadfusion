@@ -378,6 +378,27 @@ class WadFusionHandler : EventHandler
 		}
 	}
 	
+	override void CheckReplacement (ReplaceEvent e)
+	{
+		// replace plasmarifle and bfg9000 with incinerator and calamity blade, respectively
+		int weapSwap = CVar.FindCVar("wf_id1_weapswap").GetInt();
+		string mapName = level.MapName.MakeLower();
+		if ( ( weapSwap == 1 && mapName.Left(3) == "lr_" ) || weapSwap >= 2 )
+		{
+			if ( Level.MapTime == 0 )
+			{
+				if (e.Replacee is "PlasmaRifle")
+					e.Replacement = "ID24Incinerator";
+				if (e.Replacee is "BFG9000")
+					e.Replacement = "ID24CalamityBlade";
+				if (e.Replacee is "Cell")
+					e.Replacement = "ID24Fuel";
+				if (e.Replacee is "CellPack")
+					e.Replacement = "ID24FuelTank";
+			}
+		}
+	}
+	
 	override void WorldThingSpawned(WorldEvent e)
 	{
 		// sigil 2 spider boss buff

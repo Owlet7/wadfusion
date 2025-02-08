@@ -483,35 +483,12 @@ def copy_resources():
         logg('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
 
-def copy_resources_id1():
-    # copy id1 scripts if id1 is present
-    logg('Copying id1 resources...')
-    copyfile(RES_DIR + 'zscript/wf_id1weap.zs', DEST_DIR + 'zscript/wf_id1weap.zs')
-    copyfile(RES_DIR + 'zscript/wf_sbar.id1.zs', DEST_DIR + 'zscript/wf_sbar.zs')
-    # uncomment scripts
-    logg('Enabling id1 scripts...')
-    id1_off = '//#include \"zscript/wf_id1weap.zs\"'
-    id1_on = '#include \"zscript/wf_id1weap.zs\"'
-    with open(DEST_DIR + 'zscript.zs', 'r') as file:
-        tmp_file = file.read()
-        tmp_file = tmp_file.replace(id1_off, id1_on)
-    with open(DEST_DIR + 'zscript.zs', 'w') as file:
-        file.write(tmp_file)
-    # add event handler
-    id1_off = '//, \"Id1WeaponHandler\"\n\tStatusBarClass = \"WadFusionStatusBar\"'
-    id1_on = ', \"Id1WeaponHandler\"\n\tStatusBarClass = \"WadFusionStatusBarId24\"'
-    with open(DEST_DIR + 'mapinfo.txt', 'r') as file:
-        tmp_file = file.read()
-        tmp_file = tmp_file.replace(id1_off, id1_on)
-    with open(DEST_DIR + 'mapinfo.txt', 'w') as file:
-        file.write(tmp_file)
-    # duplicate doom1 sky patches to suppress errors
-    if not get_wad_filename('doom'):
-        logg('Duplicating doom1 sky patches to suppress errors...')
-        copyfile(DEST_DIR + 'patches/SKYE1.lmp', DEST_DIR + 'patches/SKY1.lmp')
-        copyfile(DEST_DIR + 'patches/SKYE2.lmp', DEST_DIR + 'patches/SKY2.lmp')
-        copyfile(DEST_DIR + 'patches/SKYE3.lmp', DEST_DIR + 'patches/SKY3.lmp')
-        copyfile(DEST_DIR + 'patches/SKYE4.lmp', DEST_DIR + 'patches/SKY4.lmp')
+def copy_id1_doom1_skies():
+    logg('Duplicating doom1 sky patches to suppress errors with id1...')
+    copyfile(DEST_DIR + 'patches/SKYE1.lmp', DEST_DIR + 'patches/SKY1.lmp')
+    copyfile(DEST_DIR + 'patches/SKYE2.lmp', DEST_DIR + 'patches/SKY2.lmp')
+    copyfile(DEST_DIR + 'patches/SKYE3.lmp', DEST_DIR + 'patches/SKY3.lmp')
+    copyfile(DEST_DIR + 'patches/SKYE4.lmp', DEST_DIR + 'patches/SKY4.lmp')
 
 def get_report_found():
     found = []
@@ -756,9 +733,9 @@ def main():
     # copy pre-authored lumps eg mapinfo
     if should_extract:
         copy_resources()
-    # copy id1 scripts if id1 is present
-    if get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res') and get_wad_filename('doom2') and should_extract:
-        copy_resources_id1()
+    # duplicate doom1 sky patches to suppress errors with id1
+    if get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res') and get_wad_filename('doom2') and not get_wad_filename('doom') and should_extract:
+        copy_id1_doom1_skies()
     # copy and enable Master levels Rejects mapinfo
     if get_wad_filename('device_1') and (get_wad_filename('attack') or get_wad_filename('masterlevels')) and get_wad_filename('doom2'):
         if should_extract:
