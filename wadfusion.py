@@ -55,7 +55,7 @@ from os import path
 
 import omg
 
-VERSION = '1.3.0'
+VERSION = '1.4.0-dev'
 
 # if False, do a dry run with no actual file writing
 should_extract = True
@@ -98,6 +98,8 @@ logfile = None
 exec(open(DATA_TABLES_FILE).read())
 
 MASTER_LEVELS_MAP_PREFIX = WAD_MAP_PREFIXES.get('masterlevels', '')
+
+should_extract_master_levels_rejects = False
 
 # track # of maps extracted
 num_maps = 0
@@ -172,7 +174,7 @@ def copy_master_levels_doom1_music():
     copyfile(DEST_DIR_MUS + 'D_RUNNIN.mus', DEST_DIR_MUS + 'D_E1M7.mus')
 
 def extract_master_levels_rejects():
-    global num_maps
+    global num_maps, should_extract_master_levels_rejects
     # check if present first
     for i, wad_name in enumerate(MASTER_LEVELS_ORDER):
         in_wad = omg.WAD()
@@ -199,6 +201,7 @@ def extract_master_levels_rejects():
     if not d1_wad.graphics.get(ULTIMATE_DOOM_ONLY_LUMP, None):
         logg("  ERROR: Skipping Master Levels Rejects as The Ultimate DOOM is not present", error=True)
         return
+    should_extract_master_levels_rejects = True
     logg('Processing Master Levels Rejects...')
     for i, wad_name in enumerate(MASTER_LEVELS_REJECTS_ORDER):
         in_wad = omg.WAD()
@@ -268,10 +271,9 @@ def enable_master_levels_rejects():
     logg('Enabling Master Levels Rejects...')
     # copy rejects-specific mapinfo
     copyfile(RES_DIR + 'mapinfo/episodes.rejects.txt', DEST_DIR + 'mapinfo/episodes.txt')
-    copyfile(RES_DIR + 'mapinfo/master_levels.rejects.txt', DEST_DIR + 'mapinfo/master_levels.txt')
     # enables the additional mapinfo lumps
-    rejects_false = '//include mapinfo/master_levels_flynn.txt\n//include mapinfo/master_levels_anderson.txt\n//include mapinfo/master_levels_kvernmo.txt'
-    rejects_true = 'include mapinfo/master_levels_flynn.txt\ninclude mapinfo/master_levels_anderson.txt\ninclude mapinfo/master_levels_kvernmo.txt'
+    rejects_false = 'include mapinfo/master_levels.txt'
+    rejects_true = 'include mapinfo/master_levels_rejects.txt\ninclude mapinfo/master_levels_flynn.txt\ninclude mapinfo/master_levels_anderson.txt\ninclude mapinfo/master_levels_kvernmo.txt'
     with open(DEST_DIR + 'mapinfo.txt', 'r') as file:
         tmp_file = file.read()
         tmp_file = tmp_file.replace(rejects_false, rejects_true)
@@ -733,13 +735,12 @@ def main():
     # copy pre-authored lumps eg mapinfo
     if should_extract:
         copy_resources()
+    # copy and enable Master levels Rejects mapinfo
+    if should_extract_master_levels_rejects:
+        enable_master_levels_rejects()
     # duplicate doom1 sky patches to suppress errors with id1
     if get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res') and get_wad_filename('doom2') and not get_wad_filename('doom') and should_extract:
         copy_id1_doom1_skies()
-    # copy and enable Master levels Rejects mapinfo
-    if get_wad_filename('device_1') and (get_wad_filename('attack') or get_wad_filename('masterlevels')) and get_wad_filename('doom2'):
-        if should_extract:
-            enable_master_levels_rejects()
     # rename file extensions of Sigil mp3 music
     if should_extract:
         rename_mp3()

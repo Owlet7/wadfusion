@@ -1,6 +1,6 @@
 ##-----------------------------------------------------------------------------
 ##
-## Copyright 2024 Owlet VII
+## Copyright 2024-2025 Owlet VII
 ##
 ## This program is free software: you can redistribute it and/or modify
 ## it under the terms of the GNU General Public License as published by
@@ -107,6 +107,7 @@ RES_FILES = [
     'mapinfo/sigil_levels.txt', 'mapinfo/sigil2_levels.txt',
     'mapinfo/id1_levels.txt', 'mapinfo/iddm1_levels.txt',
     'mapinfo/xbox_levels.txt', 'mapinfo/episodes.txt',
+    'mapinfo/master_levels_rejects.txt',
     'mapinfo/master_levels_flynn.txt',
     'mapinfo/master_levels_anderson.txt',
     'mapinfo/master_levels_kvernmo.txt',
