@@ -6,7 +6,7 @@ It's fine if you don't have all of the DOOM games, e.g. you have DOOM II but not
 
 If you just bought these games from [GOG](https://www.gog.com/en/game/doom_doom_ii), or [Steam](https://store.steampowered.com/app/2280/), etc., and you aren't familiar with GZDoom and DOOM modding, see the [**Absolute Beginner's Guide**](#absolute-beginners-guide) section below.
 
-### Note: WadFusion requires GZDoom v4.15pre-69 or newer, it will not work with other engines.
+### Note: WadFusion requires GZDoom dev build g4.15pre-69 or newer, it will not work with other engines.
 
 ## Usage
 
@@ -45,7 +45,7 @@ If IWADs from the Unity or KEX-based re-releases are also included (must be name
 
 The versions of `nerve.wad` in these re-releases include a unique intermission screen, but renaming them isn't necessary—WadFusion will recognize them, and they aren't censored the way the IWADs are.
 
-If `extras.wad` from the re-releases is included, WadFusion will extract the official "secret revealed" sound, and some status bar icons that can be used by custom HUDs. If the version from the KEX-based re-release is used, WadFusion will also extract Andrew Hulshult's "IDKFA" covers of the DOOM and DOOM II soundtracks, which can be toggled from the WadFusion options mod menu in GZDoom.
+If `extras.wad` from the re-releases is included, WadFusion will extract the official "secret revealed" sound, and some status bar icons that can be used by the custom alternate fullscreen HUD. If the version from the KEX-based re-release is used, WadFusion will also extract Andrew Hulshult's "IDKFA" covers of the DOOM and DOOM II soundtracks, which can be toggled from the WadFusion options mod menu in GZDoom.
 
 None of the "official add-on" content from the Unity or KEX-based re-releases of DOOM and DOOM II is supported.
 
