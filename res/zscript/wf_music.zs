@@ -24,7 +24,7 @@ class WadFusionMusicHandler : StaticEventHandler
 	// playing the last music file until it gets replaced by the script
 	override void WorldLoaded(WorldEvent e)
 	{
-		if ( (CVar.FindCVar("wf_changemusic").GetBool() ) )
+		if ( CVar.FindCVar("wf_changemusic").GetBool() )
 		{
 			// get map name and map music name
 			string mapName = level.MapName.MakeLower();
@@ -35,7 +35,7 @@ class WadFusionMusicHandler : StaticEventHandler
 			if ( mapName.Left(3) == "e5m" )
 			{
 				// play the mp3 soundtrack
-				if ( (CVar.FindCVar("wf_sigil_shreds").GetBool() ) )
+				if ( CVar.FindCVar("wf_sigil_shreds").GetBool() )
 				{
 					S_ChangeMusic( mapMusicShreds );
 				}
@@ -50,7 +50,7 @@ class WadFusionMusicHandler : StaticEventHandler
 			if ( mapName.Left(3) == "e6m" )
 			{
 				// play the mp3 soundtrack
-				if ( (CVar.FindCVar("wf_sigil2_shreds").GetBool() ) )
+				if ( CVar.FindCVar("wf_sigil2_shreds").GetBool() )
 				{
 					S_ChangeMusic( mapMusicShreds );
 				}
@@ -68,7 +68,7 @@ class WadFusionMusicHandler : StaticEventHandler
 	// the script once the map unloads and enters the intermission screen
 	override void WorldUnloaded(WorldEvent e)
 	{
-		if ( (CVar.FindCVar("wf_changemusic").GetBool() ) )
+		if ( CVar.FindCVar("wf_changemusic").GetBool() )
 		{
 			// get map name
 			string mapName = level.MapName.MakeLower();
@@ -77,7 +77,7 @@ class WadFusionMusicHandler : StaticEventHandler
 			if ( mapName.Left(3) == "e5m" )
 			{
 				// play the mp3 soundtrack
-				if ( (CVar.FindCVar("wf_sigil_shreds").GetBool() ) )
+				if ( CVar.FindCVar("wf_sigil_shreds").GetBool() )
 					S_ChangeMusic("s_intera");
 				// play the midi soundtrack
 				else
@@ -88,7 +88,7 @@ class WadFusionMusicHandler : StaticEventHandler
 			if ( mapName.Left(3) == "e6m" )
 			{
 				// play the mp3 soundtrack
-				if ( (CVar.FindCVar("wf_sigil2_shreds").GetBool() ) )
+				if ( CVar.FindCVar("wf_sigil2_shreds").GetBool() )
 					S_ChangeMusic("s2_intea");
 				// play the midi soundtrack
 				else
@@ -100,14 +100,14 @@ class WadFusionMusicHandler : StaticEventHandler
 	override void PostUiTick()
 	{
 		// check for compatibility option that disables this script
-		if ( (CVar.FindCVar("wf_changemusic").GetBool() ) )
+		if ( CVar.FindCVar("wf_changemusic").GetBool() )
 		{
 			// get map name and currently playing music
 			string mapName = level.MapName.MakeLower();
 			string music = MusPlaying.Name.MakeLower();
 			
 			// play the Sigil mp3 soundtrack if the option is enabled mid-game
-			if ( (CVar.FindCVar("wf_sigil_shreds").GetBool() ) )
+			if ( CVar.FindCVar("wf_sigil_shreds").GetBool() )
 			{
 				if ( music == "d_e5m1" )
 					music = "d_e5m1a";
@@ -136,13 +136,11 @@ class WadFusionMusicHandler : StaticEventHandler
 				if ( music == "d_e5m9" )
 					music = "d_e5m9a";
 				
-				if ( music == "s_intro" )
-					music = "s_introa";
+			//	if ( music == "s_intro" )
+			//		music = "s_introa";
 				
 				if ( music == "s_inter" )
 					music = "s_intera";
-				
-				S_ChangeMusic(music);
 			}
 			// play the Sigil midi soundtrack if the option is disabled mid-game
 			else
@@ -174,17 +172,15 @@ class WadFusionMusicHandler : StaticEventHandler
 				if ( music == "d_e5m9a" )
 					music = "d_e5m9";
 				
-				if ( music == "s_introa" )
-					music = "s_intro";
+			//	if ( music == "s_introa" )
+			//		music = "s_intro";
 				
 				if ( music == "s_intera" )
 					music = "s_inter";
-				
-				S_ChangeMusic(music);
 			}
 			
 			// play the Sigil2 mp3 soundtrack if the option is enabled mid-game
-			if ( (CVar.FindCVar("wf_sigil2_shreds").GetBool() ) )
+			if ( CVar.FindCVar("wf_sigil2_shreds").GetBool() )
 			{
 				if ( music == "d_e6m1" )
 					music = "d_e6m1a";
@@ -213,13 +209,11 @@ class WadFusionMusicHandler : StaticEventHandler
 				if ( music == "d_e6m9" )
 					music = "d_e6m9a";
 				
-				if ( music == "s2_intro" )
-					music = "s2_intra";
+			//	if ( music == "s2_intro" )
+			//		music = "s2_intra";
 				
 				if ( music == "s2_inter" )
 					music = "s2_intea";
-				
-				S_ChangeMusic(music);
 			}
 			// play the Sigil2 midi soundtrack if the option is disabled mid-game
 			else
@@ -251,17 +245,15 @@ class WadFusionMusicHandler : StaticEventHandler
 				if ( music == "d_e6m9a" )
 					music = "d_e6m9";
 				
-				if ( music == "s2_intra" )
-					music = "s2_intro";
+			//	if ( music == "s2_intra" )
+			//		music = "s2_intro";
 				
 				if ( music == "s2_intea" )
 					music = "s2_inter";
-				
-				S_ChangeMusic(music);
 			}
 			
 			// change music to Andrew Hulshult's soundtrack if true
-			if ( (CVar.FindCVar("wf_hulshult_idkfa").GetBool() ) )
+			if ( CVar.FindCVar("wf_hulshult_idkfa").GetBool() )
 			{
 				// Doom 1
 				
@@ -325,8 +317,8 @@ class WadFusionMusicHandler : StaticEventHandler
 				if ( music == "d_e3m8" )
 					music = "h_e3m8";
 				
-				if ( music == "d_intro" || music == "d_introa" )
-					music = "h_intro";
+			//	if ( music == "d_intro" || music == "d_introa" )
+			//		music = "h_intro";
 				
 				if ( music == "d_victor" )
 					music = "h_victor";
@@ -390,8 +382,8 @@ class WadFusionMusicHandler : StaticEventHandler
 				if ( music == "d_ultima" )
 					music = "h_ultima";
 				
-				if ( music == "d_dm2ttl" )
-					music = "h_dm2ttl";
+			//	if ( music == "d_dm2ttl" )
+			//		music = "h_dm2ttl";
 				
 				if ( music == "d_dm2int" )
 					music = "h_dm2int";
@@ -476,8 +468,8 @@ class WadFusionMusicHandler : StaticEventHandler
 				if ( music == "p_openin" )
 					music = "h_victor";
 				
-				if ( music == "p_dm2ttl" )
-					music = "h_dm2ttl";
+			//	if ( music == "p_dm2ttl" )
+			//		music = "h_dm2ttl";
 				
 				if ( music == "p_dm2int" )
 					music = "h_dm2int";
@@ -507,8 +499,6 @@ class WadFusionMusicHandler : StaticEventHandler
 				
 				if ( music == "t_ultima" )
 					music = "h_in_cit";
-				
-				S_ChangeMusic(music);
 			}
 			// change back to playing the original midi music when turning off Andrew Hulshult's soundtrack
 			else
@@ -612,8 +602,8 @@ class WadFusionMusicHandler : StaticEventHandler
 				if ( music == "h_e3m8" )
 					music = "d_e3m8";
 				
-				if ( music == "h_intro" )
-					music = "d_intro";
+			//	if ( music == "h_intro" )
+			//		music = "d_intro";
 				
 				if ( music == "h_victor" )
 					music = "d_victor";
@@ -735,8 +725,8 @@ class WadFusionMusicHandler : StaticEventHandler
 				if ( music == "h_ultima" )
 					music = "d_ultima";
 				
-				if ( music == "h_dm2ttl" )
-					music = "d_dm2ttl";
+			//	if ( music == "h_dm2ttl" )
+			//		music = "d_dm2ttl";
 				
 				if ( music == "h_dm2int" )
 					music = "d_dm2int";
@@ -862,8 +852,8 @@ class WadFusionMusicHandler : StaticEventHandler
 					if ( music == "h_victor" )
 						music = "p_openin";
 					
-					if ( music == "h_dm2ttl" )
-						music = "p_dm2ttl";
+				//	if ( music == "h_dm2ttl" )
+				//		music = "p_dm2ttl";
 					
 					if ( music == "h_dm2int" )
 						music = "p_dm2int";
@@ -898,8 +888,42 @@ class WadFusionMusicHandler : StaticEventHandler
 					if ( music == "h_doom" )
 						music = "t_adrian";
 				}
+			}
+			
+			// define array of supported title themes
+			string titleMusic[] =
+			{
+				"d_intro",
+				"d_introa",
+				"s_intro",
+				"s_introa",
+				"s2_intro",
+				"s2_intra",
+				"d_dm2ttl",
+				"t_dm2ttl",
+				"p_dm2ttl",
+				"x_dm2ttl",
+				"h_dm2ttl"
+			};
+			
+			// don't loop title themes
+			for ( int i = 0; i < titleMusic.Size(); i++ )
+			{
+				if ( CVar.FindCVar("wf_hulshult_idkfa").GetBool() )
+				{
+					if ( MusPlaying.Name.MakeLower() == "d_dm2ttl" )
+						S_ChangeMusic("h_dm2ttl", 0, false);
+				}
+				else
+				{
+					if ( MusPlaying.Name.MakeLower() == "h_dm2ttl" )
+						S_ChangeMusic("d_dm2ttl", 0, false);
+				}
 				
-				S_ChangeMusic(music);
+				if ( music == titleMusic[i] )
+					return;
+				else if ( i == titleMusic.Size() - 1 )
+					S_ChangeMusic(music);
 			}
 		}
 	}

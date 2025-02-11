@@ -6,6 +6,7 @@
   - **GZDoom must be updated to version g4.15pre-69!**
 - Added new optional alternate fullscreen HUD.
 - Added option to only apply the fullscreen HUD horizontal offset in fullscreen.
+- Fixed looping title music.
 - Fixed keys not being affected by the fullscreen HUD horizontal offset option.
 - Master Levels Rejects episode definitions should only be applied now if all of
   their requirements are met.

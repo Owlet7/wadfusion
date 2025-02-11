@@ -43,11 +43,6 @@ Show introduction story text after the `TITLEPIC` intros (should be possible to 
 - Modify ending intermissions to return to the main menu
 - Add Master Levels PSX end text to the Rejects version
 
-## Bugs
-- The drag on the lava floor in LR_MAP08 isn't strong enough
-- Stop menu music from looping
-  - Add unique looping TitleMusic?
-
 ## Feature creep territory
 - Level select menu
   - Hide secret levels until they are discovered
@@ -70,6 +65,7 @@ Show introduction story text after the `TITLEPIC` intros (should be possible to 
   - Hey, not too rough -> Hurt me plenty
   - Hurt me plenty -> Ultra-violence
   - Ultra-violence -> Total carnage
+- Add unique TitleMusic
 
 ## [Localisation](https://github.com/Owlet7/wadfusion/issues/13)
 <details>
