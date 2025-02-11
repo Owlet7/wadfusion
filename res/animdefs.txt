@@ -423,7 +423,7 @@ palette 127
 palette 126
 palette 125
 
-// WadFusion alternate fulscreen HUD powerups
+// WadFusion alternate fullscreen HUD powerups
 texture optional PINSA0 range PINSD0 tics 6
 texture optional PINVA0 range PINVD0 tics 6
 texture optional PVISA0 range PVISB0 tics 6

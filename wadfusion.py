@@ -218,13 +218,12 @@ def extract_master_levels_rejects():
     logg('  Copying %s map E4M8 to %s' % (get_wad_filename('doom'), out_wad_filename))
     copyfile(DEST_DIR + 'maps/' + 'E4M7.wad', out_wad_filename)
     num_maps += 1
-    # copy UDTWiD E4M8 into dest dir and sets its map lump name
+    # copy UDTWiD E4M8 into dest dir and set its map lump name
     in_wad = omg.WAD()
     wad_filename = get_wad_filename('udtwid')
     in_wad.from_file(wad_filename)
     out_wad_filename = DEST_DIR + 'maps/' + 'ML_MAP36.wad'
     logg('  Extracting %s map E4M8 to %s' % (wad_filename, out_wad_filename))
-    # grab first map we find in each wad
     map_name = in_wad.maps.find('E4M8')[0]
     extract_map(in_wad, map_name, out_wad_filename)
     # copy cabal maps
