@@ -6,10 +6,12 @@
   - **GZDoom must be updated to version g4.15pre-69!**
 - Added new optional alternate fullscreen HUD.
 - Added option to only apply the fullscreen HUD horizontal offset in fullscreen.
-- Fixed looping title music.
 - Fixed keys not being affected by the fullscreen HUD horizontal offset option.
+- Fixed looping title music.
 - Master Levels Rejects episode definitions should only be applied now if all of
   their requirements are met.
+- Refactored all of the ZScript code.
+  - All of the custom console variables were renamed and thus will be reset!
 
 ## [WadFusion 1.3.0](https://github.com/Owlet7/wadfusion/releases/tag/v1.3.0) — [29 January 2025](https://github.com/Owlet7/wadfusion/tree/v1.3.0)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.2.1...v1.3.0)

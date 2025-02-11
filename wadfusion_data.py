@@ -112,8 +112,10 @@ RES_FILES = [
     'mapinfo/master_levels_anderson.txt',
     'mapinfo/master_levels_kvernmo.txt',
     'menudef.txt', 'cvarinfo.txt', 'zscript.zs',
-    'zscript/wf_handler.zs', 'zscript/wf_music.zs',
-    'zscript/wf_xbox.zs', 'zscript/wf_mapfixes.zs',
+    'zscript/wf_handler.zs', 'zscript/wf_handler_static.zs',
+    'zscript/wf_textswap.zs', 'zscript/wf_textswap_all.zs',
+    'zscript/wf_textswap_d2sky.zs', 'zscript/wf_mapfixes.zs',
+    'zscript/wf_music_sigil.zs', 'zscript/wf_music_idkfa.zs',
     'zscript/wf_sbar.zs', 'wadfused.txt'
 ]
 

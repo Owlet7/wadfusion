@@ -302,41 +302,6 @@ def rename_mp3():
             logg('  Moving %s lump to %s' % (old_name, new_name))
             os.rename(old_name, new_name)
 
-def enable_sigil_shreds():
-    logg('Enabling Sigil MP3 music...')
-    # switches wf_sigil_shreds cvar default to true
-    shreds_false = 'wf_sigil_shreds = false'
-    shreds_true = 'wf_sigil_shreds = true'
-    with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
-        tmp_file = file.read()
-        tmp_file = tmp_file.replace(shreds_false, shreds_true)
-    with open(DEST_DIR + 'cvarinfo.txt', 'w') as file:
-        file.write(tmp_file)
-
-def enable_sigil2_shreds():
-    logg('Enabling Sigil II MP3 music...')
-    # switches wf_sigil2_shreds cvar default to true
-    shreds2_false = 'wf_sigil2_shreds = false'
-    shreds2_true = 'wf_sigil2_shreds = true'
-    with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
-        tmp_file = file.read()
-        tmp_file = tmp_file.replace(shreds2_false, shreds2_true)
-    with open(DEST_DIR + 'cvarinfo.txt', 'w') as file:
-        file.write(tmp_file)
-
-"""
-def enable_hulshult_idkfa():
-    logg('Enabling IDKFA OGG music...')
-    # switches wf_hulshult_idkfa cvar default to true
-    idkfa_false = 'wf_hulshult_idkfa = false'
-    idkfa_true = 'wf_hulshult_idkfa = true'
-    with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
-        tmp_file = file.read()
-        tmp_file = tmp_file.replace(idkfa_false, idkfa_true)
-    with open(DEST_DIR + 'cvarinfo.txt', 'w') as file:
-        file.write(tmp_file)
-"""
-
 def add_xbox_levels():
     global num_maps
     logg('Adding Xbox bonus levels...')
@@ -348,16 +313,6 @@ def add_xbox_levels():
         logg('  Adding BETRAY.WAD as MAP33')
         copyfile(get_wad_filename('betray'), DEST_DIR + 'maps/MAP33.wad')
         num_maps += 1
-
-def enable_xbox_levels():
-    # switches wf_xbox_secret_exits cvar default to true
-    xbox_false = 'wf_xbox_secret_exits = false'
-    xbox_true = 'wf_xbox_secret_exits = true'
-    with open(DEST_DIR + 'cvarinfo.txt', 'r') as file:
-        tmp_file = file.read()
-        tmp_file = tmp_file.replace(xbox_false, xbox_true)
-    with open(DEST_DIR + 'cvarinfo.txt', 'w') as file:
-        file.write(tmp_file)
 
 def add_blackroom_levels():
     global num_maps
@@ -746,24 +701,9 @@ def main():
     # rename file extensions of Andrew Hulshult's IDKFA soundtrack ogg music
     if should_extract:
         rename_ogg()
-    # enable Sigil mp3 music options
-    if get_wad_filename('sigil_shreds') and get_wad_filename('sigil') and should_extract:
-        enable_sigil_shreds()
-    if get_wad_filename('sigil2_mp3') and get_wad_filename('sigil2') and should_extract:
-        enable_sigil2_shreds()
-    """
-    # unity vs kex extras.wad differ, kex has IDKFA soundtrack
-    if get_wad_filename('extras') and should_extract:
-        extras_wad = omg.WAD()
-        extras_wad_filename = get_wad_filename('extras')
-        extras_wad.from_file(extras_wad_filename)
-        if extras_wad.colormaps.get(EXTRAS_KEX_ONLY_LUMP, None):
-            enable_hulshult_idkfa()
-    """
     # only supported versions of these @ http://classicdoom.com/xboxspec.htm
     if (get_wad_filename('sewers') or get_wad_filename('betray')) and should_extract:
         add_xbox_levels()
-        enable_xbox_levels()
     # add romero's blackroom warm-up levels if present
     if (get_wad_filename('e1m4b') or get_wad_filename('e1m8b')) and should_extract:
         add_blackroom_levels() 

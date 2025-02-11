@@ -70,10 +70,10 @@ class WadFusionStatusBar : BaseStatusBar
 
 	protected void DrawMainBar (double TicFrac)
 	{
-		String mapName = level.MapName.MakeLower();
+		String mapName = Level.MapName.MakeLower();
 		let isId1 = mapName.Left(3) == "lr_";
-		let id1WeapSwap = CVar.FindCVar("wf_id1_weapswap").GetInt() == 1;
-		let id1WeapSwapAlways = CVar.FindCVar("wf_id1_weapswap").GetInt() >= 2;
+		let id1WeapSwap = CVar.FindCVar("wf_compat_id24_weapons").GetInt() == 1;
+		let id1WeapSwapAlways = CVar.FindCVar("wf_compat_id24_weapons").GetInt() >= 2;
 		
 		if ( ( isId1 && id1WeapSwap ) || id1WeapSwapAlways )
 			DrawImage("STBRFUEL", (-128, 168), DI_ITEM_OFFSETS);
@@ -149,10 +149,11 @@ class WadFusionStatusBar : BaseStatusBar
 	
 	protected virtual void DrawBarAmmo()
 	{
-		String mapName = level.MapName.MakeLower();
+		String mapName = Level.MapName.MakeLower();
 		let isId1 = mapName.Left(3) == "lr_";
-		let id1WeapSwap = CVar.FindCVar("wf_id1_weapswap").GetInt() == 1;
-		let id1WeapSwapAlways = CVar.FindCVar("wf_id1_weapswap").GetInt() >= 2;
+		let id1WeapSwap = CVar.FindCVar("wf_compat_id24_weapons").GetInt() == 1;
+		let id1WeapSwapAlways = CVar.FindCVar("wf_compat_id24_weapons").GetInt() >= 2;
+		let hudId24 = CVar.FindCVar("wf_hud_id24").GetBool();
 		let cell = CPlayer.mo.FindInventory("Cell");
 		let fuel = CPlayer.mo.FindInventory("ID24Fuel");
 		let hasPlasmaRifle = CPlayer.mo.FindInventory("PlasmaRifle");
@@ -161,11 +162,10 @@ class WadFusionStatusBar : BaseStatusBar
 		let hasHeatwave = CPlayer.mo.FindInventory("ID24CalamityBlade");
 		
 		// Only show id24 style ammo if the player has both cell and fuel ammo, or if wf_hud_id24 is true
-		if ( CVar.FindCVar("wf_hud_id24").GetBool() ||
-			( isId1 && id1WeapSwap && cell != null && ( hasPlasmaRifle || hasBfg9000 ) ) ||
+		if ( ( isId1 && id1WeapSwap && cell != null && ( hasPlasmaRifle || hasBfg9000 ) ) ||
 			( isId1 && !id1WeapSwap && fuel != null && ( hasIncinerator || hasHeatwave ) ) ||
 			( !isId1 && id1WeapSwapAlways && cell != null && ( hasPlasmaRifle || hasBfg9000 ) ) ||
-			( !isId1 && !id1WeapSwapAlways && fuel != null && ( hasIncinerator || hasHeatwave ) ) )
+			( !isId1 && !id1WeapSwapAlways && fuel != null && ( hasIncinerator || hasHeatwave ) ) || hudId24 )
 		{
 			DrawImage("STAMMO24", (249, 168), DI_ITEM_OFFSETS);
 			int amt1, maxamt;
@@ -234,10 +234,11 @@ class WadFusionStatusBar : BaseStatusBar
 	{
 		String mapName = Level.MapName.MakeLower();
 		let isId1 = mapName.Left(3) == "lr_";
-		let id1WeapSwap = CVar.FindCVar("wf_id1_weapswap").GetInt() == 1;
-		let id1WeapSwapAlways = CVar.FindCVar("wf_id1_weapswap").GetInt() >= 2;
+		let id1WeapSwap = CVar.FindCVar("wf_compat_id24_weapons").GetInt() == 1;
+		let id1WeapSwapAlways = CVar.FindCVar("wf_compat_id24_weapons").GetInt() >= 2;
 		
-		let hudSwapHealthArmor = CVar.FindCVar("wf_hud_swaphealtharmor").GetFloat();
+		let hudId24 = CVar.FindCVar("wf_hud_id24").GetBool();
+		let hudSwapHealthArmor = CVar.FindCVar("wf_hud_swaphealtharmor").GetBool();
 		int ultraWide = CVar.FindCVar("wf_hud_ultrawide").GetInt();
 		let altHud = CVar.FindCVar("wf_hud_alt").GetFloat();
 		
@@ -500,8 +501,7 @@ class WadFusionStatusBar : BaseStatusBar
 			{
 				if ( fuel != null && ammotype1 != fuel )
 				{
-					if ( ( isId1 && id1WeapSwap ) || ( hasIncinerator || hasHeatwave ) ||
-						id1WeapSwapAlways || CVar.FindCVar("wf_hud_id24").GetBool() )
+					if ( ( isId1 && id1WeapSwap ) || ( hasIncinerator || hasHeatwave ) || hudId24 || id1WeapSwapAlways )
 					{
 						DrawString(mConFont, "fuel", (ammoInvPos.X - 31, ammoInvPos.Y),
 								DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
@@ -518,8 +518,7 @@ class WadFusionStatusBar : BaseStatusBar
 				
 				if ( cell != null && ammotype1 != cell )
 				{
-					if ( !( isId1 && id1WeapSwap ) || ( hasPlasmaRifle || hasBfg9000 ) ||
-						CVar.FindCVar("wf_hud_id24").GetBool() )
+					if ( !( isId1 && id1WeapSwap ) || ( hasPlasmaRifle || hasBfg9000 ) || hudId24 )
 					{
 						if ( !( id1WeapSwapAlways && !( hasPlasmaRifle || hasBfg9000 ) ) )
 						{
