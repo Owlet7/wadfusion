@@ -117,7 +117,8 @@ RES_FILES = [
     'zscript/wf_textswap.zs', 'zscript/wf_textswap_all.zs',
     'zscript/wf_textswap_d2sky.zs', 'zscript/wf_mapfixes.zs',
     'zscript/wf_music_sigil.zs', 'zscript/wf_music_idkfa.zs',
-    'zscript/wf_sbar.zs', 'wadfused.txt'
+    'zscript/wf_sbar.zs', 'zscript/wf_sbar_alt.zs',
+    'wadfused.txt'
 ]
 
 # files within pk3 dir that will be removed before a new run
