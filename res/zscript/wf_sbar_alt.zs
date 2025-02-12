@@ -506,8 +506,12 @@ extend class WadFusionStatusBar
 				else
 					DrawString(mSmallFont, "S:", statsPos,
 							DI_SCREEN_LEFT_BOTTOM, Font.CR_RED, statsAlpha);
-				DrawString(mSmallFont, mapSecrets, (statsPos.X + 16, statsPos.Y),
-						DI_SCREEN_LEFT_BOTTOM, Font.CR_GREEN, statsAlpha);
+				if ( mapSectersFound == mapSectersTotal )
+					DrawString(mSmallFont, mapSecrets, (statsPos.X + 16, statsPos.Y),
+							DI_SCREEN_LEFT_BOTTOM, Font.CR_GOLD, statsAlpha);
+				else
+					DrawString(mSmallFont, mapSecrets, (statsPos.X + 16, statsPos.Y),
+							DI_SCREEN_LEFT_BOTTOM, Font.CR_GREEN, statsAlpha);
 				statsPos.Y -= statsPosYIncrement;
 			}
 			
@@ -522,8 +526,12 @@ extend class WadFusionStatusBar
 				else
 					DrawString(mSmallFont, "I:", statsPos,
 							DI_SCREEN_LEFT_BOTTOM, Font.CR_RED, statsAlpha);
-				DrawString(mSmallFont, mapItems, (statsPos.X + 16, statsPos.Y),
-						DI_SCREEN_LEFT_BOTTOM, Font.CR_GREEN, statsAlpha);
+				if ( mapItemsFound == mapItemsTotal )
+					DrawString(mSmallFont, mapItems, (statsPos.X + 16, statsPos.Y),
+							DI_SCREEN_LEFT_BOTTOM, Font.CR_GOLD, statsAlpha);
+				else
+					DrawString(mSmallFont, mapItems, (statsPos.X + 16, statsPos.Y),
+							DI_SCREEN_LEFT_BOTTOM, Font.CR_GREEN, statsAlpha);
 				statsPos.Y -= statsPosYIncrement;
 			}
 			
@@ -540,8 +548,12 @@ extend class WadFusionStatusBar
 					else
 						DrawString(mSmallFont, "K:", statsPos,
 								DI_SCREEN_LEFT_BOTTOM, Font.CR_RED, statsAlpha);
-					DrawString(mSmallFont, mapMonsters, (statsPos.X + 16, statsPos.Y),
-							DI_SCREEN_LEFT_BOTTOM, Font.CR_GREEN, statsAlpha);
+					if ( mapMonstersFound == mapMonstersTotal )
+						DrawString(mSmallFont, mapMonsters, (statsPos.X + 16, statsPos.Y),
+								DI_SCREEN_LEFT_BOTTOM, Font.CR_GOLD, statsAlpha);
+					else
+						DrawString(mSmallFont, mapMonsters, (statsPos.X + 16, statsPos.Y),
+								DI_SCREEN_LEFT_BOTTOM, Font.CR_GREEN, statsAlpha);
 				statsPos.Y -= statsPosYIncrement;
 				}
 			}
