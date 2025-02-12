@@ -269,15 +269,7 @@ def extract_master_levels_rejects():
 def enable_master_levels_rejects():
     logg('Enabling Master Levels Rejects...')
     # copy rejects-specific mapinfo
-    copyfile(RES_DIR + 'mapinfo/episodes.rejects.txt', DEST_DIR + 'mapinfo/episodes.txt')
-    # enables the additional mapinfo lumps
-    rejects_false = 'include mapinfo/master_levels.txt'
-    rejects_true = 'include mapinfo/master_levels_rejects.txt\ninclude mapinfo/master_levels_flynn.txt\ninclude mapinfo/master_levels_anderson.txt\ninclude mapinfo/master_levels_kvernmo.txt'
-    with open(DEST_DIR + 'mapinfo.txt', 'r') as file:
-        tmp_file = file.read()
-        tmp_file = tmp_file.replace(rejects_false, rejects_true)
-    with open(DEST_DIR + 'mapinfo.txt', 'w') as file:
-        file.write(tmp_file)
+    copyfile(RES_DIR + 'mapinfo.rejects.txt', DEST_DIR + 'mapinfo.txt')
 
 def rename_ogg():
     # remove .lmp file extension from Andrew Hulshult's IDKFA .ogg music if it's present
