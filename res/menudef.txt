@@ -16,6 +16,8 @@ OptionMenu "WadFusionOptions"
 	Submenu "$OPTMNU_COMPATIBILITY", "WadFusionCompatibilityOptions"
 	Submenu "$HUDMNU_TITLE",         "WadFusionHudOptions"
 	Submenu "$WF_MENU_CREDITS",      "WadFusionCredits"
+	StaticText " "
+	SafeCommand "$OPTMNU_DEFAULTS", "event wf_reset2defaults"
 }
 
 OptionMenu "WadFusionCompatibilityOptions"
@@ -210,7 +212,7 @@ OptionValue "WF_NULL"
 
 OptionMenu "WadFusionCredits"
 {
-	Title "$WF_MENU_CREDITS_TITLE"
+	Title "$WF_MENU_CREDITS"
 	Submenu "$WF_CAMPAIGN_UDOOM", "UDCredits"
 	Submenu "$WF_MENU_CREDITS_DOOM2_TITLE", "D2Credits"
 	Submenu "$WF_MENU_CREDITS_D2ML_TITLE", "MLCredits"
@@ -547,7 +549,7 @@ OptionMenu "XCredits"
 OptionMenu "WFCredits"
 {
 	Title "$WF_TITLE"
-	StaticText "$WF_CRED_WF", "Red"
+	StaticText "$WF_CRED_DEV", "Red"
 	StaticText "$WF_CRED_OWLET", "White"
 	StaticText " "
 	StaticText "$WF_CRED_WS", "Red"
