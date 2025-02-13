@@ -10,6 +10,7 @@
 - Added option to reset all of WadFusion's options to their defaults.
 - Fixed keys not being affected by the fullscreen HUD horizontal offset option.
 - Fixed looping title music.
+- Fixed not all required assets being extracted if only Final DOOM is used.
 - Master Levels Rejects episode definitions should only be applied now if all of
   their requirements are met.
 - Refactored all of the ZScript code.

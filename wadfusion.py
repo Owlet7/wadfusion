@@ -416,11 +416,13 @@ def copy_resources():
         elif src_file == 'textures.doom2' and not get_wad_filename('doom2'):
             # DO copy if final doom exists and doom2 doesn't
             if not get_wad_filename('tnt'):
-                continue
+                if not get_wad_filename('plutonia'):
+                    continue
         elif src_file == 'textures.tnt' and not get_wad_filename('tnt'):
             continue
         elif src_file == 'textures.plut' and not get_wad_filename('plutonia'):
-            continue
+            if not get_wad_filename('tnt'):
+                continue
         elif src_file == 'textures.id1' and not (get_wad_filename('doom2') and get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res')):
             if not (get_wad_filename('doom2') and get_wad_filename('iddm1')):
                 continue
@@ -584,11 +586,17 @@ def main():
         if not os.path.exists(DEST_DIR + dirname):
             os.mkdir(DEST_DIR + dirname)
     # if final doom present but not doom1/2, extract doom2 resources from it
-    if get_wad_filename('tnt') and not get_wad_filename('doom2'):
-        WAD_LUMP_LISTS['tnt'] += DOOM2_LUMPS
+    if (get_wad_filename('tnt') or get_wad_filename('plutonia')) and not get_wad_filename('doom2'):
+        if get_wad_filename('tnt') and not get_wad_filename('plutonia'):
+            WAD_LUMP_LISTS['tnt'] += DOOM2_LUMPS
+        else:
+            WAD_LUMP_LISTS['plutonia'] += DOOM2_LUMPS
         # if doom 1 also isn't present (weird) extract all common resources
         if not get_wad_filename('doom'):
-            WAD_LUMP_LISTS['tnt'] += COMMON_LUMPS
+            if get_wad_filename('tnt') and not get_wad_filename('plutonia'):
+                WAD_LUMP_LISTS['tnt'] += COMMON_LUMPS
+            else:
+                WAD_LUMP_LISTS['plutonia'] += COMMON_LUMPS
     # if id1 present but not doom1, extract doom1 resources from it
     if get_wad_filename('id1') and not get_wad_filename('doom'):
         WAD_LUMP_LISTS['id1'] += ['patches_doom1']
