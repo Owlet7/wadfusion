@@ -1,7 +1,6 @@
 include mapinfo/episodes_rejects.txt
 include mapinfo/doom1_levels.txt
 include mapinfo/doom2_levels.txt
-include mapinfo/xbox_levels.txt
 include mapinfo/master_levels_rejects.txt
 include mapinfo/master_levels_flynn.txt
 include mapinfo/master_levels_anderson.txt
@@ -9,6 +8,8 @@ include mapinfo/master_levels_kvernmo.txt
 include mapinfo/nerve_levels.txt
 include mapinfo/tnt_levels.txt
 include mapinfo/plutonia_levels.txt
+include mapinfo/xbox_levels.txt
+include mapinfo/blackroom_levels.txt
 include mapinfo/sigil_levels.txt
 include mapinfo/sigil2_levels.txt
 include mapinfo/id1_levels.txt

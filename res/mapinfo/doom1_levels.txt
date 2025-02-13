@@ -114,30 +114,6 @@ map E1M9 "$HUSTR_E1M9"
 	Author = "$WF_AU_ROMERO"
 }
 
-// Blackroom warm-up maps
-
-map E1M4B "$HUSTR_E1M4B"
-{
-	Next = "E1M5"
-	Cluster = 30
-	TitlePatch = "WILV03B"
-	Music = "$MUSIC_E1M4"
-	Author = "$WF_AU_ROMERO"
-}
-
-map E1M8B "$HUSTR_E1M8B"
-{
-	Next = "EndGame1"
-	Cluster = 31
-	TitlePatch = "WILV07B"
-	Music = "$MUSIC_E1M8"
-	NoIntermission
-	BaronSpecial
-	SpecialAction_LowerFloor
-	NoSoundClipping
-	Author = "$WF_AU_ROMERO"
-}
-
 // Registered/Retail Episode 2
 
 adddefaultmap
@@ -480,21 +456,4 @@ cluster 4
 	ExitText = "$E4TEXT"
 	Music = "$MUSIC_VICTOR"
 	Flat = "$bgflatE4"
-}
-
-// Blackroom map clusters
-
-cluster 30
-{
-	EnterText = "$E1M4BTEXT"
-	Music = "$MUSIC_VICTOR"
-	Flat = "$bgflatE1"
-}
-
-cluster 31
-{
-	EnterText = "$E1M8BTEXT"
-	ExitText = "$E1TEXT"
-	Music = "$MUSIC_VICTOR"
-	Flat = "$bgflatE1"
 }
