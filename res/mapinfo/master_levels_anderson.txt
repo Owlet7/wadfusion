@@ -65,7 +65,7 @@ map ML_MAP15 "$ML_VESPERAS"
 	Music = "$MUSIC_IN_CIT"
 }
 
-map ML_MAP35 "$ML_CHIRON" // diplicate of E4M7
+map ML_MAP35 "$ML_CHIRON" // duplicate of E4M7
 {
 	Next = "ML_MAP36"
 	Sky1 = "SKY4"
