@@ -1,42 +1,42 @@
 clearepisodes
 episode E1M1
 {
-	Name = "$WF_EPISODE_EPI1"
+	Name = "$WF_EPISODE_DOOM1_EP1"
 	PicName = "M_EPI1"
 	Optional
 }
 
 episode E2M1
 {
-	Name = "$WF_EPISODE_EPI2"
+	Name = "$WF_EPISODE_DOOM1_EP2"
 	PicName = "M_EPI2"
 	Optional
 }
 
 episode E3M1
 {
-	Name = "$WF_EPISODE_EPI3"
+	Name = "$WF_EPISODE_DOOM1_EP3"
 	PicName = "M_EPI3"
 	Optional
 }
 
 episode E4M1
 {
-	Name = "$WF_EPISODE_EPI4"
+	Name = "$WF_EPISODE_UDOOM_EP4"
 	PicName = "M_EPI4"
 	Optional
 }
 
 episode E5M1
 {
-	Name = "$WF_EPISODE_EPI5"
+	Name = "$WF_EPISODE_UDOOM_EP5"
 	PicName = "M_EPI5"
 	Optional
 }
 
 episode E6M1
 {
-	Name = "$WF_EPISODE_EPI6"
+	Name = "$WF_EPISODE_UDOOM_EP6"
 	PicName = "M_EPI6"
 	Optional
 }
@@ -50,42 +50,42 @@ episode MAP01
 
 episode ML_MAP01
 {
-	Name = "$WF_EPISODE_MLE1"
+	Name = "$WF_EPISODE_MASTER_EP1"
 	PicName = "M_MASTR1"
 	Optional
 }
 
 episode ML_MAP03
 {
-	Name = "$WF_EPISODE_MLE2"
+	Name = "$WF_EPISODE_MASTER_EP2"
 	PicName = "M_MASTR2"
 	Optional
 }
 
 episode ML_MAP28
 {
-	Name = "$WF_EPISODE_MLE3"
+	Name = "$WF_EPISODE_MASTER_EP3"
 	PicName = "M_MASTR3"
 	Optional
 }
 
 episode ML_MAP29
 {
-	Name = "$WF_EPISODE_MLE4"
+	Name = "$WF_EPISODE_MASTER_EP4"
 	PicName = "M_MASTR4"
 	Optional
 }
 
 episode ML_MAP33
 {
-	Name = "$WF_EPISODE_MLE5"
+	Name = "$WF_EPISODE_MASTER_EP5"
 	PicName = "M_MASTR5"
 	Optional
 }
 
 episode ML_MAP19
 {
-	Name = "$WF_EPISODE_MLE6"
+	Name = "$WF_EPISODE_MASTER_EP6"
 	PicName = "M_MASTR6"
 	Optional
 }
@@ -99,14 +99,14 @@ episode NV_MAP01
 
 episode LR_MAP01
 {
-	Name = "$WF_EPISODE_ID1EP1"
+	Name = "$WF_EPISODE_ID1_EP1"
 	PicName = "M_XEPI1"
 	Optional
 }
 
 episode LR_MAP08
 {
-	Name = "$WF_EPISODE_ID1EP2"
+	Name = "$WF_EPISODE_ID1_EP2"
 	PicName = "M_XEPI2"
 	Optional
 }
