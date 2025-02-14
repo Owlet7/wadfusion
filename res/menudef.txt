@@ -3,6 +3,11 @@ AddOptionMenu "OptionsMenu"
 	Submenu "$WF_MENU_TITLE", "WadFusionOptions"
 }
 
+AddOptionMenu "OptionsMenuSimple"
+{
+	Submenu "$WF_MENU_TITLE", "WadFusionOptions"
+}
+
 OptionMenu "WadFusionOptions"
 {
 	Title "$WF_MENU_TITLE"

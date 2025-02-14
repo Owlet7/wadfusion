@@ -8,6 +8,7 @@
 - Added option to only apply the fullscreen HUD horizontal offset in fullscreen
   video mode.
 - Added option to reset all of WadFusion's options to their defaults.
+- Added WadFusion options to the simple options menu.
 - Fixed keys not being affected by the fullscreen HUD horizontal offset option.
 - Fixed looping title music.
 - Fixed not all required assets being extracted if only Final DOOM is used.
