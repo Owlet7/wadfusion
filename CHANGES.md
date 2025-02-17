@@ -5,10 +5,11 @@
 - Removed Legacy of Rust weapons code—it is now included in GZDoom.
   - **GZDoom must be updated to version g4.15pre-69!**
 - Added new optional alternate fullscreen HUD.
-- Added option to only apply the fullscreen HUD horizontal offset in fullscreen
-  video mode.
-- Added option to reset all of WadFusion's options to their defaults.
+- Added an option to only apply the fullscreen HUD horizontal offset in
+  fullscreen video mode.
+- Added an option to reset all of WadFusion's options to their defaults.
 - Added WadFusion options to the simple options menu.
+- Added an option to view the "Read This!" menu from the compatibility menu.
 - Fixed keys not being affected by the fullscreen HUD horizontal offset option.
 - Fixed looping title music.
 - Fixed not all required assets being extracted if only Final DOOM is used.
