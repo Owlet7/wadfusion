@@ -53,7 +53,8 @@ class WadFusionStaticHandler : StaticEventHandler
 			"t_dm2ttl",
 			"p_dm2ttl",
 			"x_dm2ttl",
-			"h_dm2ttl"
+			"h_dm2ttl",
+			"h_intro"
 		};
 		
 		// don't loop title themes
