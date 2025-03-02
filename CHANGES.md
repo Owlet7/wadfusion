@@ -3,7 +3,7 @@
 <!--## Unreleased Changes
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.0...HEAD)-->
 
-## [WadFusion 1.4.0](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.0) — [29 January 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.0)
+## [WadFusion 1.4.0](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.0) — [02 March 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.0)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.3.0...v1.4.0)
 - Removed Legacy of Rust weapons code—it is now included in GZDoom.
   - **GZDoom must be updated to version 4.14.1!**
