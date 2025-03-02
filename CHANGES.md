@@ -1,9 +1,12 @@
 # WadFusion Changelog
 
-## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.3.0...HEAD)
+<!--## Unreleased Changes
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.0...HEAD)-->
+
+## [WadFusion 1.4.0](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.0) — [29 January 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.0)
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.3.0...v1.4.0)
 - Removed Legacy of Rust weapons code—it is now included in GZDoom.
-  - **GZDoom must be updated to version g4.15pre-69!**
+  - **GZDoom must be updated to version 4.14.1!**
 - Added new optional alternate fullscreen HUD.
 - Added an option to only apply the fullscreen HUD horizontal offset in
   fullscreen video mode.

@@ -6,7 +6,7 @@ It's fine if you don't have all of the DOOM games, e.g. you have DOOM II but not
 
 If you just bought these games from [GOG](https://www.gog.com/en/game/doom_doom_ii), or [Steam](https://store.steampowered.com/app/2280/), etc., and you aren't familiar with GZDoom and DOOM modding, see the [**Absolute Beginner's Guide**](#absolute-beginners-guide) section below.
 
-### Note: WadFusion requires GZDoom dev build g4.15pre-69 or newer, it will not work with other engines.
+### Note: WadFusion requires GZDoom v4.14.1 or newer, it will not work with other engines.
 
 ## Usage
 
@@ -83,7 +83,7 @@ For the Master Levels Rejects to be integrated, *all* of the following WADs must
 3. Copy any files you find with a `.WAD` extension to the `source_wads` subfolder where you extracted WadFusion.
 4. Double-click `wadfusion.exe`. A terminal window will pop up, showing which WAD files were found, and which episodes can be extracted. Press Y and then Enter to proceed. The terminal window will show progress as it generates the IPK3.
 5. When it finishes, press Enter to close the window. You should now have a file in the WadFusion folder called `doom_fusion.ipk3`.
-6. [Download GZDoom](https://devbuilds.drdteam.org/gzdoom/) and extract it to a folder.
+6. [Download GZDoom](https://zdoom.org/downloads) and extract it to a folder.
 7. Copy the `doom_fusion.ipk3` file to GZDoom's folder.
 8. Launch GZDoom and play!
 
