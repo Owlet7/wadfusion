@@ -75,6 +75,8 @@ For the Master Levels Rejects to be integrated, *all* of the following WADs must
 - [Caball](https://doomshack.org/uploads/caball.zip) (`caball.wad`)
 - [Ultimate Doom The Way id Did](https://www.doomworld.com/idgames/levels/doom/s-u/udtwid) (`udtwid.wad`)
 
+**Note: [Works of the Masters](https://jp.itch.io/deluxe-master-levels) is not supported by WadFusion! Do not use the WADs included with it!**
+
 ## Absolute Beginner's Guide
 
 1. [Download WadFusion](https://github.com/Owlet7/wadfusion/releases/latest/download/wadfusion_win.zip) and extract it to a folder.
