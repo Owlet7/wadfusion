@@ -89,6 +89,7 @@ MASTER_LEVELS_UDTWID_PATCHES = {}
 SIGIL_ALT_FILENAMES = []
 SIGIL2_ALT_FILENAMES = []
 SIGIL2_MP3_ALT_FILENAMES = []
+REGISTERED_DOOM_ONLY_LUMP = ''
 ULTIMATE_DOOM_ONLY_LUMP = ''
 NERVE_UNITY_KEX_ONLY_LUMP = ''
 EXTRAS_KEX_ONLY_LUMP = ''
@@ -204,8 +205,7 @@ def extract_master_levels_rejects():
         return
     d1_wad = omg.WAD()
     if get_wad_filename('doom'):
-        d1_wad_filename = get_wad_filename('doom')
-        d1_wad.from_file(d1_wad_filename)
+        d1_wad.from_file(get_wad_filename('doom'))
     if not d1_wad.graphics.get(ULTIMATE_DOOM_ONLY_LUMP, None):
         logg("  ERROR: Skipping Master Levels Rejects as The Ultimate DOOM is not present", error=True)
         return
@@ -413,11 +413,10 @@ def extract_lumps(wad_name):
 def copy_resources():
     d1_wad = omg.WAD()
     if get_wad_filename('doom'):
-        d1_wad_filename = get_wad_filename('doom')
-        d1_wad.from_file(d1_wad_filename)
+        d1_wad.from_file(get_wad_filename('doom'))
     for src_file in RES_FILES:
         # don't copy texture lumps for files that aren't present
-        if src_file == 'textures.doom1' and not get_wad_filename('doom'):
+        if src_file == 'textures.doom1' and not (get_wad_filename('doom') and d1_wad.sprites.get(REGISTERED_DOOM_ONLY_LUMP, None)):
             # DO copy if id1 or iddm1 exists and doom1 doesn't
             if not ((get_wad_filename('doom2') and get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res')) or (get_wad_filename('doom2') and get_wad_filename('iddm1'))):
                 continue
@@ -510,14 +509,14 @@ def clear_pk3():
 def get_eps(wads_found):
     d1_wad = omg.WAD()
     if get_wad_filename('doom'):
-        d1_wad_filename = get_wad_filename('doom')
-        d1_wad.from_file(d1_wad_filename)
+        d1_wad.from_file(get_wad_filename('doom'))
     eps = []
     for wadname in wads_found:
         if wadname == 'doom':
-            eps += ['Knee Deep in the Dead', 'The Shores of Hell', 'Inferno']
-            if d1_wad.graphics.get(ULTIMATE_DOOM_ONLY_LUMP, None):
-                eps += ['Thy Flesh Consumed']
+            if d1_wad.sprites.get(REGISTERED_DOOM_ONLY_LUMP, None):
+                eps += ['Knee Deep in the Dead', 'The Shores of Hell', 'Inferno']
+                if d1_wad.graphics.get(ULTIMATE_DOOM_ONLY_LUMP, None):
+                    eps += ['Thy Flesh Consumed']
         elif wadname == 'doom2':
             eps += ['Hell on Earth']
         elif wadname == 'attack' and not 'masterlevels' in wads_found and 'doom2' in wads_found and not 'device_1' in wads_found:
@@ -533,9 +532,11 @@ def get_eps(wads_found):
         elif wadname == 'plutonia':
             eps += ['The Plutonia Experiment']
         elif wadname == 'sigil' and 'doom' in wads_found:
-            eps += ['SIGIL']
+            if d1_wad.sprites.get(REGISTERED_DOOM_ONLY_LUMP, None):
+                eps += ['SIGIL']
         elif wadname == 'sigil2' and 'doom' in wads_found:
-            eps += ['SIGIL II']
+            if d1_wad.sprites.get(REGISTERED_DOOM_ONLY_LUMP, None):
+                eps += ['SIGIL II']
         elif wadname == 'id1' and 'doom2' in wads_found and 'id1-res' in wads_found and 'id24res' in wads_found:
             eps += ['The Vulcan Abyss', 'Counterfeit Eden']
         elif wadname == 'iddm1' and 'doom2' in wads_found:
@@ -602,39 +603,48 @@ def main():
     # if final doom present but not doom1/2, extract doom2 resources from it
     if (get_wad_filename('tnt') or get_wad_filename('plutonia')) and not get_wad_filename('doom2'):
         if get_wad_filename('tnt') and not get_wad_filename('plutonia'):
+            logg('  ERROR: Extracting doom2.wad resources from tnt.wad as doom2.wad is not present', error=True)
             WAD_LUMP_LISTS['tnt'] += DOOM2_LUMPS
         else:
+            logg('  ERROR: Extracting doom2.wad resources from plutonia.wad as doom2.wad is not present', error=True)
             WAD_LUMP_LISTS['plutonia'] += DOOM2_LUMPS
         # if doom 1 also isn't present (weird) extract all common resources
         if not get_wad_filename('doom'):
             if get_wad_filename('tnt') and not get_wad_filename('plutonia'):
+                logg('  ERROR: Extracting common resources from tnt.wad as doom.wad or doom2.wad are not present', error=True)
                 WAD_LUMP_LISTS['tnt'] += COMMON_LUMPS
             else:
+                logg('  ERROR: Extracting common resources from plutonia.wad as doom.wad or doom2.wad are not present', error=True)
                 WAD_LUMP_LISTS['plutonia'] += COMMON_LUMPS
+    d1_wad = omg.WAD()
+    if get_wad_filename('doom'):
+        d1_wad.from_file(get_wad_filename('doom'))
     # if id1 present but not doom1, extract doom1 resources from it
-    if get_wad_filename('id1') and not get_wad_filename('doom'):
+    if get_wad_filename('id1') and not (get_wad_filename('doom') and d1_wad.sprites.get(REGISTERED_DOOM_ONLY_LUMP, None)):
+        logg('  ERROR: Extracting doom.wad resources from iddm1.wad as doom.wad is not present', error=True)
         WAD_LUMP_LISTS['id1'] += ['patches_doom1']
     # if iddm1 present but not id1, extract id1 resources from it
     if get_wad_filename('iddm1') and not get_wad_filename('id1'):
+        logg('  ERROR: Extracting id1.wad resources from iddm1.wad as id1.wad is not present', error=True)
         WAD_LUMP_LISTS['iddm1'] += ID1_LUMPS
     # if iddm1 present but not doom1, extract doom1 music from it
     if get_wad_filename('iddm1') and not get_wad_filename('doom'):
+        logg('  ERROR: Extracting doom.wad resources from iddm1.wad as doom.wad is not present', error=True)
         WAD_LUMP_LISTS['iddm1'] += ['music_doom1', 'patches_doom1']
     # if iddm1 present but not tnt, extract tnt music from it
     if get_wad_filename('iddm1') and not get_wad_filename('tnt'):
+        logg('  ERROR: Extracting tnt.wad resources from iddm1.wad as tnt.wad is not present', error=True)
         WAD_LUMP_LISTS['iddm1'] += ['music_iddm1']
     # if nerve is the unity or kex version
     if get_wad_filename('nerve'):
         nerve_wad = omg.WAD()
-        nerve_wad_filename = get_wad_filename('nerve')
-        nerve_wad.from_file(nerve_wad_filename)
+        nerve_wad.from_file(get_wad_filename('nerve'))
         if nerve_wad.graphics.get(NERVE_UNITY_KEX_ONLY_LUMP, None):
             WAD_LUMP_LISTS['nerve'] += ['graphics_nerveunity']
     # if extras is the kex version
     if get_wad_filename('extras') and should_extract:
         extras_wad = omg.WAD()
-        extras_wad_filename = get_wad_filename('extras')
-        extras_wad.from_file(extras_wad_filename)
+        extras_wad.from_file(get_wad_filename('extras'))
         if extras_wad.colormaps.get(EXTRAS_KEX_ONLY_LUMP, None):
             WAD_LUMP_LISTS['extras'] += ['graphics_extras', 'music_extras']
     # extract lumps and maps from wads
@@ -676,8 +686,23 @@ def main():
         if iwad_name == 'id1' and not get_wad_filename('id24res'):
             logg('  ERROR: Skipping id1.wad as id24res.wad is not present', error=True)
             continue
-        if iwad_name == 'iddm1'and not get_wad_filename('doom2'):
+        if iwad_name == 'iddm1' and not get_wad_filename('doom2'):
             logg('  ERROR: Skipping iddm1.wad as doom2.wad is not present', error=True)
+            continue
+        if iwad_name == 'doom' and not d1_wad.sprites.get(REGISTERED_DOOM_ONLY_LUMP, None):
+            logg('  ERROR: Skipping doom.wad as it appears to be the shareware version', error=True)
+            continue
+        if iwad_name == 'sigil' and not d1_wad.sprites.get(REGISTERED_DOOM_ONLY_LUMP, None):
+            logg('  ERROR: Skipping sigil.wad as doom.wad appears to be the shareware version', error=True)
+            continue
+        if iwad_name == 'sigil_shreds' and not d1_wad.sprites.get(REGISTERED_DOOM_ONLY_LUMP, None):
+            logg('  ERROR: Skipping sigil_shreds.wad as doom.wad appears to be the shareware version', error=True)
+            continue
+        if iwad_name == 'sigil2' and not d1_wad.sprites.get(REGISTERED_DOOM_ONLY_LUMP, None):
+            logg('  ERROR: Skipping sigil2.wad as doom.wad appears to be the shareware version', error=True)
+            continue
+        if iwad_name == 'sigil2_mp3' and not d1_wad.sprites.get(REGISTERED_DOOM_ONLY_LUMP, None):
+            logg('  ERROR: Skipping sigil2_mp3.wad as doom.wad appears to be the shareware version', error=True)
             continue
         logs('Processing WAD %s...' % iwad_name)
         if should_extract:

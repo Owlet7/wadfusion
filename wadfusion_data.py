@@ -280,7 +280,10 @@ SIGIL2_ALT_FILENAMES = ['sigil_ii_v1_0']
 # sigil2 version with MP3 music (no sigil_shreds equivalent; MP3 music just an alternate wad)
 SIGIL2_MP3_ALT_FILENAMES = ['sigil_ii_mp3_v1_0']
 
-# lump whose presence distinguishes original vs Ultimate Doom
+# lump whose presence distinguishes shareware vs registered & Ultimate Doom
+REGISTERED_DOOM_ONLY_LUMP = 'SKULA1'
+
+# lump whose presence distinguishes registered vs Ultimate Doom
 ULTIMATE_DOOM_ONLY_LUMP = 'M_EPI4'
 
 # lump whose presence distinguishes Unity & KEX vs original nerve.wad
