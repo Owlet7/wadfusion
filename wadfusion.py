@@ -48,7 +48,7 @@
 ##------------------------------------------------------------------------------------------
 ##
 
-import os, sys, time, fnmatch
+import platform, os, sys, time, fnmatch
 from shutil import copyfile
 from zipfile import ZipFile, ZIP_DEFLATED
 from os import path
@@ -115,6 +115,14 @@ def logg(line, error=False):
     if error:
         num_errors += 1
 
+def logs(line, error=False):
+    global logfile, num_errors
+    if not logfile:
+        logfile = open(LOG_FILENAME, 'w')
+    logfile.write(line + '\n')
+    if error:
+        num_errors += 1
+
 def get_wad_filename(wad_name):
     # return filename of first case-insensitive match
     wad_name += '.wad'
@@ -131,7 +139,7 @@ def extract_master_levels():
         if not wad_filename:
             logg("  ERROR: Skipping Master Levels as %s is not present" % wad_name, error=True)
             return
-    logg('Processing Master Levels...')
+    logs('Processing Master Levels...')
     for i, wad_name in enumerate(MASTER_LEVELS_ORDER):
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
@@ -139,14 +147,14 @@ def extract_master_levels():
         out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'MAP'
         # extra zero for <10 map numbers, eg map01
         out_wad_filename += str(i + 1).rjust(2, '0') + '.wad'
-        logg('  Extracting %s to %s' % (wad_filename, out_wad_filename))
+        logs('  Extracting %s to %s' % (wad_filename, out_wad_filename))
         # grab first map we find in each wad
         map_name = in_wad.maps.find('*')[0]
         extract_map(in_wad, map_name, out_wad_filename)
     # save teeth map32 to map21
     wad_filename = get_wad_filename('teeth')
     out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'MAP21' + '.wad'
-    logg('  Extracting %s map32 to %s' % (wad_filename, out_wad_filename))
+    logs('  Extracting %s map32 to %s' % (wad_filename, out_wad_filename))
     in_wad = omg.WAD()
     in_wad.from_file(wad_filename)
     extract_map(in_wad, in_wad.maps.find('*')[1], out_wad_filename)
@@ -161,13 +169,13 @@ def extract_master_levels():
         else:
             lump = wad.patches[patch_replace[0]]
         out_filename = DEST_DIR + 'patches/' + patch_replace[1] + '.lmp'
-        logg('  Extracting %s lump from %s as %s' % (patch_replace[0],
+        logs('  Extracting %s lump from %s as %s' % (patch_replace[0],
                                                    wad_filename,
                                                    patch_replace[1]))
         lump.to_file(out_filename)
 
 def copy_master_levels_doom1_music():
-    logg('Duplicating D_RUNNIN.mus to use in the Master Levels in place of Doom1 music...')
+    logs('Duplicating D_RUNNIN.mus to use in the Master Levels in place of Doom1 music...')
     copyfile(DEST_DIR_MUS + 'D_RUNNIN.mus', DEST_DIR_MUS + 'D_E2M2.mus')
     copyfile(DEST_DIR_MUS + 'D_RUNNIN.mus', DEST_DIR_MUS + 'D_E1M6.mus')
     copyfile(DEST_DIR_MUS + 'D_RUNNIN.mus', DEST_DIR_MUS + 'D_E3M3.mus')
@@ -202,20 +210,20 @@ def extract_master_levels_rejects():
         logg("  ERROR: Skipping Master Levels Rejects as The Ultimate DOOM is not present", error=True)
         return
     should_extract_master_levels_rejects = True
-    logg('Processing Master Levels Rejects...')
+    logs('Processing Master Levels Rejects...')
     for i, wad_name in enumerate(MASTER_LEVELS_REJECTS_ORDER):
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         in_wad.from_file(wad_filename)
         out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'MAP'
         out_wad_filename += str(i + 22) + '.wad'
-        logg('  Extracting %s to %s' % (wad_filename, out_wad_filename))
+        logs('  Extracting %s to %s' % (wad_filename, out_wad_filename))
         # grab first map we find in each wad
         map_name = in_wad.maps.find('*')[0]
         extract_map(in_wad, map_name, out_wad_filename)
     # copy E4M7 to use as John Anderson's 8th Canto
     out_wad_filename = DEST_DIR + 'maps/' + 'ML_MAP35.wad'
-    logg('  Copying %s map E4M8 to %s' % (get_wad_filename('doom'), out_wad_filename))
+    logs('  Copying %s map E4M8 to %s' % (get_wad_filename('doom'), out_wad_filename))
     copyfile(DEST_DIR + 'maps/' + 'E4M7.wad', out_wad_filename)
     num_maps += 1
     # copy UDTWiD E4M8 into dest dir and set its map lump name
@@ -223,7 +231,7 @@ def extract_master_levels_rejects():
     wad_filename = get_wad_filename('udtwid')
     in_wad.from_file(wad_filename)
     out_wad_filename = DEST_DIR + 'maps/' + 'ML_MAP36.wad'
-    logg('  Extracting %s map E4M8 to %s' % (wad_filename, out_wad_filename))
+    logs('  Extracting %s map E4M8 to %s' % (wad_filename, out_wad_filename))
     map_name = in_wad.maps.find('E4M8')[0]
     extract_map(in_wad, map_name, out_wad_filename)
     # copy cabal maps
@@ -234,7 +242,7 @@ def extract_master_levels_rejects():
     for map_name in in_wad.maps.find('*'):
         out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'MAP'
         out_wad_filename += str(i + 37) + '.wad'
-        logg('  Extracting %s map %s to %s' % (wad_filename, map_name, out_wad_filename))
+        logs('  Extracting %s map %s to %s' % (wad_filename, map_name, out_wad_filename))
         extract_map(in_wad, map_name, out_wad_filename)
         i += 1
     # extract Titan lumps
@@ -245,7 +253,7 @@ def extract_master_levels_rejects():
         for i in patch_extract:
             lump = wad.patches[i]
             out_filename = DEST_DIR + 'patches/' + i + '.lmp'
-            logg('  Extracting %s lump from %s' % (i, wad_filename))
+            logs('  Extracting %s lump from %s' % (i, wad_filename))
             lump.to_file(out_filename)
     # extract UDTWiD lumps
     wad = omg.WAD()
@@ -253,7 +261,7 @@ def extract_master_levels_rejects():
     wad.from_file(wad_filename)
     lump = wad.patches['DRSLEEP']
     out_filename = DEST_DIR + 'patches/DRSLEEP.lmp'
-    logg('  Extracting DRSLEEP lump from %s' % wad_filename)
+    logs('  Extracting DRSLEEP lump from %s' % wad_filename)
     lump.to_file(out_filename)
     for wad_name, patch_replace in MASTER_LEVELS_UDTWID_PATCHES.items():
         wad = omg.WAD()
@@ -261,19 +269,19 @@ def extract_master_levels_rejects():
         wad.from_file(wad_filename)
         lump = wad.patches[patch_replace[0]]
         out_filename = DEST_DIR + 'patches/' + patch_replace[1] + '.lmp'
-        logg('  Extracting %s lump from %s as %s' % (patch_replace[0],
+        logs('  Extracting %s lump from %s as %s' % (patch_replace[0],
                                                    wad_filename,
                                                    patch_replace[1]))
         lump.to_file(out_filename)
 
 def enable_master_levels_rejects():
-    logg('Enabling Master Levels Rejects...')
+    logs('Enabling Master Levels Rejects...')
     # copy rejects-specific mapinfo
     copyfile(RES_DIR + 'mapinfo.rejects.txt', DEST_DIR + 'mapinfo.txt')
 
 def rename_ogg():
     # remove .lmp file extension from Andrew Hulshult's IDKFA .ogg music if it's present
-    logg('Renaming OGG music files if present...')
+    logs('Renaming OGG music files if present...')
     # the music gets extracted to the graphics folder first
     for filename in os.listdir(DEST_DIR_GRAPHICS):
         if fnmatch.fnmatch(filename, '*.ogg.lmp'):
@@ -281,40 +289,40 @@ def rename_ogg():
             new_name = old_name.replace('.ogg.lmp', '.ogg')
             # set the destination for the music files to the music folder
             new_name = new_name.replace('graphics', 'music')
-            logg('  Moving %s lump to %s' % (old_name, new_name))
+            logs('  Moving %s lump to %s' % (old_name, new_name))
             os.rename(old_name, new_name)
 
 def rename_mp3():
     # remove .mus file extension from Sigil's .mp3 music if it's present
-    logg('Renaming MP3 music files if present...')
+    logs('Renaming MP3 music files if present...')
     for filename in os.listdir(DEST_DIR_MUS):
         if fnmatch.fnmatch(filename, '*.mp3.mus'):
             old_name = os.path.join(DEST_DIR_MUS, filename)
             new_name = old_name.replace('.mp3.mus', '.mp3')
-            logg('  Moving %s lump to %s' % (old_name, new_name))
+            logs('  Moving %s lump to %s' % (old_name, new_name))
             os.rename(old_name, new_name)
 
 def add_xbox_levels():
     global num_maps
-    logg('Adding Xbox bonus levels...')
+    logs('Adding Xbox bonus levels...')
     if get_wad_filename('doom') and get_wad_filename('sewers'):
-        logg('  Adding SEWERS.WAD as E1M10')
+        logs('  Adding SEWERS.WAD as E1M10')
         copyfile(get_wad_filename('sewers'), DEST_DIR + 'maps/E1M10.wad')
         num_maps += 1
     if get_wad_filename('doom2') and get_wad_filename('betray'):
-        logg('  Adding BETRAY.WAD as MAP33')
+        logs('  Adding BETRAY.WAD as MAP33')
         copyfile(get_wad_filename('betray'), DEST_DIR + 'maps/MAP33.wad')
         num_maps += 1
 
 def add_blackroom_levels():
     global num_maps
-    logg('Adding Blackroom warm-up levels...')
+    logs('Adding Blackroom warm-up levels...')
     if get_wad_filename('doom') and get_wad_filename('e1m4b'):
-        logg('  Adding E1M4B.WAD as E1M4B')
+        logs('  Adding E1M4B.WAD as E1M4B')
         copyfile(get_wad_filename('e1m4b'), DEST_DIR + 'maps/E1M4B.wad')
         num_maps += 1    
     if get_wad_filename('doom') and get_wad_filename('e1m8b'):
-        logg('  Adding E1M8B.WAD as E1M8B')
+        logs('  Adding E1M8B.WAD as E1M8B')
         copyfile(get_wad_filename('e1m8b'), DEST_DIR + 'maps/E1M8B.wad')
         num_maps += 1
 
@@ -330,10 +338,10 @@ def extract_iwad_maps(wad_name, map_prefix):
     wad_filename = get_wad_filename(wad_name)
     in_wad.from_file(wad_filename)
     for map_name in in_wad.maps.find('*'):
-        logg('  Extracting map %s...' % map_name)
+        logs('  Extracting map %s...' % map_name)
         out_wad_filename = DEST_DIR + 'maps/' + map_prefix + map_name + '.wad'
         extract_map(in_wad, map_name, out_wad_filename)
-        #logg('  Saved map %s' % out_wad_filename)
+        #logs('  Saved map %s' % out_wad_filename)
 
 def extract_lumps(wad_name):
     if not wad_name in WAD_LUMP_LISTS:
@@ -358,7 +366,7 @@ def extract_lumps(wad_name):
         if not lump_table:
             logg('  ERROR: Lump type %s not found' % lump_type, error=True)
             continue
-        logg('  extracting %s...' % lump_list)
+        logs('  extracting %s...' % lump_list)
         # sigil sky is in data namespace but we want it in patches dir
         if wad_name == 'sigil' and lump_list == 'patches_sigil':
             lump_subdir = DEST_DIR + 'patches/'
@@ -399,7 +407,7 @@ def extract_lumps(wad_name):
                 continue
             lump = lump_table[lump_name]
             out_filename += '.lmp' if lump_type != 'music' else '.mus'
-            logg('    Extracting %s' % lump_subdir + out_filename)
+            logs('    Extracting %s' % lump_subdir + out_filename)
             lump.to_file(lump_subdir + out_filename)
 
 def copy_resources():
@@ -430,11 +438,11 @@ def copy_resources():
             continue
         elif src_file == 'textures.masterlevelsbonus' and not (get_wad_filename('doom') and get_wad_filename('doom2') and (get_wad_filename('attack') or get_wad_filename('masterlevels')) and get_wad_filename('mines') and d1_wad.graphics.get(ULTIMATE_DOOM_ONLY_LUMP, None)):
             continue
-        logg('Copying %s' % src_file)
+        logs('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
 
 def copy_id1_doom1_skies():
-    logg('Duplicating doom1 sky patches to suppress errors with id1...')
+    logs('Duplicating doom1 sky patches to suppress errors with id1...')
     copyfile(DEST_DIR + 'patches/SKYE1.lmp', DEST_DIR + 'patches/SKY1.lmp')
     copyfile(DEST_DIR + 'patches/SKYE2.lmp', DEST_DIR + 'patches/SKY2.lmp')
     copyfile(DEST_DIR + 'patches/SKYE3.lmp', DEST_DIR + 'patches/SKY3.lmp')
@@ -546,12 +554,17 @@ def pk3_compress():
     pk3.close()
 
 def main():
+    # log python and os version
+    logs(sys.version)
+    logs(platform.system() + ' ' + os.name + ' ' + sys.platform + ' ' + platform.release())
+    logs(platform.version())
+    logs(platform.platform() + '\n')
+    # clear out pk3 dir from previous runs
+    clear_pk3()
     title_line = 'WadFusion v%s' % VERSION
     logg(title_line + '\n' + '-' * len(title_line) + '\n')
     found = get_report_found()
     input_func = raw_input if sys.version_info.major < 3 else input
-    # clear out pk3 dir from previous runs
-    clear_pk3()
     # bail if no wads in SRC_WAD_DIR
     if len(found) == 0:
         logg('No source WADs found!\nPlease place your WAD files into %s.' % os.path.realpath(SRC_WAD_DIR))
@@ -565,9 +578,9 @@ def main():
         logfile.close()
         input_func('Press Enter to exit.\n')
         return
-    print('A new IPK3 will be generated with the following episodes:')
+    logg('A new IPK3 will be generated with the following episodes:')
     for num_eps, ep_name in enumerate(get_eps(found)):
-        print('- %s' % ep_name)
+        logg('- %s' % ep_name)
     num_eps += 1
     # deduct iddm1 from the episode tally, since it won't show up in the menu
     if get_wad_filename('iddm1') and get_wad_filename('doom2'):
@@ -578,6 +591,7 @@ def main():
         logfile.close()
         return
     start_time = time.time()
+    logg('\nProcessing WADs...')
     # make dirs if they don't exist
     if not os.path.exists(DEST_DIR):
         os.mkdir(DEST_DIR)
@@ -627,7 +641,7 @@ def main():
     for iwad_name in WADS:
         wad_filename = get_wad_filename(iwad_name)
         if not wad_filename:
-            logg('WAD %s not found' % iwad_name)
+            logs('WAD %s not found' % iwad_name)
             continue
         if iwad_name == 'masterlevels' and not get_wad_filename('doom2'):
             logg('  ERROR: Skipping masterlevels.wad as doom2.wad is not present', error=True)
@@ -665,7 +679,7 @@ def main():
         if iwad_name == 'iddm1'and not get_wad_filename('doom2'):
             logg('  ERROR: Skipping iddm1.wad as doom2.wad is not present', error=True)
             continue
-        logg('Processing WAD %s...' % iwad_name)
+        logs('Processing WAD %s...' % iwad_name)
         if should_extract:
             extract_lumps(iwad_name)
             prefix = WAD_MAP_PREFIXES.get(iwad_name, None)
@@ -710,7 +724,7 @@ def main():
     # copy custom GENMIDI, if user hasn't deleted it
     genmidi_filename = 'GENMIDI.lmp'
     if os.path.exists(RES_DIR + genmidi_filename):
-        logg('Copying %s' % genmidi_filename)
+        logs('Copying %s' % genmidi_filename)
         copyfile(RES_DIR + genmidi_filename, DEST_DIR + genmidi_filename)
     # create pk3
     pk3_compress()
