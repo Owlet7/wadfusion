@@ -22,14 +22,19 @@ extend class WadFusionStaticHandler
 {
 	ui void DoIdkfaTitleMusicReplacements()
 	{
+		let musicPlaying = MusPlaying.Name.MakeLower();
 		if ( CVar.FindCVar("wf_mus_idkfa").GetBool() )
 		{
-			if ( MusPlaying.Name.MakeLower() == "d_dm2ttl" )
+			if ( musicPlaying == "d_intro" || musicPlaying == "d_introa" )
+				S_ChangeMusic("h_intro", 0, false);
+			else if ( musicPlaying == "d_dm2ttl" )
 				S_ChangeMusic("h_dm2ttl", 0, false);
 		}
 		else
 		{
-			if ( MusPlaying.Name.MakeLower() == "h_dm2ttl" )
+			if ( musicPlaying == "h_intro" )
+				S_ChangeMusic("d_intro", 0, false);
+			else if ( musicPlaying == "h_dm2ttl" )
 				S_ChangeMusic("d_dm2ttl", 0, false);
 		}
 	}
