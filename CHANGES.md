@@ -1,7 +1,15 @@
 # WadFusion Changelog
 
 <!--## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.0...HEAD)-->
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.1...HEAD)-->
+
+## [WadFusion 1.4.1](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.1) — [04 March 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.1)
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.0...v1.4.1)
+- Added H_INTRO to the list of music that shouldn't loop.
+- Added checks for if doom.wad is the shareware version.
+- The Python script will now only print out errors while processing WADs.
+  - Everything else is still logged to the log file.
+  - Python and OS versions now get logged.
 
 ## [WadFusion 1.4.0](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.0) — [02 March 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.0)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.3.0...v1.4.0)
