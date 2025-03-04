@@ -191,16 +191,16 @@ extend class WadFusionStatusBar
 			if ( hasBackpack )
 			{
 				if ( ammotype1 != null )
-					ammoType1Low = (ammotype1.MaxAmount * 0.25) / 2;
+					ammoType1Low = ammotype1.MaxAmount / 8;
 				if ( ammotype2 != null )
-					ammoType2Low = (ammotype2.MaxAmount * 0.25) / 2;
+					ammoType2Low = ammotype2.MaxAmount / 8;
 			}
 			else
 			{
 				if ( ammotype1 != null )
-					ammoType1Low = ammotype1.MaxAmount * 0.25;
+					ammoType1Low = ammotype1.MaxAmount / 4;
 				if ( ammotype2 != null )
-					ammoType2Low = ammotype2.MaxAmount * 0.25;
+					ammoType2Low = ammotype2.MaxAmount / 4;
 			}
 			
 			int invY = -25;
