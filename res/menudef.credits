@@ -6,8 +6,8 @@ OptionMenu "WadFusionCredits"
 	Submenu "$WF_MENU_CREDITS_D2ML_TITLE", "MLCredits"
 	Submenu "$WF_GAME_FDOOM", "FDCredits"
 	Submenu "$WF_CAMPAIGN_NERVE", "NVCredits"
-	Submenu "$WF_EPISODE_EPI5", "SCredits"
-	Submenu "$WF_EPISODE_EPI6", "S2Credits"
+	Submenu "$WF_EPISODE_UDOOM_EP5", "SCredits"
+	Submenu "$WF_EPISODE_UDOOM_EP6", "S2Credits"
 	Submenu "$WF_CAMPAIGN_ID1", "XCredits"
 	Submenu "$WF_TITLE", "WFCredits"
 }
@@ -211,7 +211,7 @@ OptionMenu "NVCredits"
 
 OptionMenu "SCredits"
 {
-	Title "$WF_EPISODE_EPI5"
+	Title "$WF_EPISODE_UDOOM_EP5"
 	StaticText "$WF_CRED_DEVPUB", "Red"
 	StaticText "$WF_CRED_ROMEROGAMES", "White"
 	StaticText " "
@@ -242,7 +242,7 @@ OptionMenu "SCredits"
 
 OptionMenu "S2Credits"
 {
-	Title "$WF_EPISODE_EPI6"
+	Title "$WF_EPISODE_UDOOM_EP6"
 	StaticText "$WF_CRED_DEVPUB", "Red"
 	StaticText "$WF_CRED_ROMEROGAMES", "White"
 	StaticText " "
