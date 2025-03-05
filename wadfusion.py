@@ -546,19 +546,18 @@ def main():
     title_line = 'WadFusion v%s' % VERSION
     logg(title_line + '\n' + '-' * len(title_line) + '\n')
     found = get_report_found()
-    input_func = raw_input if sys.version_info.major < 3 else input
     # bail if no wads in SRC_WAD_DIR
     if len(found) == 0:
         logg('No source WADs found!\nPlease place your WAD files into %s.' % os.path.realpath(SRC_WAD_DIR))
         logfile.close()
-        input_func('Press Enter to exit.\n')
+        input('Press Enter to exit.\n')
         return
     logs('Found in %s:\n' % SRC_WAD_DIR + ', '.join(found) + '\n')
     # bail if no iwads in SRC_WAD_DIR
     if not get_wad_filename('doom') and not get_wad_filename('doom2') and not get_wad_filename('tnt') and not get_wad_filename('plutonia'):
         logg('No source IWADs found!\nPlease place your IWAD files into %s.' % os.path.realpath(SRC_WAD_DIR))
         logfile.close()
-        input_func('Press Enter to exit.\n')
+        input('Press Enter to exit.\n')
         return
     logg('A new IPK3 will be generated with the following episodes:')
     for num_eps, ep_name in enumerate(get_eps(found)):
@@ -567,7 +566,7 @@ def main():
     # deduct iddm1 from the episode tally, since it won't show up in the menu
     if get_wad_filename('iddm1') and get_wad_filename('doom2'):
         num_eps -= 1
-    i = input_func('\nPress Y and then Enter to proceed, anything else to cancel: ')
+    i = input('\nPress Y and then Enter to proceed, anything else to cancel: ')
     if i.lower() != 'y':
         logg('Canceled.')
         logfile.close()
@@ -740,7 +739,7 @@ def main():
     logg('Done!')
     if num_errors > 0:
         logg('%s errors found, see %s for details.' % (num_errors, LOG_FILENAME))
-    input_func('Press Enter to exit.\n')
+    input('Press Enter to exit.\n')
     clear_temp()
     logfile.close()
 
