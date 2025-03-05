@@ -572,7 +572,7 @@ def main():
         logfile.close()
         input_func('Press Enter to exit.\n')
         return
-    logg('Found in %s:\n  ' % SRC_WAD_DIR + ', '.join(found) + '\n')
+    logs('Found in %s:\n' % SRC_WAD_DIR + ', '.join(found) + '\n')
     # bail if no iwads in SRC_WAD_DIR
     if not get_wad_filename('doom') and not get_wad_filename('doom2') and not get_wad_filename('tnt') and not get_wad_filename('plutonia'):
         logg('No source IWADs found!\nPlease place your IWAD files into %s.' % os.path.realpath(SRC_WAD_DIR))
