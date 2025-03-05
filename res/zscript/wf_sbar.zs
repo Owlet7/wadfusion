@@ -74,7 +74,7 @@ class WadFusionStatusBar : BaseStatusBar
 		let id1WeapSwapAlways = CVar.FindCVar("wf_compat_id24_weapons").GetInt() >= 2;
 		
 		if ( ( isId1 && id1WeapSwap ) || id1WeapSwapAlways )
-			DrawImage("STBRFUEL", (-128, 168), DI_ITEM_OFFSETS);
+			DrawImage("STBRFUEL", (160, 168), DI_ITEM_TOP);
 		else
 			DrawImage("STBAR", (0, 168), DI_ITEM_OFFSETS);
 		DrawImage("STTPRCNT", (90, 171), DI_ITEM_OFFSETS);

@@ -1,0 +1,27 @@
+---------------------------------------
+Ultra-Widerpix854 - DOOM Fusion Edition
+---------------------------------------
+
+DOOM, DOOM2, Masterlevels, Plutonia, TNT assets extended by Meerschweinmann,
+based on id Software assets, Nash Muhandes's Widepix, and Sucuba Steve's widescreen assets.
+
+No Rest for the Living assets extended by Meerschweinmann,
+based on id Software assets and graphics from Scuba Steve.
+
+Legacy of Rust assets extended by PhobosVB,
+based on id Software assets.
+
+Sigil and Sigil II assets extended by PhobosVB,
+Sigil TITLEPIC edited by PhobosVB and Meerschweinmann,
+based on Romero Games assets and graphics from Scuba Steve.
+
+
+Where to get latest version:
+https://www.doomworld.com/forum/topic/148537
+
+
+Thanks goes out to:
+
+- Nash Muhandes for Widepix
+- Scuba Steve for his Widescreen graphics
+- id Software for making the greatest shooter of all time.

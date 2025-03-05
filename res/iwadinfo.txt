@@ -8,4 +8,6 @@ IWad
 	Compatibility = "Shorttex"
 	BannerColors = "a8 00 00", "a8 a8 a8"
 	IgnoreTitlePatches = 1
+	Load = "doom_fusion_widescreen_gfx.pk3"
+	LoadWidescreen = 0
 }

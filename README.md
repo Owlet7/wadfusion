@@ -16,9 +16,9 @@ If you're on Windows, run `wadfusion.exe`.
 
 If you're on macOS or GNU/Linux, run the `wadfusion.py` Python 3 script.
 
-WadFusion will create a new file called `doom_fusion.ipk3`, with all the game content in it. It should be selectable as a game in GZDoom.
+WadFusion will create a new file called `doom_fusion.ipk3`, with all the game content in it. It should be selectable in GZDoom as "DOOM Fusion".
 
-In rare cases, you may need to uncheck the `source_wads` folder's read-only status.
+Also included is a file called `doom_fusion_widescreen_gfx.pk3`, which adds super-ultra-widescreen assets courtesy of the [Ultra-Widerpix854 project](https://www.doomworld.com/forum/topic/148537). DOOM Fusion will load it automatically if it's added to GZDoom's file directories. GZDoom's own widescreen assets are disabled in Fusion.
 
 ## Supported WADs
 
@@ -41,7 +41,7 @@ Here is the official list of WADs that WadFusion will recognize:
 
 WadFusion requires `id1-res.wad` and `id24res.wad` for Legacy of Rust.
 
-If IWADs from the Unity or KEX-based re-releases are also included (must be named `doomunity.wad`, `doom2unity.wad`, `tntunity.wad`, `plutoniaunity.wad` or `doomkex.wad`, `doom2kex.wad`, `tntkex.wad`, `plutoniakex.wad`), WadFusion will extract widescreen assets from them. These versions can also be used as the main WADs for extraction, but do keep in mind that they are censored.
+If IWADs from the Unity or KEX-based re-releases are also included (must be named `doomunity.wad`, `doom2unity.wad`, `tntunity.wad`, `plutoniaunity.wad` or `doomkex.wad`, `doom2kex.wad`, `tntkex.wad`, `plutoniakex.wad`), WadFusion will extract the official widescreen assets from them. These versions can also be used as the main WADs for extraction, but do keep in mind that they are censored, and that WadFusion already comes with optional super-ultrawide assets.
 
 The versions of `nerve.wad` in these re-releases include a unique intermission screen, but renaming them isn't necessary—WadFusion will recognize them, and they aren't censored the way the IWADs are.
 

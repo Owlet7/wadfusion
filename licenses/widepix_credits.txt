@@ -74,10 +74,3 @@ Don Ivan Punchatz - Doom 1 cover artwork.
 Gerald Brom - Doom 2 cover artwork.
 
 Simon "fragglet" Howard: High res versions of the original cover artwork.
-
--------------------------------------------------------------------------------
-
-WadFusion:
-----------
-
-TITLEPIC.lmp and CONBACK.lmp are based on id Software's DOOM II
