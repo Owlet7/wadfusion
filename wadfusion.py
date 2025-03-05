@@ -110,7 +110,7 @@ num_errors = 0
 def logg(line, error=False):
     global logfile, num_errors
     if not logfile:
-        logfile = open(LOG_FILENAME, 'w')
+        logfile = open(LOG_FILENAME, 'w', encoding='utf-8')
     print(line)
     logfile.write(line + '\n')
     if error:
@@ -119,7 +119,7 @@ def logg(line, error=False):
 def logs(line, error=False):
     global logfile, num_errors
     if not logfile:
-        logfile = open(LOG_FILENAME, 'w')
+        logfile = open(LOG_FILENAME, 'w', encoding='utf-8')
     logfile.write(line + '\n')
     if error:
         num_errors += 1
