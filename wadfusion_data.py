@@ -121,20 +121,6 @@ RES_FILES = [
     'wadfused.txt'
 ]
 
-# files within pk3 dir that will be removed before a new run
-TIDY_DIR_EXTENSIONS = {
-    'flats/': ['lmp'],
-    'graphics/': ['lmp'],
-    'patches/': ['lmp'],
-    'sounds/': ['lmp'],
-    'sprites/': ['lmp'],
-    'music/': ['lmp', 'mus', 'mp3', 'ogg'],
-    'mapinfo/': ['txt'],
-    'maps/': ['wad'],
-    'zscript/': ['zs'],
-    './': ['csv', 'lmp', 'txt', 'zs']
-}
-
 # list of files we can extract from
 WADS = ['doom', 'doom2', 'masterlevels', 'tnt', 'plutonia',
         'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',

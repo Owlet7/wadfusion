@@ -49,7 +49,7 @@
 ##
 
 import platform, os, sys, time, fnmatch
-from shutil import copyfile
+from shutil import copyfile, rmtree
 from zipfile import ZipFile, ZIP_DEFLATED
 from os import path
 
@@ -481,30 +481,11 @@ def get_report_found():
                 break
     return found
 
-def clear_pk3():
-    # clear out pk3 dir from previous runs
-    files_tidied = 0
-    for dirname,extensions in TIDY_DIR_EXTENSIONS.items():
-        if not os.path.exists(DEST_DIR + dirname):
-            continue
-        for filename in os.listdir(DEST_DIR + dirname):
-            for ext in extensions:
-                if filename.endswith(ext):
-                    filename = DEST_DIR + dirname + filename
-                    if os.path.exists(filename):
-                        os.remove(filename)
-                        files_tidied += 1
-    # clear out files in pk3 base dir too
-    for filename in RES_FILES:
-        # don't touch subdirs
-        if filename != os.path.basename(filename):
-            continue
-        filename = DEST_DIR + filename
-        if os.path.exists(filename):
-            os.remove(filename)
-            files_tidied += 1
-    if files_tidied > 0:
-        logg('Removed %s files from a previous run.\n' % files_tidied)
+def clear_temp():
+    # clear out temp dir from previous runs
+    if os.path.exists(DEST_DIR):
+        rmtree(DEST_DIR)
+        logs('Removed temp directory from a previous run.\n')
 
 def get_eps(wads_found):
     d1_wad = omg.WAD()
@@ -561,7 +542,7 @@ def main():
     logs(platform.version())
     logs(platform.platform() + '\n')
     # clear out pk3 dir from previous runs
-    clear_pk3()
+    clear_temp()
     title_line = 'WadFusion v%s' % VERSION
     logg(title_line + '\n' + '-' * len(title_line) + '\n')
     found = get_report_found()
@@ -760,7 +741,7 @@ def main():
     if num_errors > 0:
         logg('%s errors found, see %s for details.' % (num_errors, LOG_FILENAME))
     input_func('Press Enter to exit.\n')
-    clear_pk3()
+    clear_temp()
     logfile.close()
 
 if __name__ == "__main__":
