@@ -195,7 +195,7 @@ def extract_master_levels_rejects():
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         if not wad_filename:
-            logg("  ERROR: Skipping Master Levels Rejects as %s is not present" % wad_name, error=True)
+            logg("  ERROR: Skipping Master Levels Rejects as %s.wad is not present" % wad_name, error=True)
             return
     if not get_wad_filename('udtwid'):
         logg("  ERROR: Skipping Master Levels Rejects as udtwid.wad is not present", error=True)
@@ -500,11 +500,11 @@ def get_eps(wads_found):
                     eps += ['Thy Flesh Consumed']
         elif wadname == 'doom2':
             eps += ['Hell on Earth']
-        elif wadname == 'attack' and not 'masterlevels' in wads_found and 'doom2' in wads_found and not 'device_1' in wads_found:
+        elif wadname == 'attack' and not 'masterlevels' in wads_found and 'doom2' in wads_found and not 'cpu' in wads_found:
             eps += ['Master Levels']
-        elif wadname == 'masterlevels' and 'doom2' in wads_found and not 'device_1' in wads_found:
+        elif wadname == 'masterlevels' and 'doom2' in wads_found and not 'cpu' in wads_found:
             eps += ['Master Levels']
-        elif wadname == 'device_1' and ('attack' in wads_found or 'masterlevels' in wads_found) and 'doom2' in wads_found:
+        elif wadname == 'cpu' and ('attack' in wads_found or 'masterlevels' in wads_found) and 'doom2' in wads_found:
             eps += ['Tim Willits (Master Levels)', 'Christen Klie (Master Levels)', 'Tom Mustaine (Master Levels)', 'Jim Flynn\'s Titan (Master Levels)', 'John Anderson\'s INFERNO (Master Levels)', 'Sverre André Kvernmo\'s CABAL (Master Levels)']
         elif wadname == 'nerve' and 'doom2' in wads_found:
             eps += ['No Rest for the Living']
@@ -698,12 +698,12 @@ def main():
         logg('  ERROR: Skipping Master Levels as doom2.wad is not present', error=True)
     if (get_wad_filename('attack') or get_wad_filename('masterlevels')) and not get_wad_filename('doom') and should_extract:
         copy_master_levels_doom1_music()
-    if get_wad_filename('device_1') and (get_wad_filename('attack') or get_wad_filename('masterlevels')) and get_wad_filename('doom2'):
+    if get_wad_filename('cpu') and (get_wad_filename('attack') or get_wad_filename('masterlevels')) and get_wad_filename('doom2'):
         if should_extract:
             extract_master_levels_rejects()
-    elif get_wad_filename('device_1') and not get_wad_filename('doom2'):
+    elif get_wad_filename('cpu') and not get_wad_filename('doom2'):
         logg('  ERROR: Skipping Master Levels Rejects as doom2.wad is not present', error=True)
-    elif get_wad_filename('device_1') and not (get_wad_filename('attack') or get_wad_filename('masterlevels')):
+    elif get_wad_filename('cpu') and not (get_wad_filename('attack') or get_wad_filename('masterlevels')):
         logg('  ERROR: Skipping Master Levels Rejects as the Master Levels are not present', error=True)
     # copy pre-authored lumps eg mapinfo
     if should_extract:
