@@ -168,7 +168,7 @@ OptionMenu "WadFusionHudOptions"
 	Title "$WF_MENU_HUD_TITLE"
 	Option "$WF_MENU_HUD_ID24",                      "wf_hud_id24",                 "YesNo"
 	Option "$WF_MENU_HUD_SWAPHEALTHARMOR",           "wf_hud_swaphealtharmor",      "YesNo"
-	Slider "$WF_MENU_HUD_ULTRAWIDE",                 "wf_hud_ultrawide",            0, 255, 1
+	Slider "$WF_MENU_HUD_ULTRAWIDE",                 "wf_hud_ultrawide",            0, 255, 1, 0
 	Option "$WF_MENU_HUD_ULTRAWIDE_FULLSCREEN",      "wf_hud_ultrawide_fullscreen", "YesNo"
 	StaticText " "
 	Option "$WF_MENU_HUD_ALT",                       "wf_hud_alt",                  "YesNo"
