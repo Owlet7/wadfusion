@@ -1,7 +1,21 @@
 # WadFusion Changelog
 
 <!--## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.1...HEAD)-->
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.2...HEAD)-->
+
+## [WadFusion 1.4.2](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.2) — [06 March 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.2)
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.1...v1.4.2)
+- Added support for @Meerschweinmann's Ultra-Widerpix854 widescreen assets.
+  - They are now bundled with WadFusion as `doom_fusion_widescreen_gfx.pk3`,
+    which will get autoloaded if it's added to GZDoom's file directories.
+  - GZDoom's own widescreen assets are now disabled in Fusion.
+- The IDKFA soundtrack now also replaces D_INTRO.
+- Fixed incorrect logic for switching the IDKFA soundtrack in Final DOOM.
+- Fixed float truncation warnings in the custom HUD script.
+- Fixed credits labels for Sigil.
+- Specified UTF-8 encoding for the log file.
+- Every supported WAD that's found is now logged.
+- The temp folder now gets deleted after the script finishes.
 
 ## [WadFusion 1.4.1](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.1) — [04 March 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.1)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.0...v1.4.1)

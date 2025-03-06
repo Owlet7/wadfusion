@@ -55,7 +55,7 @@ from os import path
 
 import omg
 
-VERSION = '1.4.1'
+VERSION = '1.4.2'
 
 # if False, do a dry run with no actual file writing
 should_extract = True
