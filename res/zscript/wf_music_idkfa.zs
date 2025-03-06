@@ -296,237 +296,6 @@ extend class WadFusionStaticHandler
 		// change back to playing the original midi music when turning off Andrew Hulshult's soundtrack
 		else
 		{
-			// Doom 1
-			
-			if ( music == "h_e1m1" )
-				music = "d_e1m1";
-			
-			if ( music == "h_e1m2" )
-				music = "d_e1m2";
-			
-			if ( music == "h_e1m3" )
-				music = "d_e1m3";
-			
-			if ( music == "h_e1m4" )
-				music = "d_e1m4";
-			
-			if ( music == "h_e1m5" )
-				music = "d_e1m5";
-			
-			if ( music == "h_e1m6" )
-			{
-				if ( mapName == "e3m6" )
-					music = "d_e3m6";
-				else
-					music = "d_e1m6";
-			}
-			
-			if ( music == "h_e1m7" )
-			{
-				if ( mapName == "e2m5" || mapName == "e4m8" )
-					music = "d_e2m5";
-				else if ( mapName == "e3m5" )
-					music = "d_e3m5";
-				else
-					music = "d_e1m7";
-			}
-			
-			if ( music == "h_e1m8" )
-			{
-				if ( mapName == "e3m4" || mapName == "e4m1" )
-					music = "d_e3m4";
-				else
-					music = "d_e1m8";
-			}
-			
-			if ( music == "h_e1m9" )
-			{
-				if ( mapName == "e3m9" )
-					music = "d_e3m9";
-				else
-					music = "d_e1m9";
-			}
-			
-			if ( music == "h_e2m1" )
-				music = "d_e2m1";
-			
-			if ( music == "h_e2m2" )
-				music = "d_e2m2";
-			
-			if ( music == "h_e2m3" )
-			{
-				if ( mapName == "e2m3" )
-					music = "d_e2m3";
-				else
-					music = "d_inter";
-			}
-			
-			if ( music == "h_e2m4" )
-				music = "d_e2m4";
-			
-			if ( music == "h_e2m6" )
-				music = "d_e2m6";
-			
-			if ( music == "h_e2m7" )
-			{
-				if ( mapName == "e3m7" )
-					music = "d_e3m7";
-				else
-					music = "d_e2m7";
-			}
-			
-			if ( music == "h_e2m8" )
-				music = "d_e2m8";
-			
-			if ( music == "h_e2m9" )
-			{
-				if ( mapName == "e3m1" )
-					music = "d_e3m1";
-				else
-					music = "d_e2m9";
-			}
-			
-			if ( music == "h_e3m2" )
-				music = "d_e3m2";
-			
-			if ( music == "h_e3m3" )
-				music = "d_e3m3";
-			
-			if ( music == "h_e3m8" )
-				music = "d_e3m8";
-			
-		//	if ( music == "h_intro" )
-		//		music = "d_intro";
-			
-			if ( music == "h_victor" )
-				music = "d_victor";
-			
-			if ( music == "h_bunny" )
-				music = "d_bunny";
-			
-			// Doom 2
-			
-			if ( music == "h_adrian" )
-				music = "d_adrian";
-			
-			if ( music == "h_ampie" )
-				music = "d_ampie";
-			
-			if ( music == "h_betwee" )
-				music = "d_betwee";
-			
-			if ( music == "h_countd" )
-			{
-				if ( mapName == "map21" )
-					music = "d_count2";
-				else
-					music = "d_countd";
-			}
-			
-			if ( music == "h_ddtblu" )
-			{
-				if ( mapName == "map22" )
-					music = "d_ddtbl3";
-				else if ( mapName == "map14" )
-					music = "d_ddtbl2";
-				else
-					music = "d_ddtblu";
-			}
-			
-			if ( music == "h_dead" )
-			{
-				if ( mapName == "map16" )
-					music = "d_dead2";
-				else
-					music = "d_dead";
-			}
-			
-			if ( music == "h_doom" )
-			{
-				if ( mapName == "map13" )
-					music = "d_doom2";
-				else
-					music = "d_doom";
-			}
-			
-			if ( music == "h_evil" )
-				music = "d_evil";
-			
-			if ( music == "h_in_cit" )
-				music = "d_in_cit";
-			
-			if ( music == "h_messag" )
-			{
-				if ( mapName == "map26" )
-					music = "d_messg2";
-				else
-					music = "d_messag";
-			}
-			
-			if ( music == "h_openin" )
-				music = "d_openin";
-			
-			if ( music == "h_romero" )
-			{
-				if ( mapName == "map27" )
-					music = "d_romer2";
-				else
-					music = "d_romero";
-			}
-			
-			if ( music == "h_runnin" )
-			{
-				if ( mapName == "map15" )
-					music = "d_runni2";
-				else
-					music = "d_runnin";
-			}
-			
-			if ( music == "h_shawn" )
-			{
-				if ( mapName == "map29" )
-					music = "d_shawn3";
-				else if ( mapName == "map19" )
-					music = "d_shawn2";
-				else
-					music = "d_shawn";
-			}
-			
-			if ( music == "h_stalks" )
-			{
-				if ( mapName == "map17" )
-					music = "d_stlks3";
-				else if ( mapName == "map11" )
-					music = "d_stlks2";
-				else
-					music = "d_stalks";
-			}
-			
-			if ( music == "h_tense" )
-				music = "d_tense";
-			
-			if ( music == "h_the_da" )
-			{
-				if ( mapName == "map24" )
-					music = "d_theda3";
-				else if ( mapName == "map12" )
-					music = "d_theda2";
-				else
-					music = "d_the_da";
-			}
-			
-			if ( music == "h_ultima" )
-				music = "d_ultima";
-			
-		//	if ( music == "h_dm2ttl" )
-		//		music = "d_dm2ttl";
-			
-			if ( music == "h_dm2int" )
-				music = "d_dm2int";
-			
-			if ( music == "h_read_m" )
-				music = "d_read_m";
-			
 			// check if on a Plutonia map, which are meant to play music with a "p_" prefix
 			if ( mapName.Left(3) == "pl_" )
 			{
@@ -651,9 +420,8 @@ extend class WadFusionStaticHandler
 				if ( music == "h_dm2int" )
 					music = "p_dm2int";
 			}
-			
 			// check if on a TNT Evilution map, which are meant to play music with a "t_" prefix
-			if ( mapName.Left(3) == "tn_" )
+			else if ( mapName.Left(3) == "tn_" )
 			{
 				if ( music == "h_messag" )
 					music = "t_countd";
@@ -680,6 +448,239 @@ extend class WadFusionStaticHandler
 				
 				if ( music == "h_doom" )
 					music = "t_adrian";
+			}
+			else
+			{
+				// Doom 1
+				
+				if ( music == "h_e1m1" )
+					music = "d_e1m1";
+				
+				if ( music == "h_e1m2" )
+					music = "d_e1m2";
+				
+				if ( music == "h_e1m3" )
+					music = "d_e1m3";
+				
+				if ( music == "h_e1m4" )
+					music = "d_e1m4";
+				
+				if ( music == "h_e1m5" )
+					music = "d_e1m5";
+				
+				if ( music == "h_e1m6" )
+				{
+					if ( mapName == "e3m6" )
+						music = "d_e3m6";
+					else
+						music = "d_e1m6";
+				}
+				
+				if ( music == "h_e1m7" )
+				{
+					if ( mapName == "e2m5" || mapName == "e4m8" )
+						music = "d_e2m5";
+					else if ( mapName == "e3m5" )
+						music = "d_e3m5";
+					else
+						music = "d_e1m7";
+				}
+				
+				if ( music == "h_e1m8" )
+				{
+					if ( mapName == "e3m4" || mapName == "e4m1" )
+						music = "d_e3m4";
+					else
+						music = "d_e1m8";
+				}
+				
+				if ( music == "h_e1m9" )
+				{
+					if ( mapName == "e3m9" )
+						music = "d_e3m9";
+					else
+						music = "d_e1m9";
+				}
+				
+				if ( music == "h_e2m1" )
+					music = "d_e2m1";
+				
+				if ( music == "h_e2m2" )
+					music = "d_e2m2";
+				
+				if ( music == "h_e2m3" )
+				{
+					if ( mapName == "e2m3" )
+						music = "d_e2m3";
+					else
+						music = "d_inter";
+				}
+				
+				if ( music == "h_e2m4" )
+					music = "d_e2m4";
+				
+				if ( music == "h_e2m6" )
+					music = "d_e2m6";
+				
+				if ( music == "h_e2m7" )
+				{
+					if ( mapName == "e3m7" )
+						music = "d_e3m7";
+					else
+						music = "d_e2m7";
+				}
+				
+				if ( music == "h_e2m8" )
+					music = "d_e2m8";
+				
+				if ( music == "h_e2m9" )
+				{
+					if ( mapName == "e3m1" )
+						music = "d_e3m1";
+					else
+						music = "d_e2m9";
+				}
+				
+				if ( music == "h_e3m2" )
+					music = "d_e3m2";
+				
+				if ( music == "h_e3m3" )
+					music = "d_e3m3";
+				
+				if ( music == "h_e3m8" )
+					music = "d_e3m8";
+				
+			//	if ( music == "h_intro" )
+			//		music = "d_intro";
+				
+				if ( music == "h_victor" )
+					music = "d_victor";
+				
+				if ( music == "h_bunny" )
+					music = "d_bunny";
+				
+				// Doom 2
+				
+				if ( music == "h_adrian" )
+					music = "d_adrian";
+				
+				if ( music == "h_ampie" )
+					music = "d_ampie";
+				
+				if ( music == "h_betwee" )
+					music = "d_betwee";
+				
+				if ( music == "h_countd" )
+				{
+					if ( mapName == "map21" )
+						music = "d_count2";
+					else
+						music = "d_countd";
+				}
+				
+				if ( music == "h_ddtblu" )
+				{
+					if ( mapName == "map22" )
+						music = "d_ddtbl3";
+					else if ( mapName == "map14" )
+						music = "d_ddtbl2";
+					else
+						music = "d_ddtblu";
+				}
+				
+				if ( music == "h_dead" )
+				{
+					if ( mapName == "map16" )
+						music = "d_dead2";
+					else
+						music = "d_dead";
+				}
+				
+				if ( music == "h_doom" )
+				{
+					if ( mapName == "map13" )
+						music = "d_doom2";
+					else
+						music = "d_doom";
+				}
+				
+				if ( music == "h_evil" )
+					music = "d_evil";
+				
+				if ( music == "h_in_cit" )
+					music = "d_in_cit";
+				
+				if ( music == "h_messag" )
+				{
+					if ( mapName == "map26" )
+						music = "d_messg2";
+					else
+						music = "d_messag";
+				}
+				
+				if ( music == "h_openin" )
+					music = "d_openin";
+				
+				if ( music == "h_romero" )
+				{
+					if ( mapName == "map27" )
+						music = "d_romer2";
+					else
+						music = "d_romero";
+				}
+				
+				if ( music == "h_runnin" )
+				{
+					if ( mapName == "map15" )
+						music = "d_runni2";
+					else
+						music = "d_runnin";
+				}
+				
+				if ( music == "h_shawn" )
+				{
+					if ( mapName == "map29" )
+						music = "d_shawn3";
+					else if ( mapName == "map19" )
+						music = "d_shawn2";
+					else
+						music = "d_shawn";
+				}
+				
+				if ( music == "h_stalks" )
+				{
+					if ( mapName == "map17" )
+						music = "d_stlks3";
+					else if ( mapName == "map11" )
+						music = "d_stlks2";
+					else
+						music = "d_stalks";
+				}
+				
+				if ( music == "h_tense" )
+					music = "d_tense";
+				
+				if ( music == "h_the_da" )
+				{
+					if ( mapName == "map24" )
+						music = "d_theda3";
+					else if ( mapName == "map12" )
+						music = "d_theda2";
+					else
+						music = "d_the_da";
+				}
+				
+				if ( music == "h_ultima" )
+					music = "d_ultima";
+				
+			//	if ( music == "h_dm2ttl" )
+			//		music = "d_dm2ttl";
+				
+				if ( music == "h_dm2int" )
+					music = "d_dm2int";
+				
+				if ( music == "h_read_m" )
+					music = "d_read_m";
 			}
 		}
 		
