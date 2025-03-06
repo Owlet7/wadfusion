@@ -18,7 +18,7 @@ If you're on macOS or GNU/Linux, run the `wadfusion.py` Python 3 script.
 
 WadFusion will create a new file called `doom_fusion.ipk3`, with all the game content in it. It should be selectable in GZDoom as "DOOM Fusion".
 
-Also included is a file called `doom_fusion_widescreen_gfx.pk3`, which adds super-ultra-widescreen assets courtesy of the [Ultra-Widerpix854 project](https://www.doomworld.com/forum/topic/148537). DOOM Fusion will load it automatically if it's added to GZDoom's file directories. GZDoom's own widescreen assets are disabled in Fusion.
+Also included is a file called `doom_fusion_widescreen_gfx.pk3`, which adds super-ultra-widescreen assets courtesy of the [Ultra-Widerpix854 project](https://www.doomworld.com/forum/topic/148537). DOOM Fusion will load it automatically if it's added to GZDoom's file directories. GZDoom's own widescreen assets are disabled in Fusion. (It's worth noting that the full Ultra-Widerpix854 project has some extra features not included with WadFusion, such as alternate versions for some graphics, sprite fixes, [extended sky textures](https://github.com/Owlet7/wadfusion/discussions/62), and support for other DOOM-based games.)
 
 ## Supported WADs
 
