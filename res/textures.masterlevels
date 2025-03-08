@@ -8,7 +8,7 @@ Texture MSKY1, 256, 128
 
 // MANOR.WAD and TTRAP.WAD
 // renamed from SKY1 to avoid Doom 1 conflict
-Texture MSKY3, 256, 128
+Texture MSKY3, 1024, 128
 {
 	Patch STARS, 0, 0
 	Patch STARS, 256, 0
