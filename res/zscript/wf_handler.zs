@@ -116,7 +116,7 @@ class WadFusionHandler : EventHandler
 		// don't count spawned enemies e.g. icon of sin summons
 		if ( CVar.FindCVar("wf_compat_killcountfix").GetBool() )
 		{
-			if (Level.MapTime > 0)
+			if ( Level.MapTime > 0 )
 				RevertKillCounter(e);
 		}
 	}
@@ -142,13 +142,13 @@ class WadFusionHandler : EventHandler
 	{
 		if ( Level.MapTime == 0 )
 		{
-			if (e.Replacee is "PlasmaRifle")
+			if ( e.Replacee is "PlasmaRifle" )
 				e.Replacement = "ID24Incinerator";
-			if (e.Replacee is "BFG9000")
+			if ( e.Replacee is "BFG9000" )
 				e.Replacement = "ID24CalamityBlade";
-			if (e.Replacee is "Cell")
+			if ( e.Replacee is "Cell" )
 				e.Replacement = "ID24Fuel";
-			if (e.Replacee is "CellPack")
+			if ( e.Replacee is "CellPack" )
 				e.Replacement = "ID24FuelTank";
 		}
 	}
@@ -174,7 +174,7 @@ class WadFusionHandler : EventHandler
 	
 	void RevertKillCounter(WorldEvent e)
 	{
-		if (e.Thing.bCountKill)
+		if ( e.Thing.bCountKill )
 		{
 			e.Thing.bCountKill = false;
 			Level.Total_Monsters -= 1;			
