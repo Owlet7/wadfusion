@@ -174,7 +174,7 @@ class WadFusionHandler : EventHandler
 	
 	void RevertKillCounter(WorldEvent e)
 	{
-		if ( e.Thing.bCountKill )
+		if ( e.Thing && e.Thing.bCountKill )
 		{
 			e.Thing.bCountKill = false;
 			Level.Total_Monsters -= 1;			
