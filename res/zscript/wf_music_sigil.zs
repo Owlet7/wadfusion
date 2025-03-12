@@ -96,6 +96,34 @@ extend class WadFusionHandler
 
 extend class WadFusionStaticHandler
 {
+	// change Sigil's title music to mp3/midi if the option is changed, without looping
+	ui void DoSigilIntroMusicReplacements()
+	{
+		let musicPlaying = MusPlaying.Name.MakeLower();
+		
+		if ( CVar.FindCVar("wf_mus_sigilmp3").GetBool() )
+		{
+			if ( musicPlaying == "s_intro" )
+				S_ChangeMusic("s_introa", 0, false);
+		}
+		else
+		{
+			if ( musicPlaying == "s_introa" )
+				S_ChangeMusic("s_intro", 0, false);
+		}
+		
+		if ( CVar.FindCVar("wf_mus_sigil2mp3").GetBool() )
+		{
+			if ( musicPlaying == "s2_intro" )
+				S_ChangeMusic("s2_intra", 0, false);
+		}
+		else
+		{
+			if ( musicPlaying == "s2_intra" )
+				S_ChangeMusic("s2_intro", 0, false);
+		}
+	}
+	
 	ui void DoSigilMusicReplacements()
 	{
 		// get currently playing music
