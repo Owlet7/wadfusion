@@ -28,6 +28,7 @@ GameInfo
 	QuitSound = "menu/quit1"
 	BorderFlat = "GRNROCK"
 	DrawReadThis = false
+	SwapMenu = false
 	IntermissionMusic = "$MUSIC_DM2INT"
 	QuitMessages = "$QUITMSG", "$QUITMSG1", "$QUITMSG2", "$QUITMSG3",
 		"$QUITMSG4", "$QUITMSG5", "$QUITMSG6", "$QUITMSG7", "$QUITMSG8",
