@@ -55,17 +55,17 @@ extend class WadFusionStatusBar
 		int cellLow   = 75;
 		int fuelLow   = 37;
 		
-		let fist           = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "Fist";
-		let chainsaw       = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "Chainsaw";
-		let pistol         = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "Pistol";
-		let shotgun        = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "Shotgun";
-		let superShotgun   = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "SuperShotgun";
-		let chaingun       = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "Chaingun";
-		let rocketLauncher = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "RocketLauncher";
-		let incinerator    = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "ID24Incinerator";
-		let plasmaRifle    = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "PlasmaRifle";
-		let heatwave       = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "ID24CalamityBlade";
-		let bfg9000        = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "BFG9000";
+		let readyFist           = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "Fist";
+		let readyChainsaw       = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "Chainsaw";
+		let readyPistol         = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "Pistol";
+		let readyShotgun        = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "Shotgun";
+		let readySuperShotgun   = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "SuperShotgun";
+		let readyChaingun       = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "Chaingun";
+		let readyRocketLauncher = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "RocketLauncher";
+		let readyIncinerator    = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "ID24Incinerator";
+		let readyPlasmaRifle    = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "PlasmaRifle";
+		let readyHeatwave       = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "ID24CalamityBlade";
+		let readyBfg9000        = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "BFG9000";
 		
 		let hasFist           = CPlayer.mo.FindInventory("Fist");
 		let hasChainsaw       = CPlayer.mo.FindInventory("Chainsaw");
@@ -89,10 +89,10 @@ extend class WadFusionStatusBar
 		let hasBackpack = CPlayer.mo.FindInventory("Backpack");
 		let hasBerserk  = CPlayer.mo.FindInventory("PowerStrength");
 		
-		let blurSphere            = Powerup(CPlayer.mo.FindInventory("PowerInvisibility"));
-		let invulnerabilitySphere = Powerup(CPlayer.mo.FindInventory("PowerInvulnerable"));
-		let infrared              = Powerup(CPlayer.mo.FindInventory("PowerLightAmp"));
-		let radSuit               = Powerup(CPlayer.mo.FindInventory("PowerIronFeet"));
+		let hasBlurSphere            = Powerup(CPlayer.mo.FindInventory("PowerInvisibility"));
+		let hasInvulnerabilitySphere = Powerup(CPlayer.mo.FindInventory("PowerInvulnerable"));
+		let hasInfrared              = Powerup(CPlayer.mo.FindInventory("PowerLightAmp"));
+		let hasRadSuit               = Powerup(CPlayer.mo.FindInventory("PowerIronFeet"));
 		
 		let altHudMugshot         = CVar.FindCVar("wf_hud_alt_mugshot").GetBool();
 		let altHudHealth          = CVar.FindCVar("wf_hud_alt_health").GetBool();
@@ -326,9 +326,9 @@ extend class WadFusionStatusBar
 		
 		if ( altHudPowerup )
 		{
-			if ( blurSphere != null )
+			if ( hasBlurSphere != null )
 			{
-				int blurSphereTime = int(Ceil(double(blurSphere.EffectTics) / GameTicRate));
+				int blurSphereTime = int(Ceil(double(hasBlurSphere.EffectTics) / GameTicRate));
 				DrawImage("PINSA0", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
 				DrawString(mConFont, FormatNumber(blurSphereTime, 1), (powerupPos.X, powerupPos.Y - 8),
 						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
@@ -336,9 +336,9 @@ extend class WadFusionStatusBar
 				powerupCount++;
 			}
 			
-			if ( invulnerabilitySphere != null )
+			if ( hasInvulnerabilitySphere != null )
 			{
-				int invulnerabilitySphereTime = int(Ceil(double(invulnerabilitySphere.EffectTics) / GameTicRate));
+				int invulnerabilitySphereTime = int(Ceil(double(hasInvulnerabilitySphere.EffectTics) / GameTicRate));
 				DrawImage("PINVA0", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
 				DrawString(mConFont, FormatNumber(invulnerabilitySphereTime, 1), (powerupPos.X, powerupPos.Y - 8),
 						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
@@ -346,9 +346,9 @@ extend class WadFusionStatusBar
 				powerupCount++;
 			}
 			
-			if ( infrared != null )
+			if ( hasInfrared != null )
 			{
-				int infraredTime = int(Ceil(double(infrared.EffectTics) / GameTicRate));
+				int infraredTime = int(Ceil(double(hasInfrared.EffectTics) / GameTicRate));
 				DrawImage("PVISA0", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
 				DrawString(mConFont, FormatNumber(infraredTime, 1), (powerupPos.X, powerupPos.Y - 8),
 						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
@@ -356,10 +356,10 @@ extend class WadFusionStatusBar
 				powerupCount++;
 			}
 			
-			if (radSuit != null)
+			if ( hasRadSuit != null )
 			{
-				int radSuitTime = int(Ceil(double(radSuit.EffectTics) / GameTicRate));
-				if ( infrared )
+				int radSuitTime = int(Ceil(double(hasRadSuit.EffectTics) / GameTicRate));
+				if ( hasInfrared )
 					powerupPos.Y += 12;
 				DrawImage("SUITA0", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
 				DrawString(mConFont, FormatNumber(radSuitTime, 1), (powerupPos.X, powerupPos.Y - 8),
@@ -375,7 +375,7 @@ extend class WadFusionStatusBar
 		
 		if ( altHudWeapInv )
 		{
-			if ( fist )
+			if ( readyFist )
 				DrawString(mIndexFont, "1", weapInvPos, DI_SCREEN_RIGHT_BOTTOM,
 						hasBerserk ? Font.CR_RED : Font.CR_GOLD, weapInvAlpha);
 			else if ( hasFist )
@@ -383,19 +383,19 @@ extend class WadFusionStatusBar
 						hasBerserk ? Font.CR_RED : Font.CR_WHITE, weapInvInactiveAlpha);
 			
 			weapInvPos.X += weapInvPosXIncrement;
-			if ( chainsaw )
+			if ( readyChainsaw )
 				DrawString(mIndexFont, "1", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
 			else if ( hasChainsaw )
 				DrawString(mIndexFont, "1", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
 			
 			weapInvPos.X += weapInvPosXIncrement;
-			if ( pistol )
+			if ( readyPistol )
 				DrawString(mIndexFont, "2", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
 			else if ( hasPistol )
 				DrawString(mIndexFont, "2", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
 			
 			weapInvPos.X += weapInvPosXIncrement;
-			if ( shotgun )
+			if ( readyShotgun )
 				DrawString(mIndexFont, "3", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
 			else if ( hasShotgun )
 				DrawString(mIndexFont, "3", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
@@ -403,25 +403,25 @@ extend class WadFusionStatusBar
 			if ( !( mapName.Left(1) == "e" && mapName.Mid(2, 1) == "m" && !hasSuperShotgun ) )
 				weapInvPos.X += weapInvPosXIncrement;
 			
-			if ( superShotgun )
+			if ( readySuperShotgun )
 				DrawString(mIndexFont, "3", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
 			else if ( hasSuperShotgun )
 				DrawString(mIndexFont, "3", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
 			
 			weapInvPos.X += weapInvPosXIncrement;
-			if ( chaingun )
+			if ( readyChaingun )
 				DrawString(mIndexFont, "4", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
 			else if ( hasChaingun )
 				DrawString(mIndexFont, "4", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
 			
 			weapInvPos.X += weapInvPosXIncrement;
-			if ( rocketLauncher )
+			if ( readyRocketLauncher )
 				DrawString(mIndexFont, "5", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
 			else if ( hasRocketLauncher )
 				DrawString(mIndexFont, "5", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
 			
 			weapInvPos.X += weapInvPosXIncrement;
-			if ( incinerator )
+			if ( readyIncinerator )
 				DrawString(mIndexFont, "6", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
 			else if ( hasIncinerator )
 				DrawString(mIndexFont, "6", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
@@ -429,13 +429,13 @@ extend class WadFusionStatusBar
 			if ( ( hasPlasmaRifle || hasBfg9000 ) && ( hasIncinerator || hasHeatwave ) )
 				weapInvPos.X += weapInvPosXIncrement;
 			
-			if ( plasmaRifle )
+			if ( readyPlasmaRifle )
 				DrawString(mIndexFont, "6", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
 			else if ( hasPlasmaRifle )
 				DrawString(mIndexFont, "6", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
 			
 			weapInvPos.X += weapInvPosXIncrement;
-			if ( heatwave )
+			if ( readyHeatwave )
 				DrawString(mIndexFont, "7", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
 			else if ( hasHeatwave )
 				DrawString(mIndexFont, "7", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
@@ -443,7 +443,7 @@ extend class WadFusionStatusBar
 			if ( hasIncinerator || hasHeatwave )
 				weapInvPos.X += weapInvPosXIncrement;
 			
-			if ( bfg9000 )
+			if ( readyBfg9000 )
 				DrawString(mIndexFont, "7", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
 			else if ( hasBfg9000 )
 				DrawString(mIndexFont, "7", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
