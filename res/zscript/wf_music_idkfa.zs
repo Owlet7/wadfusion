@@ -23,6 +23,7 @@ extend class WadFusionStaticHandler
 	ui void DoIdkfaTitleMusicReplacements()
 	{
 		let musicPlaying = MusPlaying.Name.MakeLower();
+		// change title music to Andrew Hulshult's soundtrack if true, without looping
 		if ( CVar.FindCVar("wf_mus_idkfa").GetBool() )
 		{
 			if ( musicPlaying == "d_intro" || musicPlaying == "d_introa" )
