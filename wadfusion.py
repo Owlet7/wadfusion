@@ -526,7 +526,7 @@ def get_eps(wads_found):
 
 def pk3_compress():
     logg('Compressing %s...' % DEST_FILENAME)
-    pk3 = ZipFile(DEST_FILENAME, 'w', ZIP_DEFLATED)
+    pk3 = ZipFile(DEST_FILENAME, 'w', ZIP_DEFLATED, compresslevel=9)
     for dir_name, x, filenames in os.walk(DEST_DIR):
         for filename in filenames:
             src_name = dir_name + '/' + filename
