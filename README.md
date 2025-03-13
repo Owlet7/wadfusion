@@ -49,7 +49,7 @@ If `extras.wad` from the re-releases is included, WadFusion will extract the off
 
 None of the "official add-on" content from the Unity or KEX-based re-releases of DOOM and DOOM II is supported.
 
-For SIGIL and SIGIL II, all the filenames for different releases of those WADs are also recognized; you shouldn't have to rename your original files. If `sigil_shreds.wad` is included, or if both versions of SIGIL II are included, WadFusion will extract both soundtracks, which can be toggled from the WadFusion options menu in GZDoom. The MP3 version of Sigil II isn't supported on its own, the MIDI version must be included alongside it.
+For SIGIL and SIGIL II, all the filenames for different releases of those WADs are also recognized; you shouldn't have to rename your original files. If `sigil_shreds.wad` is included, or if both versions of SIGIL II are included, WadFusion will extract both soundtracks, which can be toggled from the WadFusion options menu in GZDoom. The MP3 version of SIGIL II isn't supported on its own, the MIDI version must be included alongside it.
 
 [Tech Gone Bad](https://doomwiki.org/wiki/Tech_Gone_Bad) and [Phobos Mission Control](https://doomwiki.org/wiki/Phobos_Mission_Control) are levels that were made as a warm-up exercise for John Romero's cancelled game, Blackroom. If they're included, enabling them in the WadFusion options menu in GZDoom will replace E1M8 or E1M4 in the Knee-Deep in the Dead episode.
 
