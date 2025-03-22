@@ -172,7 +172,7 @@ ID1_LUMPS = [
 WAD_LUMP_LISTS = {
     'doom': COMMON_LUMPS + DOOM1_LUMPS,
     'doom2': COMMON_LUMPS + DOOM2_LUMPS,
-    'masterlevels': ['patches_masterlevels'],
+    'masterlevels': ['patches_masterlevels', 'graphics_masterlevels'],
     'tnt': ['graphics_tnt', 'music_tnt', 'patches_tnt'],
     'plutonia': ['graphics_plutonia', 'music_plutonia', 'patches_plutonia'],
     'sigil': ['graphics_sigil', 'music_sigil', 'patches_sigil', 'data_sigil'],
