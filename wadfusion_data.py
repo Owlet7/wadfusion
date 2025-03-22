@@ -184,14 +184,14 @@ WAD_LUMP_LISTS = {
     'id24res': ['graphics_id24res'],
     'iddm1': [],
     # widescreen assets from unity and kex ports
-    'doomunity': ['graphics_doom1unity'],
-    'doom2unity': ['graphics_doom2unity'],
-    'tntunity': ['graphics_tntunity'],
-    'plutoniaunity': ['graphics_plutoniaunity'],
-    'doomkex': ['graphics_doom1unity'],
-    'doom2kex': ['graphics_doom2unity'],
-    'tntkex': ['graphics_tntkex'],
-    'plutoniakex': ['graphics_plutoniakex'],
+    'doomunity': ['graphics_doom1_unity'],
+    'doom2unity': ['graphics_doom2_unity'],
+    'tntunity': ['graphics_tnt_unity'],
+    'plutoniaunity': ['graphics_plutonia_unity'],
+    'doomkex': ['graphics_doom1_unity'],
+    'doom2kex': ['graphics_doom2_unity'],
+    'tntkex': ['graphics_tnt_kex'],
+    'plutoniakex': ['graphics_plutonia_kex'],
     'nerve': [],
     # extras.wad assets from unity and kex ports
     'extras': ['data_extras', 'sounds_extras']

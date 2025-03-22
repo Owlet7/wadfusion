@@ -620,7 +620,7 @@ def main():
         nerve_wad = omg.WAD()
         nerve_wad.from_file(get_wad_filename('nerve'))
         if nerve_wad.graphics.get(NERVE_UNITY_KEX_ONLY_LUMP, None):
-            WAD_LUMP_LISTS['nerve'] += ['graphics_nerveunity']
+            WAD_LUMP_LISTS['nerve'] += ['graphics_nerve_unity']
     # if extras is the kex version
     if get_wad_filename('extras') and should_extract:
         extras_wad = omg.WAD()
