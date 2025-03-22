@@ -100,10 +100,3 @@ map NV_MAP09 "$NHUSTR_9"
 	Music = "$MUSIC_DDTBLU"
 	Author = "$WF_AU_MEAKIM"
 }
-
-cluster 11
-{
-	ExitText = "$NERVETEXT"
-	Music = "$MUSIC_READ_M"
-	Flat = "SLIME16"
-}

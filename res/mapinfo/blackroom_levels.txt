@@ -31,20 +31,3 @@ map E1M8B "$HUSTR_E1M8B"
 	SpecialAction_LowerFloor
 	NoSoundClipping
 }
-
-// Blackroom map clusters
-
-cluster 30
-{
-	EnterText = "$E1M4BTEXT"
-	Music = "$MUSIC_VICTOR"
-	Flat = "$bgflatE1"
-}
-
-cluster 31
-{
-	EnterText = "$E1M8BTEXT"
-	ExitText = "$E1TEXT"
-	Music = "$MUSIC_VICTOR"
-	Flat = "$bgflatE1"
-}

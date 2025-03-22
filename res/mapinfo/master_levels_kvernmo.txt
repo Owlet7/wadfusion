@@ -100,10 +100,3 @@ map ML_MAP21 "$ML_TEETH_SECRET"
 	TitlePatch = "MWILV20"
 	Music = "$MUSIC_ULTIMA"
 }
-
-cluster 25
-{
-	EnterText = "$MLSECRET"
-	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT31"
-}

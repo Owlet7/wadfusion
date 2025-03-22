@@ -204,17 +204,3 @@ map ML_MAP21 "$ML_TEETH_SECRET"
 	Music = "$MUSIC_ULTIMA"
 	Author = "$WF_AU_KVERNMO"
 }
-
-cluster 24
-{
-	ExitText = "$MLEND"
-	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06"
-}
-
-cluster 25
-{
-	EnterText = "$MLSECRET"
-	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT31"
-}

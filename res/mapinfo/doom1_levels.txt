@@ -427,33 +427,3 @@ map E4M9 "$HUSTR_E4M9"
 	Music = "$MUSIC_E1M9"
 	Author = "$WF_AU_WILLITS"
 }
-
-// Clusters (correspond with same-numbered episode)
-
-cluster 1
-{
-	ExitText = "$E1TEXT"
-	Music = "$MUSIC_VICTOR"
-	Flat = "$bgflatE1"
-}
-
-cluster 2
-{
-	ExitText = "$E2TEXT"
-	Music = "$MUSIC_VICTOR"
-	Flat = "$bgflatE2"
-}
-
-cluster 3
-{
-	ExitText = "$E3TEXT"
-	Music = "$MUSIC_VICTOR"
-	Flat = "$bgflatE3"
-}
-
-cluster 4
-{
-	ExitText = "$E4TEXT"
-	Music = "$MUSIC_VICTOR"
-	Flat = "$bgflatE4"
-}

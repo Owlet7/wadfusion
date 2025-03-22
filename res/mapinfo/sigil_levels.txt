@@ -89,12 +89,3 @@ map E5M9 "$HUSTR_E5M9"
 	TitlePatch = "WILV48"
 	Par = 660
 }
-
-// Sigil 1 cluster
-
-cluster 26
-{
-	Flat = "FLOOR7_2"
-	Music = "$MUSIC_VICTOR"
-	ExitText = "$E5TEXT"
-}

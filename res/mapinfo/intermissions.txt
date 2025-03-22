@@ -1,0 +1,61 @@
+// Intermissions
+
+
+// Legacy of Rust ending cast roll with new enemies
+
+intermission Id1Cast
+{
+	Image
+	{
+		Background = "ID1BOSS"
+		Time = -1
+		Music = "D_DEJAVU"
+	}
+	Cast
+	{
+		CastClass = "Deh_Actor_150"
+		CastName = "$ID24_GHOUL"
+		AttackSound = "Missile", 1, "imp/attack"
+	}
+	Cast
+	{
+		CastClass = "Deh_Actor_151"
+		CastName = "$ID24_BANSHEE"
+	}
+	Cast
+	{
+		CastClass = "Deh_Actor_153"
+		CastName = "$ID24_SHOCKTROOPER"
+		AttackSound = "Missile", 1, "weapons/plasmaf"
+		AttackSound = "Missile", 3, "weapons/plasmaf"
+		AttackSound = "Missile", 5, "weapons/plasmaf"
+	}
+	Cast
+	{
+		CastClass = "Deh_Actor_152"
+		CastName = "$ID24_MINDWEAVER"
+		AttackSound = "Missile", 1, "spider/attack"
+		AttackSound = "Missile", 2, "spider/attack"
+	}
+	Cast
+	{
+		CastClass = "Deh_Actor_154"
+		CastName = "$ID24_VASSAGO"
+		AttackSound = "Missile", 1, "monsters/vassago/vasatk"
+	}
+	Cast
+	{
+		CastClass = "Deh_Actor_155"
+		CastName = "$ID24_TYRANT"
+		AttackSound = "Missile", 1, "weapons/rocklf"
+		AttackSound = "Missile", 3, "weapons/rocklf"
+		AttackSound = "Missile", 5, "weapons/rocklf"
+	}
+	Cast
+	{
+		CastClass = "DoomPlayer"
+		CastName = "$CC_HERO"
+		AttackSound = "Missile", 0, "weapons/sshotf"
+	}
+	Link = Id1Cast
+}
