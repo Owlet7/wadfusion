@@ -3,7 +3,7 @@
 defaultmap
 {
 	SuckTime = 1
-	ExitPic = "PLUINTER"
+	ExitPic = "INTERPL"
 	InterMusic = "P_DM2INT"
 	NoJump
 	NoCrouch

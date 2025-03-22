@@ -7,7 +7,7 @@ intermission Id1Cast
 {
 	Image
 	{
-		Background = "ID1BOSS"
+		Background = "BOSSLR"
 		Time = -1
 		Music = "D_DEJAVU"
 	}

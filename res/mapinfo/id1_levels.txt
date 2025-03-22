@@ -3,7 +3,7 @@
 defaultmap
 {
 	SuckTime = 1
-	ExitPic = "ID1INTER"
+	ExitPic = "INTERLR"
 	InterMusic = "X_DM2INT"
 	NoJump
 	NoCrouch
@@ -101,7 +101,7 @@ map LR_MAP06 "$XHUSTR_6"
 
 map LR_MAP07 "$XHUSTR_7"
 {
-	Next = EndPic, "XCREDIT"
+	Next = EndPic, "CREDITLR"
 	TitlePatch = "XWILV06"
 	Sky1 =  "SKYX4A"
 	Music = "D_TACTIC"

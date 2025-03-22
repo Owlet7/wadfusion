@@ -4,7 +4,7 @@ defaultmap
 {
 	Cluster = 11
 	SuckTime = 1
-	ExitPic = "NVINTER"
+	ExitPic = "INTERNV"
 	NoJump
 	NoCrouch
 }

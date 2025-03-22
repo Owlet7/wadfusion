@@ -328,7 +328,7 @@ adddefaultmap
 {
 	Sky1 = "SKY4"
 	Cluster = 4
-	ExitPic = "INTER_E4"
+	ExitPic = "INTERE4"
 }
 
 map E4M1 "$HUSTR_E4M1"
