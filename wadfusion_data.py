@@ -54,7 +54,8 @@
 # pre-authored resources to copy
 RES_FILES = [
     'iwadinfo.txt', 'mapinfo.txt', 'sndinfo.txt',
-    'language.csv', 'language.story.csv', 'endoom',
+    'language.csv', 'language.credits.csv',
+    'language.levels.csv', 'language.story.csv', 'endoom',
     'textures.common', 'textures.doom1', 'textures.doom2',
     'textures.masterlevels', 'textures.masterlevelsbonus',
     'textures.tnt', 'textures.plut', 'textures.id1',
