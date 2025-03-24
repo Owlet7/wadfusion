@@ -57,9 +57,6 @@ import omg
 
 VERSION = '1.4.3-dev'
 
-# if False, do a dry run with no actual file writing
-should_extract = True
-
 SRC_WAD_DIR = 'source_wads/'
 DATA_DIR = 'data/'
 DEST_DIR = 'temp/'
@@ -662,6 +659,49 @@ def copy_id1_doom1_skies():
     copyfile(DEST_DIR + 'patches/SKYE3.lmp', DEST_DIR + 'patches/SKY3.lmp')
     copyfile(DEST_DIR + 'patches/SKYE4.lmp', DEST_DIR + 'patches/SKY4.lmp')
 
+def extract():
+    # extract lumps and maps from wads
+    extract_iwads()
+    if get_wad_filename('attack') and not get_wad_filename('masterlevels'):
+        if masterlevels_is_complete_verbose():
+            extract_master_levels()
+            if not doom_is_registered():
+                if not doomu_is_retail():
+                    copy_master_levels_doom1_music()
+    elif get_wad_filename('masterlevels'):
+        if not doom_is_registered():
+            if not doomu_is_retail():
+                copy_master_levels_doom1_music()
+    if masterlevelsrejects_is_complete_verbose():
+        extract_master_levels_rejects()
+    # copy pre-authored lumps e.g. mapinfo
+    copy_resources()
+    # copy and enable Master levels Rejects mapinfo
+    if should_enable_master_levels_rejects:
+        enable_master_levels_rejects()
+    # duplicate doom1 sky patches to suppress errors with id1
+    if get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res') and get_wad_filename('doom2'):
+        if not doom_is_registered():
+            if not doomu_is_retail():
+                copy_id1_doom1_skies()
+    # move the HELP2 graphics lump from the base directory to the graphics folder
+    move_help2()
+    # rename file extensions of Sigil mp3 music
+    rename_mp3()
+    # rename file extensions of Andrew Hulshult's IDKFA soundtrack ogg music
+    rename_ogg()
+    # only supported versions of these @ http://classicdoom.com/xboxspec.htm
+    if get_wad_filename('sewers') or get_wad_filename('betray'):
+        add_xbox_levels()
+    # add romero's blackroom warm-up levels if present
+    if get_wad_filename('e1m4b') or get_wad_filename('e1m8b'):
+        add_blackroom_levels()
+    # copy custom GENMIDI, if user hasn't deleted it
+    genmidi_filename = 'GENMIDI.lmp'
+    if os.path.exists(RES_DIR + genmidi_filename):
+        logs('Copying %s' % genmidi_filename)
+        copyfile(RES_DIR + genmidi_filename, DEST_DIR + genmidi_filename)
+
 def get_report_found():
     found = []
     for wadname in REPORT_WADS:
@@ -798,48 +838,8 @@ def main():
             os.mkdir(DEST_DIR + dirname)
     # add additional lumps to the pre-defined lump lists
     add_to_wad_lump_lists()
-    # extract lumps and maps from wads
-    if should_extract:
-        extract_iwads()
-        if get_wad_filename('attack') and not get_wad_filename('masterlevels'):
-            if masterlevels_is_complete_verbose():
-                extract_master_levels()
-                if not doom_is_registered():
-                    if not doomu_is_retail():
-                        copy_master_levels_doom1_music()
-        elif get_wad_filename('masterlevels'):
-            if not doom_is_registered():
-                if not doomu_is_retail():
-                    copy_master_levels_doom1_music()
-        if masterlevelsrejects_is_complete_verbose():
-            extract_master_levels_rejects()
-        # copy pre-authored lumps e.g. mapinfo
-        copy_resources()
-        # copy and enable Master levels Rejects mapinfo
-        if should_enable_master_levels_rejects:
-            enable_master_levels_rejects()
-        # duplicate doom1 sky patches to suppress errors with id1
-        if get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res') and get_wad_filename('doom2'):
-            if not doom_is_registered():
-                if not doomu_is_retail():
-                    copy_id1_doom1_skies()
-        # move the HELP2 graphics lump from the base directory to the graphics folder
-        move_help2()
-        # rename file extensions of Sigil mp3 music
-        rename_mp3()
-        # rename file extensions of Andrew Hulshult's IDKFA soundtrack ogg music
-        rename_ogg()
-        # only supported versions of these @ http://classicdoom.com/xboxspec.htm
-        if get_wad_filename('sewers') or get_wad_filename('betray'):
-            add_xbox_levels()
-        # add romero's blackroom warm-up levels if present
-        if get_wad_filename('e1m4b') or get_wad_filename('e1m8b'):
-            add_blackroom_levels()
-        # copy custom GENMIDI, if user hasn't deleted it
-        genmidi_filename = 'GENMIDI.lmp'
-        if os.path.exists(RES_DIR + genmidi_filename):
-            logs('Copying %s' % genmidi_filename)
-            copyfile(RES_DIR + genmidi_filename, DEST_DIR + genmidi_filename)
+    # extract and copy all lumps from wads and res folder
+    extract()
     # deduct doom.wad maps if doomu.wad is also present
     if doom_is_registered() and doomu_is_retail():
         if not doom_is_retail():
