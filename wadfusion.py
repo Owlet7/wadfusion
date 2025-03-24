@@ -298,7 +298,7 @@ def add_to_wad_lump_lists():
     # if extras is the kex version
     if extras_is_kex():
         logs('  Extracting KEX resources from extras.wad')
-        WAD_LUMP_LISTS['extras'] += ['graphics_extras', 'music_extras']
+        WAD_LUMP_LISTS['extras'] += ['colormaps_extras', 'graphics_extras', 'music_extras']
 
 def extract_master_levels():
     logs('Processing Master Levels...')
@@ -792,8 +792,8 @@ def main():
     # make dirs if they don't exist
     if not os.path.exists(DEST_DIR):
         os.mkdir(DEST_DIR)
-    for dirname in ['flats', 'graphics', 'music', 'maps', 'mapinfo',
-                    'patches', 'sounds', 'sprites', 'zscript']:
+    for dirname in ['colormaps', 'flats', 'graphics', 'mapinfo', 'maps',
+                    'music', 'patches', 'sounds', 'sprites', 'zscript']:
         if not os.path.exists(DEST_DIR + dirname):
             os.mkdir(DEST_DIR + dirname)
     # add additional lumps to the pre-defined lump lists
