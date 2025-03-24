@@ -10,19 +10,13 @@ If you just bought these games from [GOG](https://www.gog.com/en/game/doom_doom_
 
 ## Usage
 
-Simply copy all of your WADs into the `source_wads` subfolder, then run WadFusion. A log will appear showing progress and any errors that arise.
+Simply copy all of your WADs into the `source_wads` subfolder, then run WadFusion. A log will appear showing progress and any errors that arise. A new file called `doom_fusion.ipk3` will be created, with all the game content in it. It should be selectable in GZDoom as "DOOM Fusion".
 
-If you're on Windows, run `wadfusion.exe`.
-
-If you're on macOS or GNU/Linux, run the `wadfusion.py` Python 3 script.
-
-WadFusion will create a new file called `doom_fusion.ipk3`, with all the game content in it. It should be selectable in GZDoom as "DOOM Fusion".
-
-Also included is a file called `doom_fusion_widescreen_gfx.pk3`, which adds super-ultra-widescreen assets courtesy of the [Ultra-Widerpix854 project](https://www.doomworld.com/forum/topic/148537). DOOM Fusion will load it automatically if it's added to GZDoom's file directories. GZDoom's own widescreen assets are disabled in Fusion. (It's worth noting that the full Ultra-Widerpix854 project has some extra features not included with WadFusion, such as alternate versions for some graphics, sprite fixes, [extended sky textures](https://github.com/Owlet7/wadfusion/discussions/62), and support for other DOOM-based games.)
+Also included is a file called `doom_fusion_widescreen_gfx.pk3`, which adds super-ultra-widescreen assets courtesy of the [Ultra-Widerpix854 project](https://www.doomworld.com/forum/topic/148537). DOOM Fusion will load it automatically if it's added to GZDoom's file directories. GZDoom's own widescreen assets are disabled in Fusion. (It's worth noting that the full Ultra-Widerpix854 project has some extra features not included with WadFusion, such as alternate versions for some graphics, sprite fixes, extended sky textures, and support for other DOOM-based games.)
 
 ## Supported WADs
 
-WadFusion is not a general-purpose tool for merging DOOM WADs; it is for *merging official content* only—it was created out of a desire for a "complete" version of retail DOOM and DOOM II. Please do not ask if WadFusion will support any specific WAD. **This includes any content from the 5th generation console ports.** If you want to add your own content to a custom IPK3, either modify WadFusion's code yourself, or simply edit the IPK3 that WadFusion generates. Please try consulting the [ZDoom Wiki](https://zdoom.org/wiki/Main_Page) first before asking for help. If you've created an addon for WadFusion, feel free to share it with the community on the [Discussions](https://github.com/Owlet7/wadfusion/discussions/categories/show-and-tell) section.
+WadFusion is not a general-purpose tool for merging DOOM WADs; it is for merging *official content only*—it was created out of a desire for a "complete" version of retail DOOM and DOOM II. Please do not ask if WadFusion will support any specific WAD. This includes any content from the 5th generation console ports. If you want to add your own content to a custom IPK3, either modify WadFusion's code yourself, or simply edit the IPK3 that WadFusion generates. Please try consulting the [ZDoom Wiki](https://zdoom.org/wiki/Main_Page) first before asking for help. If you've created an addon for WadFusion, feel free to share it with the community on the [Discussions](https://github.com/Owlet7/wadfusion/discussions/categories/show-and-tell) section.
 
 Here is the official list of WADs that WadFusion will recognize:
 - DOOM (original registered version of `doom.wad`, containing only episodes 1-3)
@@ -79,15 +73,18 @@ For the Master Levels Rejects to be integrated, *all* of the following WADs must
 
 ## Absolute Beginner's Guide
 
-1. [Download WadFusion](https://github.com/Owlet7/wadfusion/releases/latest/download/wadfusion_win.zip) and extract it to a folder.
+1. Download WadFusion for [Windows](https://github.com/Owlet7/wadfusion/releases/latest/download/wadfusion_win.zip) or [macOS and GNU/Linux](https://github.com/Owlet7/wadfusion/releases/latest/download/wadfusion_py.zip), and extract it to a folder.
 2. Find the folder(s) where GOG / Steam installed your game(s).
-   - For Steam, this will be something like `C:\Program Files (x86)\Steam\steamapps\common\Ultimate Doom\base`.
+   - For Steam on Windows, this will be something like\
+   `C:\Program Files (x86)\Steam\steamapps\common\Ultimate Doom\base`
 3. Copy any files you find with a `.WAD` extension to the `source_wads` subfolder where you extracted WadFusion.
-4. Double-click `wadfusion.exe`. A terminal window will pop up, showing which WAD files were found, and which episodes can be extracted. Press Y and then Enter to proceed. The terminal window will show progress as it generates the IPK3.
-5. When it finishes, press Enter to close the window. You should now have a file in the WadFusion folder called `doom_fusion.ipk3`.
-6. [Download GZDoom](https://zdoom.org/downloads) and extract it to a folder.
-7. Copy the `doom_fusion.ipk3` file to GZDoom's folder.
-8. Launch GZDoom and play!
+4. On Windows, launch `wadfusion.exe`. On macOS or GNU/Linux, run the `wadfusion.py` Python 3 script.
+5. A terminal window will show which episodes can be extracted. Press Y and then Enter to proceed.
+6. The terminal window will show progress as it generates the IPK3. When it finishes, press Enter to close the window. You should now have a file in the WadFusion folder called `doom_fusion.ipk3`.
+7. Download [`doom_fusion_widescreen_gfx.pk3`](https://github.com/Owlet7/wadfusion/releases/latest/download/doom_fusion_widescreen_gfx.pk3) to use widescreen assets with WadFusion.
+8. Download [GZDoom](https://zdoom.org/downloads) and extract it to a folder.
+9. Copy the `doom_fusion.ipk3` and `doom_fusion_widescreen_gfx.pk3` files to GZDoom's folder.
+10. Launch GZDoom and play!
 
 ## Acknowledgements
 
