@@ -280,7 +280,7 @@ def add_to_wad_lump_lists():
     # if iddm1 present but not id1, extract id1 resources from it
     if get_wad_filename('iddm1') and not get_wad_filename('id1'):
         logg('  ERROR: Extracting id1.wad resources from iddm1.wad as id1.wad is not present', error=True)
-        WAD_LUMP_LISTS['iddm1'] += ID1_LUMPS
+        WAD_LUMP_LISTS['iddm1'] += ID1_LUMPS + ['data_id1-res']
     # if iddm1 present but not doom1, extract doom1 music from it
     if get_wad_filename('iddm1'):
         if not doom_is_registered():
