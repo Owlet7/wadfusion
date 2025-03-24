@@ -57,7 +57,7 @@ RES_FILES = [
     'language.csv', 'language.credits.csv',
     'language.levels.csv', 'language.story.csv', 'endoom',
     'textures.common', 'textures.doom1', 'textures.doom2',
-    'textures.masterlevels', 'textures.masterlevelsbonus',
+    'textures.masterlevels', 'textures.masterlevelsrejects',
     'textures.tnt', 'textures.plut', 'textures.id1',
     'in_epi1.txt', 'xwinter0.txt', 'xwinter1.txt',
     'animdefs.txt', 'graphics/CONBACK.lmp',
@@ -124,14 +124,16 @@ RES_FILES = [
 ]
 
 # list of files we can extract from
-WADS = ['doom', 'doom2', 'masterlevels', 'tnt', 'plutonia',
+WADS = ['doom', 'doomu', 'doom2', 'tnt', 'plutonia',
         'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',
         'id1', 'id1-res', 'id24res', 'iddm1', 'extras',
         'doomunity', 'doom2unity', 'tntunity', 'plutoniaunity',
-        'doomkex', 'doom2kex', 'tntkex', 'plutoniakex', 'nerve']
+        'doomkex', 'doom2kex', 'tntkex', 'plutoniakex',
+        'masterlevels', 'nerve']
 
 # wads to search for and report if found
-REPORT_WADS = ['doom', 'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',
+REPORT_WADS = ['doom', 'doomu',
+               'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',
                'doom2', 'masterlevels',
                'attack', 'canyon', 'catwalk', 'fistula',
                'combine', 'subspace', 'paradox', 'subterra',
@@ -172,7 +174,8 @@ ID1_LUMPS = [
 
 # lists of lumps to extract from each IWAD
 WAD_LUMP_LISTS = {
-    'doom': COMMON_LUMPS + DOOM1_LUMPS,
+    'doom': COMMON_LUMPS + DOOM1_LUMPS + ['graphics_doom1_registered'],
+    'doomu': COMMON_LUMPS + DOOM1_LUMPS + ['graphics_doom1_retail', 'patches_doom1_retail'],
     'doom2': COMMON_LUMPS + DOOM2_LUMPS,
     'masterlevels': ['patches_masterlevels', 'graphics_masterlevels'],
     'tnt': ['graphics_tnt', 'music_tnt', 'patches_tnt'],
@@ -202,6 +205,7 @@ WAD_LUMP_LISTS = {
 # prefixes for filenames of maps extracted from IWADs
 WAD_MAP_PREFIXES = {
     'doom': '',
+    'doomu': '',
     'doom2': '',
     'tnt': 'TN_',
     'plutonia': 'PL_',

@@ -3,6 +3,8 @@ HELP
 INTERPIC
 // extract a copy of intermission bg for nerve
 INTERPIC : INTERNV
+// extract a titlescreen bg for masterlevels
+INTERPIC : TITLEML
 TITLEPIC : TITLED2
 CWILV00
 CWILV01

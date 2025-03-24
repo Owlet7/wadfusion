@@ -26,7 +26,7 @@ WadFusion is not a general-purpose tool for merging DOOM WADs; it is for *mergin
 
 Here is the official list of WADs that WadFusion will recognize:
 - DOOM (original registered version of `doom.wad`, containing only episodes 1-3)
-- The Ultimate DOOM (retail version of `doom.wad`, containing episodes 1-4)
+- The Ultimate DOOM (retail version of `doom.wad` or `doomu.wad`, containing episodes 1-4)
 - DOOM II (`doom2.wad`)
 - Master Levels for DOOM II (the original 20 WAD files, or `masterlevels.wad` from the [KEX-based re-release](https://doomwiki.org/wiki/Doom_%2B_Doom_II))
 - Master Levels Rejects ([see below](#master-levels-rejects) for a full list of supported WADs)
@@ -35,9 +35,9 @@ Here is the official list of WADs that WadFusion will recognize:
 - SIGIL (`sigil.wad` and its optional music addon `sigil_shreds.wad`)
 - SIGIL II (`sigil2.wad` and optionally its MP3 soundtrack version `sigil2_mp3.wad`)
 - Legacy of Rust (`id1.wad`, `id1-res.wad`, `id24res.wad`, and `iddm1.wad` from the [KEX-based re-release](https://doomwiki.org/wiki/Doom_%2B_Doom_II))
-- `sewers.wad` and `betray.wad` (the [two secret levels](https://classicdoom.com/xboxspec.htm) from the [original Xbox port of DOOM](https://doomwiki.org/wiki/Xbox))
-- `e1m8b.wad` and `e1m4b.wad` (John Romero's map remakes, [Tech Gone Bad](https://www.doomworld.com/idgames/levels/doom/Ports/d-f/e1m8b) and [Phobos Mission Control](https://www.doomworld.com/idgames/levels/doom/Ports/d-f/e1m4b))
-- `extras.wad` (from the [Unity](https://doomwiki.org/wiki/Doom_Classic_Unity_port) or [KEX-based](https://doomwiki.org/wiki/Doom_%2B_Doom_II) re-releases)
+- [Xbox secret levels](https://classicdoom.com/xboxspec.htm) (`sewers.wad` and `betray.wad` from the [original Xbox port of DOOM](https://doomwiki.org/wiki/Xbox))
+- [Tech Gone Bad](https://www.doomworld.com/idgames/levels/doom/Ports/d-f/e1m8b) and [Phobos Mission Control](https://www.doomworld.com/idgames/levels/doom/Ports/d-f/e1m4b) (`e1m8b.wad` and `e1m4b.wad`, John Romero's map remakes)
+- Extras (`extras.wad` from the [Unity](https://doomwiki.org/wiki/Doom_Classic_Unity_port) or [KEX-based](https://doomwiki.org/wiki/Doom_%2B_Doom_II) re-releases)
 
 WadFusion requires `id1-res.wad` and `id24res.wad` for Legacy of Rust.
 
