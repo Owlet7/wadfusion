@@ -124,30 +124,34 @@ RES_FILES = [
 ]
 
 # list of files we can extract from
-WADS = ['doom', 'doomu', 'doom2', 'tnt', 'plutonia',
-        'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',
-        'id1', 'id1-res', 'id24res', 'iddm1', 'extras',
-        'doomunity', 'doom2unity', 'tntunity', 'plutoniaunity',
-        'doomkex', 'doom2kex', 'tntkex', 'plutoniakex',
-        'masterlevels', 'nerve']
+WADS = [
+    'doom', 'doomu', 'doom2', 'tnt', 'plutonia',
+    'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',
+    'id1', 'id1-res', 'id24res', 'iddm1', 'extras',
+    'doomunity', 'doom2unity', 'tntunity', 'plutoniaunity',
+    'doomkex', 'doom2kex', 'tntkex', 'plutoniakex',
+    'masterlevels', 'nerve'
+]
 
 # wads to search for and report if found
-REPORT_WADS = ['doom', 'doomu',
-               'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',
-               'doom2', 'masterlevels',
-               'attack', 'canyon', 'catwalk', 'fistula',
-               'combine', 'subspace', 'paradox', 'subterra',
-               'garrison', 'blacktwr', 'virgil', 'minos', 'nessus',
-               'geryon', 'vesperas', 'manor', 'ttrap', 'teeth',
-               'bloodsea', 'mephisto',
-               'cpu', 'device_1', 'dmz', 'cdk_fury', 'e_inside',
-               'hive', 'twm01', 'mines', 'anomaly', 'farside',
-               'trouble', 'dante25', 'achron22', 'udtwid', 'caball',
-               'nerve', 'id1', 'id1-res', 'id24res', 'iddm1',
-               'tnt', 'plutonia',
-               'sewers', 'betray', 'e1m4b', 'e1m8b', 'extras',
-               'doomunity', 'doom2unity', 'tntunity', 'plutoniaunity',
-               'doomkex', 'doom2kex', 'tntkex', 'plutoniakex']
+REPORT_WADS = [
+    'doom', 'doomu',
+    'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',
+    'doom2', 'masterlevels',
+    'attack', 'canyon', 'catwalk', 'fistula',
+    'combine', 'subspace', 'paradox', 'subterra',
+    'garrison', 'blacktwr', 'virgil', 'minos', 'nessus',
+    'geryon', 'vesperas', 'manor', 'ttrap', 'teeth',
+    'bloodsea', 'mephisto',
+    'cpu', 'device_1', 'dmz', 'cdk_fury', 'e_inside',
+    'hive', 'twm01', 'mines', 'anomaly', 'farside',
+    'trouble', 'dante25', 'achron22', 'udtwid', 'caball',
+    'nerve', 'id1', 'id1-res', 'id24res', 'iddm1',
+    'tnt', 'plutonia',
+    'sewers', 'betray', 'e1m4b', 'e1m8b', 'extras',
+    'doomunity', 'doom2unity', 'tntunity', 'plutoniaunity',
+    'doomkex', 'doom2kex', 'tntkex', 'plutoniakex'
+]
 
 # lists of lumps common to doom 1+2
 COMMON_LUMPS = [
