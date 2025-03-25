@@ -1,7 +1,26 @@
 # WadFusion Changelog
 
 <!--## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.2...HEAD)-->
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.3...HEAD)-->
+
+## [WadFusion 1.4.3](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.3) — [25 March 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.3)
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.2...v1.4.3)
+- Title, credits, and help screens will now get extracted from every game.
+- Added support for using the `doomu.wad` filename for The Ultimate DOOM.
+  - Both registered DOOM and The Ultimate DOOM can be included at the same time.
+    Both versions' title, credits, and help screens will get extracted.
+- The Sigil MP3 soundtracks now also replace S_INTRO and S2_INTRO.
+- Extract `iddm1.wad`'s DeHackEd lump if `id1-res.wad` isn't included.
+- The colormap from the KEX version of `extras.wad` will now get extracted.
+  - Colormaps aren't really used by GZDoom, but we extract it just in case.
+- Improved WAD prerequisites detection.
+  - Refactored a large portion of the main Python script.
+- Fixed potential VM execution abort in the event handler.
+- Corrected the dimensions of a Master Levels sky texture.
+- Updated @Meerschweinmann's Ultra-Widerpix854 widescreen assets.
+- Updated localisations.
+- Specified Deflate compression method for ZIP archives.
+- Added a platform independent release with the raw Python scripts.
 
 ## [WadFusion 1.4.2](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.2) — [06 March 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.2)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.1...v1.4.2)

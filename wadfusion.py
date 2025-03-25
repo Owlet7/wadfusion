@@ -55,7 +55,7 @@ from os import path
 
 import omg
 
-VERSION = '1.4.3-dev'
+VERSION = '1.4.3'
 
 SRC_WAD_DIR = 'source_wads/'
 DATA_DIR = 'data/'
