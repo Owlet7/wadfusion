@@ -1,0 +1,55 @@
+
+Texture "CONBACK", 854, 200
+{
+	Graphic "TITLEPIC", 0, 0
+}
+
+Texture "PINSAHUD", 25, 25
+{
+	Sprite "PINSA0", 0, 0
+}
+
+Texture "PINSBHUD", 25, 25
+{
+	Sprite "PINSB0", 0, 0
+}
+
+Texture "PINSCHUD", 25, 25
+{
+	Sprite "PINSC0", 0, 0
+}
+
+Texture "PINSDHUD", 25, 25
+{
+	Sprite "PINSD0", 0, 0
+}
+
+Texture "PINVAHUD", 25, 25
+{
+	Sprite "PINVA0", 0, 0
+}
+
+Texture "PINVBHUD", 25, 25
+{
+	Sprite "PINVB0", 0, 0
+}
+
+Texture "PINVCHUD", 25, 25
+{
+	Sprite "PINVC0", 0, 0
+}
+
+Texture "PINVDHUD", 25, 25
+{
+	Sprite "PINVD0", 0, 0
+}
+
+Texture "PVISAHUD", 28, 13
+{
+	Sprite "PVISA0", 0, 0
+}
+
+Texture "PVISBHUD", 28, 13
+{
+	Sprite "PVISB0", 0, 0
+}

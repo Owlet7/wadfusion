@@ -329,7 +329,7 @@ extend class WadFusionStatusBar
 			if ( hasBlurSphere != null )
 			{
 				int blurSphereTime = int(Ceil(double(hasBlurSphere.EffectTics) / GameTicRate));
-				DrawImage("PINSA0", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
+				DrawImage("PINSAHUD", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
 				DrawString(mConFont, FormatNumber(blurSphereTime, 1), (powerupPos.X, powerupPos.Y - 8),
 						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
 				powerupPos.Y -= powerupPosYIncrement;
@@ -339,7 +339,7 @@ extend class WadFusionStatusBar
 			if ( hasInvulnerabilitySphere != null )
 			{
 				int invulnerabilitySphereTime = int(Ceil(double(hasInvulnerabilitySphere.EffectTics) / GameTicRate));
-				DrawImage("PINVA0", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
+				DrawImage("PINVAHUD", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
 				DrawString(mConFont, FormatNumber(invulnerabilitySphereTime, 1), (powerupPos.X, powerupPos.Y - 8),
 						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
 				powerupPos.Y -= powerupPosYIncrement;
@@ -349,7 +349,7 @@ extend class WadFusionStatusBar
 			if ( hasInfrared != null )
 			{
 				int infraredTime = int(Ceil(double(hasInfrared.EffectTics) / GameTicRate));
-				DrawImage("PVISA0", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
+				DrawImage("PVISAHUD", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
 				DrawString(mConFont, FormatNumber(infraredTime, 1), (powerupPos.X, powerupPos.Y - 8),
 						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
 				powerupPos.Y -= powerupPosYIncrement;
