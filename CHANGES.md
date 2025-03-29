@@ -1,7 +1,15 @@
 # WadFusion Changelog
 
-<!--## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.3...HEAD)-->
+## Unreleased Changes
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.3...HEAD)
+- Fixed Master Levels TEXTURES definition not getting copied.
+- Fixed powerup animations in software mode playing when paused.
+- Changed compatibility warning text colour from gold to white.
+- Updated Master Levels Rejects episode titles to fit in one line.
+- Removed the "v1.2" label from the widescreen version of the Sigil TITLEPIC.
+- The dummy file in the `source_wads` folder now lists recommended WADs.
+- Updated Polish localisation.
+- Reordered some credits.
 
 ## [WadFusion 1.4.3](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.3) — [25 March 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.3)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.2...v1.4.3)
