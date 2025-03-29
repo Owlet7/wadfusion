@@ -156,19 +156,16 @@ REPORT_WADS = [
 # lists of lumps common to doom 1+2
 COMMON_LUMPS = [
     'data_common', 'flats_common', 'graphics_common', 'patches_common',
-    'sounds_common', 'sprites_common'
+    'sounds_common', 'sprites_common', 'txdefs_common'
 ]
 
 DOOM1_LUMPS = [
-    'graphics_doom1', 'music_doom1', 'patches_doom1', 'sounds_doom1',
-    # extract PNAMES and TEXTURE1 from both doom.wad and doom2.wad,
-    # in case only one is present
-    'txdefs_doom1'
+    'graphics_doom1', 'music_doom1', 'patches_doom1', 'sounds_doom1'
 ]
 
 DOOM2_LUMPS = [
     'flats_doom2', 'graphics_doom2', 'music_doom2', 'patches_doom2',
-    'sounds_doom2', 'sprites_doom2', 'txdefs_doom2'
+    'sounds_doom2', 'sprites_doom2'
 ]
 
 ID1_LUMPS = [
