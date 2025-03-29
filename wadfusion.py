@@ -760,7 +760,7 @@ def get_eps(wads_found):
             eps += ['Master Levels']
         elif wadname == 'cpu' and masterlevelsrejects_is_complete():
             eps += ['Tim Willits', 'Christen Klie', 'Tom Mustaine']
-            eps += ['Jim Flynn\'s Titan', 'John Anderson\'s INFERNO', 'Sverre André Kvernmo\'s CABAL']
+            eps += ['Jim Flynn\'s Titan', 'John Anderson\'s INFERNO', 'Sverre Kvernmo\'s CABAL']
         elif wadname == 'nerve' and 'doom2' in wads_found:
             eps += ['No Rest for the Living']
         elif wadname == 'tnt':
