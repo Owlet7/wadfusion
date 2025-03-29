@@ -270,3 +270,153 @@ cluster 31
 	Music = "$MUSIC_VICTOR"
 	Flat = "$bgflatE1"
 }
+
+// Master Levels Rejects clusters
+
+cluster 32
+{
+	EnterText = "$ML4STORY1"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 33
+{
+	EnterText = "$ML4STORY2"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 34
+{
+	EnterText = "$ML4STORY3"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 35
+{
+	EnterText = "$ML4STORY4"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 36
+{
+	EnterText = "$ML4STORY5"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 37
+{
+	EnterText = "$ML4STORY6"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 38
+{
+	EnterText = "$ML5STORY1"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 39
+{
+	EnterText = "$ML5STORY2"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 40
+{
+	EnterText = "$ML5STORY3"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 41
+{
+	EnterText = "$ML5STORY4"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 42
+{
+	EnterText = "$ML5STORY5"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 43
+{
+	EnterText = "$ML5STORY6"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 44
+{
+	EnterText = "$ML6STORY1"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 45
+{
+	EnterText = "$ML6STORY2"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 46
+{
+	EnterText = "$ML6STORY3"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 47
+{
+	EnterText = "$ML6STORY4"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 48
+{
+	EnterText = "$ML6STORY5"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 49
+{
+	EnterText = "$ML6STORY6"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 50
+{
+	EnterText = "$ML6STORY7"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 51
+{
+	EnterText = "$ML6STORY8"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
+
+cluster 52
+{
+	EnterText = "$ML6STORY9"
+	ExitText = "$MLEND"
+	Music = "$MUSIC_READ_M"
+	Flat = "$BGFLAT06"
+}
