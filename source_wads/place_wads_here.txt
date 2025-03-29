@@ -1,0 +1,27 @@
+Place your source WAD files here.
+
+
+Here are the WADs needed for what's consider the complete and "best" configuration of Fusion. Not all are required.
+
+The core IWADs from the DOSBox-based version of DOOM + DOOM II:
+DOOM.WAD renamed to DOOMU.WAD, DOOM2.WAD, TNT.WAD, PLUTONIA.WAD
+
+The IWAD from the registered, non-Ultimate version of DOOM:
+DOOM.WAD
+
+PWADs from the KEX-based version of DOOM + DOOM II:
+masterlevels.wad, nerve.wad, sigil.wad, id1.wad, id1-res.wad, id24res.wad, iddm1.wad, extras.wad
+
+John Romero's PWADs:
+e1m8b.wad, e1m4b.wad, sigil_shreds.wad, sigil2.wad, sigil2_mp3.wad
+
+The Xbox secret levels PWADs:
+sewers.wad, betray.wad
+
+The Master Levels Rejects (and UDTWiD) PWADs:
+cpu.wad, device_1.wad, dmz.wad, cdk_fury.wad, e_inside.wad, hive.wad, twm01.wad, mines.wad, anomaly.wad, farside.wad, trouble.wad, dante25.wad, achron22.wad, caball.wad, udtwid.wad
+
+Renamed IWADs from the KEX-based version of DOOM + DOOM II (only if you wish to have the official widescreen assets):
+doom.wad to doomkex.wad, doom2.wad to doom2kex.wad, tnt.wad to tntkex.wad, plutonia.wad to plutoniakex.wad
+
+Read the readme file for more details and links.

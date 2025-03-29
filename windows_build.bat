@@ -10,7 +10,7 @@ xcopy /E data\*.* dist\data\
 xcopy /E res\*.* dist\res\
 xcopy README.md dist\
 xcopy CHANGES.md dist\
-xcopy source_wads\delete_me.txt dist\source_wads\
+xcopy source_wads\place_wads_here.txt dist\source_wads\
 %ZIP_EXE% a -r -tzip -mx=9 -mm=Deflate dist\licenses.zip .\licenses\*
 del /Q %PROJ_NAME%_win.zip
 %ZIP_EXE% a -r -tzip -mx=9 -mm=Deflate %PROJ_NAME%_win.zip .\dist\*
@@ -24,7 +24,7 @@ xcopy README.md dist\
 xcopy CHANGES.md dist\
 xcopy wadfusion.py dist\
 xcopy wadfusion_data.py dist\
-xcopy source_wads\delete_me.txt dist\source_wads\
+xcopy source_wads\place_wads_here.txt dist\source_wads\
 %ZIP_EXE% a -r -tzip -mx=9 -mm=Deflate dist\licenses.zip .\licenses\*
 del /Q %PROJ_NAME%_py.zip
 %ZIP_EXE% a -r -tzip -mx=9 -mm=Deflate %PROJ_NAME%_py.zip .\dist\*

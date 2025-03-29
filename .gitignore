@@ -1,5 +1,5 @@
 source_wads/*
-!source_wads/delete_me.txt
+!source_wads/place_wads_here.txt
 *.pyc
 *.csv#
 temp
