@@ -53,13 +53,14 @@
 
 # pre-authored resources to copy
 RES_FILES = [
-    'iwadinfo.txt', 'mapinfo.txt', 'sndinfo.txt',
-    'language.csv', 'language.credits.csv',
-    'language.levels.csv', 'language.story.csv', 'endoom',
+    'iwadinfo.txt', 'mapinfo.txt', 'zscript.zs',
+    'cvarinfo.txt', 'menudef.txt', 'menudef.credits',
+    'language.menus.csv', 'language.credits.csv',
+    'language.levels.csv', 'language.story.csv',
     'textures.common', 'textures.doom1', 'textures.doom2',
     'textures.masterlevels', 'textures.masterlevelsrejects',
     'textures.tnt', 'textures.plut', 'textures.id1',
-    'textures.fusion', 'animdefs.txt',
+    'textures.fusion', 'animdefs.txt', 'endoom',
     'in_epi1.txt', 'xwinter0.txt', 'xwinter1.txt',
     'graphics/TITLEPIC.lmp', 'graphics/M_DOOM.lmp',
     'graphics/M_HELL.lmp', 'graphics/M_NOREST.lmp',
@@ -114,13 +115,12 @@ RES_FILES = [
     'mapinfo/master_levels_flynn.txt',
     'mapinfo/master_levels_anderson.txt',
     'mapinfo/master_levels_kvernmo.txt',
-    'menudef.txt', 'menudef.credits', 'cvarinfo.txt', 'zscript.zs',
     'zscript/wf_handler.zs', 'zscript/wf_handler_static.zs',
     'zscript/wf_textswap.zs', 'zscript/wf_textswap_all.zs',
     'zscript/wf_textswap_d2sky.zs', 'zscript/wf_mapfixes.zs',
     'zscript/wf_music_sigil.zs', 'zscript/wf_music_idkfa.zs',
     'zscript/wf_sbar.zs', 'zscript/wf_sbar_alt.zs',
-    'wadfused.txt'
+    'wadfused.txt', 'sndinfo.txt'
 ]
 
 # list of files we can extract from
