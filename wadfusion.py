@@ -644,8 +644,9 @@ def copy_resources():
                 if not get_wad_filename('doom2') and get_wad_filename('iddm1'):
                     continue
         elif src_file == 'textures.masterlevels':
-            if not masterlevels_is_complete() or (get_wad_filename('doom2') and get_wad_filename('masterlevels')):
-                continue
+            if not get_wad_filename('doom2') and get_wad_filename('masterlevels'):
+                if not masterlevels_is_complete():
+                    continue
         elif src_file == 'textures.masterlevelsrejects':
             if not masterlevelsrejects_is_complete():
                 continue
