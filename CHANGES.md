@@ -4,9 +4,11 @@
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.3...HEAD)
 - Fixed Master Levels TEXTURES definition not getting copied.
 - Fixed powerup animations in software mode playing when paused.
+- Fixed wrong skies in two `iddm1.wad` maps.
 - Changed compatibility warning text colour from gold to white.
 - Updated Master Levels Rejects episode titles to fit in one line.
-- Removed the "v1.2" label from the widescreen version of the Sigil TITLEPIC.
+- Updated the widescreen version of the registered DOOM TITLEPIC.
+- Removed the "v1.2" label from the widescreen version of the SIGIL TITLEPIC.
 - The dummy file in the `source_wads` folder now lists recommended WADs.
 - Updated Polish localisation.
 - Reordered some credits.

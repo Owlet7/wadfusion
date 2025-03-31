@@ -90,7 +90,9 @@ map DM_MAP09 "$MHUSTR_9"
 map DM_MAP10 "$MHUSTR_10"
 {
 	Next = "DM_MAP11"
-	Sky1 = "SKY1"
+	// dm_map10 sets its sky texture in the map file,
+	// so we replace it with zscript
+	Sky1 = "RSKY1"
 	NoIntermission
 	Music = "D_BONK"
 	Author = "$WF_AU_CIBULAS"
@@ -144,7 +146,7 @@ map DM_MAP15 "$MHUSTR_15"
 map DM_MAP16 "$MHUSTR_16"
 {
 	Next = "DM_MAP17"
-	Sky1 = "SKY2"
+	Sky1 = "RSKY2"
 	NoIntermission
 	Music = "D_WIZARD"
 	Author = "$WF_AU_MURCHISON"
