@@ -9,6 +9,7 @@ defaultmap
 map DM_MAP01 "$MHUSTR_1"
 {
 	Next = "DM_MAP02"
+	// the sky texture is set with an MBF sky transfer
 	Sky1 = "SKYX2"
 	NoIntermission
 	Music = "D_REGARD"
@@ -45,6 +46,7 @@ map DM_MAP04 "$MHUSTR_4"
 map DM_MAP05 "$MHUSTR_5"
 {
 	Next = "DM_MAP06"
+	// the sky texture is set with an MBF sky transfer
 	Sky1 = "SKYX2"
 	NoIntermission
 	Music = "D_SKELET"
@@ -90,7 +92,7 @@ map DM_MAP09 "$MHUSTR_9"
 map DM_MAP10 "$MHUSTR_10"
 {
 	Next = "DM_MAP11"
-	// dm_map10 sets its sky texture in the map file,
+	// the sky texture is set with an MBF sky transfer to "SKY1",
 	// so we replace it with zscript
 	Sky1 = "RSKY1"
 	NoIntermission
@@ -128,6 +130,7 @@ map DM_MAP13 "$MHUSTR_13"
 map DM_MAP14 "$MHUSTR_14"
 {
 	Next = "DM_MAP15"
+	// the sky texture is set with an MBF sky transfer
 	Sky1 = "SKYX4"
 	NoIntermission
 	Music = "D_TACTIC"
@@ -191,6 +194,7 @@ map DM_MAP20 "$MHUSTR_20"
 map DM_MAP21 "$MHUSTR_21"
 {
 	Next = "DM_MAP22"
+	// the sky texture is set with an MBF sky transfer
 	Sky1 = "SKYX1"
 	NoIntermission
 	Music = "D_HELFOR"
@@ -218,6 +222,7 @@ map DM_MAP23 "$MHUSTR_23"
 map DM_MAP24 "$MHUSTR_24"
 {
 	Next = "DM_MAP25"
+	// the sky texture is set with an MBF sky transfer
 	Sky1 = "SKYZ1"
 	NoIntermission
 	Music = "D_DRIVER"
