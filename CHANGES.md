@@ -1,17 +1,22 @@
 # WadFusion Changelog
 
-## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.3...HEAD)
+<!--## Unreleased Changes
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.4...HEAD)-->
+
+## [WadFusion 1.4.4](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.4) — [02 April 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.4)
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.3...v1.4.4)
 - Fixed Master Levels TEXTURES definition not getting copied.
-- Fixed powerup animations in software mode playing when paused.
+- Fixed powerup item animations playing when paused in software mode.
 - Fixed wrong skies in two `iddm1.wad` maps.
-- Changed compatibility warning text colour from gold to white.
 - Updated Master Levels Rejects episode titles to fit in one line.
-- Updated the widescreen version of the registered DOOM TITLEPIC.
-- Removed the "v1.2" label from the widescreen version of the SIGIL TITLEPIC.
-- The dummy file in the `source_wads` folder now lists recommended WADs.
 - Updated Polish localisation.
+- The dummy file in the `source_wads` folder now lists recommended WADs.
+- Changed compatibility warning text colour from gold to white.
 - Reordered some credits.
+
+Widescreen graphics:
+- Updated the registered DOOM titlepic.
+- Removed the "v1.2" label from the SIGIL titlepic.
 
 ## [WadFusion 1.4.3](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.3) — [25 March 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.3)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.2...v1.4.3)
