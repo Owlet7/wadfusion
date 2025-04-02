@@ -81,13 +81,12 @@ For the Master Levels Rejects to be integrated, *all* of the following WADs must
 4. On Windows, launch `wadfusion.exe`. On macOS or GNU/Linux, run the `wadfusion.py` Python 3 script.
 5. A terminal window will show which episodes can be extracted. Press Y and then Enter to proceed.
 6. The terminal window will show progress as it generates the IPK3. When it finishes, press Enter to close the window. You should now have a file in the WadFusion folder called `doom_fusion.ipk3`.
-7. Download [`doom_fusion_widescreen_gfx.pk3`](https://github.com/Owlet7/wadfusion/releases/latest/download/doom_fusion_widescreen_gfx.pk3) to use widescreen assets with WadFusion.
-8. Download [GZDoom](https://zdoom.org/downloads) and extract it to a folder.
-9. Copy the `doom_fusion.ipk3` and `doom_fusion_widescreen_gfx.pk3` files to GZDoom's folder.
-10. Launch GZDoom and play!
+7. Download [GZDoom](https://zdoom.org/downloads) and extract it to a folder.
+8. Copy the `doom_fusion.ipk3` and `doom_fusion_widescreen_gfx.pk3` files to GZDoom's folder.
+9. Launch GZDoom and play!
 
 ## Acknowledgements
 
-[WadSmoosh](https://jp.itch.io/wadsmoosh) was originally created by JP LeBreton. WadFusion is based on its [source code](https://heptapod.host/jp-lebreton/wadsmoosh).
+[WadSmoosh](https://jp.itch.io/wadsmoosh) was originally developed by JP LeBreton. WadFusion is based on its [source code](https://heptapod.host/jp-lebreton/wadsmoosh).
 
 WadFusion uses the [Omgifol Python library](https://github.com/devinacker/omgifol) by Fredrik Johansson and Devin Acker.

@@ -57,16 +57,16 @@ import omg
 
 VERSION = '1.4.4'
 
+# abspath is used for the sake of the Windows executable
+DATA_TABLES_FILE = path.abspath(path.join(path.dirname(__file__), 'wadfusion_data.py'))
+DATA_DIR = path.abspath(path.join(path.dirname(__file__), 'data')) + '/'
+RES_DIR = path.abspath(path.join(path.dirname(__file__), 'res')) + '/'
 SRC_WAD_DIR = 'source_wads/'
-DATA_DIR = 'data/'
 DEST_DIR = 'temp/'
-DEST_FILENAME = 'doom_fusion.ipk3'
-LOG_FILENAME = 'wadfusion.log'
-RES_DIR = 'res/'
 DEST_DIR_MUS = DEST_DIR + 'music/'
 DEST_DIR_GRAPHICS = DEST_DIR + 'graphics/'
-# abspath is used for the sake of the Windows executable, which bundles wadfusion_data.py
-DATA_TABLES_FILE = path.abspath(path.join(path.dirname(__file__), 'wadfusion_data.py'))
+DEST_FILENAME = 'doom_fusion.ipk3'
+LOG_FILENAME = 'wadfusion.log'
 
 # forward-declare all the stuff in DATA_TABLES_FILE for clarity
 RES_FILES = []
@@ -418,7 +418,7 @@ def move_help2():
     logs('Moving HELP2 lump if present...')
     old_name = DEST_DIR + 'HELP2.lmp'
     new_name = DEST_DIR_GRAPHICS + 'HELP2.lmp'
-    if os.path.exists(old_name):
+    if path.exists(old_name):
         logs('  Moving %s lump to %s' % (old_name, new_name))
         os.rename(old_name, new_name)
 
@@ -428,7 +428,7 @@ def rename_ogg():
     # the music gets extracted to the graphics folder first
     for filename in os.listdir(DEST_DIR_GRAPHICS):
         if fnmatch.fnmatch(filename, '*.ogg.lmp'):
-            old_name = os.path.join(DEST_DIR_GRAPHICS, filename)
+            old_name = path.join(DEST_DIR_GRAPHICS, filename)
             new_name = old_name.replace('.ogg.lmp', '.ogg')
             # set the destination for the music files to the music folder
             new_name = new_name.replace('graphics', 'music')
@@ -440,7 +440,7 @@ def rename_mp3():
     logs('Renaming MP3 music lumps if present...')
     for filename in os.listdir(DEST_DIR_MUS):
         if fnmatch.fnmatch(filename, '*.mp3.mus'):
-            old_name = os.path.join(DEST_DIR_MUS, filename)
+            old_name = path.join(DEST_DIR_MUS, filename)
             new_name = old_name.replace('.mp3.mus', '.mp3')
             logs('  Moving %s lump to %s' % (old_name, new_name))
             os.rename(old_name, new_name)
@@ -699,7 +699,7 @@ def extract():
         add_blackroom_levels()
     # copy custom GENMIDI, if user hasn't deleted it
     genmidi_filename = 'GENMIDI.lmp'
-    if os.path.exists(RES_DIR + genmidi_filename):
+    if path.exists(RES_DIR + genmidi_filename):
         logs('Copying %s' % genmidi_filename)
         copyfile(RES_DIR + genmidi_filename, DEST_DIR + genmidi_filename)
 
@@ -739,7 +739,7 @@ def get_report_found():
 
 def clear_temp():
     # clear out temp dir from previous runs
-    if os.path.exists(DEST_DIR):
+    if path.exists(DEST_DIR):
         rmtree(DEST_DIR)
         logs('Removed temp directory from a previous run.\n')
 
@@ -805,14 +805,14 @@ def main():
     found = get_report_found()
     # bail if no wads in SRC_WAD_DIR
     if len(found) == 0:
-        logg('No source WADs found!\nPlease place your WAD files into %s.' % os.path.realpath(SRC_WAD_DIR))
+        logg('No source WADs found!\nPlease place your WAD files into %s.' % path.realpath(SRC_WAD_DIR))
         logfile.close()
         input('Press Enter to exit.\n')
         return
     logs('Found in %s:\n' % SRC_WAD_DIR + ', '.join(found) + '\n')
     # bail if no iwads in SRC_WAD_DIR
     if not get_wad_filename('doom') and not get_wad_filename('doomu') and not get_wad_filename('doom2') and not get_wad_filename('tnt') and not get_wad_filename('plutonia'):
-        logg('No source IWADs found!\nPlease place your IWAD files into %s.' % os.path.realpath(SRC_WAD_DIR))
+        logg('No source IWADs found!\nPlease place your IWAD files into %s.' % path.realpath(SRC_WAD_DIR))
         logfile.close()
         input('Press Enter to exit.\n')
         return
@@ -831,11 +831,11 @@ def main():
     start_time = time.time()
     logg('\nProcessing WADs...')
     # make dirs if they don't exist
-    if not os.path.exists(DEST_DIR):
+    if not path.exists(DEST_DIR):
         os.mkdir(DEST_DIR)
     for dirname in ['colormaps', 'flats', 'graphics', 'mapinfo', 'maps',
                     'music', 'patches', 'sounds', 'sprites', 'zscript']:
-        if not os.path.exists(DEST_DIR + dirname):
+        if not path.exists(DEST_DIR + dirname):
             os.mkdir(DEST_DIR + dirname)
     # add additional lumps to the pre-defined lump lists
     add_to_wad_lump_lists()
@@ -848,7 +848,7 @@ def main():
     # create pk3
     pk3_compress()
     elapsed_time = time.time() - start_time
-    ipk3_size = os.path.getsize(DEST_FILENAME) / 1048576
+    ipk3_size = path.getsize(DEST_FILENAME) / 1048576
     logg('Generated %s (%.2f MiB) with %s maps in %s episodes in %.2f seconds.' % (DEST_FILENAME, ipk3_size, num_maps, num_eps, elapsed_time))
     logg('Done!')
     if num_errors > 0:

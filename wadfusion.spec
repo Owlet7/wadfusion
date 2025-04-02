@@ -10,7 +10,7 @@ a = Analysis(
     ['wadfusion.py'],
     pathex=[],
     binaries=[],
-    datas= [ ( 'wadfusion_data.py', '.' ) ],
+    datas= [ ( 'wadfusion_data.py', '.' ), ( 'data', 'data' ), ( 'res', 'res' ) ],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

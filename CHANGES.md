@@ -11,12 +11,14 @@
 - Updated Master Levels Rejects episode titles to fit in one line.
 - Updated Polish localisation.
 - The dummy file in the `source_wads` folder now lists recommended WADs.
+- The Windows installer now has WadFusion's resources bundled.
 - Changed compatibility warning text colour from gold to white.
 - Reordered some credits.
 
 Widescreen graphics:
 - Updated the registered DOOM titlepic.
 - Removed the "v1.2" label from the SIGIL titlepic.
+- `doom_fusion_widescreen_gfx.pk3` is now bundled with the releases.
 
 ## [WadFusion 1.4.3](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.3) — [25 March 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.3)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.2...v1.4.3)
