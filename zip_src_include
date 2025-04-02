@@ -1,6 +1,8 @@
 wadsmoosh.py
+wadsmoosh_data.py
 wadsmoosh.txt
 wadsmoo.sh
+README.md
 data/*
 omg/*
 res/*

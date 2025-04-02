@@ -35,6 +35,7 @@ Here is the official list of WADs that WadSmoosh will recognize:
 - No Rest for the Living (`nerve.wad`)
 - Sigil (`sigil.wad` and its optional music addon `sigil_shreds.wad`)
 - Sigil II (`sigil2.wad`, either its MIDI or MP3 soundtrack versions)
+- `sewers.wad` and `betray.wad` (the two secret levels from the [original Xbox port of Doom](https://doomwiki.org/wiki/Xbox))
 
 For Sigil and Sigil II, all the filenames for different releases of those WADs are also recognized; you shouldn't have to rename your original files.
 

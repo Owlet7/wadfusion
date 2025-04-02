@@ -1,7 +1,7 @@
 
 import os, sys, time
 from shutil import copyfile
-from zipfile import ZipFile, ZIP_DEFLATED
+from zipfile import ZipFile, ZIP_STORED, ZIP_DEFLATED
 
 import omg
 
@@ -9,6 +9,8 @@ VERSION_FILENAME = 'version'
 
 # if False, do a dry run with no actual file writing
 should_extract = True
+# if True apply light + fast compression; if False, simply store
+should_deflate = False
 
 SRC_WAD_DIR = 'source_wads/'
 DATA_DIR = 'data/'
@@ -473,7 +475,7 @@ def main():
         copyfile(RES_DIR + genmidi_filename, DEST_DIR + genmidi_filename)
     # create pk3
     logg('Compressing %s...' % DEST_FILENAME)
-    pk3 = ZipFile(DEST_FILENAME, 'w', ZIP_DEFLATED)
+    pk3 = ZipFile(DEST_FILENAME, 'w', ZIP_DEFLATED if should_deflate else ZIP_STORED)
     for dir_name, x, filenames in os.walk(DEST_DIR):
         for filename in filenames:
             src_name = dir_name + '/' + filename
