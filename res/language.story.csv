@@ -12,7 +12,19 @@ installation and that you never knew when
 the environment around you would change.
 
 You need to keep your eyes alert to all
-movement - this place is not what it seems…",,,,,,,,,,,,,,,,,,,,,"С Очистным заводом позади, ты
+movement - this place is not what it seems…",,,,,,,,,,,,,,,,,"Z Rafinerią Toksyn już za tobą, trafiasz do
+Centrum Kontroli Fobosa, gdzie znajdują się
+komputery analizujące dane z anomalii
+na Fobosie.
+
+Musisz je wykorzystać, aby zyskać dostęp do
+laboratoriów Fobosa, jednak pamiętasz, jak
+słyszałeś o tym, że komputery były powiązane
+ze wszystkimi strefami instalacji i nigdy nie
+wiadomo, kiedy otoczenie wokół ciebie się zmieni.
+
+Musisz zwracać uwagę na jakikolwiek ruch - to
+miejsce nie jest takie, jak się wydaje…",,,,"С Очистным заводом позади, ты
 направляешься к Центральному
 управлению Фобоса, где находятся
 компьютеры, обрабатывающие
@@ -69,7 +81,24 @@ a high-tech lab somewhere in this area, and
 the portal must be connected to it
 somehow.
 
-Time to lock and load.",,,,,,,,,,,,,,,,,,,,"После выхода из Вычислительного
+Time to lock and load.",,,,,,,,,,,,,,,,"Po wyjściu ze Stacji Komputerowej wiedziałeś
+że najgorsze przed tobą. Wciąż nie dotarłeś
+do miejsca z którego pochodzą demony.
+
+Stalowe drzwi zamykają się za tobą, a ty zdajesz
+sobie sprawę gdzie jesteś; dotarłeś do Anomalii
+Fobosa.
+
+Trzaski z piekieł są wszędzie podczas gdy
+goście z portalu wtargnęli na nasz teren.
+
+Nastał czas, aby znaleźć portal i powstrzymać
+demony przed przejściem. Wiesz, że UAC miało
+setki naukowców pracujących nad zaawansowanym
+laboratorium gdzieś w tych rejonach, więc portal
+musi być z nim w jakiś sposób powiązany.
+
+Czas załadować broń.",,,,"После выхода из Вычислительного
 центра, ты знал что худшее впереди.
 Ты еще не достиг места из которого
 приходили демоны.
@@ -219,7 +248,14 @@ option is to flood Earth with demons
 and hope you go down fighting.
 
 Prepare for HELLION!
-",,,,,,,,,,,,,,,,,,,,,"Сатана ошибся, отбросив тебя в
+",,,,,,,,,,,,,,,,,"Szatan popełnił błąd rzucając cię do
+mroczniejszych zakątków Piekła. Jego
+plan się nie udał. Tak długo już chciał 
+cię zniszczyć i za każdym razem przegrał. 
+Mógł już jedynie najechać ziemię demonami
+w nadziei że padniesz w walce.
+
+Przygotuj się na PIEKŁO!",,,,"Сатана ошибся, отбросив тебя в
 темные глубины Ада. Его план
 провалился. Он так долго пытался
 уничтожить тебя, и каждый раз
@@ -789,7 +825,12 @@ on Titan, a moon of Saturn, you must
 acquire three keys to find the exit
 hidden in the mining headquarters. Since
 the natives are definitely NOT friendly,
-an exit is a nice thing to find.",,,,,,,,,,,,,,,,,,,,,,,,,,
+an exit is a nice thing to find.",,,,,,,,,,,,,,,,,"Wyrzucony pośrodku bazy wydobywczej
+na Tytanie, księzycu Saturna, musisz zdobyć
+trzy klucze aby znaleźć wyjście ukryte
+w siedzibie górniczej. Jako że mieszkańcy
+z pewnością NIE SĄ przyjaźni, fajnie
+by było znaleźć jakieś wyjście.",,,,,,,,,
 ML4STORY2,The Titan Anomaly,,"While exploring for new mines on Titan
 (someone fragged the old one -- darn!),
 the UAC discovered the remains of an alien
@@ -828,7 +869,25 @@ Science Admin. Building (N), the Security
 Headquarters (E), and the Guard Barracks to
 gain the keys that'll allow you access to
 the Anomaly Research Area (W), where, if you're
-lucky, you may just find an exit back home.",,,,,,,,,,,,,,,,,,,,,,,,,
+lucky, you may just find an exit back home.",,,,,,,,,,,,,,,,"Podczas szukania nowych kopalni na Tytanie
+(ktoś wysadził stare -- niech to!), UAC
+odkryło pozostałości z kosmicznej bazy.
+Pokrywa bezpieczeństwa była mocno
+przymocowana przy znalezisku, nazywana tylko
+niejasno jako Anomalia w raportach. Masz za
+zadanie włamać się i dowiedzieć co się stało.
+
+Stacja badawcza i garnizon bezpieczeństwa UAC
+zjawił się wokól anomalii, a ty rozpoczniesz
+swoją wizytę w strefie bezpieczeństwa, gdzie
+poproszą cię o wylegitymowanie się. Szkoda że
+nie masz jak tego zrobić. Będziesz musiał 
+przeszukać centrum dla zwiedzających (S),
+administrację naukową (N), siedzibę ochrony (E),
+oraz koszary strażników aby zyskać klucze które
+dadzą ci dostęp do Strefy Badania Anomalii (W),
+gdzie, przy odrobinie szczęścia, znajdziesz
+wyjście do domu.",,,,,,,,,
 ML4STORY3,The Farside of Titan,,"Given your success with the UAC mining
 base and the Anomaly investigation, it
 was inevitable that you get picked for
@@ -836,14 +895,20 @@ this foray into the Titan Farside Research
 Base. Oh well. Rumors have it that some
 prototypes of alien technology are being
 tested here. Please investigate and
-Report.","Given your success with the UAC mining
+report.","Given your success with the UAC mining
 base and the Anomaly investigation, it
 was inevitable that you get picked for
 this foray into the Titan Farside Research
 Base. Oh well. Rumours have it that some
 prototypes of alien technology are being
 tested here. Please investigate and
-Report.",,,,,,,,,,,,,,,,,,,,,,,,,
+report.",,,,,,,,,,,,,,,,"Patrząc na twój sukces z bazą wydobywczą
+i dochodzeniem w sprawie Anomalii, wybór
+ciebie do udania się na stację badawczą
+na niewidocznej stronie Tytana był oczywisty.
+No cóż. Według plotek jakieś prototypy 
+technologii obcych są tam testowane.
+Proszę to zbadać i złożyć raport.",,,,,,,,,
 ML4STORY4,Trouble on Titan,,"Well, you know the story. UAC keeps sending
 you different places on Titan to investigate
 various strange occurrences. You keep telling
@@ -859,17 +924,39 @@ anyway -- they're still holding out for their
 space psychosis theory. It's a compromise,
 you're being sent again, but as usual, you
 only get a pistol... Just in case there aren't
-any aliens after all.",,,,,,,,,,,,,,,,,,,,,,,,,,
+any aliens after all.",,,,,,,,,,,,,,,,,"No cóż, wiesz o co biega. UAC ciągle cię wysyła
+do różnych miejsc na Tytanie by zbadać wszelakie
+dziwne zdarzenia. Ciągle im mówisz że na Tytanie
+grasują kosmici.
+Zgłosiłeś to po tym gdy prawie odebrali ci łeb 
+w kopalniach. Powtórzyłeś im to kiedy stracili
+strefę z anomalią. Twoje dochodzenie w sprawie
+utraty komunikacji z bazą na niewidocznej stronie
+tego księżyca też o tym wspominało. Wydaje mi się
+że zaczynają ci wierzyć, przynajmniej poza działem
+psychologii -- oni wciąż się wstrzymują ze swoją
+teorią psychozy kosmicznej. Jako kompromis zostajesz
+wysłany ponownie, lecz jak zazwyczaj, masz tylko
+pistolet... Na wypadek gdyby jednak nie było tam
+żadnych kosmitów.",,,,,,,,,
 ML4STORY5,Titan Manor,,"A strange and enigmatic building on a moon
 of Saturn contains the latest in alien
 weapon technology. If you can survive the
 guards and solve the puzzles, the
 Federation will leapfrog in technology.
 It's all up to you. Oh and watch those
-windows!",,,,,,,,,,,,,,,,,,,,,,,,,,
+windows!",,,,,,,,,,,,,,,,,"Równie dziwny, co enigmatyczny budynek 
+na księżycu Saturna zawiera najnowszą
+technologię obcych. Jeśli możesz przejść
+przez strażników i rozwiązać zagadki,
+federacja dokona ogromnego przeskoku
+w technologii. Wszystko zależy od ciebie.
+Przy okazji, pilnuj tych okien!",,,,,,,,,
 ML4STORY6,Trapped on Titan,,"Every step you take may be your last.
 If it looks too easy, it probably isn't.
-Good luck -- you'll need it.",,,,,,,,,,,,,,,,,,,,,,,,,,
+Good luck -- you'll need it.",,,,,,,,,,,,,,,,,"Każdy krok może być twoim ostatnim.
+Jak coś wygląda za łatwo, to zapewne pułapka.
+Powodzenia -- przyda ci się.",,,,,,,,,
 ML5STORY1,"John Anderson's INFERNO level story
 taken from their readme files
 
