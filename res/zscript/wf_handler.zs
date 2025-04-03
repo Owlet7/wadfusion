@@ -98,19 +98,26 @@ class WadFusionHandler : EventHandler
 	override void CheckReplacement (ReplaceEvent e)
 	{
 		// replace plasmarifle and bfg9000 with incinerator and calamity blade, respectively
-		int id1WeapSwap = CVar.FindCVar("wf_compat_id24_weapons").GetInt();
+		int id24WeapSwap = CVar.FindCVar("wf_compat_id24_weapons").GetInt();
 		string mapPrefix = Level.MapName.Left(3).MakeLower();
-		if ( ( id1WeapSwap == 1 && mapPrefix == "lr_" ) || id1WeapSwap >= 2 )
+		if ( ( id24WeapSwap == 1 && mapPrefix == "lr_" ) || id24WeapSwap >= 2 )
 		{
-			DoId1WeaponReplacements(e);
+			DoId24WeaponReplacements(e);
 		}
 	}
 	
 	override void WorldThingSpawned(WorldEvent e)
 	{
+		// increase the spiderdemon's health from 3000 to 9000 in Sigil 2
 		if ( CVar.FindCVar("wf_compat_sigil2spiderboss").GetBool() )
 		{
 			DoSigil2SpiderBossBuff(e);
+		}
+		
+		// override gzdoom's transparency render style for id24 actors
+		if ( CVar.FindCVar("wf_id24trans").GetBool() )
+		{
+			DoId24ActorTransparency(e);
 		}
 		
 		// don't count spawned enemies e.g. icon of sin summons
@@ -133,12 +140,26 @@ class WadFusionHandler : EventHandler
 		string mapPrefix = Level.MapName.Left(3).MakeLower();
 		if ( mapPrefix == "e6m" )
 		{
-			if ( e.Thing && e.Thing.GetClassName() == "SpiderMastermind" )
-				e.Thing.Health = 9000;
+			if ( SpiderMastermind(e.Thing) != null )
+				SpiderMastermind(e.Thing).Health = 9000;
 		}
 	}
 	
-	void DoId1WeaponReplacements(ReplaceEvent e)
+	void DoId24ActorTransparency(WorldEvent e)
+	{
+		if ( ID24IncineratorFlame(e.Thing) != null )
+		{
+			ID24IncineratorFlame(e.Thing).A_SetRenderStyle(0.5, STYLE_Translucent);
+			ID24IncineratorFlame(e.Thing).bZDOOMTRANS = false;
+		}
+		if ( ID24IncineratorProjectile(e.Thing) != null )
+		{
+			ID24IncineratorProjectile(e.Thing).A_SetRenderStyle(0.5, STYLE_Translucent);
+			ID24IncineratorProjectile(e.Thing).bZDOOMTRANS = false;
+		}
+	}
+	
+	void DoId24WeaponReplacements(ReplaceEvent e)
 	{
 		if ( Level.MapTime == 0 )
 		{

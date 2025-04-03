@@ -1,7 +1,8 @@
 # WadFusion Changelog
 
-<!--## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.4...HEAD)-->
+## Unreleased Changes
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.4...HEAD)
+- Added an option to use the original ID24 actors transparency.
 
 ## [WadFusion 1.4.4](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.4) — [02 April 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.4)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.3...v1.4.4)
