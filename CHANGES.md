@@ -6,7 +6,7 @@
 - Added an option to use the original ID24 actors transparency.
 - Rewrote how weapon slots are drawn in the alternate fullscreen HUD.
   - The weapon slots should now work with any modded weapons.
-  - Moved keys up by 5 pixels to not obscure the weapon slots.
+  - Moved keys to the right to not obscure the weapon slots.
 - Updated Polish localisation.
 
 ## [WadFusion 1.4.4](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.4) — [02 April 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.4)

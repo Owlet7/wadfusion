@@ -160,6 +160,41 @@ extend class WadFusionStatusBar
 			}
 		}
 		
+		// Draw keys
+		Vector2 keyInvPos = (-8 - ultraWide, -20);
+		int keyInvPosYIncrement = 8;
+		int ammoInvPosKeysIncrement = 0;
+		
+		if ( !deathmatch && altHudKeys )
+		{
+			if ( hasBlueCard && hasBlueSkull )
+				DrawImage("STKEYS6", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
+			else if ( hasBlueSkull )
+				DrawImage("STKEYS3", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
+			else if ( hasBlueCard )
+				DrawImage("STKEYS0", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
+			
+			keyInvPos.Y += keyInvPosYIncrement;
+			if ( hasYellowCard && hasYellowSkull )
+				DrawImage("STKEYS7", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
+			else if ( hasYellowSkull )
+				DrawImage("STKEYS4", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
+			else if ( hasYellowCard )
+				DrawImage("STKEYS1", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
+			
+			keyInvPos.Y += keyInvPosYIncrement;
+			if ( hasRedCard && hasRedSkull )
+				DrawImage("STKEYS8", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
+			else if ( hasRedSkull )
+				DrawImage("STKEYS5", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
+			else if ( hasRedCard )
+				DrawImage("STKEYS2", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
+			
+			if ( hasBlueCard || hasYellowCard || hasRedCard ||
+					hasBlueSkull || hasYellowSkull || hasRedSkull )
+				ammoInvPosKeysIncrement += 13;
+		}
+		
 		// Draw current ammo
 		Inventory ammotype1, ammotype2;
 		[ammotype1, ammotype2] = GetCurrentAmmo();
@@ -190,8 +225,9 @@ extend class WadFusionStatusBar
 			int invY = -25;
 			if ( ammotype1 != null )
 			{
-				DrawInventoryIcon(ammotype1, (-14 - ultraWide, -10), DI_SCREEN_RIGHT_BOTTOM, ammoAlpha);
-				DrawString(mHUDFont, FormatNumber(ammotype1.Amount, 1), (-30 - ultraWide, -25),
+				DrawInventoryIcon(ammotype1, (-14 - ammoInvPosKeysIncrement - ultraWide, -10),
+						DI_SCREEN_RIGHT_BOTTOM, ammoAlpha);
+				DrawString(mHUDFont, FormatNumber(ammotype1.Amount, 1), (-30 - ammoInvPosKeysIncrement - ultraWide, -25),
 						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT|DI_NOSHADOW,
 						ammotype1.Amount > ammoType1Low ? Font.CR_WHITE : Font.CR_RED, ammoAlpha);
 				invY -= 27;
@@ -199,8 +235,9 @@ extend class WadFusionStatusBar
 			
 			if ( ammotype2 != null && ammotype2 != ammotype1 )
 			{
-				DrawInventoryIcon(ammotype2, (-14 - ultraWide, invY + 15), DI_SCREEN_RIGHT_BOTTOM, ammoAlpha);
-				DrawString(mHUDFont, FormatNumber(ammotype2.Amount, 1), (-30 - ultraWide, invY),
+				DrawInventoryIcon(ammotype2, (-14 - ammoInvPosKeysIncrement - ultraWide, invY + 15),
+						DI_SCREEN_RIGHT_BOTTOM, ammoAlpha);
+				DrawString(mHUDFont, FormatNumber(ammotype2.Amount, 1), (-30 - ammoInvPosKeysIncrement - ultraWide, invY),
 						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT|DI_NOSHADOW,
 						ammotype2.Amount > ammoType2Low ? Font.CR_WHITE : Font.CR_RED, ammoAlpha);
 				invY -= 27;
@@ -354,7 +391,7 @@ extend class WadFusionStatusBar
 		}
 		
 		// Draw weapon slots
-		Vector2 weapInvPos = (-27 - ultraWide, -8);
+		Vector2 weapInvPos = (-17 - ammoInvPosKeysIncrement - ultraWide, -8);
 		int weapInvPosXIncrement = 5;
 		
 		if ( altHudWeapInv )
@@ -410,36 +447,6 @@ extend class WadFusionStatusBar
 					}
 				}
 			}
-		}
-		
-		// Draw keys
-		Vector2 keyInvPos = (-83 - ultraWide, -25);
-		int keyInvPosYIncrement = 8;
-		
-		if ( !deathmatch && altHudKeys )
-		{
-			if ( hasBlueCard && hasBlueSkull )
-				DrawImage("STKEYS6", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			else if ( hasBlueSkull )
-				DrawImage("STKEYS3", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			else if ( hasBlueCard )
-				DrawImage("STKEYS0", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			
-			keyInvPos.Y += keyInvPosYIncrement;
-			if ( hasYellowCard && hasYellowSkull )
-				DrawImage("STKEYS7", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			else if ( hasYellowSkull )
-				DrawImage("STKEYS4", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			else if ( hasYellowCard )
-				DrawImage("STKEYS1", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			
-			keyInvPos.Y += keyInvPosYIncrement;
-			if ( hasRedCard && hasRedSkull )
-				DrawImage("STKEYS8", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			else if ( hasRedSkull )
-				DrawImage("STKEYS5", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			else if ( hasRedCard )
-				DrawImage("STKEYS2", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
 		}
 		
 		// Draw stats
