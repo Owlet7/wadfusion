@@ -25,4 +25,5 @@ Thanks goes out to:
 - Nash Muhandes for Widepix.
 - Scuba Steve for his Widescreen graphics.
 - 00_Zombie_00 for this lovely Cyberdemon fatality sprite used in the Ultimate DOOM Titlepic.
+- NightFright for the fixed DOOM HELP1 lump (Bye Ouicksave).
 - id Software for making the greatest shooter of all time.
