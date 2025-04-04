@@ -242,20 +242,20 @@ class WadFusionStatusBar : BaseStatusBar
 		{
 			Vector2 iconbox = (40, 20);
 			// Draw health
-			int hudHealthOffset;
+			int hudHealthYOffset = 0;
 			if ( hudSwapHealthArmor )
-					hudHealthOffset = 20;
+					hudHealthYOffset = 20;
 			
 			let berserk = CPlayer.mo.FindInventory("PowerStrength");
-			DrawImage(berserk? "PSTRA0" : "MEDIA0", (20 + ultraWide, -2 - hudHealthOffset));
-			DrawString(mHUDFont, FormatNumber(CPlayer.health, 3), (44 + ultraWide, -20 - hudHealthOffset));
+			DrawImage(berserk? "PSTRA0" : "MEDIA0", (20 + ultraWide, -2 - hudHealthYOffset));
+			DrawString(mHUDFont, FormatNumber(CPlayer.health, 3), (44 + ultraWide, -20 - hudHealthYOffset));
 			
 			// Draw armor
 			let armor = CPlayer.mo.FindInventory("BasicArmor");
 			if (armor != null && armor.Amount > 0)
 			{
-				DrawInventoryIcon(armor, (20 + ultraWide, -22 + hudHealthOffset));
-				DrawString(mHUDFont, FormatNumber(armor.Amount, 3), (44 + ultraWide, -40 + hudHealthOffset));
+				DrawInventoryIcon(armor, (20 + ultraWide, -22 + hudHealthYOffset));
+				DrawString(mHUDFont, FormatNumber(armor.Amount, 3), (44 + ultraWide, -40 + hudHealthYOffset));
 			}
 			
 			// Draw inventory

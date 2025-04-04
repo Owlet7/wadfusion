@@ -110,21 +110,19 @@ extend class WadFusionStatusBar
 		double mapNameAlpha         = CVar.FindCVar("wf_hud_alt_alpha_stats_mapname").GetFloat();
 		
 		// Draw health
-		int hudHealthOffset;
+		int hudHealthYOffset = 0;
+		
 		if ( hudSwapHealthArmor || !altHudHealth )
-			hudHealthOffset = 27;
-			
-		if ( !altHudArmor )
-			hudHealthOffset = 0;
+			hudHealthYOffset = 27;
 		
 		if ( altHudHealth )
 		{
 			if ( !altHudMugshot )
-				DrawImage(hasBerserk ? "PSTRA0" : "MEDIA0", (20 + ultraWide, -10 - hudHealthOffset),
+				DrawImage(hasBerserk ? "PSTRA0" : "MEDIA0", (20 + ultraWide, -10 - hudHealthYOffset),
 						DI_SCREEN_LEFT_BOTTOM, healthAlpha);
 			else
-				DrawTexture(GetMugShot(5), (3 + ultraWide, -35 - hudHealthOffset),
-							DI_ITEM_OFFSETS|DI_SCREEN_LEFT_BOTTOM, healthAlpha);
+				DrawTexture(GetMugShot(5), (3 + ultraWide, -35 - hudHealthYOffset),
+						DI_ITEM_OFFSETS|DI_SCREEN_LEFT_BOTTOM, healthAlpha);
 			
 			int healthColor =
 				health > maxhealth * 2    ? Font.CR_PURPLE :
@@ -136,7 +134,7 @@ extend class WadFusionStatusBar
 				health > maxhealth * 0    ? Font.CR_RED :
 				Font.CR_BLACK;
 			
-			DrawString(mHUDFont, FormatNumber(health, 1), (40 + ultraWide, -25 - hudHealthOffset),
+			DrawString(mHUDFont, FormatNumber(health, 1), (40 + ultraWide, -25 - hudHealthYOffset),
 					DI_SCREEN_LEFT_BOTTOM|DI_NOSHADOW, healthColor, healthAlpha);
 		}
 		
@@ -154,8 +152,9 @@ extend class WadFusionStatusBar
 			
 			if ( armor != null && armor.Amount > 0 )
 			{
-				DrawInventoryIcon(armor, (20 + ultraWide, -37 + hudHealthOffset), DI_SCREEN_LEFT_BOTTOM, healthAlpha);
-				DrawString(mHUDFont, FormatNumber(armor.Amount, 1), (40 + ultraWide, -52 + hudHealthOffset),
+				DrawInventoryIcon(armor, (20 + ultraWide, -37 + hudHealthYOffset),
+						DI_SCREEN_LEFT_BOTTOM, healthAlpha);
+				DrawString(mHUDFont, FormatNumber(armor.Amount, 1), (40 + ultraWide, -52 + hudHealthYOffset),
 						DI_SCREEN_LEFT_BOTTOM|DI_NOSHADOW, armorColor, healthAlpha);
 			}
 		}
@@ -205,8 +204,8 @@ extend class WadFusionStatusBar
 		if ( altHudAmmo )
 		{
 			
-			int ammoType1Low;
-			int ammoType2Low;
+			int ammoType1Low = 0;
+			int ammoType2Low = 0;
 			if ( hasBackpack )
 			{
 				if ( ammotype1 != null )
@@ -343,7 +342,7 @@ extend class WadFusionStatusBar
 		// Draw powerups
 		Vector2 powerupPos = (-18 - ultraWide, -4 + ammoInvPos.Y);
 		int powerupPosYIncrement = 30;
-		int powerupCount;
+		int powerupCount = 0;
 		
 		if ( altHudPowerup )
 		{
@@ -451,7 +450,7 @@ extend class WadFusionStatusBar
 		
 		// Draw stats
 		Vector2 statsPos = (4 + ultraWide, -72);
-		int statsPosYIncrement;
+		int statsPosYIncrement = 0;
 		if ( altHudStatsIcons )
 			statsPosYIncrement = 12;
 		else
