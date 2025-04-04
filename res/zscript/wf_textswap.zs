@@ -103,7 +103,9 @@ extend class WadFusionHandler
 			Level.ReplaceTextures("SW2STONE", "SW2STONA", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STON2", "SW2STONB", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("WFALL1",   "XWFALL1",  TexMan.NOT_FLAT); // different from plutonia
-			Level.ReplaceTextures("SKY1",     "RSKY1",    TexMan.NOT_FLAT); // dm_map10 sets its sky texture in the map file
+			Level.ReplaceTextures("SKY1",     "RSKY1",    TexMan.NOT_FLAT); // dm_map10 sets its sky texture to
+			Level.ReplaceTextures("SKY2",     "RSKY2",    TexMan.NOT_FLAT); //    SKY1 with an MBF sky transfer
+			Level.ReplaceTextures("SKY3",     "RSKY3",    TexMan.NOT_FLAT);
 		}
 	}
 	
