@@ -35,6 +35,8 @@ extend class WadFusionStatusBar
 		let hudId24 = CVar.FindCVar("wf_hud_id24").GetBool();
 		let hudSwapHealthArmor = CVar.FindCVar("wf_hud_swaphealtharmor").GetBool();
 		
+		let isDoom1 = mapName.Left(1) == "e" && mapName.Mid(2, 1) == "m";
+		
 		int ultraWide = CVar.FindCVar("wf_hud_ultrawide").GetInt();
 		if ( CVar.FindCVar("wf_hud_ultrawide_fullscreen").GetBool() && !CVar.FindCVar("vid_fullscreen").GetBool() )
 			ultraWide = 0;
@@ -55,25 +57,7 @@ extend class WadFusionStatusBar
 		int cellLow   = 75;
 		int fuelLow   = 37;
 		
-		let readyFist           = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "Fist";
-		let readyChainsaw       = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "Chainsaw";
-		let readyPistol         = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "Pistol";
-		let readyShotgun        = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "Shotgun";
-		let readySuperShotgun   = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "SuperShotgun";
-		let readyChaingun       = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "Chaingun";
-		let readyRocketLauncher = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "RocketLauncher";
-		let readyIncinerator    = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "ID24Incinerator";
-		let readyPlasmaRifle    = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "PlasmaRifle";
-		let readyHeatwave       = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "ID24CalamityBlade";
-		let readyBfg9000        = CPlayer.ReadyWeapon && CPlayer.ReadyWeapon.GetClassName() == "BFG9000";
-		
-		let hasFist           = CPlayer.mo.FindInventory("Fist");
-		let hasChainsaw       = CPlayer.mo.FindInventory("Chainsaw");
-		let hasPistol         = CPlayer.mo.FindInventory("Pistol");
-		let hasShotgun        = CPlayer.mo.FindInventory("Shotgun");
 		let hasSuperShotgun   = CPlayer.mo.FindInventory("SuperShotgun");
-		let hasChaingun       = CPlayer.mo.FindInventory("Chaingun");
-		let hasRocketLauncher = CPlayer.mo.FindInventory("RocketLauncher");
 		let hasIncinerator    = CPlayer.mo.FindInventory("ID24Incinerator");
 		let hasPlasmaRifle    = CPlayer.mo.FindInventory("PlasmaRifle");
 		let hasHeatwave       = CPlayer.mo.FindInventory("ID24CalamityBlade");
@@ -370,87 +354,66 @@ extend class WadFusionStatusBar
 		}
 		
 		// Draw weapon slots
-		Vector2 weapInvPos = (-72 - ultraWide, -8);
+		Vector2 weapInvPos = (-27 - ultraWide, -8);
 		int weapInvPosXIncrement = 5;
 		
 		if ( altHudWeapInv )
 		{
-			if ( readyFist )
-				DrawString(mIndexFont, "1", weapInvPos, DI_SCREEN_RIGHT_BOTTOM,
-						hasBerserk ? Font.CR_RED : Font.CR_GOLD, weapInvAlpha);
-			else if ( hasFist )
-				DrawString(mIndexFont, "1", weapInvPos, DI_SCREEN_RIGHT_BOTTOM,
-						hasBerserk ? Font.CR_RED : Font.CR_WHITE, weapInvInactiveAlpha);
-			
-			weapInvPos.X += weapInvPosXIncrement;
-			if ( readyChainsaw )
-				DrawString(mIndexFont, "1", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
-			else if ( hasChainsaw )
-				DrawString(mIndexFont, "1", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
-			
-			weapInvPos.X += weapInvPosXIncrement;
-			if ( readyPistol )
-				DrawString(mIndexFont, "2", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
-			else if ( hasPistol )
-				DrawString(mIndexFont, "2", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
-			
-			weapInvPos.X += weapInvPosXIncrement;
-			if ( readyShotgun )
-				DrawString(mIndexFont, "3", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
-			else if ( hasShotgun )
-				DrawString(mIndexFont, "3", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
-			
-			if ( !( mapName.Left(1) == "e" && mapName.Mid(2, 1) == "m" && !hasSuperShotgun ) )
-				weapInvPos.X += weapInvPosXIncrement;
-			
-			if ( readySuperShotgun )
-				DrawString(mIndexFont, "3", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
-			else if ( hasSuperShotgun )
-				DrawString(mIndexFont, "3", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
-			
-			weapInvPos.X += weapInvPosXIncrement;
-			if ( readyChaingun )
-				DrawString(mIndexFont, "4", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
-			else if ( hasChaingun )
-				DrawString(mIndexFont, "4", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
-			
-			weapInvPos.X += weapInvPosXIncrement;
-			if ( readyRocketLauncher )
-				DrawString(mIndexFont, "5", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
-			else if ( hasRocketLauncher )
-				DrawString(mIndexFont, "5", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
-			
-			weapInvPos.X += weapInvPosXIncrement;
-			if ( readyIncinerator )
-				DrawString(mIndexFont, "6", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
-			else if ( hasIncinerator )
-				DrawString(mIndexFont, "6", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
-			
-			if ( ( hasPlasmaRifle || hasBfg9000 ) && ( hasIncinerator || hasHeatwave ) )
-				weapInvPos.X += weapInvPosXIncrement;
-			
-			if ( readyPlasmaRifle )
-				DrawString(mIndexFont, "6", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
-			else if ( hasPlasmaRifle )
-				DrawString(mIndexFont, "6", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
-			
-			weapInvPos.X += weapInvPosXIncrement;
-			if ( readyHeatwave )
-				DrawString(mIndexFont, "7", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
-			else if ( hasHeatwave )
-				DrawString(mIndexFont, "7", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
-			
-			if ( hasIncinerator || hasHeatwave )
-				weapInvPos.X += weapInvPosXIncrement;
-			
-			if ( readyBfg9000 )
-				DrawString(mIndexFont, "7", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
-			else if ( hasBfg9000 )
-				DrawString(mIndexFont, "7", weapInvPos, DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
+			for ( int i = 10; i > 0; i-- )
+			{
+				int slot = i;
+				
+				if ( i == 10 )
+					slot = 0;
+				
+				String slotStr = String.Format("%d", slot);
+				
+				for ( int j = CPlayer.Weapons.SlotSize(slot); j >= 0; j-- )
+				{
+					let getWeaponSlot    = CPlayer.Weapons.GetWeapon(slot, j);
+					let getWeaponReady   = CPlayer.ReadyWeapon.GetClassName();
+					let slotFistBerserk  = getWeaponSlot == "Fist" && hasBerserk;
+					let slotSuperShotgun = getWeaponSlot == "SuperShotgun";
+					let slotIncinerator  = getWeaponSlot == "ID24Incinerator";
+					let slotPlasmaRifle  = getWeaponSlot == "PlasmaRifle";
+					let slotHeatwave     = getWeaponSlot == "ID24CalamityBlade";
+					let slotBfg9000      = getWeaponSlot == "BFG9000";
+					
+					if ( getWeaponSlot == getWeaponReady )
+						if ( slotFistBerserk )
+							DrawString(mIndexFont, slotStr, weapInvPos,
+									DI_SCREEN_RIGHT_BOTTOM, Font.CR_RED, weapInvAlpha);
+						else
+							DrawString(mIndexFont, slotStr, weapInvPos,
+									DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
+					else if ( CPlayer.mo.FindInventory(getWeaponSlot) )
+						if ( slotFistBerserk )
+							DrawString(mIndexFont, slotStr, weapInvPos,
+									DI_SCREEN_RIGHT_BOTTOM, Font.CR_RED, weapInvInactiveAlpha);
+						else
+							DrawString(mIndexFont, slotStr, weapInvPos,
+									DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
+					
+					if ( j > 0 )
+						weapInvPos.X -= weapInvPosXIncrement;
+					
+					if ( slotSuperShotgun && ( isDoom1 && !hasSuperShotgun ) )
+						weapInvPos.X += weapInvPosXIncrement;
+					
+					if ( !hudId24 )
+					{
+						if ( ( slotIncinerator && ( !isId1 && !hasIncinerator ) ) ||
+								( slotPlasmaRifle && ( isId1 && !hasPlasmaRifle ) ) ||
+								( slotHeatwave && ( !isId1 && !hasHeatwave ) ) ||
+								( slotBfg9000 && ( isId1 && !hasBfg9000 ) ) )
+							weapInvPos.X += weapInvPosXIncrement;
+					}
+				}
+			}
 		}
 		
 		// Draw keys
-		Vector2 keyInvPos = (-83 - ultraWide, -20);
+		Vector2 keyInvPos = (-83 - ultraWide, -25);
 		int keyInvPosYIncrement = 8;
 		
 		if ( !deathmatch && altHudKeys )
