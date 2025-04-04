@@ -406,14 +406,15 @@ extend class WadFusionStatusBar
 				
 				for ( int j = CPlayer.Weapons.SlotSize(slot); j >= 0; j-- )
 				{
-					let getWeaponSlot    = CPlayer.Weapons.GetWeapon(slot, j);
-					let getWeaponReady   = CPlayer.ReadyWeapon.GetClassName();
-					let slotFistBerserk  = getWeaponSlot == "Fist" && hasBerserk;
-					let slotSuperShotgun = getWeaponSlot == "SuperShotgun";
-					let slotIncinerator  = getWeaponSlot == "ID24Incinerator";
-					let slotPlasmaRifle  = getWeaponSlot == "PlasmaRifle";
-					let slotHeatwave     = getWeaponSlot == "ID24CalamityBlade";
-					let slotBfg9000      = getWeaponSlot == "BFG9000";
+					let getWeaponSlot      = CPlayer.Weapons.GetWeapon(slot, j);
+					let getWeaponReady     = CPlayer.ReadyWeapon.GetClassName();
+					let slotFistBerserk    = getWeaponSlot == "Fist" && hasBerserk;
+					let slotSuperShotgun   = getWeaponSlot == "SuperShotgun";
+					let slotIncinerator    = getWeaponSlot == "ID24Incinerator";
+					let slotPlasmaRifle    = getWeaponSlot == "PlasmaRifle";
+					let slotHeatwave       = getWeaponSlot == "ID24CalamityBlade";
+					let slotBfg9000        = getWeaponSlot == "BFG9000";
+					let weaponSlotReplaced = getWeaponSlot != null && Actor.GetReplacement(getWeaponSlot.GetClassName()) != getWeaponSlot;
 					
 					if ( getWeaponSlot == getWeaponReady )
 						if ( slotFistBerserk )
@@ -433,12 +434,16 @@ extend class WadFusionStatusBar
 					if ( j > 0 )
 						weapInvPos.X -= weapInvPosXIncrement;
 					
-					if ( slotSuperShotgun && ( isDoom1 && !hasSuperShotgun ) )
+					if ( weaponSlotReplaced )
+						weapInvPos.X += weapInvPosXIncrement;
+					
+					if ( !weaponSlotReplaced && slotSuperShotgun && ( isDoom1 && !hasSuperShotgun ) )
 						weapInvPos.X += weapInvPosXIncrement;
 					
 					if ( !hudId24 )
 					{
-						if ( ( slotIncinerator && ( !isId1 && !hasIncinerator ) ) ||
+						if ( !weaponSlotReplaced &&
+								( slotIncinerator && ( !isId1 && !hasIncinerator ) ) ||
 								( slotPlasmaRifle && ( isId1 && !hasPlasmaRifle ) ) ||
 								( slotHeatwave && ( !isId1 && !hasHeatwave ) ) ||
 								( slotBfg9000 && ( isId1 && !hasBfg9000 ) ) )
