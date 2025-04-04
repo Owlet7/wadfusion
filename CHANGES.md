@@ -7,6 +7,7 @@
 - Rewrote how weapon slots are drawn in the alternate fullscreen HUD.
   - The weapon slots should now work with any modded weapons.
   - Moved keys to the right to not obscure the weapon slots.
+- Updated widescreen DOOM 1 titlepic and help graphics.
 - Updated Polish localisation.
 
 ## [WadFusion 1.4.4](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.4) — [02 April 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.4)
