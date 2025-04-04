@@ -597,9 +597,6 @@ def extract_iwads():
         if iwad_name == 'id1' and not get_wad_filename('id1-res'):
             logg('  ERROR: Skipping id1.wad as id1-res.wad is not present', error=True)
             continue
-        if iwad_name == 'id1' and not get_wad_filename('id24res'):
-            logg('  ERROR: Skipping id1.wad as id24res.wad is not present', error=True)
-            continue
         if iwad_name == 'iddm1' and not get_wad_filename('doom2'):
             logg('  ERROR: Skipping iddm1.wad as doom2.wad is not present', error=True)
             continue
@@ -626,7 +623,7 @@ def copy_resources():
             if not doom_is_registered():
                 if not doomu_is_retail():
                     # DO copy if id1 or iddm1 exists and doom1 doesn't
-                    if not get_wad_filename('doom2') and get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res'):
+                    if not get_wad_filename('doom2') and get_wad_filename('id1') and get_wad_filename('id1-res'):
                         if not get_wad_filename('doom2') and get_wad_filename('iddm1'):
                             continue
         elif src_file == 'textures.doom2' and not get_wad_filename('doom2'):
@@ -640,7 +637,7 @@ def copy_resources():
             if not get_wad_filename('tnt'):
                 continue
         elif src_file == 'textures.id1':
-            if not get_wad_filename('doom2') and get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res'):
+            if not get_wad_filename('doom2') and get_wad_filename('id1') and get_wad_filename('id1-res'):
                 if not get_wad_filename('doom2') and get_wad_filename('iddm1'):
                     continue
         elif src_file == 'textures.masterlevels':
@@ -681,7 +678,7 @@ def extract():
     if should_enable_master_levels_rejects:
         enable_master_levels_rejects()
     # duplicate doom1 sky patches to suppress errors with id1
-    if get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('id24res') and get_wad_filename('doom2'):
+    if get_wad_filename('id1') and get_wad_filename('id1-res') and get_wad_filename('doom2'):
         if not doom_is_registered():
             if not doomu_is_retail():
                 copy_id1_doom1_skies()
@@ -774,7 +771,7 @@ def get_eps(wads_found):
         elif wadname == 'sigil2':
             if doom_is_registered() or doomu_is_retail():
                 eps += ['SIGIL II']
-        elif wadname == 'id1' and 'doom2' in wads_found and 'id1-res' in wads_found and 'id24res' in wads_found:
+        elif wadname == 'id1' and 'doom2' in wads_found and 'id1-res' in wads_found:
             eps += ['The Vulcan Abyss', 'Counterfeit Eden']
         elif wadname == 'iddm1' and 'doom2' in wads_found:
             eps += ['id Deathmatch Pack #1']

@@ -28,12 +28,12 @@ Here is the official list of WADs that WadFusion will recognize:
 - No Rest for the Living (`nerve.wad`)
 - SIGIL (`sigil.wad` and its optional music addon `sigil_shreds.wad`)
 - SIGIL II (`sigil2.wad` and optionally its MP3 soundtrack version `sigil2_mp3.wad`)
-- Legacy of Rust (`id1.wad`, `id1-res.wad`, `id24res.wad`, and `iddm1.wad` from the [KEX-based re-release](https://doomwiki.org/wiki/Doom_%2B_Doom_II))
+- Legacy of Rust (`id1.wad`, `id1-res.wad`, and `iddm1.wad` from the [KEX-based re-release](https://doomwiki.org/wiki/Doom_%2B_Doom_II))
 - [Xbox secret levels](https://classicdoom.com/xboxspec.htm) (`sewers.wad` and `betray.wad` from the [original Xbox port of DOOM](https://doomwiki.org/wiki/Xbox))
 - [Tech Gone Bad](https://www.doomworld.com/idgames/levels/doom/Ports/d-f/e1m8b) and [Phobos Mission Control](https://www.doomworld.com/idgames/levels/doom/Ports/d-f/e1m4b) (`e1m8b.wad` and `e1m4b.wad`, John Romero's map remakes)
 - Extras (`extras.wad` from the [Unity](https://doomwiki.org/wiki/Doom_Classic_Unity_port) or [KEX-based](https://doomwiki.org/wiki/Doom_%2B_Doom_II) re-releases)
 
-WadFusion requires `id1-res.wad` and `id24res.wad` for Legacy of Rust.
+WadFusion requires `id1-res.wad` for Legacy of Rust.
 
 If IWADs from the Unity or KEX-based re-releases are also included (must be named `doomunity.wad`, `doom2unity.wad`, `tntunity.wad`, `plutoniaunity.wad` or `doomkex.wad`, `doom2kex.wad`, `tntkex.wad`, `plutoniakex.wad`), WadFusion will extract the official widescreen assets from them. These versions can also be used as the main WADs for extraction, but do keep in mind that they are censored, and that WadFusion already comes with optional super-ultrawide assets.
 

@@ -2,7 +2,9 @@
 
 ## Unreleased Changes
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.4...HEAD)
+- Removed `id24res.wad` requirement for Legacy of Rust.
 - Added an option to use the original ID24 actors transparency.
+- Updated Polish localisation.
 
 ## [WadFusion 1.4.4](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.4) — [02 April 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.4)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.3...v1.4.4)
@@ -11,15 +13,14 @@
 - Fixed wrong skies in two `iddm1.wad` maps.
 - Updated Master Levels Rejects episode titles to fit in one line.
 - Updated Polish localisation.
+- Updated widescreen graphics.
+  - Updated the registered DOOM titlepic.
+  - Removed the "v1.2" label from the SIGIL titlepic.
+- `doom_fusion_widescreen_gfx.pk3` is now bundled with the releases.
 - The dummy file in the `source_wads` folder now lists recommended WADs.
 - The Windows installer now has WadFusion's resources bundled.
 - Changed compatibility warning text colour from gold to white.
 - Reordered some credits.
-
-Widescreen graphics:
-- Updated the registered DOOM titlepic.
-- Removed the "v1.2" label from the SIGIL titlepic.
-- `doom_fusion_widescreen_gfx.pk3` is now bundled with the releases.
 
 ## [WadFusion 1.4.3](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.3) — [25 March 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.3)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.2...v1.4.3)

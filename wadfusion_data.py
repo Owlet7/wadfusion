@@ -62,6 +62,7 @@ RES_FILES = [
     'textures.tnt', 'textures.plut', 'textures.id1',
     'textures.fusion', 'animdefs.txt', 'endoom',
     'in_epi1.txt', 'xwinter0.txt', 'xwinter1.txt',
+    'graphics/STAMMO24.lmp', 'graphics/STARMS24.lmp',
     'graphics/TITLEPIC.lmp', 'graphics/M_DOOM.lmp',
     'graphics/M_HELL.lmp', 'graphics/M_NOREST.lmp',
     'graphics/M_MASTER.lmp', 'graphics/M_MASTR1.lmp',
