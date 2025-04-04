@@ -22,6 +22,7 @@ https://www.doomworld.com/forum/topic/148537
 
 Thanks goes out to:
 
-- Nash Muhandes for Widepix
-- Scuba Steve for his Widescreen graphics
+- Nash Muhandes for Widepix.
+- Scuba Steve for his Widescreen graphics.
+- 00_Zombie_00 for this lovely Cyberdemon fatality sprite used in the Ultimate DOOM Titlepic.
 - id Software for making the greatest shooter of all time.
