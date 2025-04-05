@@ -121,7 +121,20 @@ RES_FILES = [
     'zscript/wf_textswap_d2sky.zs', 'zscript/wf_mapfixes.zs',
     'zscript/wf_music_sigil.zs', 'zscript/wf_music_idkfa.zs',
     'zscript/wf_sbar.zs', 'zscript/wf_sbar_alt.zs',
-    'wadfused.txt', 'sndinfo.txt'
+    'wadfused.txt',
+    # resources related to the id24 actors
+    # remove when / if these are added to GZDoom!
+    'sndinfo.txt', 'mapinfo.doomednums', 'language.id24tags.csv',
+    'zscript/id24gore.zs',
+    'zscript/id24nature.zs',
+    'zscript/id24tech.zs',
+    'zscript/id24ambientsounds.zs',
+    'zscript/id24ghoul.zs',
+    'zscript/id24banshee.zs',
+    'zscript/id24mindweaver.zs',
+    'zscript/id24plasmaguy.zs',
+    'zscript/id24vassago.zs',
+    'zscript/id24tyrant.zs'
 ]
 
 # list of files we can extract from
