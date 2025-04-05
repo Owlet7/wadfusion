@@ -10,7 +10,7 @@ The IWAD from the registered, non-Ultimate version of DOOM:
 DOOM.WAD
 
 PWADs from the KEX-based version of DOOM + DOOM II:
-masterlevels.wad, nerve.wad, sigil.wad, id1.wad, id1-res.wad, id24res.wad, iddm1.wad, extras.wad
+masterlevels.wad, nerve.wad, sigil.wad, id1.wad, iddm1.wad, extras.wad
 
 John Romero's PWADs:
 e1m8b.wad, e1m4b.wad, sigil_shreds.wad, sigil2.wad, sigil2_mp3.wad

@@ -141,7 +141,7 @@ RES_FILES = [
 WADS = [
     'doom', 'doomu', 'doom2', 'tnt', 'plutonia',
     'sigil', 'sigil_shreds', 'sigil2', 'sigil2_mp3',
-    'id1', 'id1-res', 'id24res', 'iddm1', 'extras',
+    'id1', 'iddm1', 'extras',
     'doomunity', 'doom2unity', 'tntunity', 'plutoniaunity',
     'doomkex', 'doom2kex', 'tntkex', 'plutoniakex',
     'masterlevels', 'nerve'
@@ -160,8 +160,7 @@ REPORT_WADS = [
     'cpu', 'device_1', 'dmz', 'cdk_fury', 'e_inside',
     'hive', 'twm01', 'mines', 'anomaly', 'farside',
     'trouble', 'dante25', 'achron22', 'udtwid', 'caball',
-    'nerve', 'id1', 'id1-res', 'id24res', 'iddm1',
-    'tnt', 'plutonia',
+    'nerve', 'id1', 'iddm1', 'tnt', 'plutonia',
     'sewers', 'betray', 'e1m4b', 'e1m8b', 'extras',
     'doomunity', 'doom2unity', 'tntunity', 'plutoniaunity',
     'doomkex', 'doom2kex', 'tntkex', 'plutoniakex'
@@ -200,8 +199,6 @@ WAD_LUMP_LISTS = {
     'sigil2': ['graphics_sigil2', 'music_sigil2', 'patches_sigil2', 'data_sigil2', 'flats_sigil2'],
     'sigil2_mp3': ['music_sigil2_shreds'],
     'id1': ID1_LUMPS,
-    'id1-res': ['data_id1-res'],
-    'id24res': ['graphics_id24res'],
     'iddm1': [],
     # widescreen assets from unity and kex ports
     'doomunity': ['graphics_doom1_unity'],
