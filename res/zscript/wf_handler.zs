@@ -157,6 +157,16 @@ class WadFusionHandler : EventHandler
 			ID24IncineratorProjectile(e.Thing).A_SetRenderStyle(0.5, STYLE_Translucent);
 			ID24IncineratorProjectile(e.Thing).bZDOOMTRANS = false;
 		}
+		if ( ID24GhoulBall(e.Thing) != null )
+		{
+			ID24GhoulBall(e.Thing).A_SetRenderStyle(0.5, STYLE_Translucent);
+			ID24GhoulBall(e.Thing).bZDOOMTRANS = false;
+		}
+		if ( ID24VassagoFlame(e.Thing) != null )
+		{
+			ID24VassagoFlame(e.Thing).A_SetRenderStyle(0.5, STYLE_Translucent);
+			ID24VassagoFlame(e.Thing).bZDOOMTRANS = false;
+		}
 	}
 	
 	void DoId24WeaponReplacements(ReplaceEvent e)

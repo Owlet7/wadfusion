@@ -190,8 +190,8 @@ map LR_MAP14 "$XHUSTR_15"
 	TitlePatch = "XWILV16"
 	Sky1 =  "SKYX5A"
 	Music = "D_SKELET"
-	SpecialAction = "Deh_Actor_156", "Floor_LowerToNearest", 666, 8 // TyrantBoss1
-	SpecialAction = "Deh_Actor_157", "Floor_LowerToNearest", 667, 8 // TyrantBoss2
+	SpecialAction = "ID24TyrantBoss1", "Floor_LowerToNearest", 666, 8
+	SpecialAction = "ID24TyrantBoss2", "Floor_LowerToNearest", 667, 8
 	Author = "$WF_AU_XASER"
 }
 
