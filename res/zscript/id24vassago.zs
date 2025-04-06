@@ -85,8 +85,8 @@ class ID24VassagoFlame : Actor
 		Projectile;
 		+ZDOOMTRANS
 		RenderStyle "Add";
-		SeeSound "monsters/tyrant/attack";
-		DeathSound "monsters/tyrant/shotx";
+		SeeSound "monsters/vassago/burn";
+		DeathSound "monsters/vassago/shotx";
 	}
 	States
 	{
@@ -97,44 +97,44 @@ class ID24VassagoFlame : Actor
 		VFLM C 0 BRIGHT { bNoGravity = false; }
 		VFLM C 0 BRIGHT A_ChangeLinkFlags(0, 0);
 		VFLM C 0 BRIGHT A_Jump(128, "DeathSound2");
-		VFLM C 0 BRIGHT A_StartSound("monsters/tyrant/hot1");
+		VFLM C 0 BRIGHT A_StartSound("monsters/vassago/hot1");
 		goto Burninate;
 	DeathSound2:
-		VFLM C 0 BRIGHT A_StartSound("monsters/tyrant/hot2");
+		VFLM C 0 BRIGHT A_StartSound("monsters/vassago/hot2");
 		Goto Burninate;
 	Burninate:
 		VFLM C 4 BRIGHT A_RadiusDamage(10, 128);
 		VFLM D 4 BRIGHT;
 		VFLM E 4 BRIGHT;
-		VFLM F 0 BRIGHT A_StartSound("monsters/tyrant/hot3");
+		VFLM F 0 BRIGHT A_StartSound("monsters/vassago/hot3");
 		VFLM F 4 BRIGHT A_RadiusDamage(10, 128);
 		VFLM G 4 BRIGHT;
 		VFLM H 4 BRIGHT;
-		VFLM F 0 BRIGHT A_StartSound("monsters/tyrant/hot2");
+		VFLM F 0 BRIGHT A_StartSound("monsters/vassago/hot2");
 		VFLM F 4 BRIGHT A_RadiusDamage(10, 128);
 		VFLM G 4 BRIGHT;
 		VFLM H 4 BRIGHT;
-		VFLM F 0 BRIGHT A_StartSound("monsters/tyrant/hot3");
+		VFLM F 0 BRIGHT A_StartSound("monsters/vassago/hot3");
 		VFLM F 4 BRIGHT A_RadiusDamage(10, 128);
 		VFLM G 4 BRIGHT;
 		VFLM H 4 BRIGHT;
-		VFLM F 0 BRIGHT A_StartSound("monsters/tyrant/hot1");
+		VFLM F 0 BRIGHT A_StartSound("monsters/vassago/hot1");
 		VFLM F 4 BRIGHT A_RadiusDamage(10, 128);
 		VFLM G 4 BRIGHT;
 		VFLM H 4 BRIGHT;
-		VFLM F 0 BRIGHT A_StartSound("monsters/tyrant/hot2");
+		VFLM F 0 BRIGHT A_StartSound("monsters/vassago/hot2");
 		VFLM F 4 BRIGHT A_RadiusDamage(10, 128);
 		VFLM G 4 BRIGHT;
 		VFLM H 4 BRIGHT;
-		VFLM F 0 BRIGHT A_StartSound("monsters/tyrant/hot1");
+		VFLM F 0 BRIGHT A_StartSound("monsters/vassago/hot1");
 		VFLM F 4 BRIGHT A_RadiusDamage(10, 128);
 		VFLM G 4 BRIGHT;
 		VFLM H 4 BRIGHT;
-		VFLM F 0 BRIGHT A_StartSound("monsters/tyrant/hot2");
+		VFLM F 0 BRIGHT A_StartSound("monsters/vassago/hot2");
 		VFLM F 4 BRIGHT A_RadiusDamage(10, 128);
 		VFLM G 4 BRIGHT;
 		VFLM H 4 BRIGHT;
-		VFLM I 0 BRIGHT A_StartSound("monsters/tyrant/hot3");
+		VFLM I 0 BRIGHT A_StartSound("monsters/vassago/hot3");
 		VFLM I 4 BRIGHT A_RadiusDamage(10, 128);
 		VFLM J 4 BRIGHT;
 		VFLM K 4 BRIGHT;
