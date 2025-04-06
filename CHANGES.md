@@ -2,7 +2,12 @@
 
 ## Unreleased Changes
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.4...HEAD)
-- Removed `id24res.wad` requirement for Legacy of Rust.
+- Removed `id1-res.wad` and `id24res.wad` requirement for Legacy of Rust.
+  - Instead of extracting DeHackEd lumps, the Legacy of Rust monsters and
+    decorations have been remade as ZScript actors. These will be removed when
+    or if they get added to GZDoom.
+  - Instead of extracting HUD elements from `id24res.wad`, they were taken from
+    the ID24 0.9.1 specification's resources.
 - Added an option to use the original ID24 actors transparency.
 - Rewrote how weapon slots are drawn in the alternate fullscreen HUD.
   - The weapon slots should now work with any modded weapons.
