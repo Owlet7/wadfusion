@@ -116,6 +116,7 @@ RES_FILES = [
     'mapinfo/master_levels_flynn.txt',
     'mapinfo/master_levels_anderson.txt',
     'mapinfo/master_levels_kvernmo.txt',
+    'mapinfo/doomednums.txt',
     'zscript/wf_handler.zs', 'zscript/wf_handler_static.zs',
     'zscript/wf_textswap.zs', 'zscript/wf_textswap_all.zs',
     'zscript/wf_textswap_d2sky.zs', 'zscript/wf_mapfixes.zs',
@@ -124,7 +125,7 @@ RES_FILES = [
     'wadfused.txt',
     # resources related to the id24 actors
     # remove when / if these are added to GZDoom!
-    'sndinfo.txt', 'mapinfo.doomednums', 'language.id24tags.csv',
+    'sndinfo.txt', 'language.id24tags.csv',
     'zscript/id24gore.zs',
     'zscript/id24nature.zs',
     'zscript/id24tech.zs',
