@@ -53,7 +53,7 @@ OptionMenu "WadFusionCompatibilityOptions"
 	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL3", "WadFusionCompatibilityTexSwapPlutonia"
 	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL4", "WadFusionCompatibilityTexSwapId1"
 	StaticText " "
-	Submenu "$WF_MENU_COMPAT_READTHIS" menu", "ReadThisMenu"
+	Submenu "$WF_MENU_COMPAT_READTHIS", "ReadThisMenu"
 }
 
 OptionValue "WF_COMPAT_ID24_WEAPONS"
