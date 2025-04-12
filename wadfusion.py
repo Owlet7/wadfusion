@@ -55,6 +55,8 @@ from os import path
 
 import omg
 
+ARGUMENTS = sys.argv[1:]
+
 VERSION = '1.4.4'
 
 # abspath is used for the sake of the Windows executable
@@ -117,6 +119,10 @@ def logs(line, error=False):
     global logfile, num_errors
     if not logfile:
         logfile = open(LOG_FILENAME, 'w', encoding='utf-8')
+    for i in ARGUMENTS:
+        if i == '-v' or i == '--verbose':
+            print(line)
+            break
     logfile.write(line + '\n')
     if error:
         num_errors += 1
