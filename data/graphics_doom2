@@ -4,6 +4,7 @@ INTERPIC
 // extract copies for nerve
 INTERPIC : INTERNV
 M_DOOM : M_LOGONV
+TITLEPIC : TITLENV
 // extract copies for masterlevels
 INTERPIC : TITLEML
 M_DOOM : M_LOGOML

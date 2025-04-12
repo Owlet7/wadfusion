@@ -3,8 +3,9 @@ HELP
 CREDIT
 BOSSBACK
 INTERPIC
-// extract a copy of intermission bg for nerve
+// extract copies for nerve
 INTERPIC : INTERNV
-// extract a titlescreen bg for masterlevels
+TITLEPIC : TITLENV
+// extract copies for masterlevels
 INTERPIC : TITLEML
 TITLEPIC : TITLED2
