@@ -8,6 +8,11 @@
     or if they get added to GZDoom.
   - Instead of extracting HUD elements from `id24res.wad`, they were taken from
     the ID24 0.9.1 specification's resources.
+- Since WadFusion is now different enough from WadSmoosh to not be backwards
+  compatible with it, the gametype has been changed from
+  `doom.id.wadsmoosh.fusion` to `doom.id.fusion`.
+  - **Existing saves and autoloads will need to be moved!**
+  - **Fusion mods that use the lump filtering feature will need to be updated!**
 - Added an option to use the original ID24 actors transparency.
 - Rewrote how weapon slots are drawn in the alternate fullscreen HUD.
   - The weapon slots should now work with any modded weapons.
