@@ -9,6 +9,10 @@ END5
 END6
 HELP1
 HELP1 : HELP
+M_DOOM : M_LOGOD1
+// extract copies for sigil
+M_DOOM : M_LOGOS1
+M_DOOM : M_LOGOS2
 M_EPI1
 M_EPI2
 M_EPI3

@@ -91,6 +91,7 @@ SIGIL2_MP3_ALT_FILENAMES = []
 REGISTERED_DOOM_ONLY_LUMP = ''
 ULTIMATE_DOOM_ONLY_LUMP = ''
 NERVE_UNITY_KEX_ONLY_LUMP = ''
+PWAD_KEX_ONLY_LUMP = ''
 EXTRAS_KEX_ONLY_LUMP = ''
 
 logfile = None
@@ -161,6 +162,13 @@ def nerve_is_unity():
     if get_wad_filename('nerve'):
       nerve_wad.from_file(get_wad_filename('nerve'))
     if nerve_wad.graphics.get(NERVE_UNITY_KEX_ONLY_LUMP, None):
+        return True
+
+def pwad_is_kex(wad_name):
+    in_wad = omg.WAD()
+    if get_wad_filename(wad_name):
+      in_wad.from_file(get_wad_filename(wad_name))
+    if in_wad.graphics.get(PWAD_KEX_ONLY_LUMP, None):
         return True
 
 def extras_is_kex():
@@ -298,6 +306,15 @@ def add_to_wad_lump_lists():
     if nerve_is_unity():
         logs('  Extracting Unity or KEX resources from nerve.wad')
         WAD_LUMP_LISTS['nerve'] += ['graphics_nerve_unity']
+        if pwad_is_kex('nerve'):
+            logs('  Extracting KEX resources from nerve.wad')
+            WAD_LUMP_LISTS['nerve'] += ['graphics_nerve_kex']
+    if pwad_is_kex('sigil'):
+        logs('  Extracting KEX resources from sigil.wad')
+        WAD_LUMP_LISTS['sigil'] += ['graphics_sigil_kex']
+    if pwad_is_kex('sigil2'):
+        logs('  Extracting KEX resources from sigil2.wad')
+        WAD_LUMP_LISTS['sigil2'] += ['graphics_sigil2_kex']
     # if extras is the kex version
     if extras_is_kex():
         logs('  Extracting KEX resources from extras.wad')

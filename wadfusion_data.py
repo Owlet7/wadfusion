@@ -208,8 +208,8 @@ WAD_LUMP_LISTS = {
     'plutoniaunity': ['graphics_plutonia_unity'],
     'doomkex': ['graphics_doom1_unity'],
     'doom2kex': ['graphics_doom2_unity'],
-    'tntkex': ['graphics_tnt_kex'],
-    'plutoniakex': ['graphics_plutonia_kex'],
+    'tntkex': ['graphics_tnt_unity', 'graphics_tnt_kex'],
+    'plutoniakex': ['graphics_plutonia_unity', 'graphics_plutonia_kex'],
     'nerve': [],
     # extras.wad assets from unity and kex ports
     'extras': ['data_extras', 'sounds_extras']
@@ -302,6 +302,9 @@ ULTIMATE_DOOM_ONLY_LUMP = 'M_EPI4'
 
 # lump whose presence distinguishes Unity & KEX vs original nerve.wad
 NERVE_UNITY_KEX_ONLY_LUMP = 'INTERPIC'
+
+# lump whose presence distinguishes KEX vs original nerve.wad, sigil.wad, and sigil2.wad
+PWAD_KEX_ONLY_LUMP = 'M_DOOM'
 
 # lump whose presence distinguishes Unity vs KEX extras.wad
 EXTRAS_KEX_ONLY_LUMP = 'WATERMAP'

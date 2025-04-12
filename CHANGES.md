@@ -14,6 +14,10 @@
   - Moved keys to the right to not obscure the weapon slots.
 - Updated widescreen DOOM 1 titlepic and help graphics.
 - Updated Polish localisation.
+- Added `-v` and `--verbose` command line arguments. If used, all the logged
+  information will be printed out.
+- The `M_DOOM` logo graphics of each game will now be extracted.
+  - Currently not used for anything.
 
 ## [WadFusion 1.4.4](https://github.com/Owlet7/wadfusion/releases/tag/v1.4.4) — [02 April 2025](https://github.com/Owlet7/wadfusion/tree/v1.4.4)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.3...v1.4.4)
