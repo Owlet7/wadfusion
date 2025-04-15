@@ -23,39 +23,6 @@ extend class WadFusionHandler
 	
 	// replace conflicting textures based on which map is loaded
 	
-	void DoFinalDoomTextureReplacements()
-	{
-		string mapPrefix = Level.MapName.Left(3).MakeLower();
-		if ( mapPrefix == "tn_" )
-		{
-			Level.ReplaceTextures("BLODGR1",  "BLODGRT1", TexMan.NOT_FLAT); // different from doom1
-			Level.ReplaceTextures("BLODGR4",  "BLODGRT4", TexMan.NOT_FLAT); // different from doom1
-			Level.ReplaceTextures("SKY1",     "TSKY1",    TexMan.NOT_FLAT); // different from doom1
-			Level.ReplaceTextures("SKY2",     "TSKY2",    TexMan.NOT_FLAT); // different from doom1
-			Level.ReplaceTextures("SKY3",     "TSKY3",    TexMan.NOT_FLAT); // different from doom1
-			Level.ReplaceTextures("SLADRIP1", "SLADRPT1", TexMan.NOT_FLAT); // different from doom1
-			Level.ReplaceTextures("SLADRIP3", "SLADRPT3", TexMan.NOT_FLAT); // different from doom1
-			Level.ReplaceTextures("SW1GSTON", "SW1GSTNT", TexMan.NOT_FLAT); // different from doom2
-			Level.ReplaceTextures("SW2GSTON", "SW2GSTNT", TexMan.NOT_FLAT); // different from doom2
-			Level.ReplaceTextures("SW1SKULL", "SW1SKULT", TexMan.NOT_FLAT); // different from doom2
-			Level.ReplaceTextures("SW2SKULL", "SW2SKULT", TexMan.NOT_FLAT); // different from doom2
-			Level.ReplaceTextures("WFALL1",   "TWFALL1",  TexMan.NOT_FLAT); // different from plutonia
-			Level.ReplaceTextures("WFALL4",   "TWFALL4",  TexMan.NOT_FLAT); // different from plutonia
-		}
-		else if ( mapPrefix == "pl_" )
-		{
-			Level.ReplaceTextures("DBRAIN1",  "PBRAIN1",  TexMan.NOT_FLAT); // different from doom2
-			Level.ReplaceTextures("DBRAIN4",  "PBRAIN4",  TexMan.NOT_FLAT); // different from doom2
-			Level.ReplaceTextures("FIREBLU1", "FIREPLU1", TexMan.NOT_FLAT); // different from doom2
-			Level.ReplaceTextures("FIREBLU2", "FIREPLU2", TexMan.NOT_FLAT); // different from doom2
-			Level.ReplaceTextures("SKY1",     "PSKY1",    TexMan.NOT_FLAT); // different from doom1
-			Level.ReplaceTextures("SKY2",     "PSKY2",    TexMan.NOT_FLAT); // different from doom1
-			Level.ReplaceTextures("SKY3",     "PSKY3",    TexMan.NOT_FLAT); // different from doom1
-			Level.ReplaceTextures("SW1SKULL", "SW1SKULP", TexMan.NOT_FLAT); // different from doom2
-			Level.ReplaceTextures("SW2SKULL", "SW2SKULP", TexMan.NOT_FLAT); // different from doom2
-		}
-	}
-	
 	void DoDoom1TextureReplacements()
 	{
 		// detect doom1 style map name
@@ -67,6 +34,9 @@ extend class WadFusionHandler
 			Level.ReplaceTextures("BRNPOIS",  "BRNPOIS1", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("NUKEPOIS", "NUKPOIS1", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SHAWN1",   "SHAWN1A",  TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SKY1",     "DSKY1",    TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SKY2",     "DSKY2",    TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SKY3",     "DSKY3",    TexMan.NOT_FLAT);
 			Level.ReplaceTextures("STEP1",    "STEP1A",   TexMan.NOT_FLAT);
 			Level.ReplaceTextures("STEP2",    "STEP2A",   TexMan.NOT_FLAT);
 			Level.ReplaceTextures("STEP3",    "STEP3A",   TexMan.NOT_FLAT);
@@ -79,6 +49,42 @@ extend class WadFusionHandler
 			Level.ReplaceTextures("SW2STARG", "SW2STARA", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STONE", "SW2STONA", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STON2", "SW2STONB", TexMan.NOT_FLAT);
+		}
+	}
+	
+	void DoFinalDoomTextureReplacements()
+	{
+		// detect tnt or plutonia style map name
+		string mapPrefix = Level.MapName.Left(3).MakeLower();
+		if ( mapPrefix == "tn_" )
+		{
+			// replace tnt textures that are different from doom2
+			Level.ReplaceTextures("BLODGR1",  "BLODGRT1", TexMan.NOT_FLAT); // different from doom1
+			Level.ReplaceTextures("BLODGR4",  "BLODGRT4", TexMan.NOT_FLAT); // different from doom1
+			Level.ReplaceTextures("SKY1",     "TSKY1",    TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SKY2",     "TSKY2",    TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SKY3",     "TSKY3",    TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SLADRIP1", "SLADRPT1", TexMan.NOT_FLAT); // different from doom1
+			Level.ReplaceTextures("SLADRIP3", "SLADRPT3", TexMan.NOT_FLAT); // different from doom1
+			Level.ReplaceTextures("SW1GSTON", "SW1GSTNT", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW2GSTON", "SW2GSTNT", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW1SKULL", "SW1SKULT", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW2SKULL", "SW2SKULT", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("WFALL1",   "TWFALL1",  TexMan.NOT_FLAT); // different from plutonia
+			Level.ReplaceTextures("WFALL4",   "TWFALL4",  TexMan.NOT_FLAT); // different from plutonia
+		}
+		else if ( mapPrefix == "pl_" )
+		{
+			// replace plutonia textures that are different from doom2
+			Level.ReplaceTextures("DBRAIN1",  "PBRAIN1",  TexMan.NOT_FLAT);
+			Level.ReplaceTextures("DBRAIN4",  "PBRAIN4",  TexMan.NOT_FLAT);
+			Level.ReplaceTextures("FIREBLU1", "FIREPLU1", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("FIREBLU2", "FIREPLU2", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SKY1",     "PSKY1",    TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SKY2",     "PSKY2",    TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SKY3",     "PSKY3",    TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW1SKULL", "SW1SKULP", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SW2SKULL", "SW2SKULP", TexMan.NOT_FLAT);
 		}
 	}
 	
@@ -103,9 +109,6 @@ extend class WadFusionHandler
 			Level.ReplaceTextures("SW2STONE", "SW2STONA", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STON2", "SW2STONB", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("WFALL1",   "XWFALL1",  TexMan.NOT_FLAT); // different from plutonia
-			Level.ReplaceTextures("SKY1",     "RSKY1",    TexMan.NOT_FLAT); // dm_map10 sets its sky texture to
-			Level.ReplaceTextures("SKY2",     "RSKY2",    TexMan.NOT_FLAT); //    SKY1 with an MBF sky transfer
-			Level.ReplaceTextures("SKY3",     "RSKY3",    TexMan.NOT_FLAT);
 		}
 	}
 	

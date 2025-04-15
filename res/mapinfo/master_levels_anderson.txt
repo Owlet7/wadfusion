@@ -11,7 +11,7 @@ defaultmap
 map ML_MAP33 "$ML_DANTE" // bonus level
 {
 	Next = "ML_MAP34"
-	Sky1 = "RSKY1"
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV32"
 	Music = "$MUSIC_STALKS"
 }

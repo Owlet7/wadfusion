@@ -119,9 +119,9 @@ RES_FILES = [
     'mapinfo/doomednums.txt',
     'zscript/wf_handler.zs', 'zscript/wf_handler_static.zs',
     'zscript/wf_textswap.zs', 'zscript/wf_textswap_all.zs',
-    'zscript/wf_textswap_d2sky.zs', 'zscript/wf_mapfixes.zs',
     'zscript/wf_music_sigil.zs', 'zscript/wf_music_idkfa.zs',
     'zscript/wf_sbar.zs', 'zscript/wf_sbar_alt.zs',
+    'zscript/wf_mapfixes.zs',
     'wadfused.txt',
     # resources related to the id24 actors
     # remove when / if these are added to GZDoom!

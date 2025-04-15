@@ -13,6 +13,11 @@
   `doom.id.wadsmoosh.fusion` to `doom.id.fusion`.
   - **Existing saves and autoloads will need to be moved!**
   - **Fusion mods that use the lump filtering feature will need to be updated!**
+- Removed "DOOM II custom sky compatibility" option.
+  - Renamed DOOM II's skies back to `SKY1`, `SKY2`, and `SKY3`.
+  - Renamed DOOM 1's skies to `DSKY1`, `DSKY2`, and `DSKY3`.
+  - DOOM II's sky textures are now treated as the "default" ones.
+  - Added DOOM 1 skies to "Texture substitutions in all levels" options.
 - Added an option to use the original ID24 actors transparency.
 - Rewrote how weapon slots are drawn in the alternate fullscreen HUD.
   - The weapon slots should now work with any modded weapons.

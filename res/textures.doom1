@@ -321,21 +321,6 @@ Texture "SKULWALL", 128, 128
 	Patch "WALL79_1", 124, 0
 }
 
-Texture "SKY1", 256, 128
-{
-	Patch "SKY1", 0, 0
-}
-
-Texture "SKY2", 256, 128
-{
-	Patch "SKY2", 0, 0
-}
-
-Texture "SKY3", 256, 128
-{
-	Patch "SKY3", 0, 0
-}
-
 Texture "SKY4", 256, 128
 {
 	Patch "SKY4", 0, 0
@@ -424,7 +409,7 @@ Texture "WOODSKUL", 64, 128
 }
 
 // the following textures also exist in doom2.wad, but are different there.
-// by default WadSmooshHandler will swap these in for ExMx-named levels.
+// by default WadFusionHandler will swap these in for ExMx-named levels.
 
 // renamed from BRNPOIS
 Texture "BRNPOIS1", 64, 128
@@ -449,7 +434,7 @@ Texture "NUKPOIS1", 64, 128
 }
 
 // renamed from BIGDOOR7
-// patches originally had -4 y offset, didn't look right for some reason
+// patches originally had -4 y offset, this is a bug
 Texture "BIGDOR7A", 128, 128
 {
 	Patch "W105_1", -4, 0
@@ -464,6 +449,24 @@ Texture "SHAWN1A", 128, 128
 	Patch "CYL1_1", 0, 0
 	Patch "WALL01_1", 118, 0
 	Patch "WALL01_1", 117, 56
+}
+
+// renamed from SKY1
+Texture "DSKY1", 256, 128
+{
+	Patch "SKY1", 0, 0
+}
+
+// renamed from SKY2
+Texture "DSKY2", 256, 128
+{
+	Patch "SKY2", 0, 0
+}
+
+// renamed from SKY3
+Texture "DSKY3", 256, 128
+{
+	Patch "SKY3", 0, 0
 }
 
 // renamed from STEP1

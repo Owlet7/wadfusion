@@ -17,7 +17,6 @@ user bool wf_compat_texswap_d1 = true;
 user bool wf_compat_texswap_fd = true;
 user bool wf_compat_texswap_id1 = true;
 user bool wf_compat_texswap_ml = true;
-user bool wf_compat_texswap_d2sky = true;
 
 user int wf_compat_texswap_all = 0;
 user bool wf_compat_texswap_all_d1_00 = true;
@@ -36,6 +35,9 @@ user bool wf_compat_texswap_all_d1_12 = true;
 user bool wf_compat_texswap_all_d1_13 = true;
 user bool wf_compat_texswap_all_d1_14 = true;
 user bool wf_compat_texswap_all_d1_15 = true;
+user bool wf_compat_texswap_all_d1_16 = true;
+user bool wf_compat_texswap_all_d1_17 = true;
+user bool wf_compat_texswap_all_d1_18 = true;
 user bool wf_compat_texswap_all_tn_00 = true;
 user bool wf_compat_texswap_all_tn_01 = true;
 user bool wf_compat_texswap_all_tn_02 = true;

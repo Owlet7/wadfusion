@@ -60,7 +60,6 @@ WF_MENU_COMPAT_TEXSWAP_D1,,,DOOM 1 texture substitutions,,,,,,,,,,,,,,,,,Zamieni
 WF_MENU_COMPAT_TEXSWAP_FD,,,Final DOOM texture substitutions,,,,,,,,,,,,,,,,,Zamienione tekstury w Final DOOM,,,,Замена текстур в Финальном DOOM,,,,,
 WF_MENU_COMPAT_TEXSWAP_ID1,,,Legacy of Rust texture substitutions,,,,,,,,,,,,,,,,,Zamienione tekstury w Legacy of Rust,,,,Замена текстур в Legacy of Rust,,,,,
 WF_MENU_COMPAT_TEXSWAP_ML,,,Master Levels texture substitutions,,,,,,,,,,,,,,,,,Zamienione tekstury w Poziomach mistrzów,,,,Замена текстур в Уровнях мастеров,,,,,
-WF_MENU_COMPAT_TEXSWAP_D2SKY,,,DOOM II custom sky compatibility,,,,,,,,,,,,,,,,,Kompatybilność ze zmodyfikowanym niebem w DOOM II,,,,Совместимость с пользовательскими текстурами неба в DOOM II,,,,,
 WF_MENU_COMPAT_TEXSWAP_ALL,,,Texture substitutions in all levels,,,,,,,,,,,,,,,,,Zamienione tekstury we wszystkich poziomach,,,,Замена текстур во всех уровнях,,,,,
 WF_MENU_COMPAT_TEXSWAP_ALL_MODE,,,Mode,,,,,,,,,,,,,,,,,Tryb,,,,Режим,,,,,
 WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL1,,,DOOM 1,,,,,,,,,,,,,,,,,,,,,,,,,,

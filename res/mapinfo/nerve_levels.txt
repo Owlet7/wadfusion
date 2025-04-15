@@ -12,7 +12,7 @@ defaultmap
 map NV_MAP01 "$NHUSTR_1"
 {
 	Next = "NV_MAP02"
-	Sky1 = "RSKY1"
+	Sky1 = "SKY1"
 	TitlePatch = "NWILV00"
 	Par = 75
 	Music = "$MUSIC_MESSAG"
@@ -22,7 +22,7 @@ map NV_MAP01 "$NHUSTR_1"
 map NV_MAP02 "$NHUSTR_2"
 {
 	Next = "NV_MAP03"
-	Sky1 = "RSKY1"
+	Sky1 = "SKY1"
 	TitlePatch = "NWILV01"
 	Par = 105
 	Music = "$MUSIC_DDTBLU"
@@ -32,7 +32,7 @@ map NV_MAP02 "$NHUSTR_2"
 map NV_MAP03 "$NHUSTR_3"
 {
 	Next = "NV_MAP04"
-	Sky1 = "RSKY1"
+	Sky1 = "SKY1"
 	TitlePatch = "NWILV02"
 	Par = 120
 	Music = "$MUSIC_DOOM"
@@ -43,7 +43,7 @@ map NV_MAP04 "$NHUSTR_4"
 {
 	Next = "NV_MAP05"
 	SecretNext = "NV_MAP09"
-	Sky1 = "RSKY1"
+	Sky1 = "SKY1"
 	TitlePatch = "NWILV03"
 	Par = 105
 	Music = "$MUSIC_SHAWN"
@@ -53,7 +53,7 @@ map NV_MAP04 "$NHUSTR_4"
 map NV_MAP05 "$NHUSTR_5"
 {
 	Next = "NV_MAP06"
-	Sky1 = "RSKY3"
+	Sky1 = "SKY3"
 	TitlePatch = "NWILV04"
 	Par = 210
 	Music = "$MUSIC_IN_CIT"
@@ -63,7 +63,7 @@ map NV_MAP05 "$NHUSTR_5"
 map NV_MAP06 "$NHUSTR_6"
 {
 	Next = "NV_MAP07"
-	Sky1 = "RSKY3"
+	Sky1 = "SKY3"
 	TitlePatch = "NWILV05"
 	Par = 105
 	Music = "$MUSIC_THE_DA"
@@ -73,7 +73,7 @@ map NV_MAP06 "$NHUSTR_6"
 map NV_MAP07 "$NHUSTR_7"
 {
 	Next = "NV_MAP08"
-	Sky1 = "RSKY3"
+	Sky1 = "SKY3"
 	TitlePatch = "NWILV06"
 	Par = 165
 	Music = "$MUSIC_IN_CIT"
@@ -84,7 +84,7 @@ map NV_MAP07 "$NHUSTR_7"
 map NV_MAP08 "$NHUSTR_8"
 {
 	Next = "EndGameC"
-	Sky1 = "RSKY3"
+	Sky1 = "SKY3"
 	TitlePatch = "NWILV07"
 	Par = 105
 	Music = "$MUSIC_SHAWN"
@@ -94,7 +94,7 @@ map NV_MAP08 "$NHUSTR_8"
 map NV_MAP09 "$NHUSTR_9"
 {
 	Next = "NV_MAP05"
-	Sky1 = "RSKY1"
+	Sky1 = "SKY1"
 	TitlePatch = "NWILV08"
 	Par = 135
 	Music = "$MUSIC_DDTBLU"

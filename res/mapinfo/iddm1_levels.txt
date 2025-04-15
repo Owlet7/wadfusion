@@ -94,7 +94,7 @@ map DM_MAP10 "$MHUSTR_10"
 	Next = "DM_MAP11"
 	// the sky texture is set with an MBF sky transfer to "SKY1",
 	// so we replace it with zscript
-	Sky1 = "RSKY1"
+	Sky1 = "SKY1"
 	NoIntermission
 	Music = "D_BONK"
 	Author = "$WF_AU_CIBULAS"
@@ -149,7 +149,7 @@ map DM_MAP15 "$MHUSTR_15"
 map DM_MAP16 "$MHUSTR_16"
 {
 	Next = "DM_MAP17"
-	Sky1 = "RSKY2"
+	Sky1 = "SKY2"
 	NoIntermission
 	Music = "D_WIZARD"
 	Author = "$WF_AU_MURCHISON"

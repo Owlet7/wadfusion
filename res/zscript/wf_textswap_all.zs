@@ -44,6 +44,35 @@ extend class WadFusionHandler
 		if ( CVar.FindCVar("wf_compat_texswap_all_d1_13").GetBool() ) Level.ReplaceTextures("SW2STARG", "SW2STARA", TexMan.NOT_FLAT);
 		if ( CVar.FindCVar("wf_compat_texswap_all_d1_14").GetBool() ) Level.ReplaceTextures("SW2STONE", "SW2STONA", TexMan.NOT_FLAT);
 		if ( CVar.FindCVar("wf_compat_texswap_all_d1_15").GetBool() ) Level.ReplaceTextures("SW2STON2", "SW2STONB", TexMan.NOT_FLAT);
+		
+		// override skies
+		if ( CVar.FindCVar("wf_compat_texswap_all_d1_16").GetBool() )
+		{
+			Level.ReplaceTextures("SKY1", "DSKY1", TexMan.NOT_FLAT);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+			{
+				TextureID sky2 = Level.SkyTexture2;
+				Level.ChangeSky(TexMan.CheckForTexture("DSKY1"), sky2);
+			}
+		}
+		if ( CVar.FindCVar("wf_compat_texswap_all_d1_17").GetBool() )
+		{
+			Level.ReplaceTextures("SKY2", "DSKY2", TexMan.NOT_FLAT);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY2" )
+			{
+				TextureID sky2 = Level.SkyTexture2;
+				Level.ChangeSky(TexMan.CheckForTexture("DSKY2"), sky2);
+			}
+		}
+		if ( CVar.FindCVar("wf_compat_texswap_all_d1_18").GetBool() )
+		{
+			Level.ReplaceTextures("SKY3", "DSKY3", TexMan.NOT_FLAT);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY3" )
+			{
+				TextureID sky2 = Level.SkyTexture2;
+				Level.ChangeSky(TexMan.CheckForTexture("DSKY3"), sky2);
+			}
+		}
 	}
 	
 	void DoTextureReplacementsAllTnt()
@@ -63,7 +92,7 @@ extend class WadFusionHandler
 		if ( CVar.FindCVar("wf_compat_texswap_all_tn_02").GetBool() )
 		{
 			Level.ReplaceTextures("SKY1", "TSKY1", TexMan.NOT_FLAT);
-			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" || TexMan.GetName(Level.SkyTexture1) == "RSKY1" )
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
 			{
 				TextureID sky2 = Level.SkyTexture2;
 				Level.ChangeSky(TexMan.CheckForTexture("TSKY1"), sky2);
@@ -72,7 +101,7 @@ extend class WadFusionHandler
 		if ( CVar.FindCVar("wf_compat_texswap_all_tn_03").GetBool() )
 		{
 			Level.ReplaceTextures("SKY2", "TSKY2", TexMan.NOT_FLAT);
-			if ( TexMan.GetName(Level.SkyTexture1) == "SKY2" || TexMan.GetName(Level.SkyTexture1) == "RSKY2" )
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY2" )
 			{
 				TextureID sky2 = Level.SkyTexture2;
 				Level.ChangeSky(TexMan.CheckForTexture("TSKY2"), sky2);
@@ -81,7 +110,7 @@ extend class WadFusionHandler
 		if ( CVar.FindCVar("wf_compat_texswap_all_tn_04").GetBool() )
 		{
 			Level.ReplaceTextures("SKY3", "TSKY3", TexMan.NOT_FLAT);
-			if ( TexMan.GetName(Level.SkyTexture1) == "SKY3" || TexMan.GetName(Level.SkyTexture1) == "RSKY3" )
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY3" )
 			{
 				TextureID sky2 = Level.SkyTexture2;
 				Level.ChangeSky(TexMan.CheckForTexture("TSKY3"), sky2);
@@ -102,7 +131,7 @@ extend class WadFusionHandler
 		if ( CVar.FindCVar("wf_compat_texswap_all_pl_04").GetBool() )
 		{
 			Level.ReplaceTextures("SKY1", "PSKY1", TexMan.NOT_FLAT);
-			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" || TexMan.GetName(Level.SkyTexture1) == "RSKY1" )
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
 			{
 				TextureID sky2 = Level.SkyTexture2;
 				Level.ChangeSky(TexMan.CheckForTexture("PSKY1"), sky2);
@@ -111,7 +140,7 @@ extend class WadFusionHandler
 		if ( CVar.FindCVar("wf_compat_texswap_all_pl_05").GetBool() )
 		{
 			Level.ReplaceTextures("SKY2", "PSKY2", TexMan.NOT_FLAT);
-			if ( TexMan.GetName(Level.SkyTexture1) == "SKY2" || TexMan.GetName(Level.SkyTexture1) == "RSKY2" )
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY2" )
 			{
 				TextureID sky2 = Level.SkyTexture2;
 				Level.ChangeSky(TexMan.CheckForTexture("PSKY2"), sky2);
@@ -120,7 +149,7 @@ extend class WadFusionHandler
 		if ( CVar.FindCVar("wf_compat_texswap_all_pl_06").GetBool() )
 		{
 			Level.ReplaceTextures("SKY3", "PSKY3", TexMan.NOT_FLAT);
-			if ( TexMan.GetName(Level.SkyTexture1) == "SKY3" || TexMan.GetName(Level.SkyTexture1) == "RSKY3" )
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY3" )
 			{
 				TextureID sky2 = Level.SkyTexture2;
 				Level.ChangeSky(TexMan.CheckForTexture("PSKY3"), sky2);

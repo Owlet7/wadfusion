@@ -2,7 +2,7 @@
 
 defaultmap
 {
-	Sky1 = "SKY1"
+	Sky1 = "DSKY1"
 	SuckTime = 1
 	ExitPic = "$IN_EPI1"
 	InterMusic = "$MUSIC_INTER"

@@ -12,7 +12,7 @@ defaultmap
 adddefaultmap
 {
 	Cluster = 5
-	Sky1 = "RSKY1"
+	Sky1 = "SKY1"
 }
 
 map MAP01 "$HUSTR_1"
@@ -128,7 +128,7 @@ map MAP11 "$HUSTR_11"
 adddefaultmap
 {
 	Cluster = 7
-	Sky1 = "RSKY2"
+	Sky1 = "SKY2"
 }
 
 map MAP12 "$HUSTR_12"
@@ -218,7 +218,7 @@ map MAP20 "$HUSTR_20"
 adddefaultmap
 {
 	Cluster = 8
-	Sky1 = "RSKY3"
+	Sky1 = "SKY3"
 }
 
 map MAP21 "$HUSTR_21"

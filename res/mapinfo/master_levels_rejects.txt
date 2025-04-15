@@ -2,7 +2,7 @@
 
 defaultmap
 {
-	Sky1 = "RSKY1"
+	Sky1 = "SKY1"
 	SuckTime = 1
 	NoJump
 	NoCrouch

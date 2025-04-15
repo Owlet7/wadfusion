@@ -26,20 +26,14 @@ class WadFusionHandler : EventHandler
 		
 		// wf_textswap.zs
 		// replace conflicting textures based on which map is loaded
-		if ( CVar.FindCVar("wf_compat_texswap_fd").GetBool() && texSwapAll <= 0 )
-			DoFinalDoomTextureReplacements();
 		if ( CVar.FindCVar("wf_compat_texswap_d1").GetBool() && texSwapAll <= 0 )
 			DoDoom1TextureReplacements();
+		if ( CVar.FindCVar("wf_compat_texswap_fd").GetBool() && texSwapAll <= 0 )
+			DoFinalDoomTextureReplacements();
 		if ( CVar.FindCVar("wf_compat_texswap_id1").GetBool() && texSwapAll <= 0 )
 			DoId1TextureReplacements();
 		if ( CVar.FindCVar("wf_compat_texswap_ml").GetBool() && texSwapAll <= 0 )
 			DoMasterLevelsTitanTextureReplacements();
-		
-		// wf_textswap_d2sky.zs
-		// check if the given sky is the level's current sky,
-		// see if that is being overriden, and if so change it
-		if ( CVar.FindCVar("wf_compat_texswap_d2sky").GetBool() )
-			DoDoom2SkyReplacements();
 		
 		// wf_textswap_all.zs
 		// force texture replacement on all levels

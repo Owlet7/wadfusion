@@ -524,20 +524,17 @@ Texture "SK_RIGHT", 64, 128
 	Patch "RW48_3", 0, 0
 }
 
-// renamed from SKY1 to avoid Doom1 conflict
-Texture "RSKY1", 256, 128
+Texture "SKY1", 256, 128
 {
 	Patch "RSKY1", 0, 0
 }
 
-// renamed from SKY2 to avoid Doom1 conflict
-Texture "RSKY2", 256, 128
+Texture "SKY2", 256, 128
 {
 	Patch "RSKY2", 0, 0
 }
 
-// renamed from SKY3 to avoid Doom1 conflict
-Texture "RSKY3", 256, 128
+Texture "SKY3", 256, 128
 {
 	Patch "RSKY3", 0, 0
 }
