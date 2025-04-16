@@ -118,7 +118,7 @@ RES_FILES = [
     'mapinfo/master_levels_kvernmo.txt',
     'mapinfo/doomednums.txt',
     'zscript/wf_handler.zs', 'zscript/wf_handler_static.zs',
-    'zscript/wf_textswap.zs', 'zscript/wf_textswap_all.zs',
+    'zscript/wf_texswap.zs', 'zscript/wf_texswap_all.zs',
     'zscript/wf_music_sigil.zs', 'zscript/wf_music_idkfa.zs',
     'zscript/wf_sbar.zs', 'zscript/wf_sbar_alt.zs',
     'zscript/wf_mapfixes.zs',
