@@ -21,6 +21,7 @@
     The correct skies are now set by the texture substitution compatibility
     options. This was done for better compatibility with texture replacing mods.
   - Added DOOM 1 skies to the "Texture substitutions in all levels" options.
+- Removed CONBACK texture, as it caused issues with mod compatibility.
 - Added an option to use the original ID24 actors transparency.
 - Fixed DOOM 1 boss specials not triggering in certain mods.
 - Rewrote how weapon slots are drawn in the alternate fullscreen HUD.
