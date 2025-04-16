@@ -100,9 +100,11 @@ map E1M8 "$HUSTR_E1M8"
 	Par = 165
 	Music = "$MUSIC_E1M8"
 	NoIntermission
+	E1M8Special
 	BaronSpecial
 	SpecialAction_LowerFloor
 	NoSoundClipping
+	NeedClusterText
 	Author = "$WF_AU_PETERSEN_HALL"
 }
 
@@ -204,9 +206,11 @@ map E2M8 "$HUSTR_E2M8"
 	Par = 135
 	Music = "$MUSIC_E2M8"
 	NoIntermission
+	E2M8Special
 	CyberdemonSpecial
 	SpecialAction_ExitLevel
 	NoSoundClipping
+	NeedClusterText
 	Author = "$WF_AU_PETERSEN"
 }
 
@@ -308,9 +312,11 @@ map E3M8 "$HUSTR_E3M8"
 	Par = 105
 	Music = "$MUSIC_E3M8"
 	NoIntermission
+	E3M8Special
 	SpiderMastermindSpecial
 	SpecialAction_ExitLevel
 	NoSoundClipping
+	NeedClusterText
 	Author = "$WF_AU_PETERSEN"
 }
 
@@ -414,9 +420,11 @@ map E4M8 "$HUSTR_E4M8"
 	Par = 360
 	Music = "$MUSIC_E2M5"
 	NoIntermission
+	E4M8Special
 	SpiderMastermindSpecial
 	SpecialAction_LowerFloor
 	NoSoundClipping
+	NeedClusterText
 	Author = "$WF_AU_GREEN"
 }
 

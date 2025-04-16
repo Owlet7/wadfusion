@@ -22,6 +22,7 @@
     options. This was done for better compatibility with texture replacing mods.
   - Added DOOM 1 skies to the "Texture substitutions in all levels" options.
 - Added an option to use the original ID24 actors transparency.
+- Fixed DOOM 1 boss specials not triggering in certain mods.
 - Rewrote how weapon slots are drawn in the alternate fullscreen HUD.
   - The weapon slots should now work with any modded weapons.
   - Moved keys to the right to not obscure the weapon slots.

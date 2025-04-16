@@ -29,7 +29,9 @@ map E1M8B "$HUSTR_E1M8B"
 	TitlePatch = "WILV07B"
 	Music = "$MUSIC_E1M8"
 	NoIntermission
+	E1M8Special
 	BaronSpecial
 	SpecialAction_LowerFloor
 	NoSoundClipping
+	NeedClusterText
 }
