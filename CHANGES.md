@@ -17,7 +17,10 @@
   - Renamed DOOM II's skies back to `SKY1`, `SKY2`, and `SKY3`.
   - Renamed DOOM 1's skies to `DSKY1`, `DSKY2`, and `DSKY3`.
   - DOOM II's sky textures are now treated as the "default" ones.
-  - Added DOOM 1 skies to "Texture substitutions in all levels" options.
+  - DOOM 1's, TNT's, and Plutonia's MAPINFO definitions now use `SKY*` skies.
+    The correct skies are now set by the texture substitution compatibility
+    options. This was done for better compatibility with texture replacing mods.
+  - Added DOOM 1 skies to the "Texture substitutions in all levels" options.
 - Added an option to use the original ID24 actors transparency.
 - Rewrote how weapon slots are drawn in the alternate fullscreen HUD.
   - The weapon slots should now work with any modded weapons.

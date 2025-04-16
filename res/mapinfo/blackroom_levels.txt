@@ -1,8 +1,10 @@
 // Blackroom warm-up maps
 
+// Skies get replaced by texture substitution compatibility options
+
 defaultmap
 {
-	Sky1 = "DSKY1"
+	Sky1 = "SKY1"
 	SuckTime = 1
 	ExitPic = "$IN_EPI1"
 	InterMusic = "$MUSIC_INTER"

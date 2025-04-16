@@ -1,5 +1,7 @@
 // TNT maps
 
+// Skies get replaced by texture substitution compatibility options
+
 defaultmap
 {
 	SuckTime = 1
@@ -14,7 +16,7 @@ defaultmap
 adddefaultmap
 {
 	Cluster = 12
-	Sky1 = "TSKY1"
+	Sky1 = "SKY1"
 }
 
 map TN_MAP01 "$THUSTR_1"
@@ -118,7 +120,7 @@ map TN_MAP11 "$THUSTR_11"
 adddefaultmap
 {
 	Cluster = 14
-	Sky1 = "TSKY2"
+	Sky1 = "SKY2"
 }
 
 map TN_MAP12 "$THUSTR_12"
@@ -199,7 +201,7 @@ map TN_MAP20 "$THUSTR_20"
 adddefaultmap
 {
 	Cluster = 15
-	Sky1 = "TSKY3"
+	Sky1 = "SKY3"
 }
 
 map TN_MAP21 "$THUSTR_21"

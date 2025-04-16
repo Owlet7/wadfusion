@@ -50,28 +50,19 @@ extend class WadFusionHandler
 		{
 			Level.ReplaceTextures("SKY1", "DSKY1", TexMan.NOT_FLAT);
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
-			{
-				TextureID sky2 = Level.SkyTexture2;
-				Level.ChangeSky(TexMan.CheckForTexture("DSKY1"), sky2);
-			}
+				Level.ChangeSky(TexMan.CheckForTexture("DSKY1"), Level.SkyTexture2);
 		}
 		if ( CVar.FindCVar("wf_compat_texswap_all_d1_17").GetBool() )
 		{
 			Level.ReplaceTextures("SKY2", "DSKY2", TexMan.NOT_FLAT);
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY2" )
-			{
-				TextureID sky2 = Level.SkyTexture2;
-				Level.ChangeSky(TexMan.CheckForTexture("DSKY2"), sky2);
-			}
+				Level.ChangeSky(TexMan.CheckForTexture("DSKY2"), Level.SkyTexture2);
 		}
 		if ( CVar.FindCVar("wf_compat_texswap_all_d1_18").GetBool() )
 		{
 			Level.ReplaceTextures("SKY3", "DSKY3", TexMan.NOT_FLAT);
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY3" )
-			{
-				TextureID sky2 = Level.SkyTexture2;
-				Level.ChangeSky(TexMan.CheckForTexture("DSKY3"), sky2);
-			}
+				Level.ChangeSky(TexMan.CheckForTexture("DSKY3"), Level.SkyTexture2);
 		}
 	}
 	
@@ -93,28 +84,19 @@ extend class WadFusionHandler
 		{
 			Level.ReplaceTextures("SKY1", "TSKY1", TexMan.NOT_FLAT);
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
-			{
-				TextureID sky2 = Level.SkyTexture2;
-				Level.ChangeSky(TexMan.CheckForTexture("TSKY1"), sky2);
-			}
+				Level.ChangeSky(TexMan.CheckForTexture("TSKY1"), Level.SkyTexture2);
 		}
 		if ( CVar.FindCVar("wf_compat_texswap_all_tn_03").GetBool() )
 		{
 			Level.ReplaceTextures("SKY2", "TSKY2", TexMan.NOT_FLAT);
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY2" )
-			{
-				TextureID sky2 = Level.SkyTexture2;
-				Level.ChangeSky(TexMan.CheckForTexture("TSKY2"), sky2);
-			}
+				Level.ChangeSky(TexMan.CheckForTexture("TSKY2"), Level.SkyTexture2);
 		}
 		if ( CVar.FindCVar("wf_compat_texswap_all_tn_04").GetBool() )
 		{
 			Level.ReplaceTextures("SKY3", "TSKY3", TexMan.NOT_FLAT);
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY3" )
-			{
-				TextureID sky2 = Level.SkyTexture2;
-				Level.ChangeSky(TexMan.CheckForTexture("TSKY3"), sky2);
-			}
+				Level.ChangeSky(TexMan.CheckForTexture("TSKY3"), Level.SkyTexture2);
 		}
 	}
 	
@@ -132,28 +114,19 @@ extend class WadFusionHandler
 		{
 			Level.ReplaceTextures("SKY1", "PSKY1", TexMan.NOT_FLAT);
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
-			{
-				TextureID sky2 = Level.SkyTexture2;
-				Level.ChangeSky(TexMan.CheckForTexture("PSKY1"), sky2);
-			}
+				Level.ChangeSky(TexMan.CheckForTexture("PSKY1"), Level.SkyTexture2);
 		}
 		if ( CVar.FindCVar("wf_compat_texswap_all_pl_05").GetBool() )
 		{
 			Level.ReplaceTextures("SKY2", "PSKY2", TexMan.NOT_FLAT);
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY2" )
-			{
-				TextureID sky2 = Level.SkyTexture2;
-				Level.ChangeSky(TexMan.CheckForTexture("PSKY2"), sky2);
-			}
+				Level.ChangeSky(TexMan.CheckForTexture("PSKY2"), Level.SkyTexture2);
 		}
 		if ( CVar.FindCVar("wf_compat_texswap_all_pl_06").GetBool() )
 		{
 			Level.ReplaceTextures("SKY3", "PSKY3", TexMan.NOT_FLAT);
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY3" )
-			{
-				TextureID sky2 = Level.SkyTexture2;
-				Level.ChangeSky(TexMan.CheckForTexture("PSKY3"), sky2);
-			}
+				Level.ChangeSky(TexMan.CheckForTexture("PSKY3"), Level.SkyTexture2);
 		}
 	}
 	

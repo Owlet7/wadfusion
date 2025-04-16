@@ -49,6 +49,14 @@ extend class WadFusionHandler
 			Level.ReplaceTextures("SW2STARG", "SW2STARA", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STONE", "SW2STONA", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STON2", "SW2STONB", TexMan.NOT_FLAT);
+			
+			// override skies
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("DSKY1"), Level.SkyTexture2);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY2" )
+				Level.ChangeSky(TexMan.CheckForTexture("DSKY2"), Level.SkyTexture2);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY3" )
+				Level.ChangeSky(TexMan.CheckForTexture("DSKY3"), Level.SkyTexture2);
 		}
 	}
 	
@@ -72,6 +80,14 @@ extend class WadFusionHandler
 			Level.ReplaceTextures("SW2SKULL", "SW2SKULT", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("WFALL1"  , "TWFALL1" , TexMan.NOT_FLAT); // different from plutonia
 			Level.ReplaceTextures("WFALL4"  , "TWFALL4" , TexMan.NOT_FLAT); // different from plutonia
+			
+			// override skies
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("TSKY1"), Level.SkyTexture2);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY2" )
+				Level.ChangeSky(TexMan.CheckForTexture("TSKY2"), Level.SkyTexture2);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY3" )
+				Level.ChangeSky(TexMan.CheckForTexture("TSKY3"), Level.SkyTexture2);
 		}
 		else if ( mapPrefix == "pl_" )
 		{
@@ -85,6 +101,14 @@ extend class WadFusionHandler
 			Level.ReplaceTextures("SKY3"    , "PSKY3"   , TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1SKULL", "SW1SKULP", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2SKULL", "SW2SKULP", TexMan.NOT_FLAT);
+			
+			// override skies
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("PSKY1"), Level.SkyTexture2);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY2" )
+				Level.ChangeSky(TexMan.CheckForTexture("PSKY2"), Level.SkyTexture2);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY3" )
+				Level.ChangeSky(TexMan.CheckForTexture("PSKY3"), Level.SkyTexture2);
 		}
 	}
 	

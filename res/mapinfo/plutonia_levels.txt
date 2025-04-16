@@ -1,5 +1,7 @@
 // Plutonia maps
 
+// Skies get replaced by texture substitution compatibility options
+
 defaultmap
 {
 	SuckTime = 1
@@ -14,7 +16,7 @@ defaultmap
 adddefaultmap
 {
 	Cluster = 18
-	Sky1 = "PSKY1"
+	Sky1 = "SKY1"
 }
 
 map PL_MAP01 "$PHUSTR_1"
@@ -118,7 +120,7 @@ map PL_MAP11 "$PHUSTR_11"
 adddefaultmap
 {
 	Cluster = 20
-	Sky1 = "PSKY2"
+	Sky1 = "SKY2"
 }
 
 map PL_MAP12 "$PHUSTR_12"
@@ -199,7 +201,7 @@ map PL_MAP20 "$PHUSTR_20"
 adddefaultmap
 {
 	Cluster = 21
-	Sky1 = "PSKY3"
+	Sky1 = "SKY3"
 }
 
 map PL_MAP21 "$PHUSTR_21"
