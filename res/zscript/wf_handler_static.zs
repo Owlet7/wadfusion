@@ -91,7 +91,6 @@ class WadFusionStaticHandler : StaticEventHandler
 		CVar.FindCVar("wf_compat_texswap_fd").ResetToDefault();
 		CVar.FindCVar("wf_compat_texswap_id1").ResetToDefault();
 		CVar.FindCVar("wf_compat_texswap_ml").ResetToDefault();
-		CVar.FindCVar("wf_compat_texswap_d2sky").ResetToDefault();
 		
 		CVar.FindCVar("wf_compat_texswap_all").ResetToDefault();
 		CVar.FindCVar("wf_compat_texswap_all_d1_00").ResetToDefault();
@@ -110,6 +109,9 @@ class WadFusionStaticHandler : StaticEventHandler
 		CVar.FindCVar("wf_compat_texswap_all_d1_13").ResetToDefault();
 		CVar.FindCVar("wf_compat_texswap_all_d1_14").ResetToDefault();
 		CVar.FindCVar("wf_compat_texswap_all_d1_15").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_16").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_17").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_18").ResetToDefault();
 		CVar.FindCVar("wf_compat_texswap_all_tn_00").ResetToDefault();
 		CVar.FindCVar("wf_compat_texswap_all_tn_01").ResetToDefault();
 		CVar.FindCVar("wf_compat_texswap_all_tn_02").ResetToDefault();
