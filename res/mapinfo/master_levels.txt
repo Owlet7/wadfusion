@@ -2,12 +2,27 @@
 
 defaultmap
 {
-	Cluster = 24
 	SuckTime = 1
 	NoJump
 	NoCrouch
+}
+
+map ML_MAP21 "$ML_TEETH_SECRET"
+{
+	Next = "ML_MAP19"
+	Cluster = 25
+	Sky1 = "SKY3"
+	TitlePatch = "MWILV20"
+	Music = "$MUSIC_ULTIMA"
+	Author = "$WF_AU_KVERNMO"
+}
+
+adddefaultmap
+{
+	Cluster = 24
 	ResetHealth
 	ResetInventory
+	ResetItems
 }
 
 map ML_MAP01 "$ML_ATTACK"
@@ -192,15 +207,5 @@ map ML_MAP20 "$ML_MEPHISTO"
 	Music = "$MUSIC_SHAWN"
 	AllowMonsterTelefrags
 	Map07Special
-	Author = "$WF_AU_KVERNMO"
-}
-
-map ML_MAP21 "$ML_TEETH_SECRET"
-{
-	Next = "ML_MAP19"
-	Cluster = 25
-	Sky1 = "SKY3"
-	TitlePatch = "MWILV20"
-	Music = "$MUSIC_ULTIMA"
 	Author = "$WF_AU_KVERNMO"
 }

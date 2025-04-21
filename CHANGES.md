@@ -24,6 +24,8 @@
 - Removed CONBACK texture, as it caused issues with mod compatibility.
 - Added an option to use the original ID24 actors transparency.
 - Fixed DOOM 1 boss specials not triggering in certain mods.
+- Added ResetItems property to the Master Levels.
+- Don't force pistol start on Bad Dream.
 - Rewrote how weapon slots are drawn in the alternate fullscreen HUD.
   - The weapon slots should now work with any modded weapons.
   - Moved keys to the right to not obscure the weapon slots.

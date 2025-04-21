@@ -8,6 +8,7 @@ defaultmap
 	NoCrouch
 	ResetHealth
 	ResetInventory
+	ResetItems
 }
 
 // Tim Willits's Master Levels
