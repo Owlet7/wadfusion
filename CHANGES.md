@@ -1,7 +1,10 @@
 # WadFusion Changelog
 
-## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.4...HEAD)
+<!--## Unreleased Changes
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.0...HEAD)-->
+
+## [WadFusion 1.5.0](https://github.com/Owlet7/wadfusion/releases/tag/v1.5.0) — [22 April 2025](https://github.com/Owlet7/wadfusion/tree/v1.5.0)
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.4...v1.5.0)
 - Removed `id1-res.wad` and `id24res.wad` requirement for Legacy of Rust.
   - Instead of extracting DeHackEd lumps, the Legacy of Rust monsters and
     decorations have been remade as ZScript actors. These will be removed when
@@ -33,6 +36,8 @@
 - Updated Polish localisation.
 - Added `-v` and `--verbose` command line arguments. If used, all the logged
   information will be printed out.
+- The script won't show the "Skipping Master Levels Rejects" error if none of
+  the rejects WADs are even present.
 - The `M_DOOM` logo graphics of each game will now be extracted.
   - Currently not used for anything.
 

@@ -57,7 +57,7 @@ import omg
 
 ARGUMENTS = sys.argv[1:]
 
-VERSION = '1.5.0-dev'
+VERSION = '1.5.0'
 
 # abspath is used for the sake of the Windows executable
 DATA_TABLES_FILE = path.abspath(path.join(path.dirname(__file__), 'wadfusion_data.py'))
@@ -179,8 +179,6 @@ def extras_is_kex():
         return True
 
 def masterlevels_is_complete():
-    if not get_wad_filename('doom2'):
-        return
     for i, wad_name in enumerate(MASTER_LEVELS_ORDER):
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
@@ -192,11 +190,8 @@ def masterlevelsrejects_is_complete():
     if not get_wad_filename('doom2'):
         return
     if not get_wad_filename('masterlevels'):
-        for i, wad_name in enumerate(MASTER_LEVELS_ORDER):
-            in_wad = omg.WAD()
-            wad_filename = get_wad_filename(wad_name)
-            if not wad_filename:
-                return
+        if not masterlevels_is_complete():
+            return
     for i, wad_name in enumerate(MASTER_LEVELS_REJECTS_ORDER):
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
@@ -690,8 +685,9 @@ def extract():
         if not doom_is_registered():
             if not doomu_is_retail():
                 copy_master_levels_doom1_music()
-    if masterlevelsrejects_is_complete_verbose():
-        extract_master_levels_rejects()
+    if get_wad_filename('cpu'):
+        if masterlevelsrejects_is_complete_verbose():
+            extract_master_levels_rejects()
     # copy pre-authored lumps e.g. mapinfo
     copy_resources()
     # copy and enable Master levels Rejects mapinfo
