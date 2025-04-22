@@ -32,8 +32,8 @@
 - Rewrote how weapon slots are drawn in the alternate fullscreen HUD.
   - The weapon slots should now work with any modded weapons.
   - Moved keys to the right to not obscure the weapon slots.
-- Updated widescreen DOOM 1 titlepic and help graphics.
-- Updated Polish localisation.
+- Updated widescreen DOOM 1 titlepic and help graphics. @Meerschweinmann
+- Updated Polish localisation. @justtoask
 - Added `-v` and `--verbose` command line arguments. If used, all the logged
   information will be printed out.
 - The script won't show the "Skipping Master Levels Rejects" error if none of
@@ -48,7 +48,7 @@
 - Fixed wrong skies in two `iddm1.wad` maps.
 - Updated Master Levels Rejects episode titles to fit in one line.
 - Updated Polish localisation.
-- Updated widescreen graphics.
+- Updated widescreen graphics. @Meerschweinmann
   - Updated the registered DOOM titlepic.
   - Removed the "v1.2" label from the SIGIL titlepic.
 - `doom_fusion_widescreen_gfx.pk3` is now bundled with the releases.
@@ -213,7 +213,7 @@
   - Can extract from id1.wad and iddm1.wad. id1.wad requires also having
     id1-res.wad and id24res.wad.
   - Ported the new Incinerator and Calamity Blade weapons to ZScript versions
-    that don't replace the Plasma Rifle and BFG 9000.
+    that don't replace the Plasma Rifle and BFG 9000. @jdbrowndev.
   - New status bar with support for Fuel ammo. Can be toggled to always display
     it, or only in Legacy of Rust episodes.
   - Implemented support for Andrew Hulshult's alternate "IDKFA" soundtrack,
@@ -266,7 +266,7 @@
   wrong fonts (e.g. NRFTL, Sigil II).
 - Refactored the language lump into a CSV file, for better localisation support.
 - Added Russian localisation.
-- Redid credits menus with localisation support. Thanks to Shockwave_S08 for
+- Redid credits menus with localisation support. Thanks to @Shockwave_S08 for
   help with Legacy of Rust credits implementation and suggestions.
 - Added credit to David Blanshine for E1M10 co-authorship.
 - Added credit to Bob Mustaine for paradox.wad co-authorship.
