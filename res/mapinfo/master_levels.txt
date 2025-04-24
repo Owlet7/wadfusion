@@ -64,7 +64,8 @@ map ML_MAP04 "$ML_FISTULA"
 map ML_MAP05 "$ML_COMBINE"
 {
 	Next = "ML_MAP06"
-	Sky1 = "MSKY1"
+	// The sky gets replaced by texture substitution compatibility options
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV04"
 	Music = "$MUSIC_DEAD"
 	Author = "$WF_AU_KLIE"
@@ -118,7 +119,8 @@ map ML_MAP10 "$ML_BLACKTWR"
 map ML_MAP11 "$ML_VIRGIL"
 {
 	Next = "ML_MAP12"
-	Sky1 = "MSKY2"
+	// The sky gets replaced by texture substitution compatibility options
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV10"
 	Music = "$MUSIC_COUNTD"
 	Author = "$WF_AU_ANDERSON"
@@ -127,7 +129,8 @@ map ML_MAP11 "$ML_VIRGIL"
 map ML_MAP12 "$ML_MINOS"
 {
 	Next = "ML_MAP13"
-	Sky1 = "MSKY2"
+	// The sky gets replaced by texture substitution compatibility options
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV11"
 	Music = "$MUSIC_DOOM"
 	Author = "$WF_AU_ANDERSON"
@@ -136,7 +139,8 @@ map ML_MAP12 "$ML_MINOS"
 map ML_MAP13 "$ML_NESSUS"
 {
 	Next = "ML_MAP14"
-	Sky1 = "MSKY2"
+	// The sky gets replaced by texture substitution compatibility options
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV12"
 	Music = "$MUSIC_SHAWN"
 	Map07Special
@@ -146,7 +150,8 @@ map ML_MAP13 "$ML_NESSUS"
 map ML_MAP14 "$ML_GERYON"
 {
 	Next = "ML_MAP15"
-	Sky1 = "MSKY2"
+	// The sky gets replaced by texture substitution compatibility options
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV13"
 	Music = "$MUSIC_DDTBLU"
 	Author = "$WF_AU_ANDERSON"
@@ -155,7 +160,8 @@ map ML_MAP14 "$ML_GERYON"
 map ML_MAP15 "$ML_VESPERAS"
 {
 	Next = "ML_MAP16"
-	Sky1 = "MSKY2"
+	// The sky gets replaced by texture substitution compatibility options
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV14"
 	Music = "$MUSIC_IN_CIT"
 	Author = "$WF_AU_ANDERSON"
@@ -164,7 +170,8 @@ map ML_MAP15 "$ML_VESPERAS"
 map ML_MAP16 "$ML_MANOR"
 {
 	Next = "ML_MAP17"
-	Sky1 = "MSKY3"
+	// The sky gets replaced by texture substitution compatibility options
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV15"
 	Music = "$MUSIC_MESSAG"
 	Author = "$WF_AU_FLYNN"
@@ -173,7 +180,8 @@ map ML_MAP16 "$ML_MANOR"
 map ML_MAP17 "$ML_TTRAP"
 {
 	Next = "ML_MAP18"
-	Sky1 = "MSKY3"
+	// The sky gets replaced by texture substitution compatibility options
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV16"
 	Music = "$MUSIC_E1M7"
 	Author = "$WF_AU_FLYNN"

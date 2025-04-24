@@ -147,4 +147,124 @@ extend class WadFusionHandler
 		if ( CVar.FindCVar("wf_compat_texswap_all_id1_12").GetBool() ) Level.ReplaceTextures("SW2STON2", "SW2STONB", TexMan.NOT_FLAT);
 		if ( CVar.FindCVar("wf_compat_texswap_all_id1_13").GetBool() ) Level.ReplaceTextures("WFALL1",   "XWFALL1",  TexMan.NOT_FLAT);
 	}
+	
+	void DoTextureReplacementsAllMlKlie()
+	{
+		// override sky
+		if ( CVar.FindCVar("wf_compat_texswap_all_ml_00").GetBool() )
+		{
+			Level.ReplaceTextures("SKY1", "MSKY1", TexMan.NOT_FLAT);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY1"), Level.SkyTexture2);
+		}
+	}
+	
+	void DoTextureReplacementsAllMlAnderson()
+	{
+		// override sky
+		if ( CVar.FindCVar("wf_compat_texswap_all_ml_01").GetBool() )
+		{
+			Level.ReplaceTextures("SKY1", "MSKY2", TexMan.NOT_FLAT);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY2"), Level.SkyTexture2);
+		}
+	}
+	
+	void DoTextureReplacementsAllMlFlynn()
+	{
+		// override sky
+		if ( CVar.FindCVar("wf_compat_texswap_all_ml_02").GetBool() )
+		{
+			Level.ReplaceTextures("SKY1", "MSKY3", TexMan.NOT_FLAT);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY3"), Level.SkyTexture2);
+		}
+	}
+	
+	void DoTextureReplacementsAllMlrMines()
+	{
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_00").GetBool() ) Level.ReplaceTextures("DBRAIN1" , "MBRAIN1" , TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_01").GetBool() ) Level.ReplaceTextures("DBRAIN2" , "MBRAIN2" , TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_02").GetBool() ) Level.ReplaceTextures("DBRAIN3" , "MBRAIN3" , TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_03").GetBool() ) Level.ReplaceTextures("DBRAIN4" , "MBRAIN4" , TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_04").GetBool() ) Level.ReplaceTextures("SW1COMP" , "SW1COMPM", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_05").GetBool() ) Level.ReplaceTextures("SW1STON1", "SW1STOND", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_06").GetBool() ) Level.ReplaceTextures("SW1STON2", "SW1STONF", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_07").GetBool() ) Level.ReplaceTextures("SW2COMP" , "SW2COMPM", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_08").GetBool() ) Level.ReplaceTextures("SW2STON1", "SW2STOND", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_09").GetBool() ) Level.ReplaceTextures("SW2STON2", "SW2STONF", TexMan.NOT_FLAT);
+		
+		// override sky
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_10").GetBool() )
+		{
+			Level.ReplaceTextures("SKY1", "MSKY4", TexMan.NOT_FLAT);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY4"), Level.SkyTexture2);
+		}
+	}
+	
+	void DoTextureReplacementsAllMlrAnomaly()
+	{
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_11").GetBool() ) Level.ReplaceTextures("SW1STON2", "SW1STONC", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_12").GetBool() ) Level.ReplaceTextures("SW2STON2", "SW2STONC", TexMan.NOT_FLAT);
+		
+		// override sky
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_13").GetBool() )
+		{
+			Level.ReplaceTextures("SKY1", "MSKY5", TexMan.NOT_FLAT);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY5"), Level.SkyTexture2);
+		}
+	}
+	
+	void DoTextureReplacementsAllMlrFarside()
+	{
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_14").GetBool() ) Level.ReplaceTextures("SW1BRIK" , "SW1BRIKM", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_15").GetBool() ) Level.ReplaceTextures("SW1STON2", "SW1STONG", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_16").GetBool() ) Level.ReplaceTextures("SW2BRIK" , "SW2BRIKM", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_17").GetBool() ) Level.ReplaceTextures("SW2STON2", "SW2STONG", TexMan.NOT_FLAT);
+		
+		// override sky
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_18").GetBool() )
+		{
+			Level.ReplaceTextures("SKY1", "MSKY6", TexMan.NOT_FLAT);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY6"), Level.SkyTexture2);
+		}
+	}
+	
+	void DoTextureReplacementsAllMlrTrouble()
+	{
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_19").GetBool() ) Level.ReplaceTextures("SW1PIPE" , "SW1PIPEM", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_20").GetBool() ) Level.ReplaceTextures("SW1STON1", "SW1STONC", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_21").GetBool() ) Level.ReplaceTextures("SW1STON2", "SW1STONH", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_22").GetBool() ) Level.ReplaceTextures("SW1STON6", "SW1STONI", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_23").GetBool() ) Level.ReplaceTextures("SW1STONE", "SW1STONJ", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_24").GetBool() ) Level.ReplaceTextures("SW1VINE" , "SW1VINEM", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_25").GetBool() ) Level.ReplaceTextures("SW2PIPE" , "SW2PIPEM", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_26").GetBool() ) Level.ReplaceTextures("SW2STON1", "SW2STONC", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_27").GetBool() ) Level.ReplaceTextures("SW2STON2", "SW2STONH", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_28").GetBool() ) Level.ReplaceTextures("SW2STON6", "SW2STONI", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_29").GetBool() ) Level.ReplaceTextures("SW2STONE", "SW2STONJ", TexMan.NOT_FLAT);
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_30").GetBool() ) Level.ReplaceTextures("SW2VINE" , "SW2VINEM", TexMan.NOT_FLAT);
+		
+		// override sky
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_31").GetBool() )
+		{
+			Level.ReplaceTextures("SKY1", "MSKY5", TexMan.NOT_FLAT);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY5"), Level.SkyTexture2);
+		}
+	}
+	
+	void DoTextureReplacementsAllMlrUdtwid()
+	{
+		// override sky
+		if ( CVar.FindCVar("wf_compat_texswap_all_mlr_32").GetBool() )
+		{
+			Level.ReplaceTextures("SKY4", "MSKY7", TexMan.NOT_FLAT);
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY4" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY7"), Level.SkyTexture2);
+		}
+	}
 }

@@ -56,7 +56,8 @@ map ML_MAP04 "$ML_FISTULA"
 map ML_MAP05 "$ML_COMBINE"
 {
 	Next = "ML_MAP06"
-	Sky1 = "MSKY1"
+	// The sky gets replaced by texture substitution compatibility options
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV04"
 	Music = "$MUSIC_DEAD"
 }

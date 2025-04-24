@@ -1,7 +1,11 @@
 # WadFusion Changelog
 
-<!--## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.0...HEAD)-->
+## Unreleased Changes
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.0...HEAD)
+- The Master Levels' MAPINFO definitions now also use `SKY*` instead of the
+  custom skies, and the correct skies are now set by the texture substitution
+  compatibility options. Will this be useful to anybody, ever? No! Did I do it
+  anyway for the sake of completion? Yes!
 
 ## [WadFusion 1.5.0](https://github.com/Owlet7/wadfusion/releases/tag/v1.5.0) — [22 April 2025](https://github.com/Owlet7/wadfusion/tree/v1.5.0)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.4.4...v1.5.0)

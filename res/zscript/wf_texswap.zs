@@ -20,7 +20,6 @@
 
 extend class WadFusionHandler
 {
-	
 	// replace conflicting textures based on which map is loaded
 	
 	void DoDoom1TextureReplacements()
@@ -124,6 +123,7 @@ extend class WadFusionHandler
 			Level.ReplaceTextures("BRNPOIS2", "BRNPOIS3", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("DOORSTOP", "DOORSTP1", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("LITERED2", "LITERED6", TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SKY1"    , "MSKY4"   , TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1BRN1" , "SW1BRN1A", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1STARG", "SW1STARA", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1STONE", "SW1STONA", TexMan.NOT_FLAT);
@@ -136,36 +136,82 @@ extend class WadFusionHandler
 		}
 	}
 	
-	void DoMasterLevelsTitanTextureReplacements()
+	void DoMasterLevelsTextureReplacements()
 	{
 		string mapName = Level.MapName.MakeLower();
-		if ( mapName == "ml_map29" )      // MINES.WAD
+		if ( mapName == "ml_map05" )           // COMBINE.WAD
+		{
+			Level.ReplaceTextures("SKY1"    , "MSKY1"   , TexMan.NOT_FLAT);
+			
+			// override sky
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY1"), Level.SkyTexture2);
+		}
+		else if ( mapName == "ml_map34" ||     // ACHERON.WAD
+					mapName == "ml_map11" || ) // VIRGIL.WAD
+					mapName == "ml_map12" || ) // MINOS.WAD
+					mapName == "ml_map13" || ) // NESSUS.WAD
+					mapName == "ml_map14" || ) // GERYON.WAD
+					mapName == "ml_map15" )    // VESPERAS.WAD
+		{
+			Level.ReplaceTextures("SKY1"    , "MSKY2"   , TexMan.NOT_FLAT);
+			
+			// override sky
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY2"), Level.SkyTexture2);
+		}
+		else if ( mapName == "ml_map16" ||     // MANOR.WAD
+					mapName == "ml_map17" )    // TTRAP.WAD
+		{
+			Level.ReplaceTextures("SKY1"    , "MSKY3"   , TexMan.NOT_FLAT);
+			
+			// override sky
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY3"), Level.SkyTexture2);
+		}
+		else if ( mapName == "ml_map29" )      // MINES.WAD
 		{
 			Level.ReplaceTextures("DBRAIN1" , "MBRAIN1" , TexMan.NOT_FLAT);
 			Level.ReplaceTextures("DBRAIN2" , "MBRAIN2" , TexMan.NOT_FLAT);
 			Level.ReplaceTextures("DBRAIN3" , "MBRAIN3" , TexMan.NOT_FLAT);
 			Level.ReplaceTextures("DBRAIN4" , "MBRAIN4" , TexMan.NOT_FLAT);
+			Level.ReplaceTextures("SKY1"    , "MSKY4"   , TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1COMP" , "SW1COMPM", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1STON1", "SW1STOND", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1STON2", "SW1STONF", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2COMP" , "SW2COMPM", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STON1", "SW2STOND", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STON2", "SW2STONF", TexMan.NOT_FLAT);
+			
+			// override sky
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY4"), Level.SkyTexture2);
 		}
-		else if ( mapName == "ml_map30" ) // ANOMALY.WAD
+		else if ( mapName == "ml_map30" )      // ANOMALY.WAD
 		{
+			Level.ReplaceTextures("SKY1"    , "MSKY5"   , TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1STON2", "SW1STONC", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STON2", "SW2STONC", TexMan.NOT_FLAT);
+			
+			// override sky
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY5"), Level.SkyTexture2);
 		}
-		else if ( mapName == "ml_map31" ) // FARSIDE.WAD
+		else if ( mapName == "ml_map31" )      // FARSIDE.WAD
 		{
+			Level.ReplaceTextures("SKY1"    , "MSKY6"   , TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1BRIK" , "SW1BRIKM", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1STON2", "SW1STONG", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2BRIK" , "SW2BRIKM", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STON2", "SW2STONG", TexMan.NOT_FLAT);
+			
+			// override sky
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY6"), Level.SkyTexture2);
 		}
-		else if ( mapName == "ml_map32" ) // TROUBLE.WAD
+		else if ( mapName == "ml_map32" )      // TROUBLE.WAD
 		{
+			Level.ReplaceTextures("SKY1"    , "MSKY5"   , TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1PIPE" , "SW1PIPEM", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1STON1", "SW1STONC", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1STON2", "SW1STONH", TexMan.NOT_FLAT);
@@ -178,6 +224,18 @@ extend class WadFusionHandler
 			Level.ReplaceTextures("SW2STON6", "SW2STONI", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STONE", "SW2STONJ", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2VINE" , "SW2VINEM", TexMan.NOT_FLAT);
+			
+			// override sky
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY5"), Level.SkyTexture2);
+		}
+		else if ( mapName == "ml_map36" )      // UDTWiD.WAD
+		{
+			Level.ReplaceTextures("SKY4"    , "MSKY7"   , TexMan.NOT_FLAT);
+			
+			// override sky
+			if ( TexMan.GetName(Level.SkyTexture1) == "SKY4" )
+				Level.ChangeSky(TexMan.CheckForTexture("MSKY7"), Level.SkyTexture2);
 		}
 	}
 }

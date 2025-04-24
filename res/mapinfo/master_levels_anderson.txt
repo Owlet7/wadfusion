@@ -1,5 +1,7 @@
 // Master Levels for Doom 2 maps - John Anderson's INFERNO
 
+// The skies get replaced by texture substitution compatibility options (except DANTES and CHIRON)
+
 defaultmap
 {
 	SuckTime = 1
@@ -8,7 +10,7 @@ defaultmap
 	Author = "$WF_AU_ANDERSON"
 }
 
-map ML_MAP33 "$ML_DANTE" // bonus level
+map ML_MAP33 "$ML_DANTES" // bonus level
 {
 	Next = "ML_MAP34"
 	Sky1 = "SKY1"
@@ -16,10 +18,10 @@ map ML_MAP33 "$ML_DANTE" // bonus level
 	Music = "$MUSIC_STALKS"
 }
 
-map ML_MAP34 "$ML_ACHRON" // bonus level
+map ML_MAP34 "$ML_ACHERON" // bonus level
 {
 	Next = "ML_MAP11"
-	Sky1 = "MSKY2"
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV33"
 	Music = "$MUSIC_COUNTD"
 }
@@ -27,7 +29,7 @@ map ML_MAP34 "$ML_ACHRON" // bonus level
 map ML_MAP11 "$ML_VIRGIL"
 {
 	Next = "ML_MAP12"
-	Sky1 = "MSKY2"
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV10"
 	Music = "$MUSIC_COUNTD"
 }
@@ -35,7 +37,7 @@ map ML_MAP11 "$ML_VIRGIL"
 map ML_MAP12 "$ML_MINOS"
 {
 	Next = "ML_MAP13"
-	Sky1 = "MSKY2"
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV11"
 	Music = "$MUSIC_DOOM"
 }
@@ -43,7 +45,7 @@ map ML_MAP12 "$ML_MINOS"
 map ML_MAP13 "$ML_NESSUS"
 {
 	Next = "ML_MAP14"
-	Sky1 = "MSKY2"
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV12"
 	Music = "$MUSIC_SHAWN"
 	Map07Special
@@ -52,7 +54,7 @@ map ML_MAP13 "$ML_NESSUS"
 map ML_MAP14 "$ML_GERYON"
 {
 	Next = "ML_MAP15"
-	Sky1 = "MSKY2"
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV13"
 	Music = "$MUSIC_DDTBLU"
 }
@@ -60,7 +62,7 @@ map ML_MAP14 "$ML_GERYON"
 map ML_MAP15 "$ML_VESPERAS"
 {
 	Next = "ML_MAP35"
-	Sky1 = "MSKY2"
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV14"
 	Music = "$MUSIC_IN_CIT"
 }
@@ -77,7 +79,7 @@ map ML_MAP35 "$ML_CHIRON" // duplicate of E4M7
 map ML_MAP36 "$ML_LETHE" // bonus level - UDTWiD's E4M8
 {
 	Next = "EndTitle"
-	Sky1 = "MSKY7"
+	Sky1 = "SKY4"
 	TitlePatch = "MWILV35"
 	Par = 105
 	Music = "$MUSIC_E2M5"

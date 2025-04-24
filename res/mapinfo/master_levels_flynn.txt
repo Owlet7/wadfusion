@@ -1,5 +1,7 @@
 // Master Levels for Doom 2 maps - Jim Flynn's Titan
 
+// The skies get replaced by texture substitution compatibility options
+
 defaultmap
 {
 	SuckTime = 1
@@ -14,7 +16,7 @@ defaultmap
 map ML_MAP29 "$ML_MINES" // bonus level
 {
 	Next = "ML_MAP30"
-	Sky1 = "MSKY4"
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV28"
 	Music = "$MUSIC_RUNNIN"
 }
@@ -22,7 +24,7 @@ map ML_MAP29 "$ML_MINES" // bonus level
 map ML_MAP30 "$ML_ANOMALY" // bonus level
 {
 	Next = "ML_MAP31"
-	Sky1 = "MSKY5"
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV29"
 	Music = "$MUSIC_DOOM"
 }
@@ -30,7 +32,7 @@ map ML_MAP30 "$ML_ANOMALY" // bonus level
 map ML_MAP31 "$ML_FARSIDE" // bonus level
 {
 	Next = "ML_MAP32"
-	Sky1 = "MSKY6"
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV30"
 	Music = "$MUSIC_ROMERO"
 }
@@ -38,7 +40,7 @@ map ML_MAP31 "$ML_FARSIDE" // bonus level
 map ML_MAP32 "$ML_TROUBLE" // bonus level
 {
 	Next = "ML_MAP16"
-	Sky1 = "MSKY5"
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV31"
 	Music = "$MUSIC_AMPIE"
 }
@@ -46,7 +48,7 @@ map ML_MAP32 "$ML_TROUBLE" // bonus level
 map ML_MAP16 "$ML_MANOR"
 {
 	Next = "ML_MAP17"
-	Sky1 = "MSKY3"
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV15"
 	Music = "$MUSIC_MESSAG"
 }
@@ -54,7 +56,7 @@ map ML_MAP16 "$ML_MANOR"
 map ML_MAP17 "$ML_TTRAP"
 {
 	Next = "EndTitle"
-	Sky1 = "MSKY3"
+	Sky1 = "SKY1"
 	TitlePatch = "MWILV16"
 	Music = "$MUSIC_E1M7"
 }

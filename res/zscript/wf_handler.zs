@@ -33,7 +33,7 @@ class WadFusionHandler : EventHandler
 		if ( CVar.FindCVar("wf_compat_texswap_id1").GetBool() && texSwapAll <= 0 )
 			DoId1TextureReplacements();
 		if ( CVar.FindCVar("wf_compat_texswap_ml").GetBool() && texSwapAll <= 0 )
-			DoMasterLevelsTitanTextureReplacements();
+			DoMasterLevelsTextureReplacements();
 		
 		// wf_texswap_all.zs
 		// force texture replacement on all levels
@@ -53,6 +53,30 @@ class WadFusionHandler : EventHandler
 				break;
 			case 4:
 				DoTextureReplacementsAllId1();
+				break;
+			case 5:
+				DoTextureReplacementsAllMlKlie();
+				break;
+			case 6:
+				DoTextureReplacementsAllMlAnderson();
+				break;
+			case 7:
+				DoTextureReplacementsAllMlFlynn();
+				break;
+			case 8:
+				DoTextureReplacementsAllMlrMines();
+				break;
+			case 9:
+				DoTextureReplacementsAllMlrAnomaly();
+				break;
+			case 10:
+				DoTextureReplacementsAllMlrFarside();
+				break;
+			case 11:
+				DoTextureReplacementsAllMlrTrouble();
+				break;
+			case 12:
+				DoTextureReplacementsAllMlrUdtwid();
 				break;
 		}
 		
