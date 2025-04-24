@@ -188,21 +188,21 @@ OptionMenu "WadFusionCompatibilityTexSwapMlKlie"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL5"
 	StaticText "SKIES", "Gold"
-	Option "SKY1",     "wf_compat_texswap_all_m1_00", "OnOff"
+	Option "SKY1",     "wf_compat_texswap_all_ml_00", "OnOff"
 }
 
 OptionMenu "WadFusionCompatibilityTexSwapMlAnderson"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL6"
 	StaticText "SKIES", "Gold"
-	Option "SKY1",     "wf_compat_texswap_all_m1_01", "OnOff"
+	Option "SKY1",     "wf_compat_texswap_all_ml_01", "OnOff"
 }
 
 OptionMenu "WadFusionCompatibilityTexSwapMlFlynn"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL7"
 	StaticText "SKIES", "Gold"
-	Option "SKY1",     "wf_compat_texswap_all_m1_02", "OnOff"
+	Option "SKY1",     "wf_compat_texswap_all_ml_02", "OnOff"
 }
 
 OptionMenu "WadFusionCompatibilityTexSwapMlrMines"
@@ -223,7 +223,7 @@ OptionMenu "WadFusionCompatibilityTexSwapMlrMines"
 	Option "SW2STON2", "wf_compat_texswap_all_mlr_09", "OnOff"
 	StaticText " "
 	StaticText "SKIES", "Gold"
-	Option "SKY1",     "wf_compat_texswap_all_m1r_10", "OnOff"
+	Option "SKY1",     "wf_compat_texswap_all_mlr_10", "OnOff"
 }
 
 OptionMenu "WadFusionCompatibilityTexSwapMlrAnomaly"
@@ -234,7 +234,7 @@ OptionMenu "WadFusionCompatibilityTexSwapMlrAnomaly"
 	Option "SW2STON2", "wf_compat_texswap_all_mlr_12", "OnOff"
 	StaticText " "
 	StaticText "SKIES", "Gold"
-	Option "SKY1",     "wf_compat_texswap_all_m1r_13", "OnOff"
+	Option "SKY1",     "wf_compat_texswap_all_mlr_13", "OnOff"
 }
 
 OptionMenu "WadFusionCompatibilityTexSwapMlrFarside"
@@ -247,7 +247,7 @@ OptionMenu "WadFusionCompatibilityTexSwapMlrFarside"
 	Option "SW2STON2", "wf_compat_texswap_all_mlr_17", "OnOff"
 	StaticText " "
 	StaticText "SKIES", "Gold"
-	Option "SKY1",     "wf_compat_texswap_all_m1r_18", "OnOff"
+	Option "SKY1",     "wf_compat_texswap_all_mlr_18", "OnOff"
 }
 
 OptionMenu "WadFusionCompatibilityTexSwapMlrTrouble"
@@ -268,14 +268,14 @@ OptionMenu "WadFusionCompatibilityTexSwapMlrTrouble"
 	Option "SW2VINE",  "wf_compat_texswap_all_mlr_30", "OnOff"
 	StaticText " "
 	StaticText "SKIES", "Gold"
-	Option "SKY1",     "wf_compat_texswap_all_m1r_31", "OnOff"
+	Option "SKY1",     "wf_compat_texswap_all_mlr_31", "OnOff"
 }
 
 OptionMenu "WadFusionCompatibilityTexSwapMlrUdtwid"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL12"
 	StaticText "SKIES", "Gold"
-	Option "SKY4",     "wf_compat_texswap_all_m1r_32", "OnOff"
+	Option "SKY4",     "wf_compat_texswap_all_mlr_32", "OnOff"
 }
 
 OptionMenu "WadFusionHudOptions"

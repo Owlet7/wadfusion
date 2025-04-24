@@ -150,7 +150,7 @@ class WadFusionStaticHandler : StaticEventHandler
 		CVar.FindCVar("wf_compat_texswap_all_id1_13").ResetToDefault();
 		CVar.FindCVar("wf_compat_texswap_all_ml_00").ResetToDefault();
 		CVar.FindCVar("wf_compat_texswap_all_ml_01").ResetToDefault();
-		CVar.FindCVar("wf_compat_texswap_all_ml_03").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_ml_02").ResetToDefault();
 		CVar.FindCVar("wf_compat_texswap_all_mlr_00").ResetToDefault();
 		CVar.FindCVar("wf_compat_texswap_all_mlr_01").ResetToDefault();
 		CVar.FindCVar("wf_compat_texswap_all_mlr_02").ResetToDefault();
