@@ -92,8 +92,7 @@ map DM_MAP09 "$MHUSTR_9"
 map DM_MAP10 "$MHUSTR_10"
 {
 	Next = "DM_MAP11"
-	// the sky texture is set with an MBF sky transfer to "SKY1",
-	// so we replace it with zscript
+	// the sky texture is set with an MBF sky transfer
 	Sky1 = "SKY1"
 	NoIntermission
 	Music = "D_BONK"
