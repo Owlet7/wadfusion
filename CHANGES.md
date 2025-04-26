@@ -6,6 +6,7 @@
   custom skies, and the correct skies are now set by the texture substitution
   compatibility options. Will this be useful to anybody, ever? No! Did I do it
   anyway for the sake of completion? Yes!
+- If only DOOM 1 is present, `D_INTRO` will be used instead of `D_DM2TTL`.
 - Updated Russian localisation.
 
 ## [WadFusion 1.5.0](https://github.com/Owlet7/wadfusion/releases/tag/v1.5.0) — [22 April 2025](https://github.com/Owlet7/wadfusion/tree/v1.5.0)

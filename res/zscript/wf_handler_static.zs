@@ -20,6 +20,12 @@
 
 class WadFusionStaticHandler : StaticEventHandler
 {
+	override void OnEngineInitialize()
+	{
+		if ( Wads.FindLump('d_dm2ttl') == -1 )
+			S_ChangeMusic('d_intro', 0, false);
+	}
+	
 	override void PostUiTick()
 	{
 		if ( CVar.FindCVar("wf_compat_changemusic").GetBool() )
