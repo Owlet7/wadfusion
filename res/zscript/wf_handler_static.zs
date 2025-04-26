@@ -60,7 +60,7 @@ class WadFusionStaticHandler : StaticEventHandler
 		// don't loop title themes
 		for ( int i = 0; i < titleMusic.Size(); i++ )
 		{
-			DoSigilIntroMusicReplacements(); // wf_music_sigil.zs
+			DoSigilTitleMusicReplacements(); // wf_music_sigil.zs
 			DoIdkfaTitleMusicReplacements(); // wf_music_idkfa.zs
 			
 			if ( music == titleMusic[i] )
