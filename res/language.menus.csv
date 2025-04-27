@@ -80,7 +80,7 @@ WF_MENU_HUD_ID24,,,Always show cell and fuel ammo in status bar,,,,Zeige immer Z
 WF_MENU_HUD_SWAPHEALTHARMOR,,,Swap health and armor in fullscreen HUD,Swap health and armour in fullscreen HUD,,,Tausche Gesundheit und Rüstung des Vollbild-HUD,,,,,,,,,,,,,Zamień zdrowie i pancerz w pełnoekranowym HUD,,,,Поменять здоровье и броню местами в полноэкранном отображении информации,,,,,
 WF_MENU_HUD_ULTRAWIDE,,,Fullscreen HUD horizontal offset,,,,Horizontaler Versatz des Vollbild-HUD,,,,,,,,,,,,,Poziome przesunięcie pełnoekranowego HUD,,,,Горизонтальное смещение полноэкранного отображения информации,,,,,
 WF_MENU_HUD_ULTRAWIDE_FULLSCREEN,,,Only use horizontal offset in fullscreen mode,,,,Nutze horizontalen Versatz nur im Vollbild-Modus,,,,,,,,,,,,,Przesunięcie w poziomie tylko w trybie pełnoekranowym,,,,Использовать горизонтальное смещение только в полноэкранном режиме,,,,,
-WF_MENU_HUD_ALT,,,Use WadFusion’s alternate fullscreen HUD,,,,Nutze WadFusion's atlternatives Vollbild-HUD,,,,,,,,,,,,,Korzystaj z alternatywnego pełnoekranowego HUD WadFusion,,,,Использовать альтернативное полноэкранное отображение информации WadFusion,,,,,
+WF_MENU_HUD_ALT,,,Use WadFusion’s alternate fullscreen HUD,,,,Nutze WadFusion's alternatives Vollbild-HUD,,,,,,,,,,,,,Korzystaj z alternatywnego pełnoekranowego HUD WadFusion,,,,Использовать альтернативное полноэкранное отображение информации WadFusion,,,,,
 WF_MENU_HUD_ALT_MUGSHOT,,,Show mug shot,,,,Portät anzeigen,,,,,,,,,,,,,Pokaż portret,,,,Отображать портрет,,,,,
 WF_MENU_HUD_ALT_HEALTH,,,Show health,,,,Zeige Gesundheit,,,,,,,,,,,,,Pokaż zdrowie,,,,Отображать здоровье,,,,,
 WF_MENU_HUD_ALT_ARMOR,,,Show armor,Show armour,,,Zeige Rüstung,,,,,,,,,,,,,Pokaż zbroję,,,,Отображать броню,,,,,
