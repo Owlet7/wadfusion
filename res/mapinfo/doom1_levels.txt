@@ -104,7 +104,6 @@ map E1M8 "$HUSTR_E1M8"
 	BaronSpecial
 	SpecialAction_LowerFloor
 	NoSoundClipping
-	NeedClusterText
 	Author = "$WF_AU_PETERSEN_HALL"
 }
 
@@ -210,7 +209,6 @@ map E2M8 "$HUSTR_E2M8"
 	CyberdemonSpecial
 	SpecialAction_ExitLevel
 	NoSoundClipping
-	NeedClusterText
 	Author = "$WF_AU_PETERSEN"
 }
 
@@ -316,7 +314,6 @@ map E3M8 "$HUSTR_E3M8"
 	SpiderMastermindSpecial
 	SpecialAction_ExitLevel
 	NoSoundClipping
-	NeedClusterText
 	Author = "$WF_AU_PETERSEN"
 }
 
@@ -425,7 +422,6 @@ map E4M8 "$HUSTR_E4M8"
 	SpiderMastermindSpecial
 	SpecialAction_LowerFloor
 	NoSoundClipping
-	NeedClusterText
 	Author = "$WF_AU_GREEN"
 }
 

@@ -33,5 +33,4 @@ map E1M8B "$HUSTR_E1M8B"
 	BaronSpecial
 	SpecialAction_LowerFloor
 	NoSoundClipping
-	NeedClusterText
 }
