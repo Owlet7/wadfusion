@@ -1,28 +1,28 @@
 clearepisodes
 episode E1M1
 {
-	Name = "$WF_EPISODE_DOOM1_EP1"
+	Name = "$TXT_D1E1"
 	PicName = "M_EPI1"
 	Optional
 }
 
 episode E2M1
 {
-	Name = "$WF_EPISODE_DOOM1_EP2"
+	Name = "$TXT_D1E2"
 	PicName = "M_EPI2"
 	Optional
 }
 
 episode E3M1
 {
-	Name = "$WF_EPISODE_DOOM1_EP3"
+	Name = "$TXT_D1E3"
 	PicName = "M_EPI3"
 	Optional
 }
 
 episode E4M1
 {
-	Name = "$WF_EPISODE_UDOOM_EP4"
+	Name = "$TXT_D1E4"
 	PicName = "M_EPI4"
 	Optional
 }
@@ -43,7 +43,7 @@ episode E6M1
 
 episode MAP01
 {
-	Name = "$WF_CAMPAIGN_DOOM2"
+	Name = "$TXT_D2E1"
 	PicName = "M_HELL"
 	Optional
 }
@@ -92,7 +92,7 @@ episode ML_MAP19
 
 episode NV_MAP01
 {
-	Name = "$WF_CAMPAIGN_NERVE"
+	Name = "$TXT_D2E2"
 	PicName = "M_NOREST"
 	Optional
 }
