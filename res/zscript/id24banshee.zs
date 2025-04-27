@@ -35,7 +35,7 @@ class ID24Banshee : Actor
 		SeeSound "monsters/banshee/sight";
 		PainSound "monsters/banshee/pain";
 		DeathSound "monsters/banshee/death";
-		SelfObituary "$OB_ID24BANSHEE";
+	//	SelfObituary "$OB_ID24BANSHEE";
 		Tag "$FN_ID24BANSHEE";
 	}
 	States
