@@ -97,7 +97,7 @@ extend class WadFusionHandler
 extend class WadFusionStaticHandler
 {
 	// change Sigil's title music to mp3/midi if the option is changed, without looping
-	ui void DoSigilIntroMusicReplacements()
+	ui void DoSigilTitleMusicReplacements()
 	{
 		let musicPlaying = MusPlaying.Name.MakeLower();
 		

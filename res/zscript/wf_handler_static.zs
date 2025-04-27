@@ -20,6 +20,12 @@
 
 class WadFusionStaticHandler : StaticEventHandler
 {
+	override void OnEngineInitialize()
+	{
+		if ( Wads.FindLump('d_dm2ttl') == -1 )
+			S_ChangeMusic('d_intro', 0, false);
+	}
+	
 	override void PostUiTick()
 	{
 		if ( CVar.FindCVar("wf_compat_changemusic").GetBool() )
@@ -60,7 +66,7 @@ class WadFusionStaticHandler : StaticEventHandler
 		// don't loop title themes
 		for ( int i = 0; i < titleMusic.Size(); i++ )
 		{
-			DoSigilIntroMusicReplacements(); // wf_music_sigil.zs
+			DoSigilTitleMusicReplacements(); // wf_music_sigil.zs
 			DoIdkfaTitleMusicReplacements(); // wf_music_idkfa.zs
 			
 			if ( music == titleMusic[i] )

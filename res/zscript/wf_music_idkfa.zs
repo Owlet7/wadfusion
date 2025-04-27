@@ -22,21 +22,29 @@ extend class WadFusionStaticHandler
 {
 	ui void DoIdkfaTitleMusicReplacements()
 	{
-		let musicPlaying = MusPlaying.Name.MakeLower();
+		let music = MusPlaying.Name.MakeLower();
 		// change title music to Andrew Hulshult's soundtrack if true, without looping
 		if ( CVar.FindCVar("wf_mus_idkfa").GetBool() )
 		{
-			if ( musicPlaying == "d_intro" || musicPlaying == "d_introa" )
+			if ( music == "d_intro" || music == "d_introa" )
 				S_ChangeMusic("h_intro", 0, false);
-			else if ( musicPlaying == "d_dm2ttl" )
+			else if ( music == "p_dm2ttl" )
+				S_ChangeMusic("h_dm2ttl", 0, false);
+			else if ( music == "d_dm2ttl" )
 				S_ChangeMusic("h_dm2ttl", 0, false);
 		}
 		else
 		{
-			if ( musicPlaying == "h_intro" )
+			if ( music == "h_intro" )
 				S_ChangeMusic("d_intro", 0, false);
-			else if ( musicPlaying == "h_dm2ttl" )
-				S_ChangeMusic("d_dm2ttl", 0, false);
+			else if ( music == "h_dm2ttl" )
+			{
+				// TODO: replace with different logic when intros are added
+				if ( Level.MapName.MakeLower().Left(3) == "pl_" )
+					S_ChangeMusic("p_dm2ttl", 0, false);
+				else
+					S_ChangeMusic("d_dm2ttl", 0, false);
+			}
 		}
 	}
 	
