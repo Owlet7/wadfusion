@@ -7,7 +7,7 @@
   compatibility options. Will this be useful to anybody, ever? No! Did I do it
   anyway for the sake of completion? Yes!
 - If only DOOM 1 is present, `D_INTRO` will be used instead of `D_DM2TTL`.
-- Added `E4M6Special` MAPINFO property to `E4M6`.
+- Fixed boss specials not triggering in certain mods in `E4M6` and `LR_MAP13`.
 - Added player obituaries to the ID24 monsters.
 - Added German localisation. @Meerschweinmann
 - Updated Russian localisation.

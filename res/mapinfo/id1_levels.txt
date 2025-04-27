@@ -180,7 +180,9 @@ map LR_MAP13 "$XHUSTR_14"
 	TitlePatch = "XWILV15"
 	Sky1 =  "SKYX4A"
 	Music = "D_VESPER"
-	SpecialAction = "Cyberdemon", "Floor_LowerToNearest", 666, 8
+	E2M8Special
+	CyberdemonSpecial
+	SpecialAction_LowerFloor
 	Author = "$WF_AU_DUNLOP"
 }
 
