@@ -9,6 +9,7 @@
 - If only DOOM 1 is present, `D_INTRO` will be used instead of `D_DM2TTL`.
 - Added `E4M6Special` MAPINFO property to `E4M6`.
 - Added player obituaries to the ID24 monsters.
+- Added German localisation. @Meerschweinmann
 - Updated Russian localisation.
 
 ## [WadFusion 1.5.0](https://github.com/Owlet7/wadfusion/releases/tag/v1.5.0) — [22 April 2025](https://github.com/Owlet7/wadfusion/tree/v1.5.0)
