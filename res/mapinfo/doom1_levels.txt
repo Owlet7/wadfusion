@@ -397,6 +397,7 @@ map E4M6 "$HUSTR_E4M6"
 	TitlePatch = "WILV35"
 	Par = 390
 	Music = "$MUSIC_E2M4"
+	E4M6Special
 	CyberdemonSpecial
 	SpecialAction_OpenDoor
 	Author = "$WF_AU_ROMERO"
