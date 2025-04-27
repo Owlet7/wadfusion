@@ -31,6 +31,7 @@ class ID24Tyrant : Cyberdemon
 		PainSound "monsters/tyrant/pain";
 		DeathSound "monsters/tyrant/death";
 		ActiveSound "monsters/tyrant/active";
+		Obituary "$OB_ID24TYRANT";
 		Tag "$FN_ID24TYRANT";
 	}
 	States
