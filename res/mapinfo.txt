@@ -1,7 +1,7 @@
+include mapinfo/doomednums.txt
 include mapinfo/episodes.txt
 include mapinfo/clusters.txt
 include mapinfo/intermissions.txt
-include mapinfo/doomednums.txt
 include mapinfo/doom1_levels.txt
 include mapinfo/doom2_levels.txt
 include mapinfo/master_levels.txt
