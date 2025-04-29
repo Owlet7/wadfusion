@@ -22,7 +22,7 @@ class WadFusionStaticHandler : StaticEventHandler
 {
 	override void OnEngineInitialize()
 	{
-		if ( Wads.FindLump('d_dm2ttl') == -1 )
+		if ( Wads.CheckNumForFullName('music/d_dm2ttl.mus') == -1 )
 			S_ChangeMusic('d_intro', 0, false);
 	}
 	
