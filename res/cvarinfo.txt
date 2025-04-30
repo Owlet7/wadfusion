@@ -4,6 +4,8 @@ nosave bool wf_mus_idkfa = false;
 server bool wf_map_e1m8b = false;
 server bool wf_map_e1m4b = false;
 user bool wf_id24trans = false;
+server bool wf_intros = false;
+server bool wf_fullrun = false;
 
 server int wf_compat_id24_weapons = 1;
 server bool wf_compat_sigil2spiderboss = true;
@@ -147,4 +149,5 @@ nosave float wf_hud_alt_alpha_stats = 0.2;
 nosave float wf_hud_alt_alpha_stats_time = 0.2;
 nosave float wf_hud_alt_alpha_stats_mapname = 0.2;
 
+nosave noarchive string wf_newgame;
 nosave noarchive int wf_null;

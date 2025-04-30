@@ -111,6 +111,26 @@ class WadFusionHandler : EventHandler
 		{
 			DoBlackroomMapReplacements();
 		}
+		
+		// wf_newgame.zs
+		NewGameIntro();
+		NewGameStory();
+	}
+	
+	override void RenderOverlay(RenderEvent e)
+	{
+		// wf_newgame.zs
+		NewGameTitlePic();
+	}
+	
+	override bool InputProcess(InputEvent e)
+	{
+		if (e.Type == InputEvent.Type_KeyDown)
+		{
+			if ( CVar.FindCVar("wf_intros").GetBool() )
+				NewGameChangeLevelInput(); // wf_newgame.zs
+		}
+		return false;
 	}
 	
 	override void CheckReplacement (ReplaceEvent e)

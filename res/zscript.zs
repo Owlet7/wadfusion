@@ -10,6 +10,7 @@ version "4.15"
 #include "zscript/wf_sbar.zs"
 #include "zscript/wf_sbar_alt.zs"
 #include "zscript/wf_mapfixes.zs"
+#include "zscript/wf_newgame.zs"
 
 // ID24 actors
 #include "zscript/id24gore.zs"

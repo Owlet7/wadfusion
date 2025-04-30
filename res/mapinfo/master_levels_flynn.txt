@@ -13,9 +13,15 @@ defaultmap
 	Author = "$WF_AU_FLYNN"
 }
 
+map WF_MASTERLEVELS_STORY1 "$ML_MINES"
+{
+	TitlePatch = "MWILV28"
+}
+
 map ML_MAP29 "$ML_MINES" // bonus level
 {
 	Next = "ML_MAP30"
+	// Cluster = 32
 	Sky1 = "SKY1"
 	TitlePatch = "MWILV28"
 	Music = "$MUSIC_RUNNIN"
@@ -24,6 +30,7 @@ map ML_MAP29 "$ML_MINES" // bonus level
 map ML_MAP30 "$ML_ANOMALY" // bonus level
 {
 	Next = "ML_MAP31"
+	Cluster = 33
 	Sky1 = "SKY1"
 	TitlePatch = "MWILV29"
 	Music = "$MUSIC_DOOM"
@@ -32,6 +39,7 @@ map ML_MAP30 "$ML_ANOMALY" // bonus level
 map ML_MAP31 "$ML_FARSIDE" // bonus level
 {
 	Next = "ML_MAP32"
+	Cluster = 34
 	Sky1 = "SKY1"
 	TitlePatch = "MWILV30"
 	Music = "$MUSIC_ROMERO"
@@ -40,6 +48,7 @@ map ML_MAP31 "$ML_FARSIDE" // bonus level
 map ML_MAP32 "$ML_TROUBLE" // bonus level
 {
 	Next = "ML_MAP16"
+	Cluster = 35
 	Sky1 = "SKY1"
 	TitlePatch = "MWILV31"
 	Music = "$MUSIC_AMPIE"
@@ -48,6 +57,7 @@ map ML_MAP32 "$ML_TROUBLE" // bonus level
 map ML_MAP16 "$ML_MANOR"
 {
 	Next = "ML_MAP17"
+	Cluster = 36
 	Sky1 = "SKY1"
 	TitlePatch = "MWILV15"
 	Music = "$MUSIC_MESSAG"
@@ -55,7 +65,8 @@ map ML_MAP16 "$ML_MANOR"
 
 map ML_MAP17 "$ML_TTRAP"
 {
-	Next = "EndTitle"
+	Next = "WF_MASTERLEVELS_STORY2"
+	Cluster = 37
 	Sky1 = "SKY1"
 	TitlePatch = "MWILV16"
 	Music = "$MUSIC_E1M7"
