@@ -980,7 +980,20 @@ gates.  Chances are she made it through -- but
 what's on the other side?
 
 Only one way to find out.  You'll have to go
-through DANTE'S GATE.",,,,,,,,,,,,,,,,,,,,,,,,,,
+through DANTE'S GATE.",,,,"Nach all dem Irrsinn auf der UAC-Basis hast du
+den Kontakt zu deiner Gefährtin BEATRICE verloren.
+Wie ihr beide euch aus den Augen verlieren konntet,
+ist angesichts all der Dämonen und Teufel kaum verwunderlich.
+Doch du bist fest entschlossen: 
+Du wirst nicht umsonst durch die Hölle gehen.
+Der einzige weitere Überlebende außer dir und Beatrice ist VIRGIL,
+der beatnikhafte Poet aus den Tiefen des Alls.
+Er hat Beatrice zuletzt an einem der Warp-Tore gesehen.
+Mit etwas Glück hat sie es hindurchgeschafft – 
+doch was erwartet dich auf der anderen Seite?
+
+Es gibt nur einen Weg, das herauszufinden:
+Du musst durch DANTES TOR treten.",,,,,,,,,,,,,,,,,,,,,,
 ML5STORY2,Crossing Acheron: 2nd Canto of INFERNO,,"Having passed through DANTE'S GATE and
 survived, you now find yourself in a keep on the
 shores of the river Acheron. This is the second
@@ -1002,7 +1015,27 @@ this hell-hole to a safer haven beyond.  If only
 you could hold her in your arms again, you know
 what you would say:
 
-""Gimme some sugar, Babe.""",,,,,,,,,,,,,,,,,,,,,,,,,,
+""Gimme some sugar, Babe.""",,,,"Nachdem du DANTES TOR durchquert und überlebt hast,
+findest du dich nun in einer Festung am Ufer des Flusses Acheron wieder.
+Dies ist die zweite Etappe deiner Reise auf der Suche nach Beatrice.
+Von deinem Führer Virgil fehlt jede Spur.
+""Er hat sich aus dem Staub gemacht!"" denkst du dir; 
+doch es bleibt keine Zeit, um weiter darüber nachzudenken:
+Schon greifen dich mehrere Dämonen an,
+und aus der Ferne dringt das unheilvolle Schnurren des
+Arch-Vile an dein Ohr. 
+(Schau ihm lieber nicht zu lange in die Augen bevor du losrennst.)
+Wie so oft erledigst du was an Monstern zu erledigen ist
+und widmest dich deiner Aufgabe.
+
+Dein Ziel? So schnell wie möglich aus diesem höllischen Ort
+zu entkommen – und Beatrice wiederzufinden.
+Du hoffst nur, dass sie diesen Albtraum bereits hinter sich
+gelassen hat und sich nun an einem sichereren Ort befindet.
+Und wenn du sie endlich wieder in den Armen halten könntest,
+wüsstest du genau, was du sagen würdest:
+
+""Gib mir einen Kuss, Babe.""",,,,,,,,,,,,,,,,,,,,,,
 ML5STORY3,Virgil's Lead: 3rd Canto of INFERNO,,"In your search for Beatrice, you lost your
 guide Virgil (the beatnik space-poet) while crossing
 Acheron. But you've caught up with him again,
@@ -1012,7 +1045,18 @@ are not much impressed with Virgil's way with words).
 ""You can get a lot further with a kind word and
 a gun then you can a kind word.""
 ""You belong to the NRA, don't you?"" Virgil asks.
-""No, I'm just a pessimistic pacifist.""",,,,,,,,,,,,,,,,,,,,,,,,,,
+""No, I'm just a pessimistic pacifist.""",,,,"Auf deiner Suche nach Beatrice hast du deinen
+Führer Virgil (den beatnikhaften Weltraum-Poeten)
+beim Überqueren des Acheron aus den Augen verloren.
+Doch nun hast du ihn wieder eingeholt,
+und er hat sich bereit erklärt, 
+dich durch diese Zwischenstation zu führen
+(vor allem deshalb, weil Dämonen und untote Sergeants von
+seiner Wortgewandtheit herzlich wenig beeindruckt sind).
+""Mit einem freundlichen Wort und einer Waffe kommt man
+deutlich weiter als nur mit einem freundlichen Wort""
+""Du bist Mitglied bei der NRA, oder?"" fragte Virgil.
+""Nein, ich bin nur ein pessimistischer Pazifist.""",,,,,,,,,,,,,,,,,,,,,,
 ML5STORY4,Minos' Judgement: 4th Canto of INFERNO,,"In your search for Beatrice, your
 guide, Virgil (the beatnik space-poet) has just
 successfully lead you through the First Circle of
@@ -1021,7 +1065,15 @@ the Judge of Hell.
   ""Well,"" you say, ""this is another fine mess
 you've gotten us into.  Now what?""
   Virgil, with his usual loquacity, replies:
-""Heh heh.""",,,,,,,,,,,,,,,,,,,,,,,,,,
+""Heh heh.""",,,,"Auf deiner Suche nach Beatrice hat dich dein
+Führer Virgil (der beatnikhafte Weltraum-Poet)
+soeben erfolgreich durch den Ersten Kreis des Hades geleitet.
+Doch nun stehst du ausgerechnet vor dem Gerichtshof des Minos,
+dem Richter der Hölle.
+""Na großartig"" sagst du, ""wieder mal eine herrliche Klemme,
+in die du uns da gebracht hast. Und jetzt?""
+Virgil, ganz der wortgewandte Philosoph, antwortet nur:
+""Heh heh.""",,,,,,,,,,,,,,,,,,,,,,
 ML5STORY5,Nessus: 5th Canto of INFERNO,,"Minos decided to grant leniency and
 not kill you until next week.  In the meantime,
 having slipped past Cerberus, the top dog, you
