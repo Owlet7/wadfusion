@@ -113,6 +113,8 @@ class WadFusionHandler : EventHandler
 		}
 		
 		// wf_newgame.zs
+		// very hacky method of adding optional titlescreens
+		// and story intermissionswhen starting new games
 		NewGameIntro();
 		NewGameStory();
 	}
@@ -120,15 +122,24 @@ class WadFusionHandler : EventHandler
 	override void RenderOverlay(RenderEvent e)
 	{
 		// wf_newgame.zs
+		// sets the correct titlepic for the hacky titlescreens
 		NewGameTitlePic();
 	}
 	
 	override bool InputProcess(InputEvent e)
 	{
-		if (e.Type == InputEvent.Type_KeyDown)
+		// press any key on the hacky titlescreens to continue
+		if ( CVar.FindCVar("wf_intros").GetBool() )
 		{
-			if ( CVar.FindCVar("wf_intros").GetBool() )
-				NewGameChangeLevelInput(); // wf_newgame.zs
+			string mapName = Level.MapName.MakeLower();
+			if ( mapName.Left(10) == "wf_newgame" )
+			{
+				if (e.Type == InputEvent.Type_KeyDown)
+				{
+					// wf_newgame.zs
+					NewGameChangeLevelInput();
+				}
+			}
 		}
 		return false;
 	}

@@ -9,6 +9,7 @@ defaultmap
 	Author = "$WF_AU_KVERNMO"
 }
 
+// needed for the zscript-based intermission hacks
 map WF_MASTERLEVELS_STORY3 "$ML_BLOODSEA"
 {
 	TitlePatch = "MWILV18"

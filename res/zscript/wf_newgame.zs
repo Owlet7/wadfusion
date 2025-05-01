@@ -22,23 +22,23 @@ extend class WadFusionHandler
 {
 	ui void NewGameTitlePic()
 	{
-		TextureId titlePic = TexMan.CheckForTexture("TITLEPIC");
-		TextureId titleD1 = TexMan.CheckForTexture("TITLED1");
-		TextureId titleUD = TexMan.CheckForTexture("TITLEUD");
-		TextureId titleS1 = TexMan.CheckForTexture("TITLES1");
-		TextureId titleS2 = TexMan.CheckForTexture("TITLES2");
-		TextureId titleD2 = TexMan.CheckForTexture("TITLED2");
-		TextureId titleML = TexMan.CheckForTexture("TITLEML");
-		TextureId titleNV = TexMan.CheckForTexture("TITLENV");
-		TextureId titleLR = TexMan.CheckForTexture("TITLELR");
-		TextureId titleTN = TexMan.CheckForTexture("TITLETN");
-		TextureId titlePL = TexMan.CheckForTexture("TITLEPL");
-		
 		string mapName = Level.MapName.MakeLower();
 		if ( mapName.Left(10) == "wf_newgame" )
 		{
 			if ( CVar.FindCVar("wf_intros").GetBool() )
 			{
+				TextureId titlePic = TexMan.CheckForTexture("TITLEPIC");
+				TextureId titleD1 = TexMan.CheckForTexture("TITLED1");
+				TextureId titleUD = TexMan.CheckForTexture("TITLEUD");
+				TextureId titleS1 = TexMan.CheckForTexture("TITLES1");
+				TextureId titleS2 = TexMan.CheckForTexture("TITLES2");
+				TextureId titleD2 = TexMan.CheckForTexture("TITLED2");
+				TextureId titleML = TexMan.CheckForTexture("TITLEML");
+				TextureId titleNV = TexMan.CheckForTexture("TITLENV");
+				TextureId titleLR = TexMan.CheckForTexture("TITLELR");
+				TextureId titleTN = TexMan.CheckForTexture("TITLETN");
+				TextureId titlePL = TexMan.CheckForTexture("TITLEPL");
+				
 				let mapSuffix = mapName.Mid(10, 3);
 				
 				if ( mapSuffix == "_d1" )
@@ -76,10 +76,13 @@ extend class WadFusionHandler
 		{
 			if ( Level.MapTime == 0 )
 			{
+				// starting an empty intermission on the first tic removes
+				// the screen wipe that usually heppens when changing levels
 				Level.StartIntermission("WadFusionNewGame", FSTATE_INLEVELNOWIPE);
 				
 				let mapSuffix = mapName.Mid(10, 3);
 				
+				// set which map to switch to
 				if ( mapName.Mid(10, 3) == "_d1" )
 					CVar.FindCVar("wf_newgame").SetString("e1m1");
 				else if ( mapSuffix == "_ud" )
@@ -103,6 +106,7 @@ extend class WadFusionHandler
 				
 				if ( CVar.FindCVar("wf_intros").GetBool() )
 				{
+					// play title music for each game
 					if ( mapSuffix == "_d1" || mapSuffix == "_ud" )
 						S_ChangeMusic("d_intro", 0, false);
 					else if ( mapSuffix == "_s1" )
@@ -117,6 +121,7 @@ extend class WadFusionHandler
 						S_ChangeMusic("t_dm2ttl", 0, false);
 					else if ( mapSuffix == "_pl" )
 						S_ChangeMusic("p_dm2ttl", 0, false);
+					// immediately switch to the set map if not starting an episode
 					else
 						NewGameChangeLevel();
 				}
@@ -130,6 +135,7 @@ extend class WadFusionHandler
 	{
 		string newGame = CVar.FindCVar("wf_newgame").GetString();
 		string mapName = Level.MapName.MakeLower();
+		// play episode into stories
 		if ( mapName == "wf_newgame_story" )
 		{
 			if ( newGame == "e1m1" )
@@ -148,12 +154,14 @@ extend class WadFusionHandler
 				Level.StartIntermission("Tnt_Intro", FSTATE_INLEVELNOWIPE);
 			else if ( newGame == "pl_map01" )
 				Level.StartIntermission("Plutonia_Intro", FSTATE_INLEVELNOWIPE);
+			// change to the map which was set in NewGameIntro()
 			if ( Level.MapTime >= 1 )
 			{
 				Level.ChangeLevel(newGame, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
-				CVar.FindCVar("wf_newgame").SetString("");
+				CVar.FindCVar("wf_newgame").ResetToDefault();
 			}
 		}
+		// play master levels rejects stories at the start of each mini-campaign
 		if ( mapName.Left(21) == "wf_masterlevels_story" )
 		{
 			let mapSuffix = mapName.Mid(21, 1);
@@ -175,7 +183,7 @@ extend class WadFusionHandler
 			if ( Level.MapTime >= 1 )
 			{
 				Level.ChangeLevel(newGame, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
-				CVar.FindCVar("wf_newgame").SetString("");
+				CVar.FindCVar("wf_newgame").ResetToDefault();
 			}
 		}
 	}
@@ -214,15 +222,14 @@ extend class WadFusionHandler
 		string mapName = Level.MapName.MakeLower();
 		if ( mapName.Left(10) == "wf_newgame" && mapName != "wf_newgame_story" )
 			Level.ChangeLevel(newGame, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
-		CVar.FindCVar("wf_newgame").SetString("");
+		CVar.FindCVar("wf_newgame").ResetToDefault();
 	}
 	
 	ui void NewGameChangeLevelInput()
 	{
 		string newGame = CVar.FindCVar("wf_newgame").GetString();
 		string mapName = Level.MapName.MakeLower();
-		if ( mapName.Left(10) == "wf_newgame" && mapName != "wf_newgame_story" &&
-				mapName != "wf_newgame_ml" && mapName != "wf_newgame_ud" )
+		if ( mapName != "wf_newgame_story" && mapName != "wf_newgame_ml" && mapName != "wf_newgame_ud" )
 			Level.ChangeLevel("wf_newgame_story", 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
 		else if ( mapName == "wf_newgame_ml" || mapName == "wf_newgame_ud" )
 			Level.ChangeLevel(newGame, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);

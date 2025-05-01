@@ -1,3 +1,5 @@
+// episode definitions for "WF_NEWGAME_*" maps are needed for the zscript-based intro hacks
+
 clearepisodes
 episode WF_NEWGAME_D1
 {

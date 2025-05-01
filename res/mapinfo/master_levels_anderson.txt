@@ -10,6 +10,7 @@ defaultmap
 	Author = "$WF_AU_ANDERSON"
 }
 
+// needed for the zscript-based intermission hacks
 map WF_MASTERLEVELS_STORY2 "$ML_DANTES"
 {
 	TitlePatch = "MWILV32"
@@ -89,6 +90,7 @@ map ML_MAP35 "$ML_CHIRON" // duplicate of E4M7
 
 map ML_MAP36 "$ML_LETHE" // bonus level - UDTWiD's E4M8
 {
+	// needed for the zscript-based intermission hacks
 	Next = "WF_MASTERLEVELS_STORY2"
 	Sky1 = "SKY4"
 	TitlePatch = "MWILV35"
