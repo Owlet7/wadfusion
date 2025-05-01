@@ -129,7 +129,7 @@ class WadFusionHandler : EventHandler
 	override bool InputProcess(InputEvent e)
 	{
 		// press any key on the hacky titlescreens to continue
-		if ( CVar.FindCVar("wf_intros").GetBool() )
+		if ( CVar.FindCVar("wf_intros").GetInt() >= 1 )
 		{
 			string mapName = Level.MapName.MakeLower();
 			if ( mapName.Left(10) == "wf_newgame" )
