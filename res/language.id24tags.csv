@@ -1,15 +1,15 @@
-default,Identifier,Remarks,Filter,eng enc ena enz eni ens enj enb enl ent enw,ba,cs,da,de,el,eo,es,esm esn esg esc esa esd esv eso esr ess esf esl esy esz esb ese esh esi esu,fi,fr,hr,hu,it,jp,ko,nl,no nb,pl,pt,ptg,ro,ru,sr,sv,tr,uk
-,,Actor tag names,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-Ghoul,FN_ID24GHOUL,,,,Ghul,,,,,,,,,,,,,,,,,Upiór,,,,Гуль,,,,
-Banshee,FN_ID24BANSHEE,,,,,,,,,,,,,,,,,,,,,,,,,Банши,,,,
-Shocktrooper,FN_ID24PLASMAGUY,,,,Stoßtruppler,,,,,,,,,,,,,,,,,Szokowiec,,,,Штурмовик,,,,
-Mindweaver,FN_ID24MINDWEAVER,,,,Hirn-Weberknecht,,,,,,,,,,,,,,,,,Mózgotkacz,,,,Умасплетатель,,,,
-Vassago,FN_ID24VASSAGO,,,,,,,,,,,,,,,,,,,,,Wassago,,,,Вассаго,,,,
-Tyrant,FN_ID24TYRANT,,,,Tyrann,,,,,,,,,,,,,,,,,Tyran,,,,Тиран,,,,
-,,Obituaries,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-%o caught a ghoul's energy ball.,OB_ID24GHOUL,,,,%o hat den Energie-Ball eines Ghul gefangen.,,,,,,,,,,,,,,,,,,,,,Игрок %o словил энергетический шар гуля.,,,,
-%o was terminated by a banshee.,OB_ID24BANSHEE,,,,%o wurde von einem Banshee erledigt.,,,,,,,,,,,,,,,,,,,,,Игрока %o прикончил банши.,,,,
-%o was melted by a shocktrooper.,OB_ID24PLASMAGUY,,,,%o wurde von einem Stoßtruppler geschmolzen.,,,,,,,,,,,,,,,,,,,,,Игрока %o расплавил штурмовик.,,,,
-%o was mowed down by a mindweaver.,OB_ID24MINDWEAVER,,,,%o wurde von einem Hirn-Weberknecht niedergemäht.,,,,,,,,,,,,,,,,,,,,,Игрок %o был скошен умасплетателем.,,,,
-%o was scorched by a vassago.,OB_ID24VASSAGO,,,,%o wurde von einem Vassago verbrannt.,,,,,,,,,,,,,,,,,,,,,Игрока %o выжжел вассаго.,,,,
-%o was blown apart by a tyrant.,OB_ID24TYRANT,,,,%o wurde von einem Tyrannen in die Luft gesprengt.,,,,,,,,,,,,,,,,,,,,,Игрок %o был разорван на части тираном.,,,,
+default,Identifier,Remarks,Filter,eng enc ena enz eni ens enj enb enl ent enw,ba,cs,da,de,el,eo,es,esm esn esg esc esa esd esv eso esr ess esf esl esy esz esb ese esh esi esu,fi,fr,hr,hu,it,jp,ko,nl,no nb,pl,pt,ptg,ro,ru,sr,sv,tr,uk,zh,zht
+,,Actor tag names,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Ghoul,FN_ID24GHOUL,,,,,,,Ghul,,,Necrófago,,,Goule,,,,グール,구울,,,Ghul,,Necrótico,,Упырь,,,,,食尸鬼,食屍鬼
+Banshee,FN_ID24BANSHEE,,,,,,,,,,Alma en Pena,Banshee,,,,,,バンシー,밴시,,,Kostucha,,,,Банши,,,,,女妖,妖姬
+Shocktrooper,FN_ID24PLASMAGUY,,,,,,,,,,,,,,,,,ショックトルーパー,쇼크트루퍼,,,Szturmowiec,,Tropa de Choque,,Штурмовик,,,,,突击兵,震撼兵
+Mindweaver,FN_ID24MINDWEAVER,,,,,,,,,,Tejementes,,,,,,,マインドウィーバー,마인드 위버,,,Tkacz Umysłu,,Tecementes,,Ткач разума,,,,,心灵编织者,心靈織蛛
+Vassago,FN_ID24VASSAGO,,,,,,,,,,,,,,,,,VASSAGO,바사고,,,Wassago,,,,Вассаго,,,,,瓦沙克,瓦薩戈
+Tyrant,FN_ID24TYRANT,,,,,,,,,,Tirano,,,,,,,タイラント,타이런트,,,Tyran,,Tirano,,Тиран,,,,,暴君,暴君
+,,Obituaries,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+%o caught a ghoul's energy ball.,OB_ID24GHOUL,,,,,,,%o hat den Energie-Ball eines Ghul gefangen.,,,,,,,,,,,,,,,,,,Игрок %o словил энергетический шар упыря.,,,,,,
+%o was terminated by a banshee.,OB_ID24BANSHEE,,,,,,,%o wurde von einem Banshee erledigt.,,,,,,,,,,,,,,,,,,Игрока %o прикончил банши.,,,,,,
+%o was melted by a shocktrooper.,OB_ID24PLASMAGUY,,,,,,,%o wurde von einem Shocktrooper geschmolzen.,,,,,,,,,,,,,,,,,,Игрока %o расплавил штурмовик.,,,,,,
+%o was mowed down by a mindweaver.,OB_ID24MINDWEAVER,,,,,,,%o wurde von einem Mindweaver niedergemäht.,,,,,,,,,,,,,,,,,,Игрок %o был скошен ткачом разума.,,,,,,
+%o was scorched by a vassago.,OB_ID24VASSAGO,,,,,,,%o wurde von einem Vassago verbrannt.,,,,,,,,,,,,,,,,,,Игрока %o выжжел вассаго.,,,,,,
+%o was blown apart by a tyrant.,OB_ID24TYRANT,,,,,,,%o wurde von einem Tyrant in die Luft gesprengt.,,,,,,,,,,,,,,,,,,Игрок %o был разорван на части тираном.,,,,,,
