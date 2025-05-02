@@ -76,22 +76,16 @@ intermission Doom1_Intro
 	TextScreen
 	{
 		Text = "$D1INTRO2"
-		Background = "$FLOOR7_2", 1
-		Music = "$MUSIC_VICTOR"
 	}
 	
 	TextScreen
 	{
 		Text = "$D1INTRO3"
-		Background = "$FLOOR7_2", 1
-		Music = "$MUSIC_VICTOR"
 	}
 	
 	TextScreen
 	{
 		Text = "$D1INTRO4"
-		Background = "$FLOOR7_2", 1
-		Music = "$MUSIC_VICTOR"
 	}
 }
 
@@ -127,29 +121,21 @@ intermission Doom2_Intro
 	TextScreen
 	{
 		Text = "$D2INTRO2"
-		Background = "$GRNROCK", 1
-		Music = "$MUSIC_READ_M"
 	}
 	
 	TextScreen
 	{
 		Text = "$D2INTRO3"
-		Background = "$GRNROCK", 1
-		Music = "$MUSIC_READ_M"
 	}
 	
 	TextScreen
 	{
 		Text = "$D2INTRO4"
-		Background = "$GRNROCK", 1
-		Music = "$MUSIC_READ_M"
 	}
 	
 	TextScreen
 	{
 		Text = "$D2INTRO5"
-		Background = "$GRNROCK", 1
-		Music = "$MUSIC_READ_M"
 	}
 }
 
@@ -185,43 +171,31 @@ intermission Tnt_Intro
 	TextScreen
 	{
 		Text = "$TNINTRO2"
-		Background = "$GRNROCK", 1
-		Music = "T_READ_M"
 	}
 	
 	TextScreen
 	{
 		Text = "$TNINTRO3"
-		Background = "$GRNROCK", 1
-		Music = "T_READ_M"
 	}
 	
 	TextScreen
 	{
 		Text = "$TNINTRO4"
-		Background = "$GRNROCK", 1
-		Music = "T_READ_M"
 	}
 	
 	TextScreen
 	{
 		Text = "$TNINTRO5"
-		Background = "$GRNROCK", 1
-		Music = "T_READ_M"
 	}
 	
 	TextScreen
 	{
 		Text = "$TNINTRO6"
-		Background = "$GRNROCK", 1
-		Music = "T_READ_M"
 	}
 	
 	TextScreen
 	{
 		Text = "$TNINTRO7"
-		Background = "$GRNROCK", 1
-		Music = "T_READ_M"
 	}
 }
 
@@ -237,43 +211,31 @@ intermission Plutonia_Intro
 	TextScreen
 	{
 		Text = "$PLINTRO2"
-		Background = "$GRNROCK", 1
-		Music = "P_READ_M"
 	}
 	
 	TextScreen
 	{
 		Text = "$PLINTRO3"
-		Background = "$GRNROCK", 1
-		Music = "P_READ_M"
 	}
 	
 	TextScreen
 	{
 		Text = "$PLINTRO4"
-		Background = "$GRNROCK", 1
-		Music = "P_READ_M"
 	}
 	
 	TextScreen
 	{
 		Text = "$PLINTRO5"
-		Background = "$GRNROCK", 1
-		Music = "P_READ_M"
 	}
 	
 	TextScreen
 	{
 		Text = "$PLINTRO6"
-		Background = "$GRNROCK", 1
-		Music = "P_READ_M"
 	}
 	
 	TextScreen
 	{
 		Text = "$PLINTRO7"
-		Background = "$GRNROCK", 1
-		Music = "P_READ_M"
 	}
 }
 
@@ -309,7 +271,5 @@ intermission MasterLevels_Intro3
 	TextScreen
 	{
 		Text = "$ML6STORY1"
-		Background = "$GRNROCK", 1
-		Music = "$MUSIC_READ_M"
 	}
 }
