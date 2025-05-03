@@ -155,7 +155,7 @@ intermission Id1_Intro
 	{
 		Text = "$ID1INTRO"
 		Background = "$GRNROCK", 1
-		Music = "$D_SHORES"
+		Music = "D_SHORES"
 	}
 }
 
