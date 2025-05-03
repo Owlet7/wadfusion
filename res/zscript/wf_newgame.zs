@@ -178,11 +178,21 @@ extend class WadFusionHandler
 			else if ( mapSuffix == "3" )
 			{
 				Level.StartIntermission("MasterLevels_Intro3", FSTATE_INLEVELNOWIPE);
+				CVar.FindCVar("wf_newgame").SetString("ml_map34");
+			}
+			else if ( mapSuffix == "4" )
+			{
+				Level.StartIntermission("MasterLevels_Intro4", FSTATE_INLEVELNOWIPE);
 				CVar.FindCVar("wf_newgame").SetString("ml_map19");
 			}
-			if ( Level.MapTime >= 1 )
+			if ( Level.MapTime >= 1 && newGame != "ml_map34" )
 			{
 				Level.ChangeLevel(newGame, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
+				CVar.FindCVar("wf_newgame").ResetToDefault();
+			}
+			else if ( Level.MapTime >= 1 && newGame == "ml_map34" )
+			{
+				Level.ChangeLevel(newGame, 0, CHANGELEVEL_NOINTERMISSION);
 				CVar.FindCVar("wf_newgame").ResetToDefault();
 			}
 		}

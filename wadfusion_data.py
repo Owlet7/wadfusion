@@ -126,6 +126,7 @@ RES_FILES = [
     'maps/WF_MASTERLEVELS_STORY1.wad',
     'maps/WF_MASTERLEVELS_STORY2.wad',
     'maps/WF_MASTERLEVELS_STORY3.wad',
+    'maps/WF_MASTERLEVELS_STORY4.wad',
     'zscript/wf_handler.zs', 'zscript/wf_handler_static.zs',
     'zscript/wf_texswap.zs', 'zscript/wf_texswap_all.zs',
     'zscript/wf_music_sigil.zs', 'zscript/wf_music_idkfa.zs',

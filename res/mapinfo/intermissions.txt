@@ -153,9 +153,14 @@ intermission Id1_Intro
 {
 	TextScreen
 	{
-		Text = "$ID1INTRO"
+		Text = "$ID1INTRO1"
 		Background = "$GRNROCK", 1
 		Music = "D_SHORES"
+	}
+	
+	TextScreen
+	{
+		Text = "$ID1INTRO2"
 	}
 }
 
@@ -263,13 +268,33 @@ intermission MasterLevels_Intro3
 {
 	TextScreen
 	{
-		Text = "$ML6STORY0"
+		Text = "$ML5STORY2_1"
 		Background = "$GRNROCK", 1
 		Music = "$MUSIC_READ_M"
 	}
 	
 	TextScreen
 	{
-		Text = "$ML6STORY1"
+		Text = "$ML5STORY2_2"
+	}
+}
+
+intermission MasterLevels_Intro4
+{
+	TextScreen
+	{
+		Text = "$ML6STORY1_1"
+		Background = "$GRNROCK", 1
+		Music = "$MUSIC_READ_M"
+	}
+	
+	TextScreen
+	{
+		Text = "$ML6STORY1_2"
+	}
+	
+	TextScreen
+	{
+		Text = "$ML6STORY1_3"
 	}
 }
