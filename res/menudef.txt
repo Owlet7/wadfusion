@@ -34,7 +34,7 @@ OptionValue "WF_INTROS"
 {
     0, "$OPTVAL_OFF"
     1, "$WF_MENU_INTROS_OPTVAL1"
-    2, "$WF_MENU_INTROS_OPTVAL2"
+    2, "$OPTVAL_ON"
 }
 
 OptionMenu "WadFusionCompatibilityOptions"
