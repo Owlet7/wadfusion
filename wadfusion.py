@@ -57,7 +57,7 @@ import omg
 
 ARGUMENTS = sys.argv[1:]
 
-VERSION = '1.5.0'
+VERSION = '1.5.1'
 
 # abspath is used for the sake of the Windows executable
 DATA_TABLES_FILE = path.abspath(path.join(path.dirname(__file__), 'wadfusion_data.py'))

@@ -1,7 +1,11 @@
 # WadFusion Changelog
 
-## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.0...HEAD)
+<!--## Unreleased Changes
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.1...HEAD)-->
+
+## [WadFusion 1.5.1](https://github.com/Owlet7/wadfusion/releases/tag/v1.5.1) — [03 May 2025](https://github.com/Owlet7/wadfusion/tree/v1.5.1)
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.0...v1.5.1)
+- Downgraded ZScript version to 4.14.1, so GZDoom v4.14.2 could be used.
 - The Master Levels' MAPINFO definitions now also use `SKY*` instead of the
   custom skies, and the correct skies are now set by the texture substitution
   compatibility options. Will this be useful to anybody, ever? No! Did I do it
