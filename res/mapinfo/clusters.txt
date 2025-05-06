@@ -277,35 +277,35 @@ cluster 32
 {
 	EnterText = "$ML4STORY2"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$CEIL3_3"
 }
 
 cluster 33
 {
 	EnterText = "$ML4STORY3"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$CEIL3_2"
 }
 
 cluster 34
 {
 	EnterText = "$ML4STORY4"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$FLAT18"
 }
 
 cluster 35
 {
 	EnterText = "$ML4STORY5"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$DEM1_6"
 }
 
 cluster 36
 {
 	EnterText = "$ML4STORY6"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$FLAT5_4"
 }
 
 cluster 37
