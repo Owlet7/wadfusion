@@ -115,14 +115,14 @@ episode LR_MAP08
 
 episode WF_NEWGAME_TN
 {
-	Name = "$WF_CAMPAIGN_TNT"
+	Name = "$TXT_TNT_EP"
 	PicName = "M_TNT"
 	Optional
 }
 
 episode WF_NEWGAME_PL
 {
-	Name = "$WF_CAMPAIGN_PLU"
+	Name = "$TXT_PLUT_EP"
 	PicName = "M_PLUT"
 	Optional
 }
