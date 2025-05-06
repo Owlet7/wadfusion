@@ -1,7 +1,14 @@
 # WadFusion Changelog
 
-<!--## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.1...HEAD)-->
+## Unreleased Changes
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.1...HEAD)
+- Removed ID24 actors, as they were merged into GZDoom.
+  - **GZDoom must be updated to dev build g4.15pre-230 or newer!**
+- Added "Game intros" option.
+  - If turned on, each games' title screen (with music) will be shown when
+    starting a new game.
+  - Optionally, can also include "intermissions" at the start of campaigns, with
+    story texts taken from each games' instrustion manuals.
 
 ## [WadFusion 1.5.1](https://github.com/Owlet7/wadfusion/releases/tag/v1.5.1) — [03 May 2025](https://github.com/Owlet7/wadfusion/tree/v1.5.1)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.0...v1.5.1)
