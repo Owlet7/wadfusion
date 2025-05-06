@@ -69,7 +69,7 @@ intermission Doom1_Intro
 	TextScreen
 	{
 		Text = "$D1INTRO1"
-		Background = "$FLOOR7_2", 1
+		Background = "$FLAT14", 1
 		Music = "$MUSIC_VICTOR"
 	}
 	
@@ -94,7 +94,7 @@ intermission Sigil_Intro
 	TextScreen
 	{
 		Text = "$E5INTRO"
-		Background = "$FLOOR7_2", 1
+		Background = "$LAVA2", 1
 		Music = "$MUSIC_VICTOR"
 	}
 }
@@ -104,7 +104,7 @@ intermission Sigil2_Intro
 	TextScreen
 	{
 		Text = "$E6INTRO"
-		Background = "$FLOOR7_2", 1
+		Background = "$FLAT5_8", 1
 		Music = "$MUSIC_VICTOR"
 	}
 }
@@ -114,7 +114,7 @@ intermission Doom2_Intro
 	TextScreen
 	{
 		Text = "$D2INTRO1"
-		Background = "$GRNROCK", 1
+		Background = "$GRASS2", 1
 		Music = "$MUSIC_READ_M"
 	}
 	
@@ -144,7 +144,7 @@ intermission Nerve_Intro
 	TextScreen
 	{
 		Text = "$NVINTRO"
-		Background = "$GRNROCK", 1
+		Background = "$GRASS2", 1
 		Music = "$MUSIC_READ_M"
 	}
 }
@@ -154,7 +154,7 @@ intermission Id1_Intro
 	TextScreen
 	{
 		Text = "$ID1INTRO1"
-		Background = "$GRNROCK", 1
+		Background = "$FLOOR4_7", 1
 		Music = "D_SHORES"
 	}
 	
@@ -169,7 +169,7 @@ intermission Tnt_Intro
 	TextScreen
 	{
 		Text = "$TNINTRO1"
-		Background = "$GRNROCK", 1
+		Background = "$GRASS2", 1
 		Music = "T_READ_M"
 	}
 	
@@ -209,7 +209,7 @@ intermission Plutonia_Intro
 	TextScreen
 	{
 		Text = "$PLINTRO1"
-		Background = "$GRNROCK", 1
+		Background = "$GRASS2", 1
 		Music = "P_READ_M"
 	}
 	
@@ -249,7 +249,7 @@ intermission MasterLevels_Intro1
 	TextScreen
 	{
 		Text = "$ML4STORY1"
-		Background = "$GRNROCK", 1
+		Background = "$GRNROCK", 1 // TODO
 		Music = "$MUSIC_READ_M"
 	}
 }
@@ -259,7 +259,7 @@ intermission MasterLevels_Intro2
 	TextScreen
 	{
 		Text = "$ML5STORY1"
-		Background = "$GRNROCK", 1
+		Background = "$GRNROCK", 1 // TODO
 		Music = "$MUSIC_READ_M"
 	}
 }
@@ -269,7 +269,7 @@ intermission MasterLevels_Intro3
 	TextScreen
 	{
 		Text = "$ML5STORY2_1"
-		Background = "$GRNROCK", 1
+		Background = "$GRNROCK", 1 // TODO
 		Music = "$MUSIC_READ_M"
 	}
 	
@@ -284,7 +284,7 @@ intermission MasterLevels_Intro4
 	TextScreen
 	{
 		Text = "$ML6STORY1_1"
-		Background = "$GRNROCK", 1
+		Background = "$BLOOD1", 1
 		Music = "$MUSIC_READ_M"
 	}
 	
