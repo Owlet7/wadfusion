@@ -259,7 +259,7 @@ intermission MasterLevels_Intro2
 	TextScreen
 	{
 		Text = "$ML5STORY1"
-		Background = "$GRNROCK", 1 // TODO
+		Background = "$FLOOR5_4", 1
 		Music = "$MUSIC_READ_M"
 	}
 }
@@ -269,7 +269,7 @@ intermission MasterLevels_Intro3
 	TextScreen
 	{
 		Text = "$ML5STORY2_1"
-		Background = "$GRNROCK", 1 // TODO
+		Background = "$CEIL1_1", 1
 		Music = "$MUSIC_READ_M"
 	}
 	

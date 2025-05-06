@@ -298,7 +298,7 @@ cluster 35
 {
 	EnterText = "$ML4STORY5"
 	Music = "$MUSIC_READ_M"
-	Flat = "$DEM1_6"
+	Flat = "$FLAT5_2"
 }
 
 cluster 36
@@ -312,77 +312,77 @@ cluster 37
 {
 	EnterText = "$ML5STORY3"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$FLAT5_1"
 }
 
 cluster 38
 {
 	EnterText = "$ML5STORY4"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$FLAT1"
 }
 
 cluster 39
 {
 	EnterText = "$ML5STORY5"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$RROCK11"
 }
 
 cluster 40
 {
 	EnterText = "$ML5STORY6"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$FLOOR6_2"
 }
 
 cluster 41
 {
 	EnterText = "$ML6STORY2"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$FLOOR3_3"
 }
 
 cluster 42
 {
 	EnterText = "$ML6STORY3"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$FLOOR0_3"
 }
 
 cluster 43
 {
 	EnterText = "$ML6STORY4"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$RROCK04"
 }
 
 cluster 44
 {
 	EnterText = "$ML6STORY5"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$CEIL4_2"
 }
 
 cluster 45
 {
 	EnterText = "$ML6STORY6"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$FLAT5_6"
 }
 
 cluster 46
 {
 	EnterText = "$ML6STORY7"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$SLIME14"
 }
 
 cluster 47
 {
 	EnterText = "$ML6STORY8"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$DEM1_6"
 }
 
 cluster 48
@@ -390,5 +390,5 @@ cluster 48
 	EnterText = "$ML6STORY9"
 	ExitText = "$MLEND"
 	Music = "$MUSIC_READ_M"
-	Flat = "$BGFLAT06" // TODO
+	Flat = "$SLIME11"
 }
