@@ -59,3 +59,242 @@ intermission Id1Cast
 	}
 	Link = Id1Cast
 }
+
+// New Game intros
+
+intermission WadFusionNewGame {}
+
+intermission Doom1_Intro
+{
+	TextScreen
+	{
+		Text = "$D1INTRO1"
+		Background = "$FLAT14", 1
+		Music = "$MUSIC_VICTOR"
+	}
+	
+	TextScreen
+	{
+		Text = "$D1INTRO2"
+	}
+	
+	TextScreen
+	{
+		Text = "$D1INTRO3"
+	}
+	
+	TextScreen
+	{
+		Text = "$D1INTRO4"
+	}
+}
+
+intermission Sigil_Intro
+{
+	TextScreen
+	{
+		Text = "$E5INTRO"
+		Background = "$LAVA2", 1
+		Music = "$MUSIC_VICTOR"
+	}
+}
+
+intermission Sigil2_Intro
+{
+	TextScreen
+	{
+		Text = "$E6INTRO"
+		Background = "$FLAT5_8", 1
+		Music = "$MUSIC_VICTOR"
+	}
+}
+
+intermission Doom2_Intro
+{
+	TextScreen
+	{
+		Text = "$D2INTRO1"
+		Background = "$GRASS2", 1
+		Music = "$MUSIC_READ_M"
+	}
+	
+	TextScreen
+	{
+		Text = "$D2INTRO2"
+	}
+	
+	TextScreen
+	{
+		Text = "$D2INTRO3"
+	}
+	
+	TextScreen
+	{
+		Text = "$D2INTRO4"
+	}
+	
+	TextScreen
+	{
+		Text = "$D2INTRO5"
+	}
+}
+
+intermission Nerve_Intro
+{
+	TextScreen
+	{
+		Text = "$NVINTRO"
+		Background = "$GRASS2", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission Id1_Intro
+{
+	TextScreen
+	{
+		Text = "$ID1INTRO1"
+		Background = "$FLOOR4_7", 1
+		Music = "D_SHORES"
+	}
+	
+	TextScreen
+	{
+		Text = "$ID1INTRO2"
+	}
+}
+
+intermission Tnt_Intro
+{
+	TextScreen
+	{
+		Text = "$TNINTRO1"
+		Background = "$GRASS2", 1
+		Music = "T_READ_M"
+	}
+	
+	TextScreen
+	{
+		Text = "$TNINTRO2"
+	}
+	
+	TextScreen
+	{
+		Text = "$TNINTRO3"
+	}
+	
+	TextScreen
+	{
+		Text = "$TNINTRO4"
+	}
+	
+	TextScreen
+	{
+		Text = "$TNINTRO5"
+	}
+	
+	TextScreen
+	{
+		Text = "$TNINTRO6"
+	}
+	
+	TextScreen
+	{
+		Text = "$TNINTRO7"
+	}
+}
+
+intermission Plutonia_Intro
+{
+	TextScreen
+	{
+		Text = "$PLINTRO1"
+		Background = "$GRASS2", 1
+		Music = "P_READ_M"
+	}
+	
+	TextScreen
+	{
+		Text = "$PLINTRO2"
+	}
+	
+	TextScreen
+	{
+		Text = "$PLINTRO3"
+	}
+	
+	TextScreen
+	{
+		Text = "$PLINTRO4"
+	}
+	
+	TextScreen
+	{
+		Text = "$PLINTRO5"
+	}
+	
+	TextScreen
+	{
+		Text = "$PLINTRO6"
+	}
+	
+	TextScreen
+	{
+		Text = "$PLINTRO7"
+	}
+}
+
+intermission MasterLevels_Intro1
+{
+	TextScreen
+	{
+		Text = "$ML4STORY1"
+		Background = "$MFLR8_2", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Intro2
+{
+	TextScreen
+	{
+		Text = "$ML5STORY1"
+		Background = "$FLOOR5_4", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Intro3
+{
+	TextScreen
+	{
+		Text = "$ML5STORY2_1"
+		Background = "$CEIL1_1", 1
+		Music = "$MUSIC_READ_M"
+	}
+	
+	TextScreen
+	{
+		Text = "$ML5STORY2_2"
+	}
+}
+
+intermission MasterLevels_Intro4
+{
+	TextScreen
+	{
+		Text = "$ML6STORY1_1"
+		Background = "$BLOOD1", 1
+		Music = "$MUSIC_READ_M"
+	}
+	
+	TextScreen
+	{
+		Text = "$ML6STORY1_2"
+	}
+	
+	TextScreen
+	{
+		Text = "$ML6STORY1_3"
+	}
+}

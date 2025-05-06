@@ -111,6 +111,37 @@ class WadFusionHandler : EventHandler
 		{
 			DoBlackroomMapReplacements();
 		}
+		
+		// wf_newgame.zs
+		// very hacky method of adding optional titlescreens
+		// and story intermissionswhen starting new games
+		NewGameIntro();
+		NewGameStory();
+	}
+	
+	override void RenderOverlay(RenderEvent e)
+	{
+		// wf_newgame.zs
+		// sets the correct titlepic for the hacky titlescreens
+		NewGameTitlePic();
+	}
+	
+	override bool InputProcess(InputEvent e)
+	{
+		// press any key on the hacky titlescreens to continue
+		if ( CVar.FindCVar("wf_intros").GetInt() >= 1 )
+		{
+			string mapName = Level.MapName.MakeLower();
+			if ( mapName.Left(10) == "wf_newgame" )
+			{
+				if (e.Type == InputEvent.Type_KeyDown)
+				{
+					// wf_newgame.zs
+					NewGameChangeLevelInput();
+				}
+			}
+		}
+		return false;
 	}
 	
 	override void CheckReplacement (ReplaceEvent e)

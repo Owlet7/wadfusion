@@ -27,7 +27,7 @@ map ML_MAP01 "$ML_ATTACK"
 
 map ML_MAP02 "$ML_CANYON"
 {
-	Next = "EndTitle"
+	Next = "ML_MAP03"
 	TitlePatch = "MWILV01"
 	Music = "$MUSIC_E2M2"
 }
@@ -120,7 +120,7 @@ map ML_MAP26 "$ML_EINSIDE" // reject level
 
 map ML_MAP27 "$ML_HIVE" // reject level
 {
-	Next = "EndTitle"
+	Next = "ML_MAP28"
 	TitlePatch = "MWILV26"
 	Music = "$MUSIC_E3M3"
 }
@@ -141,7 +141,8 @@ map ML_MAP28 "$ML_TWM01" // reject level
 
 map ML_MAP07 "$ML_PARADOX"
 {
-	Next = "EndTitle"
+	// needed for the zscript-based intermission hacks
+	Next = "WF_MASTERLEVELS_STORY1"
 	TitlePatch = "MWILV06"
 	Music = "$MUSIC_IN_CIT"
 	Author = "$WF_AU_MUSTAINES"

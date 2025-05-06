@@ -1,5 +1,7 @@
+// episode definitions for "WF_NEWGAME_*" maps are needed for the zscript-based intro hacks
+
 clearepisodes
-episode E1M1
+episode WF_NEWGAME_D1
 {
 	Name = "$TXT_D1E1"
 	PicName = "M_EPI1"
@@ -20,49 +22,49 @@ episode E3M1
 	Optional
 }
 
-episode E4M1
+episode WF_NEWGAME_UD
 {
 	Name = "$TXT_D1E4"
 	PicName = "M_EPI4"
 	Optional
 }
 
-episode E5M1
+episode WF_NEWGAME_S1
 {
 	Name = "$WF_EPISODE_UDOOM_EP5"
 	PicName = "M_EPI5"
 	Optional
 }
 
-episode E6M1
+episode WF_NEWGAME_S2
 {
 	Name = "$WF_EPISODE_UDOOM_EP6"
 	PicName = "M_EPI6"
 	Optional
 }
 
-episode MAP01
+episode WF_NEWGAME_D2
 {
 	Name = "$TXT_D2E1"
 	PicName = "M_HELL"
 	Optional
 }
 
-episode ML_MAP01
+episode WF_NEWGAME_ML
 {
 	Name = "$WF_CAMPAIGN_MASTER"
 	PicName = "M_MASTER"
 	Optional
 }
 
-episode NV_MAP01
+episode WF_NEWGAME_NV
 {
 	Name = "$TXT_D2E2"
 	PicName = "M_NOREST"
 	Optional
 }
 
-episode LR_MAP01
+episode WF_NEWGAME_LR
 {
 	Name = "$WF_EPISODE_ID1_EP1"
 	PicName = "M_XEPI1"
@@ -76,16 +78,16 @@ episode LR_MAP08
 	Optional
 }
 
-episode TN_MAP01
+episode WF_NEWGAME_TN
 {
-	Name = "$WF_CAMPAIGN_TNT"
+	Name = "$TXT_TNT_EP"
 	PicName = "M_TNT"
 	Optional
 }
 
-episode PL_MAP01
+episode WF_NEWGAME_PL
 {
-	Name = "$WF_CAMPAIGN_PLU"
+	Name = "$TXT_PLUT_EP"
 	PicName = "M_PLUT"
 	Optional
 }

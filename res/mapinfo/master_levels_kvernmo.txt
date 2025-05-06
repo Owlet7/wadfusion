@@ -9,6 +9,12 @@ defaultmap
 	Author = "$WF_AU_KVERNMO"
 }
 
+// needed for the zscript-based intermission hacks
+map WF_MASTERLEVELS_STORY4 "$ML_BLOODSEA"
+{
+	TitlePatch = "MWILV18"
+}
+
 map ML_MAP19 "$ML_BLOODSEA"
 {
 	Next = "ML_MAP37"
@@ -20,6 +26,7 @@ map ML_MAP19 "$ML_BLOODSEA"
 map ML_MAP37 "$ML_FLOOD" // reject level
 {
 	Next = "ML_MAP38"
+	Cluster = 41
 	TitlePatch = "MWILV36"
 	Music = "$MUSIC_COUNTD"
 }
@@ -27,6 +34,7 @@ map ML_MAP37 "$ML_FLOOD" // reject level
 map ML_MAP38 "$ML_DERELICT" // reject level
 {
 	Next = "ML_MAP39"
+	Cluster = 42
 	TitlePatch = "MWILV37"
 	Music = "$MUSIC_STALKS"
 	Author = "$WF_AU_KVERNMO_HYNE"
@@ -43,6 +51,7 @@ map ML_MAP39 "$ML_WATCHTWR" // reject level
 map ML_MAP20 "$ML_MEPHISTO"
 {
 	Next = "ML_MAP40"
+	Cluster = 43
 	TitlePatch = "MWILV19"
 	Music = "$MUSIC_SHAWN"
 	AllowMonsterTelefrags
@@ -59,6 +68,7 @@ map ML_MAP40 "$ML_TODEATH" // reject level
 map ML_MAP18 "$ML_TEETH"
 {
 	Next = "ML_MAP41"
+	Cluster = 44
 	SecretNext = "ML_MAP21"
 	TitlePatch = "MWILV17"
 	Music = "$MUSIC_EVIL"
@@ -67,6 +77,7 @@ map ML_MAP18 "$ML_TEETH"
 map ML_MAP41 "$ML_ARENA" // reject level
 {
 	Next = "ML_MAP42"
+	Cluster = 45
 	TitlePatch = "MWILV40"
 	Music = "$MUSIC_THE_DA"
 }
@@ -74,6 +85,7 @@ map ML_MAP41 "$ML_ARENA" // reject level
 map ML_MAP42 "$ML_STORM" // reject level
 {
 	Next = "ML_MAP10"
+	Cluster = 46
 	TitlePatch = "MWILV41"
 	Music = "$MUSIC_IN_CIT"
 }
@@ -81,6 +93,7 @@ map ML_MAP42 "$ML_STORM" // reject level
 map ML_MAP10 "$ML_BLACKTWR"
 {
 	Next = "ML_MAP43"
+	Cluster = 47
 	TitlePatch = "MWILV09"
 	Music = "$MUSIC_ADRIAN"
 }
@@ -88,6 +101,7 @@ map ML_MAP10 "$ML_BLACKTWR"
 map ML_MAP43 "$ML_THE_EVIL" // reject level
 {
 	Next = "EndTitle"
+	Cluster = 48
 	TitlePatch = "MWILV42"
 	Music = "$MUSIC_OPENIN"
 	AllowMonsterTelefrags

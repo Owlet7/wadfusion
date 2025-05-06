@@ -1,4 +1,5 @@
-Identifier,Remarks,Filter,default,eng enc ena enz eni ens enj enb enl ent enw,cs,da,de,el,eo,es,esm esn esg esc esa esd esv eso esr ess esf esl esy esz esb ese esh esi esu,fi,fr,hu,it,jp,ko,nl,no nb,pl,pt,ptg,ro,ru,sr,sv,tr,zh,zht
+Identifier,Remarks,Filter,default,eng enc ena enz eni ens enj enb enl ent enw,cs,da,de,el,eo,es,esm esn esg esc esa esd esv eso esr ess esf esl esy esz esb ese esh esi esu,fi,fr,hr,hu,it,jp,ko,nl,no nb,pl,pt,ptg,ro,ru,sr,sv,tr,zh,zht
+,Doom 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 D1INTRO1,"Doom 1 opening story
 taken from manual",,"THE STORY SO FAR
 
@@ -14,41 +15,40 @@ Aerospace Corporation.
 The UAC is a multi-planetary conglomerate
 with radioactive waste facilities on Mars
 and its two moons, Phobos and Deimos. With
-no action for fifty million miles, your
-day consisted of suckin' dust and watchin'
-restricted flicks in the rec room.",,,,,,,,,,,,,,,,,,,,,,,,,,
-D1INTRO2,,,"For the last four years the military,
-UAC's biggest supplier, has used the
-remote facilities on Phobos and Deimos to
-conduct various secret projects,
-including research on inter-dimensional
-space travel. So far they have been able
-to open gateways between Phobos and
-Deimos, throwing a few gadgets into one
-and watching them come out the other.
+no action for fifty million miles, your day
+consisted of suckin' dust and watchin'
+restricted flicks in the rec room.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+D1INTRO2,,,"For the last four years the military, UAC's
+biggest supplier, has used the remote
+facilities on Phobos and Deimos to conduct
+various secret projects, including
+research on inter-dimensional space
+travel. So far they have been able to open
+gateways between Phobos and Deimos,
+throwing a few gadgets into one and
+watching them come out the other.
 Recently however, the Gateways have
 grown dangerously unstable. Military
 ""volunteers"" entering them have either
 disappeared or been stricken with a
-strange form of insanity babbling
+strange form of insanity—babbling
 vulgarities, bludgeoning anything that
 breathes, and finally suffering an
 untimely death of full-body explosion.
-Matching heads with torsos to send home
-to the folks became a full-time job.
-Latest military reports state that the
-research is suffering a small set-back,
-but everything is under control.",,,,,,,,,,,,,,,,,,,,,,,,,,
+Matching heads with torsos to send home to
+the folks became a full-time job. Latest
+military reports state that the research
+is suffering a small set-back, but
+everything is under control.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 D1INTRO3,,,"A few hours ago, Mars received a garbled
 message from Phobos. ""We require
 immediate military support. Something
-fraggin' evil is coming out of the
-Gateways! Computer systems have gone
-berserk!"" The rest was incoherent. Soon
-afterwards, Deimos simply vanished from
-the sky. Since then, attempts to
-establish contact with either moon have
-been unsuccessful.
+fraggin' evil is coming out of the Gateways!
+Computer systems have gone berserk!""
+The rest was incoherent. Soon afterwards,
+Deimos simply vanished from the sky. Since
+then, attempts to establish contact with
+either moon have been unsuccessful.
 
 You and your buddies, the only combat
 troop for fifty million miles were sent up
@@ -58,7 +58,7 @@ rest of the team went inside. For several
 hours, your radio picked up the sounds of
 combat: guns firing, men yelling orders,
 screams, bones cracking, then finally,
-silence. Seems your buddies are dead.",,,,,,,,,,,,,,,,,,,,,,,,,,
+silence. Seems your buddies are dead.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 D1INTRO4,,,"It's Up To You
 
 Things aren't looking too good. You'll
@@ -79,7 +79,8 @@ As you walk through the main entrance of
 the base, you hear animal-like growls
 echoing throughout the distant corridors.
 They know you're here. There's no turning
-back now.",,,,,,,,,,,,,,,,,,,,,,,,,,
+back now.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Blackroom warmpup maps,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 E1M4BTEXT,E1M4B enter text,,"With the Toxin Refinery in the rear-view,
 you make your way to Phobos Mission
 Control where the computers crunching
@@ -93,19 +94,22 @@ installation and that you never knew when
 the environment around you would change.
 
 You need to keep your eyes alert to all
-movement - this place is not what it seems…",,,,,,,,,,,,,,,,,"Z Rafinerią Toksyn już za tobą, trafiasz do
-Centrum Kontroli Fobosa, gdzie znajdują się
-komputery analizujące dane z anomalii
+movement - this place is not what it
+seems...",,,,,,,,,,,,,,,,,,"Z Rafinerią Toksyn już za tobą, trafiasz do
+Centrum Kontroli Fobosa, gdzie znajdują
+się komputery analizujące dane z anomalii
 na Fobosie.
 
-Musisz je wykorzystać, aby zyskać dostęp do
-laboratoriów Fobosa, jednak pamiętasz, jak
-słyszałeś o tym, że komputery były powiązane
-ze wszystkimi strefami instalacji i nigdy nie
-wiadomo, kiedy otoczenie wokół ciebie się zmieni.
+Musisz je wykorzystać, aby zyskać dostęp
+do laboratoriów Fobosa, jednak pamiętasz,
+jak słyszałeś o tym, że komputery były
+powiązane ze wszystkimi strefami
+instalacji i nigdy nie wiadomo, kiedy
+otoczenie wokół ciebie się zmieni.
 
-Musisz zwracać uwagę na jakikolwiek ruch - to
-miejsce nie jest takie, jak się wydaje…",,,,"С Очистным заводом позади, ты
+Musisz zwracać uwagę na jakikolwiek
+ruch - to miejsce nie jest takie, jak się
+wydaje...",,,,"С Очистным заводом позади, ты
 направляешься к Центральному
 управлению Фобоса, где находятся
 компьютеры, обрабатывающие
@@ -121,7 +125,7 @@ miejsce nie jest takie, jak się wydaje…",,,,"С Очистным заводо
 
 Ты должен следить за любым
 движением — это место не то,
-чем кажется…",,,,,
+чем кажется...",,,,,
 E1M8BTEXT,E1M8B enter text,,"After exiting the Computer Station you
 knew the worst was up ahead. You still
 hadn't reached the place where the
@@ -162,7 +166,7 @@ a high-tech lab somewhere in this area, and
 the portal must be connected to it
 somehow.
 
-Time to lock and load.",,,,,,,,,,,,,,,,"Po wyjściu ze Stacji Komputerowej wiedziałeś
+Time to lock and load.",,,,,,,,,,,,,,,,,"Po wyjściu ze Stacji Komputerowej wiedziałeś
 że najgorsze przed tobą. Wciąż nie dotarłeś
 do miejsca z którego pochodzą demony.
 
@@ -200,20 +204,21 @@ Czas załadować broń.",,,,"После выхода из Вычислитель
 должен быть с этим как-то связан.
 
 Оружие к бою.",,,,,
+,Sigil,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 E5INTRO,"Sigil story
 taken from its readme file
-removed reference to E4M8",,"Baphomet was only doing Satan's bidding
-by placing a powerful sigil in the teleporter
+removed reference to E4M8",,"Baphomet was only doing Satan's bidding by
+placing a powerful sigil in the teleporter
 to bring you back to Hell. Somehow they
 didn't understand that you're the reason
 they failed in the first place.
 
 It's time to trash the place with your
-arsenal, get out of Hell, and back to Earth
-to face the more advanced demons that were
-sent ahead.
+arsenal, get out of Hell, and back to
+Earth to face the more advanced demons
+that were sent ahead.
 
-Lock and load. Rip and tear.",,,,,,,,,,,,,,,,,,,,,,,,,,
+Lock and load. Rip and tear.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 E5TEXT,Sigil ending,,"Baphomet was only doing Satan's bidding
 by bringing you back to Hell. Somehow they
 didn't understand that you're the reason
@@ -264,7 +269,7 @@ arsenal, vous êtes prêt à affronter les
 démons plus avancés qui ont été envoyés
 sur Terre.
 
-Sortez vos flingues. C'est l'heure du carnage.",,"Baphomet stava solo eseguendo gli ordini di Satana
+Sortez vos flingues. C'est l'heure du carnage.",,,"Baphomet stava solo eseguendo gli ordini di Satana
 nel riportarti all'Inferno.
 In qualche modo non hanno capito che tu sei
 il motivo per cui avevano già fallito.
@@ -299,7 +304,7 @@ Po wysprzątaniu okolicy przy pomocy swego arsenału
 możesz zmierzyć się z bardziej zaawansowanymi
 demonami posłanymi na Ziemię.
 
-Przeładuj i wyceluj. Walcz i zabijaj.",,"Bafomé estava apenas cumprindo as ordens de Satanás
+Przeładuj i wyceluj. Walcz i zabijaj.","Bafomé estava apenas cumprindo as ordens de Satanás
 ao levar você de volta para o Inferno. De alguma forma, eles
 não entendiam que você era o motivo
 do fracasso que tiveram.
@@ -308,7 +313,7 @@ Agora que você matou todo mundo com seu
 arsenal, está pronto para enfrentar os demônios mais
 fortes que foram enviados para a Terra.
 
-Preparar e apontar. Estripar e lacerar.",,"Доставляя тебя в ад, Бафомет лишь
+Preparar e apontar. Estripar e lacerar.",,,"Доставляя тебя в ад, Бафомет лишь
 исполнял волю Сатаны. Но почему-то
 они не догадались, что ты и есть причина
 провала их планов.
@@ -337,12 +342,14 @@ Preparar e apontar. Estripar e lacerar.",,"Доставляя тебя в ад, 
 子彈上膛，準備開膛剖肚吧。"
 E6INTRO,"Sigil 2 story
 taken from its readme file
-removed reference to E5M8",,"Upon breaching the pentagram of invulnerability,
-you find yourself not on a victorious journey
-back to save Earth, but caught in Baphomet's
-cunning snare, catapulted into a new, grotesque
-domain of relentless torment, unending demon
-hordes, and an onslaught of heavy metal mayhem!",,,,,,,,,,,,,,,,,,,,,,,,,,
+removed reference to E5M8",,"Upon breaching the pentagram of
+invulnerability, you find yourself not on a
+victorious journey back to save Earth, but
+caught in Baphomet's cunning snare,
+catapulted into a new, grotesque domain
+of relentless torment, unending demon
+hordes, and an onslaught of heavy metal
+mayhem!",,,,,,,,,,,,,,,,,,,,,,,,,,,
 E6TEXT,Sigil II ending,,"Satan erred in casting you to Hell's
 darker depths. His plan failed. He has
 tried for so long to destroy you, and he
@@ -350,27 +357,98 @@ has lost every single time. His only
 option is to flood Earth with demons
 and hope you go down fighting.
 
-Prepare for HELLION!
-",,,,,,,,,,,,,,,,,"Szatan popełnił błąd rzucając cię do
-mroczniejszych zakątków Piekła. Jego
-plan się nie udał. Tak długo już chciał 
-cię zniszczyć i za każdym razem przegrał. 
-Mógł już jedynie najechać ziemię demonami
-w nadziei że padniesz w walce.
+Prepare for HELLION!",,,,"Satan hat den fatalen Fehler begangen,
+dich in die dunkelsten Tiefen der Hölle
+zu verstoßen. So oft hat er schon
+versucht, dich zu vernichten – jedes
+Mal ohne Erfolg. Er sieht nur noch
+einen Ausweg: Die Erde mit Dämonen zu
+überfluten und zu hoffen, dass du im
+letzten Gemetzel dein Ende findest.
 
-Przygotuj się na PIEKŁO!",,,,"Сатана ошибся, отбросив тебя в
-темные глубины Ада. Его план
-провалился. Он так долго пытался
-уничтожить тебя, и каждый раз
-проигрывал. Его единственный
-выход — наводнить Землю
-демонами и надеяться, что ты
-погибнешь сражаясь.
+Mach dich bereit für HELLION!",,,"Satán cometió un error al arrojarte a
+las profundidades del infierno.
+Su plan fracasó. Ha intentado destruirte
+durante mucho tiempo y ha fracasado todas
+y cada una de las ocasiones. Su única
+opción es inundar la Tierra de demonios
+y esperar que sucumbas en combate.
 
-Приготовся к HELLION!",,,,,
+¡Prepárate para HELLION!","Satán cometió un error al arrojarte a
+las profundidades del infierno.
+Su plan fracasó. Intentó destruirte
+durante mucho tiempo y fracasó todas
+y cada una de las ocasiones. Su única
+opción es inundar la Tierra de demonios
+y esperar que sucumbas en combate.
+¡Prepárate para HELLION!",,"Satan s'est trompé en vous envoyant
+dans les profondeurs de l'Enfer. Son
+plan est une débâcle. Cela fait si
+longtemps qu'il tente de vous détruire,
+mais il échoue systématiquement. Sa
+seule option est d'inonder la Terre de
+démons en espérant que vous trouviez
+la mort au combat.
+
+Préparez-vous pour HELLION !",,,"Satana ha sbagliato a gettarti nelle
+profondità più oscure dell'Inferno.
+Il suo piano è fallito. Ha cercato a lungo
+di distruggerti e ha perso ogni volta.
+La sua unica opzione è inondare la Terra di
+demoni e sperare che tu soccomba combattendo.
+
+Preparati per HELLION!","サタンがあなたを地獄の深淵へ突き落としたのは
+間違いでした。彼の計画は失敗に終わります。
+長い間あなたを滅ぼそうとしてきたサタンは
+そのたびに苦汁をなめてきました。彼に残された唯一の選択、
+それは地球をデーモンで溢れ返して
+あなたを倒すことです。
+
+「HELLION」の戦いに備えましょう！","사탄은 당신을 지옥의 무저갱으로
+던져버리는 실수를 범했습니다. 사탄의 계획은 실패했습니다.
+사탄은 그 오랜 시간 당신을 파괴하기 위해 애썼지만
+번번이 실패로 끝나고 말았죠.
+이제 사탄에게 남은 선택지는 지구에 악마를 쏟아붓고
+당신이 싸우다 쓰러지길 바라는 것뿐입니다.
+
+헬리온에 대비하세요!",,,"Szatan popełnił błąd, rzucając was
+w mroczniejsze głębiny piekieł. Jego
+plan się nie powiódł. Od tak dawna
+próbował was zniszczyć i zawsze przegrywał.
+Jego ostatnią szansą jest zalanie Ziemi
+demonami i nadzieja, że zginiecie, walcząc.
+
+Przygotujcie się na HELLION!","Satanás errou ao mandar você para as
+profundezas do inferno. O plano dele
+falhou. Ele passou muito tempo tentando
+destruir você e perdeu a cada tentativa.
+Só lhe resta encher a Terra de demônios
+e torcer para você morrer na luta.
+
+Prepare-se para HELLION!",,,"Сатана просчитался, отправив вас
+в тёмные глубины ада. Его план обернулся
+крахом. Он давно пытается прикончить
+вас, но каждый раз терпит неудачу.
+Его последняя надежда — наводнить Землю
+демонами, чтобы вы погибли в бою.
+
+Впереди ждёт орда исчадий, или Hellion!",,,,"撒旦的错在于将你投入地狱的至暗深渊。
+他的计划已经失败。他千方百计想要毁灭
+你，却一次次铩羽而归。现在，他唯一的
+赌注，就是让恶魔肆虐人间，妄图将你拖
+入这场绝望的血战。
+
+迎战“阎罗”！","撒旦犯了個錯，就是把你丟進地獄
+更黑暗的深處。他的計畫失敗了。
+他試了這麼久，想要把你毀滅，
+但他每一次都是輸家。
+他唯一的希望，就是派惡魔塞滿
+地球，希望你會死在激戰中。
+
+準備好面對〈極惡罪人〉吧！"
+,Doom II,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 D2INTRO1,"Doom 2 opening story
-taken from manual
-paragraphs that contradict canon taken out",,"THE STORY CONTINUES...
+taken from manual",,"THE STORY CONTINUES...
 
 Back at last. After days of hard fighting
 in space, you've returned home on
@@ -382,7 +460,7 @@ scene. By killing, killing, and killing, you
 won. You stopped the invasion, saved Mars
 base, and became a war hero. What they
 don't talk about so much is that you were
-the only survivor.",,,,,,,,,,,,,,,,,,,,,,,,,,
+the only survivor.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 D2INTRO2,,,"But that's all behind you now. You've quit
 the military, and are heading home. Your
 drop pod lands with a crunch. You open 'er
@@ -397,7 +475,7 @@ blast away, killing the troublemaker. It
 looks like a human, but something's wrong.
 His mouth is filled with half-chewed flesh,
 and he's all messed up, like a zombie a bad
-horror movie. Hell, not again!",,,,,,,,,,,,,,,,,,,,,,,,,,
+horror movie. Hell, not again!",,,,,,,,,,,,,,,,,,,,,,,,,,,
 D2INTRO3,,,"You can feel it. It's all starting again,
 just like on Mars. First, people are taken
 over, turned into cannibal Things. Then the
@@ -415,7 +493,7 @@ fully human. The wise men of humanity have
 evolved a plan to save what's left of the
 human race. They have built enormous ships
 to carry the remaining people into space,
-safely away from the ruined world.",,,,,,,,,,,,,,,,,,,,,,,,,,
+safely away from the ruined world.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 D2INTRO4,,,"Unfortunately, Earth's only ground
 spaceport has just been taken over by the
 demons. They've instituted a sort of force
@@ -434,17 +512,18 @@ Soon, brave men drop like flies. You lose
 track of your friends, though sometimes
 you can hear them scream when they die,
 and the sounds of combat echo from deep
-within the starbase.",,,,,,,,,,,,,,,,,,,,,,,,,,
+within the starbase.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 D2INTRO5,,,"Something hisses with rage from the steel
 tunnels ahead. They know you're here. They
 have no pity, no mercy, take no quarter,
 and crave none. They're the perfect enemy,
 in a way. No one's left but you. You... and
-Them.",,,,,,,,,,,,,,,,,,,,,,,,,,
+Them.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Master Levels,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 MLEND,"Master Levels victory text
 from PSX doom",,"You have assaulted and triumphed over the
-most vicious realms that the demented minds
-of our designers could devise.
+most vicious realms that the demented
+minds of our designers could devise.
 
 The havoc you left behind you as you
 smashed your way through the Master Levels
@@ -487,7 +566,7 @@ vous en dévastant les niveaux Maître est un
 hommage silencieux à vos exploits.
 
 Vous avez mérité le titre de
-Maître de la Destruction.",,"Hai assaltato i regni più feroci
+Maître de la Destruction.",,,"Hai assaltato i regni più feroci
 che le menti perverse dei nostri progettisti
 potessero concepire e hai trionfato.
 
@@ -522,7 +601,7 @@ po przedarciu się przez poziomy
 eksperckie to milczący hołd
 dla twojego talentu.
 
-Zdobywasz Mistrzostwo Destrukcji.",,"Você atacou e triunfou sobre as
+Zdobywasz Mistrzostwo Destrukcji.","Você atacou e triunfou sobre as
 dimensões mais cruéis que as mentes doentias
 de nossos designers poderiam imaginar.
 
@@ -531,7 +610,7 @@ passava pelas Fases
 Mestres é um tributo silencioso à sua proeza.
 
 Você ganhou o título de
-Mestre da Destruição.",,"Ты бросился в бой и победил, преодолев
+Mestre da Destruição.",,,"Ты бросился в бой и победил, преодолев
 испытания самых жестоких миров, созданных
 нашими сумасшедшими авторами.
 
@@ -564,7 +643,7 @@ nivelon!","¡Enorabuena, has encontrado el nivel
 súper secreto!","¡Felicitaciones, has encontrado el nivel
 súper secreto!","Onneksi olkoon; olet löytänyt
 supersalaisen tason!","Félicitations, vous avez trouvé le 
-niveau super secret!","Gratulálunk, megtaláltad a szupertitkos pályát!","Congratulazioni, hai trovato il
+niveau super secret!",,"Gratulálunk, megtaláltad a szupertitkos pályát!","Congratulazioni, hai trovato il
 livello super segreto!",おめでとう、君はスーパー隠しステージを発見した!,축하한다. 당신은 특급 비밀 레벨을 찾아냈다!,"Gefeliciteerd, je hebt het super geheime
 niveau gevonden!","Gratulerer, du har funnet det
 superhemmelige nivået!","Gratulacje, znalazłeś super sekretny
@@ -573,15 +652,16 @@ poziom!",Parabéns! Você achou a fase super secreta!,Parabéns! Achaste o níve
 супер скривени ниво!","Grattis, du har hittat den superhemliga
 nivån!","Tebrikler, süper gizli seviyeyi
 buldunuz!",,
+,Master Levels Rejects,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ML4STORY1,"Jim Flynn's Titan level story
 taken from their readme files
 
-Mines of Titan",,"Dumped in the middle of a mining base
-on Titan, a moon of Saturn, you must
-acquire three keys to find the exit
-hidden in the mining headquarters. Since
-the natives are definitely NOT friendly,
-an exit is a nice thing to find.",,,,,,,,,,,,,,,,,"Wyrzucony pośrodku bazy wydobywczej
+Mines of Titan",,"Dumped in the middle of a mining base on
+Titan, a moon of Saturn, you must acquire
+three keys to find the exit hidden in the
+mining headquarters. Since the natives are
+definitely NOT friendly, an exit is a nice
+thing to find.",,,,,,,,,,,,,,,,,,"Wyrzucony pośrodku bazy wydobywczej
 na Tytanie, księzycu Saturna, musisz zdobyć
 trzy klucze aby znaleźć wyjście ukryte
 w siedzibie górniczej. Jako że mieszkańcy
@@ -590,42 +670,44 @@ by było znaleźć jakieś wyjście.",,,,,,,,,
 ML4STORY2,The Titan Anomaly,,"While exploring for new mines on Titan
 (someone fragged the old one -- darn!),
 the UAC discovered the remains of an alien
-base. A tight security lid was clamped
-on the find, referred to only vaguely
-as the Anomaly in reports. You've been
-assigned the job of breaking in and
-finding out what's going on.
+base. A tight security lid was clamped on
+the find, referred to only vaguely as the
+Anomaly in reports. You've been assigned
+the job of breaking in and finding out
+what's going on.
 
 A UAC research base and security garrison
-has grown up around the Anomaly, and you'll
-begin your visit in the Security Holding
-Area, where you'll be asked to show your
-papers. Too bad you don't have any. You'll
-need to explore the Visitor's Center (S), the
-Science Admin. Building (N), the Security
-Headquarters (E), and the Guard Barracks to
-gain the keys that'll allow you access to
-the Anomaly Research Area (W), where, if you're
-lucky, you may just find an exit back home.","While exploring for new mines on Titan
+has grown up around the Anomaly, and
+you'll begin your visit in the Security
+Holding Area, where you'll be asked to
+show your papers. Too bad you don't have
+any. You'll need to explore the Visitor's
+Center (S), the Science Admin. Building (N),
+the Security Headquarters (E), and the
+Guard Barracks to gain the keys that'll
+allow you access to the Anomaly Research
+Area (W), where, if you're lucky, you may
+just find an exit back home.","While exploring for new mines on Titan
 (someone fragged the old one -- darn!),
 the UAC discovered the remains of an alien
-base. A tight security lid was clamped
-on the find, referred to only vaguely
-as the Anomaly in reports. You've been
-assigned the job of breaking in and
-finding out what's going on.
+base. A tight security lid was clamped on
+the find, referred to only vaguely as the
+Anomaly in reports. You've been assigned
+the job of breaking in and finding out
+what's going on.
 
 A UAC research base and security garrison
-has grown up around the Anomaly, and you'll
-begin your visit in the Security Holding
-Area, where you'll be asked to show your
-papers. Too bad you don't have any. You'll
-need to explore the Visitor's Centre (S), the
-Science Admin. Building (N), the Security
-Headquarters (E), and the Guard Barracks to
-gain the keys that'll allow you access to
-the Anomaly Research Area (W), where, if you're
-lucky, you may just find an exit back home.",,,,,,,,,,,,,,,,"Podczas szukania nowych kopalni na Tytanie
+has grown up around the Anomaly, and
+you'll begin your visit in the Security
+Holding Area, where you'll be asked to
+show your papers. Too bad you don't have
+any. You'll need to explore the Visitor's
+Centre (S), the Science Admin. Building (N),
+the Security Headquarters (E), and the
+Guard Barracks to gain the keys that'll
+allow you access to the Anomaly Research
+Area (W), where, if you're lucky, you may
+just find an exit back home.",,,,,,,,,,,,,,,,,"Podczas szukania nowych kopalni na Tytanie
 (ktoś wysadził stare -- niech to!), UAC
 odkryło pozostałości z kosmicznej bazy.
 Pokrywa bezpieczeństwa była mocno
@@ -644,43 +726,44 @@ oraz koszary strażników aby zyskać klucze które
 dadzą ci dostęp do Strefy Badania Anomalii (W),
 gdzie, przy odrobinie szczęścia, znajdziesz
 wyjście do domu.",,,,,,,,,
-ML4STORY3,The Farside of Titan,,"Given your success with the UAC mining
-base and the Anomaly investigation, it
-was inevitable that you get picked for
-this foray into the Titan Farside Research
+ML4STORY3,The Farside of Titan,,"Given your success with the UAC mining base
+and the Anomaly investigation, it was
+inevitable that you get picked for this
+foray into the Titan Farside Research
 Base. Oh well. Rumors have it that some
 prototypes of alien technology are being
 tested here. Please investigate and
-report.","Given your success with the UAC mining
-base and the Anomaly investigation, it
-was inevitable that you get picked for
-this foray into the Titan Farside Research
+report.","Given your success with the UAC mining base
+and the Anomaly investigation, it was
+inevitable that you get picked for this
+foray into the Titan Farside Research
 Base. Oh well. Rumours have it that some
 prototypes of alien technology are being
 tested here. Please investigate and
-report.",,,,,,,,,,,,,,,,"Patrząc na twój sukces z bazą wydobywczą
+report.",,,,,,,,,,,,,,,,,"Patrząc na twój sukces z bazą wydobywczą
 i dochodzeniem w sprawie Anomalii, wybór
 ciebie do udania się na stację badawczą
 na niewidocznej stronie Tytana był oczywisty.
 No cóż. Według plotek jakieś prototypy 
 technologii obcych są tam testowane.
 Proszę to zbadać i złożyć raport.",,,,,,,,,
-ML4STORY4,Trouble on Titan,,"Well, you know the story. UAC keeps sending
-you different places on Titan to investigate
-various strange occurrences. You keep telling
-them that there are aliens on Titan.
-You reported this after nearly getting your
-head taken off in the Mines. You told them
-again when they lost the Anomaly site. Your
-investigation of the loss of communication
-at the Farside base also mentioned this.
-They're starting to believe you, I think,
-except for the Psychology department
-anyway -- they're still holding out for their
-space psychosis theory. It's a compromise,
-you're being sent again, but as usual, you
-only get a pistol... Just in case there aren't
-any aliens after all.",,,,,,,,,,,,,,,,,"No cóż, wiesz o co biega. UAC ciągle cię wysyła
+ML4STORY4,Trouble on Titan,,"Well, you know the story. UAC keeps
+sending you different places on Titan to
+investigate various strange occurrences.
+You keep telling them that there are
+aliens on Titan. You reported this after
+nearly getting your head taken off in the
+Mines. You told them again when they lost
+the Anomaly site. Your investigation of the
+loss of communication at the Farside base
+also mentioned this. They're starting to
+believe you, I think, except for the
+Psychology department anyway -- they're
+still holding out for their space psychosis
+theory. It's a compromise, you're being sent
+again, but as usual, you only get a pistol...
+Just in case there aren't any aliens after
+all.",,,,,,,,,,,,,,,,,,"No cóż, wiesz o co biega. UAC ciągle cię wysyła
 do różnych miejsc na Tytanie by zbadać wszelakie
 dziwne zdarzenia. Ciągle im mówisz że na Tytanie
 grasują kosmici.
@@ -701,7 +784,7 @@ weapon technology. If you can survive the
 guards and solve the puzzles, the
 Federation will leapfrog in technology.
 It's all up to you. Oh and watch those
-windows!",,,,,,,,,,,,,,,,,"Równie dziwny, co enigmatyczny budynek 
+windows!",,,,,,,,,,,,,,,,,,"Równie dziwny, co enigmatyczny budynek 
 na księżycu Saturna zawiera najnowszą
 technologię obcych. Jeśli możesz przejść
 przez strażników i rozwiązać zagadki,
@@ -710,239 +793,274 @@ w technologii. Wszystko zależy od ciebie.
 Przy okazji, pilnuj tych okien!",,,,,,,,,
 ML4STORY6,Trapped on Titan,,"Every step you take may be your last.
 If it looks too easy, it probably isn't.
-Good luck -- you'll need it.",,,,,,,,,,,,,,,,,"Każdy krok może być twoim ostatnim.
+Good luck -- you'll need it.",,,,,,,,,,,,,,,,,,"Każdy krok może być twoim ostatnim.
 Jak coś wygląda za łatwo, to zapewne pułapka.
 Powodzenia -- przyda ci się.",,,,,,,,,
 ML5STORY1,"John Anderson's INFERNO level story
 taken from their readme files
 
-Dante's Gate: 1st Canto of INFERNO",,"After all this wackiness at the UAC base, you have
-lost track of your lady-friend, BEATRICE.  How the
-two of you ever got separated is no great mystery,
-what with all these demons and devils running about,
-but you're damned if you're going to go through
-Hell for nothing.  The only other survivor besides
-yourself and Beatrice is VIRGIL, the beatnik space
-poet.  He last saw Beatrice by one of the warp-
-gates.  Chances are she made it through -- but
+Dante's Gate: 1st Canto of INFERNO",,"After all this wackiness at the UAC base,
+you have lost track of your lady-friend,
+BEATRICE. How the two of you ever got
+separated is no great mystery, what with
+all these demons and devils running about,
+but you're damned if you're going to go
+through Hell for nothing. The only other
+survivor besides yourself and Beatrice is
+VIRGIL, the beatnik space poet. He last saw
+Beatrice by one of the warp-gates.
+Chances are she made it through -- but
 what's on the other side?
 
-Only one way to find out.  You'll have to go
-through DANTE'S GATE.",,,,,,,,,,,,,,,,,,,,,,,,,,
-ML5STORY2,Crossing Acheron: 2nd Canto of INFERNO,,"Having passed through DANTE'S GATE and
-survived, you now find yourself in a keep on the
-shores of the river Acheron. This is the second
-leg of the journey in your search for Beatrice.
-Your guide, Virgil, is nowhere to be found.
-""He's buggered off!"" you think to yourself; but
-you have no time now to even think: you are
-immediately challenged by several Demons, and in
-the distance you hear the eerie purring of the
-Arch-Vile (just be sure not to stare at him for
-too long before you start running).  As usual,
-you dispatch what fiends you may and begin the
-task at hand.
+Only one way to find out. You'll have to go
+through DANTE'S GATE.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML5STORY2_1,Crossing Acheron: 2nd Canto of INFERNO,,"Having passed through DANTE'S GATE and
+survived, you now find yourself in a keep
+on the shores of the river Acheron. This is
+the second leg of the journey in your
+search for Beatrice. Your guide, Virgil, is
+nowhere to be found. ""He's buggered off!""
+you think to yourself; but you have no time
+now to even think: you are immediately
+challenged by several Demons, and in the
+distance you hear the eerie purring of the
+Arch-Vile (just be sure not to stare at him
+for too long before you start running). As
+usual, you dispatch what fiends you may
+and begin the task at hand.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML5STORY2_2,,,"Your goal? To get the hell out of this
+place as quickly as possible and find your
+beloved Beatrice. You only hope that she
+has already passed through this hell-hole
+to a safer haven beyond. If only you could
+hold her in your arms again, you know what
+you would say:
 
-Your goal?  To get the hell out of this place as
-quickly as possible and find your beloved Beatrice.
-You only hope that she has already passed through
-this hell-hole to a safer haven beyond.  If only
-you could hold her in your arms again, you know
-what you would say:
-
-""Gimme some sugar, Babe.""",,,,,,,,,,,,,,,,,,,,,,,,,,
+""Gimme some sugar, Babe.""",,,,,,,,,,,,,,,,,,,,,,,,,,,
 ML5STORY3,Virgil's Lead: 3rd Canto of INFERNO,,"In your search for Beatrice, you lost your
-guide Virgil (the beatnik space-poet) while crossing
-Acheron. But you've caught up with him again,
-and he's agreed to lead you through the current way-
-station (mostly because demons and undead sergeants
-are not much impressed with Virgil's way with words).
-""You can get a lot further with a kind word and
-a gun then you can a kind word.""
-""You belong to the NRA, don't you?"" Virgil asks.
-""No, I'm just a pessimistic pacifist.""",,,,,,,,,,,,,,,,,,,,,,,,,,
-ML5STORY4,Minos' Judgement: 4th Canto of INFERNO,,"In your search for Beatrice, your
-guide, Virgil (the beatnik space-poet) has just
-successfully lead you through the First Circle of
-Hades -- only to bring you to the court of Minos,
-the Judge of Hell.
+guide Virgil (the beatnik space-poet) while
+crossing Acheron. But you've caught up
+with him again, and he's agreed to lead you
+through the current way-station (mostly
+because demons and undead sergeants are
+not much impressed with Virgil's way with
+words).
+  ""You can get a lot further with a kind
+word and a gun then you can a kind word.""
+  ""You belong to the NRA, don't you?"" Virgil
+asks.
+  ""No, I'm just a pessimistic pacifist.""",,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML5STORY4,Minos' Judgement: 4th Canto of INFERNO,,"In your search for Beatrice, your guide,
+Virgil (the beatnik space-poet) has just
+successfully lead you through the First
+Circle of Hades -- only to bring you to the
+court of Minos, the Judge of Hell.
   ""Well,"" you say, ""this is another fine mess
-you've gotten us into.  Now what?""
+you've gotten us into. Now what?""
   Virgil, with his usual loquacity, replies:
-""Heh heh.""",,,,,,,,,,,,,,,,,,,,,,,,,,
-ML5STORY5,Nessus: 5th Canto of INFERNO,,"Minos decided to grant leniency and
-not kill you until next week.  In the meantime,
-having slipped past Cerberus, the top dog, you
-and Virgil come to a precipice overlooking the river
-Phlegethon.  There, Virgil greets the Minotaur
-using phrases from an out-of-date ""Passport
-to Demonese"" by Charles Berlitz. Enraged at having
-been asked to remove his panties, the Minotaur
-falls upon the ground and throws a conniption fit.
-You grab Virgil and climb down some boulders to
-the foot of the cliff where Chiron, the chief
-Centaur, offers to have Nessus carry you across
+""Heh heh.""",,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML5STORY5,Nessus: 5th Canto of INFERNO,,"Minos decided to grant leniency and not
+kill you until next week. In the meantime,
+having slipped past Cerberus, the top dog,
+you and Virgil come to a precipice
+overlooking the river Phlegethon. There,
+Virgil greets the Minotaur using phrases
+from an out-of-date ""Passport to
+Demonese"" by Charles Berlitz. Enraged at
+having been asked to remove his panties,
+the Minotaur falls upon the ground and
+throws a conniption fit. You grab Virgil and
+climb down some boulders to the foot of
+the cliff where Chiron, the chief Centaur,
+offers to have Nessus carry you across
 the river on his shoulders.
-  ""Why, that's mighty white of ya',"" says Virgil.
-  ""No problem, sailor,"" says Nessus. ""Hop on.""",,,,,,,,,,,,,,,,,,,,,,,,,,
-ML5STORY6,Vesperas: 7th Canto of INFERNO,,"VESPERAS (or ""vespers""): an evening ceremony.
-""Now it's dark.""",,,,,,,,,,,,,,,,,,,,,,,,,,
-ML6STORY0,"Sverre André Kvernmo's CABAL level story
-taken from their readme files",,"You once were the biggest and baddest Cyber-demon to
-rule hell and you spear-headed the council that
-governed the underworld; ""the Cabal"". Betrayed by the
-other members you find yourself not only dismantled,
-but also a victim of the utmost demonic humiliation:
-You've been morphed into a human! Of course you're
-out for revenge and have to kick the other members of
-the Cabal's butts one by one.",,,,,,,,,,,,,,,,,,,,,,,,,,
-ML6STORY1,Bloodsea Keep,,"""Bloodsea Keep"" is the home of your past advisor;
-Veavitdpoh (Very Evil Arch-Vile In The Deepest Parts
-Of Hell). Veavitdpoh is an old-school demon that
-believes in the rip-out-heart-routine and so shuns
-all use of technology and mechanical weaponry. His
-cult following has grown the last century, but still
-amounts to little. Unless you face them alone, of
-course...
-After being dumped into the endless ""Sea of Blood""
-following your humiliating transformation into a
-human, you swim for an eternity before you finally
-bump your head against the pier of the keep.
-Digging your feet into the mud of human remains your
-hand brushes by an old blood-soaked shotgun, the
-previous owner's severed hand still attached to it.
-All who enter ""Bloodsea Keep"" with such items fall
-victim to your former advisor's favorite pastime:
-Torture. Any ""heretics"" still alive inside the keep
-should be homicidal maniacs at best.
-""That's OK"" you think, ""maybe they brought some more
-ammo for the shotgun"", before cocking the rusty
-pump-action, causing an eyeball to fly out of the
-cartridge...","""Bloodsea Keep"" is the home of your past advisor;
-Veavitdpoh (Very Evil Arch-Vile In The Deepest Parts
-Of Hell). Veavitdpoh is an old-school demon that
-believes in the rip-out-heart-routine and so shuns
-all use of technology and mechanical weaponry. His
-cult following has grown the last century, but still
-amounts to little. Unless you face them alone, of
-course...
-After being dumped into the endless ""Sea of Blood""
-following your humiliating transformation into a
-human, you swim for an eternity before you finally
-bump your head against the pier of the keep.
-Digging your feet into the mud of human remains your
-hand brushes by an old blood-soaked shotgun, the
-previous owner's severed hand still attached to it.
-All who enter ""Bloodsea Keep"" with such items fall
-victim to your former advisor's favourite pastime:
-Torture. Any ""heretics"" still alive inside the keep
-should be homicidal maniacs at best.
-""That's OK"" you think, ""maybe they brought some more
-ammo for the shotgun"", before cocking the rusty
-pump-action, causing an eyeball to fly out of the
-cartridge...",,,,,,,,,,,,,,,,,,,,,,,,,
-ML6STORY2,Bloodflood,,"You have come upon one of the Cabal's blood-depots.
-An important element in any powerful black magic is
-huge amounts of blood. By emptying the depot's tanks
-into the nearby river, you will have struck your first
-blow against the Cabal.",,,,,,,,,,,,,,,,,,,,,,,,,,
-ML6STORY3,Derelict Station,,"Just having escaped the Sea of Blood, you have sought
-out a derelict building in the search for arms &
-equipment. Unfortunately the station isn't as
-abandoned as you thought.",,,,,,,,,,,,,,,,,,,,,,,,,,
-ML6STORY4,Mephisto's Mausoleum,,"In Mephisto's Mausoleum, you have reached the grave of
-an old friend and mentor: ""Mephisto"". Yeah, old Lucy
-was a tough bastard. But then there was that incident
-with the earthling marine which lost him a lot of
-credit in the hard-core parts of Hell. So you had to
-kick him off the throne, of course. His immortal
-spirit was kept as a member of the Cabal, though, and
-so he was in on the betrayal against you. Time to
-enter his tomb and lay the old man down to rest
-for good...",,,,,,,,,,,,,,,,,,,,,,,,,,
-ML6STORY5,The Express Elevator to Hell,,"When the ""Express Elevator to Hell"" starts descending,
-the renegade Cabal has begun to realize you might be
-a threat to them, human or not. Halfway down the
-shaft that should have taken you to the deepest pits
-of Hell, the lift first slows down before it jerks to
-a halt. Ambush! Survive the initial onslaught and
-find a gateway out of the now sealed elevator. Tough,
-but that's the way you like it...",,,,,,,,,,,,,,,,,,,,,,,,,,
-ML6STORY6,We Who Are About to Die,,"The Cabal has started striking back at you. That
-last gateway should have taken you... Well, somewhere
-else. Not to an arena where thousands of humans have
-lost their souls to hungry demons. As you get ready
-for the first wave of hellspawned gladiators, you
-swear to blast the emperor's thumbs off before he can
-even think about turning them down on you...",,,,,,,,,,,,,,,,,,,,,,,,,,
-ML6STORY7,Eye of the Storm,,"You find yourself in the remains of an old fortress
-after ascending a lift shaft from the mines where you
-were trapped. Signs of unlife are evident, but from
-what you know of this place, it should pose no great
-threat to you. It used to be the center of a
-Cacodemon empire that perished some 665 years ago.
-Oh, by the way, it's new years eve...","You find yourself in the remains of an old fortress
-after ascending a lift shaft from the mines where you
-were trapped. Signs of unlife are evident, but from
-what you know of this place, it should pose no great
-threat to you. It used to be the centre of a
-Cacodemon empire that perished some 665 years ago.
-Oh, by the way, it's new years eve...",,,,,,,,,,,,,,,,,,,,,,,,,
-ML6STORY8,Black Tower,,"In ""Black Tower"", you're nearing the end of your
-journey. You and Chagrin, the ruler of the Black
-Tower, came off the same conveyor belt as newly
-assembled cyber-demons a few thousand years back.
-""Oil runs thicker than blood"", the two of you used to
-say. Demons don't come much closer to friendship than
-what you and Chagrin shared. Well, now your buddy
-rules the hordes of Hell previously under your
-command, which have left you for dead. Your task is
-simple: Enter the dreaded Black Tower, the nucleus of
-black magic and the occult in all of Hell, get to
-its highest floor, and slay Chagrin. Then there is the
-getting back out as well...",,,,,,,,,,,,,,,,,,,,,,,,,,
-ML6STORY9,The Image of Evil,,"The Image of Evil is a humongous temple created
-to honor the first Demon to slay an angel;
-Lithlaar. In it you will find the Cybo that is now
-known as the lord of Hell and his two Soulguards.","The Image of Evil is a humongous temple created
-to honour the first Demon to slay an angel;
-Lithlaar. In it you will find the Cybo that is now
-known as the lord of Hell and his two Soulguards.",,,,,,,,,,,,,,,,,,,,,,,,,
+  ""Why, that's mighty white of ya',""
+says Virgil.
+  ""No problem, sailor,"" says Nessus.
+""Hop on.""",,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML5STORY6,Vesperas: 7th Canto of INFERNO,,"VESPERAS (or ""vespers""): an evening
+ceremony.
+
+""Now it's dark.""",,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML6STORY1_1,"Sverre André Kvernmo's CABAL level story
+taken from their readme files",,"You once were the biggest and baddest
+Cyber-demon to rule hell and you
+spear-headed the council that governed
+the underworld; ""the Cabal"". Betrayed by
+the other members you find yourself not
+only dismantled, but also a victim of the
+utmost demonic humiliation: You've been
+morphed into a human! Of course you're out
+for revenge and have to kick the other
+members of the Cabal's butts one by one.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML6STORY1_2,Bloodsea Keep,,"""Bloodsea Keep"" is the home of your past
+advisor; Veavitdpoh (Very Evil Arch-Vile In
+The Deepest Parts Of Hell). Veavitdpoh is
+an old-school demon that believes in the
+rip-out-heart-routine and so shuns all use
+of technology and mechanical weaponry.
+His cult following has grown the last
+century, but still amounts to little.
+Unless you face them alone, of course...",,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML6STORY1_3,,,"After being dumped into the endless ""Sea
+of Blood"" following your humiliating
+transformation into a human, you swim for
+an eternity before you finally bump your
+head against the pier of the keep. Digging
+your feet into the mud of human remains
+your hand brushes by an old blood-soaked
+shotgun, the previous owner's severed hand
+still attached to it. All who enter
+""Bloodsea Keep"" with such items fall
+victim to your former advisor's favorite
+pastime: Torture. Any ""heretics"" still
+alive inside the keep should be homicidal
+maniacs at best. ""That's OK"" you think,
+""maybe they brought some more ammo for
+the shotgun"", before cocking the rusty
+pump-action, causing an eyeball to fly out
+of the cartridge...","After being dumped into the endless ""Sea
+of Blood"" following your humiliating
+transformation into a human, you swim for
+an eternity before you finally bump your
+head against the pier of the keep. Digging
+your feet into the mud of human remains
+your hand brushes by an old blood-soaked
+shotgun, the previous owner's severed hand
+still attached to it. All who enter
+""Bloodsea Keep"" with such items fall
+victim to your former advisor's favourite
+pastime: Torture. Any ""heretics"" still
+alive inside the keep should be homicidal
+maniacs at best. ""That's OK"" you think,
+""maybe they brought some more ammo for
+the shotgun"", before cocking the rusty
+pump-action, causing an eyeball to fly out
+of the cartridge...",,,,,,,,,,,,,,,,,,,,,,,,,,
+ML6STORY2,Bloodflood,,"You have come upon one of the Cabal's
+blood-depots. An important element in any
+powerful black magic is huge amounts of
+blood. By emptying the depot's tanks into
+the nearby river, you will have struck
+your first blow against the Cabal.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML6STORY3,Derelict Station,,"Just having escaped the Sea of Blood, you
+have sought out a derelict building in the
+search for arms & equipment.
+Unfortunately the station isn't as
+abandoned as you thought.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML6STORY4,Mephisto's Mausoleum,,"In Mephisto's Mausoleum, you have reached
+the grave of an old friend and mentor:
+""Mephisto"". Yeah, old Lucy was a tough
+bastard. But then there was that incident
+with the earthling marine which lost him a
+lot of credit in the hard-core parts of
+Hell. So you had to kick him off the throne,
+of course. His immortal spirit was kept as a
+member of the Cabal, though, and so he was
+in on the betrayal against you. Time to
+enter his tomb and lay the old man down to
+rest for good...",,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML6STORY5,The Express Elevator to Hell,,"When the ""Express Elevator to Hell""
+starts descending, the renegade Cabal has
+begun to realize you might be a threat to
+them, human or not. Halfway down the
+shaft that should have taken you to the
+deepest pits of Hell, the lift first slows
+down before it jerks to a halt. Ambush!
+Survive the initial onslaught and find a
+gateway out of the now sealed elevator.
+Tough, but that's the way you like it...",,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML6STORY6,We Who Are About to Die,,"The Cabal has started striking back at
+you. That last gateway should have taken
+you... Well, somewhere else. Not to an
+arena where thousands of humans have
+lost their souls to hungry demons. As you
+get ready for the first wave of
+hellspawned gladiators, you swear to
+blast the emperor's thumbs off before he
+can even think about turning them down on
+you...",,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML6STORY7,Eye of the Storm,,"You find yourself in the remains of an old
+fortress after ascending a lift shaft
+from the mines where you were trapped.
+Signs of unlife are evident, but from what
+you know of this place, it should pose no
+great threat to you. It used to be the
+center of a Cacodemon empire that
+perished some 665 years ago. Oh, by the
+way, it's new years eve...","You find yourself in the remains of an old
+fortress after ascending a lift shaft
+from the mines where you were trapped.
+Signs of unlife are evident, but from what
+you know of this place, it should pose no
+great threat to you. It used to be the
+centre of a Cacodemon empire that
+perished some 665 years ago. Oh, by the
+way, it's new years eve...",,,,,,,,,,,,,,,,,,,,,,,,,,
+ML6STORY8,Black Tower,,"In ""Black Tower"", you're nearing the end of
+your journey. You and Chagrin, the ruler
+of the Black Tower, came off the same
+conveyor belt as newly assembled
+cyber-demons a few thousand years back.
+""Oil runs thicker than blood"", the two of
+you used to say. Demons don't come much
+closer to friendship than what you and
+Chagrin shared. Well, now your buddy rules
+the hordes of Hell previously under your
+command, which have left you for dead.
+Your task is simple: Enter the dreaded
+Black Tower, the nucleus of black magic
+and the occult in all of Hell, get to its
+highest floor, and slay Chagrin. Then
+there is the getting back out as well...",,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML6STORY9,The Image of Evil,,"The Image of Evil is a humongous temple
+created to honor the first Demon to slay
+an angel; Lithlaar. In it you will find the
+Cybo that is now known as the lord of Hell
+and his two Soulguards.","The Image of Evil is a humongous temple
+created to honour the first Demon to slay
+an angel; Lithlaar. In it you will find the
+Cybo that is now known as the lord of Hell
+and his two Soulguards.",,,,,,,,,,,,,,,,,,,,,,,,,,
+,No Rest for the Living,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 NVINTRO,"No Rest for the Living opening story
-taken from Official Xbox Magazine",,"THE STORY CONTINUES…
+taken from Official Xbox Magazine",,"THE STORY CONTINUES...
 
 Back on Earth, after Hell's forces have
-(seemingly) been vanquished...",,,,,,,,,,,,,,,,,,,,,,,,,,
-ID1INTRO,"Legacy of Rust opening story
-taken from DOOM + DOOM II's main menu",,"""Vassago's Rest"", the ancient inscriptions called it.
-With the meaning of the name lost to time, it wasn't
-long before the interlopers began calling the land by
-another: ""New Eden"". Just like the Garden of old,
-mankind's exile from this newly-settled realm was
-swift and brutal.
+(seemingly) been vanquished...",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,Legacy of Rust,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ID1INTRO1,"Legacy of Rust opening story
+taken from DOOM + DOOM II's main menu",,"""Vassago's Rest"", the ancient inscriptions
+called it. With the meaning of the name
+lost to time, it wasn't long before the
+interlopers began calling the land by
+another: ""New Eden"". Just like the Garden
+of old, mankind's exile from this
+newly-settled realm was swift and brutal.
 
 This remote region of Hell, overflowing in
-(un-)natural resources as it were, was almost
-entirely devoid of demonic presence. The Union
-Aerospace Corporation, never one to shy away from
-hubris and excess, learned the hard way that even the
-demons feared something greater, something deeper.
-When the Ones Beneath awoke, the UAC's crown jewel
-was swallowed in a cascade of blood and fire.
+(un-)natural resources as it were, was
+almost entirely devoid of demonic
+presence. The Union Aerospace
+Corporation, never one to shy away from
+hubris and excess, learned the hard way
+that even the demons feared something
+greater, something deeper. When the Ones
+Beneath awoke, the UAC's crown jewel was
+swallowed in a cascade of blood and fire.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+ID1INTRO2,,,"Three hours -- all it took to reduce
+New Eden to a sea of molten glass.
 
-Three hours -- all it took to reduce New Eden to a
-sea of molten glass.
+Three minutes -- all it took before
+the UAC's top brass played their ace.
 
-Three minutes -- all it took before the UAC's top
-brass played their ace.
+Three seconds -- all it took for you to
+weigh the risks before accepting the job.
 
-Three seconds -- all it took for you to weigh the
-risks before accepting the job.
+Your orders are clear: reclaim the lost
+base, and preserve the UAC's Legacy.
 
-Your orders are clear: reclaim the lost base, and
-preserve the UAC's Legacy.
-
-Or die trying.",,,,,,,,,,,,,,,,,,,,,,,,,,
+Or die trying.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 INTERTEXT_ID1_E1,Legacy of Rust episode 1 ending,,"Damn.
 
 The oldest trap in the book, and you fell
@@ -1027,7 +1145,7 @@ Alors que votre corps à moitié inconscient
 est jeté dans une cage rouillée, vous vous
 jurez de trouver la réponse à ces questions.
 
-Il est temps de forger votre propre héritage.",,"Accidenti.
+Il est temps de forger votre propre héritage.",,,"Accidenti.
 
 Il trucco più vecchio del mondo, e ci sei cascato
 con tutte le scarpe. Anche i migliori sbagliano.
@@ -1087,7 +1205,7 @@ na tej bezludnej, krwawiącej skale?
 Gdy wrzucają twoje półświadome ciało do zardzewiałej,
 żelaznej klatki, przysięgasz znaleźć odpowiedzi.
 
-Czas zostać kowalem własnego losu.",,"Droga.
+Czas zostać kowalem własnego losu.","Droga.
 
 Essa armadilha é clássica, e você
 caiu direitinho. Até os melhores cometem erros.
@@ -1102,7 +1220,7 @@ eles estão escondendo nesta rocha sem vida e devastada
 Enquanto eles jogam seu corpo semiconsciente em
 uma jaula enferrujada, você se compromete a descobrir a verdade.
 
-É hora de criar o próprio legado.",,"Чёрт.
+É hora de criar o próprio legado.",,,"Чёрт.
 
 Этому трюку уже сто лет, и всё же тебя
 одурачили. Лучшие тоже ошибаются.
@@ -1233,7 +1351,7 @@ Zéro.
 C'est fait. D'un seul coup violent, vous
 avez débarrassé le monde de deux maux...
 et avez survécu.
-L'héritage attendra. Ce n'est pas encore terminé.",,"Tic tac. Tic tac.
+L'héritage attendra. Ce n'est pas encore terminé.",,,"Tic tac. Tic tac.
 
 L'aria è densa di sangue e ironia.
 Hai ribaltato la mossa finale della UAC
@@ -1297,7 +1415,7 @@ Zero.
 
 To koniec. Udało ci się oczyścić świat z dwóch zagrożeń
 jednym, agresywnym ciosem... i przeżyć.
-Los zaczeka. Masz jeszcze coś do zrobienia.",,"Tique-taque. Tique-taque.
+Los zaczeka. Masz jeszcze coś do zrobienia.","Tique-taque. Tique-taque.
 
 O ar está cheio de sangue e ironia.
 Você usou a última cartada da UAC contra
@@ -1313,7 +1431,7 @@ Zero.
 
 Está feito. Você livrou o mundo de dois males
 com um único e poderoso golpe... e sobreviveu.
-O legado pode esperar. Você ainda não terminou.",,"Тик-так, тик-так.
+O legado pode esperar. Você ainda não terminou.",,,"Тик-так, тик-так.
 
 Кровь и ирония — твой коктейль на сегодня.
 Ты обернул авантюру ОАК против неё самой.
@@ -1363,6 +1481,7 @@ O legado pode esperar. Você ainda não terminou.",,"Тик-так, тик-та�
 完成了。你以一次猛擊
 驅除了世上的兩大邪惡......而且還活了下來。
 壯烈犧牲等之後再說吧。你還有事情沒做完。"
+,TNT: Evilution,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 TNINTRO1,"Final Doom opening story
 taken from manual",,"THE STORY CONTINUES...
 
@@ -1380,7 +1499,7 @@ moons of Jupiter, hoping that the
 increased distance would enhance Earth's
 safety if something went wrong. Marines
 were stationed at the base, ready for
-anything.",,,,,,,,,,,,,,,,,,,,,,,,,,
+anything.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 TNINTRO2,,,"The Invasion
 
 Soon after the UAC opened its first Gate,
@@ -1400,7 +1519,7 @@ was no match for the marines. Set up in
 defensive positions around the gate, the
 marines were able to slaughter the
 monsters by the hundreds, taking few
-losses.",,,,,,,,,,,,,,,,,,,,,,,,,,
+losses.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 TNINTRO3,,,"As suddenly as it had begun, the invasion
 ended. The last flaming skull screamed
 through, was hit by twenty simultaneous
@@ -1417,7 +1536,7 @@ defensive positions were strengthened, and
 the marines watched closely for another
 attempt, all their attention drawn inward
 towards the Gates. They were looking in
-the wrong direction.",,,,,,,,,,,,,,,,,,,,,,,,,,
+the wrong direction.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 TNINTRO4,,,"The Rain of Monsters
 
 Hell knew more than one trick. Months
@@ -1432,15 +1551,15 @@ field to meet it. But it never landed.
 Instead, it hovered over the base, miles in
 the air. The men and women looked up at it,
 and saw that something was terribly
-wrong.",,,,,,,,,,,,,,,,,,,,,,,,,,
-TNINTRO5,,,"The ship could not have come from Earth.
-It was huge, kilometers long, and was built
-of bone, steel, flesh, corruption, and
-death. It was a bio-mechano-magical
-construct from the depths of Hell and It
-had come through space for its vengeance.
-Enormous doors, large as football fields,
-irised open and hideous demons poured out,
+wrong.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+TNINTRO5,,,"The ship could not have come from Earth. It
+was huge, kilometers long, and was built of
+bone, steel, flesh, corruption, and death.
+It was a bio-mechano-magical construct
+from the depths of Hell and It had come
+through space for its vengeance. Enormous
+doors, large as football fields, irised
+open and hideous demons poured out,
 plunging to the ground and blanketing the
 entire base with their throbbing, pulsing
 bodies. They were everywhere at once. The
@@ -1453,7 +1572,7 @@ corrupting, and feasting.
 
 Once more, the surviving humans were left
 as zombified brain-dead monstrosities.
-existing only to kill and kill and kill.",,,,,,,,,,,,,,,,,,,,,,,,,,
+existing only to kill and kill and kill.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 TNINTRO6,,,"It's Up To You
 
 Only one man escaped death or
@@ -1468,7 +1587,7 @@ Them. The beings that still haunted your
 nightmares. Your reflexes weren't dulled
 by your experences, and you pulled out
 your pistol and blew the imp to gory
-shreds.",,,,,,,,,,,,,,,,,,,,,,,,,,
+shreds.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 TNINTRO7,,,"Hot-footing it back to the base, you saw it
 all and realized what had happened in a
 flash. The demon ship still floated above
@@ -1485,7 +1604,8 @@ you died trying, well, you were going to die
 anyway, some day. Death at the fangs of
 demons might be the very worst way to die,
 but if they did manage to get you, Hell
-would know it had been in a fight.",,,,,,,,,,,,,,,,,,,,,,,,,,
+would know it had been in a fight.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+,The Plutonia Experiment,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 PLINTRO1,,,"THE STORY CONTINUES...
 
 After Hell's catastrophic invasion of
@@ -1497,7 +1617,7 @@ the old trustees and stockholders were
 all dead, this wasn't much of a problem),
 and sent to research tools and
 technologies to prevent such an incursion
-from happening ever again.",,,,,,,,,,,,,,,,,,,,,,,,,,
+from happening ever again.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 PLINTRO2,,,"Though the invasion had been stopped, and
 the remaining demons were gradually being
 exterminated by mopping-up squads, it was
@@ -1515,7 +1635,7 @@ project began innocently enough.
 Naturally the scientists, in order to
 learn how to close Gates, had to relearn
 Gate technology first. This ability was
-rapidly regained. Perhaps too rapidly.",,,,,,,,,,,,,,,,,,,,,,,,,,
+rapidly regained. Perhaps too rapidly.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 PLINTRO3,,,"The Terror
 
 Soon, beings from Outside had their dire
@@ -1533,7 +1653,7 @@ halfway through, was snipped in two when
 the Gate closed. Earth would now be safe
 from literal invasion by Hell. At least,
 once the technology could be set up
-around the globe.",,,,,,,,,,,,,,,,,,,,,,,,,,
+around the globe.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 PLINTRO4,,,"The next day, a ring of seven Gates opened,
 throughout the base, and a monstrous
 legion rampaged through. The Quantum
@@ -1544,7 +1664,7 @@ strong, too numerous. The marines fought
 like mad dogs, but were finally pulled
 down by the enemies' claws. The scientists,
 marines, and bureaucrats were all slain or
-transformed into undead mankillers.",,,,,,,,,,,,,,,,,,,,,,,,,,
+transformed into undead mankillers.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 PLINTRO5,,,"The Task
 
 The Quantum Accelerator and its
@@ -1555,7 +1675,7 @@ government, frantic that the Quantum
 Accelerator will be destroyed or used in
 some alien fashion upon us, has ordered
 all marines to the site at once,
-regardless of their location.",,,,,,,,,,,,,,,,,,,,,,,,,,
+regardless of their location.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 PLINTRO6,,,"You were on leave at the beach, only a few
 minutes from the complex, when you got
 the word. You suited up, grabbed a pistol,
@@ -1566,7 +1686,7 @@ from the interior. Corpses were scattered
 everywhere. Obviously the Gatekeeper was
 doing something inside -- something that
 would soon reach some kind of awful
-climax.",,,,,,,,,,,,,,,,,,,,,,,,,,
+climax.",,,,,,,,,,,,,,,,,,,,,,,,,,,
 PLINTRO7,,,"You know that within an hour or two, an
 entire division of marines will arrive to
 assault the base with full artillery and
@@ -1582,4 +1702,4 @@ have finished their awful task, and will be
 prepared, once more, to take on the world.
 
 It's up to you. You have to enter the
-complex and stop the Gatekeeper. Alone.",,,,,,,,,,,,,,,,,,,,,,,,,,
+complex and stop the Gatekeeper. Alone.",,,,,,,,,,,,,,,,,,,,,,,,,,,
