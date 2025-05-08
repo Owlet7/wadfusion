@@ -149,5 +149,5 @@ nosave float wf_hud_alt_alpha_stats = 0.2;
 nosave float wf_hud_alt_alpha_stats_time = 0.2;
 nosave float wf_hud_alt_alpha_stats_mapname = 0.2;
 
-nosave noarchive string wf_newgame;
+nosave noarchive string wf_nextmap;
 nosave noarchive int wf_null;

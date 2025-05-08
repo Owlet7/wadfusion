@@ -56,10 +56,9 @@ map ML_MAP04 "$ML_FISTULA"
 map ML_MAP05 "$ML_COMBINE"
 {
 	Next = "ML_MAP06"
-	// The sky gets replaced by texture substitution compatibility options
-	Sky1 = "SKY1"
 	TitlePatch = "MWILV04"
 	Music = "$MUSIC_DEAD"
+	// The sky gets replaced by texture substitution compatibility options
 }
 
 map ML_MAP06 "$ML_SUBSPACE"
@@ -142,7 +141,7 @@ map ML_MAP28 "$ML_TWM01" // reject level
 map ML_MAP07 "$ML_PARADOX"
 {
 	// needed for the zscript-based intermission hacks
-	Next = "WF_MASTERLEVELS_STORY1"
+	Next = "WF_STORY_ML_MAP29"
 	TitlePatch = "MWILV06"
 	Music = "$MUSIC_IN_CIT"
 	Author = "$WF_AU_MUSTAINES"

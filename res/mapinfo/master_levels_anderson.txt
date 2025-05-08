@@ -4,6 +4,7 @@
 
 defaultmap
 {
+	Sky1 = "SKY1"
 	SuckTime = 1
 	NoJump
 	NoCrouch
@@ -11,7 +12,7 @@ defaultmap
 }
 
 // needed for the zscript-based intermission hacks
-map WF_MASTERLEVELS_STORY2 "$ML_DANTES"
+map WF_STORY_ML_MAP33 "$ML_DANTES"
 {
 	TitlePatch = "MWILV32"
 }
@@ -19,14 +20,13 @@ map WF_MASTERLEVELS_STORY2 "$ML_DANTES"
 map ML_MAP33 "$ML_DANTES" // bonus level
 {
 	// needed for the zscript-based intermission hacks
-	Next = "WF_MASTERLEVELS_STORY3"
-	Sky1 = "SKY1"
+	Next = "WF_STORY_ML_MAP34"
 	TitlePatch = "MWILV32"
 	Music = "$MUSIC_STALKS"
 }
 
 // needed for the zscript-based intermission hacks
-map WF_MASTERLEVELS_STORY3 "$ML_ACHERON"
+map WF_STORY_ML_MAP34 "$ML_ACHERON"
 {
 	TitlePatch = "MWILV33"
 }
@@ -34,7 +34,6 @@ map WF_MASTERLEVELS_STORY3 "$ML_ACHERON"
 map ML_MAP34 "$ML_ACHERON" // bonus level
 {
 	Next = "ML_MAP11"
-	Sky1 = "SKY1"
 	TitlePatch = "MWILV33"
 	Music = "$MUSIC_COUNTD"
 }
@@ -43,7 +42,6 @@ map ML_MAP11 "$ML_VIRGIL"
 {
 	Next = "ML_MAP12"
 	Cluster = 37
-	Sky1 = "SKY1"
 	TitlePatch = "MWILV10"
 	Music = "$MUSIC_COUNTD"
 }
@@ -52,7 +50,6 @@ map ML_MAP12 "$ML_MINOS"
 {
 	Next = "ML_MAP13"
 	Cluster = 38
-	Sky1 = "SKY1"
 	TitlePatch = "MWILV11"
 	Music = "$MUSIC_DOOM"
 }
@@ -61,7 +58,6 @@ map ML_MAP13 "$ML_NESSUS"
 {
 	Next = "ML_MAP14"
 	Cluster = 39
-	Sky1 = "SKY1"
 	TitlePatch = "MWILV12"
 	Music = "$MUSIC_SHAWN"
 	Map07Special
@@ -70,7 +66,6 @@ map ML_MAP13 "$ML_NESSUS"
 map ML_MAP14 "$ML_GERYON"
 {
 	Next = "ML_MAP15"
-	Sky1 = "SKY1"
 	TitlePatch = "MWILV13"
 	Music = "$MUSIC_DDTBLU"
 }
@@ -79,7 +74,6 @@ map ML_MAP15 "$ML_VESPERAS"
 {
 	Next = "ML_MAP35"
 	Cluster = 40
-	Sky1 = "SKY1"
 	TitlePatch = "MWILV14"
 	Music = "$MUSIC_IN_CIT"
 }
@@ -96,7 +90,7 @@ map ML_MAP35 "$ML_CHIRON" // duplicate of E4M7
 map ML_MAP36 "$ML_LETHE" // bonus level - UDTWiD's E4M8
 {
 	// needed for the zscript-based intermission hacks
-	Next = "WF_MASTERLEVELS_STORY4"
+	Next = "WF_STORY_ML_MAP19"
 	Sky1 = "SKY4"
 	TitlePatch = "MWILV35"
 	Par = 105

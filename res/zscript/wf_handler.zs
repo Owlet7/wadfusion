@@ -105,18 +105,19 @@ class WadFusionHandler : EventHandler
 	
 	override void WorldTick()
 	{
-		// replace e1m8 or e1m4 with the maps that Romero authored
-		// as a warm-up exercise for the cancelled game Blackroom
 		if ( CVar.FindCVar("wf_compat_nextmap").GetBool() )
 		{
+			// replace e1m8 or e1m4 with the maps that Romero authored
+			// as a warm-up exercise for the cancelled game Blackroom
 			DoBlackroomMapReplacements();
 		}
 		
+		// very hacky methods of adding optional titlescreens
+		// and story intermissions when starting new games
 		// wf_newgame.zs
-		// very hacky method of adding optional titlescreens
-		// and story intermissionswhen starting new games
 		NewGameIntro();
-		NewGameStory();
+		// wf_story.zs
+		IntermissionStory();
 	}
 	
 	override void RenderOverlay(RenderEvent e)

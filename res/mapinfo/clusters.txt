@@ -384,11 +384,3 @@ cluster 47
 	Music = "$MUSIC_READ_M"
 	Flat = "$DEM1_6"
 }
-
-cluster 48
-{
-	EnterText = "$ML6STORY9"
-	ExitText = "$MLEND"
-	Music = "$MUSIC_READ_M"
-	Flat = "$SLIME11"
-}

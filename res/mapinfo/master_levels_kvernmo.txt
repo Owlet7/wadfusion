@@ -10,7 +10,7 @@ defaultmap
 }
 
 // needed for the zscript-based intermission hacks
-map WF_MASTERLEVELS_STORY4 "$ML_BLOODSEA"
+map WF_STORY_ML_MAP19 "$ML_BLOODSEA"
 {
 	TitlePatch = "MWILV18"
 }
@@ -92,16 +92,23 @@ map ML_MAP42 "$ML_STORM" // reject level
 
 map ML_MAP10 "$ML_BLACKTWR"
 {
-	Next = "ML_MAP43"
+	// needed for the zscript-based intermission hacks
+	Next = "WF_STORY_ML_MAP43"
 	Cluster = 47
 	TitlePatch = "MWILV09"
 	Music = "$MUSIC_ADRIAN"
 }
 
+// needed for the zscript-based intermission hacks
+map WF_STORY_ML_MAP43 "$ML_THE_EVIL"
+{
+	TitlePatch = "MWILV42"
+}
+
 map ML_MAP43 "$ML_THE_EVIL" // reject level
 {
-	Next = "EndTitle"
-	Cluster = 48
+	Next = "EndGameC"
+	Cluster = 24
 	TitlePatch = "MWILV42"
 	Music = "$MUSIC_OPENIN"
 	AllowMonsterTelefrags

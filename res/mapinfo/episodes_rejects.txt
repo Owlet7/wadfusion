@@ -71,21 +71,21 @@ episode ML_MAP28
 	Optional
 }
 
-episode WF_MASTERLEVELS_STORY1
+episode WF_STORY_ML_MAP29
 {
 	Name = "$WF_EPISODE_MASTER_EP4"
 	PicName = "M_MASTR4"
 	Optional
 }
 
-episode WF_MASTERLEVELS_STORY2
+episode WF_STORY_ML_MAP33
 {
 	Name = "$WF_EPISODE_MASTER_EP5"
 	PicName = "M_MASTR5"
 	Optional
 }
 
-episode WF_MASTERLEVELS_STORY4
+episode WF_STORY_ML_MAP19
 {
 	Name = "$WF_EPISODE_MASTER_EP6"
 	PicName = "M_MASTR6"

@@ -14,18 +14,18 @@ intermission Id1Cast
 	Cast
 	{
 		CastClass = "ID24Ghoul"
-		CastName = "$TAG_ID24GHOUL"
+		CastName = "$ID24_CC_GHOUL"
 		AttackSound = "Missile", 1, "imp/attack"
 	}
 	Cast
 	{
 		CastClass = "ID24Banshee"
-		CastName = "$TAG_ID24BANSHEE"
+		CastName = "$ID24_CC_BANSHEE"
 	}
 	Cast
 	{
 		CastClass = "ID24PlasmaGuy"
-		CastName = "$TAG_ID24PLASMAGUY"
+		CastName = "$ID24_CC_SHOCKTROOPER"
 		AttackSound = "Missile", 1, "weapons/plasmaf"
 		AttackSound = "Missile", 3, "weapons/plasmaf"
 		AttackSound = "Missile", 5, "weapons/plasmaf"
@@ -33,20 +33,20 @@ intermission Id1Cast
 	Cast
 	{
 		CastClass = "ID24Mindweaver"
-		CastName = "$TAG_ID24MINDWEAVER"
+		CastName = "$ID24_CC_MINDWEAVER"
 		AttackSound = "Missile", 1, "spider/attack"
 		AttackSound = "Missile", 2, "spider/attack"
 	}
 	Cast
 	{
 		CastClass = "ID24Vassago"
-		CastName = "$TAG_ID24VASSAGO"
+		CastName = "$ID24_CC_VASSAGO"
 		AttackSound = "Missile", 1, "monsters/vassago/attack"
 	}
 	Cast
 	{
 		CastClass = "ID24Tyrant"
-		CastName = "$TAG_ID24TYRANT"
+		CastName = "$ID24_CC_TYRANT"
 		AttackSound = "Missile", 1, "weapons/rocklf"
 		AttackSound = "Missile", 3, "weapons/rocklf"
 		AttackSound = "Missile", 5, "weapons/rocklf"
@@ -268,21 +268,6 @@ intermission MasterLevels_Intro3
 {
 	TextScreen
 	{
-		Text = "$ML5STORY2_1"
-		Background = "$CEIL1_1", 1
-		Music = "$MUSIC_READ_M"
-	}
-	
-	TextScreen
-	{
-		Text = "$ML5STORY2_2"
-	}
-}
-
-intermission MasterLevels_Intro4
-{
-	TextScreen
-	{
 		Text = "$ML6STORY1_1"
 		Background = "$BLOOD1", 1
 		Music = "$MUSIC_READ_M"
@@ -296,5 +281,30 @@ intermission MasterLevels_Intro4
 	TextScreen
 	{
 		Text = "$ML6STORY1_3"
+	}
+}
+
+intermission MasterLevels_Map34
+{
+	TextScreen
+	{
+		Text = "$ML5STORY2_1"
+		Background = "$CEIL1_1", 1
+		Music = "$MUSIC_READ_M"
+	}
+	
+	TextScreen
+	{
+		Text = "$ML5STORY2_2"
+	}
+}
+
+intermission MasterLevels_Map43
+{
+	TextScreen
+	{
+		Text = "$ML6STORY9"
+		Background = "$SLIME11", 1
+		Music = "$MUSIC_READ_M"
 	}
 }

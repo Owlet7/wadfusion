@@ -72,7 +72,7 @@ extend class WadFusionHandler
 	void NewGameIntro()
 	{
 		string mapName = Level.MapName.MakeLower();
-		if ( mapName.Left(10) == "wf_newgame" && mapName != "wf_newgame_story" )
+		if ( mapName.Left(10) == "wf_newgame" )
 		{
 			if ( Level.MapTime == 0 )
 			{
@@ -84,25 +84,25 @@ extend class WadFusionHandler
 				
 				// set which map to switch to
 				if ( mapName.Mid(10, 3) == "_d1" )
-					CVar.FindCVar("wf_newgame").SetString("e1m1");
+					CVar.FindCVar("wf_nextmap").SetString("e1m1");
 				else if ( mapSuffix == "_ud" )
-					CVar.FindCVar("wf_newgame").SetString("e4m1");
+					CVar.FindCVar("wf_nextmap").SetString("e4m1");
 				else if ( mapSuffix == "_s1" )
-					CVar.FindCVar("wf_newgame").SetString("e5m1");
+					CVar.FindCVar("wf_nextmap").SetString("e5m1");
 				else if ( mapSuffix == "_s2" )
-					CVar.FindCVar("wf_newgame").SetString("e6m1");
+					CVar.FindCVar("wf_nextmap").SetString("e6m1");
 				else if ( mapSuffix == "_d2" )
-					CVar.FindCVar("wf_newgame").SetString("map01");
+					CVar.FindCVar("wf_nextmap").SetString("map01");
 				else if ( mapSuffix == "_ml" )
-					CVar.FindCVar("wf_newgame").SetString("ml_map01");
+					CVar.FindCVar("wf_nextmap").SetString("ml_map01");
 				else if ( mapSuffix == "_nv" )
-					CVar.FindCVar("wf_newgame").SetString("nv_map01");
+					CVar.FindCVar("wf_nextmap").SetString("nv_map01");
 				else if ( mapSuffix == "_lr" )
-					CVar.FindCVar("wf_newgame").SetString("lr_map01");
+					CVar.FindCVar("wf_nextmap").SetString("lr_map01");
 				else if ( mapSuffix == "_tn" )
-					CVar.FindCVar("wf_newgame").SetString("tn_map01");
+					CVar.FindCVar("wf_nextmap").SetString("tn_map01");
 				else if ( mapSuffix == "_pl" )
-					CVar.FindCVar("wf_newgame").SetString("pl_map01");
+					CVar.FindCVar("wf_nextmap").SetString("pl_map01");
 				
 				if ( CVar.FindCVar("wf_intros").GetInt() >= 1 )
 				{
@@ -127,73 +127,6 @@ extend class WadFusionHandler
 				}
 				else
 					NewGameChangeLevel();
-			}
-		}
-	}
-	
-	void NewGameStory()
-	{
-		string newGame = CVar.FindCVar("wf_newgame").GetString();
-		string mapName = Level.MapName.MakeLower();
-		// play episode into stories
-		if ( mapName == "wf_newgame_story" )
-		{
-			if ( newGame == "e1m1" )
-				Level.StartIntermission("Doom1_Intro", FSTATE_INLEVELNOWIPE);
-			else if ( newGame == "e5m1" )
-				Level.StartIntermission("Sigil_Intro", FSTATE_INLEVELNOWIPE);
-			else if ( newGame == "e6m1" )
-				Level.StartIntermission("Sigil2_Intro", FSTATE_INLEVELNOWIPE);
-			else if ( newGame == "map01" )
-				Level.StartIntermission("Doom2_Intro", FSTATE_INLEVELNOWIPE);
-			else if ( newGame == "nv_map01" )
-				Level.StartIntermission("Nerve_Intro", FSTATE_INLEVELNOWIPE);
-			else if ( newGame == "lr_map01" )
-				Level.StartIntermission("Id1_Intro", FSTATE_INLEVELNOWIPE);
-			else if ( newGame == "tn_map01" )
-				Level.StartIntermission("Tnt_Intro", FSTATE_INLEVELNOWIPE);
-			else if ( newGame == "pl_map01" )
-				Level.StartIntermission("Plutonia_Intro", FSTATE_INLEVELNOWIPE);
-			// change to the map which was set in NewGameIntro()
-			if ( Level.MapTime >= 1 )
-			{
-				Level.ChangeLevel(newGame, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
-				CVar.FindCVar("wf_newgame").ResetToDefault();
-			}
-		}
-		// play master levels rejects stories at the start of each mini-campaign
-		if ( mapName.Left(21) == "wf_masterlevels_story" )
-		{
-			let mapSuffix = mapName.Mid(21, 1);
-			if ( mapSuffix == "1" )
-			{
-				Level.StartIntermission("MasterLevels_Intro1", FSTATE_INLEVELNOWIPE);
-				CVar.FindCVar("wf_newgame").SetString("ml_map29");
-			}
-			else if ( mapSuffix == "2" )
-			{
-				Level.StartIntermission("MasterLevels_Intro2", FSTATE_INLEVELNOWIPE);
-				CVar.FindCVar("wf_newgame").SetString("ml_map33");
-			}
-			else if ( mapSuffix == "3" )
-			{
-				Level.StartIntermission("MasterLevels_Intro3", FSTATE_INLEVELNOWIPE);
-				CVar.FindCVar("wf_newgame").SetString("ml_map34");
-			}
-			else if ( mapSuffix == "4" )
-			{
-				Level.StartIntermission("MasterLevels_Intro4", FSTATE_INLEVELNOWIPE);
-				CVar.FindCVar("wf_newgame").SetString("ml_map19");
-			}
-			if ( Level.MapTime >= 1 && newGame != "ml_map34" )
-			{
-				Level.ChangeLevel(newGame, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
-				CVar.FindCVar("wf_newgame").ResetToDefault();
-			}
-			else if ( Level.MapTime >= 1 && newGame == "ml_map34" )
-			{
-				Level.ChangeLevel(newGame, 0, CHANGELEVEL_NOINTERMISSION);
-				CVar.FindCVar("wf_newgame").ResetToDefault();
 			}
 		}
 	}
@@ -228,25 +161,25 @@ extend class WadFusionHandler
 	
 	void NewGameChangeLevel()
 	{
-		string newGame = CVar.FindCVar("wf_newgame").GetString();
+		string nextMap = CVar.FindCVar("wf_nextmap").GetString();
 		string mapName = Level.MapName.MakeLower();
-		if ( mapName.Left(10) == "wf_newgame" && mapName != "wf_newgame_story" )
-			Level.ChangeLevel(newGame, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
-		CVar.FindCVar("wf_newgame").ResetToDefault();
+		if ( mapName.Left(10) == "wf_newgame" )
+			Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
+		CVar.FindCVar("wf_nextmap").ResetToDefault();
 	}
 	
 	ui void NewGameChangeLevelInput()
 	{
-		string newGame = CVar.FindCVar("wf_newgame").GetString();
+		string nextMap = CVar.FindCVar("wf_nextmap").GetString();
 		string mapName = Level.MapName.MakeLower();
 		if ( CVar.FindCVar("wf_intros").GetInt() >= 2 )
 		{
-			if ( mapName != "wf_newgame_story" && mapName != "wf_newgame_ml" && mapName != "wf_newgame_ud" && mapName != "wf_newgame" )
-				Level.ChangeLevel("wf_newgame_story", 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
-			else if ( mapName != "wf_newgame_story" )
-				Level.ChangeLevel(newGame, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
+			if ( mapName != "wf_newgame_ml" && mapName != "wf_newgame_ud" && mapName != "wf_newgame" )
+				Level.ChangeLevel("wf_story", 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
+			else
+				Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
 		}
 		else
-			Level.ChangeLevel(newGame, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
+			Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
 	}
 }
