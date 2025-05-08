@@ -2,6 +2,7 @@
 
 defaultmap
 {
+	NoIntermission
 	NoJump
 	NoCrouch
 }
@@ -11,7 +12,6 @@ map DM_MAP01 "$MHUSTR_1"
 	Next = "DM_MAP02"
 	// the sky texture is set with an MBF sky transfer
 	Sky1 = "SKYX2"
-	NoIntermission
 	Music = "D_REGARD"
 	Author = "$WF_AU_VICKERS"
 }
@@ -20,7 +20,6 @@ map DM_MAP02 "$MHUSTR_2"
 {
 	Next = "DM_MAP03"
 	Sky1 = "SKYA3"
-	NoIntermission
 	Music = "D_TACTIC"
 	Author = "$WF_AU_CIRIACO"
 }
@@ -29,7 +28,6 @@ map DM_MAP03 "$MHUSTR_3"
 {
 	Next = "DM_MAP04"
 	Sky1 = "SKYE2"
-	NoIntermission
 	Music = "D_E2M1"
 	Author = "$WF_AU_BOUVE_BOYLE"
 }
@@ -38,7 +36,6 @@ map DM_MAP04 "$MHUSTR_4"
 {
 	Next = "DM_MAP05"
 	Sky1 = "SKYE4"
-	NoIntermission
 	Music = "T_RUNNIN"
 	Author = "$WF_AU_ARMACANQUI"
 }
@@ -48,7 +45,6 @@ map DM_MAP05 "$MHUSTR_5"
 	Next = "DM_MAP06"
 	// the sky texture is set with an MBF sky transfer
 	Sky1 = "SKYX2"
-	NoIntermission
 	Music = "D_SKELET"
 	Author = "$WF_AU_CIBULAS"
 }
@@ -57,7 +53,6 @@ map DM_MAP06 "$MHUSTR_6"
 {
 	Next = "DM_MAP07"
 	Sky1 = "SKYX2"
-	NoIntermission
 	Music = "D_BILGE"
 	Author = "$WF_AU_MURCHISON"
 }
@@ -66,7 +61,6 @@ map DM_MAP07 "$MHUSTR_7"
 {
 	Next = "DM_MAP08"
 	Sky1 = "SKY4B"
-	NoIntermission
 	Music = "T_DDTBLU"
 	Author = "$WF_AU_MCGEE_MAYFIELD"
 }
@@ -75,7 +69,6 @@ map DM_MAP08 "$MHUSTR_8"
 {
 	Next = "DM_MAP09"
 	Sky1 = "SKY4B"
-	NoIntermission
 	Music = "D_VESPER"
 	Author = "$WF_AU_MAYFIELD"
 }
@@ -84,7 +77,6 @@ map DM_MAP09 "$MHUSTR_9"
 {
 	Next = "DM_MAP10"
 	Sky1 = "SKYZ1"
-	NoIntermission
 	Music = "D_CLOUDY"
 	Author = "$WF_AU_MCGEE"
 }
@@ -94,7 +86,6 @@ map DM_MAP10 "$MHUSTR_10"
 	Next = "DM_MAP11"
 	// the sky texture is set with an MBF sky transfer
 	Sky1 = "SKY1"
-	NoIntermission
 	Music = "D_BONK"
 	Author = "$WF_AU_CIBULAS"
 }
@@ -103,7 +94,6 @@ map DM_MAP11 "$MHUSTR_11"
 {
 	Next = "DM_MAP12"
 	Sky1 = "SKYA1"
-	NoIntermission
 	Music = "T_DEAD2"
 	Author = "$WF_AU_MAYFIELD"
 }
@@ -112,7 +102,6 @@ map DM_MAP12 "$MHUSTR_12"
 {
 	Next = "DM_MAP13"
 	Sky1 = "SKYE3"
-	NoIntermission
 	Music = "T_RUNNIN"
 	Author = "$WF_AU_ARMACANQUI"
 }
@@ -121,7 +110,6 @@ map DM_MAP13 "$MHUSTR_13"
 {
 	Next = "DM_MAP14"
 	Sky1 = "SKYE1"
-	NoIntermission
 	Music = "D_E2M6"
 	Author = "$WF_AU_BOUVE_BOYLE"
 }
@@ -131,7 +119,6 @@ map DM_MAP14 "$MHUSTR_14"
 	Next = "DM_MAP15"
 	// the sky texture is set with an MBF sky transfer
 	Sky1 = "SKYX4"
-	NoIntermission
 	Music = "D_TACTIC"
 	Author = "$WF_AU_VICKERS"
 }
@@ -140,7 +127,6 @@ map DM_MAP15 "$MHUSTR_15"
 {
 	Next = "DM_MAP16"
 	Sky1 = "SKYX3"
-	NoIntermission
 	Music = "D_LAUGH"
 	Author = "$WF_AU_CIRIACO"
 }
@@ -149,7 +135,6 @@ map DM_MAP16 "$MHUSTR_16"
 {
 	Next = "DM_MAP17"
 	Sky1 = "SKY2"
-	NoIntermission
 	Music = "D_WIZARD"
 	Author = "$WF_AU_MURCHISON"
 }
@@ -158,7 +143,6 @@ map DM_MAP17 "$MHUSTR_17"
 {
 	Next = "DM_MAP18"
 	Sky1 = "SKYX1"
-	NoIntermission
 	Music = "D_REGARD"
 	Author = "$WF_AU_MAYFIELD"
 }
@@ -167,7 +151,6 @@ map DM_MAP18 "$MHUSTR_18"
 {
 	Next = "DM_MAP19"
 	Sky1 = "SKYE4"
-	NoIntermission
 	Music = "D_E1M9"
 	Author = "$WF_AU_BOUVE_BOYLE"
 }
@@ -176,7 +159,6 @@ map DM_MAP19 "$MHUSTR_19"
 {
 	Next = "DM_MAP20"
 	Sky1 = "SKYZ4"
-	NoIntermission
 	Music = "D_SKELET"
 	Author = "$WF_AU_MAYFIELD"
 }
@@ -185,7 +167,6 @@ map DM_MAP20 "$MHUSTR_20"
 {
 	Next = "DM_MAP21"
 	Sky1 = "SKYE1"
-	NoIntermission
 	Music = "D_THE_DA"
 	Author = "$WF_AU_ARMACANQUI"
 }
@@ -195,7 +176,6 @@ map DM_MAP21 "$MHUSTR_21"
 	Next = "DM_MAP22"
 	// the sky texture is set with an MBF sky transfer
 	Sky1 = "SKYX1"
-	NoIntermission
 	Music = "D_HELFOR"
 	Author = "$WF_AU_VICKERS"
 }
@@ -204,7 +184,6 @@ map DM_MAP22 "$MHUSTR_22"
 {
 	Next = "DM_MAP23"
 	Sky1 = "SKYX1"
-	NoIntermission
 	Music = "D_WELCOM"
 	Author = "$WF_AU_CIRIACO"
 }
@@ -213,7 +192,6 @@ map DM_MAP23 "$MHUSTR_23"
 {
 	Next = "DM_MAP24"
 	Sky1 = "SKYZ5"
-	NoIntermission
 	Music = "T_STALKS"
 	Author = "$WF_AU_MAYFIELD"
 }
@@ -223,7 +201,6 @@ map DM_MAP24 "$MHUSTR_24"
 	Next = "DM_MAP25"
 	// the sky texture is set with an MBF sky transfer
 	Sky1 = "SKYZ1"
-	NoIntermission
 	Music = "D_DRIVER"
 	Author = "$WF_AU_CIBULAS"
 }
@@ -232,7 +209,6 @@ map DM_MAP25 "$MHUSTR_25"
 {
 	Next = "DM_MAP26"
 	Sky1 = "SKYZ2"
-	NoIntermission
 	Music = "D_LAUGH"
 	Author = "$WF_AU_MURCHISON"
 }
@@ -242,6 +218,5 @@ map DM_MAP26 "$MHUSTR_26"
 	Next = "DM_MAP01"
 	Sky1 = "SKYX1"
 	Music = "T_RUNNIN"
-	NoIntermission
 	Author = "$WF_AU_PETERSEN_MAYFIELD"
 }
