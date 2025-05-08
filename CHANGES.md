@@ -9,6 +9,8 @@
     starting a new game.
   - Optionally, can also include "intermissions" at the start of campaigns, with
     story texts taken from each games' instrustion manuals.
+- Removed `SKY1` from the Legacy of Rust list in the texture replacements script.
+  Not sure how it got there.
 
 ## [WadFusion 1.5.1](https://github.com/Owlet7/wadfusion/releases/tag/v1.5.1) — [03 May 2025](https://github.com/Owlet7/wadfusion/tree/v1.5.1)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.0...v1.5.1)

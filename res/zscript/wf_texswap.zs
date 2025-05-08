@@ -123,7 +123,6 @@ extend class WadFusionHandler
 			Level.ReplaceTextures("BRNPOIS2", "BRNPOIS3", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("DOORSTOP", "DOORSTP1", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("LITERED2", "LITERED6", TexMan.NOT_FLAT);
-			Level.ReplaceTextures("SKY1"    , "MSKY4"   , TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1BRN1" , "SW1BRN1A", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1STARG", "SW1STARA", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW1STONE", "SW1STONA", TexMan.NOT_FLAT);
