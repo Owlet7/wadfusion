@@ -174,7 +174,7 @@ extend class WadFusionHandler
 		string mapName = Level.MapName.MakeLower();
 		if ( CVar.FindCVar("wf_intros").GetInt() >= 2 )
 		{
-			if ( mapName != "wf_newgame_ml" && mapName != "wf_newgame_ud" && mapName != "wf_newgame" )
+			if ( mapName != "wf_newgame_ml" && mapName != "wf_newgame_ud" )
 				Level.ChangeLevel("wf_story", 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
 			else
 				Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
