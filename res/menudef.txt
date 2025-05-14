@@ -55,22 +55,10 @@ OptionMenu "WadFusionCompatibilityOptions"
 	Option "$WF_MENU_COMPAT_TEXSWAP_ID1",      "wf_compat_texswap_id1",      "OnOff"
 	Option "$WF_MENU_COMPAT_TEXSWAP_ML",       "wf_compat_texswap_ml",       "OnOff"
 	StaticText " "
-	StaticText "$WF_MENU_COMPAT_TEXSWAP_ALL", "Gold"
-	Option "$WF_MENU_COMPAT_TEXSWAP_ALL_MODE", "wf_compat_texswap_all",      "WF_COMPAT_TEXSWAP_ALL"
-	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL1",  "WadFusionCompatibilityTexSwapDoom1"
-	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL2",  "WadFusionCompatibilityTexSwapTnt"
-	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL3",  "WadFusionCompatibilityTexSwapPlutonia"
-	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL4",  "WadFusionCompatibilityTexSwapId1"
-	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL5",  "WadFusionCompatibilityTexSwapMlKlie"
-	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL6",  "WadFusionCompatibilityTexSwapMlAnderson"
-	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL7",  "WadFusionCompatibilityTexSwapMlFlynn"
-	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL8",  "WadFusionCompatibilityTexSwapMlrMines"
-	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL9",  "WadFusionCompatibilityTexSwapMlrAnomaly"
-	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL10", "WadFusionCompatibilityTexSwapMlrFarside"
-	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL11", "WadFusionCompatibilityTexSwapMlrTrouble"
-	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL12", "WadFusionCompatibilityTexSwapMlrUdtwid"
+	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL",     "WadFusionCompatibilityTexSwapAll"
+	Submenu "$WF_MENU_COMPAT_MUSSWAP",         "WadFusionCompatibilityMusSwap"
 	StaticText " "
-	Submenu "$WF_MENU_COMPAT_READTHIS", "ReadThisMenu"
+	Submenu "$WF_MENU_COMPAT_READTHIS",        "ReadThisMenu"
 }
 
 OptionValue "WF_COMPAT_ID24_WEAPONS"
@@ -78,6 +66,25 @@ OptionValue "WF_COMPAT_ID24_WEAPONS"
     0, "$OPTVAL_OFF"
     1, "$WF_MENU_COMPAT_ID24_WEAPONS_OPTVAL1"
     2, "$OPTVAL_ON"
+}
+
+OptionMenu "WadFusionCompatibilityTexSwapAll"
+{
+	Title "$WF_MENU_COMPAT_TEXSWAP_ALL"
+	Option "$WF_MENU_MODE", "wf_compat_texswap_all", "WF_COMPAT_TEXSWAP_ALL"
+	StaticText " "
+	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL1",  "WadFusionCompatibilityTexSwapAllDoom1"
+	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL2",  "WadFusionCompatibilityTexSwapAllTnt"
+	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL3",  "WadFusionCompatibilityTexSwapAllPlutonia"
+	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL4",  "WadFusionCompatibilityTexSwapAllId1"
+	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL5",  "WadFusionCompatibilityTexSwapAllMlKlie"
+	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL6",  "WadFusionCompatibilityTexSwapAllMlAnderson"
+	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL7",  "WadFusionCompatibilityTexSwapAllMlFlynn"
+	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL8",  "WadFusionCompatibilityTexSwapAllMlrMines"
+	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL9",  "WadFusionCompatibilityTexSwapAllMlrAnomaly"
+	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL10", "WadFusionCompatibilityTexSwapAllMlrFarside"
+	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL11", "WadFusionCompatibilityTexSwapAllMlrTrouble"
+	Submenu "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL12", "WadFusionCompatibilityTexSwapAllMlrUdtwid"
 }
 
 OptionValue "WF_COMPAT_TEXSWAP_ALL"
@@ -97,7 +104,7 @@ OptionValue "WF_COMPAT_TEXSWAP_ALL"
     12, "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL12"
 }
 
-OptionMenu "WadFusionCompatibilityTexSwapDoom1"
+OptionMenu "WadFusionCompatibilityTexSwapAllDoom1"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL1"
 	StaticText "TEXTURES", "Gold"
@@ -126,7 +133,7 @@ OptionMenu "WadFusionCompatibilityTexSwapDoom1"
 	Option "SKY3",     "wf_compat_texswap_all_d1_18", "OnOff"
 }
 
-OptionMenu "WadFusionCompatibilityTexSwapTnt"
+OptionMenu "WadFusionCompatibilityTexSwapAllTnt"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL2"
 	StaticText "ANIMATED TEXTURES", "Gold"
@@ -149,7 +156,7 @@ OptionMenu "WadFusionCompatibilityTexSwapTnt"
 	Option "SKY3",     "wf_compat_texswap_all_tn_04", "OnOff"
 }
 
-OptionMenu "WadFusionCompatibilityTexSwapPlutonia"
+OptionMenu "WadFusionCompatibilityTexSwapAllPlutonia"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL3"
 	StaticText "ANIMATED TEXTURES", "Gold"
@@ -168,7 +175,7 @@ OptionMenu "WadFusionCompatibilityTexSwapPlutonia"
 	Option "SKY3",     "wf_compat_texswap_all_pl_06", "OnOff"
 }
 
-OptionMenu "WadFusionCompatibilityTexSwapId1"
+OptionMenu "WadFusionCompatibilityTexSwapAllId1"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL4"
 	StaticText "TEXTURES", "Gold"
@@ -194,28 +201,28 @@ OptionMenu "WadFusionCompatibilityTexSwapId1"
 	Option "SW2STON2", "wf_compat_texswap_all_id1_12", "OnOff"
 }
 
-OptionMenu "WadFusionCompatibilityTexSwapMlKlie"
+OptionMenu "WadFusionCompatibilityTexSwapAllMlKlie"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL5"
 	StaticText "SKIES", "Gold"
 	Option "SKY1",     "wf_compat_texswap_all_ml_00", "OnOff"
 }
 
-OptionMenu "WadFusionCompatibilityTexSwapMlAnderson"
+OptionMenu "WadFusionCompatibilityTexSwapAllMlAnderson"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL6"
 	StaticText "SKIES", "Gold"
 	Option "SKY1",     "wf_compat_texswap_all_ml_01", "OnOff"
 }
 
-OptionMenu "WadFusionCompatibilityTexSwapMlFlynn"
+OptionMenu "WadFusionCompatibilityTexSwapAllMlFlynn"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL7"
 	StaticText "SKIES", "Gold"
 	Option "SKY1",     "wf_compat_texswap_all_ml_02", "OnOff"
 }
 
-OptionMenu "WadFusionCompatibilityTexSwapMlrMines"
+OptionMenu "WadFusionCompatibilityTexSwapAllMlrMines"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL8"
 	StaticText "ANIMATED TEXTURES", "Gold"
@@ -236,7 +243,7 @@ OptionMenu "WadFusionCompatibilityTexSwapMlrMines"
 	Option "SKY1",     "wf_compat_texswap_all_mlr_10", "OnOff"
 }
 
-OptionMenu "WadFusionCompatibilityTexSwapMlrAnomaly"
+OptionMenu "WadFusionCompatibilityTexSwapAllMlrAnomaly"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL9"
 	StaticText "SWITCHES", "Gold"
@@ -247,7 +254,7 @@ OptionMenu "WadFusionCompatibilityTexSwapMlrAnomaly"
 	Option "SKY1",     "wf_compat_texswap_all_mlr_13", "OnOff"
 }
 
-OptionMenu "WadFusionCompatibilityTexSwapMlrFarside"
+OptionMenu "WadFusionCompatibilityTexSwapAllMlrFarside"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL10"
 	StaticText "SWITCHES", "Gold"
@@ -260,7 +267,7 @@ OptionMenu "WadFusionCompatibilityTexSwapMlrFarside"
 	Option "SKY1",     "wf_compat_texswap_all_mlr_18", "OnOff"
 }
 
-OptionMenu "WadFusionCompatibilityTexSwapMlrTrouble"
+OptionMenu "WadFusionCompatibilityTexSwapAllMlrTrouble"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL11"
 	StaticText "SWITCHES", "Gold"
@@ -281,11 +288,60 @@ OptionMenu "WadFusionCompatibilityTexSwapMlrTrouble"
 	Option "SKY1",     "wf_compat_texswap_all_mlr_31", "OnOff"
 }
 
-OptionMenu "WadFusionCompatibilityTexSwapMlrUdtwid"
+OptionMenu "WadFusionCompatibilityTexSwapAllMlrUdtwid"
 {
 	Title "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL12"
 	StaticText "SKIES", "Gold"
 	Option "SKY4",     "wf_compat_texswap_all_mlr_32", "OnOff"
+}
+
+OptionMenu "WadFusionCompatibilityMusSwap"
+{
+	Title "$WF_MENU_COMPAT_MUSSWAP"
+	Option "$WF_MENU_MODE", "wf_compat_musswap", "WF_COMPAT_MUSSWAP"
+	StaticText " "
+	Option "D_DM2TTL",         "wf_compat_musswap_00", "OnOff"
+	Option "(MAP01) D_RUNNIN", "wf_compat_musswap_01", "OnOff"
+	Option "(MAP02) D_STALKS", "wf_compat_musswap_02", "OnOff"
+	Option "(MAP03) D_COUNTD", "wf_compat_musswap_03", "OnOff"
+	Option "(MAP04) D_BETWEE", "wf_compat_musswap_04", "OnOff"
+	Option "(MAP05) D_DOOM  ", "wf_compat_musswap_05", "OnOff"
+	Option "(MAP06) D_THE_DA", "wf_compat_musswap_06", "OnOff"
+	Option "(MAP07) D_SHAWN ", "wf_compat_musswap_07", "OnOff"
+	Option "(MAP08) D_DDTBLU", "wf_compat_musswap_08", "OnOff"
+	Option "(MAP09) D_IN_CIT", "wf_compat_musswap_09", "OnOff"
+	Option "(MAP10) D_DEAD  ", "wf_compat_musswap_10", "OnOff"
+	Option "(MAP11) D_STLKS2", "wf_compat_musswap_11", "OnOff"
+	Option "(MAP12) D_THEDA2", "wf_compat_musswap_12", "OnOff"
+	Option "(MAP13) D_DOOM2 ", "wf_compat_musswap_13", "OnOff"
+	Option "(MAP14) D_DDTBL2", "wf_compat_musswap_14", "OnOff"
+	Option "(MAP15) D_RUNNI2", "wf_compat_musswap_15", "OnOff"
+	Option "(MAP16) D_DEAD2 ", "wf_compat_musswap_16", "OnOff"
+	Option "(MAP17) D_STLKS3", "wf_compat_musswap_17", "OnOff"
+	Option "(MAP18) D_ROMERO", "wf_compat_musswap_18", "OnOff"
+	Option "(MAP19) D_SHAWN2", "wf_compat_musswap_19", "OnOff"
+	Option "(MAP20) D_MESSAG", "wf_compat_musswap_20", "OnOff"
+	Option "(MAP21) D_COUNT2", "wf_compat_musswap_21", "OnOff"
+	Option "(MAP22) D_DDTBL3", "wf_compat_musswap_22", "OnOff"
+	Option "(MAP23) D_AMPIE ", "wf_compat_musswap_23", "OnOff"
+	Option "(MAP24) D_THEDA3", "wf_compat_musswap_24", "OnOff"
+	Option "(MAP25) D_ADRIAN", "wf_compat_musswap_25", "OnOff"
+	Option "(MAP26) D_MESSG2", "wf_compat_musswap_26", "OnOff"
+	Option "(MAP27) D_ROMER2", "wf_compat_musswap_27", "OnOff"
+	Option "(MAP28) D_TENSE ", "wf_compat_musswap_28", "OnOff"
+	Option "(MAP29) D_SHAWN3", "wf_compat_musswap_29", "OnOff"
+	Option "(MAP30) D_OPENIN", "wf_compat_musswap_30", "OnOff"
+	Option "(MAP31) D_EVIL  ", "wf_compat_musswap_31", "OnOff"
+	Option "(MAP32) D_ULTIMA", "wf_compat_musswap_32", "OnOff"
+	Option "(MAP33) D_READ_M", "wf_compat_musswap_33", "OnOff"
+	Option "D_DM2INT",         "wf_compat_musswap_34", "OnOff"
+}
+
+OptionValue "WF_COMPAT_MUSSWAP"
+{
+    0, "$OPTVAL_OFF"
+    1, "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL2"
+    2, "$WF_MENU_COMPAT_TEXSWAP_ALL_OPTVAL3"
 }
 
 OptionMenu "WadFusionHudOptions"

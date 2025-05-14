@@ -24,7 +24,7 @@ class WadFusionHandler : EventHandler
 	{
 		int texSwapAll = CVar.FindCVar("wf_compat_texswap_all").GetInt();
 		
-		// wf_texswap.zs
+		// wf_tex_swap.zs
 		// replace conflicting textures based on which map is loaded
 		if ( CVar.FindCVar("wf_compat_texswap_d1").GetBool() && texSwapAll <= 0 )
 			DoDoom1TextureReplacements();
@@ -35,7 +35,7 @@ class WadFusionHandler : EventHandler
 		if ( CVar.FindCVar("wf_compat_texswap_ml").GetBool() && texSwapAll <= 0 )
 			DoMasterLevelsTextureReplacements();
 		
-		// wf_texswap_all.zs
+		// wf_tex_swap_all.zs
 		// force texture replacement on all levels
 		// this feature mostly exists for compatibility with doom 1 and final doom mods
 		// these disable the regular texture replacements

@@ -129,11 +129,12 @@ RES_FILES = [
     'maps/WF_STORY_ML_MAP34.wad',
     'maps/WF_STORY_ML_MAP43.wad',
     'zscript/wf_handler.zs', 'zscript/wf_handler_static.zs',
-    'zscript/wf_texswap.zs', 'zscript/wf_texswap_all.zs',
-    'zscript/wf_music_sigil.zs', 'zscript/wf_music_idkfa.zs',
+    'zscript/wf_tex_swap.zs', 'zscript/wf_tex_swap_all.zs',
+    'zscript/wf_mus_swap.zs',
+    'zscript/wf_mus_sigil.zs', 'zscript/wf_mus_idkfa.zs',
     'zscript/wf_sbar.zs', 'zscript/wf_sbar_alt.zs',
     'zscript/wf_newgame.zs', 'zscript/wf_story.zs',
-    'zscript/wf_mapfixes.zs',
+    'zscript/wf_map_fixes.zs', 'zscript/wf_defaults.zs',
     'wadfused.txt'
 ]
 

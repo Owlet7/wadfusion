@@ -22,8 +22,10 @@ extend class WadFusionStaticHandler
 {
 	ui void DoIdkfaTitleMusicReplacements()
 	{
+		// get map name and currently playing music
 		string mapName = Level.MapName.MakeLower();
 		string music = MusPlaying.Name.MakeLower();
+		
 		// change title music to Andrew Hulshult's soundtrack if true, without looping
 		if ( CVar.FindCVar("wf_mus_idkfa").GetBool() )
 		{
@@ -34,6 +36,7 @@ extend class WadFusionStaticHandler
 			else if ( music == "d_dm2ttl" )
 				S_ChangeMusic("h_dm2ttl", 0, false);
 		}
+		// reset music back to defaults
 		else
 		{
 			if ( music == "h_intro" )

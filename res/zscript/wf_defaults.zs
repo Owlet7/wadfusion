@@ -1,0 +1,212 @@
+//-----------------------------------------------------------------------------
+//
+// Copyright 2024-2025 Owlet VII
+//
+// This program is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// This program is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with this program.  If not, see http://www.gnu.org/licenses/
+//
+//-----------------------------------------------------------------------------
+//
+
+extend class WadFusionStaticHandler
+{
+	ui void WadFusionReset2Defaults()
+	{
+		CVar.FindCVar("wf_mus_sigilmp3").ResetToDefault();
+		CVar.FindCVar("wf_mus_sigil2mp3").ResetToDefault();
+		CVar.FindCVar("wf_mus_idkfa").ResetToDefault();
+		CVar.FindCVar("wf_map_e1m8b").ResetToDefault();
+		CVar.FindCVar("wf_map_e1m4b").ResetToDefault();
+		CVar.FindCVar("wf_id24trans").ResetToDefault();
+		CVar.FindCVar("wf_intros").ResetToDefault();
+		CVar.FindCVar("wf_fullrun").ResetToDefault();
+		
+		CVar.FindCVar("wf_compat_id24_weapons").ResetToDefault();
+		CVar.FindCVar("wf_compat_sigil2spiderboss").ResetToDefault();
+		CVar.FindCVar("wf_compat_xboxsecretexits").ResetToDefault();
+		CVar.FindCVar("wf_compat_mapfixes").ResetToDefault();
+		CVar.FindCVar("wf_compat_killcountfix").ResetToDefault();
+		CVar.FindCVar("wf_compat_nextmap").ResetToDefault();
+		CVar.FindCVar("wf_compat_changemusic").ResetToDefault();
+		
+		CVar.FindCVar("wf_compat_texswap_d1").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_fd").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_id1").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_ml").ResetToDefault();
+		
+		CVar.FindCVar("wf_compat_texswap_all").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_00").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_01").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_02").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_03").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_04").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_05").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_06").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_07").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_08").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_09").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_10").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_11").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_12").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_13").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_14").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_15").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_16").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_17").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_d1_18").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_tn_00").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_tn_01").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_tn_02").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_tn_03").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_tn_04").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_tn_05").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_tn_06").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_tn_07").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_tn_08").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_tn_09").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_tn_10").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_tn_11").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_tn_12").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_pl_00").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_pl_01").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_pl_02").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_pl_03").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_pl_04").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_pl_05").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_pl_06").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_pl_07").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_pl_08").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_id1_00").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_id1_01").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_id1_02").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_id1_03").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_id1_04").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_id1_05").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_id1_06").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_id1_07").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_id1_08").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_id1_09").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_id1_10").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_id1_11").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_id1_12").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_id1_13").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_ml_00").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_ml_01").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_ml_02").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_00").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_01").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_02").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_03").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_04").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_05").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_06").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_07").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_08").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_09").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_10").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_11").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_12").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_13").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_14").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_15").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_16").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_17").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_18").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_19").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_20").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_21").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_22").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_23").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_24").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_25").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_26").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_27").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_28").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_29").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_30").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_31").ResetToDefault();
+		CVar.FindCVar("wf_compat_texswap_all_mlr_32").ResetToDefault();
+		
+		CVar.FindCVar("wf_compat_musswap_00").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_01").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_02").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_03").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_04").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_05").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_06").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_07").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_08").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_09").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_10").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_11").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_12").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_13").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_14").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_15").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_16").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_17").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_18").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_19").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_20").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_21").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_22").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_23").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_24").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_25").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_26").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_27").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_28").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_29").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_30").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_31").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_32").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_33").ResetToDefault();
+		CVar.FindCVar("wf_compat_musswap_34").ResetToDefault();
+		
+		CVar.FindCVar("wf_hud_id24").ResetToDefault();
+		CVar.FindCVar("wf_hud_swaphealtharmor").ResetToDefault();
+		CVar.FindCVar("wf_hud_ultrawide").ResetToDefault();
+		CVar.FindCVar("wf_hud_ultrawide_fullscreen").ResetToDefault();
+		
+		CVar.FindCVar("wf_hud_alt").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_mugshot").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_health").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_armor").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_ammo").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_ammoinv").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_powerup").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_weapinv").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_keys").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_frags").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_stats_icons").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_stats_kills").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_stats_items").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_stats_secrets").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_stats_time").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_stats_totaltime").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_stats_timemillis").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_stats_mapname").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_stats_maplabel").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_alpha_health").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_alpha_ammo").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_alpha_powerup").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_alpha_ammoinv").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_alpha_weapinv").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_alpha_weapinvinactive").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_alpha_keys").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_alpha_frags").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_alpha_stats").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_alpha_stats_time").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_alpha_stats_mapname").ResetToDefault();
+	}
+}
