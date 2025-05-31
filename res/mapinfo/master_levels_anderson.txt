@@ -38,46 +38,6 @@ map ML_MAP34 "$ML_ACHERON" // bonus level
 	Music = "$MUSIC_COUNTD"
 }
 
-map ML_MAP11 "$ML_VIRGIL"
-{
-	Next = "ML_MAP12"
-	Cluster = 37
-	TitlePatch = "MWILV10"
-	Music = "$MUSIC_COUNTD"
-}
-
-map ML_MAP12 "$ML_MINOS"
-{
-	Next = "ML_MAP13"
-	Cluster = 38
-	TitlePatch = "MWILV11"
-	Music = "$MUSIC_DOOM"
-}
-
-map ML_MAP13 "$ML_NESSUS"
-{
-	Next = "ML_MAP14"
-	Cluster = 39
-	TitlePatch = "MWILV12"
-	Music = "$MUSIC_SHAWN"
-	Map07Special
-}
-
-map ML_MAP14 "$ML_GERYON"
-{
-	Next = "ML_MAP15"
-	TitlePatch = "MWILV13"
-	Music = "$MUSIC_DDTBLU"
-}
-
-map ML_MAP15 "$ML_VESPERAS"
-{
-	Next = "ML_MAP35"
-	Cluster = 40
-	TitlePatch = "MWILV14"
-	Music = "$MUSIC_IN_CIT"
-}
-
 map ML_MAP35 "$ML_CHIRON" // duplicate of E4M7
 {
 	Next = "ML_MAP36"

@@ -111,7 +111,7 @@ RES_FILES = [
     'mapinfo/sigil_levels.txt', 'mapinfo/sigil2_levels.txt',
     'mapinfo/id1_levels.txt', 'mapinfo/iddm1_levels.txt',
     'mapinfo/clusters.txt', 'mapinfo/intermissions.txt',
-    'mapinfo/episodes.txt', 'mapinfo/episodes_rejects.txt',
+    'mapinfo/episodes.txt',
     'mapinfo/master_levels_rejects.txt',
     'mapinfo/master_levels_flynn.txt',
     'mapinfo/master_levels_anderson.txt',

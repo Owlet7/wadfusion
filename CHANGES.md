@@ -9,6 +9,9 @@
     starting a new game.
   - Optionally, can also include "intermissions" at the start of campaigns, with
     story texts taken from each games' instrustion manuals.
+- Added an option to toggle between Xaser's order for the Master Levels, and the
+  Rejects order.
+  - Removed Master Levels Rejects sub-episodes from the episodes menu.
 - Added "Music Substitutions" options.
   - These can be used to force Final DOOM music in DOOM II on a per-map basis.
 - Moved all texture substitution options to a sub-menu.

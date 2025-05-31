@@ -1,4 +1,4 @@
-// Master Levels for Doom 2 maps
+// Master Levels for Doom 2 Rejects maps
 
 defaultmap
 {
@@ -11,75 +11,11 @@ defaultmap
 	ResetItems
 }
 
-// Tim Willits's Master Levels
-
-adddefaultmap
-{
-	Author = "$WF_AU_WILLITS_CHASAR"
-}
-
-map ML_MAP01 "$ML_ATTACK"
-{
-	Next = "ML_MAP02"
-	TitlePatch = "MWILV00"
-	Music = "$MUSIC_RUNNIN"
-}
-
-map ML_MAP02 "$ML_CANYON"
-{
-	Next = "ML_MAP03"
-	TitlePatch = "MWILV01"
-	Music = "$MUSIC_E2M2"
-}
-
 // Christen Klie's Master Levels
 
 adddefaultmap
 {
 	Author = "$WF_AU_KLIE"
-}
-
-map ML_MAP03 "$ML_CATWALK"
-{
-	Next = "ML_MAP04"
-	TitlePatch = "MWILV02"
-	Music = "$MUSIC_THE_DA"
-}
-
-map ML_MAP04 "$ML_FISTULA"
-{
-	Next = "ML_MAP05"
-	TitlePatch = "MWILV03"
-	Music = "$MUSIC_E1M6"
-}
-
-map ML_MAP05 "$ML_COMBINE"
-{
-	Next = "ML_MAP06"
-	TitlePatch = "MWILV04"
-	Music = "$MUSIC_DEAD"
-	// The sky gets replaced by texture substitution compatibility options
-}
-
-map ML_MAP06 "$ML_SUBSPACE"
-{
-	Next = "ML_MAP08"
-	TitlePatch = "MWILV05"
-	Music = "$MUSIC_STALKS"
-}
-
-map ML_MAP08 "$ML_SUBTERRA"
-{
-	Next = "ML_MAP09"
-	TitlePatch = "MWILV07"
-	Music = "$MUSIC_DDTBLU"
-}
-
-map ML_MAP09 "$ML_GARRISON"
-{
-	Next = "ML_MAP22"
-	TitlePatch = "MWILV08"
-	Music = "$MUSIC_E3M3"
 }
 
 map ML_MAP22 "$ML_CPU" // reject level
@@ -136,13 +72,4 @@ map ML_MAP28 "$ML_TWM01" // reject level
 	Next = "ML_MAP07"
 	TitlePatch = "MWILV27"
 	Music = "$MUSIC_COUNTD"
-}
-
-map ML_MAP07 "$ML_PARADOX"
-{
-	// needed for the zscript-based intermission hacks
-	Next = "WF_STORY_ML_MAP29"
-	TitlePatch = "MWILV06"
-	Music = "$MUSIC_IN_CIT"
-	Author = "$WF_AU_MUSTAINES"
 }

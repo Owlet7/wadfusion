@@ -100,8 +100,6 @@ exec(open(DATA_TABLES_FILE).read())
 
 MASTER_LEVELS_MAP_PREFIX = WAD_MAP_PREFIXES.get('masterlevels', '')
 
-should_enable_master_levels_rejects = False
-
 # track # of maps extracted
 num_maps = 0
 num_eps = 0
@@ -359,8 +357,7 @@ def copy_master_levels_doom1_music():
     copyfile(DEST_DIR_MUS + 'D_RUNNIN.mus', DEST_DIR_MUS + 'D_E1M7.mus')
 
 def extract_master_levels_rejects():
-    global num_maps, should_enable_master_levels_rejects
-    should_enable_master_levels_rejects = True
+    global num_maps
     logs('Processing Master Levels Rejects...')
     for i, wad_name in enumerate(MASTER_LEVELS_REJECTS_ORDER):
         in_wad = omg.WAD()
@@ -425,11 +422,6 @@ def extract_master_levels_rejects():
                                                    wad_filename,
                                                    patch_replace[1]))
         lump.to_file(out_filename)
-
-def enable_master_levels_rejects():
-    logs('Enabling Master Levels Rejects...')
-    # copy rejects-specific mapinfo
-    copyfile(RES_DIR + 'mapinfo.rejects.txt', DEST_DIR + 'mapinfo.txt')
 
 def move_help2():
     # the HELP2 graphics lump gets extracted to the base directory first
@@ -690,9 +682,6 @@ def extract():
             extract_master_levels_rejects()
     # copy pre-authored lumps e.g. mapinfo
     copy_resources()
-    # copy and enable Master levels Rejects mapinfo
-    if should_enable_master_levels_rejects:
-        enable_master_levels_rejects()
     # duplicate doom1 sky patches to suppress errors with id1
     if get_wad_filename('id1') and get_wad_filename('doom2'):
         if not doom_is_registered():
@@ -758,23 +747,43 @@ def clear_temp():
 
 def get_eps(wads_found):
     eps = []
+    extra = ''
     for wadname in wads_found:
         if wadname == 'doom' and not doomu_is_retail():
             if doom_is_registered():
-                eps += ['Knee Deep in the Dead', 'The Shores of Hell', 'Inferno']
+                if 'sewers' in wads_found:
+                    extra += ' + E1M10'
+                if 'e1m8b' in wads_found:
+                    extra += ' + E1M8B'
+                if 'e1m4b' in wads_found:
+                    extra += ' + E1M4B'
+                eps += ['Knee Deep in the Dead' + extra]
+                eps += ['The Shores of Hell', 'Inferno']
                 if doom_is_retail():
                     eps += ['Thy Flesh Consumed']
+                extra = ''
         if wadname == 'doomu' and doomu_is_retail():
-            eps += ['Knee Deep in the Dead', 'The Shores of Hell', 'Inferno', 'Thy Flesh Consumed']
+            if 'sewers' in wads_found:
+                extra += ' + E1M10'
+            if 'e1m8b' in wads_found:
+                extra += ' + E1M8B'
+            if 'e1m4b' in wads_found:
+                extra += ' + E1M4B'
+            eps += ['Knee Deep in the Dead' + extra]
+            eps += ['The Shores of Hell', 'Inferno', 'Thy Flesh Consumed']
+            extra = ''
         elif wadname == 'doom2':
-            eps += ['Hell on Earth']
+            if 'betray' in wads_found:
+                extra += ' + MAP33'
+            eps += ['Hell on Earth' + extra]
+            extra = ''
         elif wadname == 'attack' and masterlevels_is_complete() and not 'masterlevels' in wads_found and 'doom2' in wads_found and not masterlevelsrejects_is_complete():
             eps += ['Master Levels']
-        elif wadname == 'masterlevels' and 'doom2' in wads_found and not masterlevelsrejects_is_complete():
-            eps += ['Master Levels']
-        elif wadname == 'cpu' and masterlevelsrejects_is_complete():
-            eps += ['Tim Willits', 'Christen Klie', 'Tom Mustaine']
-            eps += ['Jim Flynn\'s Titan', 'John Anderson\'s INFERNO', 'Sverre Kvernmo\'s CABAL']
+        elif wadname == 'masterlevels' and 'doom2' in wads_found:
+            if masterlevelsrejects_is_complete():
+                extra += ' + Rejects'
+            eps += ['Master Levels' + extra]
+            extra = ''
         elif wadname == 'nerve' and 'doom2' in wads_found:
             eps += ['No Rest for the Living']
         elif wadname == 'tnt':
@@ -783,10 +792,16 @@ def get_eps(wads_found):
             eps += ['The Plutonia Experiment']
         elif wadname == 'sigil':
             if doom_is_registered() or doomu_is_retail():
-                eps += ['SIGIL']
+                if 'sigil_shreds' in wads_found:
+                    extra += ' + Buckethead Soundtrack'
+                eps += ['SIGIL' + extra]
+                extra = ''
         elif wadname == 'sigil2':
             if doom_is_registered() or doomu_is_retail():
-                eps += ['SIGIL II']
+                if 'sigil2_mp3' in wads_found:
+                    extra += ' + THORR Soundtrack'
+                eps += ['SIGIL II' + extra]
+                extra = ''
         elif wadname == 'id1' and 'doom2' in wads_found:
             eps += ['The Vulcan Abyss', 'Counterfeit Eden']
         elif wadname == 'iddm1' and 'doom2' in wads_found:
