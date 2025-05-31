@@ -9,6 +9,9 @@
     starting a new game.
   - Optionally, can also include "intermissions" at the start of campaigns, with
     story texts taken from each games' instrustion manuals.
+- Added "Music Substitutions" options.
+  - These can be used to force Final DOOM music in DOOM II on a per-map basis.
+- Moved all texture substitution options to a sub-menu.
 - Removed `SKY1` from the Legacy of Rust list in the texture replacements script.
   Not sure how it got there.
 
