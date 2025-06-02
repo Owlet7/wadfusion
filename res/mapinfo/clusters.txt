@@ -204,6 +204,7 @@ cluster 23
 
 // Master Levels clusters
 
+// deprecated, not used anymore because of togglable map order
 cluster 24
 {
 	ExitText = "$MLEND"

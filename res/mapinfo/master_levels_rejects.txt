@@ -11,63 +11,63 @@ defaultmap
 	ResetItems
 }
 
-// Christen Klie's Master Levels
+// Christen Klie's Master Levels rejects
 
 adddefaultmap
 {
 	Author = "$WF_AU_KLIE"
 }
 
-map ML_MAP22 "$ML_CPU" // reject level
+map ML_MAP22 "$ML_CPU"
 {
 	Next = "ML_MAP23"
 	TitlePatch = "MWILV21"
 	Music = "$MUSIC_E1M3"
 }
 
-map ML_MAP23 "$ML_DEVICE1" // reject level
+map ML_MAP23 "$ML_DEVICE1"
 {
 	Next = "ML_MAP24"
 	TitlePatch = "MWILV22"
 	Music = "$MUSIC_E2M2"
 }
 
-map ML_MAP24 "$ML_DMZ" // reject level
+map ML_MAP24 "$ML_DMZ"
 {
 	Next = "ML_MAP25"
 	TitlePatch = "MWILV23"
 	Music = "$MUSIC_E1M6"
 }
 
-map ML_MAP25 "$ML_FURY" // reject level
+map ML_MAP25 "$ML_FURY"
 {
 	Next = "ML_MAP26"
 	TitlePatch = "MWILV24"
 	Music = "$MUSIC_SHAWN"
 }
 
-map ML_MAP26 "$ML_EINSIDE" // reject level
+map ML_MAP26 "$ML_EINSIDE"
 {
 	Next = "ML_MAP27"
 	TitlePatch = "MWILV25"
 	Music = "$MUSIC_E1M5"
 }
 
-map ML_MAP27 "$ML_HIVE" // reject level
+map ML_MAP27 "$ML_HIVE"
 {
 	Next = "ML_MAP28"
 	TitlePatch = "MWILV26"
 	Music = "$MUSIC_E3M3"
 }
 
-// Tom Mustaines's Master Levels
+// Tom Mustaines's Master Levels reject
 
 adddefaultmap
 {
 	Author = "$WF_AU_MUSTAINE"
 }
 
-map ML_MAP28 "$ML_TWM01" // reject level
+map ML_MAP28 "$ML_TWM01"
 {
 	Next = "ML_MAP07"
 	TitlePatch = "MWILV27"

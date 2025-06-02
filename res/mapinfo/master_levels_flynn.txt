@@ -1,4 +1,4 @@
-// Master Levels for Doom 2 maps - Jim Flynn's Titan
+// Master Levels for Doom 2 maps - Jim Flynn's Titan bonus levels
 
 // The skies get replaced by texture substitution compatibility options
 
@@ -20,14 +20,14 @@ map WF_STORY_ML_MAP29 "$ML_MINES"
 	TitlePatch = "MWILV28"
 }
 
-map ML_MAP29 "$ML_MINES" // bonus level
+map ML_MAP29 "$ML_MINES"
 {
 	Next = "ML_MAP30"
 	TitlePatch = "MWILV28"
 	Music = "$MUSIC_RUNNIN"
 }
 
-map ML_MAP30 "$ML_ANOMALY" // bonus level
+map ML_MAP30 "$ML_ANOMALY"
 {
 	Next = "ML_MAP31"
 	// Cluster = 32
@@ -35,7 +35,7 @@ map ML_MAP30 "$ML_ANOMALY" // bonus level
 	Music = "$MUSIC_DOOM"
 }
 
-map ML_MAP31 "$ML_FARSIDE" // bonus level
+map ML_MAP31 "$ML_FARSIDE"
 {
 	Next = "ML_MAP32"
 	// Cluster = 33
@@ -43,7 +43,7 @@ map ML_MAP31 "$ML_FARSIDE" // bonus level
 	Music = "$MUSIC_ROMERO"
 }
 
-map ML_MAP32 "$ML_TROUBLE" // bonus level
+map ML_MAP32 "$ML_TROUBLE"
 {
 	Next = "ML_MAP16"
 	// Cluster = 34

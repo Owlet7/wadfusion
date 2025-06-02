@@ -308,3 +308,15 @@ intermission MasterLevels_Map43
 		Music = "$MUSIC_READ_M"
 	}
 }
+
+intermission MasterLevels_End
+{
+	TextScreen
+	{
+		Text = "$MLEND"
+		Background = "$BGFLAT06", 1
+		Music = "$MUSIC_READ_M"
+	}
+	Wiper {}
+	Link = Inter_Cast
+}

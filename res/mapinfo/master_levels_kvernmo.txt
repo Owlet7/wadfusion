@@ -15,6 +15,12 @@ map WF_STORY_ML_MAP19 "$ML_BLOODSEA"
 	TitlePatch = "MWILV18"
 }
 
+// needed for the zscript-based intermission hacks
+map WF_STORY_ML_MAP43 "$ML_THE_EVIL"
+{
+	TitlePatch = "MWILV42"
+}
+
 map ML_MAP37 "$ML_FLOOD" // reject level
 {
 	Next = "ML_MAP38"
@@ -63,16 +69,9 @@ map ML_MAP42 "$ML_STORM" // reject level
 	Music = "$MUSIC_IN_CIT"
 }
 
-// needed for the zscript-based intermission hacks
-map WF_STORY_ML_MAP43 "$ML_THE_EVIL"
-{
-	TitlePatch = "MWILV42"
-}
-
 map ML_MAP43 "$ML_THE_EVIL" // reject level
 {
-	Next = "EndGameC"
-	Cluster = 24
+	Next = EndSequence, "MasterLevels_End"
 	TitlePatch = "MWILV42"
 	Music = "$MUSIC_OPENIN"
 	AllowMonsterTelefrags

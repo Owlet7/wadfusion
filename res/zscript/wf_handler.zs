@@ -101,6 +101,15 @@ class WadFusionHandler : EventHandler
 			// without potentially playing the wrong music for one tick
 			PlaySigilInterMusic();
 		}
+		
+		// set a parameter needed for the master levels ending
+		// a hack needed for the xaser order
+		if ( CVar.FindCVar("wf_compat_nextmap").GetBool() && !CVar.FindCVar("wf_map_mlr").GetBool() )
+		{
+			string mapName = Level.MapName.MakeLower();
+			if ( mapName == "ml_map20" )
+				CVar.FindCVar("wf_nextmap").SetString("ml_end");
+		}
 	}
 	
 	override void WorldTick()
@@ -307,7 +316,7 @@ class WadFusionHandler : EventHandler
 			if ( rejects )
 				Level.NextMap = "ml_map40";
 			else
-				Level.NextMap = "";
+				Level.NextMap = "wf_story";
 		}
 		if ( mapName == "ml_map18" || mapName == "ml_map21" )
 		{

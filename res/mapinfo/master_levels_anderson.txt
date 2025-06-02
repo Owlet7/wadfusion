@@ -1,4 +1,4 @@
-// Master Levels for Doom 2 maps - John Anderson's INFERNO
+// Master Levels for Doom 2 maps - John Anderson's INFERNO bonus levels
 
 // The skies get replaced by texture substitution compatibility options (except DANTES and CHIRON)
 
@@ -17,21 +17,20 @@ map WF_STORY_ML_MAP33 "$ML_DANTES"
 	TitlePatch = "MWILV32"
 }
 
-map ML_MAP33 "$ML_DANTES" // bonus level
-{
-	// needed for the zscript-based intermission hacks
-	Next = "WF_STORY_ML_MAP34"
-	TitlePatch = "MWILV32"
-	Music = "$MUSIC_STALKS"
-}
-
 // needed for the zscript-based intermission hacks
 map WF_STORY_ML_MAP34 "$ML_ACHERON"
 {
 	TitlePatch = "MWILV33"
 }
 
-map ML_MAP34 "$ML_ACHERON" // bonus level
+map ML_MAP33 "$ML_DANTES"
+{
+	Next = "ML_MAP34"
+	TitlePatch = "MWILV32"
+	Music = "$MUSIC_STALKS"
+}
+
+map ML_MAP34 "$ML_ACHERON"
 {
 	Next = "ML_MAP11"
 	TitlePatch = "MWILV33"
@@ -47,10 +46,9 @@ map ML_MAP35 "$ML_CHIRON" // duplicate of E4M7
 	Music = "$MUSIC_E2M6"
 }
 
-map ML_MAP36 "$ML_LETHE" // bonus level - UDTWiD's E4M8
+map ML_MAP36 "$ML_LETHE" // UDTWiD's E4M8 - An End to Darkness
 {
-	// needed for the zscript-based intermission hacks
-	Next = "WF_STORY_ML_MAP19"
+	Next = "ML_MAP19"
 	Sky1 = "SKY4"
 	TitlePatch = "MWILV35"
 	Par = 105

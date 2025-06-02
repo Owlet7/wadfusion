@@ -7,19 +7,8 @@ defaultmap
 	NoCrouch
 }
 
-map ML_MAP21 "$ML_TEETH_SECRET"
-{
-	Next = "ML_MAP19"
-	Cluster = 25
-	Sky1 = "SKY3"
-	TitlePatch = "MWILV20"
-	Music = "$MUSIC_ULTIMA"
-	Author = "$WF_AU_KVERNMO"
-}
-
 adddefaultmap
 {
-	Cluster = 24
 	ResetHealth
 	ResetInventory
 	ResetItems
@@ -209,11 +198,21 @@ map ML_MAP19 "$ML_BLOODSEA"
 
 map ML_MAP20 "$ML_MEPHISTO"
 {
-	Next = "EndGameC"
+	Next = EndSequence, "MasterLevels_End"
 	Sky1 = "SKY3"
 	TitlePatch = "MWILV19"
 	Music = "$MUSIC_SHAWN"
 	AllowMonsterTelefrags
 	Map07Special
+	Author = "$WF_AU_KVERNMO"
+}
+
+map ML_MAP21 "$ML_TEETH_SECRET"
+{
+	Next = "ML_MAP19"
+	Cluster = 25
+	Sky1 = "SKY3"
+	TitlePatch = "MWILV20"
+	Music = "$MUSIC_ULTIMA"
 	Author = "$WF_AU_KVERNMO"
 }
