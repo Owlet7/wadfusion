@@ -2,6 +2,7 @@ include mapinfo/doomednums.txt
 include mapinfo/episodes.txt
 include mapinfo/clusters.txt
 include mapinfo/intermissions.txt
+include mapinfo/intermissions_ml.txt
 include mapinfo/doom1_levels.txt
 include mapinfo/doom2_levels.txt
 include mapinfo/master_levels.txt
@@ -9,6 +10,7 @@ include mapinfo/master_levels_rejects.txt
 include mapinfo/master_levels_flynn.txt
 include mapinfo/master_levels_anderson.txt
 include mapinfo/master_levels_kvernmo.txt
+include mapinfo/master_levels_story.txt
 include mapinfo/nerve_levels.txt
 include mapinfo/tnt_levels.txt
 include mapinfo/plutonia_levels.txt

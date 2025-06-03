@@ -1,0 +1,122 @@
+// dummy Master Levels for Doom 2 story maps
+// needed for the zscript-based intermission hacks
+
+adddefaultmap
+{
+	Author = "$WF_AU_FLYNN"
+}
+
+map WF_STORY_ML_MAP29 "$ML_MINES"
+{
+	TitlePatch = "MWILV28"
+}
+
+map WF_STORY_ML_MAP30 "$ML_ANOMALY"
+{
+	TitlePatch = "MWILV29"
+}
+
+map WF_STORY_ML_MAP31 "$ML_FARSIDE"
+{
+	TitlePatch = "MWILV30"
+}
+
+map WF_STORY_ML_MAP32 "$ML_TROUBLE"
+{
+	TitlePatch = "MWILV31"
+}
+
+map WF_STORY_ML_MAP16 "$ML_MANOR"
+{
+	TitlePatch = "MWILV15"
+}
+
+map WF_STORY_ML_MAP17 "$ML_TTRAP"
+{
+	TitlePatch = "MWILV16"
+}
+
+adddefaultmap
+{
+	Author = "$WF_AU_ANDERSON"
+}
+
+map WF_STORY_ML_MAP33 "$ML_DANTES"
+{
+	TitlePatch = "MWILV32"
+}
+
+map WF_STORY_ML_MAP34 "$ML_ACHERON"
+{
+	TitlePatch = "MWILV33"
+}
+
+map WF_STORY_ML_MAP11 "$ML_VIRGIL"
+{
+	TitlePatch = "MWILV10"
+}
+
+map WF_STORY_ML_MAP12 "$ML_MINOS"
+{
+	TitlePatch = "MWILV11"
+}
+
+map WF_STORY_ML_MAP13 "$ML_NESSUS"
+{
+	TitlePatch = "MWILV12"
+}
+
+map WF_STORY_ML_MAP15 "$ML_VESPERAS"
+{
+	TitlePatch = "MWILV14"
+}
+
+adddefaultmap
+{
+	Author = "$WF_AU_KVERNMO"
+}
+
+map WF_STORY_ML_MAP19 "$ML_BLOODSEA"
+{
+	TitlePatch = "MWILV18"
+}
+
+map WF_STORY_ML_MAP37 "$ML_FLOOD"
+{
+	TitlePatch = "MWILV36"
+}
+
+map WF_STORY_ML_MAP38 "$ML_DERELICT"
+{
+	TitlePatch = "MWILV37"
+}
+
+map WF_STORY_ML_MAP20 "$ML_MEPHISTO"
+{
+	TitlePatch = "MWILV19"
+}
+
+map WF_STORY_ML_MAP18 "$ML_TEETH"
+{
+	TitlePatch = "MWILV17"
+}
+
+map WF_STORY_ML_MAP41 "$ML_ARENA"
+{
+	TitlePatch = "MWILV40"
+}
+
+map WF_STORY_ML_MAP42 "$ML_STORM"
+{
+	TitlePatch = "MWILV41"
+}
+
+map WF_STORY_ML_MAP10 "$ML_BLACKTWR"
+{
+	TitlePatch = "MWILV09"
+}
+
+map WF_STORY_ML_MAP43 "$ML_THE_EVIL"
+{
+	TitlePatch = "MWILV42"
+}

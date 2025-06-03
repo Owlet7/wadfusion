@@ -1,0 +1,229 @@
+// Intermissions
+
+
+// Master Levels story
+
+intermission MasterLevels_Map29
+{
+	TextScreen
+	{
+		Text = "$ML4STORY1"
+		Background = "$MFLR8_2", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map30
+{
+	TextScreen
+	{
+		Text = "$ML4STORY2"
+		Background = "$CEIL3_3", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map31
+{
+	TextScreen
+	{
+		Text = "$ML4STORY3"
+		Background = "$CEIL3_2", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map32
+{
+	TextScreen
+	{
+		Text = "$ML4STORY4"
+		Background = "$FLAT18", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map16
+{
+	TextScreen
+	{
+		Text = "$ML4STORY5"
+		Background = "$FLAT5_2", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map17
+{
+	TextScreen
+	{
+		Text = "$ML4STORY6"
+		Background = "$FLAT5_4", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map33
+{
+	TextScreen
+	{
+		Text = "$ML5STORY1"
+		Background = "$FLOOR5_4", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map34
+{
+	TextScreen
+	{
+		Text = "$ML5STORY2_1"
+		Background = "$CEIL1_1", 1
+		Music = "$MUSIC_READ_M"
+	}
+	
+	TextScreen
+	{
+		Text = "$ML5STORY2_2"
+	}
+}
+
+intermission MasterLevels_Map11
+{
+	TextScreen
+	{
+		Text = "$ML5STORY3"
+		Background = "$FLAT5_1", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map12
+{
+	TextScreen
+	{
+		Text = "$ML5STORY4"
+		Background = "$FLAT1", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map13
+{
+	TextScreen
+	{
+		Text = "$ML5STORY5"
+		Background = "$RROCK11", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map15
+{
+	TextScreen
+	{
+		Text = "$ML5STORY6"
+		Background = "$FLOOR6_2", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map19
+{
+	TextScreen
+	{
+		Text = "$ML6STORY1_1"
+		Background = "$BLOOD1", 1
+		Music = "$MUSIC_READ_M"
+	}
+	
+	TextScreen
+	{
+		Text = "$ML6STORY1_2"
+	}
+	
+	TextScreen
+	{
+		Text = "$ML6STORY1_3"
+	}
+}
+
+intermission MasterLevels_Map37
+{
+	TextScreen
+	{
+		Text = "$ML6STORY2"
+		Background = "$FLOOR3_3", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map38
+{
+	TextScreen
+	{
+		Text = "$ML6STORY3"
+		Background = "$FLOOR0_3", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map20
+{
+	TextScreen
+	{
+		Text = "$ML6STORY4"
+		Background = "$RROCK04", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map18
+{
+	TextScreen
+	{
+		Text = "$ML6STORY5"
+		Background = "$CEIL4_2", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map41
+{
+	TextScreen
+	{
+		Text = "$ML6STORY6"
+		Background = "$FLAT5_6", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map42
+{
+	TextScreen
+	{
+		Text = "$ML6STORY7"
+		Background = "$SLIME14", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map10
+{
+	TextScreen
+	{
+		Text = "$ML6STORY8"
+		Background = "$DEM1_6", 1
+		Music = "$MUSIC_READ_M"
+	}
+}
+
+intermission MasterLevels_Map43
+{
+	TextScreen
+	{
+		Text = "$ML6STORY9"
+		Background = "$SLIME11", 1
+		Music = "$MUSIC_READ_M"
+	}
+}

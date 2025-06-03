@@ -62,14 +62,10 @@ map ML_MAP27 "$ML_HIVE"
 
 // Tom Mustaines's Master Levels reject
 
-adddefaultmap
-{
-	Author = "$WF_AU_MUSTAINE"
-}
-
 map ML_MAP28 "$ML_TWM01"
 {
 	Next = "ML_MAP07"
 	TitlePatch = "MWILV27"
 	Music = "$MUSIC_COUNTD"
+	Author = "$WF_AU_MUSTAINE"
 }

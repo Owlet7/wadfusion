@@ -121,6 +121,7 @@ class WadFusionHandler : EventHandler
 			DoBlackroomMapReplacements();
 			
 			// add the reject levels to the master levels mapset
+			// wf_masterlevels.zs
 			AddMasterLevelsRejects();
 		}
 		
@@ -262,75 +263,6 @@ class WadFusionHandler : EventHandler
 				Level.NextMap = "e1m4b";
 			else
 				Level.NextMap = "e1m4";
-		}
-	}
-	
-	void AddMasterLevelsRejects()
-	{
-		let rejects = CVar.FindCVar("wf_map_mlr").GetBool();
-		string mapName = Level.MapName.MakeLower();
-		if ( mapName == "ml_map06" )
-		{
-			if ( rejects )
-				Level.NextMap = "ml_map08";
-			else
-				Level.NextMap = "ml_map07";
-		}
-		if ( mapName == "ml_map09" )
-		{
-			if ( rejects )
-				Level.NextMap = "ml_map22";
-			else
-				Level.NextMap = "ml_map10";
-		}
-		if ( mapName == "ml_map07" )
-		{
-			if ( rejects )
-				Level.NextMap = "ml_map29";
-			else
-				Level.NextMap = "ml_map08";
-		}
-		if ( mapName == "ml_map17" )
-		{
-			if ( rejects )
-				Level.NextMap = "ml_map33";
-			else
-				Level.NextMap = "ml_map18";
-		}
-		if ( mapName == "ml_map15" )
-		{
-			if ( rejects )
-				Level.NextMap = "ml_map35";
-			else
-				Level.NextMap = "ml_map16";
-		}
-		if ( mapName == "ml_map19" )
-		{
-			if ( rejects )
-				Level.NextMap = "ml_map37";
-			else
-				Level.NextMap = "ml_map20";
-		}
-		if ( mapName == "ml_map20" )
-		{
-			if ( rejects )
-				Level.NextMap = "ml_map40";
-			else
-				Level.NextMap = "wf_story";
-		}
-		if ( mapName == "ml_map18" || mapName == "ml_map21" )
-		{
-			if ( rejects )
-				Level.NextMap = "ml_map41";
-			else
-				Level.NextMap = "ml_map19";
-		}
-		if ( mapName == "ml_map10" )
-		{
-			if ( rejects )
-				Level.NextMap = "ml_map43";
-			else
-				Level.NextMap = "ml_map11";
 		}
 	}
 	

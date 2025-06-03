@@ -2,217 +2,92 @@
 
 defaultmap
 {
+	Sky1 = "SKY1"
 	SuckTime = 1
 	NoJump
 	NoCrouch
-}
-
-adddefaultmap
-{
 	ResetHealth
 	ResetInventory
 	ResetItems
 }
 
+// Tim Willits's Master Levels
+
+adddefaultmap
+{
+	Author = "$WF_AU_WILLITS_CHASAR"
+}
+
 map ML_MAP01 "$ML_ATTACK"
 {
 	Next = "ML_MAP02"
-	Sky1 = "SKY1"
 	TitlePatch = "MWILV00"
 	Music = "$MUSIC_RUNNIN"
-	Author = "$WF_AU_WILLITS_CHASAR"
 }
 
 map ML_MAP02 "$ML_CANYON"
 {
 	Next = "ML_MAP03"
-	Sky1 = "SKY1"
 	TitlePatch = "MWILV01"
 	Music = "$MUSIC_E2M2"
-	Author = "$WF_AU_WILLITS_CHASAR"
+}
+
+// Christen Klie's Master Levels
+
+adddefaultmap
+{
+	Author = "$WF_AU_KLIE"
 }
 
 map ML_MAP03 "$ML_CATWALK"
 {
 	Next = "ML_MAP04"
-	Sky1 = "SKY1"
 	TitlePatch = "MWILV02"
 	Music = "$MUSIC_THE_DA"
-	Author = "$WF_AU_KLIE"
 }
 
 map ML_MAP04 "$ML_FISTULA"
 {
 	Next = "ML_MAP05"
-	Sky1 = "SKY1"
 	TitlePatch = "MWILV03"
 	Music = "$MUSIC_E1M6"
-	Author = "$WF_AU_KLIE"
 }
 
 map ML_MAP05 "$ML_COMBINE"
 {
-	Next = "ML_MAP06"
 	// The sky gets replaced by texture substitution compatibility options
-	Sky1 = "SKY1"
+	Next = "ML_MAP06"
 	TitlePatch = "MWILV04"
 	Music = "$MUSIC_DEAD"
-	Author = "$WF_AU_KLIE"
 }
 
 map ML_MAP06 "$ML_SUBSPACE"
 {
 	Next = "ML_MAP07"
-	Sky1 = "SKY1"
 	TitlePatch = "MWILV05"
 	Music = "$MUSIC_STALKS"
-	Author = "$WF_AU_KLIE"
-}
-
-map ML_MAP07 "$ML_PARADOX"
-{
-	Next = "ML_MAP08"
-	Sky1 = "SKY1"
-	TitlePatch = "MWILV06"
-	Music = "$MUSIC_IN_CIT"
-	Author = "$WF_AU_MUSTAINES"
 }
 
 map ML_MAP08 "$ML_SUBTERRA"
 {
 	Next = "ML_MAP09"
-	Sky1 = "SKY1"
 	TitlePatch = "MWILV07"
 	Music = "$MUSIC_DDTBLU"
-	Author = "$WF_AU_KLIE"
 }
 
 map ML_MAP09 "$ML_GARRISON"
 {
 	Next = "ML_MAP10"
-	Sky1 = "SKY1"
 	TitlePatch = "MWILV08"
 	Music = "$MUSIC_E3M3"
-	Author = "$WF_AU_KLIE"
 }
 
-map ML_MAP10 "$ML_BLACKTWR"
-{
-	Next = "ML_MAP11"
-	Sky1 = "SKY3"
-	TitlePatch = "MWILV09"
-	Music = "$MUSIC_ADRIAN"
-	Author = "$WF_AU_KVERNMO"
-}
+// Tom Mustaines's Master Level
 
-map ML_MAP11 "$ML_VIRGIL"
+map ML_MAP07 "$ML_PARADOX"
 {
-	Next = "ML_MAP12"
-	// The sky gets replaced by texture substitution compatibility options
-	Sky1 = "SKY1"
-	TitlePatch = "MWILV10"
-	Music = "$MUSIC_COUNTD"
-	Author = "$WF_AU_ANDERSON"
-}
-
-map ML_MAP12 "$ML_MINOS"
-{
-	Next = "ML_MAP13"
-	// The sky gets replaced by texture substitution compatibility options
-	Sky1 = "SKY1"
-	TitlePatch = "MWILV11"
-	Music = "$MUSIC_DOOM"
-	Author = "$WF_AU_ANDERSON"
-}
-
-map ML_MAP13 "$ML_NESSUS"
-{
-	Next = "ML_MAP14"
-	// The sky gets replaced by texture substitution compatibility options
-	Sky1 = "SKY1"
-	TitlePatch = "MWILV12"
-	Music = "$MUSIC_SHAWN"
-	Map07Special
-	Author = "$WF_AU_ANDERSON"
-}
-
-map ML_MAP14 "$ML_GERYON"
-{
-	Next = "ML_MAP15"
-	// The sky gets replaced by texture substitution compatibility options
-	Sky1 = "SKY1"
-	TitlePatch = "MWILV13"
-	Music = "$MUSIC_DDTBLU"
-	Author = "$WF_AU_ANDERSON"
-}
-
-map ML_MAP15 "$ML_VESPERAS"
-{
-	Next = "ML_MAP16"
-	// The sky gets replaced by texture substitution compatibility options
-	Sky1 = "SKY1"
-	TitlePatch = "MWILV14"
+	Next = "ML_MAP08"
+	TitlePatch = "MWILV06"
 	Music = "$MUSIC_IN_CIT"
-	Author = "$WF_AU_ANDERSON"
-}
-
-map ML_MAP16 "$ML_MANOR"
-{
-	Next = "ML_MAP17"
-	// The sky gets replaced by texture substitution compatibility options
-	Sky1 = "SKY1"
-	TitlePatch = "MWILV15"
-	Music = "$MUSIC_MESSAG"
-	Author = "$WF_AU_FLYNN"
-}
-
-map ML_MAP17 "$ML_TTRAP"
-{
-	Next = "ML_MAP18"
-	// The sky gets replaced by texture substitution compatibility options
-	Sky1 = "SKY1"
-	TitlePatch = "MWILV16"
-	Music = "$MUSIC_E1M7"
-	Author = "$WF_AU_FLYNN"
-}
-
-map ML_MAP18 "$ML_TEETH"
-{
-	Next = "ML_MAP19"
-	SecretNext = "ML_MAP21"
-	Sky1 = "SKY3"
-	TitlePatch = "MWILV17"
-	Music = "$MUSIC_EVIL"
-	Author = "$WF_AU_KVERNMO"
-}
-
-map ML_MAP19 "$ML_BLOODSEA"
-{
-	Next = "ML_MAP20"
-	Sky1 = "SKY3"
-	TitlePatch = "MWILV18"
-	Music = "$MUSIC_SHAWN"
-	Map07Special
-	Author = "$WF_AU_KVERNMO"
-}
-
-map ML_MAP20 "$ML_MEPHISTO"
-{
-	Next = EndSequence, "MasterLevels_End"
-	Sky1 = "SKY3"
-	TitlePatch = "MWILV19"
-	Music = "$MUSIC_SHAWN"
-	AllowMonsterTelefrags
-	Map07Special
-	Author = "$WF_AU_KVERNMO"
-}
-
-map ML_MAP21 "$ML_TEETH_SECRET"
-{
-	Next = "ML_MAP19"
-	Cluster = 25
-	Sky1 = "SKY3"
-	TitlePatch = "MWILV20"
-	Music = "$MUSIC_ULTIMA"
-	Author = "$WF_AU_KVERNMO"
+	Author = "$WF_AU_MUSTAINES"
 }

@@ -60,6 +60,20 @@ intermission Id1Cast
 	Link = Id1Cast
 }
 
+// Master Levels ending
+
+intermission MasterLevels_End
+{
+	TextScreen
+	{
+		Text = "$MLEND"
+		Background = "$BGFLAT06", 1
+		Music = "$MUSIC_READ_M"
+	}
+	Wiper {}
+	Link = Inter_Cast
+}
+
 // New Game intros
 
 intermission WadFusionNewGame {}
@@ -242,83 +256,4 @@ intermission Plutonia_Intro
 	{
 		Text = "$PLINTRO7"
 	}
-}
-
-// Master Levels story
-
-intermission MasterLevels_Map29
-{
-	TextScreen
-	{
-		Text = "$ML4STORY1"
-		Background = "$MFLR8_2", 1
-		Music = "$MUSIC_READ_M"
-	}
-}
-
-intermission MasterLevels_Map33
-{
-	TextScreen
-	{
-		Text = "$ML5STORY1"
-		Background = "$FLOOR5_4", 1
-		Music = "$MUSIC_READ_M"
-	}
-}
-
-intermission MasterLevels_Map19
-{
-	TextScreen
-	{
-		Text = "$ML6STORY1_1"
-		Background = "$BLOOD1", 1
-		Music = "$MUSIC_READ_M"
-	}
-	
-	TextScreen
-	{
-		Text = "$ML6STORY1_2"
-	}
-	
-	TextScreen
-	{
-		Text = "$ML6STORY1_3"
-	}
-}
-
-intermission MasterLevels_Map34
-{
-	TextScreen
-	{
-		Text = "$ML5STORY2_1"
-		Background = "$CEIL1_1", 1
-		Music = "$MUSIC_READ_M"
-	}
-	
-	TextScreen
-	{
-		Text = "$ML5STORY2_2"
-	}
-}
-
-intermission MasterLevels_Map43
-{
-	TextScreen
-	{
-		Text = "$ML6STORY9"
-		Background = "$SLIME11", 1
-		Music = "$MUSIC_READ_M"
-	}
-}
-
-intermission MasterLevels_End
-{
-	TextScreen
-	{
-		Text = "$MLEND"
-		Background = "$BGFLAT06", 1
-		Music = "$MUSIC_READ_M"
-	}
-	Wiper {}
-	Link = Inter_Cast
 }

@@ -1,4 +1,4 @@
-// Master Levels for Doom 2 maps - Jim Flynn's Titan bonus levels
+// Master Levels for Doom 2 maps - Jim Flynn's Titan
 
 // The skies get replaced by texture substitution compatibility options
 
@@ -14,11 +14,21 @@ defaultmap
 	Author = "$WF_AU_FLYNN"
 }
 
-// needed for the zscript-based intermission hacks
-map WF_STORY_ML_MAP29 "$ML_MINES"
+map ML_MAP16 "$ML_MANOR"
 {
-	TitlePatch = "MWILV28"
+	Next = "ML_MAP17"
+	TitlePatch = "MWILV15"
+	Music = "$MUSIC_MESSAG"
 }
+
+map ML_MAP17 "$ML_TTRAP"
+{
+	Next = "ML_MAP18"
+	TitlePatch = "MWILV16"
+	Music = "$MUSIC_E1M7"
+}
+
+// bonus levels
 
 map ML_MAP29 "$ML_MINES"
 {

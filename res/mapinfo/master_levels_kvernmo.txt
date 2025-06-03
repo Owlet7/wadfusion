@@ -9,19 +9,52 @@ defaultmap
 	Author = "$WF_AU_KVERNMO"
 }
 
-// needed for the zscript-based intermission hacks
-map WF_STORY_ML_MAP19 "$ML_BLOODSEA"
+map ML_MAP10 "$ML_BLACKTWR"
 {
+	Next = "ML_MAP11"
+	TitlePatch = "MWILV09"
+	Music = "$MUSIC_ADRIAN"
+}
+
+map ML_MAP18 "$ML_TEETH"
+{
+	Next = "ML_MAP19"
+	SecretNext = "ML_MAP21"
+	TitlePatch = "MWILV17"
+	Music = "$MUSIC_EVIL"
+}
+
+map ML_MAP19 "$ML_BLOODSEA"
+{
+	Next = "ML_MAP20"
 	TitlePatch = "MWILV18"
+	Music = "$MUSIC_SHAWN"
+	Map07Special
+	ResetHealth
+	ResetInventory
+	ResetItems
 }
 
-// needed for the zscript-based intermission hacks
-map WF_STORY_ML_MAP43 "$ML_THE_EVIL"
+map ML_MAP20 "$ML_MEPHISTO"
 {
-	TitlePatch = "MWILV42"
+	Next = EndSequence, "MasterLevels_End"
+	TitlePatch = "MWILV19"
+	Music = "$MUSIC_SHAWN"
+	AllowMonsterTelefrags
+	Map07Special
 }
 
-map ML_MAP37 "$ML_FLOOD" // reject level
+map ML_MAP21 "$ML_TEETH_SECRET"
+{
+	Next = "ML_MAP19"
+	Cluster = 25
+	TitlePatch = "MWILV20"
+	Music = "$MUSIC_ULTIMA"
+}
+
+// reject levels
+
+map ML_MAP37 "$ML_FLOOD"
 {
 	Next = "ML_MAP38"
 	// Cluster = 41
@@ -29,7 +62,7 @@ map ML_MAP37 "$ML_FLOOD" // reject level
 	Music = "$MUSIC_COUNTD"
 }
 
-map ML_MAP38 "$ML_DERELICT" // reject level
+map ML_MAP38 "$ML_DERELICT"
 {
 	Next = "ML_MAP39"
 	// Cluster = 42
@@ -38,7 +71,7 @@ map ML_MAP38 "$ML_DERELICT" // reject level
 	Author = "$WF_AU_KVERNMO_HYNE"
 }
 
-map ML_MAP39 "$ML_WATCHTWR" // reject level
+map ML_MAP39 "$ML_WATCHTWR"
 {
 	Next = "ML_MAP20"
 	TitlePatch = "MWILV38"
@@ -46,14 +79,14 @@ map ML_MAP39 "$ML_WATCHTWR" // reject level
 	Author = "$WF_AU_KVERNMO_HYNE"
 }
 
-map ML_MAP40 "$ML_TODEATH" // reject level
+map ML_MAP40 "$ML_TODEATH"
 {
 	Next = "ML_MAP18"
 	TitlePatch = "MWILV39"
 	Music = "$MUSIC_DOOM"
 }
 
-map ML_MAP41 "$ML_ARENA" // reject level
+map ML_MAP41 "$ML_ARENA"
 {
 	Next = "ML_MAP42"
 	// Cluster = 45
@@ -61,7 +94,7 @@ map ML_MAP41 "$ML_ARENA" // reject level
 	Music = "$MUSIC_THE_DA"
 }
 
-map ML_MAP42 "$ML_STORM" // reject level
+map ML_MAP42 "$ML_STORM"
 {
 	Next = "ML_MAP10"
 	// Cluster = 46
@@ -69,7 +102,7 @@ map ML_MAP42 "$ML_STORM" // reject level
 	Music = "$MUSIC_IN_CIT"
 }
 
-map ML_MAP43 "$ML_THE_EVIL" // reject level
+map ML_MAP43 "$ML_THE_EVIL"
 {
 	Next = EndSequence, "MasterLevels_End"
 	TitlePatch = "MWILV42"
