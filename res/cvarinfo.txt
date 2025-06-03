@@ -16,6 +16,7 @@ server bool wf_compat_mapfixes = true;
 server bool wf_compat_killcountfix = true;
 server bool wf_compat_nextmap = true;
 nosave bool wf_compat_changemusic = true;
+server bool wf_compat_pistolstart = true;
 server bool wf_compat_titlepics = true;
 
 user bool wf_compat_texswap_d1 = true;

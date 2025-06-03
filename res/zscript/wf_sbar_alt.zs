@@ -407,7 +407,6 @@ extend class WadFusionStatusBar
 				for ( int j = CPlayer.Weapons.SlotSize(slot); j >= 0; j-- )
 				{
 					let getWeaponSlot      = CPlayer.Weapons.GetWeapon(slot, j);
-					let getWeaponReady     = CPlayer.ReadyWeapon.GetClassName();
 					let slotFistBerserk    = getWeaponSlot == "Fist" && hasBerserk;
 					let slotSuperShotgun   = getWeaponSlot == "SuperShotgun";
 					let slotIncinerator    = getWeaponSlot == "ID24Incinerator";
@@ -416,20 +415,27 @@ extend class WadFusionStatusBar
 					let slotBfg9000        = getWeaponSlot == "BFG9000";
 					let weaponSlotReplaced = getWeaponSlot != null && Actor.GetReplacement(getWeaponSlot.GetClassName()) != getWeaponSlot;
 					
-					if ( getWeaponSlot == getWeaponReady )
-						if ( slotFistBerserk )
-							DrawString(mIndexFont, slotStr, weapInvPos,
-									DI_SCREEN_RIGHT_BOTTOM, Font.CR_RED, weapInvAlpha);
-						else
-							DrawString(mIndexFont, slotStr, weapInvPos,
-									DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
-					else if ( CPlayer.mo.FindInventory(getWeaponSlot) )
-						if ( slotFistBerserk )
-							DrawString(mIndexFont, slotStr, weapInvPos,
-									DI_SCREEN_RIGHT_BOTTOM, Font.CR_RED, weapInvInactiveAlpha);
-						else
-							DrawString(mIndexFont, slotStr, weapInvPos,
-									DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
+					if ( CPlayer.ReadyWeapon )
+					{
+						if ( getWeaponSlot == CPlayer.ReadyWeapon.GetClassName() )
+						{
+							if ( slotFistBerserk )
+								DrawString(mIndexFont, slotStr, weapInvPos,
+										DI_SCREEN_RIGHT_BOTTOM, Font.CR_RED, weapInvAlpha);
+							else
+								DrawString(mIndexFont, slotStr, weapInvPos,
+										DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
+						}
+						else if ( CPlayer.mo.FindInventory(getWeaponSlot) )
+						{
+							if ( slotFistBerserk )
+								DrawString(mIndexFont, slotStr, weapInvPos,
+										DI_SCREEN_RIGHT_BOTTOM, Font.CR_RED, weapInvInactiveAlpha);
+							else
+								DrawString(mIndexFont, slotStr, weapInvPos,
+										DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
+						}
+					}
 					
 					if ( j > 0 )
 						weapInvPos.X -= weapInvPosXIncrement;

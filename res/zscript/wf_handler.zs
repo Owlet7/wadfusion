@@ -110,6 +110,15 @@ class WadFusionHandler : EventHandler
 			if ( mapName == "ml_map20" )
 				CVar.FindCVar("wf_nextmap").SetString("ml_end");
 		}
+		
+		// force pistol start on half of the master levels.
+		// this is needed to support switching between the xaser order,
+		// in which they should have pistol starts,
+		// and the rejects order, in which they shouldn't
+		if ( CVar.FindCVar("wf_compat_pistolstart").GetBool() )
+		{
+			ForcePistolStart();
+		}
 	}
 	
 	override void WorldTick()
@@ -270,5 +279,36 @@ class WadFusionHandler : EventHandler
 	{
 		if ( e.Thing && e.Thing.bCountKill )
 			e.Thing.ClearCounters();
+	}
+	
+	void ForcePistolStart()
+	{
+		if ( !CVar.FindCVar("wf_map_mlr").GetBool() )
+		{
+			// string mapName = Level.MapName.MakeLower();
+			if ( Level.NextMap == "ml_map10" || Level.NextMap == "ml_map11" ||
+				Level.NextMap == "ml_map12" || Level.NextMap == "ml_map13" ||
+				Level.NextMap == "ml_map14" || Level.NextMap == "ml_map15" || 
+				Level.NextMap == "ml_map18" || Level.NextMap == "ml_map20" )
+			{
+				for ( int i; i < MAXPLAYERS; i++ )
+				{
+					if ( !playerInGame[i] || !players[i].mo )
+					{
+						continue;
+					}
+					
+					PlayerPawn pPawn = PlayerPawn(players[i].mo);
+					
+					if ( players[i].mo.Health > 0 )
+					{
+						players[i].Health = pPawn.Default.Health;
+						pPawn.Health = pPawn.Default.Health;
+						pPawn.ClearInventory();
+						pPawn.GiveDefaultInventory();
+					}
+				}
+			}
+		}
 	}
 }
