@@ -117,7 +117,17 @@ class WadFusionHandler : EventHandler
 		// and the rejects order, in which they shouldn't
 		if ( CVar.FindCVar("wf_compat_pistolstart").GetBool() )
 		{
-			ForcePistolStart();
+			if ( !CVar.FindCVar("wf_map_mlr").GetBool() )
+			{
+				// string mapName = Level.MapName.MakeLower();
+				if ( Level.NextMap == "ml_map10" || Level.NextMap == "ml_map11" ||
+					Level.NextMap == "ml_map12" || Level.NextMap == "ml_map13" ||
+					Level.NextMap == "ml_map14" || Level.NextMap == "ml_map15" || 
+					Level.NextMap == "ml_map18" || Level.NextMap == "ml_map20" )
+				{
+					ForcePistolStart();
+				}
+			}
 		}
 	}
 	
@@ -283,31 +293,21 @@ class WadFusionHandler : EventHandler
 	
 	void ForcePistolStart()
 	{
-		if ( !CVar.FindCVar("wf_map_mlr").GetBool() )
+		for ( int i; i < MAXPLAYERS; i++ )
 		{
-			// string mapName = Level.MapName.MakeLower();
-			if ( Level.NextMap == "ml_map10" || Level.NextMap == "ml_map11" ||
-				Level.NextMap == "ml_map12" || Level.NextMap == "ml_map13" ||
-				Level.NextMap == "ml_map14" || Level.NextMap == "ml_map15" || 
-				Level.NextMap == "ml_map18" || Level.NextMap == "ml_map20" )
+			if ( !playerInGame[i] || !players[i].mo )
 			{
-				for ( int i; i < MAXPLAYERS; i++ )
-				{
-					if ( !playerInGame[i] || !players[i].mo )
-					{
-						continue;
-					}
-					
-					PlayerPawn pPawn = PlayerPawn(players[i].mo);
-					
-					if ( players[i].mo.Health > 0 )
-					{
-						players[i].Health = pPawn.Default.Health;
-						pPawn.Health = pPawn.Default.Health;
-						pPawn.ClearInventory();
-						pPawn.GiveDefaultInventory();
-					}
-				}
+				continue;
+			}
+			
+			PlayerPawn pPawn = PlayerPawn(players[i].mo);
+			
+			if ( pPawn.Health > 0 )
+			{
+				players[i].Health = pPawn.Default.Health;
+				pPawn.Health = pPawn.Default.Health;
+				pPawn.ClearInventory();
+				pPawn.GiveDefaultInventory();
 			}
 		}
 	}
