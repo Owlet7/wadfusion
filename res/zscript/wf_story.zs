@@ -86,17 +86,17 @@ extend class WadFusionHandler
 			// sub-episodes should begin with pistol starts
 			if ( mapSuffix == "29" )
 			{
-				Level.StartIntermission("MasterLevels_Intro1", FSTATE_INLEVELNOWIPE);
+				Level.StartIntermission("MasterLevels_Map29", FSTATE_INLEVELNOWIPE);
 				CVar.FindCVar("wf_nextmap").SetString("ml_map29");
 			}
 			if ( mapSuffix == "33" )
 			{
-				Level.StartIntermission("MasterLevels_Intro2", FSTATE_INLEVELNOWIPE);
+				Level.StartIntermission("MasterLevels_Map33", FSTATE_INLEVELNOWIPE);
 				CVar.FindCVar("wf_nextmap").SetString("ml_map33");
 			}
 			if ( mapSuffix == "19" )
 			{
-				Level.StartIntermission("MasterLevels_Intro3", FSTATE_INLEVELNOWIPE);
+				Level.StartIntermission("MasterLevels_Map19", FSTATE_INLEVELNOWIPE);
 				CVar.FindCVar("wf_nextmap").SetString("ml_map19");
 			}
 			

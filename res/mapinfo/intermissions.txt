@@ -244,7 +244,9 @@ intermission Plutonia_Intro
 	}
 }
 
-intermission MasterLevels_Intro1
+// Master Levels story
+
+intermission MasterLevels_Map29
 {
 	TextScreen
 	{
@@ -254,7 +256,7 @@ intermission MasterLevels_Intro1
 	}
 }
 
-intermission MasterLevels_Intro2
+intermission MasterLevels_Map33
 {
 	TextScreen
 	{
@@ -264,7 +266,7 @@ intermission MasterLevels_Intro2
 	}
 }
 
-intermission MasterLevels_Intro3
+intermission MasterLevels_Map19
 {
 	TextScreen
 	{
