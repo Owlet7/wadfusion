@@ -18,6 +18,7 @@
 //-----------------------------------------------------------------------------
 //
 
+// everything here is a gross hack
 extend class WadFusionHandler
 {
 	ui void NewGameTitlePic()
@@ -77,13 +78,13 @@ extend class WadFusionHandler
 			if ( Level.MapTime == 0 )
 			{
 				// starting an empty intermission on the first tic removes
-				// the screen wipe that usually heppens when changing levels
+				// the screen wipe that usually happens when changing levels
 				Level.StartIntermission("WadFusionNewGame", FSTATE_INLEVELNOWIPE);
 				
 				let mapSuffix = mapName.Mid(10, 3);
 				
 				// set which map to switch to
-				if ( mapName.Mid(10, 3) == "_d1" )
+				if ( mapSuffix == "_d1" )
 					CVar.FindCVar("wf_nextmap").SetString("e1m1");
 				else if ( mapSuffix == "_ud" )
 					CVar.FindCVar("wf_nextmap").SetString("e4m1");
@@ -181,5 +182,7 @@ extend class WadFusionHandler
 		}
 		else
 			Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
+		
+		CVar.FindCVar("wf_nextmap").ResetToDefault();
 	}
 }
