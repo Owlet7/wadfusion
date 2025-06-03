@@ -1,12 +1,12 @@
 nosave bool wf_mus_sigilmp3 = false;
 nosave bool wf_mus_sigil2mp3 = false;
 nosave bool wf_mus_idkfa = false;
+user bool wf_id24trans = false;
 server bool wf_map_e1m8b = false;
 server bool wf_map_e1m4b = false;
 server bool wf_map_mlr = false;
 server bool wf_map_mlr_story = false;
-user bool wf_id24trans = false;
-server int wf_intros = 0;
+server bool wf_intros = false;
 server bool wf_fullrun = false;
 
 server int wf_compat_id24_weapons = 1;
@@ -16,6 +16,7 @@ server bool wf_compat_mapfixes = true;
 server bool wf_compat_killcountfix = true;
 server bool wf_compat_nextmap = true;
 nosave bool wf_compat_changemusic = true;
+server bool wf_compat_titlepics = true;
 
 user bool wf_compat_texswap_d1 = true;
 user bool wf_compat_texswap_fd = true;

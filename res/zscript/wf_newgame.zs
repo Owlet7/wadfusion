@@ -37,7 +37,7 @@ extend class WadFusionHandler
 			TextureId titleTN = TexMan.CheckForTexture("TITLETN");
 			TextureId titlePL = TexMan.CheckForTexture("TITLEPL");
 			
-			if ( CVar.FindCVar("wf_intros").GetInt() >= 1 )
+			if ( CVar.FindCVar("wf_compat_titlepics").GetBool() )
 			{
 				let mapSuffix = mapName.Mid(10, 3);
 				
@@ -104,7 +104,7 @@ extend class WadFusionHandler
 				else if ( mapSuffix == "_pl" )
 					CVar.FindCVar("wf_nextmap").SetString("pl_map01");
 				
-				if ( CVar.FindCVar("wf_intros").GetInt() >= 1 )
+				if ( CVar.FindCVar("wf_compat_titlepics").GetBool() )
 				{
 					// play title music for each game
 					if ( mapSuffix == "_d1" || mapSuffix == "_ud" )
@@ -172,7 +172,7 @@ extend class WadFusionHandler
 	{
 		string nextMap = CVar.FindCVar("wf_nextmap").GetString();
 		string mapName = Level.MapName.MakeLower();
-		if ( CVar.FindCVar("wf_intros").GetInt() >= 2 )
+		if ( CVar.FindCVar("wf_intros").GetBool() )
 		{
 			if ( mapName != "wf_newgame_ml" && mapName != "wf_newgame_ud" )
 				Level.ChangeLevel("wf_story", 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
