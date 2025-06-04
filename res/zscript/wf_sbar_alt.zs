@@ -78,24 +78,26 @@ extend class WadFusionStatusBar
 		let hasInfrared              = Powerup(CPlayer.mo.FindInventory("PowerLightAmp"));
 		let hasRadSuit               = Powerup(CPlayer.mo.FindInventory("PowerIronFeet"));
 		
-		let altHudMugshot         = CVar.FindCVar("wf_hud_alt_mugshot").GetBool();
-		let altHudHealth          = CVar.FindCVar("wf_hud_alt_health").GetBool();
-		let altHudArmor           = CVar.FindCVar("wf_hud_alt_armor").GetBool();
-		let altHudAmmo            = CVar.FindCVar("wf_hud_alt_ammo").GetBool();
-		let altHudAmmoInv         = CVar.FindCVar("wf_hud_alt_ammoinv").GetBool();
-		let altHudPowerup         = CVar.FindCVar("wf_hud_alt_powerup").GetBool();
-		let altHudWeapInv         = CVar.FindCVar("wf_hud_alt_weapinv").GetBool();
-		let altHudKeys            = CVar.FindCVar("wf_hud_alt_keys").GetBool();
-		let altHudFrags           = CVar.FindCVar("wf_hud_alt_frags").GetBool();
-		let altHudStatsIcons      = CVar.FindCVar("wf_hud_alt_stats_icons").GetBool();
-		int altHudStatsKills      = CVar.FindCVar("wf_hud_alt_stats_kills").GetInt();
-		let altHudStatsItems      = CVar.FindCVar("wf_hud_alt_stats_items").GetBool();
-		let altHudStatsSecrets    = CVar.FindCVar("wf_hud_alt_stats_secrets").GetBool();
-		let altHudStatsTime       = CVar.FindCVar("wf_hud_alt_stats_time").GetBool();
-		let altHudStatsTotalTime  = CVar.FindCVar("wf_hud_alt_stats_totaltime").GetBool();
-		let altHudStatsTimeMillis = CVar.FindCVar("wf_hud_alt_stats_timemillis").GetBool();
-		let altHudStatsMapName    = CVar.FindCVar("wf_hud_alt_stats_mapname").GetBool();
-		let altHudStatsMapLabel   = CVar.FindCVar("wf_hud_alt_stats_maplabel").GetBool();
+		let altHudMugshot          = CVar.FindCVar("wf_hud_alt_mugshot").GetBool();
+		let altHudHealth           = CVar.FindCVar("wf_hud_alt_health").GetBool();
+		let altHudArmor            = CVar.FindCVar("wf_hud_alt_armor").GetBool();
+		let altHudAmmo             = CVar.FindCVar("wf_hud_alt_ammo").GetBool();
+		let altHudAmmoInv          = CVar.FindCVar("wf_hud_alt_ammoinv").GetBool();
+		let altHudPowerup          = CVar.FindCVar("wf_hud_alt_powerup").GetBool();
+		let altHudWeapInv          = CVar.FindCVar("wf_hud_alt_weapinv").GetBool();
+		let altHudKeys             = CVar.FindCVar("wf_hud_alt_keys").GetBool();
+		let altHudFrags            = CVar.FindCVar("wf_hud_alt_frags").GetBool();
+		let altHudStatsIcons       = CVar.FindCVar("wf_hud_alt_stats_icons").GetBool();
+		int altHudStatsKills       = CVar.FindCVar("wf_hud_alt_stats_kills").GetInt();
+		let altHudStatsItems       = CVar.FindCVar("wf_hud_alt_stats_items").GetBool();
+		let altHudStatsSecrets     = CVar.FindCVar("wf_hud_alt_stats_secrets").GetBool();
+		let altHudStatsTime        = CVar.FindCVar("wf_hud_alt_stats_time").GetBool();
+		let altHudStatsTotalTime   = CVar.FindCVar("wf_hud_alt_stats_totaltime").GetBool();
+		let altHudStatsTimeMillis  = CVar.FindCVar("wf_hud_alt_stats_timemillis").GetBool();
+		let altHudStatsMapName     = CVar.FindCVar("wf_hud_alt_stats_mapname").GetBool();
+		let altHudStatsMapLabel    = CVar.FindCVar("wf_hud_alt_stats_maplabel").GetBool();
+		let altHudStatsDontOffsetL = CVar.FindCVar("wf_hud_alt_stats_dontoffset_l").GetBool();
+		let altHudStatsDontOffsetR = CVar.FindCVar("wf_hud_alt_stats_dontoffset_r").GetBool();
 		
 		double healthAlpha          = CVar.FindCVar("wf_hud_alt_alpha_health").GetFloat();
 		double ammoAlpha            = CVar.FindCVar("wf_hud_alt_alpha_ammo").GetFloat();
@@ -460,7 +462,12 @@ extend class WadFusionStatusBar
 		}
 		
 		// Draw stats
-		Vector2 statsPos = (4 + ultraWide, -72);
+		int statsOffsetL = 0;
+		
+		if ( !altHudStatsDontOffsetL )
+			statsOffsetL = ultraWide;
+		
+		Vector2 statsPos = (4 + statsOffsetL, -72);
 		int statsPosYIncrement = 0;
 		if ( altHudStatsIcons )
 			statsPosYIncrement = 12;
@@ -469,8 +476,8 @@ extend class WadFusionStatusBar
 		
 		if ( deathmatch && altHudFrags )
 		{
-			DrawImage("M_SKULL1", (20 + ultraWide, -64), DI_SCREEN_LEFT_BOTTOM, fragsAlpha);
-			DrawString(mHUDFont, FormatNumber(CPlayer.FragCount, 1), (40 + ultraWide, -79),
+			DrawImage("M_SKULL1", (20 + statsOffsetL, -64), DI_SCREEN_LEFT_BOTTOM, fragsAlpha);
+			DrawString(mHUDFont, FormatNumber(CPlayer.FragCount, 1), (40 + statsOffsetL, -79),
 					DI_SCREEN_LEFT_BOTTOM|DI_NOSHADOW, Font.CR_WHITE, fragsAlpha);
 		}
 		else if ( !deathmatch )
@@ -540,7 +547,12 @@ extend class WadFusionStatusBar
 		}
 		
 		// Draw time
-		Vector2 timePos = (-4 - ultraWide, 0);
+		int statsOffsetR = 0;
+		
+		if ( !altHudStatsDontOffsetR )
+			statsOffsetR = ultraWide;
+		
+		Vector2 timePos = (-4 - statsOffsetR, 0);
 		int timePosYIncrement = 9;
 		
 		if ( altHudStatsTime )
@@ -591,6 +603,9 @@ extend class WadFusionStatusBar
 			DrawString(mSmallFont, Level.LevelName, timePos,
 					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_RED, mapNameAlpha);
 		}
-		timePos.Y += timePosYIncrement;
+		if ( altHudStatsMapLabel || altHudStatsMapName )
+		{
+			timePos.Y += timePosYIncrement;
+		}
 	}
 }
