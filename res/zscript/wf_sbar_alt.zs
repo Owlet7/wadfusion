@@ -494,7 +494,7 @@ extend class WadFusionStatusBar
 					DrawImage("SECRETS", (statsPos.X + 4, statsPos.Y + 8),
 							DI_SCREEN_LEFT_BOTTOM, statsAlpha);
 				else
-					DrawString(mSmallFont, "S:", statsPos,
+					DrawString(mSmallFontMono, "S:", statsPos,
 							DI_SCREEN_LEFT_BOTTOM, Font.CR_RED, statsAlpha);
 				if ( mapSectersFound == mapSectersTotal )
 					DrawString(mSmallFont, mapSecrets, (statsPos.X + 16, statsPos.Y),
@@ -514,7 +514,7 @@ extend class WadFusionStatusBar
 					DrawImage("ITEMS", (statsPos.X + 4, statsPos.Y + 8),
 							DI_SCREEN_LEFT_BOTTOM, statsAlpha);
 				else
-					DrawString(mSmallFont, "I:", statsPos,
+					DrawString(mSmallFontMono, "I:", statsPos,
 							DI_SCREEN_LEFT_BOTTOM, Font.CR_RED, statsAlpha);
 				if ( mapItemsFound == mapItemsTotal )
 					DrawString(mSmallFont, mapItems, (statsPos.X + 16, statsPos.Y),
@@ -536,7 +536,7 @@ extend class WadFusionStatusBar
 						DrawImage("KILLS", (statsPos.X + 4, statsPos.Y + 8),
 								DI_SCREEN_LEFT_BOTTOM, statsAlpha);
 					else
-						DrawString(mSmallFont, "K:", statsPos,
+						DrawString(mSmallFontMono, "K:", statsPos,
 								DI_SCREEN_LEFT_BOTTOM, Font.CR_RED, statsAlpha);
 					if ( mapMonstersFound == mapMonstersTotal )
 						DrawString(mSmallFont, mapMonsters, (statsPos.X + 16, statsPos.Y),
@@ -568,7 +568,7 @@ extend class WadFusionStatusBar
 			int millis  = (timeTicks % GameTicRate) * 1000 / GameTicRate;
 			String timeString = String.Format("%02i:%02i:%02i", hours, minutes, seconds);
 			String timeMillisString = String.Format(timeString..".%03i", millis);
-			DrawString(mSmallFont, altHudStatsTimeMillis ? timeMillisString : timeString, timePos,
+			DrawString(mSmallFontMono, altHudStatsTimeMillis ? timeMillisString : timeString, timePos,
 					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, timeAlpha);
 			timePos.Y += timePosYIncrement;
 		}
@@ -584,7 +584,7 @@ extend class WadFusionStatusBar
 			int millis  = (timeTicks % GameTicRate) * 1000 / GameTicRate;
 			String timeString = String.Format("%02i:%02i:%02i", hours, minutes, seconds);
 			String timeMillisString = String.Format(timeString..".%03i", millis);
-			DrawString(mSmallFont, altHudStatsTimeMillis ? timeMillisString : timeString, timePos,
+			DrawString(mSmallFontMono, altHudStatsTimeMillis ? timeMillisString : timeString, timePos,
 					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, timeAlpha);
 			timePos.Y += timePosYIncrement;
 		}
@@ -626,7 +626,7 @@ extend class WadFusionStatusBar
 			else if ( skill == 4 )
 				skillName = StringTable.Localize("$SKILL_NIGHTMARE");
 			else
-				skillName = String.Format("Skill %01i", skill);
+				skillName = String.Format("Skill %i", skill);
 			DrawString(mSmallFont, skillName, timePos,
 					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, mapNameAlpha);
 			timePos.Y += timePosYIncrement;

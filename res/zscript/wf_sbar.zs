@@ -28,6 +28,7 @@ class WadFusionStatusBar : BaseStatusBar
 	
 	HUDFont mConFont;
 	HUDFont mSmallFont;
+	HUDFont mSmallFontMono;
 	
 	
 	override void Init()
@@ -47,7 +48,8 @@ class WadFusionStatusBar : BaseStatusBar
 		fnt = "CONFONT";
 		mConFont = HUDFont.Create(fnt, fnt.GetCharWidth("0"), Mono_CellCenter);
 		fnt = "SMALLFONT";
-		mSmallFont = HUDFont.Create(fnt, fnt.GetCharWidth("0"), Mono_CellCenter);
+		mSmallFont = HUDFont.Create(fnt, 0, Mono_Off);
+		mSmallFontMono = HUDFont.Create(fnt, fnt.GetCharWidth("0"), Mono_CellCenter);
 	}
 
 	override void Draw (int state, double TicFrac)
