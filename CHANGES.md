@@ -20,6 +20,7 @@
 - Removed `SKY1` from the Legacy of Rust list in the texture replacements script.
   Not sure how it got there.
 - Added options to not horizontally offset the alternate fullscreen HUD stats.
+- Added an option to show the skill level on the alternate fullscreen HUD stats.
 
 ## [WadFusion 1.5.1](https://github.com/Owlet7/wadfusion/releases/tag/v1.5.1) — [03 May 2025](https://github.com/Owlet7/wadfusion/tree/v1.5.1)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.0...v1.5.1)

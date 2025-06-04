@@ -178,6 +178,7 @@ nosave bool wf_hud_alt_stats_totaltime = false;
 nosave bool wf_hud_alt_stats_timemillis = false;
 nosave bool wf_hud_alt_stats_mapname = false;
 nosave bool wf_hud_alt_stats_maplabel = false;
+nosave bool wf_hud_alt_stats_skill = false;
 nosave bool wf_hud_alt_stats_dontoffset_l = false;
 nosave bool wf_hud_alt_stats_dontoffset_r = false;
 nosave float wf_hud_alt_alpha_health = 1.0;

@@ -41,6 +41,8 @@ extend class WadFusionStatusBar
 		if ( CVar.FindCVar("wf_hud_ultrawide_fullscreen").GetBool() && !CVar.FindCVar("vid_fullscreen").GetBool() )
 			ultraWide = 0;
 		
+		let skill = CVar.FindCVar("skill").GetInt();
+		
 		int health    = CPlayer.health;
 		int maxHealth = CPlayer.mo.GetMaxHealth(true);
 		let armor     = CPlayer.mo.FindInventory("BasicArmor");
@@ -96,6 +98,7 @@ extend class WadFusionStatusBar
 		let altHudStatsTimeMillis  = CVar.FindCVar("wf_hud_alt_stats_timemillis").GetBool();
 		let altHudStatsMapName     = CVar.FindCVar("wf_hud_alt_stats_mapname").GetBool();
 		let altHudStatsMapLabel    = CVar.FindCVar("wf_hud_alt_stats_maplabel").GetBool();
+		let altHudStatsSkill       = CVar.FindCVar("wf_hud_alt_stats_skill").GetBool();
 		let altHudStatsDontOffsetL = CVar.FindCVar("wf_hud_alt_stats_dontoffset_l").GetBool();
 		let altHudStatsDontOffsetR = CVar.FindCVar("wf_hud_alt_stats_dontoffset_r").GetBool();
 		
@@ -587,7 +590,7 @@ extend class WadFusionStatusBar
 		}
 		
 		// Draw map name
-		String mapFullName = Level.MapName..": "..Level.LevelName;
+		String mapFullName = Level.MapName..": \cj"..Level.LevelName;
 		if ( altHudStatsMapLabel && altHudStatsMapName )
 		{
 			DrawString(mSmallFont, mapFullName, timePos,
@@ -601,10 +604,31 @@ extend class WadFusionStatusBar
 		else if ( altHudStatsMapName )
 		{
 			DrawString(mSmallFont, Level.LevelName, timePos,
-					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_RED, mapNameAlpha);
+					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, mapNameAlpha);
 		}
 		if ( altHudStatsMapLabel || altHudStatsMapName )
 		{
+			timePos.Y += timePosYIncrement;
+		}
+		
+		// Draw skill
+		if ( altHudStatsSkill )
+		{
+			String skillName = "";
+			if ( skill == 0 )
+				skillName = StringTable.Localize("$SKILL_BABY");
+			else if ( skill == 1 )
+				skillName = StringTable.Localize("$SKILL_EASY");
+			else if ( skill == 2 )
+				skillName = StringTable.Localize("$SKILL_NORMAL");
+			else if ( skill == 3 )
+				skillName = StringTable.Localize("$SKILL_HARD");
+			else if ( skill == 4 )
+				skillName = StringTable.Localize("$SKILL_NIGHTMARE");
+			else
+				skillName = String.Format("Skill %01i", skill);
+			DrawString(mSmallFont, skillName, timePos,
+					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, mapNameAlpha);
 			timePos.Y += timePosYIncrement;
 		}
 	}
