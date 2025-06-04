@@ -40,6 +40,12 @@ extend class WadFusionHandler
 			
 			if ( CVar.FindCVar("wf_compat_titlepics").GetBool() )
 			{
+				// draw a black overlay over the entire screen
+				// hides the HUD under the titlepic overlay that gets drawn next
+				int resX = Screen.GetWidth();
+				int resY = Screen.GetHeight();
+				Screen.DrawTexture(titlePic, false, 0, 0, DTA_ScaleX, resX, DTA_ScaleY, resY, DTA_FillColor, 0);
+				
 				let mapSuffix = mapName.Mid(10, 3);
 				
 				if ( mapSuffix == "_d1" )
