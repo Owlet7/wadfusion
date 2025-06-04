@@ -119,7 +119,6 @@ class WadFusionHandler : EventHandler
 		{
 			if ( !CVar.FindCVar("wf_map_mlr").GetBool() )
 			{
-				// string mapName = Level.MapName.MakeLower();
 				if ( Level.NextMap == "ml_map10" || Level.NextMap == "ml_map11" ||
 					Level.NextMap == "ml_map12" || Level.NextMap == "ml_map13" ||
 					Level.NextMap == "ml_map14" || Level.NextMap == "ml_map15" || 

@@ -11,6 +11,8 @@
     story texts taken from each games' instrustion manuals.
 - Added an option to toggle between Xaser's order for the Master Levels, and the
   Rejects order.
+  - Added optional story intermissions for the Master Levels Rejects map order,
+    with text taken from their readme files.
   - Removed Master Levels Rejects sub-episodes from the episodes menu.
 - Added "Music Substitutions" options.
   - These can be used to force Final DOOM music in DOOM II on a per-map basis.

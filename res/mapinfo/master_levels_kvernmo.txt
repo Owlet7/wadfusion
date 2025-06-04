@@ -57,7 +57,6 @@ map ML_MAP21 "$ML_TEETH_SECRET"
 map ML_MAP37 "$ML_FLOOD"
 {
 	Next = "ML_MAP38"
-	// Cluster = 41
 	TitlePatch = "MWILV36"
 	Music = "$MUSIC_COUNTD"
 }
@@ -65,7 +64,6 @@ map ML_MAP37 "$ML_FLOOD"
 map ML_MAP38 "$ML_DERELICT"
 {
 	Next = "ML_MAP39"
-	// Cluster = 42
 	TitlePatch = "MWILV37"
 	Music = "$MUSIC_STALKS"
 	Author = "$WF_AU_KVERNMO_HYNE"
@@ -89,7 +87,6 @@ map ML_MAP40 "$ML_TODEATH"
 map ML_MAP41 "$ML_ARENA"
 {
 	Next = "ML_MAP42"
-	// Cluster = 45
 	TitlePatch = "MWILV40"
 	Music = "$MUSIC_THE_DA"
 }
@@ -97,7 +94,6 @@ map ML_MAP41 "$ML_ARENA"
 map ML_MAP42 "$ML_STORM"
 {
 	Next = "ML_MAP10"
-	// Cluster = 46
 	TitlePatch = "MWILV41"
 	Music = "$MUSIC_IN_CIT"
 }

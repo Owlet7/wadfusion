@@ -54,6 +54,9 @@ map ML_MAP33 "$ML_DANTES"
 	Next = "ML_MAP34"
 	TitlePatch = "MWILV32"
 	Music = "$MUSIC_STALKS"
+	ResetHealth
+	ResetInventory
+	ResetItems
 }
 
 map ML_MAP34 "$ML_ACHERON"

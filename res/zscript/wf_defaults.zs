@@ -22,22 +22,26 @@ extend class WadFusionStaticHandler
 {
 	ui void WadFusionReset2Defaults()
 	{
+		CVar.FindCVar("wf_id24trans").ResetToDefault();
 		CVar.FindCVar("wf_mus_sigilmp3").ResetToDefault();
 		CVar.FindCVar("wf_mus_sigil2mp3").ResetToDefault();
 		CVar.FindCVar("wf_mus_idkfa").ResetToDefault();
 		CVar.FindCVar("wf_map_e1m8b").ResetToDefault();
 		CVar.FindCVar("wf_map_e1m4b").ResetToDefault();
-		CVar.FindCVar("wf_id24trans").ResetToDefault();
+		CVar.FindCVar("wf_map_mlr").ResetToDefault();
+		CVar.FindCVar("wf_map_mlr_story").ResetToDefault();
 		CVar.FindCVar("wf_intros").ResetToDefault();
 		CVar.FindCVar("wf_fullrun").ResetToDefault();
 		
 		CVar.FindCVar("wf_compat_id24_weapons").ResetToDefault();
 		CVar.FindCVar("wf_compat_sigil2spiderboss").ResetToDefault();
-		CVar.FindCVar("wf_compat_xboxsecretexits").ResetToDefault();
-		CVar.FindCVar("wf_compat_mapfixes").ResetToDefault();
 		CVar.FindCVar("wf_compat_killcountfix").ResetToDefault();
-		CVar.FindCVar("wf_compat_nextmap").ResetToDefault();
+		CVar.FindCVar("wf_compat_xboxsecretexits").ResetToDefault();
+		CVar.FindCVar("wf_compat_pistolstart").ResetToDefault();
 		CVar.FindCVar("wf_compat_changemusic").ResetToDefault();
+		CVar.FindCVar("wf_compat_nextmap").ResetToDefault();
+		CVar.FindCVar("wf_compat_titlepics").ResetToDefault();
+		CVar.FindCVar("wf_compat_mapfixes").ResetToDefault();
 		
 		CVar.FindCVar("wf_compat_texswap_d1").ResetToDefault();
 		CVar.FindCVar("wf_compat_texswap_fd").ResetToDefault();
@@ -137,6 +141,7 @@ extend class WadFusionStaticHandler
 		CVar.FindCVar("wf_compat_texswap_all_mlr_31").ResetToDefault();
 		CVar.FindCVar("wf_compat_texswap_all_mlr_32").ResetToDefault();
 		
+		CVar.FindCVar("wf_compat_musswap").ResetToDefault();
 		CVar.FindCVar("wf_compat_musswap_00").ResetToDefault();
 		CVar.FindCVar("wf_compat_musswap_01").ResetToDefault();
 		CVar.FindCVar("wf_compat_musswap_02").ResetToDefault();

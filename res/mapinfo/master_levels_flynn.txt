@@ -40,7 +40,6 @@ map ML_MAP29 "$ML_MINES"
 map ML_MAP30 "$ML_ANOMALY"
 {
 	Next = "ML_MAP31"
-	// Cluster = 32
 	TitlePatch = "MWILV29"
 	Music = "$MUSIC_DOOM"
 }
@@ -48,7 +47,6 @@ map ML_MAP30 "$ML_ANOMALY"
 map ML_MAP31 "$ML_FARSIDE"
 {
 	Next = "ML_MAP32"
-	// Cluster = 33
 	TitlePatch = "MWILV30"
 	Music = "$MUSIC_ROMERO"
 }
@@ -56,7 +54,6 @@ map ML_MAP31 "$ML_FARSIDE"
 map ML_MAP32 "$ML_TROUBLE"
 {
 	Next = "ML_MAP16"
-	// Cluster = 34
 	TitlePatch = "MWILV31"
 	Music = "$MUSIC_AMPIE"
 }
