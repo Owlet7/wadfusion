@@ -178,11 +178,15 @@ extend class WadFusionHandler
 			if ( mapName != "wf_newgame_ml" && mapName != "wf_newgame_ud" )
 				Level.ChangeLevel("wf_story", 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
 			else
+			{
 				Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
+				CVar.FindCVar("wf_nextmap").ResetToDefault();
+			}
 		}
 		else
+		{
 			Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
-		
-		CVar.FindCVar("wf_nextmap").ResetToDefault();
+			CVar.FindCVar("wf_nextmap").ResetToDefault();
+		}
 	}
 }
