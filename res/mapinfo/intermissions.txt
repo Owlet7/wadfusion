@@ -1,7 +1,136 @@
 // Intermissions
 
 
-// Legacy of Rust ending cast roll with new enemies
+// Doom Episode 1
+
+intermission Doom1_Ep1_Fusion
+{
+	TextScreen
+	{
+		Text = "$E1TEXT"
+		Background = "$bgflatE1", 1
+		Music = "$MUSIC_VICTOR"
+	}
+	Wiper {}
+	Link = Inter_Pic1
+}
+
+// Doom Episode 2
+
+intermission Doom1_Ep2_Fusion
+{
+	TextScreen
+	{
+		Text = "$E2TEXT"
+		Background = "$bgflatE2", 1
+		Music = "$MUSIC_VICTOR"
+	}
+	Wiper {}
+	Link = Inter_Pic2
+}
+
+// Doom Episode 4
+
+intermission Doom1_Ep4_Fusion
+{
+	TextScreen
+	{
+		Text = "$E4TEXT"
+		Background = "$bgflatE4", 1
+		Music = "$MUSIC_VICTOR"
+	}
+	Wiper {}
+	Link = Inter_Pic3
+}
+
+// Sigil
+
+intermission Doom1_Ep5_Fusion
+{
+	TextScreen
+	{
+		Text = "$E5TEXT"
+		Background = "$FLOOR7_2", 1
+		Music = "$MUSIC_VICTOR"
+	}
+	Wiper {}
+	Image
+	{
+		Background = "SIGILEND"
+	}
+}
+
+// Sigil 2
+
+intermission Doom1_Ep6_Fusion
+{
+	TextScreen
+	{
+		Text = "$E6TEXT"
+		Background = "$FLOOR7_2", 1
+		Music = "$MUSIC_VICTOR"
+	}
+	Wiper {}
+	Image
+	{
+		Background = "SIGILEN2"
+	}
+}
+
+// Master Levels
+
+intermission MasterLevels_End
+{
+	TextScreen
+	{
+		Text = "$MLEND"
+		Background = "$BGFLAT06", 1
+		Music = "$MUSIC_READ_M"
+	}
+	Wiper {}
+	Link = Inter_Cast
+}
+
+// Cast
+
+intermission Inter_Cast_Tnt
+{
+	Image
+	{
+		Background = "BOSSTN"
+		Time = -1
+		Music = "T_EVIL"
+	}
+	Link = Doom2Cast
+}
+
+intermission Inter_Cast_Plutonia
+{
+	Image
+	{
+		Background = "BOSSPL"
+		Time = -1
+		Music = "P_EVIL"
+	}
+	Link = Doom2Cast
+}
+
+// Legacy of Rust
+
+intermission Id1_Ep1_Fusion
+{
+	TextScreen
+	{
+		Text = "$INTERTEXT_ID1_E1"
+		Background = "SLIME20", 1
+		Music = "D_SHORES"
+	}
+	Wiper {}
+	Image
+	{
+		Background = "CREDITLR"
+	}
+}
 
 intermission Id1Cast
 {
@@ -58,202 +187,4 @@ intermission Id1Cast
 		AttackSound = "Missile", 0, "weapons/sshotf"
 	}
 	Link = Id1Cast
-}
-
-// Master Levels ending
-
-intermission MasterLevels_End
-{
-	TextScreen
-	{
-		Text = "$MLEND"
-		Background = "$BGFLAT06", 1
-		Music = "$MUSIC_READ_M"
-	}
-	Wiper {}
-	Link = Inter_Cast
-}
-
-// New Game intros
-
-intermission WadFusionNewGame {}
-
-intermission Doom1_Intro
-{
-	TextScreen
-	{
-		Text = "$D1INTRO1"
-		Background = "$FLAT14", 1
-		Music = "$MUSIC_VICTOR"
-	}
-	
-	TextScreen
-	{
-		Text = "$D1INTRO2"
-	}
-	
-	TextScreen
-	{
-		Text = "$D1INTRO3"
-	}
-	
-	TextScreen
-	{
-		Text = "$D1INTRO4"
-	}
-}
-
-intermission Sigil_Intro
-{
-	TextScreen
-	{
-		Text = "$E5INTRO"
-		Background = "$LAVA2", 1
-		Music = "$MUSIC_VICTOR"
-	}
-}
-
-intermission Sigil2_Intro
-{
-	TextScreen
-	{
-		Text = "$E6INTRO"
-		Background = "$FLAT5_8", 1
-		Music = "$MUSIC_VICTOR"
-	}
-}
-
-intermission Doom2_Intro
-{
-	TextScreen
-	{
-		Text = "$D2INTRO1"
-		Background = "$GRASS2", 1
-		Music = "$MUSIC_READ_M"
-	}
-	
-	TextScreen
-	{
-		Text = "$D2INTRO2"
-	}
-	
-	TextScreen
-	{
-		Text = "$D2INTRO3"
-	}
-	
-	TextScreen
-	{
-		Text = "$D2INTRO4"
-	}
-	
-	TextScreen
-	{
-		Text = "$D2INTRO5"
-	}
-}
-
-intermission Nerve_Intro
-{
-	TextScreen
-	{
-		Text = "$NVINTRO"
-		Background = "$GRASS2", 1
-		Music = "$MUSIC_READ_M"
-	}
-}
-
-intermission Id1_Intro
-{
-	TextScreen
-	{
-		Text = "$ID1INTRO1"
-		Background = "$FLOOR4_7", 1
-		Music = "D_SHORES"
-	}
-	
-	TextScreen
-	{
-		Text = "$ID1INTRO2"
-	}
-}
-
-intermission Tnt_Intro
-{
-	TextScreen
-	{
-		Text = "$TNINTRO1"
-		Background = "$GRASS2", 1
-		Music = "T_READ_M"
-	}
-	
-	TextScreen
-	{
-		Text = "$TNINTRO2"
-	}
-	
-	TextScreen
-	{
-		Text = "$TNINTRO3"
-	}
-	
-	TextScreen
-	{
-		Text = "$TNINTRO4"
-	}
-	
-	TextScreen
-	{
-		Text = "$TNINTRO5"
-	}
-	
-	TextScreen
-	{
-		Text = "$TNINTRO6"
-	}
-	
-	TextScreen
-	{
-		Text = "$TNINTRO7"
-	}
-}
-
-intermission Plutonia_Intro
-{
-	TextScreen
-	{
-		Text = "$PLINTRO1"
-		Background = "$GRASS2", 1
-		Music = "P_READ_M"
-	}
-	
-	TextScreen
-	{
-		Text = "$PLINTRO2"
-	}
-	
-	TextScreen
-	{
-		Text = "$PLINTRO3"
-	}
-	
-	TextScreen
-	{
-		Text = "$PLINTRO4"
-	}
-	
-	TextScreen
-	{
-		Text = "$PLINTRO5"
-	}
-	
-	TextScreen
-	{
-		Text = "$PLINTRO6"
-	}
-	
-	TextScreen
-	{
-		Text = "$PLINTRO7"
-	}
 }

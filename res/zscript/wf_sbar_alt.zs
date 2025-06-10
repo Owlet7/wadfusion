@@ -37,11 +37,18 @@ extend class WadFusionStatusBar
 		
 		let isDoom1 = mapName.Left(1) == "e" && mapName.Mid(2, 1) == "m";
 		
+		int skill = CVar.FindCVar("skill").GetInt();
+		
+		let rejects = CVar.FindCVar("wf_map_mlr").GetBool();
+		string ml = mapName.Mid(6);
+		let isCabal = CVar.FindCVar("wf_map_mlr").GetBool() && mapName.Left(6) == "ml_map" &&
+			( ml == "19" || ml == "37" || ml == "38" || ml == "39" || ml == "20" || ml == "40" ||
+			ml == "18" || ml == "41" || ml == "42" || ml == "10" || ml == "43" || ml == "21" );
+		
 		int ultraWide = CVar.FindCVar("wf_hud_ultrawide").GetInt();
 		if ( CVar.FindCVar("wf_hud_ultrawide_fullscreen").GetBool() && !CVar.FindCVar("vid_fullscreen").GetBool() )
 			ultraWide = 0;
 		
-		let skill = CVar.FindCVar("skill").GetInt();
 		
 		int health    = CPlayer.health;
 		int maxHealth = CPlayer.mo.GetMaxHealth(true);
@@ -618,11 +625,26 @@ extend class WadFusionStatusBar
 			if ( skill == 0 )
 				skillName = StringTable.Localize("$SKILL_BABY");
 			else if ( skill == 1 )
-				skillName = StringTable.Localize("$SKILL_EASY");
+			{
+				if ( !isCabal )
+					skillName = StringTable.Localize("$SKILL_EASY");
+				else
+					skillName = StringTable.Localize("$SKILL_NORMAL");
+			}
 			else if ( skill == 2 )
-				skillName = StringTable.Localize("$SKILL_NORMAL");
+			{
+				if ( !isCabal )
+					skillName = StringTable.Localize("$SKILL_NORMAL");
+				else
+					skillName = StringTable.Localize("$SKILL_HARD");
+			}
 			else if ( skill == 3 )
-				skillName = StringTable.Localize("$SKILL_HARD");
+			{
+				if ( !isCabal )
+					skillName = StringTable.Localize("$SKILL_HARD");
+				else
+					skillName = StringTable.Localize("$WF_SKILL_CARNAGE");
+			}
 			else if ( skill == 4 )
 				skillName = StringTable.Localize("$SKILL_NIGHTMARE");
 			else

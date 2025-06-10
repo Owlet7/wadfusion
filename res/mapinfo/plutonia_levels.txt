@@ -278,12 +278,7 @@ map PL_MAP29 "$PHUSTR_29"
 
 map PL_MAP30 "$PHUSTR_30"
 {
-	Next = EndGame
-	{
-		Pic = "PLUBOSS"
-		Music = "P_THE_DA"
-		Cast
-	}
+	Next = EndSequence, "Inter_Cast_Plutonia"
 	TitlePatch = "PWILV29"
 	Music = "P_OPENIN"
 	AllowMonsterTelefrags

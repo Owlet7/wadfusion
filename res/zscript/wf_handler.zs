@@ -102,15 +102,6 @@ class WadFusionHandler : EventHandler
 			PlaySigilInterMusic();
 		}
 		
-		// set a parameter needed for the master levels ending
-		// a hack needed for the xaser order
-		if ( CVar.FindCVar("wf_compat_nextmap").GetBool() && !CVar.FindCVar("wf_map_mlr").GetBool() )
-		{
-			string mapName = Level.MapName.MakeLower();
-			if ( mapName == "ml_map20" )
-				CVar.FindCVar("wf_nextmap").SetString("ml_end");
-		}
-		
 		// force pistol start on half of the master levels.
 		// this is needed to support switching between the xaser order,
 		// in which they should have pistol starts,
@@ -138,42 +129,10 @@ class WadFusionHandler : EventHandler
 			// as a warm-up exercise for the cancelled game Blackroom
 			DoBlackroomMapReplacements();
 			
-			// add the reject levels to the master levels mapset
 			// wf_masterlevels.zs
+			// add the reject levels to the master levels mapset
 			AddMasterLevelsRejects();
 		}
-		
-		// very hacky methods of adding optional titlescreens
-		// and story intermissions when starting new games
-		// wf_newgame.zs
-		NewGameIntro();
-		// wf_story.zs
-		IntermissionStory();
-	}
-	
-	override void RenderOverlay(RenderEvent e)
-	{
-		// wf_newgame.zs
-		// sets the correct titlepic for the hacky titlescreens
-		NewGameTitlePic();
-	}
-	
-	override bool InputProcess(InputEvent e)
-	{
-		// press any key on the hacky titlescreens to continue
-		if ( CVar.FindCVar("wf_compat_titlepics").GetBool() )
-		{
-			string mapName = Level.MapName.MakeLower();
-			if ( mapName.Left(10) == "wf_newgame" && mapName != "wf_newgame" )
-			{
-				if (e.Type == InputEvent.Type_KeyDown)
-				{
-					// wf_newgame.zs
-					NewGameChangeLevelInput();
-				}
-			}
-		}
-		return false;
 	}
 	
 	override void CheckReplacement (ReplaceEvent e)

@@ -2,7 +2,8 @@
 
 defaultmap
 {
-	Cluster = 27
+	// deprecated, not used anymore because of full run mode
+	// Cluster = 27
 	Sky1 = "SKY6"
 	SuckTime = 1
 	// the music is intentionally set to something invalid,
@@ -76,7 +77,8 @@ map E6M7 "$HUSTR_E6M7"
 map E6M8 "$HUSTR_E6M8"
 {
 	LevelNum = 58
-	Next = EndPic, "SIGILEN2"
+	// Next = EndPic, "SIGILEN2"
+	Next = EndSequence, "Doom1_Ep6_Fusion"
 	TitlePatch = "WILV57"
 	Par = 390
 	NoSoundClipping

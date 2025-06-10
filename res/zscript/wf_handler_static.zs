@@ -20,6 +20,12 @@
 
 class WadFusionStaticHandler : StaticEventHandler
 {
+	// global variable
+	string nextMap;
+	string intermission;
+	bool fullRunNewGame;
+	bool fullRunEnd;
+	
 	override void OnEngineInitialize()
 	{
 		if ( Wads.CheckNumForFullName('music/d_dm2ttl.mus') == -1 )
@@ -38,11 +44,72 @@ class WadFusionStaticHandler : StaticEventHandler
 	
 	override void ConsoleProcess(ConsoleEvent e)
 	{
+		// wf_defaults.zs
 		// reset all custom cvars to their defaults
 		if ( e.Name == "wf_reset2defaults" )
 		{
 			WadFusionReset2Defaults();
 		}
+	}
+	
+	override void WorldLoaded(WorldEvent e)
+	{
+		// reset global variables when starting maps where they're not used,
+		// to reduce the possibility of scripts breaking when transitioning to a hack dummy map
+		string mapName = Level.MapName.MakeLower();
+		if ( mapName.Left(10) != "wf_newgame" && mapName.Left(8) != "wf_story" )
+		{
+			nextMap = "";
+			intermission = "";
+			fullRunNewGame = false;
+			fullRunEnd = false;
+		}
+	}
+	
+	override void WorldUnloaded(WorldEvent e)
+	{
+		if ( CVar.FindCVar("wf_compat_nextmap").GetBool() )
+			FullRunWorldUnloaded(); // wf_fullrun.zs
+	}
+	
+	override void WorldTick()
+	{
+		if ( CVar.FindCVar("wf_compat_nextmap").GetBool() )
+			FullRunStory(); // wf_fullrun.zs
+		
+		// very hacky methods of adding optional titlescreens
+		// and story intermissions when starting new games
+		NewGameIntro(); // wf_newgame.zs
+		IntermissionStory(); // wf_story.zs
+		
+		// wf_story_masterlevels.zs
+		// hack for adding optional story intermissions in the master levels rejects
+		MasterLevelsStory();
+	}
+	
+	override void RenderOverlay(RenderEvent e)
+	{
+		// wf_newgame.zs
+		// sets the correct titlepic for the hacky titlescreens
+		NewGameTitlePic();
+	}
+	
+	override bool InputProcess(InputEvent e)
+	{
+		// press any key on the hacky titlescreens to continue
+		if ( CVar.FindCVar("wf_compat_titlepics").GetBool() )
+		{
+			string mapName = Level.MapName.MakeLower();
+			if ( mapName.Left(10) == "wf_newgame" && mapName != "wf_newgame" )
+			{
+				if (e.Type == InputEvent.Type_KeyDown)
+				{
+					// wf_newgame.zs
+					NewGameChangeLevelInput();
+				}
+			}
+		}
+		return false;
 	}
 	
 	ui void DoChangeMusic(string music)

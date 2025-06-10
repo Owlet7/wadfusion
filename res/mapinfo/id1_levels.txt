@@ -39,7 +39,8 @@ map LR_MAP99 "$XHUSTR_99"
 
 adddefaultmap
 {
-	Cluster = 28
+	// deprecated, not used anymore because of full run mode
+	// Cluster = 28
 	ExitPic = "XWIMAP0"
 	EnterPic = "$XWINTER0"
 }
@@ -101,7 +102,8 @@ map LR_MAP06 "$XHUSTR_6"
 
 map LR_MAP07 "$XHUSTR_7"
 {
-	Next = EndPic, "CREDITLR"
+	// Next = EndPic, "CREDITLR"
+	Next = EndSequence, "Id1_Ep1_Fusion"
 	TitlePatch = "XWILV06"
 	Sky1 =  "SKYX4A"
 	Music = "D_TACTIC"

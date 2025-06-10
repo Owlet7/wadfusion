@@ -14,11 +14,20 @@
   - Added optional story intermissions for the Master Levels Rejects map order,
     with text taken from their readme files.
   - Removed Master Levels Rejects sub-episodes from the episodes menu.
+- Added "Full Run" option.
+  - If enabled, the next episode will start automatically after an ending.
+  - The order in which the episodes are played can be switched between "Default
+    order", which is the order in which they are listed on the "New Game" menu,
+	"Chronological order", or "Release order".
 - Added "Music Substitutions" options.
   - These can be used to force Final DOOM music in DOOM II on a per-map basis.
 - Moved all texture substitution options to a sub-menu.
+- Fixed the background graphics in Final DOOM's endings.
 - Removed `SKY1` from the Legacy of Rust list in the texture replacements script.
   Not sure how it got there.
+- Added options to view the original credits graphics in the respective games'
+  credits menus.
+- Added an option to view all the "Help" screens.
 - Added options to not horizontally offset the alternate fullscreen HUD stats.
 - Added an option to show the skill level on the alternate fullscreen HUD stats.
 - Made some of the fonts on the alternate fullscreen HUD non-monospace.

@@ -23,6 +23,7 @@ extend class WadFusionStaticHandler
 	ui void DoTitleMusicReplacements()
 	{
 		// get map name and currently playing music
+		int musSwap = CVar.FindCVar("wf_compat_musswap").GetInt();
 		string mapName = Level.MapName.MakeLower();
 		string music = MusPlaying.Name.MakeLower();
 		
@@ -31,9 +32,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_dm2ttl" || music == "h_dm2ttl" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					S_ChangeMusic("t_dm2ttl", 0, false);
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music != "h_dm2ttl" )
 						S_ChangeMusic("p_dm2ttl", 0, false);
@@ -45,6 +46,7 @@ extend class WadFusionStaticHandler
 	ui void DoMusicReplacements()
 	{
 		// get map name and currently playing music
+		int musSwap = CVar.FindCVar("wf_compat_musswap").GetInt();
 		string mapName = Level.MapName.MakeLower();
 		string music = MusPlaying.Name.MakeLower();
 		
@@ -53,9 +55,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_runnin" || music == "h_runnin" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_runnin";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_runnin" )
 						music = "h_e1m2";
@@ -69,9 +71,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_stalks" || music == "h_stalks" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_stalks";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_stalks" )
 						music = "h_e1m3";
@@ -85,14 +87,14 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_countd" || music == "h_countd" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 				{
 					if ( music == "h_countd" )
 						music = "h_messag";
 					else
 						music = "t_countd";
 				}
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_countd" )
 						music = "h_e1m6";
@@ -106,9 +108,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_betwee" || music == "h_betwee" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_betwee";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_betwee" )
 						music = "h_e1m4";
@@ -122,9 +124,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_doom" || music == "h_doom" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_doom";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_doom" )
 						music = "h_e1m9";
@@ -138,9 +140,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_the_da" || music == "h_the_da" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_the_da";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_the_da" )
 						music = "h_e1m8";
@@ -154,9 +156,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_shawn" || music == "h_shawn" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_shawn";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_shawn" )
 						music = "h_e2m1";
@@ -170,9 +172,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_ddtblu" || music == "h_ddtblu" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_ddtblu";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_ddtblu" )
 						music = "h_e2m2";
@@ -186,9 +188,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_in_cit" || music == "h_in_cit" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_in_cit";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_in_cit" )
 						music = "h_e3m3";
@@ -202,9 +204,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_dead" || music == "h_dead" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_dead";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_dead" )
 						music = "h_e1m7";
@@ -218,9 +220,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_stlks2" || music == "h_stalks" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_stlks2";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_stalks" )
 						music = "h_bunny";
@@ -234,14 +236,14 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_theda2" || music == "h_the_da" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 				{
 					if ( music == "h_the_da" )
 						music = "h_ddtblu";
 					else
 						music = "t_theda2";
 				}
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_the_da" )
 						music = "h_e3m8";
@@ -255,9 +257,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_doom2" || music == "h_doom" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_doom2";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_doom" )
 						music = "h_e3m2";
@@ -271,9 +273,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_ddtbl2" || music == "h_ddtblu" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_ddtbl2";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_ddtblu" )
 						music = "h_e2m8";
@@ -287,9 +289,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_runni2" || music == "h_runnin" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_runni2";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_runnin" )
 						music = "h_e2m7";
@@ -303,9 +305,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_dead2" || music == "h_dead" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_dead2";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_dead" )
 						music = "h_e2m9";
@@ -319,9 +321,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_stlks3" || music == "h_stalks" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_stlks3";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_stalks" )
 						music = "h_e1m1";
@@ -335,9 +337,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_romero" || music == "h_romero" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_romero";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_romero" )
 						music = "h_e1m7";
@@ -351,14 +353,14 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_shawn2" || music == "h_shawn" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 				{
 					if ( music == "h_shawn" )
 						music = "h_countd";
 					else
 						music = "t_shawn2";
 				}
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_shawn" )
 						music = "h_e1m5";
@@ -372,9 +374,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_messag" || music == "h_messag" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_messag";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music != "h_messag" )
 						music = "p_messag";
@@ -386,14 +388,14 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_count2" || music == "h_countd" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 				{
 					if ( music == "h_countd" )
 						music = "h_in_cit";
 					else
 						music = "t_count2";
 				}
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_countd" )
 						music = "h_read_m";
@@ -407,9 +409,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_ddtbl3" || music == "h_ddtblu" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_ddtbl3";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music != "h_ddtblu" )
 						music = "p_ddtbl3";
@@ -421,12 +423,12 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_ampie" || music == "h_ampie" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 				{
 					if ( music != "h_ampie" )
 						music = "t_ampie";
 				}
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music != "h_ampie" )
 						music = "p_ampie";
@@ -438,14 +440,14 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_theda3" || music == "h_the_da" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 				{
 					if ( music == "h_the_da" )
 						music = "h_betwee";
 					else
 						music = "t_theda3";
 				}
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music != "h_the_da" )
 						music = "p_theda3";
@@ -457,14 +459,14 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_adrian" || music == "h_adrian" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 				{
 					if ( music == "h_adrian" )
 						music = "h_doom";
 					else
 						music = "t_adrian";
 				}
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music != "h_adrian" )
 						music = "p_adrian";
@@ -476,9 +478,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_messg2" || music == "h_messag" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_messg2";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music != "h_messag" )
 						music = "p_messg2";
@@ -490,9 +492,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_romer2" || music == "h_romero" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_romer2";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_romero" )
 						music = "h_e2m1";
@@ -506,9 +508,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_tense" || music == "h_tense" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_tense";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_tense" )
 						music = "h_e2m2";
@@ -522,9 +524,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_shawn3" || music == "h_shawn" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_shawn3";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_shawn" )
 						music = "h_e1m1";
@@ -538,9 +540,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_openin" || music == "h_openin" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_openin";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_openin" )
 						music = "h_victor";
@@ -554,9 +556,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_evil" || music == "h_evil" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_evil";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_evil" )
 						music = "h_e1m8";
@@ -570,14 +572,14 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_ultima" || music == "h_ultima" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 				{
 					if ( music == "h_ultima" )
 						music = "h_in_cit";
 					else
 						music = "t_ultima";
 				}
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music == "h_ultima" )
 						music = "h_e2m8";
@@ -591,9 +593,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_read_m" || music == "h_read_m" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_read_m";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music != "h_read_m" && mapName != "map21" )
 						music = "p_read_m";
@@ -605,9 +607,9 @@ extend class WadFusionStaticHandler
 		{
 			if ( music == "d_dm2int" || music == "h_dm2int" )
 			{
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 1 )
+				if ( musSwap == 1 )
 					music = "t_dm2int";
-				if ( CVar.FindCVar("wf_compat_musswap").GetInt() == 2 )
+				if ( musSwap == 2 )
 				{
 					if ( music != "h_dm2int" )
 						music = "p_dm2int";

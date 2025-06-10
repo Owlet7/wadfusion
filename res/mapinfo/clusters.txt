@@ -3,6 +3,7 @@
 
 // Doom 1 Clusters (correspond with same-numbered episode)
 
+// deprecated, not used anymore because of full run mode
 cluster 1
 {
 	ExitText = "$E1TEXT"
@@ -10,6 +11,7 @@ cluster 1
 	Flat = "$bgflatE1"
 }
 
+// deprecated, not used anymore because of full run mode
 cluster 2
 {
 	ExitText = "$E2TEXT"
@@ -24,6 +26,7 @@ cluster 3
 	Flat = "$bgflatE3"
 }
 
+// deprecated, not used anymore because of full run mode
 cluster 4
 {
 	ExitText = "$E4TEXT"
@@ -204,7 +207,7 @@ cluster 23
 
 // Master Levels clusters
 
-// deprecated, not used anymore because of togglable map order
+// deprecated, not used anymore because of full run mode and togglable map order
 cluster 24
 {
 	ExitText = "$MLEND"
@@ -221,6 +224,7 @@ cluster 25
 
 // Sigil 1 cluster
 
+// deprecated, not used anymore because of full run mode
 cluster 26
 {
 	Flat = "FLOOR7_2"
@@ -230,6 +234,7 @@ cluster 26
 
 // Sigil 2 cluster
 
+// deprecated, not used anymore because of full run mode
 cluster 27
 {
 	Flat = "FLOOR7_2"
@@ -239,6 +244,7 @@ cluster 27
 
 // Legacy of Rust Episode 1 cluster
 
+// deprecated, not used anymore because of full run mode
 cluster 28
 {
 	ExitText = "$INTERTEXT_ID1_E1"

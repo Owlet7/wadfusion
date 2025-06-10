@@ -278,12 +278,7 @@ map TN_MAP29 "$THUSTR_29"
 
 map TN_MAP30 "$THUSTR_30"
 {
-	Next = EndGame
-	{
-		Pic = "TNTBOSS"
-		Music = "T_DM2INT"
-		Cast
-	}
+	Next = EndSequence, "Inter_Cast_Tnt"
 	TitlePatch = "TWILV29"
 	Music = "T_OPENIN"
 	AllowMonsterTelefrags

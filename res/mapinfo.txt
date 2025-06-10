@@ -2,8 +2,11 @@ include mapinfo/doomednums.txt
 include mapinfo/episodes.txt
 include mapinfo/clusters.txt
 include mapinfo/intermissions.txt
-include mapinfo/intermissions_ml.txt
+include mapinfo/intermissions_intros.txt
+include mapinfo/intermissions_masterlevels.txt
+include mapinfo/intermissions_fullrun.txt
 include mapinfo/doom1_levels.txt
+include mapinfo/doomu_levels.txt
 include mapinfo/doom2_levels.txt
 include mapinfo/master_levels.txt
 include mapinfo/master_levels_rejects.txt

@@ -15,6 +15,9 @@ OptionMenu "WadFusionCredits"
 OptionMenu "UDCredits"
 {
 	Title "$WF_CAMPAIGN_UDOOM"
+	Submenu "$WF_CRED_ORIGINAL_DOOM1", "D1CreditsPic", 0, 1
+	Submenu "$WF_CRED_ORIGINAL_UDOOM", "UDCreditsPic", 0, 1
+	StaticText " "
 	StaticText "$WF_CRED_DEV", "Red"
 	StaticText "$WF_CRED_ID", "White"
 	StaticText " "
@@ -62,9 +65,21 @@ OptionMenu "UDCredits"
 	Option " ", "wf_null", "WF_NULL"
 }
 
+ImageScroller "D1CreditsPic"
+{
+	ImageItem "CREDITD1"
+}
+
+ImageScroller "UDCreditsPic"
+{
+	ImageItem "CREDITUD"
+}
+
 OptionMenu "D2Credits"
 {
 	Title "$WF_MENU_CREDITS_DOOM2_TITLE"
+	Submenu "$WF_CRED_ORIGINAL", "D2CreditsPic", 0, 1
+	StaticText " "
 	StaticText "$WF_CRED_DEV", "Red"
 	StaticText "$WF_CRED_ID", "White"
 	StaticText " "
@@ -103,6 +118,11 @@ OptionMenu "D2Credits"
 	StaticText "$WF_CRED_XBOXLD1", "Red"
 	StaticText "$WF_AU_BUKOWSKI", "White"
 	Option " ", "wf_null", "WF_NULL"
+}
+
+ImageScroller "D2CreditsPic"
+{
+	ImageItem "CREDIT"
 }
 
 OptionMenu "MLCredits"
@@ -212,6 +232,8 @@ OptionMenu "NVCredits"
 OptionMenu "SCredits"
 {
 	Title "$WF_EPISODE_UDOOM_EP5"
+	Submenu "$WF_CRED_ORIGINAL", "SCreditsPic", 0, 1
+	StaticText " "
 	StaticText "$WF_CRED_DEVPUB", "Red"
 	StaticText "$WF_CRED_ROMEROGAMES", "White"
 	StaticText " "
@@ -240,9 +262,16 @@ OptionMenu "SCredits"
 	Option " ", "wf_null", "WF_NULL"
 }
 
+ImageScroller "SCreditsPic"
+{
+	ImageItem "CREDITS1"
+}
+
 OptionMenu "S2Credits"
 {
 	Title "$WF_EPISODE_UDOOM_EP6"
+	Submenu "$WF_CRED_ORIGINAL", "S2CreditsPic", 0, 1
+	StaticText " "
 	StaticText "$WF_CRED_DEVPUB", "Red"
 	StaticText "$WF_CRED_ROMEROGAMES", "White"
 	StaticText " "
@@ -274,9 +303,16 @@ OptionMenu "S2Credits"
 	Option " ", "wf_null", "WF_NULL"
 }
 
+ImageScroller "S2CreditsPic"
+{
+	ImageItem "CREDITS2"
+}
+
 OptionMenu "XCredits"
 {
 	Title "$WF_CAMPAIGN_ID1"
+	Submenu "$WF_CRED_ORIGINAL", "XCreditsPic", 0, 1
+	StaticText " "
 	StaticText "$WF_CRED_DEV", "Red"
 	StaticText "$WF_CRED_ID", "White"
 	StaticText "$WF_CRED_NIGHTDIVE", "White"
@@ -334,6 +370,11 @@ OptionMenu "XCredits"
 	Option " ", "wf_null", "WF_NULL"
 }
 
+ImageScroller "XCreditsPic"
+{
+	ImageItem "CREDITLR"
+}
+
 OptionMenu "WFCredits"
 {
 	Title "$WF_TITLE"
@@ -368,4 +409,9 @@ OptionMenu "WFCredits"
 	StaticText "$WF_CRED_WIDEPIX", "Red"
 	StaticText "$WF_CRED_MUHANDES", "White"
 	Option " ", "wf_null", "WF_NULL"
+}
+
+OptionValue "WF_NULL"
+{
+    0, " "
 }

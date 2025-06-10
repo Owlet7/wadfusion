@@ -19,7 +19,7 @@
 //
 
 // everything here is a gross hack
-extend class WadFusionHandler
+extend class WadFusionStaticHandler
 {
 	ui void NewGameTitlePic()
 	{
@@ -46,27 +46,25 @@ extend class WadFusionHandler
 				int resY = Screen.GetHeight();
 				Screen.DrawTexture(titlePic, false, 0, 0, DTA_ScaleX, resX, DTA_ScaleY, resY, DTA_FillColor, 0);
 				
-				let mapSuffix = mapName.Mid(10, 3);
-				
-				if ( mapSuffix == "_d1" )
+				if ( nextMap == "e1m1" || nextMap == "e2m1" || nextMap == "e3m1" )
 					Screen.DrawTexture(titleD1, false, 0, 0, DTA_FullScreen, 1);
-				else if ( mapSuffix == "_ud" )
+				else if ( nextMap == "e4m1" )
 					Screen.DrawTexture(titleUD, false, 0, 0, DTA_FullScreen, 1);
-				else if ( mapSuffix == "_s1" )
+				else if ( nextMap == "e5m1" )
 					Screen.DrawTexture(titleS1, false, 0, 0, DTA_FullScreen, 1);
-				else if ( mapSuffix == "_s2" )
+				else if ( nextMap == "e6m1" )
 					Screen.DrawTexture(titleS2, false, 0, 0, DTA_FullScreen, 1);
-				else if ( mapSuffix == "_d2" )
+				else if ( nextMap == "map01" )
 					Screen.DrawTexture(titleD2, false, 0, 0, DTA_FullScreen, 1);
-				else if ( mapSuffix == "_ml" )
+				else if ( nextMap == "ml_map01" )
 					Screen.DrawTexture(titleML, false, 0, 0, DTA_FullScreen, 1);
-				else if ( mapSuffix == "_nv" )
+				else if ( nextMap == "nv_map01" )
 					Screen.DrawTexture(titleNV, false, 0, 0, DTA_FullScreen, 1);
-				else if ( mapSuffix == "_lr" )
+				else if ( nextMap == "lr_map01" || nextMap == "lr_map08" )
 					Screen.DrawTexture(titleLR, false, 0, 0, DTA_FullScreen, 1);
-				else if ( mapSuffix == "_tn" )
+				else if ( nextMap == "tn_map01" )
 					Screen.DrawTexture(titleTN, false, 0, 0, DTA_FullScreen, 1);
-				else if ( mapSuffix == "_pl" )
+				else if ( nextMap == "pl_map01" )
 					Screen.DrawTexture(titlePL, false, 0, 0, DTA_FullScreen, 1);
 				else
 					Screen.DrawTexture(titlePic, false, 0, 0, DTA_FullScreen, 1);
@@ -85,48 +83,32 @@ extend class WadFusionHandler
 			{
 				// starting an empty intermission on the first tic removes
 				// the screen wipe that usually happens when changing levels
-				Level.StartIntermission("WadFusionNewGame", FSTATE_INLEVELNOWIPE);
-				
-				let mapSuffix = mapName.Mid(10, 3);
-				
-				// set which map to switch to
-				if ( mapSuffix == "_d1" )
-					CVar.FindCVar("wf_nextmap").SetString("e1m1");
-				else if ( mapSuffix == "_ud" )
-					CVar.FindCVar("wf_nextmap").SetString("e4m1");
-				else if ( mapSuffix == "_s1" )
-					CVar.FindCVar("wf_nextmap").SetString("e5m1");
-				else if ( mapSuffix == "_s2" )
-					CVar.FindCVar("wf_nextmap").SetString("e6m1");
-				else if ( mapSuffix == "_d2" )
-					CVar.FindCVar("wf_nextmap").SetString("map01");
-				else if ( mapSuffix == "_ml" )
-					CVar.FindCVar("wf_nextmap").SetString("ml_map01");
-				else if ( mapSuffix == "_nv" )
-					CVar.FindCVar("wf_nextmap").SetString("nv_map01");
-				else if ( mapSuffix == "_lr" )
-					CVar.FindCVar("wf_nextmap").SetString("lr_map01");
-				else if ( mapSuffix == "_tn" )
-					CVar.FindCVar("wf_nextmap").SetString("tn_map01");
-				else if ( mapSuffix == "_pl" )
-					CVar.FindCVar("wf_nextmap").SetString("pl_map01");
+				if ( !fullRunNewGame )
+				{
+					Level.StartIntermission("WadFusionNewGame", FSTATE_INLEVELNOWIPE);
+					nextMap = mapName.Mid(11);
+				}
+				else
+				{
+					nextMap = nextMap.Mid(11);
+				}
 				
 				if ( CVar.FindCVar("wf_compat_titlepics").GetBool() )
 				{
 					// play title music for each game
-					if ( mapSuffix == "_d1" || mapSuffix == "_ud" )
+					if ( nextMap == "e1m1" || nextMap == "e2m1" || nextMap == "e3m1" || nextMap == "e4m1" )
 						S_ChangeMusic("d_intro", 0, false);
-					else if ( mapSuffix == "_s1" )
+					else if ( nextMap == "e5m1" )
 						PlaySigilIntroMusic();
-					else if ( mapSuffix == "_s2" )
+					else if ( nextMap == "e6m1" )
 						PlaySigil2IntroMusic();
-					else if ( mapSuffix == "_d2" || mapSuffix == "_ml" || mapSuffix == "_nv" )
+					else if ( nextMap == "map01" || nextMap == "ml_map01" || nextMap == "nv_map01" )
 						S_ChangeMusic("d_dm2ttl", 0, false);
-					else if ( mapSuffix == "_lr" )
+					else if ( nextMap == "lr_map01" || nextMap == "lr_map08" )
 						S_ChangeMusic("x_dm2ttl", 0, false);
-					else if ( mapSuffix == "_tn" )
+					else if ( nextMap == "tn_map01" )
 						S_ChangeMusic("t_dm2ttl", 0, false);
-					else if ( mapSuffix == "_pl" )
+					else if ( nextMap == "pl_map01" )
 						S_ChangeMusic("p_dm2ttl", 0, false);
 					// immediately switch to the set map if not starting an episode
 					else
@@ -168,31 +150,21 @@ extend class WadFusionHandler
 	
 	void NewGameChangeLevel()
 	{
-		string nextMap = CVar.FindCVar("wf_nextmap").GetString();
 		string mapName = Level.MapName.MakeLower();
 		if ( mapName.Left(10) == "wf_newgame" )
 			Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
-		CVar.FindCVar("wf_nextmap").ResetToDefault();
 	}
 	
 	ui void NewGameChangeLevelInput()
 	{
-		string nextMap = CVar.FindCVar("wf_nextmap").GetString();
-		string mapName = Level.MapName.MakeLower();
 		if ( CVar.FindCVar("wf_intros").GetBool() )
 		{
-			if ( mapName != "wf_newgame_ml" && mapName != "wf_newgame_ud" )
+			if ( nextMap != "e2m1" && nextMap != "e3m1" && nextMap != "e4m1" && nextMap != "ml_map01" && nextMap != "lr_map08" )
 				Level.ChangeLevel("wf_story", 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
 			else
-			{
 				Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
-				CVar.FindCVar("wf_nextmap").ResetToDefault();
-			}
 		}
 		else
-		{
 			Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
-			CVar.FindCVar("wf_nextmap").ResetToDefault();
-		}
 	}
 }
