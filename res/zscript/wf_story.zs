@@ -44,9 +44,11 @@ extend class WadFusionStaticHandler
 				Level.StartIntermission("Tnt_Intro", FSTATE_INLEVELNOWIPE);
 			else if ( nextMap == "pl_map01" )
 				Level.StartIntermission("Plutonia_Intro", FSTATE_INLEVELNOWIPE);
+			//play end of episode intermissions for full run feature
 			else if ( !fullRunEnd )
 			{
 				Level.StartIntermission(intermission, FSTATE_INLEVELNOWIPE);
+				// at the end of a full run, the hack story map is loaded twice in a row
 				fullRunNewGame = true;
 				fullRunEnd = true;
 			}

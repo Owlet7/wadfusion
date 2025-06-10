@@ -79,6 +79,7 @@ class WadFusionStaticHandler : StaticEventHandler
 		
 		// very hacky methods of adding optional titlescreens
 		// and story intermissions when starting new games
+		// saving and loading on the hack dummy maps will break these sequences!
 		NewGameIntro(); // wf_newgame.zs
 		IntermissionStory(); // wf_story.zs
 		
