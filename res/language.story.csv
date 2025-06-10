@@ -1,4 +1,4 @@
-Identifier,Remarks,Filter,default,eng enc ena enz eni ens enj enb enl ent enw,cs,da,de,el,eo,es,esm esn esg esc esa esd esv eso esr ess esf esl esy esz esb ese esh esi esu,fi,fr,hr,hu,it,jp,ko,nl,no nb,pl,pt,ptg,ro,ru,sr,sv,tr,zh,zht
+Identifier,Remarks,Filter,default,eng enc ena enz eni ens enj enb enl ent enw,cs,da,de,el,eo,es,esm esn esg esc esa esd esv eso esr ess esf esl esy esz esb ese esh esi esu,fi,fr,hr,hu,it,jp,ko,nl,no nb,pl,pt,ptg,ro,ru,sr,sv,tr,zh,zhh zhs zht
 ,Doom 1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 D1INTRO1,"Doom 1 opening story
 taken from manual",,"THE STORY SO FAR
@@ -17,7 +17,27 @@ with radioactive waste facilities on Mars
 and its two moons, Phobos and Deimos. With
 no action for fifty million miles, your day
 consisted of suckin' dust and watchin'
-restricted flicks in the rec room.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+restricted flicks in the rec room.",,,,"WIE ALLES BEGANN
+
+Du bist ein Marinesoldat, einer der
+härtesten der Erde, kampferprobt und für
+den Einsatz ausgebildet. Vor drei Jahren
+hast Du einen vorgesetzten Offizier
+angegriffen, weil er seinen Soldaten
+befohlen hatte auf Zivilisten zu schießen.
+Er wurde samt Gipsverband nach Pearl
+Harbor verfrachtet, während Du auf den
+Mars, die Heimat der Union Aerospace
+Corporation, versetzt wurdest.
+
+Die UAC ist ein multi-planetarisches
+Konglomerat mit Anlagen für radioaktivem
+Abfall auf dem Mars und seinen beiden
+Monden Phobos und Deimos. Da im Umkreis von
+fünfzig Millionen Meilen nichts los war,
+bestand dein Tag aus Staub schlucken und
+verbotene Filme im Aufenthaltsraum zu
+schauen.",,,,,,,,,,,,,,,,,,,,,,,
 D1INTRO2,,,"For the last four years the military, UAC's
 biggest supplier, has used the remote
 facilities on Phobos and Deimos to conduct
@@ -39,7 +59,33 @@ Matching heads with torsos to send home to
 the folks became a full-time job. Latest
 military reports state that the research
 is suffering a small set-back, but
-everything is under control.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+everything is under control.",,,,"In den letzten vier Jahren hat das Militär,
+der größte Unterstützer der UAC, die
+abgelegenen Einrichtungen auf Phobos und
+Deimos genutzt, um verschiedene geheime
+Projekte durchzuführen, darunter auch
+Forschungen zur interdimensionalen
+Raumfahrt. Bisher war es möglich, Portale
+zwischen Phobos und Deimos zu öffnen,
+indem man ein paar Geräte in das eine
+hineinwarf und beobachtete wie sie am
+anderen Ende wieder herauskamen. In
+letzter Zeit jedoch sind diese Portale
+gefährlich instabil geworden. Militärische
+""Freiwillige"", die sie betreten, sind
+entweder verschwunden oder von einer
+seltsamen Form des Wahnsinns befallen
+worden, indem sie wirres Zeug plappern, auf
+alles einprügeln das atmet, und
+schließlich einen vorzeitigen Tod erleiden
+da es ihre Körper zerfetzt. Es wurde zu
+einem Vollzeit-Job Köpfe mit
+Körper-Resten zusammenzunähen, um den
+Hinterbliebenen die Überreste nach Hause
+zu schicken. Jüngste Militärberichte
+besagen, dass die Forschung einen kleinen
+Rückschlag erlitten hat, aber alles unter
+Kontrolle ist.",,,,,,,,,,,,,,,,,,,,,,,
 D1INTRO3,,,"A few hours ago, Mars received a garbled
 message from Phobos. ""We require
 immediate military support. Something
@@ -58,7 +104,30 @@ rest of the team went inside. For several
 hours, your radio picked up the sounds of
 combat: guns firing, men yelling orders,
 screams, bones cracking, then finally,
-silence. Seems your buddies are dead.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+silence. Seems your buddies are dead.",,,,"Vor ein paar Stunden empfing der Mars eine
+abgehackte Nachricht von Phobos. ""Wir
+benötigen sofortige militärische
+Unterstützung. Etwas verdammt Böses
+kommt durch die Portale! Die
+Computersysteme drehen durch!"" Der Rest
+war unvollständig. Kurz danach
+verschwand Deimos einfach vom Himmel.
+Seitdem sind die Versuche mit einem der
+beiden Monde Kontakt aufzunehmen
+erfolglos geblieben.
+
+Du und deine Kameraden, die einzige
+Kampftruppe im Umkreis von fünfzig
+Millionen Kilometern, wurden sofort nach
+Phobos geschickt. Du hast den Befehl
+erhalten die Umgebung der Basis zu
+sichern, während der Rest des Teams ins
+Innere ging. Mehrere Stunden lang hast Du
+über dein Funkgerät Geräusche schwerer
+Kämpfe gehört: Gewehrfeuer, Männer die
+Befehle brüllten, Schreie, knackende
+Knochen und schließlich Stille.
+Anscheinend sind deine Kameraden tot.",,,,,,,,,,,,,,,,,,,,,,,
 D1INTRO4,,,"It's Up To You
 
 Things aren't looking too good. You'll
@@ -79,7 +148,29 @@ As you walk through the main entrance of
 the base, you hear animal-like growls
 echoing throughout the distant corridors.
 They know you're here. There's no turning
-back now.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+back now.",,,,"Du bist dran
+
+Es sieht nicht allzu gut aus. Du wirst
+niemals alleine von diesem Planeten
+wegkommen. Außerdem wurden alle
+schweren Waffen vom Angriffsteam
+genommen und dir blieb nur eine Pistole.
+Wenn du nur ein Plasmagewehr oder eine
+Schrotflinte in deine Hände bekämst,
+könntest du auf deinem Weg nach draußen
+ein paar dieser Bastarde erledigen. Was
+auch immer deine Kumpels getötet hat
+verdient ein paar Kugeln in die Stirn. Du
+schnallst dir deinen Helm um und verlässt
+die Landekapsel. Hoffentlich findest du
+irgendwo in der Basis etwas mit mehr
+Feuerkraft.
+
+Als du durch den Haupteingang der Basis
+gehst hörst du ein Knurren, ähnlich dem
+eines Tiers, das durch die weiten Korridore
+hallt. Sie wissen dass du hier bist. Es gibt
+jetzt kein Zurück mehr.",,,,,,,,,,,,,,,,,,,,,,,
 ,Blackroom warmpup maps,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 E1M4BTEXT,E1M4B enter text,,"With the Toxin Refinery in the rear-view,
 you make your way to Phobos Mission
@@ -95,7 +186,23 @@ the environment around you would change.
 
 You need to keep your eyes alert to all
 movement - this place is not what it
-seems...",,,,,,,,,,,,,,,,,,"Z Rafinerią Toksyn już za tobą, trafiasz do
+seems...",,,,"Mit der Toxin-Raffinerie hinter dir machst
+Du dich auf den Weg zur Phobos-Mission
+Control, wo sich die Computer befinden,
+welche die Daten der Phobos-Anomalie
+verarbeiten.
+
+Du musst diese benutzen um Zugang zum
+Phobos-Labor zu erhalten, aber du
+erinnerst dich daran gehört zu haben dass
+die Computer mit allen Bereichen der
+Anlage verbunden sind und du dadurch nie
+wissen wirst wann und wie sich die Umgebung
+um dich herum verändern wird.
+
+Du musst wachsam sein bei allem was sich
+bewegt - dieser Ort ist nicht das was er zu
+sein scheint...",,,,,,,,,,,,,,"Z Rafinerią Toksyn już za tobą, trafiasz do
 Centrum Kontroli Fobosa, gdzie znajdują
 się komputery analizujące dane z anomalii
 na Fobosie.
@@ -166,22 +273,46 @@ a high-tech lab somewhere in this area, and
 the portal must be connected to it
 somehow.
 
-Time to lock and load.",,,,,,,,,,,,,,,,,"Po wyjściu ze Stacji Komputerowej wiedziałeś
-że najgorsze przed tobą. Wciąż nie dotarłeś
-do miejsca z którego pochodzą demony.
+Time to lock and load.",,,"Nachdem Du die Computerstation verlassen
+hast wusstest du dass das Schlimmste noch
+bevorstand. Du hast immer noch nicht den
+Ort erreicht von dem die Dämonen kommen.
 
-Stalowe drzwi zamykają się za tobą, a ty zdajesz
-sobie sprawę gdzie jesteś; dotarłeś do Anomalii
-Fobosa.
+Als sich die Stahltür hinter dir schließt
+realisierst du dass du dein Ziel erreicht
+hast; Du bist in der Phobos-Anomalie.
+
+Überall sind Risse aus der Hölle zu sehen,
+da diese wie Sickerwasser aus dem Portal in
+die gesamte Anlage eindringen.
+
+Jetzt wird es Zeit das Portal zu finden und
+die Dämonen daran zu hindern
+hindurchzukommen. Du weißt dass die UAC
+Hunderte von Wissenschaftlern in einem
+High-Tech-Labor irgendwo in diesem Gebiet
+arbeiten lässt. Und das Portal muss
+irgendwie damit verbunden sein.
+
+Zeit zum Sichern und Nachladen.",,,,,,,,,,,,,,"Po wyjściu ze Stacji Komputerowej
+wiedziałeś że najgorsze przed tobą. Wciąż
+nie dotarłeś do miejsca z którego
+pochodzą demony.
+
+Stalowe drzwi zamykają się za tobą, a ty
+zdajesz sobie sprawę gdzie jesteś;
+dotarłeś do Anomalii Fobosa.
 
 Trzaski z piekieł są wszędzie podczas gdy
 goście z portalu wtargnęli na nasz teren.
 
-Nastał czas, aby znaleźć portal i powstrzymać
-demony przed przejściem. Wiesz, że UAC miało
-setki naukowców pracujących nad zaawansowanym
-laboratorium gdzieś w tych rejonach, więc portal
-musi być z nim w jakiś sposób powiązany.
+Nastał czas, aby znaleźć portal i
+powstrzymać demony przed przejściem.
+Wiesz, że UAC miało setki naukowców
+pracujących nad zaawansowanym
+laboratorium gdzieś w tych rejonach, więc
+portal musi być z nim w jakiś sposób
+powiązany.
 
 Czas załadować broń.",,,,"После выхода из Вычислительного
 центра, ты знал что худшее впереди.
@@ -204,6 +335,493 @@ Czas załadować broń.",,,,"После выхода из Вычислитель
 должен быть с этим как-то связан.
 
 Оружие к бою.",,,,,
+E1TEXTB,"Doom Ep.1 ending, sans last paragraph",,"Once you beat the big badasses and
+clean out the moon base you're supposed
+to win, aren't you? Aren't you? Where's
+your fat reward and ticket home? What
+the hell is this? It's not supposed to
+end this way!
+
+It stinks like rotten meat, but looks
+like the lost Deimos base. Looks like
+you're stuck on The Shores of Hell.
+The only way out is through.",,"Porazil@[ao_cs] jsi velké padouchy, vyčistil@[ao_cs] jsi
+základnu na měsíci; měl@[ao_cs] bys být vítězem,
+nebo ne? Nebo ne? Kde je tvá tučná odměna a
+lístek domů? Co to sakra je? Takhle to
+skončit nemělo!
+
+Páchne to tu jak shnilé maso, ale vypadá
+to jako ztracená základna na Deimosu.
+Zdá se, že jsi ztroskotal@[ao_cs] na březích pekla.
+Jediná cesta ven je skrz.","Når du har slået de store skurke og
+ryddet månebasen, er det meningen,
+at du skal vinde, ikke sandt? Hvor er
+din fede belønning og din billet hjem?
+Hvad fanden er det her? Det er ikke
+meningen, at det skal ende på denne måde!
+
+Den stinker som råddent kød, men ligner
+den forsvundne Deimos-base. Det ser ud
+til, at du sidder fast på Helvedes kyster.
+Den eneste vej ud er gennem.","Nachdem du die großen Schurken besiegt und in
+der Mondbasis aufgeräumt hast, hättest du
+sicher erwartet, zu gewinnen, nicht wahr?
+Nicht wahr? Wo ist deine fette Belohnung und
+dein Ticket nach Hause? Was zur Hölle ist das?
+So sollte es nicht enden.
+
+Es stinkt nach faulem Fleisch, sieht aber aus
+wie die vergessene Deimos-Basis. Sieht aus als
+ob du an den Ufern der Hölle festsitzt.
+Der einzige Weg hier raus ist durch.",,"Post kiam vi elpurigis la bazon
+en Fobo je tiuj maliculoj, vi logike
+venkus, ĉu? Ĉu!? Kie estas via granda
+rekompenco kaj bileto hejmen? Kio diable
+okazis? Ĉi tio ne devus finiĝi ĉi tiel!
+
+Odoras putran karnon, sed ĝi aspektas
+kiel la perdita bazo en Dejmo. Ŝajnas,
+ke vi estas kaptita ĉe la Infer-bordoj:
+por espaki oni transiru la Inferon.","Tras vencer a esos perversos y
+limpiar la base de Fobos se supone
+que deberías ganar, ¿no?, ¿¡no!?
+¿Qué diablos ha pasado?, ¿dónde están tu
+suculenta recompensa y tu pasaje a casa?
+¡Esto no debería terminar así!
+
+Huele a carne podrida, pero se ve como
+la base perdida de Deimos. Pareces estar
+atrapado en las orillas del Infierno:
+la única forma de salir es atravesarlo.","Tras vencer a esos perversos y
+limpiar la base de Fobos se supone
+que deberías ganar, ¿no?, ¿¡no!?
+¿Qué diablos pasó?, ¿dónde están tu
+suculenta recompensa y tu pasaje a casa?
+¡Esto no debería terminar así!
+
+Huele a carne podrida, pero se ve como
+la base perdida de Deimos. Pareces estar
+atrapado en las orillas del Infierno:
+la única forma de salir es atravesarlo.","Päihitettyäsi isot pahikset ja raivattuasi
+kuutukikohdan sinunhan pitäisi voittaa, 
+eikö niin? Eikö niin? Missä on mehevä 
+palkkiosi ja paluulippusi kotiin? Mitä 
+helvettiä tämä on? Eihän sen näin pidä 
+päättyä!
+
+Haisee mädältä lihalta mutta näyttää 
+menetetyltä Deimoksen tukikohdalta. 
+Näyttää siltä, että olet juuttunut hornan 
+rannoille. Ainoa tie ulos on niiden kautta.","Après avoir vaincu les grosses brutes
+et nettoyé la base lunaire, vous êtes sensé
+avoir gagné, non? Où est votre belle
+récompense et votre billet retour?
+Qu'est-ce que ça veut dire?
+
+Ca pue la viande pourrie, mais on
+dirait la base perdue de Déimos. Il semble
+que vous êtes bloqué aux portes de l'enfer.
+La seule sortie est de l'autre côté.",,"Most, hogy elbántál a rohadékokkal és
+kitakarítottad a holdbázist, elvileg 
+győznöd kéne, nem? Nem? Hol van a 
+zsíros jutalmad meg a retúrjegyed? Mégis 
+mi a fene ez? Ennek nem így kéne
+végződnie!
+
+Úgy bűzlik, mint a rothadt hús, de ez az 
+eltűnt Deimos bázisnak látszik. 
+Úgy tűnik, a pokol tornácán ragadtál. 
+Az egyetlen kiút előre vezet.","Una volta che hai eliminato i cattivi e
+liberato la base lunare dovresti aver
+vinto, vero? Vero? Dove sono la tua
+ricca ricompensa e il biglietto per
+casa? Cosa diavolo è questo? Non
+avrebbe dovuto finire così!
+
+Puzza come carne marcia, ma pare
+essere la dispersa base di Deimos.
+Pare proprio che tu sia approdato
+sulle Coste dell'Inferno.
+L'unica uscita ci passa in mezzo.","火星基地から巨悪をこの手で一掃し
+勝利を収めたはずだ。だがこれはいったい何だ?
+巨額の報酬と帰還チケットは? 
+ふざけやがって、決着はまだついていない!
+
+どうやら地獄の泥沼に膝まで浸かってしまい、
+そのまま沈むしかないようだ。
+肉の腐敗臭がする、滅んだダイモス基地に。","당신이 악당 보스를 처치하고 달기지를 청소했다면, 당신은 이겨야 한다. 
+안 그런가? 안 그런가? 그 잘난 보상금과 집으로 가는 티켓은 어딨단 말인가?
+이게 도대체 뭔가! 이런 식으로 끝날 순 없다!
+
+이곳은 썩은 고기같이 구린 곳이지만, 사라진 데이모스 기지에 온 것 같다.
+아무래도 당신이 지옥의 해변에 갇힌 것 같다.
+여기서 나가는 방법은 뚫고 지나는 것뿐이다.","Nadat je de grote schurken had verslagen en
+op de maanbasis had opgeruimd, had je
+verwacht dat je zou winnen, nietwaar?
+Nietwaar?
+Waar is je dikke beloning en ticket naar
+huis? Wat is dat, verdomme?
+Zo zou het niet moeten eindigen!
+
+Het stinkt naar rot vlees, maar lijkt
+op de vergeten Deimosbasis. Het lijkt erop
+dat je vastzit aan de Oevers van de Hel.
+De enige uitweg is erdoor.","Når du slår de store tøffingene og renser
+månebasen, skal du vinne, ikke sant? Ikke
+sant? Hvor er den fete belønningen din og
+billetten hjem? Hva i helvete er dette?
+Det skulle ikke ende slik!
+
+Det stinker som råttent kjøtt, men ser ut
+som den tapte Deimos-basen. Ser ut som du
+sitter fast på Helvetes bredder. Den
+eneste veien ut er gjennom.","Pokonałeś wielkich bydlaków
+i wyczyściłeś bazę na księżycu,
+więc powinieneś wygrać, prawda?
+Prawda? Gdzie twoja wielka
+nagroda i bilet powrotny do domu?
+Co to ma być do diabła?
+To nie miało się tak skończyć!
+
+Śmierdzi jak zgniłe mięso, ale przypomina
+opuszczoną bazę na Deimosie.
+Wygląda na to, że utknąłeś w
+Przedsionku Piekieł. Nie ma już odwrotu.","Após derrotar essas criaturas miseráveis e
+limpar a base lunar você deveria ter vencido,
+não é mesmo? Não é mesmo? Cadê a sua 
+grande recompensa e a passagem de volta 
+para casa? Não deveria acabar desse jeito!
+
+O cheiro é de carne podre, mas parece ser
+a base perdida de Deimos. Parece que você 
+está preso nas Margens do Abismo. 
+O único jeito de sair é através dela. ","Após derrotar as criaturas miseráveis e
+limpar a base lunar devias ter ganho,
+É, não é? Não é? Onde está a tua 
+grande recompensa e a passagem de volta 
+para casa? Não deveria acabar assim!
+
+Cheira a carne podre, mas deve ser a base
+perdida de Deimos. Parece que estás
+preso nas Margens do Inferno. O único 
+maneira de sair é por aqui. ","Odată ce-i învingi pe ticăloși și cureți
+baza de pe Phobos, se presupune că
+ai câștigat, nu-i așa? Nu-i așa? Unde-ți sunt
+răsplata binemeritată și biletul de întoarcere?
+Ce dracu-i asta? Nu așa ar trebui să se termine!
+
+Pute a hoit, dar se pare că ești pe Deimos, baza
+care se pierduse. Se pare că ești blocat
+pe Țărmurile Iadului. Nu poți scăpa de aici decât 
+mergând tot înainte.","После победы над крутыми злодеями и
+зачистки фобосской базы на вашей улице
+должен быть праздник, ведь так? Ведь так?
+А где же большой приз и билет домой? Какого
+дьявола? Всё должно было закончиться не так!
+
+Полная тухлятина, похоже на потерянную базу на
+Деймосе. Кажется, вы застряли на
+прибрежье преисподней. Путь только
+один — вперёд.","Једном када средите велике момке и
+очистите базу месеца, требало би да
+победите, зар не? Зар не? Где је ваша
+грандиозна награда и карта кyћи? Шта
+је, бре, ово? Не би требало да се
+сврши на овај начин!
+
+Смрди као труло месо, али изгледа
+као изгубљена база Деимоса. Изгледа
+да си заглављен на обалама пакла.
+Једини излаз напоље је кроз све то.","När du har besegrat de stora
+skurkarna och rensat månbasen
+är det meningen att du ska vinna,
+eller hur? Eller hur? Var är din feta
+belöning och din biljett hem? Vad
+i helvete är det här? Det är inte
+meningen att det ska sluta så här!
+ 
+Det stinker som ruttet kött, men ser
+ut som den förlorade Deimosbasen.
+Det ser ut som om du är fast på
+helvetets stränder.
+Den enda vägen ut är genom.","Büyük belalıları yendikten ve ay
+üssünü temizledikten sonra
+Kazanmak için, değil mi? Değil
+misin? Nerede? büyük ödülün
+ve eve dönüş biletin? Ne? Bu da
+ne böyle? Bunun olması gerek-
+miyordu. Bu şekilde bitecek!
+
+Çürümüş et gibi kokuyor ama
+Kayıp Deimos üssü gibi.
+Görünüşe göre Cehennem
+Kıyıları'nda sıkışıp kaldınız.
+Tek çıkış yolu içinden geçmek.",,
+E2TEXTB,"Doom Ep.2 ending, sans last paragraph",,"You've done it! The hideous cyber-
+demon lord that ruled the lost Deimos
+moon base has been slain and you
+are triumphant! But ... where are
+you? You clamber to the edge of the
+moon and look down to see the awful
+truth.
+
+Deimos floats above Hell itself!
+You've never heard of anyone escaping
+from Hell, but you'll make the bastards
+sorry they ever heard of you! Quickly,
+you rappel down to the surface of
+Hell.",,"Dokázal@[ao_cs] jsi to! Ohavný kyberdémonický
+pán vládnoucí nad ztracenou Deimosskou
+základnou byl poražen a ty jsi vítězem!
+Ale... kde to vůbec jsi? Dobelhav@[tgs_past_cs] se
+k okraji měsíce, shlédl@[ao_cs] jsi dolů na tu
+ohavnou pravdu.
+
+Deimos pluje nad samotným peklem!
+Nikdy jsi neslyšel@[ao_cs] o nikom, kdo by
+z pekla unikl, ale ti bastardi budou
+litovat, že o tobě kdy slyšeli!
+Rychle ses slanil@[ao_cs] dolů na povrch pekla.","Du har gjort det! Den afskyelige cyberdæmon-
+herre, der herskede over den forsvundne
+Deimos-månebase, er blevet dræbt, og du
+er triumferende! Men ... hvor er du?
+Du klatrer op på månens kant og kigger
+ned for at se den frygtelige sandhed.
+
+Deimos svæver over selve helvede!
+Du har aldrig hørt om nogen, der er
+undsluppet fra Helvede, men du vil
+få de svin til at fortryde, at de
+nogensinde har hørt om dig! Hurtigt
+stiger du ned til Helvedes overflade.","Du hast es geschafft! Der fiese Cyber-
+dämonenlord, der die vergessene Deimos-Basis
+beherrschte, ist tot und du triumphierst.
+Aber ... wo bist du?
+Du kletterst zum Rand des Mondes und
+schaust nach unten, um die schreckliche
+Wahrheit zu erkennen:
+
+Deimos schwebt über der Hölle!
+Du hast noch nie von jemandem gehört,
+der aus der Hölle entkam, aber du wirst es 
+den Bastarden schon zeigen, dass sie
+wünschten, nie von dir gehört zu haben.",,"Vi sukcesis! La malbelega Ciberdemono,
+kiu regis la perditan lunbazon en Dejmo,
+estis mortigita kaj vi triumfis!
+Sed... Kie vi estas? Vi grimpas al la
+rando de la luno kaj rigardas malsupren
+por vidi la malbonegan veron:
+
+Dejmo ŝvebas super la Infero mem!
+Vi neniam sciiĝis pri eskapinto el la
+Infero, sed nun tiuj aĉuloj bedaŭros,
+ke ili ja sciiĝis pri vi! Vi surteriĝas
+per ŝnuro sur la surfacon de la Infero.","¡Enhorabuena! ¡El horrendo Ciberdemonio
+que regía la base lunar perdida de Deimos
+ha sido aniquilado y has triunfado!
+Pero... ¿Y dónde estás?
+Trepas hasta el borde de la luna y
+miras abajo para ver la horrorosa verdad:
+
+¡Deimos flota sobre el mismísimo Infierno!
+Nunca has escuchado de alguien escapar del
+Infierno, ¡pero harás que esos malnacidos
+se lamenten de sí haber oído sobre ti!
+Rápidamente desciendes a rapel
+hacia la superficie del Infierno.","¡Lo lograste! ¡El horrendo Ciberdemonio
+que regía la base lunar perdida de Deimos
+fue aniquilado y saliste triunfando!
+Pero... ¿Y dónde estás?
+Trepas hasta el borde de la luna y
+miras abajo para ver la horrorosa verdad:
+
+¡Deimos flota sobre el mismísimo Infierno!
+Nunca has escuchado de alguien escapar del
+Infierno, ¡pero harás que esos malnacidos
+se lamenten de sí haber oído sobre ti!
+Rápidamente desciendes a rapel
+hacia la superficie del Infierno.","Teit sen! Menetettyä Deimoksen kuutukikohtaa 
+hallinnut kauhistuttava kyberdemoni on 
+surmattu ja olet voittoisa! Mutta... 
+missä olet? Kapuat kuun kielekkeelle ja 
+kurkistat alas nähdäksesi kamalan totuuden.
+
+Deimos leijuu itse helvetin yllä! Et ole 
+ikinä kuullut kenenkään paenneen helvetistä, 
+mutta aiot panna ne paskiaiset katumaan, 
+että ovat ikinä kuulleetkaan sinusta! 
+Laskeudut pian alas helvetin kamaralle.","Vous avez réussi! L'hideux cyber-démon
+qui régnait sur la base lunaire de Déimos
+est enfin mort et vous êtes triomphant!
+Mais.. Où êtes vous? Vous vous penchez
+au dessus de la bordure de la lune et
+découvrez l'atroce vérité.
+
+Déimos flotte au dessus des enfers!
+Vous n'avez jamais entendu parler que
+quelqu'un s'en soit sorti, mais vous
+allez faire payer ces fumiers pour
+le foutoir qu'ils ont causé! Rapidement,
+vous descendez en rappel aux enfers.",,"Megcsináltad! Győzedelmeskedtél az
+elveszett Deimosz bázist uraló förtelmes
+Kiberdémon felett! De... hol is vagy most?
+Felkapaszkodsz a Hold szélére, és lenézel,
+hogy megtudd a szörnyű igazságot.
+
+A Deimosz a pokol fölött lebeg!
+Még nem hallottál arról, hogy bárki
+megszökött volna a pokolból, de te
+úgy meg fogod leckéztetni a rohadékokat,
+hogy még azt is megbánják, hogy hallottak
+rólad! Gyorsan leereszkedsz a pokol
+felszínére.","Ce l'hai fatta! Il malvagio cyber-
+demonio che governava la dispersa
+base di Deimos è stato ucciso e tu
+sei trionfante! Ma... dove ti trovi?
+Sali fino all'orlo della luna e
+guardi giù scoprendo l'orribile verità.
+
+Deimos fluttua sopra l'Inferno stesso!
+Non hai mai sentito di nessuno fuggito
+dall'Inferno, ma quei bastardi si
+pentiranno di aver anche solo
+sentito parlare di te!
+Velocemente scendi verso la superficie
+dell'Inferno.","よくやった! 滅んだダイモス基地を支配していた
+サイバーデーモンはナマクラの鉄屑と化した! 
+だが...ここは一体何処だ?
+外壁の縁をよじ登りその鉄屑にも劣る現実に直面にした。
+
+ダイモスの大地が地獄に浮いている!
+しかもその眼下では奴等がまだ蠢いてやがる。","당신이 해냈다! 데이모스 기지를 통치하던 마왕, 사이버데몬이 파괴되었고
+당신이 이겼다! 하지만... 지금 당신은 어디 있는가? 당신은 데이모스의
+가장자리로 갔고 거기서 무서운 사실을 내려다보게 된다.
+
+데이모스가 지옥 위에 떠 있는 지옥 그 자체였던 것이다! 당신은 지옥에서 
+빠져나갈 수 있는 사람은 없다고 들었다. 하지만 당신은 그 사실을 완전히
+바꿔 놓을 수 있다! 재빠르게 당신은 데이모스에서 내려와 지옥의 표면으로
+내려왔다.","Het is je gelukt! Het afschuwelijke cyberdemoon
+dat de heerste over de verloren maanbasis van
+Deimos is dood en jij triomfeert. Maar ... waar ben je?
+Je klautert naar de rand van de maan en
+kijkt naar beneden om de vreselijke
+waarheid te zien.
+
+Deimos zweeft boven de hel zelf! Je hebt
+nog nooit gehoord van iemand die uit de hel is
+ontsnapt, maar de klootzakken zullen er
+spijt van krijgen dat ze ooit van je gehoord
+hebben! Snel stap je naar beneden, naar de
+oppervlakte van de hel.","Du har klart det! Den avskyelige
+cyberdemonherren som styrte
+den tapte månebasen Deimos
+har blitt drept, og du har triumfert!
+Men ... hvor er du? Du klatrer ti
+ kanten av månen og ser ned for
+å se den forferdelige sannheten.
+
+Deimos svever over selve helvete!
+Du har aldri hørt om noen som
+har rømt fra helvete, men du skal
+få de jævlene til å angre på at de
+noen gang har hørt om deg! Fort,
+rappeller ned til helvetes overflate.","Udało się! Zabiłeś paskudnego cyberdemona,
+który rządził opuszczoną bazą na
+Deimosie!
+Ale... gdzie jesteś? Wspinasz się na
+krawędź księżyca i patrzysz w dół,
+by ujrzeć straszliwą prawdę.
+
+Deimos unosi się nad samym Piekłem!
+Jeszcze nigdy nie słyszałeś o kimś,
+kto by uciekł z Piekła. Te sukinsyny zapłacą za to,
+że kiedykolwiek usłyszały o tobie!
+Prędko schodzisz na powierzchnię Piekła.","Você conseguiu! O hediondo líder
+ciberdemônio que comandava a base
+lunar de Deimos foi morto e você triunfou! 
+Mas... onde você está?
+Você sobe até a borda da lua e
+olha para baixo para descobrir uma 
+verdade terrível.
+
+Deimos está flutuando sobre o Inferno!
+Você nunca ouviu falar de alguém que
+escapou de lá, mas você fará os malditos
+se arrependerem de terem ouvido falar
+de você. Sem perder tempo, você desce
+de rapel até a superfície do Inferno.","Conseguiste! O hediondo líder
+ciberdemônio que comandava a base
+lunar de Deimos foi morto e saiste
+triunfante! Mas... onde é que estás?
+Sobes até a borda da lua e
+olhas para baixo para descobrir uma 
+verdade terrível.
+
+Deimos está a flutuar sobre o Inferno!
+nunca ouviste falar de alguém que
+tenha escapado, mas tu farás os malditos
+se arrependerem de terem ouvido falar
+de ti. Sem perder tempo, você desce
+de rapel até a superfície do Inferno.","Ai reușit! Odiosul stăpân ciberdemon care a
+condus baza pierdută de pe Deimos a fost ucis,
+iar tu ești biruitor! Însă... unde ești? Te cațeri
+până la marginea satelitului ca să vezi ce e jos și
+afli crudul adevăr.
+
+Deimos plutește deasupra Infernului însuși! N-ai mai 
+auzit de nimeni să scape din infern, dar tu o să-i faci 
+pe ticăloși să regrete că te-au cunoscut! Faci rapel 
+până jos pe suprafața iadului.","Получилось! Ужасающий владыка-кибердемон,
+повелевавший потерянной базой на Деймосе,
+пал от вашей руки с триумфом! Но... где вы?
+Подобравшись к краю луны вы смотрите вниз,
+только чтобы узреть страшную правду.
+
+Деймос парит над самим Адом! Вы не слыхали
+о том, чтобы кто-то сбегал из пекла, но
+эти сволочи ещё пожалеют, что связались
+с вами! Недолго думая, вы спускаетесь
+по верёвке к поверхности преисподней.","Успели сте! Грозни сајбер-демонски
+владар који је владао изгубљеном базом
+Деимосовог месеца је убијен и ви
+сте победили! Али ... где сте?
+Довлачите се до ивице месеца и
+гледате доле да видите страшну
+истину.
+
+Деимос плови изнад самог пакла!
+Никада нисте чули за било кога да бежи
+из Пакла, али ће ти кучкини синови жалити
+жалити што су уопште чули за вас!
+Брзо се враћате доле на површину
+пакла.","Du har gjort det! Den avskyvärda
+cyberdemonherren som styrde den
+förlorade Deimos månbasen har
+dödats och du är triumferande! Men ...
+var är du? Du klättrar till månens
+kant och tittar ner för att se de
+ hemska sanningen.
+ 
+Deimos svävar över själva helvetet!
+Du har aldrig hört talas om någon
+som har lyckats fly från helvetet, men
+du kommer att få de jävlarna att ångra
+att de någonsin hört talas om dig!
+Snabbt stiger du ner till helvetets yta.","Başardınız! İğrenç siber Kayıp
+Deimos'u yöneten iblis lordu ay
+üssü öldürüldü ve sen muzafferdir!
+Ama ... nerede Sen mi? Kenarına
+tırmanıyorsun Ay'a ve aşağıya
+bakıp korkunç Gerçek.
+
+Deimos cehennemin üzerinde
+yüzüyor!
+Cehennemden kaçan birini hiç
+duymadın mı? Cehennemden,
+ama piçleri yapacaksın Seni
+duydukları için üzgünler! Çabuk
+ol, yüzeye iniyorsun Cehennem.",,
 ,Sigil,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 E5INTRO,"Sigil story
 taken from its readme file
@@ -218,8 +836,27 @@ arsenal, get out of Hell, and back to
 Earth to face the more advanced demons
 that were sent ahead.
 
-Lock and load. Rip and tear.",,,,,,,,,,,,,,,,,,,,,,,,,,,
-E5TEXT,Sigil ending,,"Baphomet was only doing Satan's bidding
+Lock and load. Rip and tear.",,,,"Baphomet hat einzig und allein auf Satans
+Befehl hin ein mächtiges Siegel auf den
+Teleporter gelegt der dich zurück in die
+Hölle brachte. Aus irgendeinem Grund war
+ihnen nicht klar, dass du bereits zuvor der
+Grund für ihre Schlappe warst.
+
+Es wird Zeit dort mit deinem Arsenal
+aufzuräumen, aus der Hölle zu entkommen,
+und dir danach die höheren Dämonen
+vorzuknöpfen, die zur Erde geschickt
+wurden.
+
+Geladen und gesichert.
+Jetzt heißt's reißen und zerfetzen.",,,,,,,,,,,,,,,,,,,,,,,
+E5TEXT,"Sigil ending
+
+de, es, esm, fr, it, jp, ko, pl, pt, ru, zh, zht
+are official texts taken from
+DOOM + DOOM II's
+Common.kpf/localization/",,"Baphomet was only doing Satan's bidding
 by bringing you back to Hell. Somehow they
 didn't understand that you're the reason
 they failed in the first place.
@@ -349,8 +986,21 @@ caught in Baphomet's cunning snare,
 catapulted into a new, grotesque domain
 of relentless torment, unending demon
 hordes, and an onslaught of heavy metal
-mayhem!",,,,,,,,,,,,,,,,,,,,,,,,,,,
-E6TEXT,Sigil II ending,,"Satan erred in casting you to Hell's
+mayhem!",,,,"Nachdem du das Pentagramm der
+Unverwundbarkeit durchbrochen hast,
+findest du dich nicht auf einer siegreichen
+Reise zurück um die Erde zu retten,
+sondern gefangen in Baphomets listiger
+Schlinge, katapultiert in eine neue
+groteskes Reich unerbittlicher Qualen,
+nicht enden wollender Dämonen Horden und
+einem Ansturm von Heavy Metal Chaos!",,,,,,,,,,,,,,,,,,,,,,,
+E6TEXT,"Sigil II ending
+
+de, es, esm, fr, it, jp, ko, pl, pt, ru, zh, zht
+are official texts taken from
+DOOM + DOOM II's
+Common.kpf/localization/",,"Satan erred in casting you to Hell's
 darker depths. His plan failed. He has
 tried for so long to destroy you, and he
 has lost every single time. His only
@@ -460,7 +1110,21 @@ scene. By killing, killing, and killing, you
 won. You stopped the invasion, saved Mars
 base, and became a war hero. What they
 don't talk about so much is that you were
-the only survivor.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+the only survivor.",,,,"DIE GESCHICHTE GEHT WEITER...
+
+Endlich zurück. Nach tagelangen harten
+Kämpfen im Weltraum bist du in deinen
+wohlverdienten Urlaub nach Hause
+zurückgekehrt. Du bist einer der besten
+Soldaten der Erde, hart im Nehmen, zäh und
+schwer bewaffnet. Als die Alien-Invasion
+auf dem Mars begann, warst Du der Erste
+auf der Matte. Durch nicht enden
+wollendes töten hast Du gewonnen. Du hast
+die Invasion gestoppt, die Mars-Basis
+gerettet und wurdest ein Kriegsheld.
+Worüber nicht so viel berichtet wird, ist,
+dass du der einzige Überlebende warst.",,,,,,,,,,,,,,,,,,,,,,,
 D2INTRO2,,,"But that's all behind you now. You've quit
 the military, and are heading home. Your
 drop pod lands with a crunch. You open 'er
@@ -475,7 +1139,25 @@ blast away, killing the troublemaker. It
 looks like a human, but something's wrong.
 His mouth is filled with half-chewed flesh,
 and he's all messed up, like a zombie a bad
-horror movie. Hell, not again!",,,,,,,,,,,,,,,,,,,,,,,,,,,
+horror movie. Hell, not again!",,,,"Aber das liegt jetzt alles hinter dir. Du
+hast beim Militär gekündigt und bist auf
+dem Weg nach Hause. Deine Landekapsel
+landet mit einem Knirschen. Du öffnest sie
+und schaust hinaus. Verdammt! Die Stadt vor
+dir steht in Flammen. Was zum Teufel ist
+hier los? Du taumelst vorwärts und
+greifst nach deiner Waffe. Horden von
+Flüchtlingen fliehen aus der flammenden
+Metropole. Ein paar von ihnen schreien vor
+Angst. Du schielst. Was ist das? Jemand
+greift die Flüchtlinge an. Du stürmst
+herbei und schießt auf den Angreifer und
+tötest ihn. Er sieht aus wie ein Mensch,
+aber irgendetwas stimmt nicht. Sein Mund
+ist mit halb zerkautem Fleisch gefüllt und
+er ist völlig entstellt. Wie ein Zombie aus
+einem schlechten Horrorfilm. Verdammt,
+nicht schon wieder!",,,,,,,,,,,,,,,,,,,,,,,
 D2INTRO3,,,"You can feel it. It's all starting again,
 just like on Mars. First, people are taken
 over, turned into cannibal Things. Then the
@@ -493,7 +1175,29 @@ fully human. The wise men of humanity have
 evolved a plan to save what's left of the
 human race. They have built enormous ships
 to carry the remaining people into space,
-safely away from the ruined world.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+safely away from the ruined world.",,,,"Du spürst, es wiederholt sich alles, wie
+auf dem Mars. Zuerst werden die Menschen
+überwältigt und in diese kannibalischen
+Dinger verwandelt. Dann beginnt der wahre
+Horror mit den deformierten
+Monstrositäten von Außerhalb. Aber
+diesmal auf der Erde.
+
+Es stellt sich heraus dass die Invasoren
+schon überall sind. Die Monster reichen
+von Tokio bis Timbuktu, von Stockholm bis
+Scranton. Milliarden Menschen sind tot.
+Etliche Menschen wurden in
+fleischfressende Mutanten verwandelt,
+aber einige wenige, sehr wenige, sind noch
+am Leben und vollständig menschlich. Die
+klügsten der verbleibenden Menschheit
+haben einen Plan entwickelt, um zu retten
+was von der menschlichen Rasse noch übrig
+ist. Sie haben riesige Schiffe gebaut um die
+übrigen Menschen in den Weltraum zu
+bringen, in Sicherheit, weg von der
+zerstörten Welt.",,,,,,,,,,,,,,,,,,,,,,,
 D2INTRO4,,,"Unfortunately, Earth's only ground
 spaceport has just been taken over by the
 demons. They've instituted a sort of force
@@ -512,16 +1216,49 @@ Soon, brave men drop like flies. You lose
 track of your friends, though sometimes
 you can hear them scream when they die,
 and the sounds of combat echo from deep
-within the starbase.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+within the starbase.",,,,"Leider wurde der einzige Raumhafen der
+Erde gerade von den Dämonen übernommen.
+Sie haben eine Art Kraftfeld - eine
+Flammenbarriere - über dem Raumhafen
+errichtet; Es können keine Schiffe landen
+oder starten. Du musst wieder in Aktion
+treten. Die bemitleidenswerten Überreste
+der Soldaten der Erde versuchen die
+Eindringlinge im Raumhafen anzugreifen.
+Wenn ihr gewinnt könnt ihr vielleicht die
+Barriere ausschalten, damit die Schiffe
+abfliegen können und der Homo Sapiens
+noch nicht ausstirbt. Wenn ihr verliert war
+es das. Die Menschheit ist Geschichte.
+
+Du und deine Kameraden starten den
+Angriff. Bald fallen die tapferen Männer
+wie die Fliegen. Du verlierst deine Freunde
+aus den Augen, aber manchmal kannst du sie
+schreien hören, wenn sie sterben, und die
+Geräusche des Kampfes hallen aus den
+Tiefen der Sternenbasis.",,,,,,,,,,,,,,,,,,,,,,,
 D2INTRO5,,,"Something hisses with rage from the steel
 tunnels ahead. They know you're here. They
 have no pity, no mercy, take no quarter,
 and crave none. They're the perfect enemy,
 in a way. No one's left but you. You... and
-Them.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+Them.",,,,"Etwas faucht voller Wut aus den
+stählernen Tunneln vor uns. Sie wissen
+dass du da bist. Sie haben kein Mitleid,
+keine Gnade, kennen kein Pardon, und haben
+nichts mehr zu verlieren. Sie sind der
+perfekte Feind, in gewisser Weise. Es ist
+niemand mehr übrig außer dir.
+Du... und Sie.",,,,,,,,,,,,,,,,,,,,,,,
 ,Master Levels,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 MLEND,"Master Levels victory text
-from PSX doom",,"You have assaulted and triumphed over the
+from PSX doom
+
+de, es, esm, fr, it, jp, ko, pl, pt, ru, zh, zht
+are official texts taken from
+DOOM + DOOM II's
+Common.kpf/localization/",,"You have assaulted and triumphed over the
 most vicious realms that the demented
 minds of our designers could devise.
 
@@ -635,7 +1372,8 @@ Mestre da Destruição.",,,"Ты бросился в бой и победил, �
 是对你强大实力的无言赞颂。
 
 你获得了“毁灭大师”的称号。"
-MLSECRET,teeth.wad secret level,,"Congratulations, you've found the
+MLSECRET,"teeth.wad secret level
+based on GZDoom's localisation of MAP32",,"Congratulations, you've found the
 super secret level!",,"Gratulujeme, objevil@[ao_cs] jsi supertajný level!","Tillykke, du har fundet det
 superhemmelige niveau!","Herzlichen Glückwunsch, du hast den
 Super-Geheimlevel gefunden.",,"Gratulon! Vi trovis la super-sekretan
@@ -661,12 +1399,18 @@ Titan, a moon of Saturn, you must acquire
 three keys to find the exit hidden in the
 mining headquarters. Since the natives are
 definitely NOT friendly, an exit is a nice
-thing to find.",,,,,,,,,,,,,,,,,,"Wyrzucony pośrodku bazy wydobywczej
-na Tytanie, księzycu Saturna, musisz zdobyć
-trzy klucze aby znaleźć wyjście ukryte
-w siedzibie górniczej. Jako że mieszkańcy
-z pewnością NIE SĄ przyjaźni, fajnie
-by było znaleźć jakieś wyjście.",,,,,,,,,
+thing to find.",,,,"Mitten in einer Minenbasis auf dem
+Saturnmond Titan abgeworfen, musst Du
+drei Schlüssel beschaffen um den Ausgang
+zu finden, der in der Minen-Zentrale
+versteckt ist. Da die Einheimischen definitiv
+NICHT sehr freundlich gesinnt sind,
+wäre es gut schnell einen Ausgang zu finden.",,,,,,,,,,,,,,"Wyrzucony pośrodku bazy wydobywczej na
+Tytanie, księzycu Saturna, musisz zdobyć
+trzy klucze aby znaleźć wyjście ukryte w
+siedzibie górniczej. Jako że mieszkańcy z
+pewnością NIE SĄ przyjaźni, fajnie by było
+znaleźć jakieś wyjście.",,,,,,,,,
 ML4STORY2,The Titan Anomaly,,"While exploring for new mines on Titan
 (someone fragged the old one -- darn!),
 the UAC discovered the remains of an alien
@@ -707,25 +1451,51 @@ the Security Headquarters (E), and the
 Guard Barracks to gain the keys that'll
 allow you access to the Anomaly Research
 Area (W), where, if you're lucky, you may
-just find an exit back home.",,,,,,,,,,,,,,,,,"Podczas szukania nowych kopalni na Tytanie
-(ktoś wysadził stare -- niech to!), UAC
-odkryło pozostałości z kosmicznej bazy.
-Pokrywa bezpieczeństwa była mocno
-przymocowana przy znalezisku, nazywana tylko
-niejasno jako Anomalia w raportach. Masz za
-zadanie włamać się i dowiedzieć co się stało.
+just find an exit back home.",,,"Auf der Suche nach neuen Minen auf Titan
+(Jemand hat die alte gesprengt - Mist!),
+entdeckte die UAC die Überreste einer
+außerirdischen Basis. Der Fund, der in den
+Berichten nur vage als Anomalie
+bezeichnet wird, befindet sich unter
+strengen Sicherheitsvorkehrungen.
+Du wurdest beauftragt dort einzudringen
+und herauszufinden was dort vor sich geht. 
 
-Stacja badawcza i garnizon bezpieczeństwa UAC
-zjawił się wokól anomalii, a ty rozpoczniesz
-swoją wizytę w strefie bezpieczeństwa, gdzie
-poproszą cię o wylegitymowanie się. Szkoda że
-nie masz jak tego zrobić. Będziesz musiał 
-przeszukać centrum dla zwiedzających (S),
-administrację naukową (N), siedzibę ochrony (E),
-oraz koszary strażników aby zyskać klucze które
-dadzą ci dostęp do Strefy Badania Anomalii (W),
-gdzie, przy odrobinie szczęścia, znajdziesz
-wyjście do domu.",,,,,,,,,
+Um die Anomalie herum wurde eine
+UAC-Forschungsbasis und ein
+Sicherheitsbereich gebaut. Du wirst deine
+Reise im Sicherheitsbereich beginnen, wo
+du aufgefordert wirst deine Papiere
+vorzuzeigen. Schade, dass du keine hast. Du
+musst das Besucherzentrum (S), das
+wissenschaftliche Verwaltungsgebäude
+(N), das Sicherheits-Hauptquartier (E) und
+die Wachen-Kaserne erkunden, um die
+Schlüssel zu erhalten, die dir Zugang zu
+dem Anomalie-Forschungsbereich (W)
+verschaffen, wo du mit etwas Glück einen
+Ausgang nach Hause finden kannst.",,,,,,,,,,,,,,"Podczas szukania nowych kopalni na
+Tytanie (ktoś wysadził stare -- niech to!),
+UAC odkryło pozostałości z kosmicznej
+bazy. Pokrywa bezpieczeństwa była mocno
+przymocowana przy znalezisku, nazywana
+tylko niejasno jako Anomalia w raportach.
+Masz za zadanie włamać się i dowiedzieć co
+się stało.
+
+Stacja badawcza i garnizon bezpieczeństwa
+UAC zjawił się wokól anomalii, a ty
+rozpoczniesz swoją wizytę w strefie
+bezpieczeństwa, gdzie poproszą cię o
+wylegitymowanie się. Szkoda że nie masz jak
+tego zrobić. Będziesz musiał przeszukać
+centrum dla zwiedzających (S),
+administrację naukową (N), siedzibę
+ochrony (E), oraz koszary strażników aby
+zyskać klucze które dadzą ci dostęp do
+Strefy Badania Anomalii (W), gdzie, przy
+odrobinie szczęścia, znajdziesz wyjście do
+domu.",,,,,,,,,
 ML4STORY3,The Farside of Titan,,"Given your success with the UAC mining base
 and the Anomaly investigation, it was
 inevitable that you get picked for this
@@ -740,11 +1510,19 @@ foray into the Titan Farside Research
 Base. Oh well. Rumours have it that some
 prototypes of alien technology are being
 tested here. Please investigate and
-report.",,,,,,,,,,,,,,,,,"Patrząc na twój sukces z bazą wydobywczą
+report.",,,"In Anbetracht deines Erfolges mit der
+UAC-Minenbasis und der
+Anomalienuntersuchung war es
+unvermeidlich, dass du für den Ausflug in
+die Titan Farside Research Basis
+ausgewählt wurdest. Tja, Gerüchten
+zufolge werden hier einige Prototypen
+außerirdischer Technologie getestet.
+Bitte untersuche das und berichte.",,,,,,,,,,,,,,"Patrząc na twój sukces z bazą wydobywczą
 i dochodzeniem w sprawie Anomalii, wybór
-ciebie do udania się na stację badawczą
-na niewidocznej stronie Tytana był oczywisty.
-No cóż. Według plotek jakieś prototypy 
+ciebie do udania się na stację badawczą na
+niewidocznej stronie Tytana był oczywisty.
+No cóż. Według plotek jakieś prototypy
 technologii obcych są tam testowane.
 Proszę to zbadać i złożyć raport.",,,,,,,,,
 ML4STORY4,Trouble on Titan,,"Well, you know the story. UAC keeps
@@ -763,28 +1541,55 @@ still holding out for their space psychosis
 theory. It's a compromise, you're being sent
 again, but as usual, you only get a pistol...
 Just in case there aren't any aliens after
-all.",,,,,,,,,,,,,,,,,,"No cóż, wiesz o co biega. UAC ciągle cię wysyła
-do różnych miejsc na Tytanie by zbadać wszelakie
-dziwne zdarzenia. Ciągle im mówisz że na Tytanie
-grasują kosmici.
-Zgłosiłeś to po tym gdy prawie odebrali ci łeb 
-w kopalniach. Powtórzyłeś im to kiedy stracili
-strefę z anomalią. Twoje dochodzenie w sprawie
-utraty komunikacji z bazą na niewidocznej stronie
-tego księżyca też o tym wspominało. Wydaje mi się
-że zaczynają ci wierzyć, przynajmniej poza działem
-psychologii -- oni wciąż się wstrzymują ze swoją
-teorią psychozy kosmicznej. Jako kompromis zostajesz
-wysłany ponownie, lecz jak zazwyczaj, masz tylko
-pistolet... Na wypadek gdyby jednak nie było tam
-żadnych kosmitów.",,,,,,,,,
+all.",,,,"Nun, du weißt wie es läuft. Die UAC schickt
+dich an verschiedene Orte auf Titan um
+verschiedene seltsame Vorkommnisse zu
+untersuchen. Du sagst ihnen immer wieder
+dass es Aliens auf Titan gibt. Du hast es
+gemeldet nachdem dir in den Minen fast der
+Kopf abgerissen wurde. Du hast es ihnen
+wieder gesagt als sie den Anomalie-Bereich
+verloren. Auch bei deiner Untersuchung
+über den Verlust der Kommunikation auf
+der Farside-Basis hast du es wiederholt
+erwähnt. Sie fangen an dir zu glauben,
+glaube ich, mit Ausnahme der
+Psychologieabteilung, die immer noch an
+der Weltraumpsychose-Theorie bei dir
+festhält. Es ist ein Kompromiss, du wirst
+wieder geschickt, aber wie üblich bekommst
+du nur eine Pistole...
+Nur für den Fall dass es doch keine Aliens gibt.",,,,,,,,,,,,,,"No cóż, wiesz o co biega. UAC ciągle cię
+wysyła do różnych miejsc na Tytanie by
+zbadać wszelakie dziwne zdarzenia. Ciągle
+im mówisz że na Tytanie grasują kosmici.
+Zgłosiłeś to po tym gdy prawie odebrali ci
+łeb  w kopalniach. Powtórzyłeś im to kiedy
+stracili strefę z anomalią. Twoje
+dochodzenie w sprawie utraty komunikacji z
+bazą na niewidocznej stronie tego księżyca
+też o tym wspominało. Wydaje mi się że
+zaczynają ci wierzyć, przynajmniej poza
+działem psychologii -- oni wciąż się
+wstrzymują ze swoją teorią psychozy
+kosmicznej. Jako kompromis zostajesz
+wysłany ponownie, lecz jak zazwyczaj,
+masz tylko pistolet... Na wypadek gdyby
+jednak nie było tam żadnych kosmitów.",,,,,,,,,
 ML4STORY5,Titan Manor,,"A strange and enigmatic building on a moon
 of Saturn contains the latest in alien
 weapon technology. If you can survive the
 guards and solve the puzzles, the
 Federation will leapfrog in technology.
 It's all up to you. Oh and watch those
-windows!",,,,,,,,,,,,,,,,,,"Równie dziwny, co enigmatyczny budynek 
+windows!",,,,"Ein merkwürdiges und rätselhaftes
+Gebäude auf einem Saturnmond enthält die
+neueste Waffentechnologie der Aliens.
+Wenn du die Wachen überleben und die
+Rätsel lösen kannst wird die Föderation
+einen Technologiesprung machen.
+Es hängt alles von dir ab.
+Oh, und pass auf die Fenster auf!",,,,,,,,,,,,,,"Równie dziwny, co enigmatyczny budynek 
 na księżycu Saturna zawiera najnowszą
 technologię obcych. Jeśli możesz przejść
 przez strażników i rozwiązać zagadki,
@@ -793,8 +1598,12 @@ w technologii. Wszystko zależy od ciebie.
 Przy okazji, pilnuj tych okien!",,,,,,,,,
 ML4STORY6,Trapped on Titan,,"Every step you take may be your last.
 If it looks too easy, it probably isn't.
-Good luck -- you'll need it.",,,,,,,,,,,,,,,,,,"Każdy krok może być twoim ostatnim.
-Jak coś wygląda za łatwo, to zapewne pułapka.
+Good luck -- you'll need it.",,,,"Jeder Schritt den du machst kann dein
+letzter sein.
+Wenn es zu einfach aussieht,
+ist es das wahrscheinlich nicht.
+Viel Glück - du wirst es brauchen.",,,,,,,,,,,,,,"Każdy krok może być twoim ostatnim. Jak
+coś wygląda za łatwo, to zapewne pułapka.
 Powodzenia -- przyda ci się.",,,,,,,,,
 ML5STORY1,"John Anderson's INFERNO level story
 taken from their readme files
@@ -813,7 +1622,23 @@ Chances are she made it through -- but
 what's on the other side?
 
 Only one way to find out. You'll have to go
-through DANTE'S GATE.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+through DANTE'S GATE.",,,,"Nach all dem Irrsinn auf der UAC-Basis hast
+du den Kontakt zu deiner Gefährtin
+BEATRICE verloren. Wie ihr beide euch aus
+den Augen verlieren konntet, ist
+angesichts all der Dämonen und Teufel
+kaum verwunderlich. Doch du bist fest
+entschlossen: Du wirst nicht umsonst durch
+die Hölle gehen. Der einzige weitere
+Überlebende außer dir und Beatrice ist
+VIRGIL, der Hipster-Poet aus den Tiefen des
+Alls. Er hat Beatrice zuletzt an einem der
+Warp-Tore gesehen. Mit etwas Glück hat sie
+es hindurchgeschafft – doch was erwartet
+dich auf der anderen Seite?
+
+Es gibt nur einen Weg, das herauszufinden:
+Du musst durch DANTES TOR treten.",,,,,,,,,,,,,,,,,,,,,,,
 ML5STORY2_1,Crossing Acheron: 2nd Canto of INFERNO,,"Having passed through DANTE'S GATE and
 survived, you now find yourself in a keep
 on the shores of the river Acheron. This is
@@ -827,8 +1652,26 @@ distance you hear the eerie purring of the
 Arch-Vile (just be sure not to stare at him
 for too long before you start running). As
 usual, you dispatch what fiends you may
-and begin the task at hand.",,,,,,,,,,,,,,,,,,,,,,,,,,,
-ML5STORY2_2,,,"Your goal? To get the hell out of this
+and begin the task at hand.",,,,"Nachdem du DANTES TOR durchquert und
+überlebt hast, findest du dich nun in einer
+Festung am Ufer des Flusses Acheron
+wieder. Dies ist die zweite Etappe deiner
+Reise auf der Suche nach Beatrice. Von
+deinem Führer Virgil fehlt jede Spur. ""Er
+hat sich aus dem Staub gemacht!"" denkst du
+dir; doch es bleibt keine Zeit, um weiter
+darüber nachzudenken: Schon greifen dich
+mehrere Dämonen an, und aus der Ferne
+dringt das unheilvolle Schnurren des
+Arch-Vile an dein Ohr. (Schau ihm lieber
+nicht zu lange in die Augen bevor du
+losrennst.) Wie so oft erledigst du was an
+Monstern zu erledigen ist und widmest dich
+deiner Aufgabe.",,,,,,,,,,,,,,,,,,,,,,,
+ML5STORY2_2,"""Gimme some sugar, baby"" is a line from
+the movie Army of Darkness, so translators
+should consider how that line was translated
+in their languages",,"Your goal? To get the hell out of this
 place as quickly as possible and find your
 beloved Beatrice. You only hope that she
 has already passed through this hell-hole
@@ -836,7 +1679,15 @@ to a safer haven beyond. If only you could
 hold her in your arms again, you know what
 you would say:
 
-""Gimme some sugar, Babe.""",,,,,,,,,,,,,,,,,,,,,,,,,,,
+""Gimme some sugar, Babe.""",,,,"Dein Ziel? So schnell wie möglich aus
+diesem höllischen Ort zu entkommen – und
+Beatrice wiederzufinden. Du hoffst nur,
+dass sie diesen Albtraum bereits hinter
+sich gelassen hat und sich nun an einem
+sichereren Ort befindet. Und wenn du sie
+endlich wieder in den Armen halten
+könntest, wüsstest du genau,
+was du sagen würdest: ""Küss mich, Babe.""",,,,,,,,,,,,,,,,,,,,,,,
 ML5STORY3,Virgil's Lead: 3rd Canto of INFERNO,,"In your search for Beatrice, you lost your
 guide Virgil (the beatnik space-poet) while
 crossing Acheron. But you've caught up
@@ -849,7 +1700,20 @@ words).
 word and a gun then you can a kind word.""
   ""You belong to the NRA, don't you?"" Virgil
 asks.
-  ""No, I'm just a pessimistic pacifist.""",,,,,,,,,,,,,,,,,,,,,,,,,,,
+  ""No, I'm just a pessimistic pacifist.""",,,,"Auf deiner Suche nach Beatrice hast du
+deinen Führer Virgil beim Überqueren des
+Acheron aus den Augen verloren. Doch nun
+hast du ihn wieder eingeholt, und er hat
+sich bereit erklärt, dich durch diese
+Zwischenstation zu führen (vor allem
+deshalb, weil Dämonen und untote
+Sergeants von seiner Wortgewandtheit
+herzlich wenig beeindruckt sind). ""Mit
+einem freundlichen Wort und einer Waffe
+kommt man deutlich weiter als nur mit
+einem freundlichen Wort"" ""Du bist Mitglied
+bei der NRA, oder?"" fragte Virgil. ""Nein, ich
+bin nur ein pessimistischer Pazifist.""",,,,,,,,,,,,,,,,,,,,,,,
 ML5STORY4,Minos' Judgement: 4th Canto of INFERNO,,"In your search for Beatrice, your guide,
 Virgil (the beatnik space-poet) has just
 successfully lead you through the First
@@ -858,7 +1722,16 @@ court of Minos, the Judge of Hell.
   ""Well,"" you say, ""this is another fine mess
 you've gotten us into. Now what?""
   Virgil, with his usual loquacity, replies:
-""Heh heh.""",,,,,,,,,,,,,,,,,,,,,,,,,,,
+""Heh heh.""",,,,"Auf deiner Suche nach Beatrice hat dich
+dein Führer Virgil soeben erfolgreich
+durch den Ersten Kreis des Hades geleitet.
+Doch nun stehst du ausgerechnet vor dem
+Gerichtshof des Minos, dem Richter der
+Hölle. ""Na großartig"" sagst du, ""wieder
+mal eine herrliche Klemme, in die du uns da
+gebracht hast. Und jetzt?"" Virgil, ganz der
+wortgewandte Philosoph, antwortet nur:
+""Heh heh.""",,,,,,,,,,,,,,,,,,,,,,,
 ML5STORY5,Nessus: 5th Canto of INFERNO,,"Minos decided to grant leniency and not
 kill you until next week. In the meantime,
 having slipped past Cerberus, the top dog,
@@ -877,11 +1750,36 @@ the river on his shoulders.
   ""Why, that's mighty white of ya',""
 says Virgil.
   ""No problem, sailor,"" says Nessus.
-""Hop on.""",,,,,,,,,,,,,,,,,,,,,,,,,,,
+""Hop on.""",,,,"Minos hat beschlossen, Gnade walten zu
+lassen und dich erst nächste Woche
+hinrichten zu lassen. In der Zwischenzeit,
+nach einem Schlenker zu Cerberus, dem
+obersten Höllenhund, erreichst du
+gemeinsam mit Virgil einen Abgrund mit
+Blick auf den Fluss Phlegethon. Dort
+begrüßt Virgil den Minotaurus mit
+Redewendungen aus einem längst
+veralteten Sprachführer „Dämonisch für
+Anfänger“ von Charles Berlitz. Als der
+Minotaurus aufgefordert wird seine
+Unterwäsche abzulegen, gerät er in Rage,
+wirft sich auf den Boden und bekommt einen
+Wutanfall. Du packst Virgil am Kragen, und
+gemeinsam klettert ihr über einige
+Felsbrocken hinab zum Fuß der Klippe, wo
+Chiron, der oberste Zentaur, euch
+empfängt. Er bietet an, dass Nessus euch
+auf seinen Schultern über den Fluss trägt.
+""Das ist aber ausgesprochen nobel von dir""
+sagt Virgil. ""Kein Ding, Seemann"", erwidert
+Nessus. ""Spring auf.""",,,,,,,,,,,,,,,,,,,,,,,
 ML5STORY6,Vesperas: 7th Canto of INFERNO,,"VESPERAS (or ""vespers""): an evening
 ceremony.
 
-""Now it's dark.""",,,,,,,,,,,,,,,,,,,,,,,,,,,
+""Now it's dark.""",,,,"VESPERAS (oder ""vespers""):
+eine abendliche Zeremony.
+
+""Nun ist es dunkel.""",,,,,,,,,,,,,,,,,,,,,,,
 ML6STORY1_1,"Sverre André Kvernmo's CABAL level story
 taken from their readme files",,"You once were the biggest and baddest
 Cyber-demon to rule hell and you
@@ -892,7 +1790,20 @@ only dismantled, but also a victim of the
 utmost demonic humiliation: You've been
 morphed into a human! Of course you're out
 for revenge and have to kick the other
-members of the Cabal's butts one by one.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+members of the Cabal's butts one by one.",,,,"Einst warst du der mächtigste und
+furchteinflößendste Cyber-Dämon, der je
+über die Hölle herrschte. Du standest an
+der Spitze des Rates, der die Unterwelt
+regierte ""Der Kabal"". Doch dann kam der
+Verrat. Von deinen eigenen Mitstreitern
+hintergangen, fandest du dich nicht nur
+zerstört wieder, sondern musstest auch die
+ultimative dämonische Demütigung
+erleiden: Man hat dich in einen Menschen
+verwandelt! Natürlich dürstet es dich
+nach Rache, indem du die anderen
+Mitglieder der Kabal einen nach dem
+anderen zur Strecke bringst.",,,,,,,,,,,,,,,,,,,,,,,
 ML6STORY1_2,Bloodsea Keep,,"""Bloodsea Keep"" is the home of your past
 advisor; Veavitdpoh (Very Evil Arch-Vile In
 The Deepest Parts Of Hell). Veavitdpoh is
@@ -901,7 +1812,19 @@ rip-out-heart-routine and so shuns all use
 of technology and mechanical weaponry.
 His cult following has grown the last
 century, but still amounts to little.
-Unless you face them alone, of course...",,,,,,,,,,,,,,,,,,,,,,,,,,,
+Unless you face them alone, of course...",,,,"""Bloodsea Keep"" ist das Zuhause deines
+ehemaligen Beraters: Veavitdpoh (Very Evil
+Arch-Vile In The Deepest Parts Of Hell –
+Sehr böser Erz-Schurke aus den tiefsten
+Tiefen der Hölle). Veavitdpoh ist ein Dämon
+der alten Schule, der an die gute alte
+„Herz-rausreißen“-Methode glaubt und
+daher jede Form von Technologie und
+mechanischen Waffen verachtet. Seine
+Kultanhängerschaft ist im letzten
+Jahrhundert zwar gewachsen, bleibt aber
+dennoch unbedeutend. Außer du stellst
+dich ihnen allein...",,,,,,,,,,,,,,,,,,,,,,,
 ML6STORY1_3,,,"After being dumped into the endless ""Sea
 of Blood"" following your humiliating
 transformation into a human, you swim for
@@ -936,18 +1859,50 @@ maniacs at best. ""That's OK"" you think,
 ""maybe they brought some more ammo for
 the shotgun"", before cocking the rusty
 pump-action, causing an eyeball to fly out
-of the cartridge...",,,,,,,,,,,,,,,,,,,,,,,,,,
+of the cartridge...",,,"Nachdem du nach deiner demütigenden
+Verwandlung in einen Menschen in das
+endlose „Meer aus Blut“ geworfen
+wurdest, schwimmst du eine Ewigkeit, bis du
+schließlich mit dem Kopf gegen den Pier
+der Festung stößt. Mit den Füßen im
+Schlamm menschlicher Überreste
+vergraben, streift deine Hand über eine
+alte, blutgetränkte Schrotflinte – die
+abgetrennte Hand des Vorbesitzers noch
+daran befestigt. Alle, die mit solch einem
+Gegenstand „Bloodsea Keep“ betreten,
+werden zum Opfer der
+Lieblingsbeschäftigung deines einstigen
+Beraters: Folter. Alle „Ketzer“, die sich
+noch am Leben in der Festung befinden,
+dürften bestenfalls als wahnsinnige
+Mörder gelten. ""Schon gut"", denkst du dir,
+""vielleicht haben sie ja noch etwas
+Munition für die Schrotflinte dagelassen"",
+bevor du den rostigen Repetiermechanismus
+durchlädst und dabei ein Augapfel aus der
+Patronenkammer fliegt...",,,,,,,,,,,,,,,,,,,,,,,
 ML6STORY2,Bloodflood,,"You have come upon one of the Cabal's
 blood-depots. An important element in any
 powerful black magic is huge amounts of
 blood. By emptying the depot's tanks into
 the nearby river, you will have struck
-your first blow against the Cabal.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+your first blow against the Cabal.",,,,"Du bist auf eines der Blut-Depots der
+Kabal gestoßen. Ein wichtiger Bestandteil
+jeder mächtigen schwarzen Magie ist eine
+riesige Menge Blut. Indem du die Tanks des
+Depots in den nahegelegenen Fluss
+entleerst, wirst du den ersten Schlag
+gegen den Kabal geführt haben.",,,,,,,,,,,,,,,,,,,,,,,
 ML6STORY3,Derelict Station,,"Just having escaped the Sea of Blood, you
 have sought out a derelict building in the
 search for arms & equipment.
 Unfortunately the station isn't as
-abandoned as you thought.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+abandoned as you thought.",,,,"Kaum dem Meer aus Blut entkommen,
+hast du ein verfallenes Gebäude auf der
+Suche nach Waffen und Ausrüstung
+aufgesucht. Leider ist die Station nicht so
+verlassen, wie du dachtest.",,,,,,,,,,,,,,,,,,,,,,,
 ML6STORY4,Mephisto's Mausoleum,,"In Mephisto's Mausoleum, you have reached
 the grave of an old friend and mentor:
 ""Mephisto"". Yeah, old Lucy was a tough
@@ -959,7 +1914,19 @@ of course. His immortal spirit was kept as a
 member of the Cabal, though, and so he was
 in on the betrayal against you. Time to
 enter his tomb and lay the old man down to
-rest for good...",,,,,,,,,,,,,,,,,,,,,,,,,,,
+rest for good...",,,,"In Mephistos Mausoleum hast du das Grab
+eines alten Freundes und Mentors
+erreicht: ""Mephisto"". Ja, die gute alte
+Lucy war ein zäher Bastard. Aber dann war
+da dieser Vorfall mit dem irdischen Marine,
+der ihm in den härteren Kreisen der Hölle
+viel Ansehen gekostet hat. Also musstest
+du ihn natürlich vom Thron stoßen. Sein
+unsterblicher Geist blieb jedoch als
+Mitglied der Kabal erhalten, und so war
+auch er an dem Verrat gegen dich beteiligt.
+Zeit sein Grab zu betreten und den alten
+Mann ein für alle Mal zur Ruhe zu betten...",,,,,,,,,,,,,,,,,,,,,,,
 ML6STORY5,The Express Elevator to Hell,,"When the ""Express Elevator to Hell""
 starts descending, the renegade Cabal has
 begun to realize you might be a threat to
@@ -969,7 +1936,27 @@ deepest pits of Hell, the lift first slows
 down before it jerks to a halt. Ambush!
 Survive the initial onslaught and find a
 gateway out of the now sealed elevator.
-Tough, but that's the way you like it...",,,,,,,,,,,,,,,,,,,,,,,,,,,
+Tough, but that's the way you like it...","When the ""Express Elevator to Hell""
+starts descending, the renegade Cabal has
+begun to realise you might be a threat to
+them, human or not. Halfway down the
+shaft that should have taken you to the
+deepest pits of Hell, the lift first slows
+down before it jerks to a halt. Ambush!
+Survive the initial onslaught and find a
+gateway out of the now sealed elevator.
+Tough, but that's the way you like it...",,,"Als der ""Express-Aufzug zur Hölle"" zu
+sinken beginnt, dämmert es den abtrünnigen
+Kabal, dass du vielleicht doch eine
+Bedrohung für sie bist, menschlich hin oder
+her. Auf halbem Weg durch den Schacht,
+der dich in die tiefsten Abgründe der Hölle
+bringen sollte, verlangsamt sich der
+Aufzug zunächst, bevor er ruckartig zum
+Stillstand kommt. Hinterhalt! Überlebe
+den ersten Ansturm und finde ein Portal
+hinaus aus dem nun versiegelten Aufzug.
+Hart, aber genau so magst du es...",,,,,,,,,,,,,,,,,,,,,,,
 ML6STORY6,We Who Are About to Die,,"The Cabal has started striking back at
 you. That last gateway should have taken
 you... Well, somewhere else. Not to an
@@ -979,7 +1966,18 @@ get ready for the first wave of
 hellspawned gladiators, you swear to
 blast the emperor's thumbs off before he
 can even think about turning them down on
-you...",,,,,,,,,,,,,,,,,,,,,,,,,,,
+you...",,,,"Der Kabal hat begonnen zurückzuschlagen.
+Dieses letzte Portal hätte dich
+eigentlich... nun ja, irgendwo anders
+hinbringen sollen. Nicht in eine Arena in
+der Tausende von Menschen ihre Seelen an
+hungrige Dämonen verloren haben.
+Während du dich auf die erste Welle
+höllengeborener Gladiatoren
+vorbereitest, schwörst du, dem Imperator
+die Daumen wegzublasen, noch bevor er
+überhaupt daran denken kann,
+sie gegen dich zu senken...",,,,,,,,,,,,,,,,,,,,,,,
 ML6STORY7,Eye of the Storm,,"You find yourself in the remains of an old
 fortress after ascending a lift shaft
 from the mines where you were trapped.
@@ -996,7 +1994,17 @@ you know of this place, it should pose no
 great threat to you. It used to be the
 centre of a Cacodemon empire that
 perished some 665 years ago. Oh, by the
-way, it's new years eve...",,,,,,,,,,,,,,,,,,,,,,,,,,
+way, it's new years eve...",,,"Du befindest dich in den Überresten einer
+alten Festung, nachdem du einen
+Aufzugsschacht aus den Minen, in denen du
+gefangen warst, hinaufgestiegen bist.
+Anzeichen von Unleben sind deutlich
+erkennbar, aber soweit du weißt, sollte
+dieser Ort keine große Bedrohung für dich
+darstellen. Er war einst das Zentrum eines
+Kakodämonen-Imperiums, das vor etwa 665
+Jahren unterging.
+Ach ja, übrigens, es ist Silvester...",,,,,,,,,,,,,,,,,,,,,,,
 ML6STORY8,Black Tower,,"In ""Black Tower"", you're nearing the end of
 your journey. You and Chagrin, the ruler
 of the Black Tower, came off the same
@@ -1012,7 +2020,24 @@ Your task is simple: Enter the dreaded
 Black Tower, the nucleus of black magic
 and the occult in all of Hell, get to its
 highest floor, and slay Chagrin. Then
-there is the getting back out as well...",,,,,,,,,,,,,,,,,,,,,,,,,,,
+there is the getting back out as well...",,,,"Im ""Schwarzen Turm"" näherst du dich dem
+Ende deiner Reise. Du und Chagrin, der
+Herrscher des Schwarzen Turms, stammtet
+vom selben Fließband als frisch
+montierte Cyber-Dämonen vor ein paar
+tausend Jahren. ""Öl ist dicker als Blut"",
+sagtet ihr immer. Enger als das, was du und
+Chagrin hattet, kommt eine Freundschaft
+unter Dämonen wohl kaum. Tja, nun
+befehligt dein alter Kumpel die Horden
+der Hölle, die einst dir unterstanden und
+dich dem Tod überlassen haben. Deine
+Aufgabe ist einfach: Betritt den
+gefürchteten Schwarzen Turm, den Kern
+schwarzer Magie und des Okkulten der
+ganzen Hölle, kämpfe dich bis zur obersten
+Etage vor, und töte Chagrin. Dann wäre da
+noch die Sache mit dem Rückweg...",,,,,,,,,,,,,,,,,,,,,,,
 ML6STORY9,The Image of Evil,,"The Image of Evil is a humongous temple
 created to honor the first Demon to slay
 an angel; Lithlaar. In it you will find the
@@ -1021,16 +2046,30 @@ and his two Soulguards.","The Image of Evil is a humongous temple
 created to honour the first Demon to slay
 an angel; Lithlaar. In it you will find the
 Cybo that is now known as the lord of Hell
-and his two Soulguards.",,,,,,,,,,,,,,,,,,,,,,,,,,
+and his two Soulguards.",,,"Das Abbild des Bösen ist ein riesiger
+Tempel, errichtet zu Ehren des ersten
+Dämonen, der einen Engel erschlug:
+Lithlaar. Darin wirst du den Cybo finden
+der nun als der Herr der Hölle bekannt
+ist,
+sowie seine beiden Seelenwächter.",,,,,,,,,,,,,,,,,,,,,,,
 ,No Rest for the Living,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 NVINTRO,"No Rest for the Living opening story
 taken from Official Xbox Magazine",,"THE STORY CONTINUES...
 
 Back on Earth, after Hell's forces have
-(seemingly) been vanquished...",,,,,,,,,,,,,,,,,,,,,,,,,,,
+(seemingly) been vanquished...",,,,"DIE GESCHICHTE GEHT WEITER...
+
+Zurück auf der Erde, nachdem die Mächte
+der Hölle (scheinbar) besiegt wurden...",,,,,,,,,,,,,,,,,,,,,,,
 ,Legacy of Rust,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 ID1INTRO1,"Legacy of Rust opening story
-taken from DOOM + DOOM II's main menu",,"""Vassago's Rest"", the ancient inscriptions
+taken from DOOM + DOOM II's main menu
+
+de, es, esm, fr, it, jp, ko, pl, pt, ru, zh, zht
+are official texts taken from
+Common.kpf/menu/index.js
+the line breaks are not official",,"""Vassago's Rest"", the ancient inscriptions
 called it. With the meaning of the name
 lost to time, it wasn't long before the
 interlopers began calling the land by
@@ -1047,7 +2086,212 @@ hubris and excess, learned the hard way
 that even the demons feared something
 greater, something deeper. When the Ones
 Beneath awoke, the UAC's crown jewel was
-swallowed in a cascade of blood and fire.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+swallowed in a cascade of blood and fire.",,,,"Der Name ""Vassago's Rest"", wie der Ort in
+den uralten Inschriften genannt wurde,
+ging im Staub der Zeit verloren, doch es
+dauerte nicht lange, bis die Eindringlinge
+das Land neu tauften: New Eden. Und
+ähnlich wie in jenem mystischen Garten war
+die Verbannung der Menschheit aus dem neu
+besiedelten Reich schnell und brutal.
+
+Diese entlegene Region der Hölle, in der es
+(un-)natürliche Ressourcen im Überfluss
+gab, war fast völlig bar von Dämonen. Die
+Union Aerospace Corporation, die noch nie
+vor Überheblichkeit und Ausschweifungen
+zurückgeschreckt war, musste auf die
+harte Tour erfahren, dass selbst Dämonen
+Angst vor einer größeren Macht haben
+konnten. Als die ""Wesen von unten""
+erwachten, versank das Kronjuwel der UAC
+in einer Kaskade aus Feuer und Blut.",,,"El ""Reposo de Vassago"", como lo llamaban
+las antiguas inscripciones. Tras perderse
+el significado de su nombre con el tiempo,
+los intrusos no tardaron en ponerle otro
+nombre: ""Nuevo Edén"". Al igual que el
+jardín de antaño, el exilio de la humanidad
+de este reino de reciente asentamiento fue
+raudo y brutal.
+
+Esta remota región del infierno que rebosa
+recursos (poco) naturales, por así
+decirlo, estaba prácticamente libre de
+presencia demoníaca. La Union Aerospace
+Corporation, que nunca ha escatimado en
+arrogancia y excesos, aprendió por las
+malas que incluso los demonios temían a
+algo mayor y más profundo. Cuando los del
+inframundo se despertaron, la joya de la
+corona de la UAC acabó engullida en una
+cascada de sangre y fuego.","El ""Reposo de Vassago"", como lo llamaban
+las antiguas inscripciones. Tras perderse
+el significado de su nombre con el tiempo,
+los intrusos no tardaron en ponerle otro
+nombre: ""Nuevo Edén"". Al igual que el
+jardín de antaño, el exilio de la humanidad
+de este reino de reciente asentamiento fue
+veloz y brutal.
+
+Esta remota región del infierno que rebosa
+recursos (poco) naturales, por así
+decirlo, estaba prácticamente libre de
+presencia demoníaca. La Union Aerospace
+Corporation, que nunca escatimó en
+arrogancia y excesos, aprendió por las
+malas que incluso los demonios temían a
+algo mayor y más profundo. Cuando los del
+inframundo se despertaron, la joya de la
+corona de la UAC acabó engullida en una
+cascada de sangre y fuego.",,"Les anciennes inscriptions le nommaient
+""Repos de Vassago"", mais le sens de ces
+mots s'étant perdu, les intrus trouvèrent
+rapidement un autre nom à ce territoire :
+""Nouvel Éden"". Tout comme dans les jardins
+du paradis, l'exil de l'humanité hors de ce
+royaume tout juste créé fut rapide et
+brutal.
+
+Cette région éloignée de l'Enfer, bien que
+regorgeant de ressources
+(sur)naturelles, était presque
+entièrement dénuée de présence
+démoniaque. L'Union Aerospace Corporation,
+toujours prête à succomber à l'hubris et
+aux excès, apprit à ses dépens que même
+les démons craignaient quelque chose de
+plus grand, de plus profond. Lorsque Ceux
+d'en dessous se réveillèrent, le joyau de
+l'UAC fut noyé dans une cascade de feu et
+de sang.",,,"Il riposo di Vassago, lo chiamavano le
+antiche iscrizioni. Il significato di questo
+nome è andato perduto nel tempo, e non c'è
+voluto molto prima che gli intrusi
+iniziassero a chiamare la terra
+diversamente: New Eden. Proprio come
+accadde nel giardino biblico, l'esilio
+dell'umanità da questo nuovo regno fu
+rapido e brutale.
+
+Questa remota regione dell'Inferno,
+traboccante di risorse (in)naturali, era
+quasi del tutto priva di presenze
+demoniache. La Union Aerospace
+Corporation, non nuova quanto ad
+arroganza ed eccessi, imparò a sue spese
+che anche i demoni temevano qualcosa di più
+grande, di più profondo. Quando gli esseri
+degli abissi si risvegliarono, il gioiello
+della corona della UAC fu inghiottito in
+una cascata di sangue e fuoco.","古代の碑文に「ヴァッサゴの休息」と刻まれていた彼の地も、
+時の流れとともにその意味を失い、
+ほどなくして侵入者たちに「ニュー
+エデン」と呼ばれるようになりました。
+かつての楽園のように、この新たな地からの人類の追放は、
+速やかかつ暴力的に行われました。
+
+(非)天然のリソースであふれていたこの地獄の辺境地は、
+かつてはデーモンの脅威などなかった土地でした。
+そして過剰な誇りや野心にあふれるユニオンエアロスペー
+スコーポレーションは、デーモンでさえも、
+より大きくより深いものを恐れることを痛感させられます。
+地下に眠る者が目を覚まし、
+UACの最大の収入源が血と炎に飲み込まれてしまったのです。","바사고의 안식처'. 오래된 비문에는 그렇게 기록돼
+있었습니다. 하지만 그 이름에 담긴 뜻이 세월의 흐름에
+잊히자, 얼마 지나지 않아 이곳을 침범한 이들에 의해
+'뉴 에덴'이라는 새로운 이름으로 불리게 됩니다.
+인류는 오랜 옛날의 에덴동산에서와 마찬가지로,
+이 새로운 정착지에서도 잔혹하게, 그리고 순식간에
+추방되고 말았습니다.
+
+자연스러운, 혹은 부자연스러운 자원이 흘러넘치는 이
+지옥의 오지에서는 악마의 존재를 거의 볼 수 없었습니다.
+오만함과 무절제함을 부끄러워하지 않는
+항공우주산업연합(UAC)은 악마조차도 더 크고 심오한
+존재를 두려워한다는 사실을 뼈저리게 깨달았습니다.
+심연의 존재가 깨어나자 UAC에서 가장 가치 있는
+자산은 피와 불의 폭포 속에 삼켜지고 말았습니다.",,,"Starożytne inskrypcje nazywały ją
+""Przystanią Vassago"". Nie wiadomo, skąd
+wzięła się ta nazwa, ale już wkrótce
+intruzi będą nazywać tę krainę w inny
+sposób: ""Nowy Eden"". Tak jak w przypadku
+rajskiego ogrodu, wygnanie ludzkości z
+tego królestwa było szybkie i brutalne.
+
+Ten odległy region Piekła, pełen surowców
+(nie)naturalnych, był niemal całkowicie
+pozbawiony obecności demonów. Union
+Aerospace Corporation nigdy nie stroniła
+od arogancji i nadmiaru, ale szybko
+przekonała się na własnej skórze, czego
+tak naprawdę boją się tu demony – czegoś
+większego, głębszego. Kiedy przebudziły się
+Istoty z Dołu, klejnot koronny UAC został
+pochłonięty w kaskadzie krwi i ognia.","As antigas inscrições o chamavam de
+""Repouso do Vassago"". Com o significado do
+nome perdido com o tempo, não demorou
+para que os intrusos começassem a
+chamá-lo de outro: ""Novo Éden"". Assim como
+no Jardim de outrora, a humanidade foi
+exilada dos domínios recém-colonizados de
+maneira rápida e brutal.
+
+Esta região remota do Inferno,
+transbordando de recursos (nada)
+naturais, não tinha quase nenhuma
+presença demoníaca. E a Union Aerospace
+Corporation, que jamais recusava uma
+oportunidade de demonstrar sua
+extravagância e arrogância, aprendeu do
+jeito difícil que até os demônios temem
+algo maior, algo mais profundo. Quando os
+Seres Abaixo despertaram, a menina dos
+olhos da UAC foi engolida em uma cascata
+de fogo e sangue.",,,"«Последний приют Вассаго» — так
+называли это место, согласно древним
+надписям. Со временем смысл названия
+был забыт, и незваные гости стали
+именовать этот край Новым Эдемом.
+Подобно первым обитателям райского
+сада, люди не успели здесь освоиться:
+их быстро и жестоко изгнали.
+
+В этом отдалённом уголке ада, богатом
+антиприродными ресурсами, почти не
+было демонов. Объединённая
+Аэрокосмическая Корпорация, которой не
+занимать гордыни и страсти к
+излишествам, на собственном опыте
+убедилась, почему даже демоны боятся
+великих существ, нашедших пристанище в
+недрах этих мест. Когда обитающие в
+глубинах пробудились, передовой
+комплекс ОАК утонул в потоках крови и
+реках огня.",,,,"古代铭文中提到一处地点，名为“瓦沙克之息”。
+这个名字是何含义已不可考，但在不久之后，
+闯入者开始称之为“新伊甸”。
+正如旧时代的伊甸园一样，
+人类刚刚在这个领域定居便很快被残忍地驱逐。
+
+这个偏远的地狱区域拥有丰饶的（非）自然资源，
+几乎没有任何恶魔的踪影。尽管一惯傲慢自大、
+毫无节制，但联合航天公司（UAC）也意识到，
+就连恶魔也惧怕潜伏于其中的某种更强大、
+更阴暗之物。当地下一族觉醒之际，
+UAC的这颗皇冠上的宝石被鲜血与火焰无情淹没。","這裡在古代的文字字樣中稱作「Vassago安息地」。
+這個名字的意義已經失傳，
+因此闖入這裡的人很快就取了一個新名字：
+「新伊甸」。就像遠古的那座花園一樣，
+人類後來也以同樣快速、殘暴的方式被趕出了這裡。
+
+這裡是地獄的偏遠地區，
+雖然以前曾經充滿各種（不）自然資源，
+卻幾乎沒有惡魔威脅。
+聯合航太企業身為永遠狂妄貪婪的公司，
+最後只得以比較困難的方式，
+瞭解到就連惡魔也會害怕更強大、
+更深處的東西。當地底使者醒來，
+UAC的驕傲也被吞沒在血腥與烈火的風暴當中。"
 ID1INTRO2,,,"Three hours -- all it took to reduce
 New Eden to a sea of molten glass.
 
@@ -1060,8 +2304,158 @@ weigh the risks before accepting the job.
 Your orders are clear: reclaim the lost
 base, and preserve the UAC's Legacy.
 
-Or die trying.",,,,,,,,,,,,,,,,,,,,,,,,,,,
-INTERTEXT_ID1_E1,Legacy of Rust episode 1 ending,,"Damn.
+Or die trying.",,,,"Es dauerte nur drei Stunden, bis New Eden
+in ein Meer aus geschmolzenem Glas
+verwandelt wurde.
+
+Es dauerte nur drei Minuten, bis die hohen
+Tiere der UAC entschieden, ihren
+wichtigsten Trumpf auszuspielen.
+
+Es dauerte nur drei Sekunden, bis du allen
+Risiken zum Trotz die Mission
+entgegennahmst.
+
+Deine Befehle sind eindeutig: Erobere die
+verlorene Basis zurück und sichere das
+Vermächtnis der UAC.
+
+Oder stirb beim Versuch.",,,"En solo tres horas, Nuevo Edén se redujo a
+un mar de cristal fundido.
+
+En tres minutos, la cúpula de la UAC jugó
+su mejor carta.
+
+Y, en tres segundos, sopesaste los riesgos
+antes de aceptar el trabajo.
+
+Tus órdenes son claras: recupera la base
+perdida y preserva el legado de la UAC.
+
+O muere en el intento.",,,"Trois heures, c'est le temps qu'il a fallu
+pour réduire Nouvel Éden en une mer de
+verre fondu.
+
+Trois minutes, c'est le temps qu'il a fallu
+aux pontes de l'UAC pour jouer leur
+va-tout.
+
+Trois secondes, c'est le temps qu'il vous a
+fallu pour peser les risques avant
+d'accepter cette mission.
+
+Vos ordres sont clairs : reprendre la base
+perdue et préserver l'héritage de l'UAC.
+
+Ou mourir en essayant.",,,"Tre ore: è quanto bastò per ridurre New
+Eden a un mare di vetro fuso.
+
+Tre minuti: è quanto bastò prima che i
+vertici della UAC giocassero il loro asso.
+
+Tre secondi: è quanto ti bastò per
+valutare i rischi prima di accettare il
+lavoro.
+
+I tuoi ordini sono chiari: riconquistare la
+base perduta e preservare l'eredità della
+UAC.
+
+O morire provandoci.","3時間… それが溶けたガラスの海にニュー
+エデンが浸食されるまでの時間でした。
+
+3分… たったこれだけの間に、
+UACは奥の手を使い果たしたのです。
+
+そして3秒… あなたはこのわずかな時間で、
+リスクを天びんにかけてこの任務を引き受けました。
+
+あなたの任務は明確です。失った基地を奪還し、
+UACの遺産を確保すること。
+
+失敗は許されません","뉴 에덴이 녹아버린 유리의 바다로 전락하는 데는 단
+3시간밖에 걸리지 않았습니다.
+
+또한, UAC 고위 간부가 마지막 패를 내는 데 걸린
+시간은 단 3분이었습니다.
+
+그리고 당신은 고작 3초 만에 이번 임무의 위험을
+분석하고 받아들였습니다.
+
+당신에게 내려진 명령은 명확합니다. 빼앗진 기지를
+되찾고, UAC의 유산을 지켜 내는 것입니다.
+
+아니면 그 과정에서 장렬히 전사하거나...",,,"Trzy godziny – tylko tyle wystarczyło,
+aby zredukować Nowy Eden do morza
+stopionego szkła.
+
+Trzy minuty – tylko tyle wystarczyło, aby
+dowództwo UAC zagrało swojego asa.
+
+Trzy sekundy – tylko tyle wystarczyło,
+abyś rozważył ryzyko i przyjął zlecenie.
+
+Twoje rozkazy są jasne: odzyskać utraconą
+bazę i ocalić dziedzictwo UAC.
+
+Albo zginąć, próbując.","Três horas, foi o que demorou para que
+Novo Éden não passasse de um mar de vidro
+derretido.
+
+Três minutos, foi o que demorou para o
+alto-escalão da UAC jogar sua carta na
+manga.
+
+Três segundos, foi o que demorou para você
+considerar os riscos antes de aceitar o
+trabalho.
+
+As ordens são claras: recupere a base
+perdida e preserve o Legado da UAC.
+
+Ou morra tentando.",,,"Три часа — и Новый Эдем стал
+морем расплавленного стекла.
+
+Три минуты — и руководство
+ОАК разыграло свой козырь.
+
+Три секунды — и вы, оценив все
+риски, взялись за эту работу.
+
+Вам дали чёткий приказ:
+отвоевать захваченную базу
+и сохранить наследие ОАК.
+
+Даже ценой собственной жизни.",,,,"仅仅用了三个小时，
+新伊甸就变成了一片熔融玻璃的海洋。
+
+仅仅用了三分钟，
+UAC高层就决定打出王牌。
+
+仅仅用了三秒钟，
+你就权衡利弊、接下了这个任务。
+
+你的任务很明确：
+夺回沦陷的基地，保护好UAC的重要财产。
+
+不成功，则成仁。","三個小時。短短三個小時，
+新伊甸就被燒成了一片熔化的玻璃。
+
+三分鐘。短短三分鐘，
+UAC的高層就拿出了王牌。
+
+三秒。你只花了三秒就評估完風險，
+決定接下這個工作。
+
+你的命令很清楚：
+奪回淪陷的基地、搶救UAC的遺產。
+
+否則就死於企圖這麼做的過程中。"
+INTERTEXT_ID1_E1,"Legacy of Rust episode 1 ending
+
+de, es, esm, fr, it, jp, ko, pl, pt, ru, zh, zht
+are official texts taken from
+Common.kpf/localization/",,"Damn.
 
 The oldest trap in the book, and you fell
 right into it. Even the best make mistakes.
@@ -1267,7 +2661,11 @@ UAC心知肚明。为什么派他们最优
 一座生鏽的鐵籠，此時你發誓一定要找出原因。
 
 壯烈犧牲、名垂千古的時刻近了。"
-INTERTEXT_ID1_E2,Legacy of Rust episode 2 ending,,"Tick. Tock. Tick. Tock.
+INTERTEXT_ID1_E2,"Legacy of Rust episode 2 ending
+
+de, es, esm, fr, it, jp, ko, pl, pt, ru, zh, zht
+are official texts taken from
+Common.kpf/localization/",,"Tick. Tock. Tick. Tock.
 
 The air is thick with blood and irony.
 You've turned the UAC's final gambit against
@@ -1499,27 +2897,87 @@ moons of Jupiter, hoping that the
 increased distance would enhance Earth's
 safety if something went wrong. Marines
 were stationed at the base, ready for
-anything.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+anything.",,,,"DIE GESCHICHTE GEHT WEITER...
+
+Obwohl das gesamte obere Management der
+UAC tot war, ebenso wie der Großteil ihrer
+Mitarbeiter bis hin zu den Hausmeistern,
+überlebte die Corporation, nun unter
+strenger staatlicher Aufsicht. Die UAC
+strebte weiterhin danach, das Geheimnis
+der Materie-Übertragung zu
+entschlüsseln, und setzte ihre
+Experimente unter stark erhöhten
+Sicherheitsvorkehrungen fort.
+
+Die UAC errichtete ihre Basis auf einem der
+Jupitermonde, in der Hoffnung, dass die
+größere Entfernung die Sicherheit der
+Erde erhöhen würde, falls etwas
+schiefging. Marines wurden auf der Basis
+stationiert, bereit für alles.",,,,,,,,,,,,,,,,,,,,,,,
 TNINTRO2,,,"The Invasion
 
 Soon after the UAC opened its first Gate,
 the minions of Hell made their first
 attack. Suddenly, through the Gate flowed
 spiked, fanged, dripping techno-terrors.
-Meat machines flailed their armored limbs
-and slavered with bloodlust, seeking soft
-bleeding manflesh to rend. But in their
-seeking, they found only death. The United
-States Space Marine Corps was prepared
-for such an event, and they poured molten
-death into the hordes of Hell. More demons
-massed, hoping to overwhelm the defenders
-by their endless numbers. But mass alone
-was no match for the marines. Set up in
-defensive positions around the gate, the
-marines were able to slaughter the
-monsters by the hundreds, taking few
-losses.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+Meat machines flailed their armored
+limbs and slavered with bloodlust, seeking
+soft bleeding manflesh to rend. But in
+their seeking, they found only death. The
+United States Space Marine Corps was
+prepared for such an event, and they
+poured molten death into the hordes of
+Hell. More demons massed, hoping to
+overwhelm the defenders by their endless
+numbers. But mass alone was no match for
+the marines. Set up in defensive positions
+around the gate, the marines were able to
+slaughter the monsters by the hundreds,
+taking few losses.","The Invasion
+
+Soon after the UAC opened its first Gate,
+the minions of Hell made their first
+attack. Suddenly, through the Gate flowed
+spiked, fanged, dripping techno-terrors.
+Meat machines flailed their armoured
+limbs and slavered with bloodlust, seeking
+soft bleeding manflesh to rend. But in
+their seeking, they found only death. The
+United States Space Marine Corps was
+prepared for such an event, and they
+poured molten death into the hordes of
+Hell. More demons massed, hoping to
+overwhelm the defenders by their endless
+numbers. But mass alone was no match for
+the marines. Set up in defensive positions
+around the gate, the marines were able to
+slaughter the monsters by the hundreds,
+taking few losses.",,,"DIE INVASION
+
+Kurz nachdem die UAC ihr erstes Portal
+geöffnet hatte, erfolgte der erste
+Angriff der Höllenbrut. Plötzlich
+strömten durch das Portal stachelige,
+gefräßige, tropfende Techno-Terror.
+Maschinen aus Fleisch wirbelten mit
+gepanzerten Gliedmaßen und sabberten vor
+Blutgier, auf der Suche nach weichem,
+blutendem Menschenfleisch zum Zerreißen.
+Doch bei ihrer Suche fanden sie nur den Tod.
+Das United States Space Marine Corps war
+auf ein solches Ereignis vorbereitet und
+ließ flüssigen Tod auf die Horden der
+Hölle niederregnen. Immer mehr Dämonen
+sammelten sich, in der Hoffnung, die
+Verteidiger durch schiere Überzahl zu
+überwältigen. Doch Masse allein reichte
+nicht gegen die Marines. In ihren
+Verteidigungsstellungen rund um das Portal
+aufgestellt, konnten die Marines hunderte
+der Monster niedermetzeln,
+bei nur geringen eigenen Verlusten.",,,,,,,,,,,,,,,,,,,,,,,
 TNINTRO3,,,"As suddenly as it had begun, the invasion
 ended. The last flaming skull screamed
 through, was hit by twenty simultaneous
@@ -1536,7 +2994,26 @@ defensive positions were strengthened, and
 the marines watched closely for another
 attempt, all their attention drawn inward
 towards the Gates. They were looking in
-the wrong direction.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+the wrong direction.",,,,"So plötzlich wie sie begonnen hatte,
+endete die Invasion. Der letzte brennende
+Totenschädel schrie auf,
+wurde von zwanzig gleichzeitigen
+Schrotflintenschüssen getroffen,
+und die Kammer war wieder still, abgesehen
+vom Tropfen des Blutes.
+Die Hölle hatte versagt.
+
+Die Forschung wurde fortgesetzt, mutiger
+und weniger vorsichtig. Alle Marines
+erhielten vom dankbaren Staat den Silver
+Star, und die UAC leistete einen enormen
+Beitrag zum Veteranenfonds. Die
+Verteidigungsstellungen wurden
+verstärkt, und die Marines hielten
+aufmerksam Ausschau nach einem weiteren
+Angriff, ihre ganze Aufmerksamkeit war
+auf die Portale gerichtet.
+Sie blickten in die falsche Richtung.",,,,,,,,,,,,,,,,,,,,,,,
 TNINTRO4,,,"The Rain of Monsters
 
 Hell knew more than one trick. Months
@@ -1551,7 +3028,26 @@ field to meet it. But it never landed.
 Instead, it hovered over the base, miles in
 the air. The men and women looked up at it,
 and saw that something was terribly
-wrong.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+wrong.",,,,"DER MONSTER-REGEN
+
+Die Hölle kannte mehr als nur einen Trick.
+Monate nach dem Zwischenfall mit dem
+Portal kam das jährliche
+Versorgungsschiff früher als erwartet.
+Auf dem Radar erschien das Schiff deutlich
+größer als gewöhnlich. Und es kam aus der
+falschen Richtung. Seltsam, aber nicht
+unerklärlich. Die nachlässigen
+Radarbediener meldeten das Eintreffen
+des Schiffs, und das Personal begab sich
+zum Landeplatz, um es in Empfang zu
+nehmen.
+
+Doch es landete nie. Stattdessen schwebte
+es über der Basis, Meilen hoch in der Luft.
+Die Männer und Frauen blickten hinauf,
+und sahen, dass etwas furchtbar falsch
+war.",,,,,,,,,,,,,,,,,,,,,,,
 TNINTRO5,,,"The ship could not have come from Earth. It
 was huge, kilometers long, and was built of
 bone, steel, flesh, corruption, and death.
@@ -1572,7 +3068,50 @@ corrupting, and feasting.
 
 Once more, the surviving humans were left
 as zombified brain-dead monstrosities.
-existing only to kill and kill and kill.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+existing only to kill and kill and kill.","The ship could not have come from Earth. It
+was huge, kilometers long, and was built of
+bone, steel, flesh, corruption, and death.
+It was a bio-mechano-magical construct
+from the depths of Hell and It had come
+through space for its vengeance. Enormous
+doors, large as football fields, irised
+open and hideous demons poured out,
+plunging to the ground and blanketing the
+entire base with their throbbing, pulsing
+bodies. They were everywhere at once. The
+marines' defences, set up to prevent an
+attack from the direction of the Gate,
+were worthless. The monsters poured
+through the sewers, the air vents, the
+hallways, everywhere, rampaging,
+corrupting, and feasting.
+
+Once more, the surviving humans were left
+as zombified brain-dead monstrosities.
+existing only to kill and kill and kill.",,,"Das Schiff konnte nicht von der Erde
+stammen. Es war riesig, kilometerlang, und
+gebaut aus Knochen, Stahl, Fleisch,
+Verderben und Tod. Es war ein
+bio-mechano-magisches Konstrukt aus den
+Tiefen der Hölle, und es war durch den
+Weltraum gekommen, um Rache zu nehmen.
+Riesige Tore, so groß wie Fußballfelder,
+öffneten sich wie Augenlider, und
+abscheuliche Dämonen strömten heraus,
+stürzten zu Boden und bedeckten die
+gesamte Basis mit ihren pochenden,
+pulsierenden Leibern. Sie waren überall
+zugleich. Die Verteidigungsanlagen der
+Marines, errichtet für einen Angriff aus
+Richtung des Portals, waren nutzlos. Die
+Monster kamen durch die Abwasserkanäle,
+die Lüftungsschächte, die Gänge, sie waren
+überall, wüteten, verseuchten und fraßen.
+
+Erneut blieben die überlebenden Menschen
+nur noch als zombifizierte, hirntote
+Monstrositäten zurück. Sie existierten nur
+noch zum Töten, Töten und Töten.",,,,,,,,,,,,,,,,,,,,,,,
 TNINTRO6,,,"It's Up To You
 
 Only one man escaped death or
@@ -1587,7 +3126,25 @@ Them. The beings that still haunted your
 nightmares. Your reflexes weren't dulled
 by your experences, and you pulled out
 your pistol and blew the imp to gory
-shreds.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+shreds.",,,,"DU BIST DRAN
+
+Nur ein Mann entkam dem Tod oder der
+Zombifizierung. Der Kommandant der
+Marines. Du.
+Du warst nicht auf der Basis, als sich der
+Himmel öffnete und die Vernichtung aus den
+Sternen herabregnete. Du warst Meilen
+entfernt, spaziertest über die schroffe
+Landschaft des Mondes. Dann hörtest du
+ein röchelndes Grunzen hinter dir,
+drehtest dich blitzschnell um und
+standest einem von ihnen gegenüber. Den
+Wesen, die dich noch immer in deinen
+Albträumen verfolgten. Deine Reflexe
+waren durch deine Erlebnisse nicht
+abgestumpft. Du zogst deine Pistole und
+verwandeltest den Imp in eine blutige
+Masse.",,,,,,,,,,,,,,,,,,,,,,,
 TNINTRO7,,,"Hot-footing it back to the base, you saw it
 all and realized what had happened in a
 flash. The demon ship still floated above
@@ -1604,7 +3161,43 @@ you died trying, well, you were going to die
 anyway, some day. Death at the fangs of
 demons might be the very worst way to die,
 but if they did manage to get you, Hell
-would know it had been in a fight.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+would know it had been in a fight.","Hot-footing it back to the base, you saw it
+all and realised what had happened in a
+flash. The demon ship still floated above
+the infested base. Your boys -- the men
+you'd trained to fight and kill and die as
+no fighting man had ever been trained
+before -- were dead. You were not there
+when it happened, to die with them.
+
+Unlike the ancient Samurai, who chose to
+die with their men, you cocked your pistol.
+You were going to kill for your men. And if
+you died trying, well, you were going to die
+anyway, some day. Death at the fangs of
+demons might be the very worst way to die,
+but if they did manage to get you, Hell
+would know it had been in a fight.",,,"Auf schnellstem Weg zurück zur Basis
+sahst du alles und begriffst im Bruchteil
+einer Sekunde, was geschehen war. Das
+Dämonenschiff schwebte noch immer über
+der verseuchten Basis. Deine Jungs, die
+Männer die du ausgebildet hattest, zu
+kämpfen, zu töten und zu sterben wie kein
+anderer Kämpfer zuvor, waren tot.
+Du warst nicht dort gewesen um mit ihnen
+zu sterben.
+
+Doch anders als die alten Samurai, die mit
+ihren Männern in den Tod gingen, machst du
+deine Pistole bereit. Du würdest für deine
+Männer töten. Und wenn du dabei stirbst,
+nun, sterben würdest du ohnehin eines
+Tages. Der Tod durch die Reißzähne von
+Dämonen mag der schlimmste Tod sein, den
+es gibt, aber wenn sie dich kriegen sollten,
+dann würde die Hölle zumindest wissen,
+dass sie mit dir gekämpft hat.",,,,,,,,,,,,,,,,,,,,,,,
 ,The Plutonia Experiment,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 PLINTRO1,,,"THE STORY CONTINUES...
 
@@ -1617,7 +3210,20 @@ the old trustees and stockholders were
 all dead, this wasn't much of a problem),
 and sent to research tools and
 technologies to prevent such an incursion
-from happening ever again.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+from happening ever again.",,,,"DIE GESCHICHTE GEHT WEITER...
+
+Nach der katastrophalen Invasion der
+Hölle auf der Erde ergriffen die
+Vereinigten Staaten Maßnahmen, um eine
+solche Invasion künftig zu verhindern. Die
+alte UAC-Corporation wurde neugegründet,
+unter vollkommen neuer Leitung (Da die
+früheren Treuhänder und Aktionäre alle
+tot waren, stellte das kein großes
+Problem dar) und beauftragt, Werkzeuge
+und Technologien zu erforschen, um ein
+solches Eindringen für alle Zeiten
+unmöglich zu machen.",,,,,,,,,,,,,,,,,,,,,,,
 PLINTRO2,,,"Though the invasion had been stopped, and
 the remaining demons were gradually being
 exterminated by mopping-up squads, it was
@@ -1635,7 +3241,28 @@ project began innocently enough.
 Naturally the scientists, in order to
 learn how to close Gates, had to relearn
 Gate technology first. This ability was
-rapidly regained. Perhaps too rapidly.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+rapidly regained. Perhaps too rapidly.",,,,"Obwohl die Invasion gestoppt werden
+konnte und die verbliebenen Dämonen nach
+und nach von den Aufräumkommandos
+ausgerottet wurden, war klar, dass die
+Mächte der Hölle weiterhin stark waren.
+Auch wenn der Spider-Mastermind und
+Baphomet scheinbar keine Bedrohung mehr
+waren, aber wer wusste schon, was sich
+dort draußen noch verbarg? Wartend.
+Beobachtend. Sich vorbereitend.
+
+Die neue UAC begann mit der Entwicklung
+von Quantenbeschleunigern, die dazu
+dienen sollten, interdimensionale Portale
+aus der Ferne zu schließen, um zukünftige
+Einfälle für immer zu verhindern.
+Das Projekt begann ganz harmlos.
+Natürlich mussten die Wissenschaftler, um
+zu lernen wie man Portale schließt,
+erst die Technologie der Portale neu
+erlernen. Diese Fähigkeit wurde schnell
+wiedererlangt. Vielleicht zu schnell.",,,,,,,,,,,,,,,,,,,,,,,
 PLINTRO3,,,"The Terror
 
 Soon, beings from Outside had their dire
@@ -1653,7 +3280,28 @@ halfway through, was snipped in two when
 the Gate closed. Earth would now be safe
 from literal invasion by Hell. At least,
 once the technology could be set up
-around the globe.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+around the globe.",,,,"DER TERROR
+
+Schon bald richteten Wesen von Außen ihre
+finstere Aufmerksamkeit auf die neuen
+Experimente, und dann, eines Tages,
+öffnete sich ein Portal mitten im
+Forschungszentrum. Unnatürliche
+Schrecken aus der Hölle strömten
+hindurch, gierig nach Zerstörung. Doch die
+UAC-Wissenschaftler hatten ihr Handwerk
+gelernt. Der Quantenbeschleuniger
+funktionierte bei seinem ersten Einsatz
+einwandfrei - Das Invasions-Portal wurde
+sofort und dauerhaft geschlossen, als der
+Beschleuniger aktiviert wurde. Ein
+Cyberdämon, der gerade halb hindurch-
+getreten war, wurde sauber in zwei
+Hälften geschnitten, als sich das Portal
+schloss. Die Erde war nun vor einer
+buchstäblichen Invasion durch die Hölle
+sicher. Zumindest, sobald die Technologie
+weltweit installiert werden konnte.",,,,,,,,,,,,,,,,,,,,,,,
 PLINTRO4,,,"The next day, a ring of seven Gates opened,
 throughout the base, and a monstrous
 legion rampaged through. The Quantum
@@ -1664,7 +3312,21 @@ strong, too numerous. The marines fought
 like mad dogs, but were finally pulled
 down by the enemies' claws. The scientists,
 marines, and bureaucrats were all slain or
-transformed into undead mankillers.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+transformed into undead mankillers.",,,,"Am nächsten Tag öffnete sich ein Ring aus
+sieben Portalen über die gesamte Basis
+verteilt, und eine monströse Legion
+stürmte hindurch und wütete alles nieder.
+Der Quantenbeschleuniger begann sofort
+die Portale zu schließen, und innerhalb
+einer Stunde waren sechs von ihnen
+versiegelt. Doch die höllische Armee war
+nun zu stark, zu zahlreich. Die Marines
+kämpften wie tollwütige Hunde, doch
+schließlich wurden sie von den Klauen der
+Feinde niedergerissen. Die Wissenschaftler,
+Marines und Bürokraten wurden allesamt
+getötet, oder in untote Menschenjäger
+verwandelt.",,,,,,,,,,,,,,,,,,,,,,,
 PLINTRO5,,,"The Task
 
 The Quantum Accelerator and its
@@ -1675,7 +3337,19 @@ government, frantic that the Quantum
 Accelerator will be destroyed or used in
 some alien fashion upon us, has ordered
 all marines to the site at once,
-regardless of their location.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+regardless of their location.",,,,"Die Aufgabe
+
+Der Quantenbeschleuniger und seine
+Prototypen befinden sich tief im
+verwüsteten Komplex. Ein dämonischer
+Torwächter bewacht sie und kontrolliert
+das letzte Portal zur Hölle. Die 
+Regierung, in Panik darüber, dass der
+Quantenbeschleuniger zerstört oder auf
+fremdartige Weise gegen uns eingesetzt
+werden könnte, hat alle Marines
+unabhängig von ihrem Standort sofort zum
+Einsatzort beordert.",,,,,,,,,,,,,,,,,,,,,,,
 PLINTRO6,,,"You were on leave at the beach, only a few
 minutes from the complex, when you got
 the word. You suited up, grabbed a pistol,
@@ -1686,7 +3360,19 @@ from the interior. Corpses were scattered
 everywhere. Obviously the Gatekeeper was
 doing something inside -- something that
 would soon reach some kind of awful
-climax.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+climax.",,,,"Du warst gerade beurlaubt am Strand
+unterwegs, nur wenige Minuten vom Komplex
+entfernt, als du die Nachricht erhalten
+hast. Du hast dich ausgerüstet, eine
+Pistole geschnappt und bist mit deinem
+Pickup zum Komplex gerast. Als du ankamst,
+waren Lichtblitze, Geheul und Gesänge aus
+dem Inneren zu hören.
+Überall lagen Leichen verstreut.
+Offensichtlich war der Torwächter mit
+etwas beschäftigt – etwas, das bald in
+einem schrecklichen Höhepunkt ausarten
+würde.",,,,,,,,,,,,,,,,,,,,,,,
 PLINTRO7,,,"You know that within an hour or two, an
 entire division of marines will arrive to
 assault the base with full artillery and
@@ -1702,4 +3388,37 @@ have finished their awful task, and will be
 prepared, once more, to take on the world.
 
 It's up to you. You have to enter the
-complex and stop the Gatekeeper. Alone.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+complex and stop the Gatekeeper. Alone.","You know that within an hour or two, an
+entire division of marines will arrive to
+assault the base with full artillery and
+air support. You also know that they will
+be too late. Far too late. The airplanes
+will be plucked from the sky by floating
+terrors, the cannons melted by diabolic
+rockets and fireballs, the soldiers
+blasted to shreds as they charge into the
+armoured shell of the UAC buildings. In an
+hour or two, the monstrosities inside will
+have finished their awful task, and will be
+prepared, once more, to take on the world.
+
+It's up to you. You have to enter the
+complex and stop the Gatekeeper. Alone.",,,"Du weißt, dass in ein bis zwei Stunden eine
+ganze Division Marines eintreffen wird, um
+die Basis mit voller Artillerie- und
+Luftunterstützung anzugreifen. Du weißt
+aber auch, dass sie zu spät kommen werden.
+Viel zu spät. Die Flugzeuge werden von
+dem schwebenden Terror vom Himmel
+geholt, die Kanonen durch teuflische
+Raketen und Feuerbälle geschmolzen, die
+Soldaten beim Sturm auf die gepanzerten
+Gebäude der UAC in Stücke gerissen. In ein
+bis zwei Stunden werden die Monstrositäten
+im Inneren ihr grauenvolles Werk
+vollendet haben, und erneut bereit sein,
+die Welt zu übernehmen.
+
+Es liegt an dir. Du musst den Komplex
+betreten und den Torwächter aufhalten.
+Allein.",,,,,,,,,,,,,,,,,,,,,,,

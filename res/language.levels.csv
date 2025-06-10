@@ -1,190 +1,190 @@
-Identifier,Remarks,Filter,default,eng enc ena enz eni ens enj enb enl ent enw,cs,da,de,el,eo,es,esm esn esg esc esa esd esv eso esr ess esf esl esy esz esb ese esh esi esu,fi,fr,hu,it,jp,ko,nl,no nb,pl,pt,ptg,ro,ru,sr,sv,tr,zh,zht
-,master levels names,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ML_ATTACK,,,Attack,,,,Attacke,,,,,,,,,,,,,Atak,,,,Атака,,,,,
-ML_CANYON,,,Canyon,,,,Schlucht,,,,,,,,,,,,,Kanion,,,,Каньон,,,,,
-ML_CATWALK,,,The Catwalk,,,,Der Laufsteg,,,,,,,,,,,,,Pomost,,,,Подиум,,,,,
-ML_COMBINE,,,The Combine,,,,Der Mähdrescher,,,,,,,,,,,,,Kombinat,,,,Комбайн,,,,,
-ML_FISTULA,,,The Fistula,,,,Die Fistel,,,,,,,,,,,,,Przetoka,,,,Фистула,,,,,
-ML_GARRISON,,,The Garrison,,,,Die Garnison,,,,,,,,,,,,,Garnizon,,,,Гарнизон,,,,,
-ML_MANOR,,,Titan Manor,,,,Anwesen auf dem Titan,,,,,,,,,,,,,Rezydencja na Tytanie,,,,Поместье на Титане,,,,,
-ML_PARADOX,,,Paradox,,,,,,,,,,,,,,,,,,,,,Парадокс,,,,,
-ML_SUBSPACE,,,Subspace,,,,Subraum,,,,,,,,,,,,,Podprzestrzeń,,,,Подпространство,,,,,
-ML_SUBTERRA,,,Subterra,,,,Unter der Erde,,,,,,,,,,,,,Podziemia,,,,Субтерра,,,,,
-ML_TTRAP,,,Trapped on Titan,,,,Gefangen auf dem Titan,,,,,,,,,,,,,Uwięziony na Tytanie,,,,Застрявший на Титане,,,,,
-ML_VIRGIL,,,Virgil's Lead,,,,Virgils Pfad,,,,,,,,,,,,,Droga Wergiliusza,,,,Путь Вергилия,,,,,
-ML_MINOS,,,Minos' Judgement,,,,Minos Urteil,,,,,,,,,,,,,Wyrok Minosa,,,,Суждение Миноса,,,,,
-ML_BLOODSEA,,,Bloodsea Keep,,,,Festung der blutigen See,,,,,,,,,,,,,Twierdza Krwawego Morza,,,,Крепость Кровавого Моря,,,,,
-ML_MEPHISTO,,,Mephisto's Mausoleum,,,,Mephistos Mausoleum,,,,,,,,,,,,,Mauzoleum Mefisto,,,,Мавзолей Мефисто,,,,,
-ML_NESSUS,,,Nessus,,,,,,,,,,,,,,,,,Dejanira,,,,Несс,,,,,
-ML_GERYON,,,Geryon,,,,,,,,,,,,,,,,,Gerion,,,,Герион,,,,,
-ML_VESPERAS,,,Vesperas,,,,,,,,,,,,,,,,,,,,,Весперас,,,,,
-ML_BLACKTWR,,,Black Tower,,,,Schwarzer Turm,,,,,,,,,,,,,Czarna wieża,,,,Черная Башня,,,,,
-ML_TEETH,,,The Express Elevator To Hell,,,,Der Express-Aufzug zur Hölle,,,,,,,,,,,,,Ekspresowa winda do Piekła,,,,Экспресс-лифт в Ад,,,,,
-ML_TEETH_SECRET,,,Bad Dream,,,,Schlechter Traum,,,,,,,,,,,,,Zły sen,,,,Плохой сон,,,,,
-,master levels rejects names,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-ML_DEVICE1,,,Device One,,,,Gerät Nummer eins,,,,,,,,,,,,,Urządzenie pierwsze,,,,Устройство номер один,,,,,
-ML_CPU,,,The C.P.U.,,,,,,,,,,,,,,,,,C. P. U.,,,,ЦПУ,,,,,
-ML_DMZ,,,The D.M.Z.,,,,,,,,,,,,,,,,,D. M. Z.,,,,ДМЗ,,,,,
-ML_EINSIDE,,,The Enemy Inside,,,,Der innere Feind,,,,,,,,,,,,,Wróg wewnątrz,,,,Враг внутри,,,,,
-ML_FURY,,,The Fury,,,,Die Wut,,,,,,,,,,,,,Furia,,,,Ярость,,,,,
-ML_HIVE,,,The Hive,,,,Das Nest,,,,,,,,,,,,,Gromada,,,,Улей,,,,,
-ML_TWM01,,,Doom2 Map14 Homage,,,,DOOM2 Level14 Hommage,,,,,,,,,,,,,Hołd mapie 14 Doom2,,,,Оммаж Doom2 Уровень №14,,,,,
-ML_MINES,,,Mines of Titan,,,,Minen des Titan,,,,,,,,,,,,,Kopalnie Tytana,,,,Шахты Титана,,,,,
-ML_ANOMALY,,,The Titan Anomaly,,,,Die Titan Anomalie,,,,,,,,,,,,,Anomalia na Tytanie,,,,Аномалия Титана,,,,,
-ML_FARSIDE,,,The Farside of Titan,,,,Die andere Seite des Titan,,,,,,,,,,,,,Niewidoczna strona Tytanu,,,,Дальняя сторона Титана,,,,,
-ML_TROUBLE,,,Trouble on Titan,,,,Probleme auf dem Titan,,,,,,,,,,,,,Kłopoty na Tytanie,,,,Беда на Титане,,,,,
-ML_FLOOD,,,Bloodflood,,,,Blut-Flut,,,,,,,,,,,,,Krwotok,,,,Кроводнение,,,,,
-ML_DERELICT,,,Derelict Station,,,,Stillgelegter Bahnhof,,,,,,,,,,,,,Opuszczona stacja,,,,Заброшенная станция,,,,,
-ML_WATCHTWR,,,The Watchtower,,,,Der Wachtturm,,,,,,,,,,,,,Strażnica,,,,Сторожевая башня,,,,,
-ML_TODEATH,,,Temple of Death,,,,Tempel des Todes,,,,,,,,,,,,,Świątynia Śmierci,,,,Храм Смерти,,,,,
-ML_ARENA,,,We who are About to Die,,,,"Wir, die bald sterben",,,,,,,,,,,,,"My, którzy zaraz umrzemy",,,,"Мы, которые скоро умрут",,,,,
-ML_STORM,,,Eye of the Storm,,,,Auge des Sturms,,,,,,,,,,,,,Oko burzy,,,,Глаз бури,,,,,
-ML_THE_EVIL,,,The Image of Evil,,,,Das Bild des Bösen,,,,,,,,,,,,,Obraz zła,,,,Образ зла,,,,,
-ML_DANTES,,,Dante's Gate,,,,Dantes Pforte,,,,,,,,,,,,,Brama Dantego,,,,Врата Данте,,,,,
-ML_ACHERON,,,Crossing Acheron,,,,Überquerung des Acheron,,,,,,,,,,,,,Przejście Archeon,,,,Пересечение Ахерона,,,,,
-ML_CHIRON,,,Chiron,,,,,,,,,,,,,,,,,,,,,Хирон,,,,,
-ML_LETHE,,,Waters of Lethe,,,,Gewässer von Lethe,,,,,,,,,,,,,Wody Lete,,,,Воды Леты,,,,,
-,nerve level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,,
-NHUSTR_1,,,The Earth Base,,Pozemská základna,Jordbasen,Die Erd-Basis,,La Tera Bazo,La Base Terrestre,,Maatukikohta,La Base Terrienne,A földi bázis,La Base Terrestre ,地球基地,지구 기지,De basis van de aarde,Jordbasen,Ziemska Baza,A Base Terrestre,,Baza terestră,База на Земле,Земаљска база,Jordbasen,Dünya Üssü,,
-NHUSTR_2,,,The Pain Labs,,Laboratoře bolesti,Smerte laboratorier,Die Folterlabore,,La Doloro-Laboratorio,Los Laboratorios del Dolor,,Tuskalaboratoriot,Les Laboratoires de la Douleur,A kínok laboratóriuma,I Laboratori del Dolore,生物工学実験室,고통의 연구소,De pijnlaboratoria,Smertelaboratoriet,Laboratoria Bólu,Os Laboratórios da Dor,,Laboratoarele durerii,Лаборатории боли,Лабораторије патње,Smärtlaboratorierna,Ağrı Laboratuvarları,,
-NHUSTR_3,,,Canyon of the Dead,,Kaňon mrtvých,De dødes kløft,Schlucht der Toten,,Kanjono de La Mortintoj,Cañón de los Muertos,,Kalmankanjoni,Canyon des Morts,A holtak szurdoka,Il Canyon dei Morti,死の渓谷,죽음의 계곡,Canyon van de doden,De dødes kløft,Kanion Umarłych,Desfiladeiro dos Mortos,,Canionul morților,Каньон мертвецов,Кањон мртваца,De dödas kanjon,Ölüler Kanyonu,,
-NHUSTR_4,,,Hell Mountain,,Pekelná hora,Helvede bjerg,Höllenberg,,Monto de Infero,Montaña Infernal,,Hornanvuori,Montagne Infernale,Pokol-hegy,Montagna Infernale ,地獄山脈,지옥의 산,Helleberg,Helvetesfjellet,Piekielna Góra,Montanha Infernal,,Muntele infernal,Адская гора,Планина пакла,Helvetesberget,Cehennem Dağı,,
-NHUSTR_5,,,Vivisection,,Vivisekce,Vivisektion,Vivisektion,,Vivisekcio,Vivisección,,Vivisektio,Vivisection,Élveboncolás,Vivisezione ,生体解剖,생체 해부,Vivisectie,Viviseksjon,Wiwisekcja,Vivissecção,,Vivisecție,Вивисекция,Вивисекција,Vivisektion,Canlı Kesim,,
-NHUSTR_6,,,Inferno of Blood,,Krvavé inferno,Blodets inferno,Blutiges Inferno,,Brulego de Sango,Hoguera de Sangre,,Veri-inferno,Enfer Sanglant,Véres alvilág,Inferno di Sangue ,血のインフェルノ,연옥의 피,Bloederige inferno,Blodets inferno,Piekło Krwi,Inferno de Sangue,,Infern sângeriu,Кровавая преисподняя,Ватре крви,Blodets inferno,Kan Cehennemi,,
-NHUSTR_7,,,Baron's Banquet,,Baronova hostina,Baron's Banquet,Das Bankett des Barons,,Festeno de Barono,Banquete del Barón,,Paronin pidot,Banquet du Baron,A báró bankettje,Il Banchetto del Barone ,バロンの晩餐,남작의 연회,Baron's banket,Baronens bankett,Bankiet Barona,Banquete do Barão,,Banchetul baronilor,Банкет у барона,Баронова Гозба,Baronens bankett,Baron'un Ziyafeti,,
-NHUSTR_8,,,Tomb of Malevolence,,Hrobka zlovolnosti,Ondskabens grav,Feindselige Gruft,,Tombo de Malbonvolo,Tumba de Malevolencia,,Pahantahdon hauta,Tombe Maléfique,A Gátlástalanság sírja,Tomba della Malevolenza,悪意の墓,증오의 무덤,Graf van kwaadwilligheid,Ondskapens grav,Grobowiec Zła,Tumba da Malevolência,Túmulo da Malevolência,Mormântul răutății,Гробница злобы,Гроб злобе,Ondskans grav,Kötülük Mezarı,,
-NHUSTR_9,,,March of the Demons,,Pochod démonů,Dæmonernes march,Marsch der Dämonen,,Marŝo de La Demonoj,Marcha de los Demonios,,Demonien marssi,Marche des Démons,A démonok parádéja,La Marcia dei Demoni ,デーモンの行進,악마들의 행진,Maart van de demonen,Demonenes marsj,Marsz Demonów,Marcha dos Demônios,,Marșul demonilor,Шествие демонов,Марш демона,Demonernas marsch,Şeytanların Yürüyüşü,,
-,tnt level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,,
-THUSTR_1,,,System Control,,Administrace,Systemkontrol,Systemkontrolle,,Sistema Kontrolo,Control del Sistema,,Järjestelmäohjaamo,Système de Contrôle,Rendszervezérlő,Controllo del Sistema,制御システム,시스템 제어시설,Systeemcontrole,Systemkontroll,Kontrola Systemu,Controle do Sistema,Controlo de Sistema,Control sisteme,Центр управления системой,Контролна система,Systemkontroll,Sistem Kontrolü,,
-THUSTR_2,,,Human BBQ,,Člověčí grilovačka,Menneskelig grill,Menschliches Barbecue,,Homo-Kradrostado,Barbacoa Humana,,Ihmisgrilli,Barbecue Humain,Emberi grill,Barbecue Umano,人肉晩餐会,인간 바비큐,Menselijke BBQ,Menneskelig BBQ,Ludzki Grill,Churrasco Humano,,Oameni la grătar,Барбекю из человечины,Људски роштиљ,Människogrill,İnsan Barbekü,,
-THUSTR_3,,,Power Control,,Napájecí vedení,Kontrol med magten,Energiekontrolle,,Energia Kontrolo,Control de Energía,,Voimalan ohjaamo,Contrôle Energétique,Energiavezérlő,Centrale Energetica,制御室,전력 통제소,Machtscontrole,Kraftkontroll,Kontrola Zasilania,Controle de Energia,,Uzina,Центр управления питанием,Контролна моћ,Maktkontroll,Güç Kontrolü,,
-THUSTR_4,,,Wormhole,,Červí díra,Ormehul,Wurmloch,,Vermtruo,Agujero de Gusano,,Madonreikä,Trou de Ver,Féreglyuk,Wormhole,虫喰い穴,웜홀,Wormgat,Ormehull,Tunel,Buraco de Minhoca,,Gaura de vierme,Червоточина,Црвоточина,Maskhål,Solucan Deliği,,
-THUSTR_5,,,Hanger,,Hangár,,Hangar,,Pendigejo,Colgador,,Lentoalushalli,Hengar,Horog,Hanga,格納庫,격납고,Hangar,Hanger,Hangar,Hangar,,Hangar,Ангар,Вешалица,Hängare,Askı,,
-THUSTR_6,,,Open Season,,Lovecká sezóna,Åben sæson,Jagdsaison,,Ĉasosezono,Temporada Abierta,,Avoin sesonki,La Chasse Est Ouverte,Vadászszezon,Stagione Aperta,狩猟解禁,사냥철,Open seizoen,Åpen sesong,Otwarty Sezon,Temporada Aberta,Época Aberta,Sezon deschis,Сезон охоты,Отворена сезона,Öppen säsong,Açık Sezon,,
-THUSTR_7,,,Prison,,Vězení,Fængsel,Gefängnis,,Malliberejo,Prisión,,Vankila,Prison,Börtön,Prigione,監獄,감옥,Gevangenis,Fengsel,Więzienie,Prisão,,Închisoare,Тюрьма,Затвор,Fängelse,Hapishane,,
-THUSTR_8,,,Metal,,Kov,,Metall,,Metalo,Metal,,Metalli,Métal,Fém,Metallo,メタル,강철,Metaal,Metall,Metal,Metal,,Metal,Металл,Метал,Metall,Metal,,
-THUSTR_9,,,Stronghold,,Pevnost,Borgen,Festung,,Fuorto,Fortaleza,,Linnake,Forteresse,Erőd,Fortezza,牙城,요새,Vesting,Festning,Warownia,Fortaleza,,Bastion,Твердыня,Упориште,Fästning,Kale,,
-THUSTR_10,,,Redemption,,Vykoupení,Forløsning,Erlösung,,Elaĉeto,Redención,,Lunastus,Rédemption,Megváltás,Redenzione,償還,구원,Aflossing,Innløsning,Odkupienie,Redenção,,Răscumpărare,Искупление,Искупљење,Inlösen,Kefaret,,
-THUSTR_11,,,Storage Facility,,Skladiště,Opbevaringsanlæg,Lagerstätte,,Stokejo,Complejo de Almacenes,Almacenes,Varastolaitos,Complexe de Stockage,Raktárépület,Impianto di Stoccaggio,貯蔵施設,저장소,Opslagfaciliteit,Lagringsanlegg,Magazyn,Centro de Armazenamento,,Stația de depozitare,Склад,Складиште,Förvaringsanläggning,Depolama Tesisi,,
-THUSTR_12,,,Crater,,Kráter,Krater,Krater,,Kratero,Cráter,,Kraateri,Cratère,Kráter,Cratere,火口,분화구,Krater,Krater,Krater,Cratera,,Crater,Кратер,Кратер,Krater,Krater,,
-THUSTR_13,,,Nukage Processing,,Jaderné zpracování,Nukageforarbejdning,Nuklearverarbeitung,,Nukleaĵo-Traktejo,Procesamiento de Residuos Nucleares,,Ydinjätekäsittely,Traitement Nucléaire,Atomhulladék-feldolgozó,Trattamento Nucleare,核廃棄物加工所,폐기물 처리소,Nucleaire verwerking,Nukage-prosessering,Przetwórstwo Jądrowe,Processamento Nuclear,,Prelucrarea deșeurilor nucleare,Переработка ядерных отходов,Прерада нуклеарног отпада,Kärnavfall Behandling,Nukage İşleme,,
-THUSTR_14,,,Steel Works,,Ocelárna,Stålværk,Stahlwerk,,Ŝtalejo,Siderúrgica,Siderurgia,Terästehdas,Aciérie,Acélművek,Acciaieria,製鉄所,제강소,Staalfabrieken,Stålverk,Huta,Siderúrgica,,Oțelărie,Сталелитейный завод,Челичана,Stålverk,Çelik İşleri,,
-THUSTR_15,,,Dead Zone,,Mrtvá zóna,Død zone,Tote Zone,,Senvivzono,Zona Muerta,,Kuollut alue,Zone Morte,A holtak zónája,Zona Morta,危険地帯,사각지대,Dode zone,Død sone,Martwa Strefa,Zona Morta,,Zona moartă,Мёртвая зона,Зона смрти,Dödszon,Ölü Bölge,,
-THUSTR_16,,,Deepest Reaches,,Nejhlubší sluje,De dybeste afkroge,Tiefe,,Plejsubejo,Recodos profundos,,Syvyydet,Profondeurs,A legmélyebb pont,Profondità,最深部,깊숙한 강,Diepste reiken,De dypeste områdene,Głębiny,Profundezas,,În adâncuri,Глубочайшие достижения,Најдубља дубина,De djupaste hålen,En Derin Erişimler,,
-THUSTR_17,,,Processing Area,,Kombinát,Forarbejdningsområde,Verarbeitungsbereich,,Traktadareo,Área de Procesamiento,,Käsittelyalue,Zone de Traitement,Feldolgozó,Area di Elaborazione,処理地帯,처리 구역,Verwerkingsgebied,Behandlingsområde,Strefa Przerobowa,Área de Processamento,,Aria de procesare,Зона обработки,Подручје обраде,Bearbetningsområde,İşleme Alanı,,
-THUSTR_18,,,Mill,,Mlýn,Mølle,Mühle,,Muelejo,Molino,,Mylly,Fonderie,Malom,Fonderia,製粉所,제분소,Molen,Mølle,Młyn,Moinho,,Moara,Завод,Млин,Kvarn,Değirmen,,
-THUSTR_19,,,Shipping/Respawning,,Přeprava,Forsendelsescenter,Versandlager,,Ekspedo/Revivado,Enviando/Reapareciendo,,Huolinta/Ylösnostatus,Envoi/Réapparition,Szállítás/újraéledés,Consegna/Respawn,出荷と再生成,운송/리스폰 장소,Verzendingscentrum,Frakt/omlasting,Wysyłka/Reprodukcja,Expedição/reaparecimento,,Livrare/reapariție,Погрузка и отправка,Отпремање/оживљавање,Skeppning,Nakliye Merkezi,,
-THUSTR_20,,,Central Processing,,Centrální zpracování,Central forarbejdning,Zentralverarbeitung,,Centra Eskpedado,Procesamiento Central,,Käsittelykeskus,Organisme Central,Központi feldolgozó,Centrale di Elaborazione,中央処理所,중앙 처리소,Centrale verwerking,Sentral behandling,Centralny Proces,Processamento Central,,Prelucrare centrală,Центральный пункт обработки,Централна обрада,Centralt bearbetningsområde,Merkezi İşlem,,
-THUSTR_21,,,Administration Center,,Administrativní centrum,Administrationscenter,Verwaltungszentrum,,Administracia Centro,Centro de Administración,,Keskushallinto,Centre Administratif,Adminisztrációs központ,Centro Amministrativo,行政センター,관리 센터,Administratief centrum,Administrasjonssenter,Centrum Administracyjne,Centro de Administração,,Centru administrativ,Административный центр,Административни центар,Administrationscenter,Yönetim Merkezi,,
-THUSTR_22,,,Habitat,,,Levested,,,Habitato,Hábitat,,Asuinpaikka,Habitat,Élőhely,Habitat,生息地,서식지,,Habitat,Siedlisko,Habitat,,Habitat,Ареал,Станиште,Livsområde,Habitat,,
-THUSTR_23,,,Lunar Mining Project,,Lunární těžební projekt,Projekt for månens minedrift,Mondbergbauprojekt,,Luna Mino-Projekto,Proyecto de Minería Lunar,,Kuukaivosprojekti,Projet Minier Lunaire,Holdbánya-projekt,Progetto Minerario Lunare,月面探鉱計画,월석 채광 계획,Maanmijnbouw project,Månegruveprosjekt,Projekt Księżycowe Górnictwo,Projeto de Mineração Lunar,Projeto de Escavação Lunar,Proiect minier satelitar,Лунный проект горной добычи,Пројекат лунарног рударства,Gruvprojekt på månen,Ay Madenciliği Projesi,,
-THUSTR_24,,,Quarry,,Kamenolom,Stenbrud,Steinbruch,,Ŝtonejo,Cantera,,Louhos,Carrière,Kőbánya,Caccia,採石場,채석장,Steengroeve,Steinbrudd,Kamieniołom,Pedreira,,Carieră,Карьер,Каменолом,Stenbrott,Taş Ocağı,,
-THUSTR_25,,,Baron's Den,,Baronovo doupě,Baronens hule,Der Bau des Barons,,Nestego de Barono,Guarida del Barón,,Paronin pesä,l'Antre des Barons,A báró odúja,Antro del Barone,バロンの巣窟,남작의 소굴,Het baron's gebouw,Baronens hule,Legowisko Barona,Covil do Barão,,Cuibul Baronului,Логово барона,Баронова јазбина,Baronens lya,Baron'un İni,,
-THUSTR_26,,,Ballistyx,,Balistika,,,,Balistikso,Balístige,,Ballistyks,Ballistyx,Ballisztüx,Ballistige,バリステュクス,탄도스틱스,,,Balistyka,Ballistige,,Ballistyx,Баллистикс,Билистичкикс,Ballistyx,Balistyx,,
-THUSTR_27,,,Mount Pain,,Hora bolesti,Smertefjellet,Berg des Schmerzes,,Monto de Doloro,Monte Dolor,,Tuskavuori,Mont Souffrance,A Gyötrelem Hegye,Monte del Dolore,苦しみの山,등신같은 등산,Pijn in de bergen,Smertefjellet,Góra Bólu,Monte Dor,,Muntele Durerii,Гора Боль,Планина боли,Smärta på berget,Acı Dağı,,
-THUSTR_28,,,Heck,,Sakra,,Zum Teufel,,Diable,Diablos,,Hemmetti,Que Diable?,Rosseb,Al Diavolo,苛立ち,젠장함,,Helvete,Do Diabła,Capeta,Inferno,Naiba,Чертовщина,Пакао,Heck,Cehennem,,
-THUSTR_29,,,River Styx,,Řeka Styx,Floden Styx,Fluss Styx,,Rivero de Stikso,Río Estige,,Styksjoki,Fleuve Styx,A Sztüx folyó,Fiume Stige,三途の川,스틱스 강,Rivier Styx,Elven Styx,Styks,Rio Estige,,Râul Styx,Река Стикс,Река Стикс,Floden Styx,Styx Nehri,,
-THUSTR_30,,,Last Call,,Poslední mise,Sidste opkald,Letzter Aufruf,,Fina Voko,Última Llamada,,Viimeinen koollehuuto,Dernier Appel,Utolsó esély,Ultima Chiamata,最終指令,최후의 호출,Laatste oproep,Siste innkalling,Ostatni Zew,Última Chamada,,Ultimul apel,Последний вызов,Последњи позив,Sista kallelsen,Son Çağrı,,
-THUSTR_31,,,Pharaoh,,Faraón,Farao,Pharao,,Faraono,Faraón,,Faarao,Pharaon,Fáraó,Faraone,ファラオ,파라오,Farao,Farao,Faraon,Faraó,,Faraon,Фараон,Фараон,Farao,Firavun,,
-THUSTR_32,,,Caribbean,,Karibik,Caribien,Karibik,,Karibio,Caribeño,,Karibia,Caraïbes,Karib-térség,Caraibi,カリビアン,카리브해,Caribisch,Karibia,Karaiby,Caribe,Caraíbas,Caraibe,Карибы,Кариби,Karibien,Karayipler,,
-,plutonia level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,,
-PHUSTR_1,,,Congo,,Kongo,,Kongo,,Kongo,Congo,,Kongo,Congo,Kongó,Congo,コンゴ川,콩고,Kongo,Kongo,Kongo,Congo,,Congo,Конго,Конго,Kongo,Kongo,,
-PHUSTR_2,,,Well of Souls,,Studna duší,Sjælebrønden,Seelenbrunnen,,Puto de animoj,Pozo de almas,,Sielujen lähde,Puits des Ames,A lelkek kútja,Pozzo delle Anime,魂の井戸,영혼의 우물,Bron van zielen,Sjelenes brønn,Studnia Dusz,Poço das Almas,Poço de Almas,Fântâna sufletelor,Колодец душ,Бунар душа,Själarnas brunn,Ruhlar Kuyusu,,
-PHUSTR_3,,,Aztec,,Azték,Azteker,Aztekisch,,Azteko,Azteca,,Asteekki,Aztèque,Azték,Aztec,アステカ,아즈텍,Azteken,Aztekisk,Aztek,Asteca,,Aztec,Ацтек,Астек,Azteker,Aztek,,
-PHUSTR_4,,,Caged,,V kleci,Låst op,Eingesperrt,,Enkaĝigita,Enjaulado,,Häkissä,Enfermé,Ketrecbe zárva,Ingabbiato,檻の中,갇히다,Gekooid,Buret,W Klatce,Na Jaula,,Încarcerat,В клетке,Заробљен,Burad,Kafesli,,
-PHUSTR_5,,,Ghost Town,,Město duchů,Spøgelsesby,Geisterstadt,,Fantoma urbeto,Pueblo Fantasma,,Aavekaupunki,Ville Fantôme,Szellemváros,Città Fantasma,ゴーストタウン,유령 도시,Spookstad,Spøkelsesbyen,Miasto Duchów,Cidade Fantasma,,Orașul fantomă,Город-призрак,Град духова,Spökstad,Hayalet Kasaba,,
-PHUSTR_6,,,Baron's Lair,,Baronovo doupě,Baronens hule,Lager des Barons,,Kaŝejo de Barono,Guarida del Barón,,Paronin luola,Repaire du Baron,A báró rejteke,Tana del Barone,バロンの隠れ家,남작의 은신처,Baron's kamp,Baronens hule,Legowisko Barona,Covil do Barão,,Claustrul Baronului,Обитель барона,Баронова јазбина,Baronens lya,Baron'un İni,,
-PHUSTR_7,,,Caughtyard,,Karcer,,Gehege,,Kaptkorto,Campo de Concentración,,Posenpiha,Pris de court,A foglyok udvara,Cortile Prigione,囚われの庭,포획마당,Omheining,Fangegården,Dziedziniec Więzienny,Campo de Concentração,,Capcana curții,Ловчий двор,Замчиште,Fångården,Caughtyard,,
-PHUSTR_8,,,Realm,,Říše,Rige,Bereich,,Regno,Reino,,Valtapiiri,Royaume,Uradalom,Regno,領地,왕국,Rijk,Riket,Królestwo,Reino,,Tărâm,Царство,Царство,Riket,Diyar,,
-PHUSTR_9,,,Abattoire,,Jatka,,Schlachthaus,,Buĉejo,Matadero,,Teurastamo,Abattoir,Vágóhíd,Mattatoio,屠殺場,도축장,Abattoir,Slakteriet,Rzeźnia,Matadouro,,Abator,Абатство,Кланица,Slakthus,Abattoire,,
-PHUSTR_10,,,Onslaught,,Nájezd,Stormløb,Angriff,,Buĉado,Arremetida,,Ryntäys,Assaut,Roham,Assalto,猛襲,맹공격,Aanval,Angrep,Szturm,Investida,,Năvala,Натиск,Јуриш,Angrepp,Saldırı,,
-PHUSTR_11,,,Hunted,,Loven,Jaget,Gehetzt,,Ĉasata,Cazado,,Metsästetty,Traque,Űzött vad,Braccato,逃走,사냥당함,Gejaagd,Jaget,Nawiedzony,Perseguição,,Vânătoarea,Преследуемый,Уловљен,Jaktad,Avlanmış,,
-PHUSTR_12,,,Speed,,Rychlost,Fart,Tempo,,Rapido,Velocidad,,Vauhti,Vitesse,Iram,Velocità,スピード,스피드,Haast,Hastighet,Pęd,Velocidade,,Viteză,Скорость,Брзина,Hastighet,Hız,,
-PHUSTR_13,,,The Crypt,,Krypta,Krypten,Die Gruft,,La kripto,La cripta,,Krypta,La Crypte,A kripta,La Cripta,地下聖堂,봉안당,De crypte,Krypten,Krypta,A Cripta,,Cripta,Склеп,Гробница,Kryptan,Mahzen,,
-PHUSTR_14,,,Genesis,,,,,,Genezo,Génesis,,Luominen,Genèse,Teremtés,Genesi,創世記,창세기,,,Geneza,Gênese,,Geneza,Зарождение,Постанак,Genesis,Yaratılış,,
-PHUSTR_15,,,The Twilight,,Soumrak,Tusmørket,Zwielicht,,La krepusko,El ocaso,,Hämärä,Le Crépuscule,Alkonyat,Il Crepuscolo,黄昏,황혼,De schemering,Skumringen,Zmierzch,O Crepúsculo,,Amurgul,Сумерки,Сумрак,Skymningen,Alacakaranlık,,
-PHUSTR_16,,,The Omen,,Znamení,Omenet,Das Omen,,La Aŭguro,El Presagio,,Enne,Le Présage,Az Ómen,Il Presagio,予兆,징조,De omen,Varselet,Omen,O Presságio,,Prevestirea,Предзнаменование,Знамење,Omen,Omen,,
-PHUSTR_17,,,Compound,,Ústav,Forbindelsen,Anlage,,Konstruaĵaro,Complejo,,Laitos,Installation,Létesítmény,Recinto,調合,복합체,Faciliteit,Forbindelsen,Mieszanka,Complexo,,Complexul,Комплекс,Једињење,Förbandet,Bileşik,,
-PHUSTR_18,,,Neurosphere,,Neurosféra,Neurosfæren,Neurosphäre,,Neŭrosfero,Neuroesfera,,Neurosfääri,Neurosphère,Neuroszféra,Neurosfera,ニューロスフィア,뉴로스피어,Neurosferen,Nevrosfæren,Neurosfera,Neurosfera,,Neurosferă,Нейросфера,Неуросфера,Neurosfären,Nörosfer,,
-PHUSTR_19,,,NME,,Nepřítel,,,,Mal-BN,N-MIGO,,VHLLNN,NMI,LNSG,NMIC,野郎,NOM,,,WRG,N-MIGO,,INMIC,В.Р.А.Г.,Н.Е.П.Р.,FiND,NME,,
-PHUSTR_20,,,The Death Domain,,Panství smrti,Dødsdomænet,Die Todeszone,,La morta regno,El Dominio Mortal,,Kuoleman piiri,Le Domaine de la Mort,A holtak birtoka,Il Dominio della Morte,死の領域,죽음의 영역,Het domein van de dood,Dødens domene,Domena Śmierci,O Domínio da Morte,,Domeniul morții,Владения смерти,Подручије смрти,Dödsdomänen,Ölüm Alanı,,
-PHUSTR_21,,,Slayer,,Zabiják,Slagter,Töter,,Mortigisto,Descuatizador,,Tappaja,Pourfendeur,Halálosztó,Assassino,スレイヤー,슬레이어,Doder,Slakteren,Pogromca,Matador,,Ucigător,Истребитель,Убица,Jägare,Avcı,,
-PHUSTR_22,,,Impossible Mission,,Nemožná mise,Umulig mission,Unmögliche Mission,,Neebla tasko,Misión imposible,,Mahdoton tehtävä,Mission Impossible,Lehetetlen küldetés,Missione Impossibile,不可能な任務,임파서블 미션,Onmogelijke missie,Umulig oppdrag,Niemożliwa Misja,Missão Impossível,,Misiune imposibilă,Невыполнимое задание,Немогућа мисија,Omöjligt uppdrag,İmkansız Görev,,
-PHUSTR_23,,,Tombstone,,Náhrobek,Gravsten,Grabstein,,Tombŝtono,Lápida,,Hautakivi,Pierre Tombale,Sírkő,Pietra Tombale,墓石,묘비,Grafsteen,Gravstein,Nagrobek,Lápide,,Piatra de mormânt,Надгробие,Надгробни споменик,Gravsten,Mezar Taşı,,
-PHUSTR_24,,,The Final Frontier,,Poslední hranice,Den endelige grænse,Die letzte Grenze,,La Fina Limo,La Frontera Final,La Última Frontera,Viimeinen rajamaa,La Frontière Finale,A végső határ,La Frontiera Finale,最後のフロンティア,최후의 개척지,De eindgrens,Den siste grensen,Ostateczna Granica,A Fronteira Final,,Ultima frontieră,Последний рубеж,Коначна граница,Den sista gränsen,Son Sınır,,
-PHUSTR_25,,,The Temple of Darkness,,Chrám temna,Mørkets tempel,Der Tempel der Dunkelheit,,La Idolejo de Mallumo,El Templo de la Oscuridad,,Pimeyden temppeli,Le Temple des Ténèbres,A sötétség temploma,Il Tempio dell'Oscurità,暗黒の神殿,어둠의 신전,De tempel van de duisternis,Mørkets tempel,Świątynia Mroku,O Templo da Escuridão,,Templul tenebros,Храм тьмы,Храм таме,Mörkrets tempel,Karanlığın Tapınağı,,
-PHUSTR_26,,,Bunker,,Bunkr,,,,Bunkro,Búnker,,Bunkkeri,Bunker,Bunker,Bunker,バンカー,방공호,,,Bunkier,Casamata,Bunker,Buncăr,Бункер,Бункер,Bunker,Sığınak,,
-PHUSTR_27,,,Anti-Christ,,Antikrist,,Antichrist,,Antikristo,Anticristo,,Antikristus,Anti-Christ,Antikrisztus,Anticristo,アンチキリスト,적그리스도,Antichrist,Antikrist,Antychryst,Anticristo,,Antihrist,Антихрист,Антихрист,Antikrist,Mesih Karşıtı,,
-PHUSTR_28,,,The Sewers,,Kanály,Kloakkerne,Kanäle,,La Kanalo,Las Alcantarillas,,Viemärit,Les Egouts,A kanális,Le Fogne,下水道,하수구,De rioleringen,Kloakken,Ścieki,Os Esgotos,,Canalizarea,Канализация,Канализација,Sjukhusen,Kanalizasyonlar,,
-PHUSTR_29,,,Odyssey of Noises,,Odysea křiku,Lydenes odyssé,Odyssee der Geräusche,,Vojaĝo de Sonoj,Odisea de Ruidos,,Äänten harharetki,Odysée de Bruits,A moraj ösvénye,Odissea dei Rumori,オデッセイのノイズ,속삭임의 여정,Odyssee van geluiden,Lydenes odyssé,Odyseja Wrzawy,Odisséia de Ruidos,,Odiseea zgomotelor,Одиссея шумов,Одисеја шумова,Ljudets odyssé,Seslerin Odyssey'i,,
-PHUSTR_30,,,The Gateway of Hell,,Brána pekla,Helvedes port,Tor zur Hölle,,La Pordego de Inferno,La Puerta del Infierno,,Helvetin porttikäytävä,La Porte des Enfers,Átjáró a pokolba,La Porta dell'Inferno,地獄の関門,지옥의 차원문,De poort van de hel,Porten til helvete,Brama Piekieł,O Portão do Inferno,,Poarta spre infern,Врата ада,Пролаз пакла,Helvetets port,Cehennem Kapısı,,
-PHUSTR_31,,,Cyberden,,Kyberdoupě,,Cyberbau,,Cibernesto,Ciber-guarida,,Kyberpesä,Cyber-Antre,Kiberodú,Cybergabbia,サイバーの巣,사이버소굴,,,Cybernora,Ciberantro,,Cibervizuină,Киберлогово,Сајбер-јазбина,Cyberden,Siber'in ini,,
-PHUSTR_32,,,Go 2 It,,Jdi do toho,,,,Iru al ĝi!,Ve a x ello,Ve x eso,Iske kii,Go 2 It,Menj oda!,Dacci Dentro,逝ってこい,함 해 봐,Ga ervoor,,Do Dzieła,Vai Fundo,Siga em Frente,Du-te la ei,П0лный вп3рёд,Иди ка њему,Gå till det,Devam Et,,
-,blackroom warmup level names,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HUSTR_E1M4B,,,Phobos Mission Control,,,,Phobos Missionsleitung,,,,,,,,,,,,,Centrum Kontroli Fobosa,,,,Центр управления Фобоса,,,,,
-HUSTR_E1M8B,,,Tech Gone Bad,,,,Fehlerhafte Technik,,,,,,,,,,,,,Popsuta technologia,,,,Испортившаяся технология,,,,,
-,sigil level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HUSTR_E5M1,,,Baphomet's Demesne,,,,Baphomets Territorium,,,,,,,,,,,,,Terytorium Bafometa,,,,Владение Бафомета,,,,,
-HUSTR_E5M2,,,Sheol,,,,Scheol,,,,,,,,,,,,,Szeol,,,,Шеол,,,,,
-HUSTR_E5M3,,,Cages of the Damned,,,,Käfige der Verdammten,,,,,,,,,,,,,Klatki potępionych,,,,Клетки проклятых,,,,,
-HUSTR_E5M4,,,Paths of Wretchedness,,,,Pfad des Elends,,,,,,,,,,,,,Ścieżki niedoli,,,,Пути убожества,,,,,
-HUSTR_E5M5,,,Abaddon's Void,,,,Abaddons Leere,,,,,,,,,,,,,Pustka Abaddonu,,,,Пустота Абаддона,,,,,
-HUSTR_E5M6,,,Unspeakable Persecution,,,,Unsägliche Unterdrückung,,,,,,,,,,,,,Przeraźliwy ucisk,,,,Ужасающее угнетение,,,,,
-HUSTR_E5M7,,,Nightmare Underworld,,,,Alptraum Unterwelt,,,,,,,,,,,,,Koszmarne podziemia,,,,Кошмарная преисподня,,,,,
-HUSTR_E5M8,,,Halls of Perdition,,,,Hallen der Verdammnis,,,,,,,,,,,,,Korytarze Potępienia,,,,Залы погибели,,,,,
-HUSTR_E5M9,,,Realm of Iblis,,,,Reich des Iblis,,,,,,,,,,,,,Królestwo Eblisa,,,,Царство Иблиса,,,,,
-,sigil2 level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,,
-HUSTR_E6M1,,,Cursed Darkness,,,,Verfluchte Dunkelheit,,,,,,,,,,,,,Przeklęty mrok,,,,Проклятая тьма,,,,,
-HUSTR_E6M2,,,Violent Hatred,,,,Schmerzhafter Hass,,,,,,,,,,,,,Zaciekła nienawiść,,,,Яростная ненависть,,,,,
-HUSTR_E6M3,,,Twilight Desolation,,,,Zwielichtige Verwüstung,,,,,,,,,,,,,Spustoszenie o zmierzchu,,,,Сумерчное запустение,,,,,
-HUSTR_E6M4,,,Fragments of Sanity,,,,Fragmente der Vernunft,,,,,,,,,,,,,Odłamki poczytalności,,,,Отрывки здравомыслия,,,,,
-HUSTR_E6M5,,,Wrathful Reckoning,,,,Zornige Abrechnung,,,,,,,,,,,,,Gniewny osąd,,,,Гневная расплата,,,,,
-HUSTR_E6M6,,,Vengeance Unleashed,,,,Entfesselte Rache,,,,,,,,,,,,,Wyzwolona zemsta,,,,Вольная месть,,,,,
-HUSTR_E6M7,,,Descent Into Terror,,,,Abstieg in den Terror,,,,,,,,,,,,,Popadek w przerażenie,,,,Погружение в страх,,,,,
-HUSTR_E6M8,,,Abyss of Despair,,,,Abgrund der Verzweiflung,,,,,,,,,,,,,Otchłań rozpaczy,,,,Бездна отчаяния,,,,,
-HUSTR_E6M9,,,Shattered Homecoming,,,,Zerrüttete Heimkehr,,,,,,,,,,,,,Zaniedbany powrót,,,,Разрушенное возвращение,,,,,
-,legacy of rust level names,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-XHUSTR_1,,,Scar Gate,,,,Tor der Narben,,,,,,,,,,,,,Wrota blizn,,,,Врата шрама,,,,,
-XHUSTR_2,,,Sanguine Wastes,,,,Blutige Abfälle,,,,,,,,,,,,,Krwawe odpady,,,,Кровавые отходы,,,,,
-XHUSTR_3,,,Spirit Drains,,,,Seelen-Abfluss,,,,,,,,,,,,,Wyżymarka dusz,,,,Стоки душ,,,,,
-XHUSTR_4,,,Descending Inferno,,,,Abgründiges Inferno,,,,,,,,,,,,,Schodzące Inferno,,,,Нисходящий Ад,,,,,
-XHUSTR_5,,,Creeping Hate,,,,Schleichender Hass,,,,,,,,,,,,,Ukryta nienawiść,,,,Крадущаяся ненависть,,,,,
-XHUSTR_6,,,The Coiled City,,,,Die verschlungene Stadt,,,,,,,,,,,,,Miasto zakrętów,,,,Спиральный город,,,,,
-XHUSTR_7,,,Forfeited Salvation,,,,Verwirkte Erlösung,,,,,,,,,,,,,Przepadłe zbawienie,,,,Утраченное спасение,,,,,
-XHUSTR_8,,,Ash Mill,,,,Aschemühle,,,,,,,,,,,,,Ashowe Rondo Wiatraczna,,,,Пепельная мельница,,,,,
-XHUSTR_9,,,Second Coming,,,,Wiederkunft,,,,,,,,,,,,,Drugie nadejście,,,,Второе пришествие,,,,,
-XHUSTR_10,,,Falsehood,,,,Unwahrheit,,,,,,,,,,,,,Kłamstwo,,,,Ложь,,,,,
-XHUSTR_11,,,Dis Union,,,,,,,,,,,,,,,,,,,,,,,,,,
-XHUSTR_12,,,Echoes of Pain,,,,Echos des Schmerzes,,,,,,,,,,,,,Echa bólu,,,,Отголоски боли,,,,,
-XHUSTR_13,,,The Rack,,,,Das Gestell,,,,,,,,,,,,,Regał,,,,Стойка,,,,,
-XHUSTR_14,,,Soul Silo,,,,Seelen-Silo,,,,,,,,,,,,,Izolatka dusz,,,,Силос душ,,,,,
-XHUSTR_15,,,Brink,,,,,,,,,,,,,,,,,Skraj,,,,Грань,,,,,
-XHUSTR_16,,,Panopticon,,,,Panoptikum,,,,,,,,,,,,,Panoptikon,,,,Паноптикум,,,,,
-XHUSTR_99,,,Test Map Please Ignore,,,,"Test-Level, bitte ignorieren",,,,,,,,,,,,,Mapa testowa zignoruj ją,,,,Тестовая карта прошу проигнорировать,,,,,
-,iddm1 level names,,,,,,,,,,,,,,,,,,,,,,,,,,,,
-MHUSTR_1,,,One,,,,Eins,,,,,,,,,,,,,Pierwsza,,,,Один,,,,,
-MHUSTR_2,,,Surge,,,,Überspannung,,,,,,,,,,,,,Przypływ,,,,Волна,,,,,
-MHUSTR_3,,,Artemis,,,,,,,,,,,,,,,,,Artemida,,,,Артемида,,,,,
-MHUSTR_4,,,Lazarus 2024,,,,,,,,,,,,,,,,,Łazarz 2024,,,,Лазарь 2024,,,,,
-MHUSTR_5,,,Baneful Crypt,,,,Verwünschte Gruft,,,,,,,,,,,,,Zgubna krypta,,,,Губительный склеп,,,,,
-MHUSTR_6,,,Ziggurat,,,,,,,,,,,,,,,,,,,,,Зиккурат,,,,,
-MHUSTR_7,,,Magnificent Seven,,,,Glorreiche Sieben,,,,,,,,,,,,,Siedmiu wspaniałych,,,,Великолепная семёрка,,,,,
-MHUSTR_8,,,High Hopes,,,,Große Hoffnungen,,,,,,,,,,,,,Wielkie nadzieje,,,,Большие надежды,,,,,
-MHUSTR_9,,,Tournament Edition,,,,Turnier Edition,,,,,,,,,,,,,Edycja turniejowa,,,,Турнирное издание,,,,,
-MHUSTR_10,,,Purge Facility,,,,Säuberungsanlage,,,,,,,,,,,,,Placówka ds. czystek,,,,Очистная установка,,,,,
-MHUSTR_11,,,Bad Archeology,,,,Schlechte Archäologie,,,,,,,,,,,,,Zła archeologia,,,,Плохая археология,,,,,
-MHUSTR_12,,,Catapult Ordeal,,,,Katapult-Prüfung,,,,,,,,,,,,,Męczarnia z katapultą,,,,Испытание катапультой,,,,,
-MHUSTR_13,,,Moonbase,,,,Mondbasis,,,,,,,,,,,,,Stacja księzycowa,,,,Лунная база,,,,,
-MHUSTR_14,,,X-Factor,,,,,,,,,,,,,,,,,,,,,Фактор икс,,,,,
-MHUSTR_15,,,Marble and Blood,,,,Marmor und Blut,,,,,,,,,,,,,Marmur z krwią,,,,Мрамор и кровь,,,,,
-MHUSTR_16,,,Wicked Warehouse,,,,Abgefahrenes Lagerhaus,,,,,,,,,,,,,Potworny magazyn,,,,Зловещий склад,,,,,
-MHUSTR_17,,,Future Shock,,,,Zukunftsschock,,,,,,,,,,,,,Szok przyszłości,,,,Шок будущего,,,,,
-MHUSTR_18,,,Diesel,,,,,,,,,,,,,,,,,,,,,Дизель,,,,,
-MHUSTR_19,,,Blood Offering,,,,Blutopfer,,,,,,,,,,,,,Ofiara krwi,,,,Кровавое приношение,,,,,
-MHUSTR_20,,,Corrupted Outpost,,,,Korrupter Außenposten,,,,,,,,,,,,,Placówka zepsucia,,,,Оскверненный аванпост,,,,,
-MHUSTR_21,,,Treatment Station,,,,Behandlungsstation,,,,,,,,,,,,,Stacja leczenia,,,,Станция обработки,,,,,
-MHUSTR_22,,,Luca Doesn't Name Maps,,,,Luca benennt keine Level,,,,,,,,,,,,,Luca nie nadaje mapom nazw,,,,Лука не дает картам названия,,,,,
-MHUSTR_23,,,Good Ideas,,,,Gute Ideen,,,,,,,,,,,,,Dobre pomysły,,,,Хорошие идеи,,,,,
-MHUSTR_24,,,Static Station,,,,Feste Station,,,,,,,,,,,,,Stacja statyczna,,,,Статическая станция,,,,,
-MHUSTR_25,,,Heckbase Alpha,,,,Heckbasis Alpha,,,,,,,,,,,,,Stacja cholerna Alfa,,,,Чертобаза Альфа,,,,,
-MHUSTR_26,,,Shoot to Kill,,,,Schieße bis zum Umfallen,,,,,,,,,,,,,Strzelaj aby zabić,,,,Стрелять на поражение,,,,,
+Identifier,Remarks,Filter,default,eng enc ena enz eni ens enj enb enl ent enw,cs,da,de,el,eo,es,esm esn esg esc esa esd esv eso esr ess esf esl esy esz esb ese esh esi esu,fi,fr,hr,hu,it,jp,ko,nl,no nb,pl,pt,ptg,ro,ru,sr,sv,tr
+,nerve level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,
+NHUSTR_1,,,The Earth Base,,Pozemská základna,Jordbasen,Die Erd-Basis,,La Tera Bazo,La Base Terrestre,,Maatukikohta,La Base Terrienne,,A földi bázis,La Base Terrestre,地球基地,지구 기지,De basis van de aarde,Jordbasen,Ziemska Baza,A Base Terrestre,A Base Terrestre,Baza terestră,База на Земле,Земаљска база,Jordbasen,Dünya Üssü
+NHUSTR_2,,,The Pain Labs,,Laboratoře bolesti,Smerte laboratorier,Die Folterlabore,,La Doloro-Laboratorio,Los Laboratorios del Dolor,,Tuskalaboratoriot,Les Laboratoires de la Douleur,,A kínok laboratóriuma,I Laboratori del Dolore,生物工学実験室,고통의 연구소,De pijnlaboratoria,Smertelaboratoriet,Laboratoria Bólu,Os Laboratórios da Dor,Os Laboratórios da Dor,Laboratoarele durerii,Лаборатории боли,Лабораторије патње,Smärtlaboratorierna,Ağrı Laboratuvarları
+NHUSTR_3,,,Canyon of the Dead,,Kaňon mrtvých,De dødes kløft,Schlucht der Toten,,Kanjono de La Mortintoj,Cañón de los Muertos,,Kalmankanjoni,Canyon des Morts,,A holtak szurdoka,Il Canyon dei Morti,死の渓谷,죽음의 계곡,Canyon van de doden,De dødes kløft,Kanion Umarłych,Desfiladeiro dos Mortos,Desfiladeiro dos Mortos,Canionul morților,Каньон мертвецов,Кањон мртваца,De dödas kanjon,Ölüler Kanyonu
+NHUSTR_4,,,Hell Mountain,,Pekelná hora,Helvede bjerg,Höllenberg,,Monto de Infero,Montaña Infernal,,Hornanvuori,Montagne Infernale,,Pokol-hegy,Montagna Infernale,地獄山脈,지옥의 산,Helleberg,Helvetesfjellet,Piekielna Góra,Montanha Infernal,Montanha Infernal,Muntele infernal,Адская гора,Планина пакла,Helvetesberget,Cehennem Dağı
+NHUSTR_5,,,Vivisection,,Vivisekce,Vivisektion,Vivisektion,,Vivisekcio,Vivisección,,Vivisektio,Vivisection,,Élveboncolás,Vivisezione,生体解剖,생체 해부,Vivisectie,Viviseksjon,Wiwisekcja,Vivissecção,Vivissecção,Vivisecție,Вивисекция,Вивисекција,Vivisektion,Canlı Kesim
+NHUSTR_6,,,Inferno of Blood,,Krvavé inferno,Blodets inferno,Blutiges Inferno,,Brulego de Sango,Hoguera de Sangre,,Veri-inferno,Enfer Sanglant,,Véres alvilág,Inferno di Sangue,血のインフェルノ,연옥의 피,Bloederige inferno,Blodets inferno,Piekło Krwi,Inferno de Sangue,Inferno de Sangue,Infern sângeriu,Кровавая преисподняя,Ватре крви,Blodets inferno,Kan Cehennemi
+NHUSTR_7,,,Baron's Banquet,,Baronova hostina,Baron's Banquet,Das Bankett des Barons,,Festeno de Barono,Banquete del Barón,,Paronin pidot,Banquet du Baron,,A báró bankettje,Il Banchetto del Barone,バロンの晩餐,남작의 연회,Baron's banket,Baronens bankett,Bankiet Barona,Banquete do Barão,Banquete do Barão,Banchetul baronilor,Банкет у барона,Баронова Гозба,Baronens bankett,Baron'un Ziyafeti
+NHUSTR_8,,,Tomb of Malevolence,,Hrobka zlovolnosti,Ondskabens grav,Feindselige Gruft,,Tombo de Malbonvolo,Tumba de Malevolencia,,Pahantahdon hauta,Tombe Maléfique,,A Gátlástalanság sírja,Tomba della Malevolenza,悪意の墓,증오의 무덤,Graf van kwaadwilligheid,Ondskapens grav,Grobowiec Zła,Tumba da Malevolência,Túmulo da Malevolência,Mormântul răutății,Гробница злобы,Гроб злобе,Ondskans grav,Kötülük Mezarı
+NHUSTR_9,,,March of the Demons,,Pochod démonů,Dæmonernes march,Marsch der Dämonen,,Marŝo de La Demonoj,Marcha de los Demonios,,Demonien marssi,Marche des Démons,,A démonok parádéja,La Marcia dei Demoni,デーモンの行進,악마들의 행진,Maart van de demonen,Demonenes marsj,Marsz Demonów,Marcha dos Demônios,Marcha dos Demônios,Marșul demonilor,Шествие демонов,Марш демона,Demonernas marsch,Şeytanların Yürüyüşü
+,plutonia level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,
+PHUSTR_1,,,Congo,,Kongo,,Kongo,,Kongo,Congo,,Kongo,Congo,,Kongó,Congo,コンゴ川,콩고,Kongo,Kongo,Kongo,Congo,Congo,Congo,Конго,Конго,Kongo,Kongo
+PHUSTR_2,,,Well of Souls,,Studna duší,Sjælebrønden,Seelenbrunnen,,Puto de animoj,Pozo de almas,,Sielujen lähde,Puits des Ames,,A lelkek kútja,Pozzo delle Anime,魂の井戸,영혼의 우물,Bron van zielen,Sjelenes brønn,Studnia Dusz,Poço das Almas,Poço de Almas,Fântâna sufletelor,Колодец душ,Бунар душа,Själarnas brunn,Ruhlar Kuyusu
+PHUSTR_3,,,Aztec,,Azték,Azteker,Aztekisch,,Azteko,Azteca,,Asteekki,Aztèque,,Azték,Aztec,アステカ,아즈텍,Azteken,Aztekisk,Aztek,Asteca,Asteca,Aztec,Ацтек,Астек,Azteker,Aztek
+PHUSTR_4,,,Caged,,V kleci,Låst op,Eingesperrt,,Enkaĝigita,Enjaulado,,Häkissä,Enfermé,,Ketrecbe zárva,Ingabbiato,檻の中,갇히다,Gekooid,Buret,W Klatce,Na Jaula,Na Jaula,Încarcerat,В клетке,Заробљен,Burad,Kafesli
+PHUSTR_5,,,Ghost Town,,Město duchů,Spøgelsesby,Geisterstadt,,Fantoma urbeto,Pueblo Fantasma,,Aavekaupunki,Ville Fantôme,,Szellemváros,Città Fantasma,ゴーストタウン,유령 도시,Spookstad,Spøkelsesbyen,Miasto Duchów,Cidade Fantasma,Cidade Fantasma,Orașul fantomă,Город-призрак,Град духова,Spökstad,Hayalet Kasaba
+PHUSTR_6,,,Baron's Lair,,Baronovo doupě,Baronens hule,Lager des Barons,,Kaŝejo de Barono,Guarida del Barón,,Paronin luola,Repaire du Baron,,A báró rejteke,Tana del Barone,バロンの隠れ家,남작의 은신처,Baron's kamp,Baronens hule,Legowisko Barona,Covil do Barão,Covil do Barão,Claustrul Baronului,Обитель барона,Баронова јазбина,Baronens lya,Baron'un İni
+PHUSTR_7,,,Caughtyard,,Karcer,,Gehege,,Kaptkorto,Campo de Concentración,,Posenpiha,Pris de court,,A foglyok udvara,Cortile Prigione,囚われの庭,포획마당,Omheining,Fangegården,Dziedziniec Więzienny,Campo de Concentração,Campo de Concentração,Capcana curții,Ловчий двор,Замчиште,Fångården,Caughtyard
+PHUSTR_8,,,Realm,,Říše,Rige,Bereich,,Regno,Reino,,Valtapiiri,Royaume,,Uradalom,Regno,領地,왕국,Rijk,Riket,Królestwo,Reino,Reino,Tărâm,Царство,Царство,Riket,Diyar
+PHUSTR_9,,,Abattoire,,Jatka,,Schlachthaus,,Buĉejo,Matadero,,Teurastamo,Abattoir,,Vágóhíd,Mattatoio,屠殺場,도축장,Abattoir,Slakteriet,Rzeźnia,Matadouro,Matadouro,Abator,Абатство,Кланица,Slakthus,Abattoire
+PHUSTR_10,,,Onslaught,,Nájezd,Stormløb,Angriff,,Buĉado,Arremetida,,Ryntäys,Assaut,,Roham,Assalto,猛襲,맹공격,Aanval,Angrep,Szturm,Investida,Investida,Năvala,Натиск,Јуриш,Angrepp,Saldırı
+PHUSTR_11,,,Hunted,,Loven,Jaget,Gehetzt,,Ĉasata,Cazado,,Metsästetty,Traque,,Űzött vad,Braccato,逃走,사냥당함,Gejaagd,Jaget,Nawiedzony,Perseguição,Perseguição,Vânătoarea,Преследуемый,Уловљен,Jaktad,Avlanmış
+PHUSTR_12,,,Speed,,Rychlost,Fart,Tempo,,Rapido,Velocidad,,Vauhti,Vitesse,,Iram,Velocità,スピード,스피드,Haast,Hastighet,Pęd,Velocidade,Velocidade,Viteză,Скорость,Брзина,Hastighet,Hız
+PHUSTR_13,,,The Crypt,,Krypta,Krypten,Die Gruft,,La kripto,La cripta,,Krypta,La Crypte,,A kripta,La Cripta,地下聖堂,봉안당,De crypte,Krypten,Krypta,A Cripta,A Cripta,Cripta,Склеп,Гробница,Kryptan,Mahzen
+PHUSTR_14,,,Genesis,,,,,,Genezo,Génesis,,Luominen,Genèse,,Teremtés,Genesi,創世記,창세기,,,Geneza,Gênese,Gênese,Geneza,Зарождение,Постанак,Genesis,Yaratılış
+PHUSTR_15,,,The Twilight,,Soumrak,Tusmørket,Zwielicht,,La krepusko,El ocaso,,Hämärä,Le Crépuscule,,Alkonyat,Il Crepuscolo,黄昏,황혼,De schemering,Skumringen,Zmierzch,O Crepúsculo,O Crepúsculo,Amurgul,Сумерки,Сумрак,Skymningen,Alacakaranlık
+PHUSTR_16,,,The Omen,,Znamení,Omenet,Das Omen,,La Aŭguro,El Presagio,,Enne,Le Présage,,Az Ómen,Il Presagio,予兆,징조,De omen,Varselet,Omen,O Presságio,O Presságio,Prevestirea,Предзнаменование,Знамење,Omen,Omen
+PHUSTR_17,,,Compound,,Ústav,Forbindelsen,Anlage,,Konstruaĵaro,Complejo,,Laitos,Installation,,Létesítmény,Recinto,調合,복합체,Faciliteit,Forbindelsen,Mieszanka,Complexo,Complexo,Complexul,Комплекс,Једињење,Förbandet,Bileşik
+PHUSTR_18,,,Neurosphere,,Neurosféra,Neurosfæren,Neurosphäre,,Neŭrosfero,Neuroesfera,,Neurosfääri,Neurosphère,,Neuroszféra,Neurosfera,ニューロスフィア,뉴로스피어,Neurosferen,Nevrosfæren,Neurosfera,Neurosfera,Neurosfera,Neurosferă,Нейросфера,Неуросфера,Neurosfären,Nörosfer
+PHUSTR_19,,,NME,,Nepřítel,,,,Mal-BN,N-MIGO,,VHLLNN,NMI,,LNSG,NMIC,野郎,NOM,,,WRG,N-MIGO,N-MIGO,INMIC,В.Р.А.Г.,Н.Е.П.Р.,FiND,NME
+PHUSTR_20,,,The Death Domain,,Panství smrti,Dødsdomænet,Die Todeszone,,La morta regno,El Dominio Mortal,,Kuoleman piiri,Le Domaine de la Mort,,A holtak birtoka,Il Dominio della Morte,死の領域,죽음의 영역,Het domein van de dood,Dødens domene,Domena Śmierci,O Domínio da Morte,O Domínio da Morte,Domeniul morții,Владения смерти,Подручије смрти,Dödsdomänen,Ölüm Alanı
+PHUSTR_21,,,Slayer,,Zabiják,Slagter,Töter,,Mortigisto,Descuatizador,,Tappaja,Pourfendeur,,Halálosztó,Assassino,スレイヤー,슬레이어,Doder,Slakteren,Pogromca,Matador,Matador,Ucigător,Истребитель,Убица,Jägare,Avcı
+PHUSTR_22,,,Impossible Mission,,Nemožná mise,Umulig mission,Unmögliche Mission,,Neebla tasko,Misión imposible,,Mahdoton tehtävä,Mission Impossible,,Lehetetlen küldetés,Missione Impossibile,不可能な任務,임파서블 미션,Onmogelijke missie,Umulig oppdrag,Niemożliwa Misja,Missão Impossível,Missão Impossível,Misiune imposibilă,Невыполнимое задание,Немогућа мисија,Omöjligt uppdrag,İmkansız Görev
+PHUSTR_23,,,Tombstone,,Náhrobek,Gravsten,Grabstein,,Tombŝtono,Lápida,,Hautakivi,Pierre Tombale,,Sírkő,Pietra Tombale,墓石,묘비,Grafsteen,Gravstein,Nagrobek,Lápide,Lápide,Piatra de mormânt,Надгробие,Надгробни споменик,Gravsten,Mezar Taşı
+PHUSTR_24,,,The Final Frontier,,Poslední hranice,Den endelige grænse,Die letzte Grenze,,La Fina Limo,La Frontera Final,La Última Frontera,Viimeinen rajamaa,La Frontière Finale,,A végső határ,La Frontiera Finale,最後のフロンティア,최후의 개척지,De eindgrens,Den siste grensen,Ostateczna Granica,A Fronteira Final,A Fronteira Final,Ultima frontieră,Последний рубеж,Коначна граница,Den sista gränsen,Son Sınır
+PHUSTR_25,,,The Temple of Darkness,,Chrám temna,Mørkets tempel,Der Tempel der Dunkelheit,,La Idolejo de Mallumo,El Templo de la Oscuridad,,Pimeyden temppeli,Le Temple des Ténèbres,,A sötétség temploma,Il Tempio dell'Oscurità,暗黒の神殿,어둠의 신전,De tempel van de duisternis,Mørkets tempel,Świątynia Mroku,O Templo da Escuridão,O Templo da Escuridão,Templul tenebros,Храм тьмы,Храм таме,Mörkrets tempel,Karanlığın Tapınağı
+PHUSTR_26,,,Bunker,,Bunkr,,,,Bunkro,Búnker,,Bunkkeri,Bunker,,Bunker,Bunker,バンカー,방공호,,,Bunkier,Casamata,Bunker,Buncăr,Бункер,Бункер,Bunker,Sığınak
+PHUSTR_27,,,Anti-Christ,,Antikrist,,Antichrist,,Antikristo,Anticristo,,Antikristus,Anti-Christ,,Antikrisztus,Anticristo,アンチキリスト,적그리스도,Antichrist,Antikrist,Antychryst,Anticristo,Anticristo,Antihrist,Антихрист,Антихрист,Antikrist,Mesih Karşıtı
+PHUSTR_28,,,The Sewers,,Kanály,Kloakkerne,Kanäle,,La Kanalo,Las Alcantarillas,,Viemärit,Les Egouts,,A kanális,Le Fogne,下水道,하수구,De rioleringen,Kloakken,Ścieki,Os Esgotos,Os Esgotos,Canalizarea,Канализация,Канализација,Sjukhusen,Kanalizasyonlar
+PHUSTR_29,,,Odyssey of Noises,,Odysea křiku,Lydenes odyssé,Odyssee der Geräusche,,Vojaĝo de Sonoj,Odisea de Ruidos,,Äänten harharetki,Odysée de Bruits,,A moraj ösvénye,Odissea dei Rumori,オデッセイのノイズ,속삭임의 여정,Odyssee van geluiden,Lydenes odyssé,Odyseja Wrzawy,Odisséia de Ruidos,Odisséia de Ruidos,Odiseea zgomotelor,Одиссея шумов,Одисеја шумова,Ljudets odyssé,Seslerin Odyssey'i
+PHUSTR_30,,,The Gateway of Hell,,Brána pekla,Helvedes port,Tor zur Hölle,,La Pordego de Inferno,La Puerta del Infierno,,Helvetin porttikäytävä,La Porte des Enfers,,Átjáró a pokolba,La Porta dell'Inferno,地獄の関門,지옥의 차원문,De poort van de hel,Porten til helvete,Brama Piekieł,O Portão do Inferno,O Portão do Inferno,Poarta spre infern,Врата ада,Пролаз пакла,Helvetets port,Cehennem Kapısı
+PHUSTR_31,,,Cyberden,,Kyberdoupě,,Cyberbau,,Cibernesto,Ciber-guarida,,Kyberpesä,Cyber-Antre,,Kiberodú,Cybergabbia,サイバーの巣,사이버소굴,,,Cybernora,Ciberantro,Ciberantro,Cibervizuină,Киберлогово,Сајбер-јазбина,Cyberden,Siber'in ini
+PHUSTR_32,,,Go 2 It,,Jdi do toho,,,,Iru al ĝi!,Ve a x ello,Ve x eso,Iske kii,Go 2 It,,Menj oda!,Dacci Dentro,逝ってこい,함 해 봐,Ga ervoor,,Do Dzieła,Vai Fundo,Siga em Frente,Du-te la ei,П0лный вп3рёд,Иди ка њему,Gå till det,Devam Et
+,tnt level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,
+THUSTR_1,,,System Control,,Administrace,Systemkontrol,Systemkontrolle,,Sistema Kontrolo,Control del Sistema,,Järjestelmäohjaamo,Système de Contrôle,,Rendszervezérlő,Controllo del Sistema,制御システム,시스템 제어시설,Systeemcontrole,Systemkontroll,Kontrola Systemu,Controle do Sistema,Controlo de Sistema,Control sisteme,Центр управления системой,Контролна система,Systemkontroll,Sistem Kontrolü
+THUSTR_2,,,Human BBQ,,Člověčí grilovačka,Menneskelig grill,Menschliches Barbecue,,Homo-Kradrostado,Barbacoa Humana,,Ihmisgrilli,Barbecue Humain,,Emberi grill,Barbecue Umano,人肉晩餐会,인간 바비큐,Menselijke BBQ,Menneskelig BBQ,Ludzki Grill,Churrasco Humano,Churrasco Humano,Oameni la grătar,Барбекю из человечины,Људски роштиљ,Människogrill,İnsan Barbekü
+THUSTR_3,,,Power Control,,Napájecí vedení,Kontrol med magten,Energiekontrolle,,Energia Kontrolo,Control de Energía,,Voimalan ohjaamo,Contrôle Energétique,,Energiavezérlő,Centrale Energetica,制御室,전력 통제소,Machtscontrole,Kraftkontroll,Kontrola Zasilania,Controle de Energia,Controlo Energético,Uzina,Центр управления питанием,Контролна моћ,Maktkontroll,Güç Kontrolü
+THUSTR_4,,,Wormhole,,Červí díra,Ormehul,Wurmloch,,Vermtruo,Agujero de Gusano,,Madonreikä,Trou de Ver,,Féreglyuk,Wormhole,虫喰い穴,웜홀,Wormgat,Ormehull,Tunel,Buraco de Minhoca,Buraco de Minhoca,Gaura de vierme,Червоточина,Црвоточина,Maskhål,Solucan Deliği
+THUSTR_5,,,Hanger,,Hangár,,Hangar,,Pendigejo,Colgador,,Lentoalushalli,Hengar,,Horog,Hanga,格納庫,격납고,Hangar,Hanger,Hangar,Hangar,Hangar,Hangar,Ангар,Вешалица,Hängare,Askı
+THUSTR_6,,,Open Season,,Lovecká sezóna,Åben sæson,Jagdsaison,,Ĉasosezono,Temporada Abierta,,Avoin sesonki,La Chasse Est Ouverte,,Vadászszezon,Stagione Aperta,狩猟解禁,사냥철,Open seizoen,Åpen sesong,Otwarty Sezon,Temporada Aberta,Época Aberta,Sezon deschis,Сезон охоты,Отворена сезона,Öppen säsong,Açık Sezon
+THUSTR_7,,,Prison,,Vězení,Fængsel,Gefängnis,,Malliberejo,Prisión,,Vankila,Prison,,Börtön,Prigione,監獄,감옥,Gevangenis,Fengsel,Więzienie,Prisão,Prisão,Închisoare,Тюрьма,Затвор,Fängelse,Hapishane
+THUSTR_8,,,Metal,,Kov,,Metall,,Metalo,Metal,,Metalli,Métal,,Fém,Metallo,メタル,강철,Metaal,Metall,Metal,Metal,Metal,Metal,Металл,Метал,Metall,Metal
+THUSTR_9,,,Stronghold,,Pevnost,Borgen,Festung,,Fuorto,Fortaleza,,Linnake,Forteresse,,Erőd,Fortezza,牙城,요새,Vesting,Festning,Warownia,Fortaleza,Fortaleza,Bastion,Твердыня,Упориште,Fästning,Kale
+THUSTR_10,,,Redemption,,Vykoupení,Forløsning,Erlösung,,Elaĉeto,Redención,,Lunastus,Rédemption,,Megváltás,Redenzione,償還,구원,Aflossing,Innløsning,Odkupienie,Redenção,Redenção,Răscumpărare,Искупление,Искупљење,Inlösen,Kefaret
+THUSTR_11,,,Storage Facility,,Skladiště,Opbevaringsanlæg,Lagerstätte,,Stokejo,Complejo de Almacenes,Almacenes,Varastolaitos,Complexe de Stockage,,Raktárépület,Impianto di Stoccaggio,貯蔵施設,저장소,Opslagfaciliteit,Lagringsanlegg,Magazyn,Centro de Armazenamento,Centro de Armazenamento,Stația de depozitare,Склад,Складиште,Förvaringsanläggning,Depolama Tesisi
+THUSTR_12,,,Crater,,Kráter,Krater,Krater,,Kratero,Cráter,,Kraateri,Cratère,,Kráter,Cratere,火口,분화구,Krater,Krater,Krater,Cratera,Cratera,Crater,Кратер,Кратер,Krater,Krater
+THUSTR_13,,,Nukage Processing,,Jaderné zpracování,Nukageforarbejdning,Nuklearverarbeitung,,Nukleaĵo-Traktejo,Procesamiento de Residuos Nucleares,,Ydinjätekäsittely,Traitement Nucléaire,,Atomhulladék-feldolgozó,Trattamento Nucleare,核廃棄物加工所,폐기물 처리소,Nucleaire verwerking,Nukage-prosessering,Przetwórstwo Jądrowe,Processamento Nuclear,Processamento Nuclear,Prelucrarea deșeurilor nucleare,Переработка ядерных отходов,Прерада нуклеарног отпада,Kärnavfall Behandling,Nukage İşleme
+THUSTR_14,,,Steel Works,,Ocelárna,Stålværk,Stahlwerk,,Ŝtalejo,Siderúrgica,Siderurgia,Terästehdas,Aciérie,,Acélművek,Acciaieria,製鉄所,제강소,Staalfabrieken,Stålverk,Huta,Siderúrgica,Siderúrgica,Oțelărie,Сталелитейный завод,Челичана,Stålverk,Çelik İşleri
+THUSTR_15,,,Dead Zone,,Mrtvá zóna,Død zone,Tote Zone,,Senvivzono,Zona Muerta,,Kuollut alue,Zone Morte,,A holtak zónája,Zona Morta,危険地帯,사각지대,Dode zone,Død sone,Martwa Strefa,Zona Morta,Zona Morta,Zona moartă,Мёртвая зона,Зона смрти,Dödszon,Ölü Bölge
+THUSTR_16,,,Deepest Reaches,,Nejhlubší sluje,De dybeste afkroge,Tiefe,,Plejsubejo,Recodos profundos,,Syvyydet,Profondeurs,,A legmélyebb pont,Profondità,最深部,깊숙한 강,Diepste reiken,De dypeste områdene,Głębiny,Profundezas,Profundezas,În adâncuri,Глубочайшие достижения,Најдубља дубина,De djupaste hålen,En Derin Erişimler
+THUSTR_17,,,Processing Area,,Kombinát,Forarbejdningsområde,Verarbeitungsbereich,,Traktadareo,Área de Procesamiento,,Käsittelyalue,Zone de Traitement,,Feldolgozó,Area di Elaborazione,処理地帯,처리 구역,Verwerkingsgebied,Behandlingsområde,Strefa Przerobowa,Área de Processamento,Área de Processamento,Aria de procesare,Зона обработки,Подручје обраде,Bearbetningsområde,İşleme Alanı
+THUSTR_18,,,Mill,,Mlýn,Mølle,Mühle,,Muelejo,Molino,,Mylly,Fonderie,,Malom,Fonderia,製粉所,제분소,Molen,Mølle,Młyn,Moinho,Moinho,Moara,Завод,Млин,Kvarn,Değirmen
+THUSTR_19,,,Shipping/Respawning,,Přeprava,Forsendelsescenter,Versandlager,,Ekspedo/Revivado,Enviando/Reapareciendo,,Huolinta/Ylösnostatus,Envoi/Réapparition,,Szállítás/újraéledés,Consegna/Respawn,出荷と再生成,운송/리스폰 장소,Verzendingscentrum,Frakt/omlasting,Wysyłka/Reprodukcja,Expedição/reaparecimento,Expedição/reaparecimento,Livrare/reapariție,Погрузка и отправка,Отпремање/оживљавање,Skeppning,Nakliye Merkezi
+THUSTR_20,,,Central Processing,,Centrální zpracování,Central forarbejdning,Zentralverarbeitung,,Centra Eskpedado,Procesamiento Central,,Käsittelykeskus,Organisme Central,,Központi feldolgozó,Centrale di Elaborazione,中央処理所,중앙 처리소,Centrale verwerking,Sentral behandling,Centralny Proces,Processamento Central,Processamento Central,Prelucrare centrală,Центральный пункт обработки,Централна обрада,Centralt bearbetningsområde,Merkezi İşlem
+THUSTR_21,,,Administration Center,,Administrativní centrum,Administrationscenter,Verwaltungszentrum,,Administracia Centro,Centro de Administración,,Keskushallinto,Centre Administratif,,Adminisztrációs központ,Centro Amministrativo,行政センター,관리 센터,Administratief centrum,Administrasjonssenter,Centrum Administracyjne,Centro de Administração,Centro de Administração,Centru administrativ,Административный центр,Административни центар,Administrationscenter,Yönetim Merkezi
+THUSTR_22,,,Habitat,,,Levested,,,Habitato,Hábitat,,Asuinpaikka,Habitat,,Élőhely,Habitat,生息地,서식지,,Habitat,Siedlisko,Habitat,Habitat,Habitat,Ареал,Станиште,Livsområde,Habitat
+THUSTR_23,,,Lunar Mining Project,,Lunární těžební projekt,Projekt for månens minedrift,Mondbergbauprojekt,,Luna Mino-Projekto,Proyecto de Minería Lunar,,Kuukaivosprojekti,Projet Minier Lunaire,,Holdbánya-projekt,Progetto Minerario Lunare,月面探鉱計画,월석 채광 계획,Maanmijnbouw project,Månegruveprosjekt,Projekt Księżycowe Górnictwo,Projeto de Mineração Lunar,Projeto de Escavação Lunar,Proiect minier satelitar,Лунный проект горной добычи,Пројекат лунарног рударства,Gruvprojekt på månen,Ay Madenciliği Projesi
+THUSTR_24,,,Quarry,,Kamenolom,Stenbrud,Steinbruch,,Ŝtonejo,Cantera,,Louhos,Carrière,,Kőbánya,Caccia,採石場,채석장,Steengroeve,Steinbrudd,Kamieniołom,Pedreira,Pedreira,Carieră,Карьер,Каменолом,Stenbrott,Taş Ocağı
+THUSTR_25,,,Baron's Den,,Baronovo doupě,Baronens hule,Der Bau des Barons,,Nestego de Barono,Guarida del Barón,,Paronin pesä,l'Antre des Barons,,A báró odúja,Antro del Barone,バロンの巣窟,남작의 소굴,Het baron's gebouw,Baronens hule,Legowisko Barona,Covil do Barão,Covil do Barão,Cuibul Baronului,Логово барона,Баронова јазбина,Baronens lya,Baron'un İni
+THUSTR_26,,,Ballistyx,,Balistika,,,,Balistikso,Balístige,,Ballistyks,Ballistyx,,Ballisztüx,Ballistige,バリステュクス,탄도스틱스,,,Balistyka,Ballistige,Ballistige,Ballistyx,Баллистикс,Билистичкикс,Ballistyx,Balistyx
+THUSTR_27,,,Mount Pain,,Hora bolesti,Smertefjellet,Berg des Schmerzes,,Monto de Doloro,Monte Dolor,,Tuskavuori,Mont Souffrance,,A Gyötrelem Hegye,Monte del Dolore,苦しみの山,등신같은 등산,Pijn in de bergen,Smertefjellet,Góra Bólu,Monte Dor,Monte Dor,Muntele Durerii,Гора Боль,Планина боли,Smärta på berget,Acı Dağı
+THUSTR_28,,,Heck,,Sakra,,Zum Teufel,,Diable,Diablos,,Hemmetti,Que Diable?,,Rosseb,Al Diavolo,苛立ち,젠장함,,Helvete,Do Diabła,Capeta,Inferno,Naiba,Чертовщина,Пакао,Heck,Cehennem
+THUSTR_29,,,River Styx,,Řeka Styx,Floden Styx,Fluss Styx,,Rivero de Stikso,Río Estige,,Styksjoki,Fleuve Styx,,A Sztüx folyó,Fiume Stige,三途の川,스틱스 강,Rivier Styx,Elven Styx,Styks,Rio Estige,Rio Estige,Râul Styx,Река Стикс,Река Стикс,Floden Styx,Styx Nehri
+THUSTR_30,,,Last Call,,Poslední mise,Sidste opkald,Letzter Aufruf,,Fina Voko,Última Llamada,,Viimeinen koollehuuto,Dernier Appel,,Utolsó esély,Ultima Chiamata,最終指令,최후의 호출,Laatste oproep,Siste innkalling,Ostatni Zew,Última Chamada,Última Chamada,Ultimul apel,Последний вызов,Последњи позив,Sista kallelsen,Son Çağrı
+THUSTR_31,,,Pharaoh,,Faraón,Farao,Pharao,,Faraono,Faraón,,Faarao,Pharaon,,Fáraó,Faraone,ファラオ,파라오,Farao,Farao,Faraon,Faraó,Faraó,Faraon,Фараон,Фараон,Farao,Firavun
+THUSTR_32,,,Caribbean,,Karibik,Caribien,Karibik,,Karibio,Caribeño,,Karibia,Caraïbes,,Karib-térség,Caraibi,カリビアン,카리브해,Caribisch,Karibia,Karaiby,Caribe,Caraíbas,Caraibe,Карибы,Кариби,Karibien,Karayipler
+,master levels names,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML_ATTACK,,,Attack,,,,Attacke,,,,,,,,,,,,,,Atak,,,,Атака,,,
+ML_CANYON,,,Canyon,,,,Schlucht,,,,,,,,,,,,,,Kanion,,,,Каньон,,,
+ML_CATWALK,,,The Catwalk,,,,Der Laufsteg,,,,,,,,,,,,,,Pomost,,,,Подиум,,,
+ML_COMBINE,,,The Combine,,,,Der Mähdrescher,,,,,,,,,,,,,,Kombinat,,,,Комбайн,,,
+ML_FISTULA,,,The Fistula,,,,Die Fistel,,,,,,,,,,,,,,Przetoka,,,,Фистула,,,
+ML_GARRISON,,,The Garrison,,,,Die Garnison,,,,,,,,,,,,,,Garnizon,,,,Гарнизон,,,
+ML_MANOR,,,Titan Manor,,,,Anwesen auf dem Titan,,,,,,,,,,,,,,Rezydencja na Tytanie,,,,Поместье на Титане,,,
+ML_PARADOX,ParadoX is Tom Mustaine's handle,,Paradox,,,,,,,,,,,,,,,,,,,,,,Парадокс,,,
+ML_SUBSPACE,,,Subspace,,,,Subraum,,,,,,,,,,,,,,Podprzestrzeń,,,,Подпространство,,,
+ML_SUBTERRA,,,Subterra,,,,Unter der Erde,,,,,,,,,,,,,,Podziemia,,,,Субтерра,,,
+ML_TTRAP,,,Trapped on Titan,,,,Gefangen auf dem Titan,,,,,,,,,,,,,,Uwięziony na Tytanie,,,,Застрявший на Титане,,,
+ML_VIRGIL,,,Virgil's Lead,,,,Virgils Pfad,,,,,,,,,,,,,,Droga Wergiliusza,,,,Путь Вергилия,,,
+ML_MINOS,,,Minos' Judgement,,,,Minos Urteil,,,,,,,,,,,,,,Wyrok Minosa,,,,Суждение Миноса,,,
+ML_BLOODSEA,,,Bloodsea Keep,,,,Festung der blutigen See,,,,,,,,,,,,,,Twierdza Krwawego Morza,,,,Крепость Кровавого Моря,,,
+ML_MEPHISTO,,,Mephisto's Mausoleum,,,,Mephistos Mausoleum,,,,,,,,,,,,,,Mauzoleum Mefisto,,,,Мавзолей Мефисто,,,
+ML_NESSUS,,,Nessus,,,,,,,,,,,,,,,,,,Dejanira,,,,Несс,,,
+ML_GERYON,,,Geryon,,,,,,,,,,,,,,,,,,Gerion,,,,Герион,,,
+ML_VESPERAS,,,Vesperas,,,,,,,,,,,,,,,,,,,,,,Весперас,,,
+ML_BLACKTWR,,,Black Tower,,,,Schwarzer Turm,,,,,,,,,,,,,,Czarna wieża,,,,Черная Башня,,,
+ML_TEETH,,,The Express Elevator To Hell,,,,Der Express-Aufzug zur Hölle,,,,,,,,,,,,,,Ekspresowa winda do Piekła,,,,Экспресс-лифт в Ад,,,
+ML_TEETH_SECRET,,,Bad Dream,,,,Schlechter Traum,,,,,,,,,,,,,,Zły sen,,,,Плохой сон,,,
+,master levels rejects names,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ML_DEVICE1,,,Device One,,,,Gerät Nummer eins,,,,,,,,,,,,,,Urządzenie pierwsze,,,,Устройство номер один,,,
+ML_CPU,,,The C.P.U.,,,,Die C.P.U.,,,,,,,,,,,,,,C. P. U.,,,,ЦПУ,,,
+ML_DMZ,,,The D.M.Z.,,,,Die E.M.Z.,,,,,,,,,,,,,,D. M. Z.,,,,ДМЗ,,,
+ML_EINSIDE,,,The Enemy Inside,,,,Der innere Feind,,,,,,,,,,,,,,Wróg wewnątrz,,,,Враг внутри,,,
+ML_FURY,,,The Fury,,,,Die Wut,,,,,,,,,,,,,,Furia,,,,Ярость,,,
+ML_HIVE,,,The Hive,,,,Das Nest,,,,,,,,,,,,,,Gromada,,,,Улей,,,
+ML_TWM01,,,Doom2 Map14 Homage,,,,DOOM2 Level14 Hommage,,,,,,,,,,,,,,Hołd mapie 14 Doom2,,,,Оммаж Doom2 Уровень №14,,,
+ML_MINES,,,Mines of Titan,,,,Minen des Titan,,,,,,,,,,,,,,Kopalnie Tytana,,,,Шахты Титана,,,
+ML_ANOMALY,,,The Titan Anomaly,,,,Die Titan Anomalie,,,,,,,,,,,,,,Anomalia na Tytanie,,,,Аномалия Титана,,,
+ML_FARSIDE,,,The Farside of Titan,,,,Die andere Seite des Titan,,,,,,,,,,,,,,Niewidoczna strona Tytanu,,,,Дальняя сторона Титана,,,
+ML_TROUBLE,,,Trouble on Titan,,,,Probleme auf dem Titan,,,,,,,,,,,,,,Kłopoty na Tytanie,,,,Беда на Титане,,,
+ML_FLOOD,,,Bloodflood,,,,Blut-Flut,,,,,,,,,,,,,,Krwotok,,,,Кроводнение,,,
+ML_DERELICT,,,Derelict Station,,,,Stillgelegter Bahnhof,,,,,,,,,,,,,,Opuszczona stacja,,,,Заброшенная станция,,,
+ML_WATCHTWR,,,The Watchtower,,,,Der Wachtturm,,,,,,,,,,,,,,Strażnica,,,,Сторожевая башня,,,
+ML_TODEATH,,,Temple of Death,,,,Tempel des Todes,,,,,,,,,,,,,,Świątynia Śmierci,,,,Храм Смерти,,,
+ML_ARENA,,,We who are About to Die,,,,"Wir, die bald sterben",,,,,,,,,,,,,,"My, którzy zaraz umrzemy",,,,"Мы, которые скоро умрут",,,
+ML_STORM,,,Eye of the Storm,,,,Auge des Sturms,,,,,,,,,,,,,,Oko burzy,,,,Глаз бури,,,
+ML_THE_EVIL,,,The Image of Evil,,,,Das Bild des Bösen,,,,,,,,,,,,,,Obraz zła,,,,Образ зла,,,
+ML_DANTES,,,Dante's Gate,,,,Dantes Pforte,,,,,,,,,,,,,,Brama Dantego,,,,Врата Данте,,,
+ML_ACHERON,,,Crossing Acheron,,,,Überquerung des Acheron,,,,,,,,,,,,,,Przejście Archeon,,,,Пересечение Ахерона,,,
+ML_CHIRON,,,Chiron,,,,,,,,,,,,,,,,,,,,,,Хирон,,,
+ML_LETHE,,,Waters of Lethe,,,,Gewässer von Lethe,,,,,,,,,,,,,,Wody Lete,,,,Воды Леты,,,
+,blackroom warmup level names,,,,,,,,,,,,,,,,,,,,,,,,,,,
+HUSTR_E1M4B,,,Phobos Mission Control,,,,Phobos Missionsleitung,,,,,,,,,,,,,,Centrum Kontroli Fobosa,,,,Центр управления Фобоса,,,
+HUSTR_E1M8B,,,Tech Gone Bad,,,,Fehlerhafte Technik,,,,,,,,,,,,,,Popsuta technologia,,,,Испортившаяся технология,,,
+,sigil level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,
+HUSTR_E5M1,,,Baphomet's Demesne,,,,Baphomets Territorium,,,,,,,,,,,,,,Terytorium Bafometa,,,,Владение Бафомета,,,
+HUSTR_E5M2,,,Sheol,,,,Scheol,,,,,,,,,,,,,,Szeol,,,,Шеол,,,
+HUSTR_E5M3,,,Cages of the Damned,,,,Käfige der Verdammten,,,,,,,,,,,,,,Klatki potępionych,,,,Клетки проклятых,,,
+HUSTR_E5M4,,,Paths of Wretchedness,,,,Pfad des Elends,,,,,,,,,,,,,,Ścieżki niedoli,,,,Пути убожества,,,
+HUSTR_E5M5,,,Abaddon's Void,,,,Abaddons Leere,,,,,,,,,,,,,,Pustka Abaddonu,,,,Пустота Абаддона,,,
+HUSTR_E5M6,,,Unspeakable Persecution,,,,Unsägliche Unterdrückung,,,,,,,,,,,,,,Przeraźliwy ucisk,,,,Ужасающее угнетение,,,
+HUSTR_E5M7,,,Nightmare Underworld,,,,Alptraum Unterwelt,,,,,,,,,,,,,,Koszmarne podziemia,,,,Кошмарная преисподня,,,
+HUSTR_E5M8,,,Halls of Perdition,,,,Hallen der Verdammnis,,,,,,,,,,,,,,Korytarze Potępienia,,,,Залы погибели,,,
+HUSTR_E5M9,,,Realm of Iblis,,,,Reich des Iblis,,,,,,,,,,,,,,Królestwo Eblisa,,,,Царство Иблиса,,,
+,sigil2 level names (sans level #),,,,,,,,,,,,,,,,,,,,,,,,,,,
+HUSTR_E6M1,,,Cursed Darkness,,,,Verfluchte Dunkelheit,,,,,,,,,,,,,,Przeklęty mrok,,,,Проклятая тьма,,,
+HUSTR_E6M2,,,Violent Hatred,,,,Schmerzhafter Hass,,,,,,,,,,,,,,Zaciekła nienawiść,,,,Яростная ненависть,,,
+HUSTR_E6M3,,,Twilight Desolation,,,,Zwielichtige Verwüstung,,,,,,,,,,,,,,Spustoszenie o zmierzchu,,,,Сумерчное запустение,,,
+HUSTR_E6M4,,,Fragments of Sanity,,,,Fragmente der Vernunft,,,,,,,,,,,,,,Odłamki poczytalności,,,,Отрывки здравомыслия,,,
+HUSTR_E6M5,,,Wrathful Reckoning,,,,Zornige Abrechnung,,,,,,,,,,,,,,Gniewny osąd,,,,Гневная расплата,,,
+HUSTR_E6M6,,,Vengeance Unleashed,,,,Entfesselte Rache,,,,,,,,,,,,,,Wyzwolona zemsta,,,,Вольная месть,,,
+HUSTR_E6M7,,,Descent Into Terror,,,,Abstieg in den Terror,,,,,,,,,,,,,,Popadek w przerażenie,,,,Погружение в страх,,,
+HUSTR_E6M8,,,Abyss of Despair,,,,Abgrund der Verzweiflung,,,,,,,,,,,,,,Otchłań rozpaczy,,,,Бездна отчаяния,,,
+HUSTR_E6M9,,,Shattered Homecoming,,,,Zerrüttete Heimkehr,,,,,,,,,,,,,,Zaniedbany powrót,,,,Разрушенное возвращение,,,
+,legacy of rust level names,,,,,,,,,,,,,,,,,,,,,,,,,,,
+XHUSTR_1,,,Scar Gate,,,,Tor der Narben,,,,,,,,,,,,,,Wrota blizn,,,,Врата шрама,,,
+XHUSTR_2,,,Sanguine Wastes,,,,Blutige Abfälle,,,,,,,,,,,,,,Krwawe odpady,,,,Кровавые отходы,,,
+XHUSTR_3,,,Spirit Drains,,,,Seelen-Abfluss,,,,,,,,,,,,,,Wyżymarka dusz,,,,Стоки душ,,,
+XHUSTR_4,,,Descending Inferno,,,,Abgründiges Inferno,,,,,,,,,,,,,,Schodzące Inferno,,,,Нисходящий Ад,,,
+XHUSTR_5,,,Creeping Hate,,,,Schleichender Hass,,,,,,,,,,,,,,Ukryta nienawiść,,,,Крадущаяся ненависть,,,
+XHUSTR_6,,,The Coiled City,,,,Die verschlungene Stadt,,,,,,,,,,,,,,Miasto zakrętów,,,,Спиральный город,,,
+XHUSTR_7,,,Forfeited Salvation,,,,Verwirkte Erlösung,,,,,,,,,,,,,,Przepadłe zbawienie,,,,Утраченное спасение,,,
+XHUSTR_8,,,Ash Mill,,,,Aschemühle,,,,,,,,,,,,,,Ashowe Rondo Wiatraczna,,,,Пепельная мельница,,,
+XHUSTR_9,,,Second Coming,,,,Wiederkunft,,,,,,,,,,,,,,Drugie nadejście,,,,Второе пришествие,,,
+XHUSTR_10,,,Falsehood,,,,Unwahrheit,,,,,,,,,,,,,,Kłamstwo,,,,Ложь,,,
+XHUSTR_11,,,Dis Union,,,,,,,,,,,,,,,,,,,,,,,,,
+XHUSTR_12,,,Echoes of Pain,,,,Echos des Schmerzes,,,,,,,,,,,,,,Echa bólu,,,,Отголоски боли,,,
+XHUSTR_13,,,The Rack,,,,Das Gestell,,,,,,,,,,,,,,Regał,,,,Стойка,,,
+XHUSTR_14,,,Soul Silo,,,,Seelen-Silo,,,,,,,,,,,,,,Izolatka dusz,,,,Силос душ,,,
+XHUSTR_15,,,Brink,,,,,,,,,,,,,,,,,,Skraj,,,,Грань,,,
+XHUSTR_16,,,Panopticon,,,,Panoptikum,,,,,,,,,,,,,,Panoptikon,,,,Паноптикум,,,
+XHUSTR_99,,,Test Map Please Ignore,,,,"Test-Level, bitte ignorieren",,,,,,,,,,,,,,Mapa testowa zignoruj ją,,,,Тестовая карта прошу проигнорировать,,,
+,iddm1 level names,,,,,,,,,,,,,,,,,,,,,,,,,,,
+MHUSTR_1,,,One,,,,Eins,,,,,,,,,,,,,,Pierwsza,,,,Один,,,
+MHUSTR_2,,,Surge,,,,Überspannung,,,,,,,,,,,,,,Przypływ,,,,Волна,,,
+MHUSTR_3,,,Artemis,,,,,,,,,,,,,,,,,,Artemida,,,,Артемида,,,
+MHUSTR_4,,,Lazarus 2024,,,,,,,,,,,,,,,,,,Łazarz 2024,,,,Лазарь 2024,,,
+MHUSTR_5,,,Baneful Crypt,,,,Verwünschte Gruft,,,,,,,,,,,,,,Zgubna krypta,,,,Губительный склеп,,,
+MHUSTR_6,,,Ziggurat,,,,,,,,,,,,,,,,,,,,,,Зиккурат,,,
+MHUSTR_7,,,Magnificent Seven,,,,Glorreiche Sieben,,,,,,,,,,,,,,Siedmiu wspaniałych,,,,Великолепная семёрка,,,
+MHUSTR_8,,,High Hopes,,,,Große Hoffnungen,,,,,,,,,,,,,,Wielkie nadzieje,,,,Большие надежды,,,
+MHUSTR_9,,,Tournament Edition,,,,Turnier Edition,,,,,,,,,,,,,,Edycja turniejowa,,,,Турнирное издание,,,
+MHUSTR_10,,,Purge Facility,,,,Säuberungsanlage,,,,,,,,,,,,,,Placówka ds. czystek,,,,Очистная установка,,,
+MHUSTR_11,,,Bad Archeology,,,,Schlechte Archäologie,,,,,,,,,,,,,,Zła archeologia,,,,Плохая археология,,,
+MHUSTR_12,,,Catapult Ordeal,,,,Katapult-Prüfung,,,,,,,,,,,,,,Męczarnia z katapultą,,,,Испытание катапультой,,,
+MHUSTR_13,,,Moonbase,,,,Mondbasis,,,,,,,,,,,,,,Stacja księzycowa,,,,Лунная база,,,
+MHUSTR_14,,,X-Factor,,,,,,,,,,,,,,,,,,,,,,Фактор икс,,,
+MHUSTR_15,,,Marble and Blood,,,,Marmor und Blut,,,,,,,,,,,,,,Marmur z krwią,,,,Мрамор и кровь,,,
+MHUSTR_16,,,Wicked Warehouse,,,,Abgefahrenes Lagerhaus,,,,,,,,,,,,,,Potworny magazyn,,,,Зловещий склад,,,
+MHUSTR_17,,,Future Shock,,,,Zukunftsschock,,,,,,,,,,,,,,Szok przyszłości,,,,Шок будущего,,,
+MHUSTR_18,,,Diesel,,,,,,,,,,,,,,,,,,,,,,Дизель,,,
+MHUSTR_19,,,Blood Offering,,,,Blutopfer,,,,,,,,,,,,,,Ofiara krwi,,,,Кровавое приношение,,,
+MHUSTR_20,,,Corrupted Outpost,,,,Korrupter Außenposten,,,,,,,,,,,,,,Placówka zepsucia,,,,Оскверненный аванпост,,,
+MHUSTR_21,,,Treatment Station,,,,Behandlungsstation,,,,,,,,,,,,,,Stacja leczenia,,,,Станция обработки,,,
+MHUSTR_22,,,Luca Doesn't Name Maps,,,,Luca benennt keine Level,,,,,,,,,,,,,,Luca nie nadaje mapom nazw,,,,Лука не дает картам названия,,,
+MHUSTR_23,,,Good Ideas,,,,Gute Ideen,,,,,,,,,,,,,,Dobre pomysły,,,,Хорошие идеи,,,
+MHUSTR_24,,,Static Station,,,,Feste Station,,,,,,,,,,,,,,Stacja statyczna,,,,Статическая станция,,,
+MHUSTR_25,,,Heckbase Alpha,,,,Heckbasis Alpha,,,,,,,,,,,,,,Stacja cholerna Alfa,,,,Чертобаза Альфа,,,
+MHUSTR_26,,,Shoot to Kill,,,,Schieße bis zum Umfallen,,,,,,,,,,,,,,Strzelaj aby zabić,,,,Стрелять на поражение,,,
