@@ -45,19 +45,23 @@ extend class WadFusionStaticHandler
 			else if ( nextMap == "pl_map01" )
 				Level.StartIntermission("Plutonia_Intro", FSTATE_INLEVELNOWIPE);
 			//play end of episode intermissions for full run feature
-			else if ( !fullRunEnd )
+			else
 			{
 				Level.StartIntermission(intermission, FSTATE_INLEVELNOWIPE);
-				// at the end of a full run, the hack story map is loaded twice in a row
+				// don't skip the screen wipe when loading a newgame hack map
 				fullRunNewGame = true;
-				fullRunEnd = true;
 			}
-			else
-				Level.StartIntermission("Fusion_FullRun_End", FSTATE_INLEVELNOWIPE);
 			
-			// change to the map which was set in NewGameIntro()
+			// change to the map which was set in NewGameIntro() or FullRun()
 			if ( Level.MapTime >= 1 )
-				Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
+			{
+				if ( !fullRunEnd )
+					Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
+				// try changing to a level that doesn't exist
+				// this triggets the default ending sequence Fusion_GotoTitle
+				else
+					Level.ChangeLevel("", 0, CHANGELEVEL_NOINTERMISSION);
+			}
 		}
 	}
 }

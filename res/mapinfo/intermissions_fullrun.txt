@@ -1,18 +1,6 @@
 // Intermissions
 
 
-// return to title at the end of a full run
-
-intermission Fusion_FullRun_End
-{
-	Image
-	{
-		Background = "TITLEPIC"
-		Music = "$MUSIC_DM2TTL"
-	}
-	Link = Fusion_FullRun_End
-}
-
 // Doom Episode 1
 
 intermission Doom1_Ep1_Fusion_FullRun

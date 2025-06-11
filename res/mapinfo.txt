@@ -30,9 +30,10 @@ GameInfo
 	TitleMusic = "$MUSIC_DM2TTL"
 	TitleTime = 11
 	PageTime = 5
+	DefaultEndSequence = "Fusion_GotoTitle"
 	FinaleMusic = "$MUSIC_READ_M"
 	FinaleFlat = "SLIME16"
-	FinalePage = "CREDIT", "VICTORY2", "ENDPIC"
+	FinalePage = "CREDIT"
 	InfoPage = "HELP", "CREDIT"
 	QuitSound = "menu/quit1"
 	BorderFlat = "GRNROCK"

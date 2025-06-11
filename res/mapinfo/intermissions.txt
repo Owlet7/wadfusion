@@ -1,6 +1,13 @@
 // Intermissions
 
 
+// return to title at the end of a full run
+
+intermission Fusion_GotoTitle
+{
+	GotoTitle {}
+}
+
 // Doom Episode 1
 
 intermission Doom1_Ep1_Fusion

@@ -69,7 +69,7 @@ class WadFusionStaticHandler : StaticEventHandler
 	override void WorldUnloaded(WorldEvent e)
 	{
 		if ( CVar.FindCVar("wf_compat_nextmap").GetBool() )
-			FullRunWorldUnloaded(); // wf_fullrun.zs
+			FullRun(); // wf_fullrun.zs
 	}
 	
 	override void WorldTick()
