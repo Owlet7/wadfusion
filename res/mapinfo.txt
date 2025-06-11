@@ -5,24 +5,24 @@ include mapinfo/intermissions.txt
 include mapinfo/intermissions_intros.txt
 include mapinfo/intermissions_masterlevels.txt
 include mapinfo/intermissions_fullrun.txt
-include mapinfo/doom1_levels.txt
-include mapinfo/doomu_levels.txt
-include mapinfo/doom2_levels.txt
-include mapinfo/master_levels.txt
-include mapinfo/master_levels_rejects.txt
-include mapinfo/master_levels_flynn.txt
-include mapinfo/master_levels_anderson.txt
-include mapinfo/master_levels_kvernmo.txt
-include mapinfo/master_levels_story.txt
-include mapinfo/nerve_levels.txt
-include mapinfo/tnt_levels.txt
-include mapinfo/plutonia_levels.txt
-include mapinfo/xbox_levels.txt
-include mapinfo/blackroom_levels.txt
-include mapinfo/sigil_levels.txt
-include mapinfo/sigil2_levels.txt
-include mapinfo/id1_levels.txt
-include mapinfo/iddm1_levels.txt
+include mapinfo/maps_doom1.txt
+include mapinfo/maps_doomu.txt
+include mapinfo/maps_doom2.txt
+include mapinfo/maps_masterlevels.txt
+include mapinfo/maps_masterlevels_rejects.txt
+include mapinfo/maps_masterlevels_flynn.txt
+include mapinfo/maps_masterlevels_anderson.txt
+include mapinfo/maps_masterlevels_kvernmo.txt
+include mapinfo/maps_masterlevels_story.txt
+include mapinfo/maps_nerve.txt
+include mapinfo/maps_tnt.txt
+include mapinfo/maps_plutonia.txt
+include mapinfo/maps_xbox.txt
+include mapinfo/maps_blackroom.txt
+include mapinfo/maps_sigil.txt
+include mapinfo/maps_sigil2.txt
+include mapinfo/maps_id1.txt
+include mapinfo/maps_iddm1.txt
 
 GameInfo
 {
