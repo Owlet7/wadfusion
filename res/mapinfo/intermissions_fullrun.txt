@@ -365,7 +365,19 @@ intermission MasterLevels_End_Fusion_FullRun
 		Music = "$MUSIC_READ_M"
 	}
 	Wiper {}
-	Link = Doom2Cast_Fusion_FullRun_NoCredits
+	Link = Inter_Cast_Fusion_FullRun_NoCredits
+}
+
+intermission MasterLevels_End_Fusion_FullRun_NoCast
+{
+	TextScreen
+	{
+		Text = "$MLEND"
+		Background = "$BGFLAT06", 1
+		Music = "$MUSIC_READ_M"
+	}
+	Wiper {}
+	Link = Doom2_End_Fusion_FullRun_NoCast_NoCredits
 }
 
 // Cast
@@ -649,6 +661,47 @@ intermission Doom2Cast_Fusion_FullRun_NoCredits
 	}
 }
 
+intermission Doom2_End_Fusion_FullRun_NoCast
+{
+	Image
+	{
+		Background = "$bgcastcall"
+		Music = "$MUSIC_EVIL"
+	}
+	Wiper {}
+	Image
+	{
+		Background = "CREDIT"
+	}
+}
+
+intermission Doom2_End_Fusion_FullRun_NoCast_NoCredits
+{
+	Image
+	{
+		Background = "$bgcastcall"
+		Music = "$MUSIC_EVIL"
+	}
+}
+
+intermission Tnt_End_Fusion_FullRun_NoCast
+{
+	Image
+	{
+		Background = "BOSSTN"
+		Music = "T_EVIL"
+	}
+}
+
+intermission Plutonia_End_Fusion_FullRun_NoCast
+{
+	Image
+	{
+		Background = "BOSSPL"
+		Music = "P_EVIL"
+	}
+}
+
 // Legacy of Rust
 
 intermission Id1_Ep1_Fusion_FullRun
@@ -735,6 +788,20 @@ intermission Id1Cast_Fusion_FullRun
 		CastClass = "DoomPlayer"
 		CastName = "$CC_HERO"
 		AttackSound = "Missile", 0, "weapons/sshotf"
+	}
+	Wiper {}
+	Image
+	{
+		Background = "CREDITLR"
+	}
+}
+
+intermission Id1_End_Fusion_FullRun_NoCast
+{
+	Image
+	{
+		Background = "BOSSLR"
+		Music = "D_DEJAVU"
 	}
 	Wiper {}
 	Image

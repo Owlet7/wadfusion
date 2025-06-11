@@ -23,6 +23,7 @@ extend class WadFusionStaticHandler
 	void FullRun()
 	{
 		int fullRun = CVar.FindCVar("wf_fullrun").GetInt();
+		int fullRunCast = CVar.FindCVar("wf_fullrun_cast").GetBool();
 		let rejects = CVar.FindCVar("wf_map_mlr").GetBool();
 		let titlePic = CVar.FindCVar("wf_compat_titlepics").GetBool();
 		string mapName = Level.MapName.MakeLower();
@@ -43,19 +44,49 @@ extend class WadFusionStaticHandler
 			if ( mapName == "e6m8" )
 				intermission = "Doom1_Ep6_Fusion_FullRun";
 			if ( mapName == "map30" )
-				intermission = "Inter_Cast_Fusion_FullRun";
+			{
+				if ( fullRunCast )
+					intermission = "Inter_Cast_Fusion_FullRun";
+				else
+					intermission = "Doom2_End_Fusion_FullRun_NoCast";
+			}
 			if ( ( mapName == "ml_map20" && !rejects ) || mapName == "ml_map43" )
-				intermission = "MasterLevels_End_Fusion_FullRun";
+			{
+				if ( fullRunCast )
+					intermission = "MasterLevels_End_Fusion_FullRun";
+				else
+					intermission = "MasterLevels_End_Fusion_FullRun_NoCast";
+			}
 			if ( mapName == "nv_map08" )
-				intermission = "Inter_Cast_Fusion_FullRun_NoCredits";
+			{
+				if ( fullRunCast )
+					intermission = "Inter_Cast_Fusion_FullRun_NoCredits";
+				else
+					intermission = "Doom2_End_Fusion_FullRun_NoCast_NoCredits";
+			}
 			if ( mapName == "lr_map07" )
 				intermission = "Id1_Ep1_Fusion_FullRun";
 			if ( mapName == "lr_map14" )
-				intermission = "Id1Cast_Fusion_FullRun";
+			{
+				if ( fullRunCast )
+					intermission = "Id1Cast_Fusion_FullRun";
+				else
+					intermission = "Id1_End_Fusion_FullRun_NoCast";
+			}
 			if ( mapName == "tn_map30" )
-				intermission = "Inter_Cast_Tnt_Fusion_FullRun";
+			{
+				if ( fullRunCast )
+					intermission = "Inter_Cast_Tnt_Fusion_FullRun";
+				else
+					intermission = "Tnt_End_Fusion_FullRun_NoCast";
+			}
 			if ( mapName == "pl_map30" )
-				intermission = "Inter_Cast_Plutonia_Fusion_FullRun";
+			{
+				if ( fullRunCast )
+					intermission = "Inter_Cast_Plutonia_Fusion_FullRun";
+				else
+					intermission = "Plutonia_End_Fusion_FullRun_NoCast";
+			}
 		}
 		// play a vanilla or vanilla-eque intermission if fullrun is off
 		// these are needed to support switching it off mid-game
