@@ -220,7 +220,7 @@ COMMON_LUMPS = [
 ]
 
 DOOM1_LUMPS = [
-    'graphics_doom1', 'music_doom1', 'patches_doom1', 'sounds_doom1'
+    'graphics_doom1', 'music_doom1', 'patches_doom1'
 ]
 
 DOOM2_LUMPS = [
