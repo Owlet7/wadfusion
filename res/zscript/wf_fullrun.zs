@@ -31,7 +31,7 @@ extend class WadFusionStaticHandler
 		// set which intermission to play at the end of an episode
 		if ( fullRun >= 1 && fullRun <= 3 )
 		{
-			if ( mapName == "e1m8" )
+			if ( mapName == "e1m8" || mapName == "e1m8b" )
 				intermission = "Doom1_Ep1_Fusion_FullRun";
 			if ( mapName == "e2m8" )
 				intermission = "Doom1_Ep2_Fusion_FullRun";
@@ -92,7 +92,7 @@ extend class WadFusionStaticHandler
 		// these are needed to support switching it off mid-game
 		else
 		{
-			if ( mapName == "e1m8" )
+			if ( mapName == "e1m8" || mapName == "e1m8b" )
 				intermission = "Doom1_Ep1_Fusion_FullRun_Off";
 			if ( mapName == "e2m8" )
 				intermission = "Doom1_Ep2_Fusion_FullRun_Off";
@@ -124,7 +124,7 @@ extend class WadFusionStaticHandler
 		// set which map to switch to at the end of a full run episode
 		if ( fullRun == 1 )
 		{
-			if ( mapName == "e1m8" )
+			if ( mapName == "e1m8" || mapName == "e1m8b" )
 				nextMap = "e2m1";
 			if ( mapName == "e2m8" )
 				nextMap = "e3m1";
@@ -272,7 +272,7 @@ extend class WadFusionStaticHandler
 		}
 		if ( fullRun == 2 )
 		{
-			if ( mapName == "e1m8" )
+			if ( mapName == "e1m8" || mapName == "e1m8b" )
 				nextMap = "e2m1";
 			if ( mapName == "e2m8" )
 				nextMap = "e3m1";
@@ -400,7 +400,7 @@ extend class WadFusionStaticHandler
 		}
 		if ( fullRun == 3 )
 		{
-			if ( mapName == "e1m8" )
+			if ( mapName == "e1m8" || mapName == "e1m8b" )
 				nextMap = "e2m1";
 			if ( mapName == "e2m8" )
 				nextMap = "e3m1";
@@ -535,7 +535,7 @@ extend class WadFusionStaticHandler
 		let titlePic = CVar.FindCVar("wf_compat_titlepics").GetBool();
 		string mapName = Level.MapName.MakeLower();
 		
-		if ( mapName == "e1m8" )
+		if ( mapName == "e1m8" || mapName == "e1m8b" )
 		{
 			Level.NextMap = "wf_story";
 		}

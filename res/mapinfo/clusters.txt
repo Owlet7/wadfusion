@@ -273,7 +273,8 @@ cluster 30
 cluster 31
 {
 	EnterText = "$E1M8BTEXT"
-	ExitText = "$E1TEXT"
+	// deprecated, not used anymore because of full run mode
+	// ExitText = "$E1TEXT"
 	Music = "$MUSIC_VICTOR"
 	Flat = "$FLOOR5_1"
 }
