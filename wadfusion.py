@@ -847,6 +847,12 @@ def main():
     logs(platform.system() + ' ' + os.name + ' ' + sys.platform + ' ' + platform.release())
     logs(platform.version())
     logs(platform.platform() + '\n')
+    # log used command line arguments
+    arguments_str = ''
+    for i in ARGUMENTS:
+        arguments_str += i + ' '
+    if arguments_str != '':
+        logs('Command line arguments used: ' + arguments_str + '\n')
     # clear out pk3 dir from previous runs
     clear_temp()
     title_line = 'WadFusion v%s' % VERSION
