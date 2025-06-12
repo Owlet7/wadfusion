@@ -105,14 +105,15 @@ num_maps = 0
 num_eps = 0
 num_errors = 0
 
-def help():
+def print_help():
     for i in ARGUMENTS:
         if i == '-h' or i == '--help':
-            print("Usage: " + os.path.basename(__file__) + " [OPTIONS]\n")
-            print("Options:\n")
-            print("  -h, --help       Show this help message.")
-            print("  -v, --verbose    Print out all the logged information.")
-            print("  -s, --store      Don't use compression when generating the IPK3.")
+            print('Usage: ' + os.path.basename(__file__) + ' [OPTIONS]\n')
+            print('Options:\n')
+            print('  -h, --help       Show this help message.')
+            print('  -v, --verbose    Print out all the logged information.')
+            print('  -s, --store      Don\'t use compression when generating the IPK3.')
+            print('  -p, --patch      Patch an existing IPK3 without extracting WADs.')
             input('')
             return True
     return False
@@ -122,6 +123,16 @@ def should_deflate():
         if i == '-s' or i == '--store':
             return False
     return True
+
+def should_patch():
+    for i in ARGUMENTS:
+        if i == '-p' or i == '--patch':
+            # bail if no ipk3 was found
+            if not os.path.isfile(DEST_FILENAME):
+                logg('No IPK3 found to patch!\n')
+                continue
+            return True
+    return False
 
 def logg(line, error=False):
     global logfile, num_errors
@@ -230,7 +241,7 @@ def masterlevels_is_complete_verbose():
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         if not wad_filename:
-            logg("  ERROR: Skipping Master Levels as %s.wad is not present" % wad_name, error=True)
+            logg('  ERROR: Skipping Master Levels as %s.wad is not present' % wad_name, error=True)
             return
     return True
 
@@ -243,23 +254,23 @@ def masterlevelsrejects_is_complete_verbose():
             in_wad = omg.WAD()
             wad_filename = get_wad_filename(wad_name)
             if not wad_filename:
-                logg("  ERROR: Skipping Master Levels Rejects as %s.wad is not present" % wad_name, error=True)
+                logg('  ERROR: Skipping Master Levels Rejects as %s.wad is not present' % wad_name, error=True)
                 return
     for i, wad_name in enumerate(MASTER_LEVELS_REJECTS_ORDER):
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
         if not wad_filename:
-            logg("  ERROR: Skipping Master Levels Rejects as %s.wad is not present" % wad_name, error=True)
+            logg('  ERROR: Skipping Master Levels Rejects as %s.wad is not present' % wad_name, error=True)
             return
     if not get_wad_filename('udtwid'):
-        logg("  ERROR: Skipping Master Levels Rejects as udtwid.wad is not present", error=True)
+        logg('  ERROR: Skipping Master Levels Rejects as udtwid.wad is not present', error=True)
         return
     if not get_wad_filename('caball'):
-        logg("  ERROR: Skipping Master Levels Rejects as caball.wad is not present", error=True)
+        logg('  ERROR: Skipping Master Levels Rejects as caball.wad is not present', error=True)
         return
     if not doom_is_retail():
         if not doomu_is_retail():
-            logg("  ERROR: Skipping Master Levels Rejects as retail doom.wad is not present", error=True)
+            logg('  ERROR: Skipping Master Levels Rejects as retail doom.wad is not present', error=True)
             return
     return True
 
@@ -525,7 +536,7 @@ def extract_lumps(wad_name):
         try:
             lump_type = lump_list[:lump_list.index('_')]
         except ValueError:
-            logg("  ERROR: Couldn't identify type of lump list %s" % lump_list, error=True)
+            logg('  ERROR: Couldn\'t identify type of lump list %s' % lump_list, error=True)
             continue
         # sigil sky lump isn't in patch namespace
         if lump_list == 'patches_sigil':
@@ -574,7 +585,7 @@ def extract_lumps(wad_name):
                 lump_name = lump_name.strip()
                 out_filename = out_filename.strip()
             if not lump_name in lump_table:
-                logg("  ERROR: Couldn't find lump with name %s" % lump_name, error=True)
+                logg('  ERROR: Couldn\'t find lump with name %s' % lump_name, error=True)
                 continue
             lump = lump_table[lump_name]
             out_filename += '.lmp' if lump_type != 'music' else '.mus'
@@ -675,6 +686,14 @@ def copy_resources():
         logs('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
 
+def copy_resources_patch():
+    for src_file in RES_FILES:
+        # don't copy texture lumps
+        if src_file in ('textures.common', 'textures.doom1', 'textures.doom2', 'textures.tnt', 'textures.plut', 'textures.id1', 'textures.masterlevels', 'textures.masterlevelsrejects'):
+            continue
+        logs('Copying %s' % src_file)
+        copyfile(RES_DIR + src_file, DEST_DIR + src_file)
+
 def copy_id1_doom1_skies():
     logs('Duplicating doom1 sky patches to suppress errors with id1...')
     copyfile(DEST_DIR + 'patches/SKYE1.lmp', DEST_DIR + 'patches/SKY1.lmp')
@@ -739,7 +758,6 @@ def get_report_found():
                 found.insert(1, 'sigil')
                 break
     # same with sigil2
-    # (TODO maybe some way to generalize this for future releases?)
     if 'doom' in found and not 'sigil2' in found:
         for alt_name in SIGIL2_ALT_FILENAMES:
             sigil2_alt = get_wad_filename(alt_name)
@@ -837,10 +855,34 @@ def pk3_compress():
             pk3.write(src_name, dest_name)
     pk3.close()
 
+def pk3_patch():
+    logs('Initialized in patch mode.')
+    i = input('Press Y and then Enter to patch an existing IPK3, anything else to cancel: ')
+    if i.lower() != 'y':
+        logg('Canceled.')
+        logfile.close()
+        return
+    start_time = time.time()
+    logg('\nProcessing %s...' % DEST_FILENAME)
+    pk3 = ZipFile(DEST_FILENAME, 'r')
+    pk3.extractall(DEST_DIR)
+    pk3.close()
+    copy_resources_patch()
+    pk3_compress()
+    elapsed_time = time.time() - start_time
+    ipk3_size = path.getsize(DEST_FILENAME) / 1048576
+    logg('Patched %s (%.2f MiB) in %.2f seconds.' % (DEST_FILENAME, ipk3_size, elapsed_time))
+    logg('Done!')
+    if num_errors > 0:
+        logg('%s errors found, see %s for details.' % (num_errors, LOG_FILENAME))
+    input('Press Enter to exit.\n')
+    clear_temp()
+    logfile.close()
+
 def main():
     global num_maps, num_eps
     # print help and bail
-    if help():
+    if print_help():
         return
     # log python and os version
     logs(sys.version)
@@ -857,6 +899,10 @@ def main():
     clear_temp()
     title_line = 'WadFusion v%s' % VERSION
     logg(title_line + '\n' + '-' * len(title_line) + '\n')
+    # patch an existing ipk3 if --patch argument is used
+    if should_patch():
+        pk3_patch()
+        return
     found = get_report_found()
     # bail if no wads in SRC_WAD_DIR
     if len(found) == 0:

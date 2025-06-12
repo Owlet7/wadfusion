@@ -23,16 +23,20 @@
   - These can be used to force Final DOOM music in DOOM II on a per-map basis.
 - Moved all texture substitution options to a sub-menu.
 - Fixed the background graphics in Final DOOM's endings.
-- Removed `SKY1` from the Legacy of Rust list in the texture replacements script.
-  Not sure how it got there.
+- Removed `SKY1` from the Legacy of Rust list in the texture replacements
+  script. Not sure how it got there.
 - Added options to view the original credits graphics in the respective games'
   credits menus.
 - Added an option to view all the "Help" screens.
 - Added options to not horizontally offset the alternate fullscreen HUD stats.
 - Added an option to show the skill level on the alternate fullscreen HUD stats.
 - Made some of the fonts on the alternate fullscreen HUD non-monospace.
+- Added `-h` and `--help` command line arguments. If used, the script will list
+  the available command line arguments.
 - Added `-s` and `--store` command line arguments. If used, the IPK3 won't be
   compressed.
+- Added `-p` and `--patch` command line arguments. If used, the script will
+  attempt to patch an existing IPK3 wiothout needing to extract the WADs again.
 
 ## [WadFusion 1.5.1](https://github.com/Owlet7/wadfusion/releases/tag/v1.5.1) — [03 May 2025](https://github.com/Owlet7/wadfusion/tree/v1.5.1)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.0...v1.5.1)

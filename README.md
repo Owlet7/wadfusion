@@ -14,11 +14,14 @@ Simply copy all of your WADs into the `source_wads` subfolder, then run WadFusio
 
 Also included is a file called `doom_fusion_widescreen_gfx.pk3`, which adds super-ultra-widescreen assets courtesy of the [Ultra-Widerpix854 project](https://www.doomworld.com/forum/topic/148537). DOOM Fusion will load it automatically if it's added to GZDoom's file directories. GZDoom's own widescreen assets are disabled in Fusion. (It's worth noting that the full Ultra-Widerpix854 project has some extra features not included with WadFusion, such as alternate versions for some graphics, extended sky textures, and support for other DOOM-based games.)
 
-## Command Line Arguments
+## Options
 
-- `-h`, `--help`: Show the help message.
-- `-v`, `--verbose`: Print out all the logged information.
-- `-s`, `--store`: Don't use compression when generating the IPK3.
+WadFusion can be launched with the following command line arguments:
+
+- `-h`, `--help` — Show the help message.
+- `-v`, `--verbose` — Print out all the logged information.
+- `-s`, `--store` — Don't use compression when generating the IPK3.
+- `-p`, `--patch` — Patch an existing IPK3 without extracting WADs.
 
 ## Supported WADs
 
