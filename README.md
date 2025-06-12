@@ -12,9 +12,12 @@ If you just bought these games from [GOG](https://www.gog.com/en/game/doom_doom_
 
 Simply copy all of your WADs into the `source_wads` subfolder, then run WadFusion. A log will appear showing progress and any errors that arise. A new file called `doom_fusion.ipk3` will be created, with all the game content in it. It should be selectable in GZDoom as "DOOM Fusion".
 
-Also included is a file called `doom_fusion_widescreen_gfx.pk3`, which adds super-ultra-widescreen assets courtesy of the [Ultra-Widerpix854 project](https://www.doomworld.com/forum/topic/148537). DOOM Fusion will load it automatically if it's added to GZDoom's file directories. GZDoom's own widescreen assets are disabled in Fusion. (It's worth noting that the full Ultra-Widerpix854 project has some extra features not included with WadFusion, such as alternate versions for some graphics, sprite fixes, extended sky textures, and support for other DOOM-based games.)
+Also included is a file called `doom_fusion_widescreen_gfx.pk3`, which adds super-ultra-widescreen assets courtesy of the [Ultra-Widerpix854 project](https://www.doomworld.com/forum/topic/148537). DOOM Fusion will load it automatically if it's added to GZDoom's file directories. GZDoom's own widescreen assets are disabled in Fusion. (It's worth noting that the full Ultra-Widerpix854 project has some extra features not included with WadFusion, such as alternate versions for some graphics, extended sky textures, and support for other DOOM-based games.)
 
-If the script is run with the `-v` or `--verbose` command line argument, it will print out all the logged information.
+## Command Line Arguments
+
+- `-v` / `--verbose`: Print out all the logged information.
+- `-s` / `--store`: Don't use compression when generating the IPK3.
 
 ## Supported WADs
 

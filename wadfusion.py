@@ -50,7 +50,7 @@
 
 import platform, os, sys, time, fnmatch
 from shutil import copyfile, rmtree
-from zipfile import ZipFile, ZIP_DEFLATED
+from zipfile import ZipFile, ZIP_DEFLATED, ZIP_STORED
 from os import path
 
 import omg
@@ -104,6 +104,12 @@ MASTER_LEVELS_MAP_PREFIX = WAD_MAP_PREFIXES.get('masterlevels', '')
 num_maps = 0
 num_eps = 0
 num_errors = 0
+
+def should_deflate():
+    for i in ARGUMENTS:
+        if i == '-s' or i == '--store':
+            return False
+    return True
 
 def logg(line, error=False):
     global logfile, num_errors
@@ -810,7 +816,7 @@ def get_eps(wads_found):
 
 def pk3_compress():
     logg('Compressing %s...' % DEST_FILENAME)
-    pk3 = ZipFile(DEST_FILENAME, 'w', ZIP_DEFLATED, compresslevel=9)
+    pk3 = ZipFile(DEST_FILENAME, 'w', ZIP_DEFLATED if should_deflate() else ZIP_STORED, compresslevel=9)
     for dir_name, x, filenames in os.walk(DEST_DIR):
         for filename in filenames:
             src_name = dir_name + '/' + filename
