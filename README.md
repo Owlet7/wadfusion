@@ -16,8 +16,9 @@ Also included is a file called `doom_fusion_widescreen_gfx.pk3`, which adds supe
 
 ## Command Line Arguments
 
-- `-v` / `--verbose`: Print out all the logged information.
-- `-s` / `--store`: Don't use compression when generating the IPK3.
+- `-h`, `--help`: Show the help message.
+- `-v`, `--verbose`: Print out all the logged information.
+- `-s`, `--store`: Don't use compression when generating the IPK3.
 
 ## Supported WADs
 

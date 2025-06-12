@@ -105,6 +105,18 @@ num_maps = 0
 num_eps = 0
 num_errors = 0
 
+def help():
+    for i in ARGUMENTS:
+        if i == '-h' or i == '--help':
+            print("Usage: " + os.path.basename(__file__) + " [OPTIONS]\n")
+            print("Options:\n")
+            print("  -h, --help       Show this help message.")
+            print("  -v, --verbose    Print out all the logged information.")
+            print("  -s, --store      Don't use compression when generating the IPK3.")
+            input('')
+            return True
+    return False
+
 def should_deflate():
     for i in ARGUMENTS:
         if i == '-s' or i == '--store':
@@ -827,6 +839,9 @@ def pk3_compress():
 
 def main():
     global num_maps, num_eps
+    # print help and bail
+    if help():
+        return
     # log python and os version
     logs(sys.version)
     logs(platform.system() + ' ' + os.name + ' ' + sys.platform + ' ' + platform.release())
