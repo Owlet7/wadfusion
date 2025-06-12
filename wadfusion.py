@@ -848,6 +848,11 @@ def main():
     for num_eps, ep_name in enumerate(get_eps(found)):
         logg('- %s' % ep_name)
     num_eps += 1
+    if get_wad_filename('extras'):
+        extra = ''
+        if extras_is_kex():
+            extra += ' + IDKFA Soundtrack'
+        logg('  + Extras WAD' + extra)
     # deduct iddm1 from the episode tally, since it won't show up in the menu
     if get_wad_filename('iddm1') and get_wad_filename('doom2'):
         num_eps -= 1
