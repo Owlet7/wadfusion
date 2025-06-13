@@ -84,14 +84,10 @@ extend class WadFusionStaticHandler
 				// starting an empty intermission on the first tic removes
 				// the screen wipe that usually happens when changing levels
 				if ( !fullRunNewGame )
-				{
 					Level.StartIntermission("WadFusionNewGame", FSTATE_INLEVELNOWIPE);
+				
+				if ( mapName != "wf_newgame" )
 					nextMap = mapName.Mid(11);
-				}
-				else
-				{
-					nextMap = nextMap.Mid(11);
-				}
 				
 				if ( CVar.FindCVar("wf_compat_titlepics").GetBool() )
 				{

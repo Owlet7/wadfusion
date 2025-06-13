@@ -49,7 +49,9 @@ extend class WadFusionStaticHandler
 			{
 				Level.StartIntermission(intermission, FSTATE_INLEVELNOWIPE);
 				// don't skip the screen wipe when loading a newgame hack map
-				fullRunNewGame = true;
+				int fullRun = CVar.FindCVar("wf_fullrun").GetInt();
+				if ( fullRun >= 1 && fullRun <= 3 )
+					fullRunNewGame = true;
 			}
 			
 			// change to the map which was set in NewGameIntro() or FullRun()
