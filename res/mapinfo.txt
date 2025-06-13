@@ -33,7 +33,7 @@ GameInfo
 	DefaultEndSequence = "Fusion_GotoTitle"
 	FinaleMusic = "$MUSIC_READ_M"
 	FinaleFlat = "SLIME16"
-	FinalePage = "CREDIT"
+	FinalePage = "CREDIT", "VICTORY2", "ENDPIC"
 	InfoPage = "HELP", "CREDIT"
 	QuitSound = "menu/quit1"
 	BorderFlat = "GRNROCK"
