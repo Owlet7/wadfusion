@@ -112,17 +112,17 @@ def print_help():
             print('Options:\n')
             print('  -h, --help       Show this help message.')
             print('  -v, --verbose    Print out all the logged information.')
-            print('  -s, --store      Don\'t use compression when generating the IPK3.')
             print('  -p, --patch      Patch an existing IPK3 without extracting WADs.')
+            print('  -d, --deflate    Use DEFLATE compression when generating the IPK3.')
             input('')
             return True
     return False
 
 def should_deflate():
     for i in ARGUMENTS:
-        if i == '-s' or i == '--store':
-            return False
-    return True
+        if i == '-d' or i == '--deflate':
+            return True
+    return False
 
 def should_patch():
     for i in ARGUMENTS:

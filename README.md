@@ -20,8 +20,8 @@ WadFusion can be launched with the following command line arguments:
 
 - `-h`, `--help` — Show the help message.
 - `-v`, `--verbose` — Print out all the logged information.
-- `-s`, `--store` — Don't use compression when generating the IPK3.
 - `-p`, `--patch` — Patch an existing IPK3 without extracting WADs.
+- `-d`, `--deflate` — Use DEFLATE compression when generating the IPK3.
 
 ## Supported WADs
 

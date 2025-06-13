@@ -18,7 +18,7 @@
   - If enabled, the next episode will start automatically after an ending.
   - The order in which the episodes are played can be switched between "Default
     order", which is the order in which they are listed on the "New Game" menu,
-	"Chronological order", or "Release order".
+    "Chronological order", or "Release order".
 - Added "Music Substitutions" options.
   - These can be used to force Final DOOM music in DOOM II on a per-map basis.
 - Moved all texture substitution options to a sub-menu.
@@ -33,10 +33,13 @@
 - Made some of the fonts on the alternate fullscreen HUD non-monospace.
 - Added `-h` and `--help` command line arguments. If used, the script will list
   the available command line arguments.
-- Added `-s` and `--store` command line arguments. If used, the IPK3 won't be
-  compressed.
 - Added `-p` and `--patch` command line arguments. If used, the script will
   attempt to patch an existing IPK3 wiothout needing to extract the WADs again.
+- Added `-d` and `--deflate` command line arguments. If used, the IPK3 will be
+  generated with DEFLATE compression.
+  - The IPK3 will use Store compression by default now. That means the file will
+    be about 10% larger, but the time it takes to generate should be three times
+    shorter.
 
 ## [WadFusion 1.5.1](https://github.com/Owlet7/wadfusion/releases/tag/v1.5.1) — [03 May 2025](https://github.com/Owlet7/wadfusion/tree/v1.5.1)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.0...v1.5.1)
