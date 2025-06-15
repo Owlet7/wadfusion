@@ -94,7 +94,7 @@ cluster 11
 {
 	ExitText = "$NERVETEXT"
 	Music = "$MUSIC_READ_M"
-	Flat = "SLIME16"
+	Flat = "$BGFLAT06"
 }
 
 // TNT first cluster (up thru level 6)

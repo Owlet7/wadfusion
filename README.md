@@ -56,6 +56,8 @@ For SIGIL and SIGIL II, all the filenames for different releases of those WADs a
 
 ## Master Levels Rejects
 
+The WadFusion options menu in GZDoom has an option to switch the Master Levels between the official 21 map order as arranged by Xaser, and the expanded 43 map order that incorporates the rejected and related bonus maps, and arranges them into sub-episode campaigns.
+
 For the Master Levels Rejects to be integrated, *all* of the following WADs must be included:
 - Master Levels for DOOM II (the original 20 WAD files, or `masterlevels.wad` from the [KEX-based re-release](https://doomwiki.org/wiki/Doom_%2B_Doom_II))
 - DOOM II (`doom2.wad`)
