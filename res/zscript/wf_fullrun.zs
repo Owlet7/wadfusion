@@ -108,7 +108,7 @@ extend class WadFusionStaticHandler
 				intermission = "Inter_Cast";
 			if ( ( mapName == "ml_map20" && !rejects ) || mapName == "ml_map43" )
 				// also needed for xaser order
-				intermission = "MasterLevels_End_Fusion";
+				intermission = "MasterLevels_End";
 			if ( mapName == "nv_map08" )
 				intermission = "Inter_Cast";
 			if ( mapName == "lr_map07" )
