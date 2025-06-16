@@ -82,242 +82,266 @@ pic MBRAIN4 tics 8
 
 // TNT animated textures
 
+texture optional BLODGRT1
+pic BLODGRT1 tics 8
+pic SW1SKULT tics 8
+pic BLOD3    tics 8
+pic BLODGRT4 tics 8
+
 texture optional SW1SKULT
-pic BLOD3 tics 8
+pic SW1SKULT tics 8
+pic BLOD3    tics 8
 pic BLODGRT4 tics 8
 pic BLODGRT1 tics 8
 
-texture optional SW2SKULT
-pic FALL3 tics 8
-pic TWFALL4 tics 8
-pic TWFALL1 tics 8
-
-texture optional BLODGRT1
-pic SW1SKULT tics 8
-pic BLOD3 tics 8
-pic BLODGRT4 tics 8
-
 texture optional TWFALL1
+pic TWFALL1  tics 8
 pic SW2SKULT tics 8
-pic FALL3 tics 8
-pic TWFALL4 tics 8
+pic FALL3    tics 8
+pic TWFALL4  tics 8
+
+texture optional SW2SKULT
+pic SW2SKULT tics 8
+pic FALL3    tics 8
+pic TWFALL4  tics 8
+pic TWFALL1  tics 8
 
 texture optional SLADRPT1
-pic SLAD2 tics 8
-pic SLAD3 tics 8
-pic SLAD4 tics 8
-pic SLAD5 tics 8
-pic SLAD6 tics 8
-pic SLAD7 tics 8
-pic SLAD8 tics 8
-pic SLAD9 tics 8
-pic SLAD10 tics 8
-pic SLAD11 tics 8
+pic SLADRPT1 tics 8
+pic SLAD2    tics 8
+pic SLAD3    tics 8
+pic SLAD4    tics 8
+pic SLAD5    tics 8
+pic SLAD6    tics 8
+pic SLAD7    tics 8
+pic SLAD8    tics 8
+pic SLAD9    tics 8
+pic SLAD10   tics 8
+pic SLAD11   tics 8
 pic SLADRPT3 tics 8
 
 texture optional SLAD2
-pic SLAD3 tics 8
-pic SLAD4 tics 8
-pic SLAD5 tics 8
-pic SLAD6 tics 8
-pic SLAD7 tics 8
-pic SLAD8 tics 8
-pic SLAD9 tics 8
-pic SLAD10 tics 8
-pic SLAD11 tics 8
+pic SLAD2    tics 8
+pic SLAD3    tics 8
+pic SLAD4    tics 8
+pic SLAD5    tics 8
+pic SLAD6    tics 8
+pic SLAD7    tics 8
+pic SLAD8    tics 8
+pic SLAD9    tics 8
+pic SLAD10   tics 8
+pic SLAD11   tics 8
 pic SLADRPT3 tics 8
 pic SLADRPT1 tics 8
 
 texture optional SLAD3
-pic SLAD4 tics 8
-pic SLAD5 tics 8
-pic SLAD6 tics 8
-pic SLAD7 tics 8
-pic SLAD8 tics 8
-pic SLAD9 tics 8
-pic SLAD10 tics 8
-pic SLAD11 tics 8
+pic SLAD3    tics 8
+pic SLAD4    tics 8
+pic SLAD5    tics 8
+pic SLAD6    tics 8
+pic SLAD7    tics 8
+pic SLAD8    tics 8
+pic SLAD9    tics 8
+pic SLAD10   tics 8
+pic SLAD11   tics 8
 pic SLADRPT3 tics 8
 pic SLADRPT1 tics 8
-pic SLAD2 tics 8
+pic SLAD2    tics 8
 
 texture optional SLAD4
-pic SLAD5 tics 8
-pic SLAD6 tics 8
-pic SLAD7 tics 8
-pic SLAD8 tics 8
-pic SLAD9 tics 8
-pic SLAD10 tics 8
-pic SLAD11 tics 8
+pic SLAD4    tics 8
+pic SLAD5    tics 8
+pic SLAD6    tics 8
+pic SLAD7    tics 8
+pic SLAD8    tics 8
+pic SLAD9    tics 8
+pic SLAD10   tics 8
+pic SLAD11   tics 8
 pic SLADRPT3 tics 8
 pic SLADRPT1 tics 8
-pic SLAD2 tics 8
-pic SLAD3 tics 8
+pic SLAD2    tics 8
+pic SLAD3    tics 8
 
 texture optional SLAD5
-pic SLAD6 tics 8
-pic SLAD7 tics 8
-pic SLAD8 tics 8
-pic SLAD9 tics 8
-pic SLAD10 tics 8
-pic SLAD11 tics 8
+pic SLAD5    tics 8
+pic SLAD6    tics 8
+pic SLAD7    tics 8
+pic SLAD8    tics 8
+pic SLAD9    tics 8
+pic SLAD10   tics 8
+pic SLAD11   tics 8
 pic SLADRPT3 tics 8
 pic SLADRPT1 tics 8
-pic SLAD2 tics 8
-pic SLAD3 tics 8
-pic SLAD4 tics 8
+pic SLAD2    tics 8
+pic SLAD3    tics 8
+pic SLAD4    tics 8
 
 texture optional SLAD6
-pic SLAD7 tics 8
-pic SLAD8 tics 8
-pic SLAD9 tics 8
-pic SLAD10 tics 8
-pic SLAD11 tics 8
+pic SLAD6    tics 8
+pic SLAD7    tics 8
+pic SLAD8    tics 8
+pic SLAD9    tics 8
+pic SLAD10   tics 8
+pic SLAD11   tics 8
 pic SLADRPT3 tics 8
 pic SLADRPT1 tics 8
-pic SLAD2 tics 8
-pic SLAD3 tics 8
-pic SLAD4 tics 8
-pic SLAD5 tics 8
+pic SLAD2    tics 8
+pic SLAD3    tics 8
+pic SLAD4    tics 8
+pic SLAD5    tics 8
 
 texture optional SLAD7
-pic SLAD8 tics 8
-pic SLAD9 tics 8
-pic SLAD10 tics 8
-pic SLAD11 tics 8
+pic SLAD7    tics 8
+pic SLAD8    tics 8
+pic SLAD9    tics 8
+pic SLAD10   tics 8
+pic SLAD11   tics 8
 pic SLADRPT3 tics 8
 pic SLADRPT1 tics 8
-pic SLAD2 tics 8
-pic SLAD3 tics 8
-pic SLAD4 tics 8
-pic SLAD5 tics 8
-pic SLAD6 tics 8
+pic SLAD2    tics 8
+pic SLAD3    tics 8
+pic SLAD4    tics 8
+pic SLAD5    tics 8
+pic SLAD6    tics 8
 
 texture optional SLAD8
-pic SLAD9 tics 8
-pic SLAD10 tics 8
-pic SLAD11 tics 8
+pic SLAD8    tics 8
+pic SLAD9    tics 8
+pic SLAD10   tics 8
+pic SLAD11   tics 8
 pic SLADRPT3 tics 8
 pic SLADRPT1 tics 8
-pic SLAD2 tics 8
-pic SLAD3 tics 8
-pic SLAD4 tics 8
-pic SLAD5 tics 8
-pic SLAD6 tics 8
-pic SLAD7 tics 8
+pic SLAD2    tics 8
+pic SLAD3    tics 8
+pic SLAD4    tics 8
+pic SLAD5    tics 8
+pic SLAD6    tics 8
+pic SLAD7    tics 8
 
 texture optional SLAD9
-pic SLAD10 tics 8
-pic SLAD11 tics 8
+pic SLAD9    tics 8
+pic SLAD10   tics 8
+pic SLAD11   tics 8
 pic SLADRPT3 tics 8
 pic SLADRPT1 tics 8
-pic SLAD2 tics 8
-pic SLAD3 tics 8
-pic SLAD4 tics 8
-pic SLAD5 tics 8
-pic SLAD6 tics 8
-pic SLAD7 tics 8
-pic SLAD8 tics 8
+pic SLAD2    tics 8
+pic SLAD3    tics 8
+pic SLAD4    tics 8
+pic SLAD5    tics 8
+pic SLAD6    tics 8
+pic SLAD7    tics 8
+pic SLAD8    tics 8
 
 texture optional SLAD10
-pic SLAD11 tics 8
+pic SLAD10   tics 8
+pic SLAD11   tics 8
 pic SLADRPT3 tics 8
 pic SLADRPT1 tics 8
-pic SLAD2 tics 8
-pic SLAD3 tics 8
-pic SLAD4 tics 8
-pic SLAD5 tics 8
-pic SLAD6 tics 8
-pic SLAD7 tics 8
-pic SLAD8 tics 8
-pic SLAD9 tics 8
+pic SLAD2    tics 8
+pic SLAD3    tics 8
+pic SLAD4    tics 8
+pic SLAD5    tics 8
+pic SLAD6    tics 8
+pic SLAD7    tics 8
+pic SLAD8    tics 8
+pic SLAD9    tics 8
 
 texture optional SLAD11
+pic SLAD11   tics 8
 pic SLADRPT3 tics 8
 pic SLADRPT1 tics 8
-pic SLAD2 tics 8
-pic SLAD3 tics 8
-pic SLAD4 tics 8
-pic SLAD5 tics 8
-pic SLAD6 tics 8
-pic SLAD7 tics 8
-pic SLAD8 tics 8
-pic SLAD9 tics 8
-pic SLAD10 tics 8
+pic SLAD2    tics 8
+pic SLAD3    tics 8
+pic SLAD4    tics 8
+pic SLAD5    tics 8
+pic SLAD6    tics 8
+pic SLAD7    tics 8
+pic SLAD8    tics 8
+pic SLAD9    tics 8
+pic SLAD10   tics 8
 
 texture optional SLADRPT3
+pic SLADRPT3 tics 8
 pic SLADRPT1 tics 8
-pic SLAD2 tics 8
-pic SLAD3 tics 8
-pic SLAD4 tics 8
-pic SLAD5 tics 8
-pic SLAD6 tics 8
-pic SLAD7 tics 8
-pic SLAD8 tics 8
-pic SLAD9 tics 8
-pic SLAD10 tics 8
-pic SLAD11 tics 8
+pic SLAD2    tics 8
+pic SLAD3    tics 8
+pic SLAD4    tics 8
+pic SLAD5    tics 8
+pic SLAD6    tics 8
+pic SLAD7    tics 8
+pic SLAD8    tics 8
+pic SLAD9    tics 8
+pic SLAD10   tics 8
+pic SLAD11   tics 8
 
 // plutonia animated textures
 
 texture optional FIREPLU1
-pic AROCK2 tics 8
-pic AROCK3 tics 8
-pic AROCK4 tics 8
-pic AROCK5 tics 8
+pic FIREPLU1 tics 8
+pic AROCK2   tics 8
+pic AROCK3   tics 8
+pic AROCK4   tics 8
+pic AROCK5   tics 8
 pic FIREPLU2 tics 8
 
 texture optional WFALL1
+pic WFALL1 tics 8
 pic WFALL2 tics 8
 pic WFALL3 tics 8
 pic WFALL4 tics 8
 
 texture optional WFALL2
+pic WFALL2 tics 8
 pic WFALL3 tics 8
 pic WFALL4 tics 8
 pic WFALL1 tics 8
 
 texture optional WFALL3
+pic WFALL3 tics 8
 pic WFALL4 tics 8
 pic WFALL1 tics 8
 pic WFALL2 tics 8
 
 texture optional WFALL4
+pic WFALL4 tics 8
 pic WFALL1 tics 8
 pic WFALL2 tics 8
 pic WFALL3 tics 8
 
 texture optional PBRAIN1
-pic MC2 tics 8
-pic MC3 tics 8
-pic MC4 tics 8
-pic MC5 tics 8
-pic MC6 tics 8
-pic MC7 tics 8
-pic MC8 tics 8
-pic MC10 tics 8
-pic MC11 tics 8
-pic MC12 tics 8
-pic MC13 tics 8
-pic MC14 tics 8
-pic MC15 tics 8
-pic MC16 tics 8
-pic MC17 tics 8
-pic MC18 tics 8
-pic MC19 tics 8
+pic PBRAIN1 tics 8
+pic MC2     tics 8
+pic MC3     tics 8
+pic MC4     tics 8
+pic MC5     tics 8
+pic MC6     tics 8
+pic MC7     tics 8
+pic MC8     tics 8
+pic MC10    tics 8
+pic MC11    tics 8
+pic MC12    tics 8
+pic MC13    tics 8
+pic MC14    tics 8
+pic MC15    tics 8
+pic MC16    tics 8
+pic MC17    tics 8
+pic MC18    tics 8
+pic MC19    tics 8
 pic PBRAIN4 tics 8
 
 // legacy of rust animated flats
 
 flat optional XBLOOD1
+pic XBLOOD1 tics 8
 pic XBLOOD2 tics 8
 pic XBLOOD3 tics 8
-pic BLOOD4 tics 8
+pic BLOOD4  tics 8
 
 flat optional XNUKAGE1
+pic XNUKAGE1 tics 8
 pic XNUKAGE2 tics 8
 pic XNUKAGE3 tics 8
-pic NUKAGE4 tics 8
+pic NUKAGE4  tics 8
 
 flat optional BLAVAA1  range BLAVAA4  tics 8
 flat optional BLAVAB1  range BLAVAB4  tics 8
@@ -353,7 +377,7 @@ texture optional WOODFAV1 range WOODFAV3 tics 8
 texture optional XWFALL1  range XWFALL4  tics 8
 texture optional ZZZWARP1 range ZZZWARP4 tics 4
 
-// id1 fire sky textures
+// legacy of rust fire sky textures
 
 firetexture SKYX4A tics 2.00025
 palette 0
