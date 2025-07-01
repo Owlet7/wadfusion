@@ -151,7 +151,7 @@ extend class WadFusionStaticHandler
 			Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
 	}
 	
-	ui void NewGameChangeLevelInput()
+	void NewGameChangeLevelInput()
 	{
 		if ( CVar.FindCVar("wf_intros").GetBool() )
 		{

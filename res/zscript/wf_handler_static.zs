@@ -52,6 +52,15 @@ class WadFusionStaticHandler : StaticEventHandler
 		}
 	}
 	
+	override void NetworkProcess(ConsoleEvent e)
+	{
+		if (e.Name ~== "NewGameChangeLevelEvent")
+		{
+			// wf_newgame.zs
+			NewGameChangeLevelInput();
+		}
+	}
+	
 	override void WorldLoaded(WorldEvent e)
 	{
 		// reset global variables when starting maps where they're not used,
@@ -105,8 +114,7 @@ class WadFusionStaticHandler : StaticEventHandler
 			{
 				if (e.Type == InputEvent.Type_KeyDown)
 				{
-					// wf_newgame.zs
-					NewGameChangeLevelInput();
+					EventHandler.SendNetworkEvent("NewGameChangeLevelEvent");
 				}
 			}
 		}
