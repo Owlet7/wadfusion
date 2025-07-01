@@ -34,7 +34,7 @@
 - Added `-h` and `--help` command line arguments. If used, the script will list
   the available command line arguments.
 - Added `-p` and `--patch` command line arguments. If used, the script will
-  attempt to patch an existing IPK3 wiothout needing to extract the WADs again.
+  attempt to patch an existing IPK3 without needing to extract the WADs again.
 - Added `-d` and `--deflate` command line arguments. If used, the IPK3 will be
   generated with DEFLATE compression.
   - The IPK3 will use Store compression by default now. That means the file will
