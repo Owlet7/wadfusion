@@ -35,6 +35,15 @@ class WadFusionHandler : EventHandler
 		if ( CVar.FindCVar("wf_compat_texswap_ml").GetBool() && texSwapAll <= 0 )
 			DoMasterLevelsTextureReplacements();
 		
+		// temporary fix for the exit sector sky in the kex version of map20
+		// should be removed when gzdoom adds support for skydefs
+		if ( CVar.FindCVar("wf_compat_mapfixes").GetBool() )
+		{
+			string mapName = Level.MapName.MakeLower();
+			if ( mapName == "map20" )
+				Level.ReplaceTextures("F_RSKY3", "F_SKY1", TexMan.NOT_WALL);
+		}
+		
 		// wf_tex_swap_all.zs
 		// force texture replacement on all levels
 		// this feature mostly exists for compatibility with doom 1 and final doom mods
