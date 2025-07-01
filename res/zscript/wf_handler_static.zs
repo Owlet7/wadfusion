@@ -90,10 +90,6 @@ class WadFusionStaticHandler : StaticEventHandler
 		// saving and loading on the hack dummy maps will break these sequences!
 		NewGameIntro(); // wf_newgame.zs
 		IntermissionStory(); // wf_story.zs
-		
-		// wf_story_masterlevels.zs
-		// hack for adding optional story intermissions in the master levels rejects
-		MasterLevelsStory();
 	}
 	
 	override void RenderOverlay(RenderEvent e)

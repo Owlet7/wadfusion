@@ -178,7 +178,6 @@ RES_FILES = [
     'zscript/wf_fullrun.zs',
     'zscript/wf_newgame.zs',
     'zscript/wf_story.zs',
-    'zscript/wf_story_masterlevels.zs',
     'zscript/wf_map_fixes.zs',
     'zscript/wf_defaults.zs',
     'wadfused.txt'
