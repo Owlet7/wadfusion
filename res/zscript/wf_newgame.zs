@@ -24,7 +24,7 @@ extend class WadFusionStaticHandler
 	ui void NewGameTitlePic()
 	{
 		string mapName = Level.MapName.MakeLower();
-		if ( mapName.Left(10) == "wf_newgame" )
+		if ( mapName.Left(10) == "wf_newgame" || mapName.Left(8) == "wf_story" )
 		{
 			TextureId titlePic = TexMan.CheckForTexture("TITLEPIC");
 			TextureId titleD1 = TexMan.CheckForTexture("TITLED1");
@@ -38,34 +38,39 @@ extend class WadFusionStaticHandler
 			TextureId titleTN = TexMan.CheckForTexture("TITLETN");
 			TextureId titlePL = TexMan.CheckForTexture("TITLEPL");
 			
-			if ( CVar.FindCVar("wf_compat_titlepics").GetBool() )
+			// draw a black overlay over the entire screen
+			// hides the HUD under the titlepic overlay that gets drawn next
+			int resX = Screen.GetWidth();
+			int resY = Screen.GetHeight();
+			Screen.DrawTexture(titlePic, false, 0, 0, DTA_ScaleX, resX, DTA_ScaleY, resY, DTA_FillColor, 0);
+			
+			if ( mapName.Left(10) == "wf_newgame" )
 			{
-				// draw a black overlay over the entire screen
-				// hides the HUD under the titlepic overlay that gets drawn next
-				int resX = Screen.GetWidth();
-				int resY = Screen.GetHeight();
-				Screen.DrawTexture(titlePic, false, 0, 0, DTA_ScaleX, resX, DTA_ScaleY, resY, DTA_FillColor, 0);
-				
-				if ( nextMap == "e1m1" || nextMap == "e2m1" || nextMap == "e3m1" )
-					Screen.DrawTexture(titleD1, false, 0, 0, DTA_FullScreen, 1);
-				else if ( nextMap == "e4m1" )
-					Screen.DrawTexture(titleUD, false, 0, 0, DTA_FullScreen, 1);
-				else if ( nextMap == "e5m1" )
-					Screen.DrawTexture(titleS1, false, 0, 0, DTA_FullScreen, 1);
-				else if ( nextMap == "e6m1" )
-					Screen.DrawTexture(titleS2, false, 0, 0, DTA_FullScreen, 1);
-				else if ( nextMap == "map01" )
-					Screen.DrawTexture(titleD2, false, 0, 0, DTA_FullScreen, 1);
-				else if ( nextMap == "ml_map01" )
-					Screen.DrawTexture(titleML, false, 0, 0, DTA_FullScreen, 1);
-				else if ( nextMap == "nv_map01" )
-					Screen.DrawTexture(titleNV, false, 0, 0, DTA_FullScreen, 1);
-				else if ( nextMap == "lr_map01" || nextMap == "lr_map08" )
-					Screen.DrawTexture(titleLR, false, 0, 0, DTA_FullScreen, 1);
-				else if ( nextMap == "tn_map01" )
-					Screen.DrawTexture(titleTN, false, 0, 0, DTA_FullScreen, 1);
-				else if ( nextMap == "pl_map01" )
-					Screen.DrawTexture(titlePL, false, 0, 0, DTA_FullScreen, 1);
+				if ( CVar.FindCVar("wf_compat_titlepics").GetBool() )
+				{
+					if ( nextMap == "e1m1" || nextMap == "e2m1" || nextMap == "e3m1" )
+						Screen.DrawTexture(titleD1, false, 0, 0, DTA_FullScreen, 1);
+					else if ( nextMap == "e4m1" )
+						Screen.DrawTexture(titleUD, false, 0, 0, DTA_FullScreen, 1);
+					else if ( nextMap == "e5m1" )
+						Screen.DrawTexture(titleS1, false, 0, 0, DTA_FullScreen, 1);
+					else if ( nextMap == "e6m1" )
+						Screen.DrawTexture(titleS2, false, 0, 0, DTA_FullScreen, 1);
+					else if ( nextMap == "map01" )
+						Screen.DrawTexture(titleD2, false, 0, 0, DTA_FullScreen, 1);
+					else if ( nextMap == "ml_map01" )
+						Screen.DrawTexture(titleML, false, 0, 0, DTA_FullScreen, 1);
+					else if ( nextMap == "nv_map01" )
+						Screen.DrawTexture(titleNV, false, 0, 0, DTA_FullScreen, 1);
+					else if ( nextMap == "lr_map01" || nextMap == "lr_map08" )
+						Screen.DrawTexture(titleLR, false, 0, 0, DTA_FullScreen, 1);
+					else if ( nextMap == "tn_map01" )
+						Screen.DrawTexture(titleTN, false, 0, 0, DTA_FullScreen, 1);
+					else if ( nextMap == "pl_map01" )
+						Screen.DrawTexture(titlePL, false, 0, 0, DTA_FullScreen, 1);
+					else
+						Screen.DrawTexture(titlePic, false, 0, 0, DTA_FullScreen, 1);
+				}
 				else
 					Screen.DrawTexture(titlePic, false, 0, 0, DTA_FullScreen, 1);
 			}

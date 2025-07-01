@@ -29,30 +29,28 @@ extend class WadFusionStaticHandler
 		{
 			// play episode into stories
 			if ( nextMap == "e1m1" )
-				Level.StartIntermission("Doom1_Intro", FSTATE_INLEVELNOWIPE);
+				intermission = "Doom1_Intro";
 			else if ( nextMap == "e5m1" )
-				Level.StartIntermission("Sigil_Intro", FSTATE_INLEVELNOWIPE);
+				intermission = "Sigil_Intro";
 			else if ( nextMap == "e6m1" )
-				Level.StartIntermission("Sigil2_Intro", FSTATE_INLEVELNOWIPE);
+				intermission = "Sigil2_Intro";
 			else if ( nextMap == "map01" )
-				Level.StartIntermission("Doom2_Intro", FSTATE_INLEVELNOWIPE);
+				intermission = "Doom2_Intro";
 			else if ( nextMap == "nv_map01" )
-				Level.StartIntermission("Nerve_Intro", FSTATE_INLEVELNOWIPE);
+				intermission = "Nerve_Intro";
 			else if ( nextMap == "lr_map01" )
-				Level.StartIntermission("Id1_Intro", FSTATE_INLEVELNOWIPE);
+				intermission = "Id1_Intro";
 			else if ( nextMap == "tn_map01" )
-				Level.StartIntermission("Tnt_Intro", FSTATE_INLEVELNOWIPE);
+				intermission = "Tnt_Intro";
 			else if ( nextMap == "pl_map01" )
-				Level.StartIntermission("Plutonia_Intro", FSTATE_INLEVELNOWIPE);
-			//play end of episode intermissions for full run feature
-			else
-			{
-				Level.StartIntermission(intermission, FSTATE_INLEVELNOWIPE);
-				// don't skip the screen wipe when loading a newgame hack map
-				int fullRun = CVar.FindCVar("wf_fullrun").GetInt();
-				if ( fullRun >= 1 && fullRun <= 3 )
-					fullRunNewGame = true;
-			}
+				intermission = "Plutonia_Intro";
+			
+			StoryStartIntermission();
+			
+			// don't skip the screen wipe when loading a newgame hack map
+			int fullRun = CVar.FindCVar("wf_fullrun").GetInt();
+			if ( fullRun >= 1 && fullRun <= 3 )
+				fullRunNewGame = true;
 			
 			// change to the map which was set in NewGameIntro() or FullRun()
 			if ( Level.MapTime >= 1 )
@@ -61,9 +59,28 @@ extend class WadFusionStaticHandler
 					Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
 				// try changing to a level that doesn't exist
 				// this triggets the default ending sequence Fusion_GotoTitle
-				else
+				else if ( !multiplayer )
 					Level.ChangeLevel("", 0, CHANGELEVEL_NOINTERMISSION);
 			}
+		}
+	}
+	
+	void StoryStartIntermission()
+	{
+		if ( !multiplayer )
+			Level.StartIntermission(intermission, FSTATE_INLEVELNOWIPE);
+		else if ( Level.MapTime == 0 )
+			EventHandler.SendNetworkEvent("IntermissionStoryEvent");
+	}
+	
+	ui void FullRunEndMultiplayer()
+	{
+		string mapName = Level.MapName.MakeLower();
+		
+		if ( mapName == "wf_story" )
+		{
+			if ( fullRunEnd && multiplayer )
+				Screen.DrawText(smallfont, Font.CR_UNTRANSLATED, 1, 1, "$WF_FULLRUN_END_MULTIPLAYER", DTA_320x200, true );
 		}
 	}
 }

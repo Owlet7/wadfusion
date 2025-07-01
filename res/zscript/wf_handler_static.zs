@@ -46,19 +46,18 @@ class WadFusionStaticHandler : StaticEventHandler
 	{
 		// wf_defaults.zs
 		// reset all custom cvars to their defaults
-		if ( e.Name == "wf_reset2defaults" )
-		{
+		if ( e.Name ~== "wf_reset2defaults" )
 			WadFusionReset2Defaults();
-		}
 	}
 	
 	override void NetworkProcess(ConsoleEvent e)
 	{
-		if (e.Name ~== "NewGameChangeLevelEvent")
-		{
-			// wf_newgame.zs
+		// wf_newgame.zs
+		if (e.Name ~== "NewGameChangeLevelInputEvent")
 			NewGameChangeLevelInput();
-		}
+		
+		if (e.Name ~== "IntermissionStoryEvent")
+			Level.StartIntermission(intermission, FSTATE_INLEVELNOWIPE);
 	}
 	
 	override void WorldLoaded(WorldEvent e)
@@ -102,6 +101,10 @@ class WadFusionStaticHandler : StaticEventHandler
 		// wf_newgame.zs
 		// sets the correct titlepic for the hacky titlescreens
 		NewGameTitlePic();
+		
+		// wf_story.zs
+		// tells players that the game is over at the end of a Full Run
+		FullRunEndMultiplayer();
 	}
 	
 	override bool InputProcess(InputEvent e)
@@ -114,7 +117,7 @@ class WadFusionStaticHandler : StaticEventHandler
 			{
 				if (e.Type == InputEvent.Type_KeyDown)
 				{
-					EventHandler.SendNetworkEvent("NewGameChangeLevelEvent");
+					EventHandler.SendNetworkEvent("NewGameChangeLevelInputEvent");
 				}
 			}
 		}

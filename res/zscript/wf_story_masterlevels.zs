@@ -28,130 +28,130 @@ extend class WadFusionStaticHandler
 		
 		if ( mapName.Left(15) == "wf_story_ml_map" )
 		{
-			if ( mapSuffix == "34" )
-			{
-				Level.StartIntermission("MasterLevels_Map34", FSTATE_INLEVELNOWIPE);
-				if ( Level.MapTime >= 1 )
-					Level.ChangeLevel("ml_map34", 0, CHANGELEVEL_NOINTERMISSION);
-			}
-			if ( mapSuffix == "11" )
-			{
-				Level.StartIntermission("MasterLevels_Map11", FSTATE_INLEVELNOWIPE);
-				if ( Level.MapTime >= 1 )
-					Level.ChangeLevel("ml_map11", 0, CHANGELEVEL_NOINTERMISSION);
-			}
-			if ( mapSuffix == "12" )
-			{
-				Level.StartIntermission("MasterLevels_Map12", FSTATE_INLEVELNOWIPE);
-				if ( Level.MapTime >= 1 )
-					Level.ChangeLevel("ml_map12", 0, CHANGELEVEL_NOINTERMISSION);
-			}
-			if ( mapSuffix == "13" )
-			{
-				Level.StartIntermission("MasterLevels_Map13", FSTATE_INLEVELNOWIPE);
-				if ( Level.MapTime >= 1 )
-					Level.ChangeLevel("ml_map13", 0, CHANGELEVEL_NOINTERMISSION);
-			}
-			if ( mapSuffix == "15" )
-			{
-				Level.StartIntermission("MasterLevels_Map15", FSTATE_INLEVELNOWIPE);
-				if ( Level.MapTime >= 1 )
-					Level.ChangeLevel("ml_map15", 0, CHANGELEVEL_NOINTERMISSION);
-			}
-			if ( mapSuffix == "37" )
-			{
-				Level.StartIntermission("MasterLevels_Map37", FSTATE_INLEVELNOWIPE);
-				if ( Level.MapTime >= 1 )
-					Level.ChangeLevel("ml_map37", 0, CHANGELEVEL_NOINTERMISSION);
-			}
-			if ( mapSuffix == "38" )
-			{
-				Level.StartIntermission("MasterLevels_Map38", FSTATE_INLEVELNOWIPE);
-				if ( Level.MapTime >= 1 )
-					Level.ChangeLevel("ml_map38", 0, CHANGELEVEL_NOINTERMISSION);
-			}
-			if ( mapSuffix == "20" )
-			{
-				Level.StartIntermission("MasterLevels_Map20", FSTATE_INLEVELNOWIPE);
-				if ( Level.MapTime >= 1 )
-					Level.ChangeLevel("ml_map20", 0, CHANGELEVEL_NOINTERMISSION);
-			}
-			if ( mapSuffix == "18" )
-			{
-				Level.StartIntermission("MasterLevels_Map18", FSTATE_INLEVELNOWIPE);
-				if ( Level.MapTime >= 1 )
-					Level.ChangeLevel("ml_map18", 0, CHANGELEVEL_NOINTERMISSION);
-			}
-			if ( mapSuffix == "41" )
-			{
-				Level.StartIntermission("MasterLevels_Map41", FSTATE_INLEVELNOWIPE);
-				if ( Level.MapTime >= 1 )
-					Level.ChangeLevel("ml_map41", 0, CHANGELEVEL_NOINTERMISSION);
-			}
-			if ( mapSuffix == "42" )
-			{
-				Level.StartIntermission("MasterLevels_Map42", FSTATE_INLEVELNOWIPE);
-				if ( Level.MapTime >= 1 )
-					Level.ChangeLevel("ml_map42", 0, CHANGELEVEL_NOINTERMISSION);
-			}
-			if ( mapSuffix == "10" )
-			{
-				Level.StartIntermission("MasterLevels_Map10", FSTATE_INLEVELNOWIPE);
-				if ( Level.MapTime >= 1 )
-					Level.ChangeLevel("ml_map10", 0, CHANGELEVEL_NOINTERMISSION);
-			}
-			if ( mapSuffix == "43" )
-			{
-				Level.StartIntermission("MasterLevels_Map43", FSTATE_INLEVELNOWIPE);
-				if ( Level.MapTime >= 1 )
-					Level.ChangeLevel("ml_map43", 0, CHANGELEVEL_NOINTERMISSION);
-			}
 			
-			// maps that need pistol starts
-			if ( mapSuffix == "29" )
+			if ( mapSuffix != "29" && mapSuffix != "30" &&
+					mapSuffix != "31" && mapSuffix != "32" &&
+					mapSuffix != "16" && mapSuffix != "17" &&
+					mapSuffix != "33" && mapSuffix != "19" )
 			{
-				Level.StartIntermission("MasterLevels_Map29", FSTATE_INLEVELNOWIPE);
-				nextMap = "ml_map29";
+				if ( mapSuffix == "34" )
+				{
+					intermission = "MasterLevels_Map34";
+					nextMap = "ml_map34";
+				}
+				if ( mapSuffix == "11" )
+				{
+					intermission = "MasterLevels_Map11";
+					nextMap = "ml_map11";
+				}
+				if ( mapSuffix == "12" )
+				{
+					intermission = "MasterLevels_Map12";
+					nextMap = "ml_map12";
+				}
+				if ( mapSuffix == "13" )
+				{
+					intermission = "MasterLevels_Map13";
+					nextMap = "ml_map13";
+				}
+				if ( mapSuffix == "15" )
+				{
+					intermission = "MasterLevels_Map15";
+					nextMap = "ml_map15";
+				}
+				if ( mapSuffix == "37" )
+				{
+					intermission = "MasterLevels_Map37";
+					nextMap = "ml_map37";
+				}
+				if ( mapSuffix == "38" )
+				{
+					intermission = "MasterLevels_Map38";
+					nextMap = "ml_map38";
+				}
+				if ( mapSuffix == "20" )
+				{
+					intermission = "MasterLevels_Map20";
+					nextMap = "ml_map20";
+				}
+				if ( mapSuffix == "18" )
+				{
+					intermission = "MasterLevels_Map18";
+					nextMap = "ml_map18";
+				}
+				if ( mapSuffix == "41" )
+				{
+					intermission = "MasterLevels_Map41";
+					nextMap = "ml_map41";
+				}
+				if ( mapSuffix == "42" )
+				{
+					intermission = "MasterLevels_Map42";
+					nextMap = "ml_map42";
+				}
+				if ( mapSuffix == "10" )
+				{
+					intermission = "MasterLevels_Map10";
+					nextMap = "ml_map10";
+				}
+				if ( mapSuffix == "43" )
+				{
+					intermission = "MasterLevels_Map43";
+					nextMap = "ml_map43";
+				}
+				
+				StoryStartIntermission(); // wf_story.zs
+				if ( Level.MapTime >= 1 )
+					Level.ChangeLevel(nextMap, 0, CHANGELEVEL_NOINTERMISSION);
 			}
-			if ( mapSuffix == "30" )
+			else
 			{
-				Level.StartIntermission("MasterLevels_Map30", FSTATE_INLEVELNOWIPE);
-				nextMap = "ml_map30";
+				// maps that need pistol starts
+				if ( mapSuffix == "29" )
+				{
+					intermission = "MasterLevels_Map29";
+					nextMap = "ml_map29";
+				}
+				if ( mapSuffix == "30" )
+				{
+					intermission = "MasterLevels_Map30";
+					nextMap = "ml_map30";
+				}
+				if ( mapSuffix == "31" )
+				{
+					intermission = "MasterLevels_Map31";
+					nextMap = "ml_map31";
+				}
+				if ( mapSuffix == "32" )
+				{
+					intermission = "MasterLevels_Map32";
+					nextMap = "ml_map32";
+				}
+				if ( mapSuffix == "16" )
+				{
+					intermission = "MasterLevels_Map16";
+					nextMap = "ml_map16";
+				}
+				if ( mapSuffix == "17" )
+				{
+					intermission = "MasterLevels_Map17";
+					nextMap = "ml_map17";
+				}
+				if ( mapSuffix == "33" )
+				{
+					intermission = "MasterLevels_Map33";
+					nextMap = "ml_map33";
+				}
+				if ( mapSuffix == "19" )
+				{
+					intermission = "MasterLevels_Map19";
+					nextMap = "ml_map19";
+				}
+				
+				StoryStartIntermission(); // wf_story.zs
+				if ( Level.MapTime >= 1 )
+					Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
 			}
-			if ( mapSuffix == "31" )
-			{
-				Level.StartIntermission("MasterLevels_Map31", FSTATE_INLEVELNOWIPE);
-				nextMap = "ml_map31";
-			}
-			if ( mapSuffix == "32" )
-			{
-				Level.StartIntermission("MasterLevels_Map32", FSTATE_INLEVELNOWIPE);
-				nextMap = "ml_map32";
-			}
-			if ( mapSuffix == "16" )
-			{
-				Level.StartIntermission("MasterLevels_Map16", FSTATE_INLEVELNOWIPE);
-				nextMap = "ml_map16";
-			}
-			if ( mapSuffix == "17" )
-			{
-				Level.StartIntermission("MasterLevels_Map17", FSTATE_INLEVELNOWIPE);
-				nextMap = "ml_map17";
-			}
-			if ( mapSuffix == "33" )
-			{
-				Level.StartIntermission("MasterLevels_Map33", FSTATE_INLEVELNOWIPE);
-				nextMap = "ml_map33";
-			}
-			if ( mapSuffix == "19" )
-			{
-				Level.StartIntermission("MasterLevels_Map19", FSTATE_INLEVELNOWIPE);
-				nextMap = "ml_map19";
-			}
-			
-			// change map with pistol start
-			if ( Level.MapTime >= 1 )
-				Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
 		}
 	}
 }
