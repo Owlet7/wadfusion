@@ -60,7 +60,7 @@ extend class WadFusionStaticHandler
 					if ( !fullRunEnd )
 						Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
 					// try changing to a level that doesn't exist
-					// this triggets the default ending sequence Fusion_GotoTitle
+					// this triggets the default ending sequence -- Fusion_GotoTitle
 					else if ( !multiplayer )
 						Level.ChangeLevel("", 0, CHANGELEVEL_NOINTERMISSION);
 				}
@@ -94,6 +94,17 @@ extend class WadFusionStaticHandler
 			Level.StartIntermission(intermission, FSTATE_INLEVELNOWIPE);
 		else if ( Level.MapTime == 0 )
 			EventHandler.SendNetworkEvent("IntermissionStoryEvent");
+	}
+	
+	void FullRunEndMultiplayerTakeStuff()
+	{
+		string mapName = Level.MapName.MakeLower();
+		
+		if ( mapName == "wf_story" && Level.MapTime == 0 )
+		{
+			if ( fullRunEnd && multiplayer )
+				ForcePistolStart();
+		}
 	}
 	
 	ui void FullRunEndMultiplayer()

@@ -25,35 +25,28 @@ extend class WadFusionHandler
 	// without potentially playing the wrong music for one tick
 	void PlaySigilMusic()
 	{
-		// get map name and map music name
 		string mapName = Level.MapName.MakeLower();
 		string mapMusic = "d_"..mapName;
 		string mapMusicShreds = mapMusic.."a";
 		
-		// set music for Sigil maps
 		if ( mapName.Left(3) == "e5m" )
 		{
-			// play the mp3 soundtrack
 			if ( CVar.FindCVar("wf_mus_sigilmp3").GetBool() )
 			{
 				S_ChangeMusic( mapMusicShreds );
 			}
-			// play the midi soundtrack
 			else
 			{
 				S_ChangeMusic( mapMusic );
 			}
 		}
 		
-		// set music for Sigil2 maps
 		if ( mapName.Left(3) == "e6m" )
 		{
-			// play the mp3 soundtrack
 			if ( CVar.FindCVar("wf_mus_sigil2mp3").GetBool() )
 			{
 				S_ChangeMusic( mapMusicShreds );
 			}
-			// play the midi soundtrack
 			else
 			{
 				S_ChangeMusic( mapMusic );
@@ -61,33 +54,23 @@ extend class WadFusionHandler
 		}
 	}
 	
-	// Sigil's InterMusic should be defined as something invalid in MAPINFO,
-	// that way the music playback gets initiated by the script
-	// when the map unloads and enters the intermission screen,
-	// without potentially playing the wrong music for one tick
+	// do the same for intermission music
 	void PlaySigilInterMusic()
 	{
-		// get map name
 		string mapName = Level.MapName.MakeLower();
 		
-		// set music for Sigil intermissions
 		if ( mapName.Left(3) == "e5m" )
 		{
-			// play the mp3 soundtrack
 			if ( CVar.FindCVar("wf_mus_sigilmp3").GetBool() )
 				S_ChangeMusic("s_intera");
-			// play the midi soundtrack
 			else
 				S_ChangeMusic("s_inter");
 		}
 		
-		// set music for Sigil2 intermissions
 		if ( mapName.Left(3) == "e6m" )
 		{
-			// play the mp3 soundtrack
 			if ( CVar.FindCVar("wf_mus_sigil2mp3").GetBool() )
 				S_ChangeMusic("s2_intea");
-			// play the midi soundtrack
 			else
 				S_ChangeMusic("s2_inter");
 		}
@@ -99,34 +82,33 @@ extend class WadFusionStaticHandler
 	// change Sigil's title music to mp3/midi if the option is changed, without looping
 	ui void DoSigilTitleMusicReplacements()
 	{
-		string musicPlaying = MusPlaying.Name.MakeLower();
+		string music = MusPlaying.Name.MakeLower();
 		
 		if ( CVar.FindCVar("wf_mus_sigilmp3").GetBool() )
 		{
-			if ( musicPlaying == "s_intro" )
+			if ( music == "s_intro" )
 				S_ChangeMusic("s_introa", 0, false);
 		}
 		else
 		{
-			if ( musicPlaying == "s_introa" )
+			if ( music == "s_introa" )
 				S_ChangeMusic("s_intro", 0, false);
 		}
 		
 		if ( CVar.FindCVar("wf_mus_sigil2mp3").GetBool() )
 		{
-			if ( musicPlaying == "s2_intro" )
+			if ( music == "s2_intro" )
 				S_ChangeMusic("s2_intra", 0, false);
 		}
 		else
 		{
-			if ( musicPlaying == "s2_intra" )
+			if ( music == "s2_intra" )
 				S_ChangeMusic("s2_intro", 0, false);
 		}
 	}
 	
 	ui void DoSigilMusicReplacements()
 	{
-		// get currently playing music
 		string music = MusPlaying.Name.MakeLower();
 		
 		// play the Sigil mp3 soundtrack if the option is enabled mid-game

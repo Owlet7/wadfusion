@@ -51,42 +51,18 @@ class WadFusionHandler : EventHandler
 		// each texture replacement can be toggled individually, in case a mod needs to replace some of them
 		switch (texSwapAll)
 		{
-			case 1:
-				DoTextureReplacementsAllDoom1();
-				break;
-			case 2:
-				DoTextureReplacementsAllTnt();
-				break;
-			case 3:
-				DoTextureReplacementsAllPlutonia();
-				break;
-			case 4:
-				DoTextureReplacementsAllId1();
-				break;
-			case 5:
-				DoTextureReplacementsAllMlKlie();
-				break;
-			case 6:
-				DoTextureReplacementsAllMlAnderson();
-				break;
-			case 7:
-				DoTextureReplacementsAllMlFlynn();
-				break;
-			case 8:
-				DoTextureReplacementsAllMlrMines();
-				break;
-			case 9:
-				DoTextureReplacementsAllMlrAnomaly();
-				break;
-			case 10:
-				DoTextureReplacementsAllMlrFarside();
-				break;
-			case 11:
-				DoTextureReplacementsAllMlrTrouble();
-				break;
-			case 12:
-				DoTextureReplacementsAllMlrUdtwid();
-				break;
+			case 1:  DoTextureReplacementsAllDoom1();      break;
+			case 2:  DoTextureReplacementsAllTnt();        break;
+			case 3:  DoTextureReplacementsAllPlutonia();   break;
+			case 4:  DoTextureReplacementsAllId1();        break;
+			case 5:  DoTextureReplacementsAllMlKlie();     break;
+			case 6:  DoTextureReplacementsAllMlAnderson(); break;
+			case 7:  DoTextureReplacementsAllMlFlynn();    break;
+			case 8:  DoTextureReplacementsAllMlrMines();   break;
+			case 9:  DoTextureReplacementsAllMlrAnomaly(); break;
+			case 10: DoTextureReplacementsAllMlrFarside(); break;
+			case 11: DoTextureReplacementsAllMlrTrouble(); break;
+			case 12: DoTextureReplacementsAllMlrUdtwid();  break;
 		}
 		
 		if ( CVar.FindCVar("wf_compat_changemusic").GetBool() )
@@ -109,24 +85,6 @@ class WadFusionHandler : EventHandler
 			// when the map unloads and enters the intermission screen,
 			// without potentially playing the wrong music for one tick
 			PlaySigilInterMusic();
-		}
-		
-		// force pistol start on half of the master levels.
-		// this is needed to support switching between the xaser order,
-		// in which they should have pistol starts,
-		// and the rejects order, in which they shouldn't
-		if ( CVar.FindCVar("wf_compat_pistolstart").GetBool() )
-		{
-			if ( !CVar.FindCVar("wf_map_mlr").GetBool() )
-			{
-				if ( Level.NextMap == "ml_map10" || Level.NextMap == "ml_map11" ||
-					Level.NextMap == "ml_map12" || Level.NextMap == "ml_map13" ||
-					Level.NextMap == "ml_map14" || Level.NextMap == "ml_map15" || 
-					Level.NextMap == "ml_map18" || Level.NextMap == "ml_map20" )
-				{
-					ForcePistolStart();
-				}
-			}
 		}
 	}
 	
@@ -256,26 +214,5 @@ class WadFusionHandler : EventHandler
 	{
 		if ( e.Thing && e.Thing.bCountKill )
 			e.Thing.ClearCounters();
-	}
-	
-	void ForcePistolStart()
-	{
-		for ( int i; i < MAXPLAYERS; i++ )
-		{
-			if ( !playerInGame[i] || !players[i].mo )
-			{
-				continue;
-			}
-			
-			PlayerPawn pPawn = PlayerPawn(players[i].mo);
-			
-			if ( pPawn.Health > 0 )
-			{
-				players[i].Health = pPawn.Default.Health;
-				pPawn.Health = pPawn.Default.Health;
-				pPawn.ClearInventory();
-				pPawn.GiveDefaultInventory();
-			}
-		}
 	}
 }

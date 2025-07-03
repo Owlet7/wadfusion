@@ -22,16 +22,17 @@ extend class WadFusionStaticHandler
 {
 	ui void WadFusionReset2Defaults()
 	{
-		CVar.FindCVar("wf_id24trans").ResetToDefault();
+		CVar.FindCVar("wf_mus_idkfa").ResetToDefault();
 		CVar.FindCVar("wf_mus_sigilmp3").ResetToDefault();
 		CVar.FindCVar("wf_mus_sigil2mp3").ResetToDefault();
-		CVar.FindCVar("wf_mus_idkfa").ResetToDefault();
 		CVar.FindCVar("wf_map_e1m8b").ResetToDefault();
 		CVar.FindCVar("wf_map_e1m4b").ResetToDefault();
 		CVar.FindCVar("wf_map_mlr").ResetToDefault();
 		CVar.FindCVar("wf_map_mlr_story").ResetToDefault();
 		CVar.FindCVar("wf_intros").ResetToDefault();
 		CVar.FindCVar("wf_fullrun").ResetToDefault();
+		CVar.FindCVar("wf_fullrun_cast").ResetToDefault();
+		CVar.FindCVar("wf_id24trans").ResetToDefault();
 		
 		CVar.FindCVar("wf_compat_id24_weapons").ResetToDefault();
 		CVar.FindCVar("wf_compat_sigil2spiderboss").ResetToDefault();

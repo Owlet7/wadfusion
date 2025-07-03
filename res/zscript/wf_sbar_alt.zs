@@ -29,17 +29,13 @@ extend class WadFusionStatusBar
 	protected void WadFusionAlternateHUD()
 	{
 		String mapName = Level.MapName.MakeLower();
+		let isDoom1 = mapName.Left(1) == "e" && mapName.Mid(2, 1) == "m";
 		let isId1 = mapName.Left(3) == "lr_";
 		let id1WeapSwap = CVar.FindCVar("wf_compat_id24_weapons").GetInt() == 1;
 		let id1WeapSwapAlways = CVar.FindCVar("wf_compat_id24_weapons").GetInt() >= 2;
 		let hudId24 = CVar.FindCVar("wf_hud_id24").GetBool();
 		let hudSwapHealthArmor = CVar.FindCVar("wf_hud_swaphealtharmor").GetBool();
 		
-		let isDoom1 = mapName.Left(1) == "e" && mapName.Mid(2, 1) == "m";
-		
-		int skill = CVar.FindCVar("skill").GetInt();
-		
-		let rejects = CVar.FindCVar("wf_map_mlr").GetBool();
 		string ml = mapName.Mid(6);
 		let isCabal = CVar.FindCVar("wf_map_mlr").GetBool() && mapName.Left(6) == "ml_map" &&
 			( ml == "19" || ml == "37" || ml == "38" || ml == "39" || ml == "20" || ml == "40" ||

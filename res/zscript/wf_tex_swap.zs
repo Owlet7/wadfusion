@@ -142,7 +142,6 @@ extend class WadFusionHandler
 		{
 			Level.ReplaceTextures("SKY1"    , "MSKY1"   , TexMan.NOT_FLAT);
 			
-			// override sky
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
 				Level.ChangeSky(TexMan.CheckForTexture("MSKY1"), Level.SkyTexture2);
 		}
@@ -155,7 +154,6 @@ extend class WadFusionHandler
 		{
 			Level.ReplaceTextures("SKY1"    , "MSKY2"   , TexMan.NOT_FLAT);
 			
-			// override sky
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
 				Level.ChangeSky(TexMan.CheckForTexture("MSKY2"), Level.SkyTexture2);
 		}
@@ -164,7 +162,6 @@ extend class WadFusionHandler
 		{
 			Level.ReplaceTextures("SKY1"    , "MSKY3"   , TexMan.NOT_FLAT);
 			
-			// override sky
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
 				Level.ChangeSky(TexMan.CheckForTexture("MSKY3"), Level.SkyTexture2);
 		}
@@ -182,7 +179,6 @@ extend class WadFusionHandler
 			Level.ReplaceTextures("SW2STON1", "SW2STOND", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STON2", "SW2STONF", TexMan.NOT_FLAT);
 			
-			// override sky
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
 				Level.ChangeSky(TexMan.CheckForTexture("MSKY4"), Level.SkyTexture2);
 		}
@@ -192,7 +188,6 @@ extend class WadFusionHandler
 			Level.ReplaceTextures("SW1STON2", "SW1STONC", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STON2", "SW2STONC", TexMan.NOT_FLAT);
 			
-			// override sky
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
 				Level.ChangeSky(TexMan.CheckForTexture("MSKY5"), Level.SkyTexture2);
 		}
@@ -204,7 +199,6 @@ extend class WadFusionHandler
 			Level.ReplaceTextures("SW2BRIK" , "SW2BRIKM", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2STON2", "SW2STONG", TexMan.NOT_FLAT);
 			
-			// override sky
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
 				Level.ChangeSky(TexMan.CheckForTexture("MSKY6"), Level.SkyTexture2);
 		}
@@ -224,7 +218,6 @@ extend class WadFusionHandler
 			Level.ReplaceTextures("SW2STONE", "SW2STONJ", TexMan.NOT_FLAT);
 			Level.ReplaceTextures("SW2VINE" , "SW2VINEM", TexMan.NOT_FLAT);
 			
-			// override sky
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY1" )
 				Level.ChangeSky(TexMan.CheckForTexture("MSKY5"), Level.SkyTexture2);
 		}
@@ -232,7 +225,6 @@ extend class WadFusionHandler
 		{
 			Level.ReplaceTextures("SKY4"    , "MSKY7"   , TexMan.NOT_FLAT);
 			
-			// override sky
 			if ( TexMan.GetName(Level.SkyTexture1) == "SKY4" )
 				Level.ChangeSky(TexMan.CheckForTexture("MSKY7"), Level.SkyTexture2);
 		}

@@ -111,7 +111,6 @@ extend class WadFusionStaticHandler
 						S_ChangeMusic("t_dm2ttl", 0, false);
 					else if ( nextMap == "pl_map01" )
 						S_ChangeMusic("p_dm2ttl", 0, false);
-					// immediately switch to the set map if not starting an episode
 					else
 						NewGameChangeLevel();
 				}
@@ -123,12 +122,10 @@ extend class WadFusionStaticHandler
 	
 	void PlaySigilIntroMusic()
 	{
-		// play the mp3 soundtrack
 		if ( CVar.FindCVar("wf_mus_sigilmp3").GetBool() )
 		{
 			S_ChangeMusic("s_introa", 0, false);
 		}
-		// play the midi soundtrack
 		else
 		{
 			S_ChangeMusic("s_intro", 0, false);
@@ -137,12 +134,10 @@ extend class WadFusionStaticHandler
 	
 	void PlaySigil2IntroMusic()
 	{
-		// play the mp3 soundtrack
 		if ( CVar.FindCVar("wf_mus_sigil2mp3").GetBool() )
 		{
 			S_ChangeMusic("s2_intra", 0, false);
 		}
-		// play the midi soundtrack
 		else
 		{
 			S_ChangeMusic("s2_intro", 0, false);

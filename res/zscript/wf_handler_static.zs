@@ -20,7 +20,6 @@
 
 class WadFusionStaticHandler : StaticEventHandler
 {
-	// global variable
 	string nextMap;
 	string intermission;
 	bool fullRunNewGame;
@@ -44,17 +43,14 @@ class WadFusionStaticHandler : StaticEventHandler
 	
 	override void ConsoleProcess(ConsoleEvent e)
 	{
-		// wf_defaults.zs
-		// reset all custom cvars to their defaults
 		if ( e.Name ~== "wf_reset2defaults" )
-			WadFusionReset2Defaults();
+			WadFusionReset2Defaults(); // wf_defaults.zs
 	}
 	
 	override void NetworkProcess(ConsoleEvent e)
 	{
-		// wf_newgame.zs
 		if (e.Name ~== "NewGameChangeLevelInputEvent")
-			NewGameChangeLevelInput();
+			NewGameChangeLevelInput(); // wf_newgame.zs
 		
 		if (e.Name ~== "IntermissionStoryEvent")
 			Level.StartIntermission(intermission, FSTATE_INLEVELNOWIPE);
@@ -62,8 +58,7 @@ class WadFusionStaticHandler : StaticEventHandler
 	
 	override void WorldLoaded(WorldEvent e)
 	{
-		// reset global variables when starting maps where they're not used,
-		// to reduce the possibility of scripts breaking when transitioning to a hack dummy map
+		// reset global variables when starting maps where they're not used
 		string mapName = Level.MapName.MakeLower();
 		if ( mapName.Left(10) != "wf_newgame" && mapName.Left(8) != "wf_story" )
 		{
@@ -76,6 +71,24 @@ class WadFusionStaticHandler : StaticEventHandler
 	
 	override void WorldUnloaded(WorldEvent e)
 	{
+		// force pistol start on half of the master levels.
+		// this is needed to support switching between the xaser order,
+		// in which they should have pistol starts,
+		// and the rejects order, in which they shouldn't
+		if ( CVar.FindCVar("wf_compat_pistolstart").GetBool() )
+		{
+			if ( !CVar.FindCVar("wf_map_mlr").GetBool() )
+			{
+				if ( Level.NextMap == "ml_map10" || Level.NextMap == "ml_map11" ||
+					Level.NextMap == "ml_map12" || Level.NextMap == "ml_map13" ||
+					Level.NextMap == "ml_map14" || Level.NextMap == "ml_map15" || 
+					Level.NextMap == "ml_map18" || Level.NextMap == "ml_map20" )
+				{
+					ForcePistolStart();
+				}
+			}
+		}
+		
 		if ( CVar.FindCVar("wf_compat_nextmap").GetBool() )
 			FullRun(); // wf_fullrun.zs
 	}
@@ -90,17 +103,14 @@ class WadFusionStaticHandler : StaticEventHandler
 		// saving and loading on the hack dummy maps will break these sequences!
 		NewGameIntro(); // wf_newgame.zs
 		IntermissionStory(); // wf_story.zs
+		
+		FullRunEndMultiplayerTakeStuff(); // wf_story.zs
 	}
 	
 	override void RenderOverlay(RenderEvent e)
 	{
-		// wf_newgame.zs
-		// sets the correct titlepic for the hacky titlescreens
-		NewGameTitlePic();
-		
-		// wf_story.zs
-		// tells players that the game is over at the end of a Full Run
-		FullRunEndMultiplayer();
+		NewGameTitlePic(); // wf_newgame.zs
+		FullRunEndMultiplayer(); // wf_story.zs
 	}
 	
 	override bool InputProcess(InputEvent e)
@@ -118,6 +128,27 @@ class WadFusionStaticHandler : StaticEventHandler
 			}
 		}
 		return false;
+	}
+	
+	void ForcePistolStart()
+	{
+		for ( int i; i < MAXPLAYERS; i++ )
+		{
+			if ( !playerInGame[i] || !players[i].mo )
+			{
+				continue;
+			}
+			
+			PlayerPawn pPawn = PlayerPawn(players[i].mo);
+			
+			if ( pPawn.Health > 0 )
+			{
+				players[i].Health = pPawn.Default.Health;
+				pPawn.Health = pPawn.Default.Health;
+				pPawn.ClearInventory();
+				pPawn.GiveDefaultInventory();
+			}
+		}
 	}
 	
 	ui void DoChangeMusic(string music)

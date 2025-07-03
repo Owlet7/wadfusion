@@ -88,8 +88,7 @@ extend class WadFusionStaticHandler
 					intermission = "Plutonia_End_Fusion_FullRun_NoCast";
 			}
 		}
-		// play a vanilla or vanilla-eque intermission if fullrun is off
-		// these are needed to support switching it off mid-game
+		// play a vanilla or vanilla-esque intermission if fullrun is off
 		else
 		{
 			if ( mapName == "e1m8" || mapName == "e1m8b" )

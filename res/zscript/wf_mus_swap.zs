@@ -22,7 +22,6 @@ extend class WadFusionStaticHandler
 {
 	ui void DoTitleMusicReplacements()
 	{
-		// get map name and currently playing music
 		int musSwap = CVar.FindCVar("wf_compat_musswap").GetInt();
 		string mapName = Level.MapName.MakeLower();
 		string music = MusPlaying.Name.MakeLower();
@@ -45,7 +44,6 @@ extend class WadFusionStaticHandler
 	
 	ui void DoMusicReplacements()
 	{
-		// get map name and currently playing music
 		int musSwap = CVar.FindCVar("wf_compat_musswap").GetInt();
 		string mapName = Level.MapName.MakeLower();
 		string music = MusPlaying.Name.MakeLower();

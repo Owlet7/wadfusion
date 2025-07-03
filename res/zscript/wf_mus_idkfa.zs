@@ -22,7 +22,6 @@ extend class WadFusionStaticHandler
 {
 	ui void DoIdkfaTitleMusicReplacements()
 	{
-		// get map name and currently playing music
 		string mapName = Level.MapName.MakeLower();
 		string music = MusPlaying.Name.MakeLower();
 		
@@ -53,7 +52,6 @@ extend class WadFusionStaticHandler
 	
 	ui void DoIdkfaMusicReplacements()
 	{
-		// get map name and currently playing music
 		string mapName = Level.MapName.MakeLower();
 		string music = MusPlaying.Name.MakeLower();
 		
