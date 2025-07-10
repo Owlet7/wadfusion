@@ -36,7 +36,7 @@ extend class WadFusionStatusBar
 		let hudId24 = CVar.FindCVar("wf_hud_id24").GetBool();
 		let hudSwapHealthArmor = CVar.FindCVar("wf_hud_swaphealtharmor").GetBool();
 		
-		string ml = mapName.Mid(6);
+		String ml = mapName.Mid(6);
 		let isCabal = CVar.FindCVar("wf_map_mlr").GetBool() && mapName.Left(6) == "ml_map" &&
 			( ml == "19" || ml == "37" || ml == "38" || ml == "39" || ml == "20" || ml == "40" ||
 			ml == "18" || ml == "41" || ml == "42" || ml == "10" || ml == "43" || ml == "21" );
@@ -142,7 +142,7 @@ extend class WadFusionStatusBar
 		// Draw armor
 		if ( altHudArmor )
 		{
-			int armorColor=
+			int armorColor =
 				armor.Amount > 200 ? Font.CR_PURPLE :
 				armor.Amount > 150 ? Font.CR_BLUE :
 				armor.Amount > 100 ? Font.CR_CYAN :
@@ -222,9 +222,9 @@ extend class WadFusionStatusBar
 		
 		if ( altHudAmmo )
 		{
-			
 			int ammoType1Low = 0;
 			int ammoType2Low = 0;
+			
 			if ( hasBackpack )
 			{
 				if ( ammotype1 != null )
@@ -278,11 +278,17 @@ extend class WadFusionStatusBar
 		// Draw ammo pool
 		if ( altHudAmmoInv )
 		{
+			String ammoBulletsStr = StringTable.Localize("$WF_HUD_AMMO_BULLETS");
+			String ammoShellsStr  = StringTable.Localize("$WF_HUD_AMMO_SHELLS");
+			String ammoRocketsStr = StringTable.Localize("$WF_HUD_AMMO_ROCKETS");
+			String ammoCellsStr   = StringTable.Localize("$WF_HUD_AMMO_CELLS");
+			String ammoFuelStr    = StringTable.Localize("$WF_HUD_AMMO_FUEL");
+			
 			if ( fuel != null && ammotype1 != fuel )
 			{
 				if ( ( isId1 && id1WeapSwap ) || ( hasIncinerator || hasHeatwave ) || hudId24 || id1WeapSwapAlways )
 				{
-					DrawString(mConFont, "fuel", (ammoInvPos.X - 31, ammoInvPos.Y),
+					DrawString(mConFont, ammoFuelStr, (ammoInvPos.X - 31, ammoInvPos.Y),
 							DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
 							hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
 					DrawString(mConFont, FormatNumber(fuel.Amount, 3, 0, 3), ammoInvPos,
@@ -301,7 +307,7 @@ extend class WadFusionStatusBar
 				{
 					if ( !( id1WeapSwapAlways && !( hasPlasmaRifle || hasBfg9000 ) ) )
 					{
-						DrawString(mConFont, "cell", (ammoInvPos.X - 31, ammoInvPos.Y),
+						DrawString(mConFont, ammoCellsStr, (ammoInvPos.X - 31, ammoInvPos.Y),
 								DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
 								hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
 						DrawString(mConFont, FormatNumber(cell.Amount, 3, 0, 3), ammoInvPos,
@@ -317,7 +323,7 @@ extend class WadFusionStatusBar
 			
 			if ( rocket != null && ammotype1 != rocket )
 			{
-				DrawString(mConFont, "rckt", (ammoInvPos.X - 31, ammoInvPos.Y),
+				DrawString(mConFont, ammoRocketsStr, (ammoInvPos.X - 31, ammoInvPos.Y),
 						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
 						hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
 				DrawString(mConFont, FormatNumber(rocket.Amount, 3, 0, 3), ammoInvPos,
@@ -331,7 +337,7 @@ extend class WadFusionStatusBar
 			
 			if ( shell != null && ammotype1 != shell )
 			{
-				DrawString(mConFont, "shel", (ammoInvPos.X - 31, ammoInvPos.Y),
+				DrawString(mConFont, ammoShellsStr, (ammoInvPos.X - 31, ammoInvPos.Y),
 						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
 						hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
 				DrawString(mConFont, FormatNumber(shell.Amount, 3, 0, 3), ammoInvPos,
@@ -345,7 +351,7 @@ extend class WadFusionStatusBar
 			
 			if ( clip != null && ammotype1 != clip )
 			{
-				DrawString(mConFont, "bull", (ammoInvPos.X - 31, ammoInvPos.Y),
+				DrawString(mConFont, ammoBulletsStr, (ammoInvPos.X - 31, ammoInvPos.Y),
 						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
 						hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
 				DrawString(mConFont, FormatNumber(clip.Amount, 3, 0, 3), ammoInvPos,
@@ -486,6 +492,7 @@ extend class WadFusionStatusBar
 		
 		Vector2 statsPos = (4 + statsOffsetL, -72);
 		int statsPosYIncrement = 0;
+		
 		if ( altHudStatsIcons )
 			statsPosYIncrement = 12;
 		else
@@ -503,12 +510,13 @@ extend class WadFusionStatusBar
 			{
 				int mapSectersFound = Level.Found_Secrets;
 				int mapSectersTotal = Level.Total_Secrets;
+				String secretsStr = StringTable.Localize("$WF_HUD_STATS_SECRETS");
 				String mapSecrets = mapSectersFound.."/"..mapSectersTotal;
 				if ( altHudStatsIcons )
 					DrawImage("SECRETS", (statsPos.X + 4, statsPos.Y + 8),
 							DI_SCREEN_LEFT_BOTTOM, statsAlpha);
 				else
-					DrawString(mSmallFontMono, "S:", statsPos,
+					DrawString(mSmallFontMono, secretsStr..":", statsPos,
 							DI_SCREEN_LEFT_BOTTOM, Font.CR_RED, statsAlpha);
 				if ( mapSectersFound == mapSectersTotal )
 					DrawString(mSmallFont, mapSecrets, (statsPos.X + 16, statsPos.Y),
@@ -523,12 +531,13 @@ extend class WadFusionStatusBar
 			{
 				int mapItemsFound = Level.Found_Items;
 				int mapItemsTotal = Level.Total_Items;
+				String itemsStr = StringTable.Localize("$WF_HUD_STATS_ITEMS");
 				String mapItems = mapItemsFound.."/"..mapItemsTotal;
 				if ( altHudStatsIcons )
 					DrawImage("ITEMS", (statsPos.X + 4, statsPos.Y + 8),
 							DI_SCREEN_LEFT_BOTTOM, statsAlpha);
 				else
-					DrawString(mSmallFontMono, "I:", statsPos,
+					DrawString(mSmallFontMono, itemsStr..":", statsPos,
 							DI_SCREEN_LEFT_BOTTOM, Font.CR_RED, statsAlpha);
 				if ( mapItemsFound == mapItemsTotal )
 					DrawString(mSmallFont, mapItems, (statsPos.X + 16, statsPos.Y),
@@ -543,16 +552,17 @@ extend class WadFusionStatusBar
 			{
 				if ( altHudStatsKills != 1 || skill != 4 )
 				{
-					int mapMonstersFound = Level.Killed_Monsters;
+					int mapMonstersKilled = Level.Killed_Monsters;
 					int mapMonstersTotal = Level.Total_Monsters;
-					String mapMonsters = mapMonstersFound.."/"..mapMonstersTotal;
+					String monstersStr = StringTable.Localize("$WF_HUD_STATS_MONSTERS");
+					String mapMonsters = mapMonstersKilled.."/"..mapMonstersTotal;
 					if ( altHudStatsIcons )
 						DrawImage("KILLS", (statsPos.X + 4, statsPos.Y + 8),
 								DI_SCREEN_LEFT_BOTTOM, statsAlpha);
 					else
-						DrawString(mSmallFontMono, "K:", statsPos,
+						DrawString(mSmallFontMono, monstersStr..":", statsPos,
 								DI_SCREEN_LEFT_BOTTOM, Font.CR_RED, statsAlpha);
-					if ( mapMonstersFound == mapMonstersTotal )
+					if ( mapMonstersKilled == mapMonstersTotal )
 						DrawString(mSmallFont, mapMonsters, (statsPos.X + 16, statsPos.Y),
 								DI_SCREEN_LEFT_BOTTOM, Font.CR_GOLD, statsAlpha);
 					else
@@ -629,6 +639,8 @@ extend class WadFusionStatusBar
 		if ( altHudStatsSkill )
 		{
 			String skillName = "";
+			String skillStr = "";
+			
 			if ( skill == 0 )
 				skillName = StringTable.Localize("$SKILL_BABY");
 			else if ( skill == 1 )
@@ -655,7 +667,11 @@ extend class WadFusionStatusBar
 			else if ( skill == 4 )
 				skillName = StringTable.Localize("$SKILL_NIGHTMARE");
 			else
-				skillName = String.Format("Skill %i", skill);
+			{
+				skillStr = StringTable.Localize("$WF_HUD_STATS_SKILL");
+				skillName = String.Format("%s %i", skillStr, skill);
+			}
+			
 			DrawString(mSmallFont, skillName, timePos,
 					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, mapNameAlpha);
 			timePos.Y += timePosYIncrement;
