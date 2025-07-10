@@ -68,13 +68,6 @@ extend class WadFusionStatusBar
 		let hasHeatwave       = CPlayer.mo.FindInventory("ID24CalamityBlade");
 		let hasBfg9000        = CPlayer.mo.FindInventory("BFG9000");
 		
-		let hasBlueCard    = CPlayer.mo.FindInventory("BlueCard");
-		let hasBlueSkull   = CPlayer.mo.FindInventory("BlueSkull");
-		let hasYellowCard  = CPlayer.mo.FindInventory("YellowCard");
-		let hasYellowSkull = CPlayer.mo.FindInventory("YellowSkull");
-		let hasRedCard     = CPlayer.mo.FindInventory("RedCard");
-		let hasRedSkull    = CPlayer.mo.FindInventory("RedSkull");
-		
 		let hasBackpack = CPlayer.mo.FindInventory("Backpack");
 		let hasBerserk  = CPlayer.mo.FindInventory("PowerStrength");
 		
@@ -171,35 +164,53 @@ extend class WadFusionStatusBar
 		Vector2 keyInvPos = (-8 - ultraWide, -20);
 		int keyInvPosYIncrement = 8;
 		int ammoInvPosKeysIncrement = 0;
+		bool locks[6];
+		bool hasKeys;
+		String image;
+		
+		for ( int i = 0; i < 6; i++ )
+		{
+			locks[i] = CPlayer.mo.CheckKeys(i + 1, false, true);
+			if ( locks[i] && !hasKeys )
+			{
+				ammoInvPosKeysIncrement += 13;
+				hasKeys = true;
+			}
+		}
 		
 		if ( !deathmatch && altHudKeys )
 		{
-			if ( hasBlueCard && hasBlueSkull )
-				DrawImage("STKEYS6", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			else if ( hasBlueSkull )
-				DrawImage("STKEYS3", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			else if ( hasBlueCard )
-				DrawImage("STKEYS0", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			
+			// Blue key
+			if ( locks[1] && locks[4] )
+				image = "STKEYS6";
+			else if ( locks[1] )
+				image = "STKEYS0";
+			else if ( locks[4] )
+				image = "STKEYS3";
+			if ( locks[1] || locks[4] )
+				DrawImage(image, keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
 			keyInvPos.Y += keyInvPosYIncrement;
-			if ( hasYellowCard && hasYellowSkull )
-				DrawImage("STKEYS7", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			else if ( hasYellowSkull )
-				DrawImage("STKEYS4", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			else if ( hasYellowCard )
-				DrawImage("STKEYS1", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
 			
+			// Yellow key
+			if ( locks[2] && locks[5] )
+				image = "STKEYS7";
+			else if ( locks[2] )
+				image = "STKEYS1";
+			else if ( locks[5] )
+				image = "STKEYS4";
+			if ( locks[2] || locks[5] )
+				DrawImage(image, keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
 			keyInvPos.Y += keyInvPosYIncrement;
-			if ( hasRedCard && hasRedSkull )
-				DrawImage("STKEYS8", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			else if ( hasRedSkull )
-				DrawImage("STKEYS5", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			else if ( hasRedCard )
-				DrawImage("STKEYS2", keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
 			
-			if ( hasBlueCard || hasYellowCard || hasRedCard ||
-					hasBlueSkull || hasYellowSkull || hasRedSkull )
-				ammoInvPosKeysIncrement += 13;
+			// Red key
+			if ( locks[0] && locks[3] )
+				image = "STKEYS8";
+			else if ( locks[0] )
+				image = "STKEYS2";
+			else if ( locks[3] )
+				image = "STKEYS5";
+			if ( locks[0] || locks[3] )
+				DrawImage(image, keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
 		}
 		
 		// Draw current ammo
@@ -547,7 +558,7 @@ extend class WadFusionStatusBar
 					else
 						DrawString(mSmallFont, mapMonsters, (statsPos.X + 16, statsPos.Y),
 								DI_SCREEN_LEFT_BOTTOM, Font.CR_GREEN, statsAlpha);
-				statsPos.Y -= statsPosYIncrement;
+					statsPos.Y -= statsPosYIncrement;
 				}
 			}
 		}
