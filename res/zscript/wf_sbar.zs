@@ -74,8 +74,9 @@ class WadFusionStatusBar : BaseStatusBar
 		let isId1 = mapName.Left(3) == "lr_";
 		let id1WeapSwap = CVar.FindCVar("wf_compat_id24_weapons").GetInt() == 1;
 		let id1WeapSwapAlways = CVar.FindCVar("wf_compat_id24_weapons").GetInt() >= 2;
+		let hudId24Compat = CVar.FindCVar("wf_compat_id24_hud").GetBool();
 		
-		if ( ( isId1 && id1WeapSwap ) || id1WeapSwapAlways )
+		if ( hudId24Compat && ( ( isId1 && id1WeapSwap ) || id1WeapSwapAlways ) )
 			DrawImage("STBRFUEL", (160, 168), DI_ITEM_TOP);
 		else
 			DrawImage("STBAR", (0, 168), DI_ITEM_OFFSETS);
@@ -153,6 +154,7 @@ class WadFusionStatusBar : BaseStatusBar
 		let isId1 = mapName.Left(3) == "lr_";
 		let id1WeapSwap = CVar.FindCVar("wf_compat_id24_weapons").GetInt() == 1;
 		let id1WeapSwapAlways = CVar.FindCVar("wf_compat_id24_weapons").GetInt() >= 2;
+		let hudId24Compat = CVar.FindCVar("wf_compat_id24_hud").GetBool();
 		let hudId24 = CVar.FindCVar("wf_hud_id24").GetBool();
 		let cell = CPlayer.mo.FindInventory("Cell");
 		let fuel = CPlayer.mo.FindInventory("ID24Fuel");
@@ -162,10 +164,10 @@ class WadFusionStatusBar : BaseStatusBar
 		let hasHeatwave = CPlayer.mo.FindInventory("ID24CalamityBlade");
 		
 		// Only show id24 style ammo if the player has both cell and fuel ammo, or if wf_hud_id24 is true
-		if ( ( isId1 && id1WeapSwap && cell != null && ( hasPlasmaRifle || hasBfg9000 ) ) ||
+		if ( hudId24Compat && ( ( isId1 && id1WeapSwap && cell != null && ( hasPlasmaRifle || hasBfg9000 ) ) ||
 			( isId1 && !id1WeapSwap && fuel != null && ( hasIncinerator || hasHeatwave ) ) ||
 			( !isId1 && id1WeapSwapAlways && cell != null && ( hasPlasmaRifle || hasBfg9000 ) ) ||
-			( !isId1 && !id1WeapSwapAlways && fuel != null && ( hasIncinerator || hasHeatwave ) ) || hudId24 )
+			( !isId1 && !id1WeapSwapAlways && fuel != null && ( hasIncinerator || hasHeatwave ) ) || hudId24 ) )
 		{
 			DrawImage("STAMMO24", (249, 168), DI_ITEM_OFFSETS);
 			int amt1, maxamt;
@@ -204,7 +206,7 @@ class WadFusionStatusBar : BaseStatusBar
 			DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 185), DI_TEXT_ALIGN_RIGHT);
 			DrawString(mIndexFont, FormatNumber(maxamt, 3), (314, 185), DI_TEXT_ALIGN_RIGHT);
 			
-			if ( ( isId1 && id1WeapSwap ) || id1WeapSwapAlways )
+			if ( hudId24Compat && ( ( isId1 && id1WeapSwap ) || id1WeapSwapAlways ) )
 			{
 				[amt1, maxamt] = GetAmount("ID24Fuel");
 				DrawString(mIndexFont, FormatNumber(amt1, 3), (288, 191), DI_TEXT_ALIGN_RIGHT);

@@ -35,6 +35,7 @@ extend class WadFusionStaticHandler
 		CVar.FindCVar("wf_id24trans").ResetToDefault();
 		
 		CVar.FindCVar("wf_compat_id24_weapons").ResetToDefault();
+		CVar.FindCVar("wf_compat_id24_hud").ResetToDefault();
 		CVar.FindCVar("wf_compat_sigil2spiderboss").ResetToDefault();
 		CVar.FindCVar("wf_compat_killcountfix").ResetToDefault();
 		CVar.FindCVar("wf_compat_xboxsecretexits").ResetToDefault();

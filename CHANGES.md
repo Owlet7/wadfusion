@@ -28,6 +28,7 @@
 - Added options to view the original credits graphics in the respective games'
   credits menus.
 - Added an option to view all the "Help" screens.
+- Added "ID24 status bars" compatibility option.
 - Added options to not horizontally offset the alternate fullscreen HUD stats.
 - Added an option to show the skill level on the alternate fullscreen HUD stats.
 - Made some of the fonts on the alternate fullscreen HUD non-monospace.
