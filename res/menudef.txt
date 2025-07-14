@@ -417,6 +417,7 @@ OptionMenu "WadFusionHudOptions"
 	Slider "$WF_MENU_HUD_ALT_ALPHA_STATS",           "wf_hud_alt_alpha_stats",           0.0, 1.0, 0.01, 2, "wf_hud_alt"
 	Slider "$WF_MENU_HUD_ALT_ALPHA_STATS_TIME",      "wf_hud_alt_alpha_stats_time",      0.0, 1.0, 0.01, 2, "wf_hud_alt"
 	Slider "$WF_MENU_HUD_ALT_ALPHA_STATS_MAPNAME",   "wf_hud_alt_alpha_stats_mapname",   0.0, 1.0, 0.01, 2, "wf_hud_alt"
+	Slider "$WF_MENU_HUD_ALT_ALPHA_STATS_SKILL",     "wf_hud_alt_alpha_stats_skill",     0.0, 1.0, 0.01, 2, "wf_hud_alt"
 }
 
 OptionValue "WF_HUD_ALT_STATS_KILLS"

@@ -218,5 +218,6 @@ extend class WadFusionStaticHandler
 		CVar.FindCVar("wf_hud_alt_alpha_stats").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_alpha_stats_time").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_alpha_stats_mapname").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_alpha_stats_skill").ResetToDefault();
 	}
 }

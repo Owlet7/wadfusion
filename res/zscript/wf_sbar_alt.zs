@@ -86,7 +86,8 @@ extend class WadFusionStatusBar
 		let altHudKeys             = CVar.FindCVar("wf_hud_alt_keys").GetBool();
 		let altHudFrags            = CVar.FindCVar("wf_hud_alt_frags").GetBool();
 		let altHudStatsIcons       = CVar.FindCVar("wf_hud_alt_stats_icons").GetBool();
-		int altHudStatsKills       = CVar.FindCVar("wf_hud_alt_stats_kills").GetInt();
+		int altHudStatsKills       = CVar.FindCVar("wf_hud_alt_stats_kills").GetInt() >= 1;
+		int altHudStatsKillsNotNm  = CVar.FindCVar("wf_hud_alt_stats_kills").GetInt() == 1;
 		let altHudStatsItems       = CVar.FindCVar("wf_hud_alt_stats_items").GetBool();
 		let altHudStatsSecrets     = CVar.FindCVar("wf_hud_alt_stats_secrets").GetBool();
 		let altHudStatsTime        = CVar.FindCVar("wf_hud_alt_stats_time").GetBool();
@@ -109,6 +110,7 @@ extend class WadFusionStatusBar
 		double statsAlpha           = CVar.FindCVar("wf_hud_alt_alpha_stats").GetFloat();
 		double timeAlpha            = CVar.FindCVar("wf_hud_alt_alpha_stats_time").GetFloat();
 		double mapNameAlpha         = CVar.FindCVar("wf_hud_alt_alpha_stats_mapname").GetFloat();
+		double skillAlpha           = CVar.FindCVar("wf_hud_alt_alpha_stats_skill").GetFloat();
 		
 		// Draw health
 		int hudHealthYOffset = 0;
@@ -548,9 +550,9 @@ extend class WadFusionStatusBar
 				statsPos.Y -= statsPosYIncrement;
 			}
 			
-			if ( altHudStatsKills >= 1 )
+			if ( altHudStatsKills )
 			{
-				if ( altHudStatsKills != 1 || skill != 4 )
+				if ( !altHudStatsKillsNotNm || skill != 4 )
 				{
 					int mapMonstersKilled = Level.Killed_Monsters;
 					int mapMonstersTotal = Level.Total_Monsters;
@@ -638,42 +640,33 @@ extend class WadFusionStatusBar
 		// Draw skill
 		if ( altHudStatsSkill )
 		{
+			String skillStr = StringTable.Localize("$WF_HUD_STATS_SKILL");
 			String skillName = "";
-			String skillStr = "";
 			
-			if ( skill == 0 )
-				skillName = StringTable.Localize("$SKILL_BABY");
-			else if ( skill == 1 )
+			switch ( skill )
 			{
-				if ( !isCabal )
-					skillName = StringTable.Localize("$SKILL_EASY");
-				else
-					skillName = StringTable.Localize("$SKILL_NORMAL");
-			}
-			else if ( skill == 2 )
-			{
-				if ( !isCabal )
-					skillName = StringTable.Localize("$SKILL_NORMAL");
-				else
-					skillName = StringTable.Localize("$SKILL_HARD");
-			}
-			else if ( skill == 3 )
-			{
-				if ( !isCabal )
-					skillName = StringTable.Localize("$SKILL_HARD");
-				else
-					skillName = StringTable.Localize("$WF_SKILL_CARNAGE");
-			}
-			else if ( skill == 4 )
-				skillName = StringTable.Localize("$SKILL_NIGHTMARE");
-			else
-			{
-				skillStr = StringTable.Localize("$WF_HUD_STATS_SKILL");
-				skillName = String.Format("%s %i", skillStr, skill);
+				case 0:
+					skillName = StringTable.Localize("$SKILL_BABY");
+					break;
+				case 1:
+					skillName = !isCabal ? StringTable.Localize("$SKILL_EASY") : StringTable.Localize("$SKILL_NORMAL");
+					break;
+				case 2:
+					skillName = !isCabal ? StringTable.Localize("$SKILL_NORMAL") : StringTable.Localize("$SKILL_HARD");
+					break;
+				case 3:
+					skillName = !isCabal ? StringTable.Localize("$SKILL_HARD") : StringTable.Localize("$WF_SKILL_CARNAGE");
+					break;
+				case 4:
+					skillName = StringTable.Localize("$SKILL_NIGHTMARE");
+					break;
+				default:
+					skillName = String.Format("%s %i", skillStr, skill);
+					break;
 			}
 			
 			DrawString(mSmallFont, skillName, timePos,
-					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, mapNameAlpha);
+					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, skillAlpha);
 			timePos.Y += timePosYIncrement;
 		}
 	}
