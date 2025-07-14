@@ -36,15 +36,17 @@ extend class WadFusionStatusBar
 		let hudId24 = CVar.FindCVar("wf_hud_id24").GetBool();
 		let hudSwapHealthArmor = CVar.FindCVar("wf_hud_swaphealtharmor").GetBool();
 		
-		String ml = mapName.Mid(6);
-		let isCabal = CVar.FindCVar("wf_map_mlr").GetBool() && mapName.Left(6) == "ml_map" &&
-			( ml == "19" || ml == "37" || ml == "38" || ml == "39" || ml == "20" || ml == "40" ||
-			ml == "18" || ml == "41" || ml == "42" || ml == "10" || ml == "43" || ml == "21" );
+		let mlRejects = CVar.FindCVar("wf_map_mlr").GetBool();
+		String mlMap = mapName.Mid(6);
+		let mlCabalMap = mlMap == "19" || mlMap == "37" || mlMap == "38" ||
+						 mlMap == "39" || mlMap == "20" || mlMap == "40" ||
+						 mlMap == "18" || mlMap == "41" || mlMap == "42" ||
+						 mlMap == "10" || mlMap == "43" || mlMap == "21";
+		let isCabal = mlRejects && mapName.Left(6) == "ml_map" && mlCabalMap;
 		
 		int ultraWide = CVar.FindCVar("wf_hud_ultrawide").GetInt();
 		if ( CVar.FindCVar("wf_hud_ultrawide_fullscreen").GetBool() && !CVar.FindCVar("vid_fullscreen").GetBool() )
 			ultraWide = 0;
-		
 		
 		int health    = CPlayer.health;
 		int maxHealth = CPlayer.mo.GetMaxHealth(true);
@@ -62,11 +64,11 @@ extend class WadFusionStatusBar
 		int cellLow   = 75;
 		int fuelLow   = 37;
 		
-		let hasSuperShotgun   = CPlayer.mo.FindInventory("SuperShotgun");
-		let hasIncinerator    = CPlayer.mo.FindInventory("ID24Incinerator");
-		let hasPlasmaRifle    = CPlayer.mo.FindInventory("PlasmaRifle");
-		let hasHeatwave       = CPlayer.mo.FindInventory("ID24CalamityBlade");
-		let hasBfg9000        = CPlayer.mo.FindInventory("BFG9000");
+		let hasSuperShotgun = CPlayer.mo.FindInventory("SuperShotgun");
+		let hasIncinerator  = CPlayer.mo.FindInventory("ID24Incinerator");
+		let hasPlasmaRifle  = CPlayer.mo.FindInventory("PlasmaRifle");
+		let hasHeatwave     = CPlayer.mo.FindInventory("ID24CalamityBlade");
+		let hasBfg9000      = CPlayer.mo.FindInventory("BFG9000");
 		
 		let hasBackpack = CPlayer.mo.FindInventory("Backpack");
 		let hasBerserk  = CPlayer.mo.FindInventory("PowerStrength");
@@ -122,10 +124,10 @@ extend class WadFusionStatusBar
 		{
 			if ( !altHudMugshot )
 				DrawImage(hasBerserk ? "PSTRA0" : "MEDIA0", (20 + ultraWide, -10 - hudHealthYOffset),
-						DI_SCREEN_LEFT_BOTTOM, healthAlpha);
+						  DI_SCREEN_LEFT_BOTTOM, healthAlpha);
 			else
 				DrawTexture(GetMugShot(5), (3 + ultraWide, -35 - hudHealthYOffset),
-						DI_ITEM_OFFSETS|DI_SCREEN_LEFT_BOTTOM, healthAlpha);
+							DI_ITEM_OFFSETS|DI_SCREEN_LEFT_BOTTOM, healthAlpha);
 			
 			int healthColor =
 				health > maxhealth * 2    ? Font.CR_PURPLE :
@@ -138,7 +140,7 @@ extend class WadFusionStatusBar
 				Font.CR_BLACK;
 			
 			DrawString(mHUDFont, FormatNumber(health, 1), (40 + ultraWide, -25 - hudHealthYOffset),
-					DI_SCREEN_LEFT_BOTTOM|DI_NOSHADOW, healthColor, healthAlpha);
+					   DI_SCREEN_LEFT_BOTTOM|DI_NOSHADOW, healthColor, healthAlpha);
 		}
 		
 		// Draw armor
@@ -156,9 +158,9 @@ extend class WadFusionStatusBar
 			if ( armor != null && armor.Amount > 0 )
 			{
 				DrawInventoryIcon(armor, (20 + ultraWide, -37 + hudHealthYOffset),
-						DI_SCREEN_LEFT_BOTTOM, healthAlpha);
+								  DI_SCREEN_LEFT_BOTTOM, healthAlpha);
 				DrawString(mHUDFont, FormatNumber(armor.Amount, 1), (40 + ultraWide, -52 + hudHealthYOffset),
-						DI_SCREEN_LEFT_BOTTOM|DI_NOSHADOW, armorColor, healthAlpha);
+						   DI_SCREEN_LEFT_BOTTOM|DI_NOSHADOW, armorColor, healthAlpha);
 			}
 		}
 		
@@ -246,20 +248,20 @@ extend class WadFusionStatusBar
 			if ( ammotype1 != null )
 			{
 				DrawInventoryIcon(ammotype1, (-14 - ammoInvPosKeysIncrement - ultraWide, -10),
-						DI_SCREEN_RIGHT_BOTTOM, ammoAlpha);
+								  DI_SCREEN_RIGHT_BOTTOM, ammoAlpha);
 				DrawString(mHUDFont, FormatNumber(ammotype1.Amount, 1), (-30 - ammoInvPosKeysIncrement - ultraWide, -25),
-						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT|DI_NOSHADOW,
-						ammotype1.Amount > ammoType1Low ? Font.CR_WHITE : Font.CR_RED, ammoAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT|DI_NOSHADOW,
+						   ammotype1.Amount > ammoType1Low ? Font.CR_WHITE : Font.CR_RED, ammoAlpha);
 				invY -= 27;
 			}
 			
 			if ( ammotype2 != null && ammotype2 != ammotype1 )
 			{
 				DrawInventoryIcon(ammotype2, (-14 - ammoInvPosKeysIncrement - ultraWide, invY + 15),
-						DI_SCREEN_RIGHT_BOTTOM, ammoAlpha);
+								  DI_SCREEN_RIGHT_BOTTOM, ammoAlpha);
 				DrawString(mHUDFont, FormatNumber(ammotype2.Amount, 1), (-30 - ammoInvPosKeysIncrement - ultraWide, invY),
-						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT|DI_NOSHADOW,
-						ammotype2.Amount > ammoType2Low ? Font.CR_WHITE : Font.CR_RED, ammoAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT|DI_NOSHADOW,
+						   ammotype2.Amount > ammoType2Low ? Font.CR_WHITE : Font.CR_RED, ammoAlpha);
 				invY -= 27;
 				ammoInvPos.Y -= 27;
 			}
@@ -267,9 +269,9 @@ extend class WadFusionStatusBar
 			if ( !isInventoryBarVisible() && !Level.NoInventoryBar && CPlayer.mo.InvSel != null )
 			{
 				DrawInventoryIcon(CPlayer.mo.InvSel, (-14 - ultraWide, invY + 15),
-								DI_DIMDEPLETED|DI_SCREEN_RIGHT_BOTTOM, ammoAlpha);
+								  DI_DIMDEPLETED|DI_SCREEN_RIGHT_BOTTOM, ammoAlpha);
 				DrawString(mHUDFont, FormatNumber(CPlayer.mo.InvSel.Amount, 1), (-30 - ultraWide, invY),
-						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT|DI_NOSHADOW, Font.CR_WHITE, ammoAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT|DI_NOSHADOW, Font.CR_WHITE, ammoAlpha);
 				ammoInvPos.Y -= 27;
 			}
 			
@@ -291,14 +293,14 @@ extend class WadFusionStatusBar
 				if ( ( isId1 && id1WeapSwap ) || ( hasIncinerator || hasHeatwave ) || hudId24 || id1WeapSwapAlways )
 				{
 					DrawString(mConFont, ammoFuelStr, (ammoInvPos.X - 31, ammoInvPos.Y),
-							DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
-							hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
+							   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
+							   hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
 					DrawString(mConFont, FormatNumber(fuel.Amount, 3, 0, 3), ammoInvPos,
-							DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
-							fuel.Amount > fuelLow ? Font.CR_WHITE : Font.CR_RED, ammoInvAlpha);
+							   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
+							   fuel.Amount > fuelLow ? Font.CR_WHITE : Font.CR_RED, ammoInvAlpha);
 					if ( fuel.Amount <= 0 )
 						DrawString(mConFont, "000", ammoInvPos,
-								DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_BLACK, ammoInvAlpha);
+								   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_BLACK, ammoInvAlpha);
 					ammoInvPos.Y -= ammoInvPosYIncrement;
 				}
 			}
@@ -310,14 +312,14 @@ extend class WadFusionStatusBar
 					if ( !( id1WeapSwapAlways && !( hasPlasmaRifle || hasBfg9000 ) ) )
 					{
 						DrawString(mConFont, ammoCellsStr, (ammoInvPos.X - 31, ammoInvPos.Y),
-								DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
-								hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
+								   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
+								   hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
 						DrawString(mConFont, FormatNumber(cell.Amount, 3, 0, 3), ammoInvPos,
-								DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
-								cell.Amount > cellLow ? Font.CR_WHITE : Font.CR_RED, ammoInvAlpha);
+								   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
+								   cell.Amount > cellLow ? Font.CR_WHITE : Font.CR_RED, ammoInvAlpha);
 						if ( cell.Amount <= 0 )
 							DrawString(mConFont, "000", ammoInvPos,
-									DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_BLACK, ammoInvAlpha);
+									   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_BLACK, ammoInvAlpha);
 						ammoInvPos.Y -= ammoInvPosYIncrement;
 					}
 				}
@@ -326,42 +328,42 @@ extend class WadFusionStatusBar
 			if ( rocket != null && ammotype1 != rocket )
 			{
 				DrawString(mConFont, ammoRocketsStr, (ammoInvPos.X - 31, ammoInvPos.Y),
-						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
-						hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
+						   hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
 				DrawString(mConFont, FormatNumber(rocket.Amount, 3, 0, 3), ammoInvPos,
-						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
-						rocket.Amount > rocketLow ? Font.CR_WHITE : Font.CR_RED, ammoInvAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
+						   rocket.Amount > rocketLow ? Font.CR_WHITE : Font.CR_RED, ammoInvAlpha);
 				if ( rocket.Amount <= 0 )
 					DrawString(mConFont, "000", ammoInvPos,
-							DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_BLACK, ammoInvAlpha);
+							   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_BLACK, ammoInvAlpha);
 				ammoInvPos.Y -= ammoInvPosYIncrement;
 			}
 			
 			if ( shell != null && ammotype1 != shell )
 			{
 				DrawString(mConFont, ammoShellsStr, (ammoInvPos.X - 31, ammoInvPos.Y),
-						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
-						hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
+						   hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
 				DrawString(mConFont, FormatNumber(shell.Amount, 3, 0, 3), ammoInvPos,
-						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
-						shell.Amount > shellLow ? Font.CR_WHITE : Font.CR_RED, ammoInvAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
+						   shell.Amount > shellLow ? Font.CR_WHITE : Font.CR_RED, ammoInvAlpha);
 				if ( shell.Amount <= 0 )
 					DrawString(mConFont, "000", ammoInvPos,
-							DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_BLACK, ammoInvAlpha);
+							   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_BLACK, ammoInvAlpha);
 				ammoInvPos.Y -= ammoInvPosYIncrement;
 			}
 			
 			if ( clip != null && ammotype1 != clip )
 			{
 				DrawString(mConFont, ammoBulletsStr, (ammoInvPos.X - 31, ammoInvPos.Y),
-						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
-						hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
+						   hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
 				DrawString(mConFont, FormatNumber(clip.Amount, 3, 0, 3), ammoInvPos,
-						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
-						clip.Amount > clipLow ? Font.CR_WHITE : Font.CR_RED, ammoInvAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT,
+						   clip.Amount > clipLow ? Font.CR_WHITE : Font.CR_RED, ammoInvAlpha);
 				if ( clip.Amount <= 0 )
 					DrawString(mConFont, "000", ammoInvPos,
-							DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_BLACK, ammoInvAlpha);
+							   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_BLACK, ammoInvAlpha);
 				ammoInvPos.Y -= ammoInvPosYIncrement;
 			}
 		}
@@ -378,7 +380,7 @@ extend class WadFusionStatusBar
 				int blurSphereTime = int(Ceil(double(hasBlurSphere.EffectTics) / GameTicRate));
 				DrawImage("PINSAHUD", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
 				DrawString(mConFont, FormatNumber(blurSphereTime, 1), (powerupPos.X, powerupPos.Y - 8),
-						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
 				powerupPos.Y -= powerupPosYIncrement;
 				powerupCount++;
 			}
@@ -388,7 +390,7 @@ extend class WadFusionStatusBar
 				int invulnerabilitySphereTime = int(Ceil(double(hasInvulnerabilitySphere.EffectTics) / GameTicRate));
 				DrawImage("PINVAHUD", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
 				DrawString(mConFont, FormatNumber(invulnerabilitySphereTime, 1), (powerupPos.X, powerupPos.Y - 8),
-						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
 				powerupPos.Y -= powerupPosYIncrement;
 				powerupCount++;
 			}
@@ -398,7 +400,7 @@ extend class WadFusionStatusBar
 				int infraredTime = int(Ceil(double(hasInfrared.EffectTics) / GameTicRate));
 				DrawImage("PVISAHUD", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
 				DrawString(mConFont, FormatNumber(infraredTime, 1), (powerupPos.X, powerupPos.Y - 8),
-						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
 				powerupPos.Y -= powerupPosYIncrement;
 				powerupCount++;
 			}
@@ -410,7 +412,7 @@ extend class WadFusionStatusBar
 					powerupPos.Y += 12;
 				DrawImage("SUITA0", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
 				DrawString(mConFont, FormatNumber(radSuitTime, 1), (powerupPos.X, powerupPos.Y - 8),
-						DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
 				powerupPos.Y -= powerupPosYIncrement;
 				powerupCount++;
 			}
@@ -448,19 +450,19 @@ extend class WadFusionStatusBar
 						{
 							if ( slotFistBerserk )
 								DrawString(mIndexFont, slotStr, weapInvPos,
-										DI_SCREEN_RIGHT_BOTTOM, Font.CR_RED, weapInvAlpha);
+										   DI_SCREEN_RIGHT_BOTTOM, Font.CR_RED, weapInvAlpha);
 							else
 								DrawString(mIndexFont, slotStr, weapInvPos,
-										DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
+										   DI_SCREEN_RIGHT_BOTTOM, Font.CR_GOLD, weapInvAlpha);
 						}
 						else if ( CPlayer.mo.FindInventory(getWeaponSlot) )
 						{
 							if ( slotFistBerserk )
 								DrawString(mIndexFont, slotStr, weapInvPos,
-										DI_SCREEN_RIGHT_BOTTOM, Font.CR_RED, weapInvInactiveAlpha);
+										   DI_SCREEN_RIGHT_BOTTOM, Font.CR_RED, weapInvInactiveAlpha);
 							else
 								DrawString(mIndexFont, slotStr, weapInvPos,
-										DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
+										   DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
 						}
 					}
 					
@@ -476,11 +478,13 @@ extend class WadFusionStatusBar
 					if ( !hudId24 )
 					{
 						if ( !weaponSlotReplaced &&
-								( slotIncinerator && ( !isId1 && !hasIncinerator ) ) ||
-								( slotPlasmaRifle && ( isId1 && !hasPlasmaRifle ) ) ||
-								( slotHeatwave && ( !isId1 && !hasHeatwave ) ) ||
-								( slotBfg9000 && ( isId1 && !hasBfg9000 ) ) )
+							 ( slotIncinerator && ( !isId1 && !hasIncinerator ) ) ||
+							 ( slotPlasmaRifle && ( isId1 && !hasPlasmaRifle ) ) ||
+							 ( slotHeatwave && ( !isId1 && !hasHeatwave ) ) ||
+							 ( slotBfg9000 && ( isId1 && !hasBfg9000 ) ) )
+						{
 							weapInvPos.X += weapInvPosXIncrement;
+						}
 					}
 				}
 			}
@@ -504,7 +508,7 @@ extend class WadFusionStatusBar
 		{
 			DrawImage("M_SKULL1", (20 + statsOffsetL, -64), DI_SCREEN_LEFT_BOTTOM, fragsAlpha);
 			DrawString(mHUDFont, FormatNumber(CPlayer.FragCount, 1), (40 + statsOffsetL, -79),
-					DI_SCREEN_LEFT_BOTTOM|DI_NOSHADOW, Font.CR_WHITE, fragsAlpha);
+					   DI_SCREEN_LEFT_BOTTOM|DI_NOSHADOW, Font.CR_WHITE, fragsAlpha);
 		}
 		else if ( !deathmatch )
 		{
@@ -516,16 +520,16 @@ extend class WadFusionStatusBar
 				String mapSecrets = mapSectersFound.."/"..mapSectersTotal;
 				if ( altHudStatsIcons )
 					DrawImage("SECRETS", (statsPos.X + 4, statsPos.Y + 8),
-							DI_SCREEN_LEFT_BOTTOM, statsAlpha);
+							  DI_SCREEN_LEFT_BOTTOM, statsAlpha);
 				else
 					DrawString(mSmallFontMono, secretsStr..":", statsPos,
-							DI_SCREEN_LEFT_BOTTOM, Font.CR_RED, statsAlpha);
+							   DI_SCREEN_LEFT_BOTTOM, Font.CR_RED, statsAlpha);
 				if ( mapSectersFound == mapSectersTotal )
 					DrawString(mSmallFont, mapSecrets, (statsPos.X + 16, statsPos.Y),
-							DI_SCREEN_LEFT_BOTTOM, Font.CR_GOLD, statsAlpha);
+							   DI_SCREEN_LEFT_BOTTOM, Font.CR_GOLD, statsAlpha);
 				else
 					DrawString(mSmallFont, mapSecrets, (statsPos.X + 16, statsPos.Y),
-							DI_SCREEN_LEFT_BOTTOM, Font.CR_GREEN, statsAlpha);
+							   DI_SCREEN_LEFT_BOTTOM, Font.CR_GREEN, statsAlpha);
 				statsPos.Y -= statsPosYIncrement;
 			}
 			
@@ -537,16 +541,16 @@ extend class WadFusionStatusBar
 				String mapItems = mapItemsFound.."/"..mapItemsTotal;
 				if ( altHudStatsIcons )
 					DrawImage("ITEMS", (statsPos.X + 4, statsPos.Y + 8),
-							DI_SCREEN_LEFT_BOTTOM, statsAlpha);
+							  DI_SCREEN_LEFT_BOTTOM, statsAlpha);
 				else
 					DrawString(mSmallFontMono, itemsStr..":", statsPos,
-							DI_SCREEN_LEFT_BOTTOM, Font.CR_RED, statsAlpha);
+							   DI_SCREEN_LEFT_BOTTOM, Font.CR_RED, statsAlpha);
 				if ( mapItemsFound == mapItemsTotal )
 					DrawString(mSmallFont, mapItems, (statsPos.X + 16, statsPos.Y),
-							DI_SCREEN_LEFT_BOTTOM, Font.CR_GOLD, statsAlpha);
+							   DI_SCREEN_LEFT_BOTTOM, Font.CR_GOLD, statsAlpha);
 				else
 					DrawString(mSmallFont, mapItems, (statsPos.X + 16, statsPos.Y),
-							DI_SCREEN_LEFT_BOTTOM, Font.CR_GREEN, statsAlpha);
+							   DI_SCREEN_LEFT_BOTTOM, Font.CR_GREEN, statsAlpha);
 				statsPos.Y -= statsPosYIncrement;
 			}
 			
@@ -560,16 +564,16 @@ extend class WadFusionStatusBar
 					String mapMonsters = mapMonstersKilled.."/"..mapMonstersTotal;
 					if ( altHudStatsIcons )
 						DrawImage("KILLS", (statsPos.X + 4, statsPos.Y + 8),
-								DI_SCREEN_LEFT_BOTTOM, statsAlpha);
+								  DI_SCREEN_LEFT_BOTTOM, statsAlpha);
 					else
 						DrawString(mSmallFontMono, monstersStr..":", statsPos,
-								DI_SCREEN_LEFT_BOTTOM, Font.CR_RED, statsAlpha);
+								   DI_SCREEN_LEFT_BOTTOM, Font.CR_RED, statsAlpha);
 					if ( mapMonstersKilled == mapMonstersTotal )
 						DrawString(mSmallFont, mapMonsters, (statsPos.X + 16, statsPos.Y),
-								DI_SCREEN_LEFT_BOTTOM, Font.CR_GOLD, statsAlpha);
+								   DI_SCREEN_LEFT_BOTTOM, Font.CR_GOLD, statsAlpha);
 					else
 						DrawString(mSmallFont, mapMonsters, (statsPos.X + 16, statsPos.Y),
-								DI_SCREEN_LEFT_BOTTOM, Font.CR_GREEN, statsAlpha);
+								   DI_SCREEN_LEFT_BOTTOM, Font.CR_GREEN, statsAlpha);
 					statsPos.Y -= statsPosYIncrement;
 				}
 			}
@@ -595,7 +599,7 @@ extend class WadFusionStatusBar
 			String timeString = String.Format("%02i:%02i:%02i", hours, minutes, seconds);
 			String timeMillisString = String.Format(timeString..".%03i", millis);
 			DrawString(mSmallFontMono, altHudStatsTimeMillis ? timeMillisString : timeString, timePos,
-					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, timeAlpha);
+					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, timeAlpha);
 			timePos.Y += timePosYIncrement;
 		}
 		
@@ -611,31 +615,31 @@ extend class WadFusionStatusBar
 			String timeString = String.Format("%02i:%02i:%02i", hours, minutes, seconds);
 			String timeMillisString = String.Format(timeString..".%03i", millis);
 			DrawString(mSmallFontMono, altHudStatsTimeMillis ? timeMillisString : timeString, timePos,
-					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, timeAlpha);
+					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, timeAlpha);
 			timePos.Y += timePosYIncrement;
 		}
 		
 		// Draw map name
 		String mapFullName = Level.MapName..": \cj"..Level.LevelName;
+		
 		if ( altHudStatsMapLabel && altHudStatsMapName )
 		{
 			DrawString(mSmallFont, mapFullName, timePos,
-					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_RED, mapNameAlpha);
+					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_RED, mapNameAlpha);
 		}
 		else if ( altHudStatsMapLabel )
 		{
 			DrawString(mSmallFont, Level.MapName, timePos,
-					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_RED, mapNameAlpha);
+					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_RED, mapNameAlpha);
 		}
 		else if ( altHudStatsMapName )
 		{
 			DrawString(mSmallFont, Level.LevelName, timePos,
-					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, mapNameAlpha);
+					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, mapNameAlpha);
 		}
+		
 		if ( altHudStatsMapLabel || altHudStatsMapName )
-		{
 			timePos.Y += timePosYIncrement;
-		}
 		
 		// Draw skill
 		if ( altHudStatsSkill )
@@ -666,7 +670,7 @@ extend class WadFusionStatusBar
 			}
 			
 			DrawString(mSmallFont, skillName, timePos,
-					DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, skillAlpha);
+					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, skillAlpha);
 			timePos.Y += timePosYIncrement;
 		}
 	}

@@ -77,10 +77,12 @@ extend class WadFusionStaticHandler
 				if ( Level.MapTime >= 1 )
 				{
 					if ( mapSuffix == "29" || mapSuffix == "30" ||
-							mapSuffix == "31" || mapSuffix == "32" ||
-							mapSuffix == "16" || mapSuffix == "17" ||
-							mapSuffix == "33" || mapSuffix == "19" )
+						 mapSuffix == "31" || mapSuffix == "32" ||
+						 mapSuffix == "16" || mapSuffix == "17" ||
+						 mapSuffix == "33" || mapSuffix == "19" )
+					{
 						Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
+					}
 					else
 						Level.ChangeLevel(nextMap, 0, CHANGELEVEL_NOINTERMISSION);
 				}

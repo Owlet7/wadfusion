@@ -49,7 +49,7 @@ class WadFusionHandler : EventHandler
 		// this feature mostly exists for compatibility with doom 1 and final doom mods
 		// these disable the regular texture replacements
 		// each texture replacement can be toggled individually, in case a mod needs to replace some of them
-		switch (texSwapAll)
+		switch ( texSwapAll )
 		{
 			case 1:  DoTextureReplacementsAllDoom1();      break;
 			case 2:  DoTextureReplacementsAllTnt();        break;
@@ -108,24 +108,18 @@ class WadFusionHandler : EventHandler
 		int id24WeapSwap = CVar.FindCVar("wf_compat_id24_weapons").GetInt();
 		string mapPrefix = Level.MapName.Left(3).MakeLower();
 		if ( ( id24WeapSwap == 1 && mapPrefix == "lr_" ) || id24WeapSwap >= 2 )
-		{
 			DoId24WeaponReplacements(e);
-		}
 	}
 	
 	override void WorldThingSpawned(WorldEvent e)
 	{
 		// increase the spiderdemon's health from 3000 to 9000 in Sigil 2
 		if ( CVar.FindCVar("wf_compat_sigil2spiderboss").GetBool() )
-		{
 			DoSigil2SpiderBossBuff(e);
-		}
 		
 		// override gzdoom's transparency render style for id24 actors
 		if ( CVar.FindCVar("wf_id24trans").GetBool() )
-		{
 			DoId24ActorTransparency(e);
-		}
 		
 		// don't count spawned enemies e.g. icon of sin summons
 		if ( CVar.FindCVar("wf_compat_killcountfix").GetBool() )

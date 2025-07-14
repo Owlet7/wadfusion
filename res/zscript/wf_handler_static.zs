@@ -80,9 +80,9 @@ class WadFusionStaticHandler : StaticEventHandler
 			if ( !CVar.FindCVar("wf_map_mlr").GetBool() )
 			{
 				if ( Level.NextMap == "ml_map10" || Level.NextMap == "ml_map11" ||
-					Level.NextMap == "ml_map12" || Level.NextMap == "ml_map13" ||
-					Level.NextMap == "ml_map14" || Level.NextMap == "ml_map15" || 
-					Level.NextMap == "ml_map18" || Level.NextMap == "ml_map20" )
+					 Level.NextMap == "ml_map12" || Level.NextMap == "ml_map13" ||
+					 Level.NextMap == "ml_map14" || Level.NextMap == "ml_map15" || 
+					 Level.NextMap == "ml_map18" || Level.NextMap == "ml_map20" )
 				{
 					ForcePistolStart();
 				}
@@ -122,9 +122,7 @@ class WadFusionStaticHandler : StaticEventHandler
 			if ( mapName.Left(10) == "wf_newgame" && mapName != "wf_newgame" )
 			{
 				if (e.Type == InputEvent.Type_KeyDown)
-				{
 					EventHandler.SendNetworkEvent("NewGameChangeLevelInputEvent");
-				}
 			}
 		}
 		return false;
@@ -135,9 +133,7 @@ class WadFusionStaticHandler : StaticEventHandler
 		for ( int i; i < MAXPLAYERS; i++ )
 		{
 			if ( !playerInGame[i] || !players[i].mo )
-			{
 				continue;
-			}
 			
 			PlayerPawn pPawn = PlayerPawn(players[i].mo);
 			

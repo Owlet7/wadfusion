@@ -123,25 +123,17 @@ extend class WadFusionStaticHandler
 	void PlaySigilIntroMusic()
 	{
 		if ( CVar.FindCVar("wf_mus_sigilmp3").GetBool() )
-		{
 			S_ChangeMusic("s_introa", 0, false);
-		}
 		else
-		{
 			S_ChangeMusic("s_intro", 0, false);
-		}
 	}
 	
 	void PlaySigil2IntroMusic()
 	{
 		if ( CVar.FindCVar("wf_mus_sigil2mp3").GetBool() )
-		{
 			S_ChangeMusic("s2_intra", 0, false);
-		}
 		else
-		{
 			S_ChangeMusic("s2_intro", 0, false);
-		}
 	}
 	
 	void NewGameChangeLevel()

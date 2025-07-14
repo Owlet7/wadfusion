@@ -32,25 +32,17 @@ extend class WadFusionHandler
 		if ( mapName.Left(3) == "e5m" )
 		{
 			if ( CVar.FindCVar("wf_mus_sigilmp3").GetBool() )
-			{
 				S_ChangeMusic( mapMusicShreds );
-			}
 			else
-			{
 				S_ChangeMusic( mapMusic );
-			}
 		}
 		
 		if ( mapName.Left(3) == "e6m" )
 		{
 			if ( CVar.FindCVar("wf_mus_sigil2mp3").GetBool() )
-			{
 				S_ChangeMusic( mapMusicShreds );
-			}
 			else
-			{
 				S_ChangeMusic( mapMusic );
-			}
 		}
 	}
 	
