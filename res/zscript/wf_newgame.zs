@@ -26,6 +26,8 @@ extend class WadFusionStaticHandler
 		string mapName = Level.MapName.MakeLower();
 		if ( mapName.Left(10) == "wf_newgame" || mapName.Left(8) == "wf_story" )
 		{
+			Level.SetFrozen(true);
+			
 			TextureId titlePic = TexMan.CheckForTexture("TITLEPIC");
 			TextureId titleD1 = TexMan.CheckForTexture("TITLED1");
 			TextureId titleUD = TexMan.CheckForTexture("TITLEUD");
