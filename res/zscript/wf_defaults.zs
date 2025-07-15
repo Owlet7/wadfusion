@@ -195,29 +195,25 @@ extend class WadFusionStaticHandler
 		CVar.FindCVar("wf_hud_alt_weapinv").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_keys").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_frags").ResetToDefault();
-		CVar.FindCVar("wf_hud_alt_stats_icons").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_stats_kills").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_stats_items").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_stats_secrets").ResetToDefault();
-		CVar.FindCVar("wf_hud_alt_stats_time").ResetToDefault();
-		CVar.FindCVar("wf_hud_alt_stats_totaltime").ResetToDefault();
-		CVar.FindCVar("wf_hud_alt_stats_timemillis").ResetToDefault();
-		CVar.FindCVar("wf_hud_alt_stats_mapname").ResetToDefault();
-		CVar.FindCVar("wf_hud_alt_stats_maplabel").ResetToDefault();
-		CVar.FindCVar("wf_hud_alt_stats_skill").ResetToDefault();
-		CVar.FindCVar("wf_hud_alt_stats_dontoffset_l").ResetToDefault();
-		CVar.FindCVar("wf_hud_alt_stats_dontoffset_r").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_stats_icons").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_info_time").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_info_totaltime").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_info_timemillis").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_info_mapname").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_info_maplabel").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_info_skill").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_info_dontoffset").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_alpha_health").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_alpha_ammo").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_alpha_powerup").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_alpha_ammoinv").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_alpha_weapinv").ResetToDefault();
-		CVar.FindCVar("wf_hud_alt_alpha_weapinvinactive").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_alpha_keys").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_alpha_frags").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_alpha_stats").ResetToDefault();
-		CVar.FindCVar("wf_hud_alt_alpha_stats_time").ResetToDefault();
-		CVar.FindCVar("wf_hud_alt_alpha_stats_mapname").ResetToDefault();
-		CVar.FindCVar("wf_hud_alt_alpha_stats_skill").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_alpha_info").ResetToDefault();
 	}
 }

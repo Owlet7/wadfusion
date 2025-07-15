@@ -78,41 +78,37 @@ extend class WadFusionStatusBar
 		let hasInfrared              = Powerup(CPlayer.mo.FindInventory("PowerLightAmp"));
 		let hasRadSuit               = Powerup(CPlayer.mo.FindInventory("PowerIronFeet"));
 		
-		let altHudMugshot          = CVar.FindCVar("wf_hud_alt_mugshot").GetBool();
-		let altHudHealth           = CVar.FindCVar("wf_hud_alt_health").GetBool();
-		let altHudArmor            = CVar.FindCVar("wf_hud_alt_armor").GetBool();
-		let altHudAmmo             = CVar.FindCVar("wf_hud_alt_ammo").GetBool();
-		let altHudAmmoInv          = CVar.FindCVar("wf_hud_alt_ammoinv").GetBool();
-		let altHudPowerup          = CVar.FindCVar("wf_hud_alt_powerup").GetBool();
-		let altHudWeapInv          = CVar.FindCVar("wf_hud_alt_weapinv").GetBool();
-		let altHudKeys             = CVar.FindCVar("wf_hud_alt_keys").GetBool();
-		let altHudFrags            = CVar.FindCVar("wf_hud_alt_frags").GetBool();
-		let altHudStatsIcons       = CVar.FindCVar("wf_hud_alt_stats_icons").GetBool();
-		int altHudStatsKills       = CVar.FindCVar("wf_hud_alt_stats_kills").GetInt() >= 1;
-		int altHudStatsKillsNotNm  = CVar.FindCVar("wf_hud_alt_stats_kills").GetInt() == 1;
-		let altHudStatsItems       = CVar.FindCVar("wf_hud_alt_stats_items").GetBool();
-		let altHudStatsSecrets     = CVar.FindCVar("wf_hud_alt_stats_secrets").GetBool();
-		let altHudStatsTime        = CVar.FindCVar("wf_hud_alt_stats_time").GetBool();
-		let altHudStatsTotalTime   = CVar.FindCVar("wf_hud_alt_stats_totaltime").GetBool();
-		let altHudStatsTimeMillis  = CVar.FindCVar("wf_hud_alt_stats_timemillis").GetBool();
-		let altHudStatsMapName     = CVar.FindCVar("wf_hud_alt_stats_mapname").GetBool();
-		let altHudStatsMapLabel    = CVar.FindCVar("wf_hud_alt_stats_maplabel").GetBool();
-		let altHudStatsSkill       = CVar.FindCVar("wf_hud_alt_stats_skill").GetBool();
-		let altHudStatsDontOffsetL = CVar.FindCVar("wf_hud_alt_stats_dontoffset_l").GetBool();
-		let altHudStatsDontOffsetR = CVar.FindCVar("wf_hud_alt_stats_dontoffset_r").GetBool();
+		let altHudMugshot         = CVar.FindCVar("wf_hud_alt_mugshot").GetBool();
+		let altHudHealth          = CVar.FindCVar("wf_hud_alt_health").GetBool();
+		let altHudArmor           = CVar.FindCVar("wf_hud_alt_armor").GetBool();
+		let altHudAmmo            = CVar.FindCVar("wf_hud_alt_ammo").GetBool();
+		let altHudAmmoInv         = CVar.FindCVar("wf_hud_alt_ammoinv").GetBool();
+		let altHudPowerup         = CVar.FindCVar("wf_hud_alt_powerup").GetBool();
+		let altHudWeapInv         = CVar.FindCVar("wf_hud_alt_weapinv").GetBool();
+		let altHudKeys            = CVar.FindCVar("wf_hud_alt_keys").GetBool();
+		let altHudFrags           = CVar.FindCVar("wf_hud_alt_frags").GetBool();
+		int altHudStatsKills      = CVar.FindCVar("wf_hud_alt_stats_kills").GetInt() >= 1;
+		int altHudStatsKillsNotNm = CVar.FindCVar("wf_hud_alt_stats_kills").GetInt() == 1;
+		let altHudStatsItems      = CVar.FindCVar("wf_hud_alt_stats_items").GetBool();
+		let altHudStatsSecrets    = CVar.FindCVar("wf_hud_alt_stats_secrets").GetBool();
+		let altHudStatsIcons      = CVar.FindCVar("wf_hud_alt_stats_icons").GetBool();
+		let altHudInfoTime        = CVar.FindCVar("wf_hud_alt_info_time").GetBool();
+		let altHudInfoTotalTime   = CVar.FindCVar("wf_hud_alt_info_totaltime").GetBool();
+		let altHudInfoTimeMillis  = CVar.FindCVar("wf_hud_alt_info_timemillis").GetBool();
+		let altHudInfoMapName     = CVar.FindCVar("wf_hud_alt_info_mapname").GetBool();
+		let altHudInfoMapLabel    = CVar.FindCVar("wf_hud_alt_info_maplabel").GetBool();
+		let altHudInfoSkill       = CVar.FindCVar("wf_hud_alt_info_skill").GetBool();
+		let altHudInfoDontOffset  = CVar.FindCVar("wf_hud_alt_info_dontoffset").GetBool();
 		
-		double healthAlpha          = CVar.FindCVar("wf_hud_alt_alpha_health").GetFloat();
-		double ammoAlpha            = CVar.FindCVar("wf_hud_alt_alpha_ammo").GetFloat();
-		double ammoInvAlpha         = CVar.FindCVar("wf_hud_alt_alpha_ammoinv").GetFloat();
-		double powerupAlpha         = CVar.FindCVar("wf_hud_alt_alpha_powerup").GetFloat();
-		double weapInvAlpha         = CVar.FindCVar("wf_hud_alt_alpha_weapinv").GetFloat();
-		double weapInvInactiveAlpha = CVar.FindCVar("wf_hud_alt_alpha_weapinvinactive").GetFloat();
-		double keysAlpha            = CVar.FindCVar("wf_hud_alt_alpha_keys").GetFloat();
-		double fragsAlpha           = CVar.FindCVar("wf_hud_alt_alpha_frags").GetFloat();
-		double statsAlpha           = CVar.FindCVar("wf_hud_alt_alpha_stats").GetFloat();
-		double timeAlpha            = CVar.FindCVar("wf_hud_alt_alpha_stats_time").GetFloat();
-		double mapNameAlpha         = CVar.FindCVar("wf_hud_alt_alpha_stats_mapname").GetFloat();
-		double skillAlpha           = CVar.FindCVar("wf_hud_alt_alpha_stats_skill").GetFloat();
+		double healthAlpha  = CVar.FindCVar("wf_hud_alt_alpha_health").GetFloat();
+		double ammoAlpha    = CVar.FindCVar("wf_hud_alt_alpha_ammo").GetFloat();
+		double ammoInvAlpha = CVar.FindCVar("wf_hud_alt_alpha_ammoinv").GetFloat();
+		double powerupAlpha = CVar.FindCVar("wf_hud_alt_alpha_powerup").GetFloat();
+		double weapInvAlpha = CVar.FindCVar("wf_hud_alt_alpha_weapinv").GetFloat();
+		double keysAlpha    = CVar.FindCVar("wf_hud_alt_alpha_keys").GetFloat();
+		double fragsAlpha   = CVar.FindCVar("wf_hud_alt_alpha_frags").GetFloat();
+		double statsAlpha   = CVar.FindCVar("wf_hud_alt_alpha_stats").GetFloat();
+		double infoAlpha    = CVar.FindCVar("wf_hud_alt_alpha_info").GetFloat();
 		
 		// Draw health
 		int hudHealthYOffset = 0;
@@ -459,10 +455,10 @@ extend class WadFusionStatusBar
 						{
 							if ( slotFistBerserk )
 								DrawString(mIndexFont, slotStr, weapInvPos,
-										   DI_SCREEN_RIGHT_BOTTOM, Font.CR_RED, weapInvInactiveAlpha);
+										   DI_SCREEN_RIGHT_BOTTOM, Font.CR_RED, weapInvAlpha * 0.2);
 							else
 								DrawString(mIndexFont, slotStr, weapInvPos,
-										   DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvInactiveAlpha);
+										   DI_SCREEN_RIGHT_BOTTOM, Font.CR_WHITE, weapInvAlpha * 0.2);
 						}
 					}
 					
@@ -491,12 +487,7 @@ extend class WadFusionStatusBar
 		}
 		
 		// Draw stats
-		int statsOffsetL = 0;
-		
-		if ( !altHudStatsDontOffsetL )
-			statsOffsetL = ultraWide;
-		
-		Vector2 statsPos = (4 + statsOffsetL, -72);
+		Vector2 statsPos = (4 + ultraWide, -72);
 		int statsPosYIncrement = 0;
 		
 		if ( altHudStatsIcons )
@@ -506,8 +497,8 @@ extend class WadFusionStatusBar
 		
 		if ( deathmatch && altHudFrags )
 		{
-			DrawImage("M_SKULL1", (20 + statsOffsetL, -64), DI_SCREEN_LEFT_BOTTOM, fragsAlpha);
-			DrawString(mHUDFont, FormatNumber(CPlayer.FragCount, 1), (40 + statsOffsetL, -79),
+			DrawImage("M_SKULL1", (20, -64), DI_SCREEN_LEFT_BOTTOM, fragsAlpha);
+			DrawString(mHUDFont, FormatNumber(CPlayer.FragCount, 1), (40, -79),
 					   DI_SCREEN_LEFT_BOTTOM|DI_NOSHADOW, Font.CR_WHITE, fragsAlpha);
 		}
 		else if ( !deathmatch )
@@ -580,15 +571,15 @@ extend class WadFusionStatusBar
 		}
 		
 		// Draw time
-		int statsOffsetR = 0;
+		int infoOffset = 0;
 		
-		if ( !altHudStatsDontOffsetR )
-			statsOffsetR = ultraWide;
+		if ( !altHudInfoDontOffset )
+			infoOffset = ultraWide;
 		
-		Vector2 timePos = (-4 - statsOffsetR, 0);
+		Vector2 timePos = (-4 - infoOffset, 0);
 		int timePosYIncrement = 9;
 		
-		if ( altHudStatsTime )
+		if ( altHudInfoTime )
 		{
 			int timeTicks = Level.Time;
 			int timeSeconds = Thinker.Tics2Seconds(timeTicks);
@@ -598,13 +589,13 @@ extend class WadFusionStatusBar
 			int millis  = (timeTicks % GameTicRate) * 1000 / GameTicRate;
 			String timeString = String.Format("%02i:%02i:%02i", hours, minutes, seconds);
 			String timeMillisString = String.Format(timeString..".%03i", millis);
-			DrawString(mSmallFontMono, altHudStatsTimeMillis ? timeMillisString : timeString, timePos,
-					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, timeAlpha);
+			DrawString(mSmallFontMono, altHudInfoTimeMillis ? timeMillisString : timeString, timePos,
+					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, infoAlpha);
 			timePos.Y += timePosYIncrement;
 		}
 		
 		// Draw total time
-		if ( altHudStatsTotalTime )
+		if ( altHudInfoTotalTime )
 		{
 			int timeTicks = Level.TotalTime;
 			int timeSeconds = Thinker.Tics2Seconds(timeTicks);
@@ -614,35 +605,35 @@ extend class WadFusionStatusBar
 			int millis  = (timeTicks % GameTicRate) * 1000 / GameTicRate;
 			String timeString = String.Format("%02i:%02i:%02i", hours, minutes, seconds);
 			String timeMillisString = String.Format(timeString..".%03i", millis);
-			DrawString(mSmallFontMono, altHudStatsTimeMillis ? timeMillisString : timeString, timePos,
-					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, timeAlpha);
+			DrawString(mSmallFontMono, altHudInfoTimeMillis ? timeMillisString : timeString, timePos,
+					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, infoAlpha);
 			timePos.Y += timePosYIncrement;
 		}
 		
 		// Draw map name
 		String mapFullName = Level.MapName..": \cj"..Level.LevelName;
 		
-		if ( altHudStatsMapLabel && altHudStatsMapName )
+		if ( altHudInfoMapLabel && altHudInfoMapName )
 		{
 			DrawString(mSmallFont, mapFullName, timePos,
-					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_RED, mapNameAlpha);
+					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_RED, infoAlpha);
 		}
-		else if ( altHudStatsMapLabel )
+		else if ( altHudInfoMapLabel )
 		{
 			DrawString(mSmallFont, Level.MapName, timePos,
-					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_RED, mapNameAlpha);
+					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_RED, infoAlpha);
 		}
-		else if ( altHudStatsMapName )
+		else if ( altHudInfoMapName )
 		{
 			DrawString(mSmallFont, Level.LevelName, timePos,
-					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, mapNameAlpha);
+					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, infoAlpha);
 		}
 		
-		if ( altHudStatsMapLabel || altHudStatsMapName )
+		if ( altHudInfoMapLabel || altHudInfoMapName )
 			timePos.Y += timePosYIncrement;
 		
 		// Draw skill
-		if ( altHudStatsSkill )
+		if ( altHudInfoSkill )
 		{
 			String skillStr = StringTable.Localize("$WF_HUD_STATS_SKILL");
 			String skillName = "";
@@ -670,7 +661,7 @@ extend class WadFusionStatusBar
 			}
 			
 			DrawString(mSmallFont, skillName, timePos,
-					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, skillAlpha);
+					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, infoAlpha);
 			timePos.Y += timePosYIncrement;
 		}
 	}
