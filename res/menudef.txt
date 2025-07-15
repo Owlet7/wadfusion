@@ -385,7 +385,7 @@ OptionMenu "WadFusionHudOptions"
 	Option "$WF_MENU_HUD_ULTRAWIDE_FULLSCREEN",      "wf_hud_ultrawide_fullscreen", "YesNo"
 	StaticText " "
 	Option "$WF_MENU_HUD_ALT",                       "wf_hud_alt",                  "YesNo"
-	Option "$WF_MENU_HUD_ALT_MUGSHOT",               "wf_hud_alt_mugshot",          "YesNo", "wf_hud_alt"
+	Option "$WF_MENU_HUD_ALT_MUGSHOT",               "wf_hud_alt_mugshot",          "WF_HUD_ALT_MUGSHOT", "wf_hud_alt"
 	Option "$WF_MENU_HUD_ALT_HEALTH",                "wf_hud_alt_health",           "YesNo", "wf_hud_alt"
 	Option "$WF_MENU_HUD_ALT_ARMOR",                 "wf_hud_alt_armor",            "YesNo", "wf_hud_alt"
 	Option "$WF_MENU_HUD_ALT_AMMO",                  "wf_hud_alt_ammo",             "YesNo", "wf_hud_alt"
@@ -414,6 +414,13 @@ OptionMenu "WadFusionHudOptions"
 	Slider "$WF_MENU_HUD_ALT_ALPHA_FRAGS",           "wf_hud_alt_alpha_frags",      0.0, 1.0, 0.01, 2, "wf_hud_alt"
 	Slider "$WF_MENU_HUD_ALT_ALPHA_STATS",           "wf_hud_alt_alpha_stats",      0.0, 1.0, 0.01, 2, "wf_hud_alt"
 	Slider "$WF_MENU_HUD_ALT_ALPHA_STATS_INFO",      "wf_hud_alt_alpha_info",       0.0, 1.0, 0.01, 2, "wf_hud_alt"
+}
+
+OptionValue "WF_HUD_ALT_MUGSHOT"
+{
+    0, "$TXT_NO"
+    1, "$WF_MENU_HUD_ALT_MUGSHOT_OPTVAL1"
+    2, "$TXT_YES"
 }
 
 OptionValue "WF_HUD_ALT_STATS_KILLS"

@@ -19,11 +19,6 @@
 //-----------------------------------------------------------------------------
 //
 
-// WadFusion Alt HUD todo:
-// fuzzy mugshot when blur sphere is active
-// negative health option (LowerHealthCap)
-// weapon carousel
-
 extend class WadFusionStatusBar
 {
 	protected void WadFusionAlternateHUD()
@@ -78,7 +73,8 @@ extend class WadFusionStatusBar
 		let hasInfrared              = Powerup(CPlayer.mo.FindInventory("PowerLightAmp"));
 		let hasRadSuit               = Powerup(CPlayer.mo.FindInventory("PowerIronFeet"));
 		
-		let altHudMugshot         = CVar.FindCVar("wf_hud_alt_mugshot").GetBool();
+		let altHudMugshot         = CVar.FindCVar("wf_hud_alt_mugshot").GetInt() >= 2;
+		let altHudMugshotReplace  = CVar.FindCVar("wf_hud_alt_mugshot").GetInt() == 1;
 		let altHudHealth          = CVar.FindCVar("wf_hud_alt_health").GetBool();
 		let altHudArmor           = CVar.FindCVar("wf_hud_alt_armor").GetBool();
 		let altHudAmmo            = CVar.FindCVar("wf_hud_alt_ammo").GetBool();
@@ -112,13 +108,14 @@ extend class WadFusionStatusBar
 		
 		// Draw health
 		int hudHealthYOffset = 0;
+		int hudMugshotXOffset = 0;
 		
-		if ( hudSwapHealthArmor || !altHudHealth )
+		if ( ( hudSwapHealthArmor || !altHudHealth ) && altHudArmor )
 			hudHealthYOffset = 27;
 		
 		if ( altHudHealth )
 		{
-			if ( !altHudMugshot )
+			if ( !altHudMugshotReplace )
 				DrawImage(hasBerserk ? "PSTRA0" : "MEDIA0", (20 + ultraWide, -10 - hudHealthYOffset),
 						  DI_SCREEN_LEFT_BOTTOM, healthAlpha);
 			else
@@ -138,6 +135,13 @@ extend class WadFusionStatusBar
 			DrawString(mHUDFont, FormatNumber(health, 1), (40 + ultraWide, -25 - hudHealthYOffset),
 					   DI_SCREEN_LEFT_BOTTOM|DI_NOSHADOW, healthColor, healthAlpha);
 		}
+		
+		if ( !altHudHealth && !altHudArmor )
+			hudMugshotXOffset = 81;
+		
+		if ( altHudMugshot )
+			DrawTexture(GetMugShot(5), (84 - hudMugshotXOffset + ultraWide, -35),
+						DI_ITEM_OFFSETS|DI_SCREEN_LEFT_BOTTOM, healthAlpha);
 		
 		// Draw armor
 		if ( altHudArmor )

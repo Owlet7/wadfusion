@@ -90,6 +90,7 @@ WF_MENU_HUD_ULTRAWIDE,,,Fullscreen HUD horizontal offset,,,,Horizontaler Versatz
 WF_MENU_HUD_ULTRAWIDE_FULLSCREEN,,,Only use horizontal offset in fullscreen mode,,,,Nutze horizontalen Versatz nur im Vollbild-Modus,,,,,,,,,,,,,,Przesunięcie w poziomie tylko w trybie pełnoekranowym,,,,Использовать горизонтальное смещение только в полноэкранном режиме,,,
 WF_MENU_HUD_ALT,,,Use WadFusion’s alternate fullscreen HUD,,,,Nutze WadFusion's alternatives Vollbild-HUD,,,,,,,,,,,,,,Korzystaj z alternatywnego pełnoekranowego HUD WadFusion,,,,Использовать альтернативное полноэкранное отображение информации WadFusion,,,
 WF_MENU_HUD_ALT_MUGSHOT,,,Show mug shot,,,,Zeige Gesicht,,,,,,,,,,,,,,Pokaż portret,,,,Отображать портрет,,,
+WF_MENU_HUD_ALT_MUGSHOT_OPTVAL1,,,Yes (replace medikit),,,,,,,,,,,,,,,,,,,,,,Да (заменять аптечку),,,
 WF_MENU_HUD_ALT_HEALTH,,,Show health,,,,Zeige Gesundheit,,,,,,,,,,,,,,Pokaż zdrowie,,,,Отображать здоровье,,,
 WF_MENU_HUD_ALT_ARMOR,,,Show armor,Show armour,,,Zeige Rüstung,,,,,,,,,,,,,,Pokaż zbroję,,,,Отображать броню,,,
 WF_MENU_HUD_ALT_AMMO,,,Show ammo,,,,Zeige Munition,,,,,,,,,,,,,,Pokaż amunicję,,,,Отображать патроны,,,
