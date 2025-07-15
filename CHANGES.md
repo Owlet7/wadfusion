@@ -29,8 +29,13 @@
   credits menus.
 - Added an option to view all the "Help" screens.
 - Added "ID24 status bars" compatibility option.
-- Added options to not horizontally offset the alternate fullscreen HUD stats.
+- Added option to show both the medikit and the mug shot in the alternate
+  fullscreen HUD.
+- Added option to not horizontally offset the alternate fullscreen HUD map info.
 - Added an option to show the skill level on the alternate fullscreen HUD stats.
+- Localised some menu and HUD elements.
+- Updated German and Russian localisations.
+- Combined the transparency options for some alternate fullscreen HUD elements.
 - Made some of the fonts on the alternate fullscreen HUD non-monospace.
 - Added `-h` and `--help` command line arguments. If used, the script will list
   the available command line arguments.
