@@ -293,9 +293,7 @@ class WadFusionStatusBar : BaseStatusBar
 				DrawInventoryBar(diparms, (0, 0), 7, DI_SCREEN_CENTER_BOTTOM, HX_SHADOW);
 		}
 		else
-		{
-			WadFusionAlternateHUD(); // Draw WadFusion's alternate fullscreen HUD -- wf_sbar_alt.zs
-		}
+			WadFusionAlternateHUD(); // wf_sbar_alt.zs
 	}
 	
 	protected virtual void DrawFullscreenKeys()
