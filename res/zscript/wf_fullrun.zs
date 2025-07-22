@@ -106,8 +106,7 @@ extend class WadFusionStaticHandler
 			if ( mapName == "map30" )
 				intermission = "Inter_Cast";
 			if ( ( mapName == "ml_map20" && !rejects ) || mapName == "ml_map43" )
-				// also needed for xaser order
-				intermission = "MasterLevels_End";
+				intermission = "MasterLevels_End"; // also needed for xaser order
 			if ( mapName == "nv_map08" )
 				intermission = "Inter_Cast";
 			if ( mapName == "lr_map07" )
@@ -529,61 +528,24 @@ extend class WadFusionStaticHandler
 	
 	void FullRunStory()
 	{
-		int fullRun = CVar.FindCVar("wf_fullrun").GetInt();
 		let rejects = CVar.FindCVar("wf_map_mlr").GetBool();
-		let titlePic = CVar.FindCVar("wf_compat_titlepics").GetBool();
 		string mapName = Level.MapName.MakeLower();
 		
-		if ( mapName == "e1m8" || mapName == "e1m8b" )
-		{
-			Level.NextMap = "wf_story";
-		}
-		if ( mapName == "e2m8" )
-		{
-			Level.NextMap = "wf_story";
-		}
-		if ( mapName == "e3m8" )
-		{
-			Level.NextMap = "wf_story";
-		}
-		if ( mapName == "e4m8" )
-		{
-			Level.NextMap = "wf_story";
-		}
-		if ( mapName == "e5m8" )
-		{
-			Level.NextMap = "wf_story";
-		}
-		if ( mapName == "e6m8" )
-		{
-			Level.NextMap = "wf_story";
-		}
-		if ( mapName == "map30" )
-		{
-			Level.NextMap = "wf_story";
-		}
-		if ( ( mapName == "ml_map20" && !rejects ) || mapName == "ml_map43" )
-		{
-			// also needed for xaser order
-			Level.NextMap = "wf_story";
-		}
-		if ( mapName == "nv_map08" )
-		{
-			Level.NextMap = "wf_story";
-		}
-		if ( mapName == "lr_map07" )
-		{
-			Level.NextMap = "wf_story";
-		}
-		if ( mapName == "lr_map14" )
-		{
-			Level.NextMap = "wf_story";
-		}
-		if ( mapName == "tn_map30" )
-		{
-			Level.NextMap = "wf_story";
-		}
-		if ( mapName == "pl_map30" )
+		if ( mapName == "e1m8" ||
+			 mapName == "e1m8b" ||
+			 mapName == "e2m8" ||
+			 mapName == "e3m8" ||
+			 mapName == "e4m8" ||
+			 mapName == "e5m8" ||
+			 mapName == "e6m8" ||
+			 mapName == "map30" ||
+			 ( mapName == "ml_map20" && !rejects ) || // also needed for xaser order
+			 mapName == "ml_map43" ||
+			 mapName == "nv_map08" ||
+			 mapName == "lr_map07" ||
+			 mapName == "lr_map14" ||
+			 mapName == "tn_map30" ||
+			 mapName == "pl_map30" )
 		{
 			Level.NextMap = "wf_story";
 		}
