@@ -57,7 +57,7 @@ extend class WadFusionStaticHandler
 				// change to the map which was set in NewGameIntro() or FullRun()
 				if ( Level.MapTime >= 1 )
 				{
-					if ( !fullRunEnd )
+					if ( !fullRunFinished )
 						Level.ChangeLevel(nextMap, 0, CHANGELEVEL_RESETINVENTORY|CHANGELEVEL_RESETHEALTH|CHANGELEVEL_NOINTERMISSION);
 					// try changing to a level that doesn't exist
 					// this triggets the default ending sequence -- Fusion_GotoTitle
@@ -98,24 +98,24 @@ extend class WadFusionStaticHandler
 			EventHandler.SendNetworkEvent("IntermissionStoryEvent");
 	}
 	
-	void FullRunEndMultiplayerTakeStuff()
+	void FullRunMultiplayerTakeStuff()
 	{
 		string mapName = Level.MapName.MakeLower();
 		
 		if ( mapName == "wf_story" && Level.MapTime == 0 )
 		{
-			if ( fullRunEnd && multiplayer )
+			if ( fullRunFinished && multiplayer )
 				ForcePistolStart();
 		}
 	}
 	
-	ui void FullRunEndMultiplayer()
+	ui void FullRunMultiplayer()
 	{
 		string mapName = Level.MapName.MakeLower();
 		
 		if ( mapName == "wf_story" )
 		{
-			if ( fullRunEnd && multiplayer )
+			if ( fullRunFinished && multiplayer )
 				Screen.DrawText(smallfont, Font.CR_UNTRANSLATED, 1, 1, "$WF_FULLRUN_END_MULTIPLAYER", DTA_320x200, true);
 		}
 	}

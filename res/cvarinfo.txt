@@ -8,6 +8,7 @@ server bool wf_map_mlr_story = false;
 server bool wf_intros = false;
 server int wf_fullrun = 0;
 server bool wf_fullrun_cast = false;
+server bool wf_fullrun_loop = false;
 user bool wf_id24trans = false;
 
 server int wf_compat_id24_weapons = 1;

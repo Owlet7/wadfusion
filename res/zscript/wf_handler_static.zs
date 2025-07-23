@@ -23,7 +23,7 @@ class WadFusionStaticHandler : StaticEventHandler
 	string nextMap;
 	string intermission;
 	bool fullRunNewGame;
-	bool fullRunEnd;
+	bool fullRunFinished;
 	
 	override void OnEngineInitialize()
 	{
@@ -65,7 +65,7 @@ class WadFusionStaticHandler : StaticEventHandler
 			nextMap = "";
 			intermission = "";
 			fullRunNewGame = false;
-			fullRunEnd = false;
+			fullRunFinished = false;
 		}
 	}
 	
@@ -104,13 +104,13 @@ class WadFusionStaticHandler : StaticEventHandler
 		NewGameIntro(); // wf_newgame.zs
 		IntermissionStory(); // wf_story.zs
 		
-		FullRunEndMultiplayerTakeStuff(); // wf_story.zs
+		FullRunMultiplayerTakeStuff(); // wf_story.zs
 	}
 	
 	override void RenderOverlay(RenderEvent e)
 	{
 		NewGameTitlePic(); // wf_newgame.zs
-		FullRunEndMultiplayer(); // wf_story.zs
+		FullRunMultiplayer(); // wf_story.zs
 	}
 	
 	override bool InputProcess(InputEvent e)

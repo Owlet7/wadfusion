@@ -32,6 +32,7 @@ extend class WadFusionStaticHandler
 		CVar.FindCVar("wf_intros").ResetToDefault();
 		CVar.FindCVar("wf_fullrun").ResetToDefault();
 		CVar.FindCVar("wf_fullrun_cast").ResetToDefault();
+		CVar.FindCVar("wf_fullrun_loop").ResetToDefault();
 		CVar.FindCVar("wf_id24trans").ResetToDefault();
 		
 		CVar.FindCVar("wf_compat_id24_weapons").ResetToDefault();
