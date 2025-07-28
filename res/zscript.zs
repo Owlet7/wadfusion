@@ -20,6 +20,8 @@
 
 version "4.15.1"
 
+const WF_VERSION = "1.6.0-dev";
+
 #include "zscript/wf_handler.zs"
 #include "zscript/wf_handler_static.zs"
 #include "zscript/wf_tex_swap.zs"

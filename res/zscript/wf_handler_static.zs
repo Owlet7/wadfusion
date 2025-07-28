@@ -20,15 +20,20 @@
 
 class WadFusionStaticHandler : StaticEventHandler
 {
-	string nextMap;
-	string intermission;
+	String nextMap;
+	String intermission;
 	bool fullRunNewGame;
 	bool fullRunFinished;
 	
+	override void OnRegister()
+	{
+		Console.Printf("WadFusion version "..WF_VERSION);
+	}
+	
 	override void OnEngineInitialize()
 	{
-		if ( Wads.CheckNumForFullName('music/d_dm2ttl.mus') == -1 )
-			S_ChangeMusic('d_intro', 0, false);
+		if ( Wads.CheckNumForFullName("music/d_dm2ttl.mus") == -1 )
+			S_ChangeMusic("d_intro", 0, false);
 	}
 	
 	override void PostUiTick()
