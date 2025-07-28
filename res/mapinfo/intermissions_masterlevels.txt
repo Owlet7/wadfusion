@@ -19,9 +19,14 @@ intermission MasterLevels_Map30
 {
 	TextScreen
 	{
-		Text = "$ML4STORY2"
+		Text = "$ML4STORY2_1"
 		Background = "$FLAT14", 1
 		Music = "$MUSIC_READ_M"
+	}
+	
+	TextScreen
+	{
+		Text = "$ML4STORY2_2"
 	}
 }
 
@@ -114,9 +119,14 @@ intermission MasterLevels_Map13
 {
 	TextScreen
 	{
-		Text = "$ML5STORY5"
+		Text = "$ML5STORY5_1"
 		Background = "$RROCK11", 1
 		Music = "$MUSIC_READ_M"
+	}
+	
+	TextScreen
+	{
+		Text = "$ML5STORY5_2"
 	}
 }
 

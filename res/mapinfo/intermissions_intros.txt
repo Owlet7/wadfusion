@@ -28,6 +28,21 @@ intermission Doom1_Intro
 	{
 		Text = "$D1INTRO4"
 	}
+	
+	TextScreen
+	{
+		Text = "$D1INTRO5"
+	}
+	
+	TextScreen
+	{
+		Text = "$D1INTRO6"
+	}
+	
+	TextScreen
+	{
+		Text = "$D1INTRO7"
+	}
 }
 
 intermission Sigil_Intro
@@ -77,6 +92,16 @@ intermission Doom2_Intro
 	TextScreen
 	{
 		Text = "$D2INTRO5"
+	}
+	
+	TextScreen
+	{
+		Text = "$D2INTRO6"
+	}
+	
+	TextScreen
+	{
+		Text = "$D2INTRO7"
 	}
 }
 
@@ -142,6 +167,11 @@ intermission Tnt_Intro
 	TextScreen
 	{
 		Text = "$TNINTRO7"
+	}
+	
+	TextScreen
+	{
+		Text = "$TNINTRO8"
 	}
 }
 
