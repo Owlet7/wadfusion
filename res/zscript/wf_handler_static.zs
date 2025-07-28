@@ -27,7 +27,7 @@ class WadFusionStaticHandler : StaticEventHandler
 	
 	override void OnRegister()
 	{
-		Console.Printf("WadFusion version "..WF_VERSION);
+		Console.Printf(StringTable.Localize("$WF_TITLE").." version "..WF_VERSION);
 	}
 	
 	override void OnEngineInitialize()
