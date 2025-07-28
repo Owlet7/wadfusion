@@ -34,7 +34,10 @@
 - Added option to not horizontally offset the alternate fullscreen HUD map info.
 - Added an option to show the skill level on the alternate fullscreen HUD stats.
 - Localised some menu and HUD elements.
-- Updated German and Russian localisations.
+- Added partial Brazilian Portuguese localisation. @maverick-hunter
+- Updated German localisation. @Meerschweinmann
+- Updated Russian localisation.
+- Updated Polish localisation (machine translation).
 - Combined the transparency options for some alternate fullscreen HUD elements.
 - Made some of the fonts on the alternate fullscreen HUD non-monospace.
 - Added `-h` and `--help` command line arguments. If used, the script will list
