@@ -4,11 +4,11 @@
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.1...HEAD)
 - Removed ID24 actors, as they were merged into GZDoom.
   - **GZDoom must be updated to dev build g4.15pre-230 or newer!**
-- Added "Game intros" option.
-  - If turned on, each games' title screen (with music) will be shown when
-    starting a new game.
-  - Optionally, can also include "intermissions" at the start of campaigns, with
-    story texts taken from each games' instrustion manuals.
+- Added title screen when starting new games.
+  - Added "Intro title screens" compatibility option to automatically skip them.
+- Added "Intro stories" option to include "intermissions" at the start of
+  campaigns, with story texts taken from each games' instrustion manuals.
+  - Requires title screens to be enabled.
 - Added an option to toggle between Xaser's order for the Master Levels, and the
   Rejects order.
   - Added optional story intermissions for the Master Levels Rejects map order,
@@ -19,7 +19,7 @@
   - The order in which the episodes are played can be switched between "Default
     order", which is the order in which they are listed on the "New Game" menu,
     "Chronological order", or "Release order".
-- Added "Music Substitutions" options.
+- Added "Music substitutions" compatibility options.
   - These can be used to force Final DOOM music in DOOM II on a per-map basis.
 - Moved all texture substitution options to a sub-menu.
 - Fixed the background graphics in Final DOOM's endings.
