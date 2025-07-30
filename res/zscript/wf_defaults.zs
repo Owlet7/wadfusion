@@ -205,6 +205,7 @@ extend class WadFusionStaticHandler
 		CVar.FindCVar("wf_hud_alt_info_timemillis").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_info_mapname").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_info_maplabel").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_info_mapauthor").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_info_skill").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_info_dontoffset").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_alpha_health").ResetToDefault();

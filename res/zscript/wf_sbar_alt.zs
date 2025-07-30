@@ -104,6 +104,7 @@ extend class WadFusionStatusBar
 		let altHudInfoTimeMillis  = CVar.FindCVar("wf_hud_alt_info_timemillis").GetBool();
 		let altHudInfoMapName     = CVar.FindCVar("wf_hud_alt_info_mapname").GetBool();
 		let altHudInfoMapLabel    = CVar.FindCVar("wf_hud_alt_info_maplabel").GetBool();
+		let altHudInfoMapAuthor   = CVar.FindCVar("wf_hud_alt_info_mapauthor").GetBool();
 		let altHudInfoSkill       = CVar.FindCVar("wf_hud_alt_info_skill").GetBool();
 		let altHudInfoDontOffset  = CVar.FindCVar("wf_hud_alt_info_dontoffset").GetBool();
 		
@@ -575,6 +576,14 @@ extend class WadFusionStatusBar
 		
 		if ( altHudInfoMapLabel || altHudInfoMapName )
 			infoPos.Y += infoPosYIncrement;
+		
+		// Draw map author name
+		if ( altHudInfoMapAuthor )
+		{
+			String mapAuthorName = StringTable.Localize(Level.AuthorName);
+			DrawString(mSmallFont, mapAuthorName, infoPos, DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, infoAlpha);
+			infoPos.Y += infoPosYIncrement;
+		}
 		
 		// Draw skill
 		if ( altHudInfoSkill )

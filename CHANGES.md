@@ -29,10 +29,11 @@
   credits menus.
 - Added an option to view all the "Help" screens.
 - Added "ID24 status bars" compatibility option.
-- Added option to show both the medikit and the mug shot in the alternate
+- Added an option to show both the medikit and the mug shot in the alternate
   fullscreen HUD.
-- Added option to not horizontally offset the alternate fullscreen HUD map info.
-- Added an option to show the skill level on the alternate fullscreen HUD stats.
+- Added "Show map author" option for the alternate fullscreen HUD.
+- Added "Show skill level" option for the alternate fullscreen HUD.
+- Added "Don't offset map info" option for the alternate fullscreen HUD.
 - Localised some menu and HUD elements.
 - Added partial Brazilian Portuguese localisation. @maverick-hunter
 - Updated German localisation. @Meerschweinmann

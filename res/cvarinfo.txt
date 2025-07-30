@@ -181,6 +181,7 @@ nosave bool wf_hud_alt_info_totaltime = false;
 nosave bool wf_hud_alt_info_timemillis = false;
 nosave bool wf_hud_alt_info_mapname = false;
 nosave bool wf_hud_alt_info_maplabel = false;
+nosave bool wf_hud_alt_info_mapauthor = false;
 nosave bool wf_hud_alt_info_skill = false;
 nosave bool wf_hud_alt_info_dontoffset = false;
 nosave float wf_hud_alt_alpha_health = 1.0;
