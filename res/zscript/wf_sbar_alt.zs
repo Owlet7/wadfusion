@@ -527,8 +527,8 @@ extend class WadFusionStatusBar
 		if ( !altHudInfoDontOffset )
 			infoOffset = ultraWide;
 		
-		Vector2 timePos = (-4 - infoOffset, 0);
-		int timePosYIncrement = 9;
+		Vector2 infoPos = (-4 - infoOffset, 0);
+		int infoPosYIncrement = 9;
 		
 		if ( altHudInfoTime )
 		{
@@ -540,9 +540,10 @@ extend class WadFusionStatusBar
 			int millis  = (timeTicks % GameTicRate) * 1000 / GameTicRate;
 			String timeString = String.Format("%02i:%02i:%02i", hours, minutes, seconds);
 			String timeMillisString = String.Format(timeString..".%03i", millis);
-			DrawString(mSmallFontMono, altHudInfoTimeMillis ? timeMillisString : timeString, timePos,
-					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, infoAlpha);
-			timePos.Y += timePosYIncrement;
+			let mapParTime = ( timeSeconds <= Level.ParTime ) && Level.ParTime > 0;
+			DrawString(mSmallFontMono, altHudInfoTimeMillis ? timeMillisString : timeString, infoPos,
+					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, mapParTime ? Font.CR_GOLD : Font.CR_WHITE, infoAlpha);
+			infoPos.Y += infoPosYIncrement;
 		}
 		
 		// Draw total time
@@ -556,23 +557,24 @@ extend class WadFusionStatusBar
 			int millis  = (timeTicks % GameTicRate) * 1000 / GameTicRate;
 			String timeString = String.Format("%02i:%02i:%02i", hours, minutes, seconds);
 			String timeMillisString = String.Format(timeString..".%03i", millis);
-			DrawString(mSmallFontMono, altHudInfoTimeMillis ? timeMillisString : timeString, timePos,
+			DrawString(mSmallFontMono, altHudInfoTimeMillis ? timeMillisString : timeString, infoPos,
 					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, infoAlpha);
-			timePos.Y += timePosYIncrement;
+			infoPos.Y += infoPosYIncrement;
 		}
 		
 		// Draw map name
-		String mapFullName = Level.MapName..": \cj"..Level.LevelName;
-		
 		if ( altHudInfoMapLabel && altHudInfoMapName )
-			DrawString(mSmallFont, mapFullName, timePos, DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_RED, infoAlpha);
+		{
+			String mapFullName = Level.MapName..": \cj"..Level.LevelName;
+			DrawString(mSmallFont, mapFullName, infoPos, DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_RED, infoAlpha);
+		}
 		else if ( altHudInfoMapLabel )
-			DrawString(mSmallFont, Level.MapName, timePos, DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_RED, infoAlpha);
+			DrawString(mSmallFont, Level.MapName, infoPos, DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_RED, infoAlpha);
 		else if ( altHudInfoMapName )
-			DrawString(mSmallFont, Level.LevelName, timePos, DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, infoAlpha);
+			DrawString(mSmallFont, Level.LevelName, infoPos, DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, infoAlpha);
 		
 		if ( altHudInfoMapLabel || altHudInfoMapName )
-			timePos.Y += timePosYIncrement;
+			infoPos.Y += infoPosYIncrement;
 		
 		// Draw skill
 		if ( altHudInfoSkill )
@@ -602,8 +604,8 @@ extend class WadFusionStatusBar
 					break;
 			}
 			
-			DrawString(mSmallFont, skillName, timePos, DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, infoAlpha);
-			timePos.Y += timePosYIncrement;
+			DrawString(mSmallFont, skillName, infoPos, DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, infoAlpha);
+			infoPos.Y += infoPosYIncrement;
 		}
 	}
 }
