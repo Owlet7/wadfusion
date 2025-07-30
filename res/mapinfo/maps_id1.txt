@@ -48,7 +48,7 @@ adddefaultmap
 map LR_MAP01 "$XHUSTR_1"
 {
 	Next = "LR_MAP02"
-	TitlePatch = "XWILV00"
+	TitlePatch = "XWILV00", 1
 	Sky1 =  "SKYX1"
 	Music = "D_WELCOM"
 	Author = "$WF_AU_VILLARREAL"
@@ -58,7 +58,7 @@ map LR_MAP02 "$XHUSTR_2"
 {
 	Next = "LR_MAP03"
 	SecretNext = "LR_MAP15"
-	TitlePatch = "XWILV01"
+	TitlePatch = "XWILV01", 1
 	Sky1 =  "SKYX3"
 	Music = "D_SHORES"
 	Author = "$WF_AU_XASER"
@@ -67,7 +67,7 @@ map LR_MAP02 "$XHUSTR_2"
 map LR_MAP03 "$XHUSTR_3"
 {
 	Next = "LR_MAP04"
-	TitlePatch = "XWILV02"
+	TitlePatch = "XWILV02", 1
 	Sky1 =  "SKYX3"
 	Music = "D_BILGE"
 	Author = "$WF_AU_CARTER"
@@ -76,7 +76,7 @@ map LR_MAP03 "$XHUSTR_3"
 map LR_MAP04 "$XHUSTR_4"
 {
 	Next = "LR_MAP05"
-	TitlePatch = "XWILV03"
+	TitlePatch = "XWILV03", 1
 	Sky1 =  "SKYX3"
 	Music = "D_REGARD"
 	Author = "$WF_AU_VILLARREAL"
@@ -85,7 +85,7 @@ map LR_MAP04 "$XHUSTR_4"
 map LR_MAP05 "$XHUSTR_5"
 {
 	Next = "LR_MAP06"
-	TitlePatch = "XWILV04"
+	TitlePatch = "XWILV04", 1
 	Sky1 =  "SKYZ4"
 	Music = "D_LAUGH"
 	Author = "$WF_AU_VILLARREAL"
@@ -94,7 +94,7 @@ map LR_MAP05 "$XHUSTR_5"
 map LR_MAP06 "$XHUSTR_6"
 {
 	Next = "LR_MAP07"
-	TitlePatch = "XWILV05"
+	TitlePatch = "XWILV05", 1
 	Sky1 =  "SKYX4A"
 	Music = "D_CLOUDY"
 	Author = "$WF_AU_XASER"
@@ -104,7 +104,7 @@ map LR_MAP07 "$XHUSTR_7"
 {
 	// Next = EndPic, "CREDITLR"
 	Next = EndSequence, "Id1_Ep1_Fusion"
-	TitlePatch = "XWILV06"
+	TitlePatch = "XWILV06", 1
 	Sky1 =  "SKYX4A"
 	Music = "D_TACTIC"
 	Author = "$WF_AU_VILLARREAL"
@@ -115,7 +115,7 @@ map LR_MAP07 "$XHUSTR_7"
 map LR_MAP15 "$XHUSTR_8"
 {
 	Next = "LR_MAP03"
-	TitlePatch = "XWILV07"
+	TitlePatch = "XWILV07", 1
 	Sky1 =  "SKYX3"
 	Music = "D_OPENIN"
 	Author = "$WF_AU_XASER"
@@ -133,7 +133,7 @@ adddefaultmap
 map LR_MAP08 "$XHUSTR_9"
 {
 	Next = "LR_MAP09"
-	TitlePatch = "XWILV10"
+	TitlePatch = "XWILV10", 1
 	Sky1 =  "SKYX2"
 	Music = "D_BONK"
 	Author = "$WF_AU_WATSON_XASER"
@@ -142,7 +142,7 @@ map LR_MAP08 "$XHUSTR_9"
 map LR_MAP09 "$XHUSTR_10"
 {
 	Next = "LR_MAP10"
-	TitlePatch = "XWILV11"
+	TitlePatch = "XWILV11", 1
 	Sky1 =  "SKYX2"
 	Music = "D_DRIVER"
 	Author = "$WF_AU_VILLARREAL"
@@ -152,7 +152,7 @@ map LR_MAP10 "$XHUSTR_11"
 {
 	Next = "LR_MAP11"
 	SecretNext = "LR_MAP16"
-	TitlePatch = "XWILV12"
+	TitlePatch = "XWILV12", 1
 	Sky1 =  "SKYX2"
 	Music = "D_WIZARD"
 	Author = "$WF_AU_WATSON"
@@ -161,7 +161,7 @@ map LR_MAP10 "$XHUSTR_11"
 map LR_MAP11 "$XHUSTR_12"
 {
 	Next = "LR_MAP12"
-	TitlePatch = "XWILV13"
+	TitlePatch = "XWILV13", 1
 	Sky1 =  "SKYX2"
 	Music = "D_DEJAVU"
 	Author = "$WF_AU_VILLARREAL"
@@ -170,7 +170,7 @@ map LR_MAP11 "$XHUSTR_12"
 map LR_MAP12 "$XHUSTR_13"
 {
 	Next = "LR_MAP13"
-	TitlePatch = "XWILV14"
+	TitlePatch = "XWILV14", 1
 	Sky1 =  "SKYX4A"
 	Music = "D_DISGUS"
 	Author = "$WF_AU_VILLARREAL"
@@ -179,7 +179,7 @@ map LR_MAP12 "$XHUSTR_13"
 map LR_MAP13 "$XHUSTR_14"
 {
 	Next = "LR_MAP14"
-	TitlePatch = "XWILV15"
+	TitlePatch = "XWILV15", 1
 	Sky1 =  "SKYX4A"
 	Music = "D_VESPER"
 	E2M8Special
@@ -191,7 +191,7 @@ map LR_MAP13 "$XHUSTR_14"
 map LR_MAP14 "$XHUSTR_15"
 {
 	Next = EndSequence, "Id1Cast"
-	TitlePatch = "XWILV16"
+	TitlePatch = "XWILV16", 1
 	Sky1 =  "SKYX5A"
 	Music = "D_SKELET"
 	SpecialAction = "ID24TyrantBoss1", "Floor_LowerToNearest", 666, 8
@@ -204,7 +204,7 @@ map LR_MAP14 "$XHUSTR_15"
 map LR_MAP16 "$XHUSTR_16"
 {
 	Next = "LR_MAP11"
-	TitlePatch = "XWILV17"
+	TitlePatch = "XWILV17", 1
 	Sky1 =  "SKYX2"
 	Music = "D_HELFOR"
 	Author = "$WF_AU_XASER"

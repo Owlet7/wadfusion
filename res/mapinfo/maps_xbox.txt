@@ -14,7 +14,7 @@ map E1M10 "$HUSTR_E1M10"
 	Cluster = 1
 	// The sky gets replaced by texture substitution compatibility options
 	Sky1 = "SKY3"
-	TitlePatch = "WILV39"
+	TitlePatch = "WILV39", 1
 	Par = 150
 	Music = "$MUSIC_E2M1"
 	ExitPic = "$IN_EPI1"
@@ -28,7 +28,7 @@ map MAP33 "$HUSTR_33"
 	Next = "MAP03"
 	Cluster = 5
 	Sky1 = "SKY1"
-	TitlePatch = "CWILV32"
+	TitlePatch = "CWILV32", 1
 	Par = 120
 	Music = "D_READ_M"
 	Author = "$WF_AU_BUKOWSKI"

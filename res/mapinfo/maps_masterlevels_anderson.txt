@@ -14,21 +14,21 @@ defaultmap
 map ML_MAP11 "$ML_VIRGIL"
 {
 	Next = "ML_MAP12"
-	TitlePatch = "MWILV10"
+	TitlePatch = "MWILV10", 1
 	Music = "$MUSIC_COUNTD"
 }
 
 map ML_MAP12 "$ML_MINOS"
 {
 	Next = "ML_MAP13"
-	TitlePatch = "MWILV11"
+	TitlePatch = "MWILV11", 1
 	Music = "$MUSIC_DOOM"
 }
 
 map ML_MAP13 "$ML_NESSUS"
 {
 	Next = "ML_MAP14"
-	TitlePatch = "MWILV12"
+	TitlePatch = "MWILV12", 1
 	Music = "$MUSIC_SHAWN"
 	Map07Special
 }
@@ -36,14 +36,14 @@ map ML_MAP13 "$ML_NESSUS"
 map ML_MAP14 "$ML_GERYON"
 {
 	Next = "ML_MAP15"
-	TitlePatch = "MWILV13"
+	TitlePatch = "MWILV13", 1
 	Music = "$MUSIC_DDTBLU"
 }
 
 map ML_MAP15 "$ML_VESPERAS"
 {
 	Next = "ML_MAP16"
-	TitlePatch = "MWILV14"
+	TitlePatch = "MWILV14", 1
 	Music = "$MUSIC_IN_CIT"
 }
 
@@ -52,7 +52,7 @@ map ML_MAP15 "$ML_VESPERAS"
 map ML_MAP33 "$ML_DANTES"
 {
 	Next = "ML_MAP34"
-	TitlePatch = "MWILV32"
+	TitlePatch = "MWILV32", 1
 	Music = "$MUSIC_STALKS"
 	ResetHealth
 	ResetInventory
@@ -62,7 +62,7 @@ map ML_MAP33 "$ML_DANTES"
 map ML_MAP34 "$ML_ACHERON"
 {
 	Next = "ML_MAP11"
-	TitlePatch = "MWILV33"
+	TitlePatch = "MWILV33", 1
 	Music = "$MUSIC_COUNTD"
 }
 
@@ -70,7 +70,7 @@ map ML_MAP35 "$ML_CHIRON" // duplicate of E4M7
 {
 	Next = "ML_MAP36"
 	Sky1 = "SKY4"
-	TitlePatch = "MWILV34"
+	TitlePatch = "MWILV34", 1
 	Par = 135
 	Music = "$MUSIC_E2M6"
 }
@@ -79,7 +79,7 @@ map ML_MAP36 "$ML_LETHE" // UDTWiD's E4M8 - An End to Darkness
 {
 	Next = "ML_MAP19"
 	Sky1 = "SKY4"
-	TitlePatch = "MWILV35"
+	TitlePatch = "MWILV35", 1
 	Par = 105
 	Music = "$MUSIC_E2M5"
 	SpiderMastermindSpecial

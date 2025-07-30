@@ -21,7 +21,7 @@ map E6M1 "$HUSTR_E6M1"
 {
 	LevelNum = 51
 	Next = "E6M2"
-	TitlePatch = "WILV50"
+	TitlePatch = "WILV50", 1
 	Par = 480
 }
 
@@ -29,7 +29,7 @@ map E6M2 "$HUSTR_E6M2"
 {
 	LevelNum = 52
 	Next = "E6M3"
-	TitlePatch = "WILV51"
+	TitlePatch = "WILV51", 1
 	Par = 300
 }
 
@@ -38,7 +38,7 @@ map E6M3 "$HUSTR_E6M3"
 	LevelNum = 53
 	Next = "E6M4"
 	SecretNext = "E6M9"
-	TitlePatch = "WILV52"
+	TitlePatch = "WILV52", 1
 	Par = 240
 }
 
@@ -46,7 +46,7 @@ map E6M4 "$HUSTR_E6M4"
 {
 	LevelNum = 54
 	Next = "E6M5"
-	TitlePatch = "WILV53"
+	TitlePatch = "WILV53", 1
 	Par = 420
 }
 
@@ -54,7 +54,7 @@ map E6M5 "$HUSTR_E6M5"
 {
 	LevelNum = 55
 	Next = "E6M6"
-	TitlePatch = "WILV54"
+	TitlePatch = "WILV54", 1
 	Par = 510
 }
 
@@ -62,7 +62,7 @@ map E6M6 "$HUSTR_E6M6"
 {
 	LevelNum = 56
 	Next = "E6M7"
-	TitlePatch = "WILV55"
+	TitlePatch = "WILV55", 1
 	Par = 840
 }
 
@@ -70,7 +70,7 @@ map E6M7 "$HUSTR_E6M7"
 {
 	LevelNum = 57
 	Next = "E6M8"
-	TitlePatch = "WILV56"
+	TitlePatch = "WILV56", 1
 	Par = 960
 }
 
@@ -79,7 +79,7 @@ map E6M8 "$HUSTR_E6M8"
 	LevelNum = 58
 	// Next = EndPic, "SIGILEN2"
 	Next = EndSequence, "Doom1_Ep6_Fusion"
-	TitlePatch = "WILV57"
+	TitlePatch = "WILV57", 1
 	Par = 390
 	NoSoundClipping
 }
@@ -88,6 +88,6 @@ map E6M9 "$HUSTR_E6M9"
 {
 	LevelNum = 59
 	Next = "E6M4"
-	TitlePatch = "WILV58"
+	TitlePatch = "WILV58", 1
 	Par = 450
 }

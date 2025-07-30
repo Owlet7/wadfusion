@@ -18,7 +18,7 @@ map E1M4B "$HUSTR_E1M4B"
 {
 	Next = "E1M5"
 	Cluster = 30
-	TitlePatch = "WILV03B"
+	TitlePatch = "WILV03B", 1
 	Music = "$MUSIC_E1M4"
 }
 
@@ -27,7 +27,7 @@ map E1M8B "$HUSTR_E1M8B"
 	// Next = "EndGame1"
 	Next = EndSequence, "Doom1_Ep1_Fusion"
 	Cluster = 31
-	TitlePatch = "WILV07B"
+	TitlePatch = "WILV07B", 1
 	Music = "$MUSIC_E1M8"
 	NoIntermission
 	E1M8Special

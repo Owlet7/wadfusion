@@ -26,7 +26,7 @@ map E1M1 "$HUSTR_E1M1"
 	LevelNum = 1
 	Next = "E1M2"
 	SecretNext = "E1M10"
-	TitlePatch = "WILV00"
+	TitlePatch = "WILV00", 1
 	Par = 30
 	Music = "$MUSIC_E1M1"
 	Author = "$WF_AU_ROMERO"
@@ -36,7 +36,7 @@ map E1M2 "$HUSTR_E1M2"
 {
 	LevelNum = 2
 	Next = "E1M3"
-	TitlePatch = "WILV01"
+	TitlePatch = "WILV01", 1
 	Par = 75
 	Music = "$MUSIC_E1M2"
 	Author = "$WF_AU_ROMERO"
@@ -47,7 +47,7 @@ map E1M3 "$HUSTR_E1M3"
 	LevelNum = 3
 	Next = "E1M4"
 	SecretNext = "E1M9"
-	TitlePatch = "WILV02"
+	TitlePatch = "WILV02", 1
 	Par = 120
 	Music = "$MUSIC_E1M3"
 	Author = "$WF_AU_ROMERO"
@@ -57,7 +57,7 @@ map E1M4 "$HUSTR_E1M4"
 {
 	LevelNum = 4
 	Next = "E1M5"
-	TitlePatch = "WILV03"
+	TitlePatch = "WILV03", 1
 	Par = 90
 	Music = "$MUSIC_E1M4"
 	Author = "$WF_AU_ROMERO_HALL"
@@ -67,7 +67,7 @@ map E1M5 "$HUSTR_E1M5"
 {
 	LevelNum = 5
 	Next = "E1M6"
-	TitlePatch = "WILV04"
+	TitlePatch = "WILV04", 1
 	Par = 165
 	Music = "$MUSIC_E1M5"
 	Author = "$WF_AU_ROMERO"
@@ -77,7 +77,7 @@ map E1M6 "$HUSTR_E1M6"
 {
 	LevelNum = 6
 	Next = "E1M7"
-	TitlePatch = "WILV05"
+	TitlePatch = "WILV05", 1
 	Par = 180
 	Music = "$MUSIC_E1M6"
 	Author = "$WF_AU_ROMERO"
@@ -87,7 +87,7 @@ map E1M7 "$HUSTR_E1M7"
 {
 	LevelNum = 7
 	Next = "E1M8"
-	TitlePatch = "WILV06"
+	TitlePatch = "WILV06", 1
 	Par = 180
 	Music = "$MUSIC_E1M7"
 	Author = "$WF_AU_ROMERO"
@@ -98,7 +98,7 @@ map E1M8 "$HUSTR_E1M8"
 	LevelNum = 8
 	// Next = "EndGame1"
 	Next = EndSequence, "Doom1_Ep1_Fusion"
-	TitlePatch = "WILV07"
+	TitlePatch = "WILV07", 1
 	Par = 165
 	Music = "$MUSIC_E1M8"
 	NoIntermission
@@ -113,7 +113,7 @@ map E1M9 "$HUSTR_E1M9"
 {
 	LevelNum = 9
 	Next = "E1M4"
-	TitlePatch = "WILV08"
+	TitlePatch = "WILV08", 1
 	Par = 165
 	Music = "$MUSIC_E1M9"
 	Author = "$WF_AU_ROMERO"
@@ -133,7 +133,7 @@ map E2M1 "$HUSTR_E2M1"
 {
 	LevelNum = 11
 	Next = "E2M2"
-	TitlePatch = "WILV10"
+	TitlePatch = "WILV10", 1
 	Par = 90
 	Music = "$MUSIC_E2M1"
 	Author = "$WF_AU_PETERSEN_HALL"
@@ -143,7 +143,7 @@ map E2M2 "$HUSTR_E2M2"
 {
 	LevelNum = 12
 	Next = "E2M3"
-	TitlePatch = "WILV11"
+	TitlePatch = "WILV11", 1
 	Par = 90
 	Music = "$MUSIC_E2M2"
 	Author = "$WF_AU_PETERSEN_HALL"
@@ -153,7 +153,7 @@ map E2M3 "$HUSTR_E2M3"
 {
 	LevelNum = 13
 	Next = "E2M4"
-	TitlePatch = "WILV12"
+	TitlePatch = "WILV12", 1
 	Par = 90
 	Music = "$MUSIC_E2M3"
 	Author = "$WF_AU_PETERSEN_HALL"
@@ -163,7 +163,7 @@ map E2M4 "$HUSTR_E2M4"
 {
 	LevelNum = 14
 	Next = "E2M5"
-	TitlePatch = "WILV13"
+	TitlePatch = "WILV13", 1
 	Par = 120
 	Music = "$MUSIC_E2M4"
 	Author = "$WF_AU_PETERSEN_HALL"
@@ -174,7 +174,7 @@ map E2M5 "$HUSTR_E2M5"
 	LevelNum = 15
 	Next = "E2M6"
 	SecretNext = "E2M9"
-	TitlePatch = "WILV14"
+	TitlePatch = "WILV14", 1
 	Par = 90
 	Music = "$MUSIC_E2M5"
 	Author = "$WF_AU_PETERSEN"
@@ -184,7 +184,7 @@ map E2M6 "$HUSTR_E2M6"
 {
 	LevelNum = 16
 	Next = "E2M7"
-	TitlePatch = "WILV15"
+	TitlePatch = "WILV15", 1
 	Par = 360
 	Music = "$MUSIC_E2M6"
 	Author = "$WF_AU_PETERSEN"
@@ -194,7 +194,7 @@ map E2M7 "$HUSTR_E2M7"
 {
 	LevelNum = 17
 	Next = "E2M8"
-	TitlePatch = "WILV16"
+	TitlePatch = "WILV16", 1
 	Par = 240
 	Music = "$MUSIC_E2M7"
 	Author = "$WF_AU_PETERSEN_HALL"
@@ -205,7 +205,7 @@ map E2M8 "$HUSTR_E2M8"
 	LevelNum = 18
 	// Next = "EndGame2"
 	Next = EndSequence, "Doom1_Ep2_Fusion"
-	TitlePatch = "WILV17"
+	TitlePatch = "WILV17", 1
 	Par = 135
 	Music = "$MUSIC_E2M8"
 	NoIntermission
@@ -220,7 +220,7 @@ map E2M9 "$HUSTR_E2M9"
 {
 	LevelNum = 19
 	Next = "E2M6"
-	TitlePatch = "WILV18"
+	TitlePatch = "WILV18", 1
 	Par = 170
 	Music = "$MUSIC_E2M9"
 	Author = "$WF_AU_PETERSEN"
@@ -239,7 +239,7 @@ map E3M1 "$HUSTR_E3M1"
 {
 	LevelNum = 21
 	Next = "E3M2"
-	TitlePatch = "WILV20"
+	TitlePatch = "WILV20", 1
 	Par = 90
 	Music = "$MUSIC_E3M1"
 	Author = "$WF_AU_PETERSEN"
@@ -249,7 +249,7 @@ map E3M2 "$HUSTR_E3M2"
 {
 	LevelNum = 22
 	Next = "E3M3"
-	TitlePatch = "WILV21"
+	TitlePatch = "WILV21", 1
 	Par = 45
 	Music = "$MUSIC_E3M2"
 	Author = "$WF_AU_PETERSEN"
@@ -259,7 +259,7 @@ map E3M3 "$HUSTR_E3M3"
 {
 	LevelNum = 23
 	Next = "E3M4"
-	TitlePatch = "WILV22"
+	TitlePatch = "WILV22", 1
 	Par = 90
 	Music = "$MUSIC_E3M3"
 	Author = "$WF_AU_PETERSEN_HALL"
@@ -269,7 +269,7 @@ map E3M4 "$HUSTR_E3M4"
 {
 	LevelNum = 24
 	Next = "E3M5"
-	TitlePatch = "WILV23"
+	TitlePatch = "WILV23", 1
 	Par = 150
 	Music = "$MUSIC_E3M4"
 	Author = "$WF_AU_PETERSEN"
@@ -279,7 +279,7 @@ map E3M5 "$HUSTR_E3M5"
 {
 	LevelNum = 25
 	Next = "E3M6"
-	TitlePatch = "WILV24"
+	TitlePatch = "WILV24", 1
 	Par = 90
 	Music = "$MUSIC_E3M5"
 	Author = "$WF_AU_PETERSEN"
@@ -290,7 +290,7 @@ map E3M6 "$HUSTR_E3M6"
 	LevelNum = 26
 	Next = "E3M7"
 	SecretNext = "E3M9"
-	TitlePatch = "WILV25"
+	TitlePatch = "WILV25", 1
 	Par = 90
 	Music = "$MUSIC_E3M6"
 	Author = "$WF_AU_PETERSEN"
@@ -300,7 +300,7 @@ map E3M7 "$HUSTR_E3M7"
 {
 	LevelNum = 27
 	Next = "E3M8"
-	TitlePatch = "WILV26"
+	TitlePatch = "WILV26", 1
 	Par = 165
 	Music = "$MUSIC_E3M7"
 	Author = "$WF_AU_PETERSEN_HALL"
@@ -310,7 +310,7 @@ map E3M8 "$HUSTR_E3M8"
 {
 	LevelNum = 28
 	Next = "endbunny"
-	TitlePatch = "WILV27"
+	TitlePatch = "WILV27", 1
 	Par = 105
 	Music = "$MUSIC_E3M8"
 	NoIntermission
@@ -325,7 +325,7 @@ map E3M9 "$HUSTR_E3M9"
 {
 	LevelNum = 29
 	Next = "E3M7"
-	TitlePatch = "WILV28"
+	TitlePatch = "WILV28", 1
 	Par = 135
 	Music = "$MUSIC_E3M9"
 	Author = "$WF_AU_PETERSEN"

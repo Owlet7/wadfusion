@@ -8,32 +8,32 @@ adddefaultmap
 
 map WF_STORY_ML_MAP29 "$ML_MINES"
 {
-	TitlePatch = "MWILV28"
+	TitlePatch = "MWILV28", 1
 }
 
 map WF_STORY_ML_MAP30 "$ML_ANOMALY"
 {
-	TitlePatch = "MWILV29"
+	TitlePatch = "MWILV29", 1
 }
 
 map WF_STORY_ML_MAP31 "$ML_FARSIDE"
 {
-	TitlePatch = "MWILV30"
+	TitlePatch = "MWILV30", 1
 }
 
 map WF_STORY_ML_MAP32 "$ML_TROUBLE"
 {
-	TitlePatch = "MWILV31"
+	TitlePatch = "MWILV31", 1
 }
 
 map WF_STORY_ML_MAP16 "$ML_MANOR"
 {
-	TitlePatch = "MWILV15"
+	TitlePatch = "MWILV15", 1
 }
 
 map WF_STORY_ML_MAP17 "$ML_TTRAP"
 {
-	TitlePatch = "MWILV16"
+	TitlePatch = "MWILV16", 1
 }
 
 adddefaultmap
@@ -43,32 +43,32 @@ adddefaultmap
 
 map WF_STORY_ML_MAP33 "$ML_DANTES"
 {
-	TitlePatch = "MWILV32"
+	TitlePatch = "MWILV32", 1
 }
 
 map WF_STORY_ML_MAP34 "$ML_ACHERON"
 {
-	TitlePatch = "MWILV33"
+	TitlePatch = "MWILV33", 1
 }
 
 map WF_STORY_ML_MAP11 "$ML_VIRGIL"
 {
-	TitlePatch = "MWILV10"
+	TitlePatch = "MWILV10", 1
 }
 
 map WF_STORY_ML_MAP12 "$ML_MINOS"
 {
-	TitlePatch = "MWILV11"
+	TitlePatch = "MWILV11", 1
 }
 
 map WF_STORY_ML_MAP13 "$ML_NESSUS"
 {
-	TitlePatch = "MWILV12"
+	TitlePatch = "MWILV12", 1
 }
 
 map WF_STORY_ML_MAP15 "$ML_VESPERAS"
 {
-	TitlePatch = "MWILV14"
+	TitlePatch = "MWILV14", 1
 }
 
 adddefaultmap
@@ -78,45 +78,45 @@ adddefaultmap
 
 map WF_STORY_ML_MAP19 "$ML_BLOODSEA"
 {
-	TitlePatch = "MWILV18"
+	TitlePatch = "MWILV18", 1
 }
 
 map WF_STORY_ML_MAP37 "$ML_FLOOD"
 {
-	TitlePatch = "MWILV36"
+	TitlePatch = "MWILV36", 1
 }
 
 map WF_STORY_ML_MAP38 "$ML_DERELICT"
 {
-	TitlePatch = "MWILV37"
+	TitlePatch = "MWILV37", 1
 }
 
 map WF_STORY_ML_MAP20 "$ML_MEPHISTO"
 {
-	TitlePatch = "MWILV19"
+	TitlePatch = "MWILV19", 1
 }
 
 map WF_STORY_ML_MAP18 "$ML_TEETH"
 {
-	TitlePatch = "MWILV17"
+	TitlePatch = "MWILV17", 1
 }
 
 map WF_STORY_ML_MAP41 "$ML_ARENA"
 {
-	TitlePatch = "MWILV40"
+	TitlePatch = "MWILV40", 1
 }
 
 map WF_STORY_ML_MAP42 "$ML_STORM"
 {
-	TitlePatch = "MWILV41"
+	TitlePatch = "MWILV41", 1
 }
 
 map WF_STORY_ML_MAP10 "$ML_BLACKTWR"
 {
-	TitlePatch = "MWILV09"
+	TitlePatch = "MWILV09", 1
 }
 
 map WF_STORY_ML_MAP43 "$ML_THE_EVIL"
 {
-	TitlePatch = "MWILV42"
+	TitlePatch = "MWILV42", 1
 }

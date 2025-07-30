@@ -31,6 +31,10 @@
 - Added "ID24 status bars" compatibility option.
 - Added an option to show both the medikit and the mug shot in the alternate
   fullscreen HUD.
+- Disabled map author names on the intermission screens.
+  - This is needed for compatibility with WADs that don't use MAPINFO to change
+    map titles. All the maps still have author credits attributed to them in
+    Fusion's own MAPINFO, but they are now hidden.
 - Added "Show map author" option for the alternate fullscreen HUD.
 - Added "Show skill level" option for the alternate fullscreen HUD.
 - Added "Don't offset map info" option for the alternate fullscreen HUD.

@@ -17,14 +17,14 @@ defaultmap
 map ML_MAP16 "$ML_MANOR"
 {
 	Next = "ML_MAP17"
-	TitlePatch = "MWILV15"
+	TitlePatch = "MWILV15", 1
 	Music = "$MUSIC_MESSAG"
 }
 
 map ML_MAP17 "$ML_TTRAP"
 {
 	Next = "ML_MAP18"
-	TitlePatch = "MWILV16"
+	TitlePatch = "MWILV16", 1
 	Music = "$MUSIC_E1M7"
 }
 
@@ -33,27 +33,27 @@ map ML_MAP17 "$ML_TTRAP"
 map ML_MAP29 "$ML_MINES"
 {
 	Next = "ML_MAP30"
-	TitlePatch = "MWILV28"
+	TitlePatch = "MWILV28", 1
 	Music = "$MUSIC_RUNNIN"
 }
 
 map ML_MAP30 "$ML_ANOMALY"
 {
 	Next = "ML_MAP31"
-	TitlePatch = "MWILV29"
+	TitlePatch = "MWILV29", 1
 	Music = "$MUSIC_DOOM"
 }
 
 map ML_MAP31 "$ML_FARSIDE"
 {
 	Next = "ML_MAP32"
-	TitlePatch = "MWILV30"
+	TitlePatch = "MWILV30", 1
 	Music = "$MUSIC_ROMERO"
 }
 
 map ML_MAP32 "$ML_TROUBLE"
 {
 	Next = "ML_MAP16"
-	TitlePatch = "MWILV31"
+	TitlePatch = "MWILV31", 1
 	Music = "$MUSIC_AMPIE"
 }

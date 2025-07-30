@@ -22,7 +22,7 @@ adddefaultmap
 map TN_MAP01 "$THUSTR_1"
 {
 	Next = "TN_MAP02"
-	TitlePatch = "TWILV00"
+	TitlePatch = "TWILV00", 1
 	Music = "T_RUNNIN"
 	Author = "$WF_AU_MUSTAINE"
 }
@@ -30,7 +30,7 @@ map TN_MAP01 "$THUSTR_1"
 map TN_MAP02 "$THUSTR_2"
 {
 	Next = "TN_MAP03"
-	TitlePatch = "TWILV01"
+	TitlePatch = "TWILV01", 1
 	Music = "T_STALKS"
 	Author = "$WF_AU_WAKELIN"
 }
@@ -38,7 +38,7 @@ map TN_MAP02 "$THUSTR_2"
 map TN_MAP03 "$THUSTR_3"
 {
 	Next = "TN_MAP04"
-	TitlePatch = "TWILV02"
+	TitlePatch = "TWILV02", 1
 	Music = "T_COUNTD"
 	Author = "$WF_AU_PATENALL_MINADEO"
 }
@@ -46,7 +46,7 @@ map TN_MAP03 "$THUSTR_3"
 map TN_MAP04 "$THUSTR_4"
 {
 	Next = "TN_MAP05"
-	TitlePatch = "TWILV03"
+	TitlePatch = "TWILV03", 1
 	Music = "T_BETWEE"
 	Author = "$WF_AU_HALDERMAN"
 }
@@ -54,7 +54,7 @@ map TN_MAP04 "$THUSTR_4"
 map TN_MAP05 "$THUSTR_5"
 {
 	Next = "TN_MAP06"
-	TitlePatch = "TWILV04"
+	TitlePatch = "TWILV04", 1
 	Music = "T_DOOM"
 	Author = "$WF_AU_DETHLEFSEN"
 }
@@ -62,7 +62,7 @@ map TN_MAP05 "$THUSTR_5"
 map TN_MAP06 "$THUSTR_6"
 {
 	Next = "TN_MAP07"
-	TitlePatch = "TWILV05"
+	TitlePatch = "TWILV05", 1
 	Music = "T_THE_DA"
 	Author = "$WF_AU_SIEBEN_HALDERMAN"
 }
@@ -77,7 +77,7 @@ adddefaultmap
 map TN_MAP07 "$THUSTR_7"
 {
 	Next = "TN_MAP08"
-	TitlePatch = "TWILV06"
+	TitlePatch = "TWILV06", 1
 	Music = "T_SHAWN"
 	Map07Special
 	Author = "$WF_AU_DOWSWELL"
@@ -86,7 +86,7 @@ map TN_MAP07 "$THUSTR_7"
 map TN_MAP08 "$THUSTR_8"
 {
 	Next = "TN_MAP09"
-	TitlePatch = "TWILV07"
+	TitlePatch = "TWILV07", 1
 	Music = "T_DDTBLU"
 	Author = "$WF_AU_MINADEO"
 }
@@ -94,7 +94,7 @@ map TN_MAP08 "$THUSTR_8"
 map TN_MAP09 "$THUSTR_9"
 {
 	Next = "TN_MAP10"
-	TitlePatch = "TWILV08"
+	TitlePatch = "TWILV08", 1
 	Music = "T_IN_CIT"
 	Author = "$WF_AU_SIEBEN_HALDERMAN"
 }
@@ -102,7 +102,7 @@ map TN_MAP09 "$THUSTR_9"
 map TN_MAP10 "$THUSTR_10"
 {
 	Next = "TN_MAP11"
-	TitlePatch = "TWILV09"
+	TitlePatch = "TWILV09", 1
 	Music = "T_DEAD"
 	Author = "$WF_AU_MUSTAINE"
 }
@@ -110,7 +110,7 @@ map TN_MAP10 "$THUSTR_10"
 map TN_MAP11 "$THUSTR_11"
 {
 	Next = "TN_MAP12"
-	TitlePatch = "TWILV10"
+	TitlePatch = "TWILV10", 1
 	Music = "T_STLKS2"
 	Author = "$WF_AU_JOHNSON"
 }
@@ -126,7 +126,7 @@ adddefaultmap
 map TN_MAP12 "$THUSTR_12"
 {
 	Next = "TN_MAP13"
-	TitlePatch = "TWILV11"
+	TitlePatch = "TWILV11", 1
 	Music = "T_THEDA2"
 	Author = "$WF_AU_LOWELL"
 }
@@ -134,7 +134,7 @@ map TN_MAP12 "$THUSTR_12"
 map TN_MAP13 "$THUSTR_13"
 {
 	Next = "TN_MAP14"
-	TitlePatch = "TWILV12"
+	TitlePatch = "TWILV12", 1
 	Music = "T_DOOM2"
 	Author = "$WF_AU_KIDBY_HALDERMAN"
 }
@@ -142,7 +142,7 @@ map TN_MAP13 "$THUSTR_13"
 map TN_MAP14 "$THUSTR_14"
 {
 	Next = "TN_MAP15"
-	TitlePatch = "TWILV13"
+	TitlePatch = "TWILV13", 1
 	Music = "T_DDTBL2"
 	Author = "$WF_AU_PATENALL"
 }
@@ -151,7 +151,7 @@ map TN_MAP15 "$THUSTR_15"
 {
 	Next = "TN_MAP16"
 	SecretNext = "TN_MAP31"
-	TitlePatch = "TWILV14"
+	TitlePatch = "TWILV14", 1
 	Music = "T_RUNNI2"
 	Author = "$WF_AU_WHITAKER"
 }
@@ -159,7 +159,7 @@ map TN_MAP15 "$THUSTR_15"
 map TN_MAP16 "$THUSTR_16"
 {
 	Next = "TN_MAP17"
-	TitlePatch = "TWILV15"
+	TitlePatch = "TWILV15", 1
 	Music = "T_DEAD2"
 	Author = "$WF_AU_ARSENAULT"
 }
@@ -167,7 +167,7 @@ map TN_MAP16 "$THUSTR_16"
 map TN_MAP17 "$THUSTR_17"
 {
 	Next = "TN_MAP18"
-	TitlePatch = "TWILV16"
+	TitlePatch = "TWILV16", 1
 	Music = "T_STLKS3"
 	Author = "$WF_AU_MUSTAINE"
 }
@@ -175,7 +175,7 @@ map TN_MAP17 "$THUSTR_17"
 map TN_MAP18 "$THUSTR_18"
 {
 	Next = "TN_MAP19"
-	TitlePatch = "TWILV17"
+	TitlePatch = "TWILV17", 1
 	Music = "T_ROMERO"
 	Author = "$WF_AU_CASALI_HALDERMAN"
 }
@@ -183,7 +183,7 @@ map TN_MAP18 "$THUSTR_18"
 map TN_MAP19 "$THUSTR_19"
 {
 	Next = "TN_MAP20"
-	TitlePatch = "TWILV18"
+	TitlePatch = "TWILV18", 1
 	Music = "T_SHAWN2"
 	Author = "$WF_AU_HALDERMAN"
 }
@@ -191,7 +191,7 @@ map TN_MAP19 "$THUSTR_19"
 map TN_MAP20 "$THUSTR_20"
 {
 	Next = "TN_MAP21"
-	TitlePatch = "TWILV19"
+	TitlePatch = "TWILV19", 1
 	Music = "T_MESSAG"
 	Author = "$WF_AU_OBRIEN"
 }
@@ -207,7 +207,7 @@ adddefaultmap
 map TN_MAP21 "$THUSTR_21"
 {
 	Next = "TN_MAP22"
-	TitlePatch = "TWILV20"
+	TitlePatch = "TWILV20", 1
 	Music = "T_COUNT2"
 	Author = "$WF_AU_OBRIEN"
 }
@@ -215,7 +215,7 @@ map TN_MAP21 "$THUSTR_21"
 map TN_MAP22 "$THUSTR_22"
 {
 	Next = "TN_MAP23"
-	TitlePatch = "TWILV21"
+	TitlePatch = "TWILV21", 1
 	Music = "T_DDTBL3"
 	Author = "$WF_AU_BUTEAU"
 }
@@ -223,7 +223,7 @@ map TN_MAP22 "$THUSTR_22"
 map TN_MAP23 "$THUSTR_23"
 {
 	Next = "TN_MAP24"
-	TitlePatch = "TWILV22"
+	TitlePatch = "TWILV22", 1
 	Music = "T_AMPIE"
 	Author = "$WF_AU_TURNBULL"
 }
@@ -231,7 +231,7 @@ map TN_MAP23 "$THUSTR_23"
 map TN_MAP24 "$THUSTR_24"
 {
 	Next = "TN_MAP25"
-	TitlePatch = "TWILV23"
+	TitlePatch = "TWILV23", 1
 	Music = "T_THEDA3"
 	Author = "$WF_AU_JOHNSON"
 }
@@ -239,7 +239,7 @@ map TN_MAP24 "$THUSTR_24"
 map TN_MAP25 "$THUSTR_25"
 {
 	Next = "TN_MAP26"
-	TitlePatch = "TWILV24"
+	TitlePatch = "TWILV24", 1
 	Music = "T_ADRIAN"
 	Author = "$WF_AU_HILL"
 }
@@ -247,7 +247,7 @@ map TN_MAP25 "$THUSTR_25"
 map TN_MAP26 "$THUSTR_26"
 {
 	Next = "TN_MAP27"
-	TitlePatch = "TWILV25"
+	TitlePatch = "TWILV25", 1
 	Music = "T_MESSG2"
 	Author = "$WF_AU_SNELL_LOWELL"
 }
@@ -255,7 +255,7 @@ map TN_MAP26 "$THUSTR_26"
 map TN_MAP27 "$THUSTR_27"
 {
 	Next = "TN_MAP28"
-	TitlePatch = "TWILV26"
+	TitlePatch = "TWILV26", 1
 	Music = "T_ROMER2"
 	Author = "$WF_AU_OBRIEN"
 }
@@ -263,7 +263,7 @@ map TN_MAP27 "$THUSTR_27"
 map TN_MAP28 "$THUSTR_28"
 {
 	Next = "TN_MAP29"
-	TitlePatch = "TWILV27"
+	TitlePatch = "TWILV27", 1
 	Music = "T_TENSE"
 	Author = "$WF_AU_MILO_CASALI"
 }
@@ -271,7 +271,7 @@ map TN_MAP28 "$THUSTR_28"
 map TN_MAP29 "$THUSTR_29"
 {
 	Next = "TN_MAP30"
-	TitlePatch = "TWILV28"
+	TitlePatch = "TWILV28", 1
 	Music = "T_SHAWN3"
 	Author = "$WF_AU_SIEBEN"
 }
@@ -279,7 +279,7 @@ map TN_MAP29 "$THUSTR_29"
 map TN_MAP30 "$THUSTR_30"
 {
 	Next = EndSequence, "Inter_Cast_Tnt"
-	TitlePatch = "TWILV29"
+	TitlePatch = "TWILV29", 1
 	Music = "T_OPENIN"
 	AllowMonsterTelefrags
 	// depends on broken vanilla stair builder behavior, which ZDoom
@@ -295,7 +295,7 @@ map TN_MAP31 "$THUSTR_31"
 	Next = "TN_MAP16"
 	SecretNext = "TN_MAP32"
 	Cluster = 16
-	TitlePatch = "TWILV30"
+	TitlePatch = "TWILV30", 1
 	Music = "T_EVIL"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -304,7 +304,7 @@ map TN_MAP32 "$THUSTR_32"
 {
 	Next = "TN_MAP16"
 	Cluster = 17
-	TitlePatch = "TWILV31"
+	TitlePatch = "TWILV31", 1
 	Music = "T_ULTIMA"
 	Author = "$WF_AU_DARIO_CASALI"
 }

@@ -18,7 +18,7 @@ adddefaultmap
 map MAP01 "$HUSTR_1"
 {
 	Next = "MAP02"
-	TitlePatch = "CWILV00"
+	TitlePatch = "CWILV00", 1
 	Par = 30
 	Music = "$MUSIC_RUNNIN"
 	Author = "$WF_AU_PETERSEN"
@@ -28,7 +28,7 @@ map MAP02 "$HUSTR_2"
 {
 	Next = "MAP03"
 	SecretNext = "MAP33"
-	TitlePatch = "CWILV01"
+	TitlePatch = "CWILV01", 1
 	Par = 90
 	Music = "$MUSIC_STALKS"
 	Author = "$WF_AU_MCGEE"
@@ -37,7 +37,7 @@ map MAP02 "$HUSTR_2"
 map MAP03 "$HUSTR_3"
 {
 	Next = "MAP04"
-	TitlePatch = "CWILV02"
+	TitlePatch = "CWILV02", 1
 	Par = 120
 	Music = "$MUSIC_COUNTD"
 	Author = "$WF_AU_MCGEE"
@@ -46,7 +46,7 @@ map MAP03 "$HUSTR_3"
 map MAP04 "$HUSTR_4"
 {
 	Next = "MAP05"
-	TitlePatch = "CWILV03"
+	TitlePatch = "CWILV03", 1
 	Par = 120
 	Music = "$MUSIC_BETWEE"
 	Author = "$WF_AU_MCGEE"
@@ -55,7 +55,7 @@ map MAP04 "$HUSTR_4"
 map MAP05 "$HUSTR_5"
 {
 	Next = "MAP06"
-	TitlePatch = "CWILV04"
+	TitlePatch = "CWILV04", 1
 	Par = 90
 	Music = "$MUSIC_DOOM"
 	Author = "$WF_AU_MCGEE"
@@ -64,7 +64,7 @@ map MAP05 "$HUSTR_5"
 map MAP06 "$HUSTR_6"
 {
 	Next = "MAP07"
-	TitlePatch = "CWILV05"
+	TitlePatch = "CWILV05", 1
 	Par = 150
 	Music = "$MUSIC_THE_DA"
 	Author = "$WF_AU_MCGEE"
@@ -80,7 +80,7 @@ adddefaultmap
 map MAP07 "$HUSTR_7"
 {
 	Next = "MAP08"
-	TitlePatch = "CWILV06"
+	TitlePatch = "CWILV06", 1
 	Par = 120
 	Music = "$MUSIC_SHAWN"
 	Map07Special
@@ -90,7 +90,7 @@ map MAP07 "$HUSTR_7"
 map MAP08 "$HUSTR_8"
 {
 	Next = "MAP09"
-	TitlePatch = "CWILV07"
+	TitlePatch = "CWILV07", 1
 	Par = 120
 	Music = "$MUSIC_DDTBLU"
 	Author = "$WF_AU_PETERSEN"
@@ -99,7 +99,7 @@ map MAP08 "$HUSTR_8"
 map MAP09 "$HUSTR_9"
 {
 	Next = "MAP10"
-	TitlePatch = "CWILV08"
+	TitlePatch = "CWILV08", 1
 	Par = 270
 	Music = "$MUSIC_IN_CIT"
 	Author = "$WF_AU_PETERSEN"
@@ -108,7 +108,7 @@ map MAP09 "$HUSTR_9"
 map MAP10 "$HUSTR_10"
 {
 	Next = "MAP11"
-	TitlePatch = "CWILV09"
+	TitlePatch = "CWILV09", 1
 	Par = 90
 	Music = "$MUSIC_DEAD"
 	Author = "$WF_AU_PETERSEN_HALL"
@@ -117,7 +117,7 @@ map MAP10 "$HUSTR_10"
 map MAP11 "$HUSTR_11"
 {
 	Next = "MAP12"
-	TitlePatch = "CWILV10"
+	TitlePatch = "CWILV10", 1
 	Par = 210
 	Music = "$MUSIC_STLKS2"
 	Author = "$WF_AU_ROMERO"
@@ -134,7 +134,7 @@ adddefaultmap
 map MAP12 "$HUSTR_12"
 {
 	Next = "MAP13"
-	TitlePatch = "CWILV11"
+	TitlePatch = "CWILV11", 1
 	Par = 150
 	Music = "$MUSIC_THEDA2"
 	Author = "$WF_AU_PETERSEN"
@@ -143,7 +143,7 @@ map MAP12 "$HUSTR_12"
 map MAP13 "$HUSTR_13"
 {
 	Next = "MAP14"
-	TitlePatch = "CWILV12"
+	TitlePatch = "CWILV12", 1
 	Par = 150
 	Music = "$MUSIC_DOOM2"
 	Author = "$WF_AU_PETERSEN"
@@ -152,7 +152,7 @@ map MAP13 "$HUSTR_13"
 map MAP14 "$HUSTR_14"
 {
 	Next = "MAP15"
-	TitlePatch = "CWILV13"
+	TitlePatch = "CWILV13", 1
 	Par = 150
 	Music = "$MUSIC_DDTBL2"
 	Author = "$WF_AU_MCGEE"
@@ -162,7 +162,7 @@ map MAP15 "$HUSTR_15"
 {
 	Next = "MAP16"
 	SecretNext = "MAP31"
-	TitlePatch = "CWILV14"
+	TitlePatch = "CWILV14", 1
 	Par = 210
 	Music = "$MUSIC_RUNNI2"
 	Author = "$WF_AU_ROMERO"
@@ -171,7 +171,7 @@ map MAP15 "$HUSTR_15"
 map MAP16 "$HUSTR_16"
 {
 	Next = "MAP17"
-	TitlePatch = "CWILV15"
+	TitlePatch = "CWILV15", 1
 	Par = 150
 	Music = "$MUSIC_DEAD2"
 	Author = "$WF_AU_PETERSEN"
@@ -180,7 +180,7 @@ map MAP16 "$HUSTR_16"
 map MAP17 "$HUSTR_17"
 {
 	Next = "MAP18"
-	TitlePatch = "CWILV16"
+	TitlePatch = "CWILV16", 1
 	Par = 420
 	Music = "$MUSIC_STLKS3"
 	Author = "$WF_AU_ROMERO"
@@ -189,7 +189,7 @@ map MAP17 "$HUSTR_17"
 map MAP18 "$HUSTR_18"
 {
 	Next = "MAP19"
-	TitlePatch = "CWILV17"
+	TitlePatch = "CWILV17", 1
 	Par = 150
 	Music = "$MUSIC_ROMERO"
 	Author = "$WF_AU_PETERSEN"
@@ -198,7 +198,7 @@ map MAP18 "$HUSTR_18"
 map MAP19 "$HUSTR_19"
 {
 	Next = "MAP20"
-	TitlePatch = "CWILV18"
+	TitlePatch = "CWILV18", 1
 	Par = 210
 	Music = "$MUSIC_SHAWN2"
 	Author = "$WF_AU_PETERSEN"
@@ -207,7 +207,7 @@ map MAP19 "$HUSTR_19"
 map MAP20 "$HUSTR_20"
 {
 	Next = "MAP21"
-	TitlePatch = "CWILV19"
+	TitlePatch = "CWILV19", 1
 	Par = 150
 	Music = "$MUSIC_MESSAG"
 	Author = "$WF_AU_ROMERO"
@@ -224,7 +224,7 @@ adddefaultmap
 map MAP21 "$HUSTR_21"
 {
 	Next = "MAP22"
-	TitlePatch = "CWILV20"
+	TitlePatch = "CWILV20", 1
 	Par = 240
 	Music = "$MUSIC_COUNT2"
 	Author = "$WF_AU_PETERSEN"
@@ -233,7 +233,7 @@ map MAP21 "$HUSTR_21"
 map MAP22 "$HUSTR_22"
 {
 	Next = "MAP23"
-	TitlePatch = "CWILV21"
+	TitlePatch = "CWILV21", 1
 	Par = 150
 	Music = "$MUSIC_DDTBL3"
 	Author = "$WF_AU_MCGEE"
@@ -242,7 +242,7 @@ map MAP22 "$HUSTR_22"
 map MAP23 "$HUSTR_23"
 {
 	Next = "MAP24"
-	TitlePatch = "CWILV22"
+	TitlePatch = "CWILV22", 1
 	Par = 180
 	Music = "$MUSIC_AMPIE"
 	Author = "$WF_AU_PETERSEN"
@@ -251,7 +251,7 @@ map MAP23 "$HUSTR_23"
 map MAP24 "$HUSTR_24"
 {
 	Next = "MAP25"
-	TitlePatch = "CWILV23"
+	TitlePatch = "CWILV23", 1
 	Par = 150
 	Music = "$MUSIC_THEDA3"
 	Author = "$WF_AU_PETERSEN"
@@ -260,7 +260,7 @@ map MAP24 "$HUSTR_24"
 map MAP25 "$HUSTR_25"
 {
 	Next = "MAP26"
-	TitlePatch = "CWILV24"
+	TitlePatch = "CWILV24", 1
 	Par = 150
 	Music = "$MUSIC_ADRIAN"
 	Author = "$WF_AU_GREEN"
@@ -269,7 +269,7 @@ map MAP25 "$HUSTR_25"
 map MAP26 "$HUSTR_26"
 {
 	Next = "MAP27"
-	TitlePatch = "CWILV25"
+	TitlePatch = "CWILV25", 1
 	Par = 300
 	Music = "$MUSIC_MESSG2"
 	Author = "$WF_AU_ROMERO"
@@ -278,7 +278,7 @@ map MAP26 "$HUSTR_26"
 map MAP27 "$HUSTR_27"
 {
 	Next = "MAP28"
-	TitlePatch = "CWILV26"
+	TitlePatch = "CWILV26", 1
 	Par = 330
 	Music = "$MUSIC_ROMER2"
 	Author = "$WF_AU_PETERSEN"
@@ -287,7 +287,7 @@ map MAP27 "$HUSTR_27"
 map MAP28 "$HUSTR_28"
 {
 	Next = "MAP29"
-	TitlePatch = "CWILV27"
+	TitlePatch = "CWILV27", 1
 	Par = 420
 	Music = "$MUSIC_TENSE"
 	Author = "$WF_AU_PETERSEN"
@@ -296,7 +296,7 @@ map MAP28 "$HUSTR_28"
 map MAP29 "$HUSTR_29"
 {
 	Next = "MAP30"
-	TitlePatch = "CWILV28"
+	TitlePatch = "CWILV28", 1
 	Par = 300
 	Music = "$MUSIC_SHAWN3"
 	Author = "$WF_AU_ROMERO"
@@ -305,7 +305,7 @@ map MAP29 "$HUSTR_29"
 map MAP30 "$HUSTR_30"
 {
 	Next = "EndGameC"
-	TitlePatch = "CWILV29"
+	TitlePatch = "CWILV29", 1
 	Par = 180
 	Music = "$MUSIC_OPENIN"
 	AllowMonsterTelefrags
@@ -319,7 +319,7 @@ map MAP31 "$HUSTR_31"
 	Next = "MAP16"
 	SecretNext = "MAP32"
 	Cluster = 9
-	TitlePatch = "CWILV30"
+	TitlePatch = "CWILV30", 1
 	Par = 120
 	Music = "$MUSIC_EVIL"
 	Author = "$WF_AU_PETERSEN"
@@ -329,7 +329,7 @@ map MAP32 "$HUSTR_32"
 {
 	Next = "MAP16"
 	Cluster = 10
-	TitlePatch = "CWILV31"
+	TitlePatch = "CWILV31", 1
 	Par = 30
 	Music = "$MUSIC_ULTIMA"
 	Author = "$WF_AU_PETERSEN"

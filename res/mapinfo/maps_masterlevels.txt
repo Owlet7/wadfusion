@@ -21,14 +21,14 @@ adddefaultmap
 map ML_MAP01 "$ML_ATTACK"
 {
 	Next = "ML_MAP02"
-	TitlePatch = "MWILV00"
+	TitlePatch = "MWILV00", 1
 	Music = "$MUSIC_RUNNIN"
 }
 
 map ML_MAP02 "$ML_CANYON"
 {
 	Next = "ML_MAP03"
-	TitlePatch = "MWILV01"
+	TitlePatch = "MWILV01", 1
 	Music = "$MUSIC_E2M2"
 }
 
@@ -42,14 +42,14 @@ adddefaultmap
 map ML_MAP03 "$ML_CATWALK"
 {
 	Next = "ML_MAP04"
-	TitlePatch = "MWILV02"
+	TitlePatch = "MWILV02", 1
 	Music = "$MUSIC_THE_DA"
 }
 
 map ML_MAP04 "$ML_FISTULA"
 {
 	Next = "ML_MAP05"
-	TitlePatch = "MWILV03"
+	TitlePatch = "MWILV03", 1
 	Music = "$MUSIC_E1M6"
 }
 
@@ -57,28 +57,28 @@ map ML_MAP05 "$ML_COMBINE"
 {
 	// The sky gets replaced by texture substitution compatibility options
 	Next = "ML_MAP06"
-	TitlePatch = "MWILV04"
+	TitlePatch = "MWILV04", 1
 	Music = "$MUSIC_DEAD"
 }
 
 map ML_MAP06 "$ML_SUBSPACE"
 {
 	Next = "ML_MAP07"
-	TitlePatch = "MWILV05"
+	TitlePatch = "MWILV05", 1
 	Music = "$MUSIC_STALKS"
 }
 
 map ML_MAP08 "$ML_SUBTERRA"
 {
 	Next = "ML_MAP09"
-	TitlePatch = "MWILV07"
+	TitlePatch = "MWILV07", 1
 	Music = "$MUSIC_DDTBLU"
 }
 
 map ML_MAP09 "$ML_GARRISON"
 {
 	Next = "ML_MAP10"
-	TitlePatch = "MWILV08"
+	TitlePatch = "MWILV08", 1
 	Music = "$MUSIC_E3M3"
 }
 
@@ -87,7 +87,7 @@ map ML_MAP09 "$ML_GARRISON"
 map ML_MAP07 "$ML_PARADOX"
 {
 	Next = "ML_MAP08"
-	TitlePatch = "MWILV06"
+	TitlePatch = "MWILV06", 1
 	Music = "$MUSIC_IN_CIT"
 	Author = "$WF_AU_MUSTAINES"
 }

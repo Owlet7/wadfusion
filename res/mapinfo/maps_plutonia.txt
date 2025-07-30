@@ -22,7 +22,7 @@ adddefaultmap
 map PL_MAP01 "$PHUSTR_1"
 {
 	Next = "PL_MAP02"
-	TitlePatch = "PWILV00"
+	TitlePatch = "PWILV00", 1
 	Music = "P_RUNNIN"
 	Author = "$WF_AU_MILO_CASALI"
 }
@@ -30,7 +30,7 @@ map PL_MAP01 "$PHUSTR_1"
 map PL_MAP02 "$PHUSTR_2"
 {
 	Next = "PL_MAP03"
-	TitlePatch = "PWILV01"
+	TitlePatch = "PWILV01", 1
 	Music = "P_STALKS"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -38,7 +38,7 @@ map PL_MAP02 "$PHUSTR_2"
 map PL_MAP03 "$PHUSTR_3"
 {
 	Next = "PL_MAP04"
-	TitlePatch = "PWILV02"
+	TitlePatch = "PWILV02", 1
 	Music = "P_COUNTD"
 	Author = "$WF_AU_MILO_CASALI"
 }
@@ -46,7 +46,7 @@ map PL_MAP03 "$PHUSTR_3"
 map PL_MAP04 "$PHUSTR_4"
 {
 	Next = "PL_MAP05"
-	TitlePatch = "PWILV03"
+	TitlePatch = "PWILV03", 1
 	Music = "P_BETWEE"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -54,7 +54,7 @@ map PL_MAP04 "$PHUSTR_4"
 map PL_MAP05 "$PHUSTR_5"
 {
 	Next = "PL_MAP06"
-	TitlePatch = "PWILV04"
+	TitlePatch = "PWILV04", 1
 	Music = "P_DOOM"
 	Author = "$WF_AU_MILO_CASALI"
 }
@@ -62,7 +62,7 @@ map PL_MAP05 "$PHUSTR_5"
 map PL_MAP06 "$PHUSTR_6"
 {
 	Next = "PL_MAP07"
-	TitlePatch = "PWILV05"
+	TitlePatch = "PWILV05", 1
 	Music = "P_THE_DA"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -77,7 +77,7 @@ adddefaultmap
 map PL_MAP07 "$PHUSTR_7"
 {
 	Next = "PL_MAP08"
-	TitlePatch = "PWILV06"
+	TitlePatch = "PWILV06", 1
 	Music = "P_SHAWN"
 	Map07Special
 	Author = "$WF_AU_DARIO_CASALI"
@@ -86,7 +86,7 @@ map PL_MAP07 "$PHUSTR_7"
 map PL_MAP08 "$PHUSTR_8"
 {
 	Next = "PL_MAP09"
-	TitlePatch = "PWILV07"
+	TitlePatch = "PWILV07", 1
 	Music = "P_DDTBLU"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -94,7 +94,7 @@ map PL_MAP08 "$PHUSTR_8"
 map PL_MAP09 "$PHUSTR_9"
 {
 	Next = "PL_MAP10"
-	TitlePatch = "PWILV08"
+	TitlePatch = "PWILV08", 1
 	Music = "P_IN_CIT"
 	Author = "$WF_AU_MILO_CASALI"
 }
@@ -102,7 +102,7 @@ map PL_MAP09 "$PHUSTR_9"
 map PL_MAP10 "$PHUSTR_10"
 {
 	Next = "PL_MAP11"
-	TitlePatch = "PWILV09"
+	TitlePatch = "PWILV09", 1
 	Music = "P_DEAD"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -110,7 +110,7 @@ map PL_MAP10 "$PHUSTR_10"
 map PL_MAP11 "$PHUSTR_11"
 {
 	Next = "PL_MAP12"
-	TitlePatch = "PWILV10"
+	TitlePatch = "PWILV10", 1
 	Music = "P_STLKS2"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -126,7 +126,7 @@ adddefaultmap
 map PL_MAP12 "$PHUSTR_12"
 {
 	Next = "PL_MAP13"
-	TitlePatch = "PWILV11"
+	TitlePatch = "PWILV11", 1
 	Music = "P_THEDA2"
 	Author = "$WF_AU_MILO_CASALI"
 }
@@ -134,7 +134,7 @@ map PL_MAP12 "$PHUSTR_12"
 map PL_MAP13 "$PHUSTR_13"
 {
 	Next = "PL_MAP14"
-	TitlePatch = "PWILV12"
+	TitlePatch = "PWILV12", 1
 	Music = "P_DOOM2"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -142,7 +142,7 @@ map PL_MAP13 "$PHUSTR_13"
 map PL_MAP14 "$PHUSTR_14"
 {
 	Next = "PL_MAP15"
-	TitlePatch = "PWILV13"
+	TitlePatch = "PWILV13", 1
 	Music = "P_DDTBL2"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -151,7 +151,7 @@ map PL_MAP15 "$PHUSTR_15"
 {
 	Next = "PL_MAP16"
 	SecretNext = "PL_MAP31"
-	TitlePatch = "PWILV14"
+	TitlePatch = "PWILV14", 1
 	Music = "P_RUNNI2"
 	Author = "$WF_AU_MILO_CASALI"
 }
@@ -159,7 +159,7 @@ map PL_MAP15 "$PHUSTR_15"
 map PL_MAP16 "$PHUSTR_16"
 {
 	Next = "PL_MAP17"
-	TitlePatch = "PWILV15"
+	TitlePatch = "PWILV15", 1
 	Music = "P_DEAD2"
 	Author = "$WF_AU_MILO_CASALI"
 }
@@ -167,7 +167,7 @@ map PL_MAP16 "$PHUSTR_16"
 map PL_MAP17 "$PHUSTR_17"
 {
 	Next = "PL_MAP18"
-	TitlePatch = "PWILV16"
+	TitlePatch = "PWILV16", 1
 	Music = "P_STLKS3"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -175,7 +175,7 @@ map PL_MAP17 "$PHUSTR_17"
 map PL_MAP18 "$PHUSTR_18"
 {
 	Next = "PL_MAP19"
-	TitlePatch = "PWILV17"
+	TitlePatch = "PWILV17", 1
 	Music = "P_ROMERO"
 	Author = "$WF_AU_MILO_CASALI"
 }
@@ -183,7 +183,7 @@ map PL_MAP18 "$PHUSTR_18"
 map PL_MAP19 "$PHUSTR_19"
 {
 	Next = "PL_MAP20"
-	TitlePatch = "PWILV18"
+	TitlePatch = "PWILV18", 1
 	Music = "P_SHAWN2"
 	Author = "$WF_AU_MILO_CASALI"
 }
@@ -191,7 +191,7 @@ map PL_MAP19 "$PHUSTR_19"
 map PL_MAP20 "$PHUSTR_20"
 {
 	Next = "PL_MAP21"
-	TitlePatch = "PWILV19"
+	TitlePatch = "PWILV19", 1
 	Music = "P_MESSAG"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -207,7 +207,7 @@ adddefaultmap
 map PL_MAP21 "$PHUSTR_21"
 {
 	Next = "PL_MAP22"
-	TitlePatch = "PWILV20"
+	TitlePatch = "PWILV20", 1
 	Music = "P_COUNT2"
 	Author = "$WF_AU_MILO_CASALI"
 }
@@ -215,7 +215,7 @@ map PL_MAP21 "$PHUSTR_21"
 map PL_MAP22 "$PHUSTR_22"
 {
 	Next = "PL_MAP23"
-	TitlePatch = "PWILV21"
+	TitlePatch = "PWILV21", 1
 	Music = "P_DDTBL3"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -223,7 +223,7 @@ map PL_MAP22 "$PHUSTR_22"
 map PL_MAP23 "$PHUSTR_23"
 {
 	Next = "PL_MAP24"
-	TitlePatch = "PWILV22"
+	TitlePatch = "PWILV22", 1
 	Music = "P_AMPIE"
 	Author = "$WF_AU_MILO_CASALI"
 }
@@ -231,7 +231,7 @@ map PL_MAP23 "$PHUSTR_23"
 map PL_MAP24 "$PHUSTR_24"
 {
 	Next = "PL_MAP25"
-	TitlePatch = "PWILV23"
+	TitlePatch = "PWILV23", 1
 	Music = "P_THEDA3"
 	Author = "$WF_AU_MILO_CASALI"
 }
@@ -239,7 +239,7 @@ map PL_MAP24 "$PHUSTR_24"
 map PL_MAP25 "$PHUSTR_25"
 {
 	Next = "PL_MAP26"
-	TitlePatch = "PWILV24"
+	TitlePatch = "PWILV24", 1
 	Music = "P_ADRIAN"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -247,7 +247,7 @@ map PL_MAP25 "$PHUSTR_25"
 map PL_MAP26 "$PHUSTR_26"
 {
 	Next = "PL_MAP27"
-	TitlePatch = "PWILV25"
+	TitlePatch = "PWILV25", 1
 	Music = "P_MESSG2"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -255,7 +255,7 @@ map PL_MAP26 "$PHUSTR_26"
 map PL_MAP27 "$PHUSTR_27"
 {
 	Next = "PL_MAP28"
-	TitlePatch = "PWILV26"
+	TitlePatch = "PWILV26", 1
 	Music = "P_ROMER2"
 	Author = "$WF_AU_MILO_CASALI"
 }
@@ -263,7 +263,7 @@ map PL_MAP27 "$PHUSTR_27"
 map PL_MAP28 "$PHUSTR_28"
 {
 	Next = "PL_MAP29"
-	TitlePatch = "PWILV27"
+	TitlePatch = "PWILV27", 1
 	Music = "P_TENSE"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -271,7 +271,7 @@ map PL_MAP28 "$PHUSTR_28"
 map PL_MAP29 "$PHUSTR_29"
 {
 	Next = "PL_MAP30"
-	TitlePatch = "PWILV28"
+	TitlePatch = "PWILV28", 1
 	Music = "P_SHAWN3"
 	Author = "$WF_AU_MILO_CASALI"
 }
@@ -279,7 +279,7 @@ map PL_MAP29 "$PHUSTR_29"
 map PL_MAP30 "$PHUSTR_30"
 {
 	Next = EndSequence, "Inter_Cast_Plutonia"
-	TitlePatch = "PWILV29"
+	TitlePatch = "PWILV29", 1
 	Music = "P_OPENIN"
 	AllowMonsterTelefrags
 	Author = "$WF_AU_MILO_CASALI"
@@ -292,7 +292,7 @@ map PL_MAP31 "$PHUSTR_31"
 	Next = "PL_MAP16"
 	SecretNext = "PL_MAP32"
 	Cluster = 22
-	TitlePatch = "PWILV30"
+	TitlePatch = "PWILV30", 1
 	Music = "P_EVIL"
 	Author = "$WF_AU_DARIO_CASALI"
 }
@@ -301,7 +301,7 @@ map PL_MAP32 "$PHUSTR_32"
 {
 	Next = "PL_MAP16"
 	Cluster = 23
-	TitlePatch = "PWILV31"
+	TitlePatch = "PWILV31", 1
 	Music = "P_ULTIMA"
 	Author = "$WF_AU_MILO_CASALI"
 }

@@ -12,7 +12,7 @@ defaultmap
 map ML_MAP10 "$ML_BLACKTWR"
 {
 	Next = "ML_MAP11"
-	TitlePatch = "MWILV09"
+	TitlePatch = "MWILV09", 1
 	Music = "$MUSIC_ADRIAN"
 }
 
@@ -20,14 +20,14 @@ map ML_MAP18 "$ML_TEETH"
 {
 	Next = "ML_MAP19"
 	SecretNext = "ML_MAP21"
-	TitlePatch = "MWILV17"
+	TitlePatch = "MWILV17", 1
 	Music = "$MUSIC_EVIL"
 }
 
 map ML_MAP19 "$ML_BLOODSEA"
 {
 	Next = "ML_MAP20"
-	TitlePatch = "MWILV18"
+	TitlePatch = "MWILV18", 1
 	Music = "$MUSIC_SHAWN"
 	Map07Special
 	ResetHealth
@@ -38,7 +38,7 @@ map ML_MAP19 "$ML_BLOODSEA"
 map ML_MAP20 "$ML_MEPHISTO"
 {
 	Next = EndSequence, "MasterLevels_End"
-	TitlePatch = "MWILV19"
+	TitlePatch = "MWILV19", 1
 	Music = "$MUSIC_SHAWN"
 	AllowMonsterTelefrags
 	Map07Special
@@ -48,7 +48,7 @@ map ML_MAP21 "$ML_TEETH_SECRET"
 {
 	Next = "ML_MAP19"
 	Cluster = 25
-	TitlePatch = "MWILV20"
+	TitlePatch = "MWILV20", 1
 	Music = "$MUSIC_ULTIMA"
 }
 
@@ -57,14 +57,14 @@ map ML_MAP21 "$ML_TEETH_SECRET"
 map ML_MAP37 "$ML_FLOOD"
 {
 	Next = "ML_MAP38"
-	TitlePatch = "MWILV36"
+	TitlePatch = "MWILV36", 1
 	Music = "$MUSIC_COUNTD"
 }
 
 map ML_MAP38 "$ML_DERELICT"
 {
 	Next = "ML_MAP39"
-	TitlePatch = "MWILV37"
+	TitlePatch = "MWILV37", 1
 	Music = "$MUSIC_STALKS"
 	Author = "$WF_AU_KVERNMO_HYNE"
 }
@@ -72,7 +72,7 @@ map ML_MAP38 "$ML_DERELICT"
 map ML_MAP39 "$ML_WATCHTWR"
 {
 	Next = "ML_MAP20"
-	TitlePatch = "MWILV38"
+	TitlePatch = "MWILV38", 1
 	Music = "$MUSIC_BETWEE"
 	Author = "$WF_AU_KVERNMO_HYNE"
 }
@@ -80,28 +80,28 @@ map ML_MAP39 "$ML_WATCHTWR"
 map ML_MAP40 "$ML_TODEATH"
 {
 	Next = "ML_MAP18"
-	TitlePatch = "MWILV39"
+	TitlePatch = "MWILV39", 1
 	Music = "$MUSIC_DOOM"
 }
 
 map ML_MAP41 "$ML_ARENA"
 {
 	Next = "ML_MAP42"
-	TitlePatch = "MWILV40"
+	TitlePatch = "MWILV40", 1
 	Music = "$MUSIC_THE_DA"
 }
 
 map ML_MAP42 "$ML_STORM"
 {
 	Next = "ML_MAP10"
-	TitlePatch = "MWILV41"
+	TitlePatch = "MWILV41", 1
 	Music = "$MUSIC_IN_CIT"
 }
 
 map ML_MAP43 "$ML_THE_EVIL"
 {
 	Next = EndSequence, "MasterLevels_End"
-	TitlePatch = "MWILV42"
+	TitlePatch = "MWILV42", 1
 	Music = "$MUSIC_OPENIN"
 	AllowMonsterTelefrags
 }
