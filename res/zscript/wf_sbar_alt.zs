@@ -546,7 +546,7 @@ extend class WadFusionStatusBar
 			int millis  = (timeTicks % GameTicRate) * 1000 / GameTicRate;
 			String timeString = String.Format("%02i:%02i:%02i", hours, minutes, seconds);
 			String timeMillisString = String.Format(timeString..".%03i", millis);
-			let mapParTime = ( timeSeconds <= Level.ParTime ) && Level.ParTime > 0;
+			let mapParTime = ( timeSeconds < Level.ParTime ) && Level.ParTime > 0;
 			DrawString(mSmallFontMono, altHudInfoTimeMillis ? timeMillisString : timeString, infoPos,
 					   DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, mapParTime ? Font.CR_GOLD : Font.CR_WHITE, infoAlpha);
 			infoPos.Y += infoPosYIncrement;
