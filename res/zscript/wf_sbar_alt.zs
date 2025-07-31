@@ -278,22 +278,42 @@ extend class WadFusionStatusBar
 		// Draw ammo pool
 		if ( altHudAmmoInv )
 		{
-			String ammoBulletsStr = StringTable.Localize("$WF_HUD_AMMO_BULLETS");
-			String ammoShellsStr  = StringTable.Localize("$WF_HUD_AMMO_SHELLS");
-			String ammoRocketsStr = StringTable.Localize("$WF_HUD_AMMO_ROCKETS");
-			String ammoCellsStr   = StringTable.Localize("$WF_HUD_AMMO_CELLS");
-			String ammoFuelStr    = StringTable.Localize("$WF_HUD_AMMO_FUEL");
+			String backpackColor  = hasBackpack ? "\cf" : "\cj";
+			String ammoBulletsStr = backpackColor..StringTable.Localize("$WF_HUD_AMMO_BULLETS");
+			String ammoShellsStr  = backpackColor..StringTable.Localize("$WF_HUD_AMMO_SHELLS");
+			String ammoRocketsStr = backpackColor..StringTable.Localize("$WF_HUD_AMMO_ROCKETS");
+			String ammoCellsStr   = backpackColor..StringTable.Localize("$WF_HUD_AMMO_CELLS");
+			String ammoFuelStr    = backpackColor..StringTable.Localize("$WF_HUD_AMMO_FUEL");
+			
+			int clipAmount   = clip   != null ? clip.Amount   : 0;
+			int shellAmount  = shell  != null ? shell.Amount  : 0;
+			int rocketAmount = rocket != null ? rocket.Amount : 0;
+			int cellAmount   = cell   != null ? cell.Amount   : 0;
+			int fuelAmount   = fuel   != null ? fuel.Amount   : 0;
+			
+			String clipColor   = clipAmount   > 0 ? ( clipAmount   > clipLow   ? "\cj" : "\cg" ) : "\cm";
+			String shellColor  = shellAmount  > 0 ? ( shellAmount  > shellLow  ? "\cj" : "\cg" ) : "\cm";
+			String rocketColor = rocketAmount > 0 ? ( rocketAmount > rocketLow ? "\cj" : "\cg" ) : "\cm";
+			String cellColor   = cellAmount   > 0 ? ( cellAmount   > cellLow   ? "\cj" : "\cg" ) : "\cm";
+			String fuelColor   = fuelAmount   > 0 ? ( fuelAmount   > fuelLow   ? "\cj" : "\cg" ) : "\cm";
+			
+			String clipAmountStr   = clipColor  ..String.Format("%03d", clipAmount);
+			String shellAmountStr  = shellColor ..String.Format("%03d", shellAmount);
+			String rocketAmountStr = rocketColor..String.Format("%03d", rocketAmount);
+			String cellAmountStr   = cellColor  ..String.Format("%03d", cellAmount);
+			String fuelAmountStr   = fuelColor  ..String.Format("%03d", fuelAmount);
+			
+			String ammoClipInv   = ammoBulletsStr.." "..clipAmountStr;
+			String ammoShellInv  = ammoShellsStr .." "..shellAmountStr;
+			String ammoRocketInv = ammoRocketsStr.." "..rocketAmountStr;
+			String ammoCellInv   = ammoCellsStr  .." "..cellAmountStr;
+			String ammoFuelInv   = ammoFuelStr   .." "..fuelAmountStr;
 			
 			if ( fuel != null && ammotype1 != fuel )
 			{
 				if ( ( isId1 && id1WeapSwap ) || ( hasIncinerator || hasHeatwave ) || hudId24 || id1WeapSwapAlways )
 				{
-					DrawString(mConFont, ammoFuelStr, (ammoInvPos.X - 31, ammoInvPos.Y),
-							   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
-					DrawString(mConFont, FormatNumber(fuel.Amount, 3, 0, 3), ammoInvPos,
-							   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, fuel.Amount > fuelLow ? Font.CR_WHITE : Font.CR_RED, ammoInvAlpha);
-					if ( fuel.Amount <= 0 )
-						DrawString(mConFont, "000", ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_BLACK, ammoInvAlpha);
+					DrawString(mConFont, ammoFuelInv, ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, ammoInvAlpha);
 					ammoInvPos.Y -= ammoInvPosYIncrement;
 				}
 			}
@@ -304,12 +324,7 @@ extend class WadFusionStatusBar
 				{
 					if ( !( id1WeapSwapAlways && !( hasPlasmaRifle || hasBfg9000 ) ) )
 					{
-						DrawString(mConFont, ammoCellsStr, (ammoInvPos.X - 31, ammoInvPos.Y),
-								   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
-						DrawString(mConFont, FormatNumber(cell.Amount, 3, 0, 3), ammoInvPos,
-								   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, cell.Amount > cellLow ? Font.CR_WHITE : Font.CR_RED, ammoInvAlpha);
-						if ( cell.Amount <= 0 )
-							DrawString(mConFont, "000", ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_BLACK, ammoInvAlpha);
+						DrawString(mConFont, ammoCellInv, ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, ammoInvAlpha);
 						ammoInvPos.Y -= ammoInvPosYIncrement;
 					}
 				}
@@ -317,34 +332,19 @@ extend class WadFusionStatusBar
 			
 			if ( rocket != null && ammotype1 != rocket )
 			{
-				DrawString(mConFont, ammoRocketsStr, (ammoInvPos.X - 31, ammoInvPos.Y),
-						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
-				DrawString(mConFont, FormatNumber(rocket.Amount, 3, 0, 3), ammoInvPos,
-						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, rocket.Amount > rocketLow ? Font.CR_WHITE : Font.CR_RED, ammoInvAlpha);
-				if ( rocket.Amount <= 0 )
-					DrawString(mConFont, "000", ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_BLACK, ammoInvAlpha);
+				DrawString(mConFont, ammoRocketInv, ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, ammoInvAlpha);
 				ammoInvPos.Y -= ammoInvPosYIncrement;
 			}
 			
 			if ( shell != null && ammotype1 != shell )
 			{
-				DrawString(mConFont, ammoShellsStr, (ammoInvPos.X - 31, ammoInvPos.Y),
-						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
-				DrawString(mConFont, FormatNumber(shell.Amount, 3, 0, 3), ammoInvPos,
-						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, shell.Amount > shellLow ? Font.CR_WHITE : Font.CR_RED, ammoInvAlpha);
-				if ( shell.Amount <= 0 )
-					DrawString(mConFont, "000", ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_BLACK, ammoInvAlpha);
+				DrawString(mConFont, ammoShellInv, ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, ammoInvAlpha);
 				ammoInvPos.Y -= ammoInvPosYIncrement;
 			}
 			
 			if ( clip != null && ammotype1 != clip )
 			{
-				DrawString(mConFont, ammoBulletsStr, (ammoInvPos.X - 31, ammoInvPos.Y),
-						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, hasBackpack ? Font.CR_GOLD : Font.CR_WHITE, ammoInvAlpha);
-				DrawString(mConFont, FormatNumber(clip.Amount, 3, 0, 3), ammoInvPos,
-						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, clip.Amount > clipLow ? Font.CR_WHITE : Font.CR_RED, ammoInvAlpha);
-				if ( clip.Amount <= 0 )
-					DrawString(mConFont, "000", ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_BLACK, ammoInvAlpha);
+				DrawString(mConFont, ammoClipInv, ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, ammoInvAlpha);
 				ammoInvPos.Y -= ammoInvPosYIncrement;
 			}
 		}
