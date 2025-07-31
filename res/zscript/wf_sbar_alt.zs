@@ -249,7 +249,7 @@ extend class WadFusionStatusBar
 				DrawInventoryIcon(ammotype1, (-14 - ammoInvPosKeysOffset - ultraWide, -10), DI_SCREEN_RIGHT_BOTTOM, ammoAlpha);
 				DrawString(mHUDFont, FormatNumber(ammotype1.Amount, 1), (-30 - ammoInvPosKeysOffset - ultraWide, -25),
 						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT|DI_NOSHADOW,
-						   ammotype1.Amount > ammoType1Low ? Font.CR_WHITE : Font.CR_RED, ammoAlpha);
+						   ammotype1.Amount > 0 ? ( ammotype1.Amount > ammoType1Low ? Font.CR_WHITE : Font.CR_RED ) : Font.CR_BLACK, ammoAlpha);
 				invY -= 27;
 			}
 			
@@ -258,7 +258,7 @@ extend class WadFusionStatusBar
 				DrawInventoryIcon(ammotype2, (-14 - ammoInvPosKeysOffset - ultraWide, invY + 15), DI_SCREEN_RIGHT_BOTTOM, ammoAlpha);
 				DrawString(mHUDFont, FormatNumber(ammotype2.Amount, 1), (-30 - ammoInvPosKeysOffset - ultraWide, invY),
 						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT|DI_NOSHADOW,
-						   ammotype2.Amount > ammoType2Low ? Font.CR_WHITE : Font.CR_RED, ammoAlpha);
+						   ammotype2.Amount > 0 ? ( ammotype2.Amount > ammoType2Low ? Font.CR_WHITE : Font.CR_RED ) : Font.CR_BLACK, ammoAlpha);
 				invY -= 27;
 				ammoInvPos.Y -= 27;
 			}
@@ -361,7 +361,8 @@ extend class WadFusionStatusBar
 				int blurSphereTime = int(Ceil(double(hasBlurSphere.EffectTics) / GameTicRate));
 				DrawImage("PINSAHUD", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
 				DrawString(mConFont, FormatNumber(blurSphereTime, 1), (powerupPos.X, powerupPos.Y - 8),
-						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER,
+						   blurSphereTime > 4 ? Font.CR_WHITE : Font.CR_DARKRED, powerupAlpha);
 				powerupPos.Y -= powerupPosYIncrement;
 				powerupCount++;
 			}
@@ -371,7 +372,8 @@ extend class WadFusionStatusBar
 				int invulnerabilitySphereTime = int(Ceil(double(hasInvulnerabilitySphere.EffectTics) / GameTicRate));
 				DrawImage("PINVAHUD", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
 				DrawString(mConFont, FormatNumber(invulnerabilitySphereTime, 1), (powerupPos.X, powerupPos.Y - 8),
-						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER,
+						   invulnerabilitySphereTime > 4 ? Font.CR_WHITE : Font.CR_DARKRED, powerupAlpha);
 				powerupPos.Y -= powerupPosYIncrement;
 				powerupCount++;
 			}
@@ -381,7 +383,8 @@ extend class WadFusionStatusBar
 				int infraredTime = int(Ceil(double(hasInfrared.EffectTics) / GameTicRate));
 				DrawImage("PVISAHUD", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
 				DrawString(mConFont, FormatNumber(infraredTime, 1), (powerupPos.X, powerupPos.Y - 8),
-						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER,
+						   infraredTime > 4 ? Font.CR_WHITE : Font.CR_DARKRED, powerupAlpha);
 				powerupPos.Y -= powerupPosYIncrement;
 				powerupCount++;
 			}
@@ -393,7 +396,8 @@ extend class WadFusionStatusBar
 					powerupPos.Y += 12;
 				DrawImage("SUITA0", powerupPos, DI_SCREEN_RIGHT_BOTTOM, powerupAlpha);
 				DrawString(mConFont, FormatNumber(radSuitTime, 1), (powerupPos.X, powerupPos.Y - 8),
-						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER, Font.CR_WHITE, powerupAlpha);
+						   DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_CENTER,
+						   radSuitTime > 4 ? Font.CR_WHITE : Font.CR_DARKRED, powerupAlpha);
 				powerupPos.Y -= powerupPosYIncrement;
 				powerupCount++;
 			}
@@ -465,8 +469,9 @@ extend class WadFusionStatusBar
 		
 		if ( deathmatch && altHudFrags )
 		{
-			DrawImage("M_SKULL1", (20, -64), DI_SCREEN_LEFT_BOTTOM, fragsAlpha);
-			DrawString(mHUDFont, FormatNumber(CPlayer.FragCount, 1), (40, -79), DI_SCREEN_LEFT_BOTTOM|DI_NOSHADOW, Font.CR_WHITE, fragsAlpha);
+			DrawImage("M_SKULL2", (20 + ultraWide, -64), DI_SCREEN_LEFT_BOTTOM, fragsAlpha);
+			DrawString(mHUDFont, FormatNumber(CPlayer.FragCount, 1), (40 + ultraWide, -79),
+					   DI_SCREEN_LEFT_BOTTOM|DI_NOSHADOW, Font.CR_WHITE, fragsAlpha);
 		}
 		else if ( !deathmatch )
 		{
@@ -586,7 +591,7 @@ extend class WadFusionStatusBar
 		}
 		
 		// Draw skill
-		if ( altHudInfoSkill )
+		if ( !deathmatch && altHudInfoSkill )
 		{
 			String skillStr = StringTable.Localize("$WF_HUD_STATS_SKILL");
 			String skillName = "";
