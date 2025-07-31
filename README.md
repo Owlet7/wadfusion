@@ -22,6 +22,7 @@ WadFusion can be launched with the following command line arguments:
 - `-v`, `--verbose` — Print out all the logged information.
 - `-p`, `--patch` — Patch an existing IPK3 without extracting WADs.
 - `-d`, `--deflate` — Use DEFLATE compression when generating the IPK3.
+- `-e`, `--extract-only` — Skip copying pre-authored lumps and only extract WADs (for developers).
 
 ## Supported WADs
 

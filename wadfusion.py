@@ -110,10 +110,11 @@ def print_help():
         if i == '-h' or i == '--help':
             print('Usage: ' + os.path.basename(__file__) + ' [OPTIONS]\n')
             print('Options:\n')
-            print('  -h, --help       Show this help message.')
-            print('  -v, --verbose    Print out all the logged information.')
-            print('  -p, --patch      Patch an existing IPK3 without extracting WADs.')
-            print('  -d, --deflate    Use DEFLATE compression when generating the IPK3.')
+            print('  -h, --help            Show this help message.')
+            print('  -v, --verbose         Print out all the logged information.')
+            print('  -p, --patch           Patch an existing IPK3 without extracting WADs.')
+            print('  -d, --deflate         Use DEFLATE compression when generating the IPK3.')
+            print('  -e, --extract-only    Skip copying pre-authored lumps and only extract WADs (for developers).')
             input('')
             return True
     return False
@@ -131,6 +132,13 @@ def should_patch():
             if not os.path.isfile(DEST_FILENAME):
                 logg('No IPK3 found to patch!\n')
                 continue
+            return True
+    return False
+
+def skip_resources():
+    for i in ARGUMENTS:
+        if i == '-e' or i == '--extract-only':
+            logs('Skipping pre-authored lumps!')
             return True
     return False
 
@@ -718,7 +726,11 @@ def extract():
         if masterlevelsrejects_is_complete_verbose():
             extract_master_levels_rejects()
     # copy pre-authored lumps e.g. mapinfo
-    copy_resources()
+    if not skip_resources():
+        copy_resources()
+    else:
+        logs('Copying iwadinfo.txt')
+        copyfile(RES_DIR + 'iwadinfo.txt', DEST_DIR + 'iwadinfo.txt')
     # duplicate doom1 sky patches to suppress errors with id1
     if get_wad_filename('id1') and get_wad_filename('doom2'):
         if not doom_is_registered():

@@ -54,6 +54,11 @@
   - The IPK3 will now use Store compression by default. That means the file will
     be about 10% larger, but the time it takes to generate should be three times
     shorter.
+- Added `-e` and `--extract-only` command line arguments. If used, the
+  pre-authored lumps will be skipped when generating an IPK3, and only the
+  extracted WAD data will be included (and an IWADINFO lump).
+  - This should only be useful for developers, to test changes quickly without
+    packaging changes.
 - The WadFusion version will now be printed out in GZDoom's console on startup.
 
 ## [WadFusion 1.5.1](https://github.com/Owlet7/wadfusion/releases/tag/v1.5.1) — [03 May 2025](https://github.com/Owlet7/wadfusion/tree/v1.5.1)
