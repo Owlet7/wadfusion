@@ -61,6 +61,12 @@ extend class WadFusionStatusBar
 		let hasHeatwave     = CPlayer.mo.FindInventory("ID24CalamityBlade");
 		let hasBfg9000      = CPlayer.mo.FindInventory("BFG9000");
 		
+		let replacedSuperShotgun = Actor.GetReplacement("SuperShotgun")      != "SuperShotgun";
+		let replacedIncinerator  = Actor.GetReplacement("ID24Incinerator")   != "ID24Incinerator";
+		let replacedPlasmaRifle  = Actor.GetReplacement("PlasmaRifle")       != "PlasmaRifle";
+		let replacedHeatwave     = Actor.GetReplacement("ID24CalamityBlade") != "ID24CalamityBlade";
+		let replacedBfg9000      = Actor.GetReplacement("BFG9000")           != "BFG9000";
+		
 		let clip   = CPlayer.mo.FindInventory("Clip");
 		let shell  = CPlayer.mo.FindInventory("Shell");
 		let rocket = CPlayer.mo.FindInventory("RocketAmmo");
@@ -427,34 +433,28 @@ extend class WadFusionStatusBar
 					let slotPlasmaRifle    = getWeaponSlot == "PlasmaRifle";
 					let slotHeatwave       = getWeaponSlot == "ID24CalamityBlade";
 					let slotBfg9000        = getWeaponSlot == "BFG9000";
-					let weaponSlotReplaced = getWeaponSlot != null && Actor.GetReplacement(getWeaponSlot.GetClassName()) != getWeaponSlot;
+					let weaponSlotReplaced = getWeaponSlot != null && Actor.GetReplacee(getWeaponSlot) != getWeaponSlot;
 					
-					if ( CPlayer.ReadyWeapon )
-					{
-						if ( getWeaponSlot == CPlayer.ReadyWeapon.GetClassName() )
-							DrawString(mIndexFont, slotStr, weapInvPos,
-									   DI_SCREEN_RIGHT_BOTTOM, slotFistBerserk ? Font.CR_RED : Font.CR_GOLD, weapInvAlpha);
-						else if ( CPlayer.mo.FindInventory(getWeaponSlot) )
-							DrawString(mIndexFont, slotStr, weapInvPos,
-									   DI_SCREEN_RIGHT_BOTTOM, slotFistBerserk ? Font.CR_RED : Font.CR_WHITE, weapInvAlpha * 0.2);
-					}
+					let weapReady        = CPlayer.ReadyWeapon;
+					let weapInvReady     = weapReady != null && getWeaponSlot == weapReady.GetClassName();
+					let weapInvColor     = slotFistBerserk ? Font.CR_RED : ( weapInvReady ? Font.CR_GOLD : Font.CR_WHITE);
+					let weapInvAlphaType = weapInvReady ? weapInvAlpha : weapInvAlpha * 0.2;
 					
-					if ( j > 0 )
+					if ( CPlayer.mo.FindInventory(getWeaponSlot) )
+						DrawString(mIndexFont, slotStr, weapInvPos, DI_SCREEN_RIGHT_BOTTOM, weapInvColor, weapInvAlphaType);
+					
+					if ( j > 0 && !weaponSlotReplaced )
 						weapInvPos.X -= weapInvPosXIncrement;
 					
-					if ( weaponSlotReplaced )
-						weapInvPos.X += weapInvPosXIncrement;
-					
-					if ( !weaponSlotReplaced && slotSuperShotgun && ( isDoom1 && !hasSuperShotgun ) )
+					if ( slotSuperShotgun && ( isDoom1 && !hasSuperShotgun ) && !replacedSuperShotgun )
 						weapInvPos.X += weapInvPosXIncrement;
 					
 					if ( !hudId24 )
 					{
-						if ( !weaponSlotReplaced &&
-							 ( slotIncinerator && ( !isId1 && !hasIncinerator ) ) ||
-							 ( slotPlasmaRifle && ( isId1 && !hasPlasmaRifle ) ) ||
-							 ( slotHeatwave && ( !isId1 && !hasHeatwave ) ) ||
-							 ( slotBfg9000 && ( isId1 && !hasBfg9000 ) ) )
+						if ( ( slotIncinerator && ( !isId1 && !hasIncinerator ) && !replacedIncinerator ) ||
+							 ( slotPlasmaRifle && ( isId1 && !hasPlasmaRifle ) && !replacedPlasmaRifle ) ||
+							 ( slotHeatwave && ( !isId1 && !hasHeatwave ) && !replacedHeatwave ) ||
+							 ( slotBfg9000 && ( isId1 && !hasBfg9000 ) && !replacedBfg9000 ) )
 						{
 							weapInvPos.X += weapInvPosXIncrement;
 						}
