@@ -346,7 +346,9 @@ MASTER_LEVELS_UDTWID_PATCHES = {
 }
 
 # help the initial source wad reporting find sigil by any of its released names
-SIGIL_ALT_FILENAMES = ['sigil_v1_0', 'sigil_v1_1', 'sigil_v1_2', 'sigil_v1_21']
+SIGIL_ALT_FILENAMES = ['sigil_v1_0', 'sigil_v1_1', 'sigil_v1_2', 'sigil_v1_21', 'sigil_v1_23']
+# sigil version with MP3 music
+SIGIL_MP3_ALT_FILENAMES = ['sigil_v1_23_reg']
 # same for sigil2 - version with MIDI music
 SIGIL2_ALT_FILENAMES = ['sigil_ii_v1_0']
 # sigil2 version with MP3 music (no sigil_shreds equivalent; MP3 music just an alternate wad)

@@ -86,6 +86,7 @@ MASTER_LEVELS_PATCHES = {}
 MASTER_LEVELS_TITAN_PATCHES = {}
 MASTER_LEVELS_UDTWID_PATCHES = {}
 SIGIL_ALT_FILENAMES = []
+SIGIL_MP3_ALT_FILENAMES = []
 SIGIL2_ALT_FILENAMES = []
 SIGIL2_MP3_ALT_FILENAMES = []
 REGISTERED_DOOM_ONLY_LUMP = ''
@@ -769,13 +770,21 @@ def get_report_found():
                 os.rename(sigil_alt, SRC_WAD_DIR + 'SIGIL.WAD')
                 found.insert(1, 'sigil')
                 break
+    # ... and its mp3 soundtrack version
+    if 'sigil' in found and not 'sigil_shreds' in found:
+        for alt_name in SIGIL_MP3_ALT_FILENAMES:
+            sigil_mp3_alt = get_wad_filename(alt_name)
+            if sigil_mp3_alt:
+                os.rename(sigil_mp3_alt, SRC_WAD_DIR + 'SIGIL_SHREDS.WAD')
+                found.insert(2, 'sigil_shreds')
+                break
     # same with sigil2
     if 'doom' in found and not 'sigil2' in found:
         for alt_name in SIGIL2_ALT_FILENAMES:
             sigil2_alt = get_wad_filename(alt_name)
             if sigil2_alt:
                 os.rename(sigil2_alt, SRC_WAD_DIR + 'SIGIL2.WAD')
-                found.insert(2, 'sigil2')
+                found.insert(3, 'sigil2')
                 break
     # ... and sigil2 mp3 soundtrack version
     if 'sigil2' in found and not 'sigil2_mp3' in found:
@@ -783,7 +792,7 @@ def get_report_found():
             sigil2_mp3_alt = get_wad_filename(alt_name)
             if sigil2_mp3_alt:
                 os.rename(sigil2_mp3_alt, SRC_WAD_DIR + 'SIGIL2_MP3.WAD')
-                found.insert(3, 'sigil2_mp3')
+                found.insert(4, 'sigil2_mp3')
                 break
     return found
 

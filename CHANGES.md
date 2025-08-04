@@ -4,6 +4,14 @@
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.1...HEAD)
 - Removed ID24 actors, as they were merged into GZDoom.
   - **GZDoom must be updated to dev build g4.15pre-230 or newer!**
+- Added support for Sigil v1.23.
+  - Like with Sigil II, the new "registered" MP3 version isn't supported on its
+    own. The freeware version must be used to export the campaign, while the MP3
+    version will only be used to export the alternate music.
+  - The update from v1.21 to v1.23 features no changes that are relevant to
+    Fusion, so you can safely ignore it when updating. The version of Sigil that
+    is included in DOOM + DOOM II has map fixes that aren't present in v1.23,
+    so take that into account, too.
 - Added title screen when starting new games.
   - Added "Intro title screens" compatibility option to automatically skip them.
 - Added "Intro stories" option to include "intermissions" at the start of
