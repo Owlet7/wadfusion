@@ -27,6 +27,7 @@
   - The order in which the episodes are played can be switched between "Default
     order", which is the order in which they are listed on the "New Game" menu,
     "Chronological order", or "Release order".
+- Added a compatibility option to apply the Sigil II Spiderdemon buff globally.
 - Added "Music substitutions" compatibility options.
   - These can be used to force Final DOOM music in DOOM II on a per-map basis.
 - Moved all texture substitution options to a sub-menu.

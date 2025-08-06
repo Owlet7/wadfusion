@@ -114,7 +114,9 @@ class WadFusionHandler : EventHandler
 	override void WorldThingSpawned(WorldEvent e)
 	{
 		// increase the spiderdemon's health from 3000 to 9000 in Sigil 2
-		if ( CVar.FindCVar("wf_compat_sigil2spiderboss").GetBool() )
+		int sigil2SpiderBoss = CVar.FindCVar("wf_compat_sigil2spiderboss").GetInt();
+		string mapPrefix = Level.MapName.Left(3).MakeLower();
+		if ( ( sigil2SpiderBoss == 1 && mapPrefix == "e6m" ) || sigil2SpiderBoss >= 2 )
 			DoSigil2SpiderBossBuff(e);
 		
 		// override gzdoom's transparency render style for id24 actors
@@ -138,12 +140,8 @@ class WadFusionHandler : EventHandler
 	
 	void DoSigil2SpiderBossBuff(WorldEvent e)
 	{
-		string mapPrefix = Level.MapName.Left(3).MakeLower();
-		if ( mapPrefix == "e6m" )
-		{
-			if ( SpiderMastermind(e.Thing) != null )
-				SpiderMastermind(e.Thing).Health = 9000;
-		}
+		if ( SpiderMastermind(e.Thing) != null )
+			SpiderMastermind(e.Thing).Health = 9000;
 	}
 	
 	void DoId24ActorTransparency(WorldEvent e)

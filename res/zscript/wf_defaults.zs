@@ -35,15 +35,15 @@ extend class WadFusionStaticHandler
 		CVar.FindCVar("wf_fullrun_loop").ResetToDefault();
 		CVar.FindCVar("wf_id24trans").ResetToDefault();
 		
+		CVar.FindCVar("wf_compat_sigil2spiderboss").ResetToDefault();
 		CVar.FindCVar("wf_compat_id24_weapons").ResetToDefault();
 		CVar.FindCVar("wf_compat_id24_hud").ResetToDefault();
-		CVar.FindCVar("wf_compat_sigil2spiderboss").ResetToDefault();
-		CVar.FindCVar("wf_compat_killcountfix").ResetToDefault();
 		CVar.FindCVar("wf_compat_xboxsecretexits").ResetToDefault();
 		CVar.FindCVar("wf_compat_pistolstart").ResetToDefault();
 		CVar.FindCVar("wf_compat_changemusic").ResetToDefault();
 		CVar.FindCVar("wf_compat_nextmap").ResetToDefault();
 		CVar.FindCVar("wf_compat_titlepics").ResetToDefault();
+		CVar.FindCVar("wf_compat_killcountfix").ResetToDefault();
 		CVar.FindCVar("wf_compat_mapfixes").ResetToDefault();
 		
 		CVar.FindCVar("wf_compat_texswap_d1").ResetToDefault();
