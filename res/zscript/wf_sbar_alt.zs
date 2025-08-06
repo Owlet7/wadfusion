@@ -100,8 +100,8 @@ extend class WadFusionStatusBar
 		let altHudWeapInv         = CVar.FindCVar("wf_hud_alt_weapinv").GetBool();
 		let altHudKeys            = CVar.FindCVar("wf_hud_alt_keys").GetBool();
 		let altHudFrags           = CVar.FindCVar("wf_hud_alt_frags").GetBool();
-		int altHudStatsKills      = CVar.FindCVar("wf_hud_alt_stats_kills").GetInt() >= 1;
-		int altHudStatsKillsNotNm = CVar.FindCVar("wf_hud_alt_stats_kills").GetInt() == 1;
+		let altHudStatsKills      = CVar.FindCVar("wf_hud_alt_stats_kills").GetInt() >= 1;
+		let altHudStatsKillsNotNm = CVar.FindCVar("wf_hud_alt_stats_kills").GetInt() == 1;
 		let altHudStatsItems      = CVar.FindCVar("wf_hud_alt_stats_items").GetBool();
 		let altHudStatsSecrets    = CVar.FindCVar("wf_hud_alt_stats_secrets").GetBool();
 		let altHudStatsIcons      = CVar.FindCVar("wf_hud_alt_stats_icons").GetBool();
@@ -138,7 +138,7 @@ extend class WadFusionStatusBar
 			else
 				DrawTexture(GetMugShot(5), (3 + ultraWide, -35 - hudHealthYOffset), DI_ITEM_OFFSETS|DI_SCREEN_LEFT_BOTTOM, healthAlpha);
 			
-			int healthColor =
+			let healthColor =
 				health > maxhealth * 2    ? Font.CR_PURPLE :
 				health > maxhealth * 1.5  ? Font.CR_BLUE :
 				health > maxhealth * 1    ? Font.CR_CYAN :
@@ -161,7 +161,7 @@ extend class WadFusionStatusBar
 		// Draw armor
 		if ( altHudArmor )
 		{
-			int armorColor =
+			let armorColor =
 				armor.Amount > 200 ? Font.CR_PURPLE :
 				armor.Amount > 150 ? Font.CR_BLUE :
 				armor.Amount > 100 ? Font.CR_CYAN :
