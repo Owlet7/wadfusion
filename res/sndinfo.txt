@@ -1,0 +1,1 @@
+$random menu/quitfusion { menu/quit1 menu/quit2 }

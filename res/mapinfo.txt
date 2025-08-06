@@ -26,9 +26,9 @@ include mapinfo/maps_iddm1.txt
 
 GameInfo
 {
-	DefaultEndSequence = "Fusion_GotoTitle"
 	FinalePage = "CREDIT", "VICTORY2", "ENDPIC"
-	QuitSound = "menu/quit1"
+	QuitSound = "menu/quitfusion"
+	DefaultEndSequence = "Fusion_GotoTitle"
 	AddEventHandlers = "WadFusionHandler", "WadFusionStaticHandler"
 	StatusBarClass = "WadFusionStatusBar"
 }
