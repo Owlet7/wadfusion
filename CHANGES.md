@@ -68,6 +68,7 @@
   extracted WAD data will be included (and an IWADINFO lump).
   - This should only be useful for developers, to test changes quickly without
     packaging changes.
+- Rewrote how texture definitions are included when generating the IPK3.
 - The WadFusion version will now be printed out in GZDoom's console on startup.
 
 ## [WadFusion 1.5.1](https://github.com/Owlet7/wadfusion/releases/tag/v1.5.1) — [03 May 2025](https://github.com/Owlet7/wadfusion/tree/v1.5.1)

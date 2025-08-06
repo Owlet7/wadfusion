@@ -663,45 +663,29 @@ def extract_iwads():
 
 def copy_resources():
     for src_file in RES_FILES:
-        # don't copy texture lumps for files that aren't present
-        if src_file == 'textures.doom1':
-            if not doom_is_registered():
-                if not doomu_is_retail():
-                    # DO copy if id1 or iddm1 exists and doom1 doesn't
-                    if not get_wad_filename('doom2') and get_wad_filename('id1'):
-                        if not get_wad_filename('doom2') and get_wad_filename('iddm1'):
-                            continue
-        elif src_file == 'textures.doom2' and not get_wad_filename('doom2'):
-            # DO copy if final doom exists and doom2 doesn't
-            if not get_wad_filename('tnt'):
-                if not get_wad_filename('plutonia'):
-                    continue
-        elif src_file == 'textures.tnt' and not get_wad_filename('tnt'):
-            continue
-        elif src_file == 'textures.plut' and not get_wad_filename('plutonia'):
-            if not get_wad_filename('tnt'):
-                continue
-        elif src_file == 'textures.id1':
-            if not get_wad_filename('doom2') and get_wad_filename('id1'):
-                if not get_wad_filename('doom2') and get_wad_filename('iddm1'):
-                    continue
-        elif src_file == 'textures.masterlevels':
-            if not get_wad_filename('doom2') and get_wad_filename('masterlevels'):
-                if not masterlevels_is_complete():
-                    continue
-        elif src_file == 'textures.masterlevelsrejects':
-            if not masterlevelsrejects_is_complete():
+        # don't copy textures lump if patching
+        if should_patch():
+            if src_file in ('textures.txt'):
                 continue
         logs('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
 
-def copy_resources_patch():
-    for src_file in RES_FILES:
-        # don't copy texture lumps
-        if src_file in ('textures.common', 'textures.doom1', 'textures.doom2', 'textures.tnt', 'textures.plut', 'textures.id1', 'textures.masterlevels', 'textures.masterlevelsrejects'):
-            continue
-        logs('Copying %s' % src_file)
-        copyfile(RES_DIR + src_file, DEST_DIR + src_file)
+def add_textures():
+    texfile = open(DEST_DIR + 'textures.txt', 'a')
+    if doom_is_registered() or doomu_is_retail() or (get_wad_filename('doom2') and (get_wad_filename('id1') or get_wad_filename('iddm1'))):
+        texfile.write('#include "texdefs/doom1.txt"\n')
+    if get_wad_filename('doom2') or get_wad_filename('tnt') or get_wad_filename('plutonia'):
+        texfile.write('#include "texdefs/doom2.txt"\n')
+    if get_wad_filename('tnt'):
+        texfile.write('#include "texdefs/tnt.txt"\n')
+    if get_wad_filename('plutonia'):
+        texfile.write('#include "texdefs/plutonia.txt"\n')
+    if get_wad_filename('doom2') and (get_wad_filename('id1') or get_wad_filename('iddm1')):
+        texfile.write('#include "texdefs/id1.txt"\n')
+    if get_wad_filename('doom2') and (masterlevels_is_complete() or get_wad_filename('masterlevels')):
+        texfile.write('#include "texdefs/masterlevels.txt"\n')
+    if masterlevelsrejects_is_complete():
+        texfile.write('#include "texdefs/masterlevelsrejects.txt"\n')
 
 def copy_id1_doom1_skies():
     logs('Duplicating doom1 sky patches to suppress errors with id1...')
@@ -732,6 +716,10 @@ def extract():
     else:
         logs('Copying iwadinfo.txt')
         copyfile(RES_DIR + 'iwadinfo.txt', DEST_DIR + 'iwadinfo.txt')
+        logs('Copying textures.txt')
+        copyfile(RES_DIR + 'textures.txt', DEST_DIR + 'textures.txt')
+    # add texture definition includes only for present wads
+    add_textures()
     # duplicate doom1 sky patches to suppress errors with id1
     if get_wad_filename('id1') and get_wad_filename('doom2'):
         if not doom_is_registered():
@@ -888,7 +876,7 @@ def pk3_patch():
     pk3 = ZipFile(DEST_FILENAME, 'r')
     pk3.extractall(DEST_DIR)
     pk3.close()
-    copy_resources_patch()
+    copy_resources()
     pk3_compress()
     elapsed_time = time.time() - start_time
     ipk3_size = path.getsize(DEST_FILENAME) / 1048576
@@ -961,7 +949,7 @@ def main():
     if not path.exists(DEST_DIR):
         os.mkdir(DEST_DIR)
     for dirname in ['colormaps', 'flats', 'graphics', 'mapinfo', 'maps',
-                    'music', 'patches', 'sounds', 'sprites', 'zscript']:
+                    'music', 'patches', 'sounds', 'sprites', 'texdefs', 'zscript']:
         if not path.exists(DEST_DIR + dirname):
             os.mkdir(DEST_DIR + dirname)
     # add additional lumps to the pre-defined lump lists
