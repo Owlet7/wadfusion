@@ -35,6 +35,7 @@
   script. Not sure how it got there.
 - Added options to view the original credits graphics in the respective games'
   credits menus.
+- Removed the ENDOOM screen.
 - Added an option to view all the "Help" screens.
 - Added "ID24 status bars" compatibility option.
 - Added an option to show both the medikit and the mug shot in the alternate

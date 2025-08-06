@@ -60,7 +60,7 @@ RES_FILES = [
     'textures.common', 'textures.doom1', 'textures.doom2',
     'textures.masterlevels', 'textures.masterlevelsrejects',
     'textures.tnt', 'textures.plut', 'textures.id1',
-    'textures.fusion', 'animdefs.txt', 'endoom',
+    'textures.fusion', 'animdefs.txt', 'sndinfo.txt',
     'in_epi1.txt', 'xwinter0.txt', 'xwinter1.txt',
     'graphics/STAMMO24.lmp', 'graphics/STARMS24.lmp',
     'graphics/TITLEPIC.lmp', 'graphics/M_DOOM.lmp',
