@@ -583,7 +583,7 @@ extend class WadFusionStatusBar
 			infoPos.Y += infoPosYIncrement;
 		
 		// Draw map author name
-		if ( altHudInfoMapAuthor )
+		if ( altHudInfoMapAuthor && Level.AuthorName != "" )
 		{
 			String mapAuthorName = StringTable.Localize(Level.AuthorName);
 			DrawString(mSmallFont, mapAuthorName, infoPos, DI_SCREEN_RIGHT_TOP|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, infoAlpha);
