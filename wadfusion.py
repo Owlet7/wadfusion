@@ -366,7 +366,7 @@ def extract_master_levels():
         extract_map(in_wad, map_name, out_wad_filename)
     # save teeth map32 to map21
     wad_filename = get_wad_filename('teeth')
-    out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'MAP21' + '.wad'
+    out_wad_filename = DEST_DIR + 'maps/' + MASTER_LEVELS_MAP_PREFIX + 'MAP21.wad'
     logs('  Extracting %s map32 to %s' % (wad_filename, out_wad_filename))
     in_wad = omg.WAD()
     in_wad.from_file(wad_filename)
@@ -661,31 +661,44 @@ def extract_iwads():
         if prefix is not None:
             extract_iwad_maps(iwad_name, prefix)
 
-def copy_resources():
-    for src_file in RES_FILES:
-        # don't copy textures lump if patching
-        if should_patch():
-            if src_file in ('textures.txt'):
-                continue
-        logs('Copying %s' % src_file)
-        copyfile(RES_DIR + src_file, DEST_DIR + src_file)
+def make_dirs():
+    if not path.exists(DEST_DIR):
+        os.mkdir(DEST_DIR)
+    for dirname in ['colormaps', 'flats', 'graphics', 'mapinfo', 'maps',
+                    'music', 'patches', 'sounds', 'sprites', 'texdefs', 'zscript']:
+        if not path.exists(DEST_DIR + dirname):
+            os.mkdir(DEST_DIR + dirname)
+
+def map_exists(map_name):
+    map_name += '.wad'
+    for filename in os.listdir(DEST_DIR + 'maps/'):
+        if map_name.lower() == filename.lower():
+            return True
+    return False
 
 def add_textures():
     texfile = open(DEST_DIR + 'textures.txt', 'a')
-    if doom_is_registered() or doomu_is_retail() or (get_wad_filename('doom2') and (get_wad_filename('id1') or get_wad_filename('iddm1'))):
+    if map_exists('e1m1') or map_exists('lr_map01') or map_exists('dm_map01'):
         texfile.write('#include "texdefs/doom1.txt"\n')
-    if get_wad_filename('doom2') or get_wad_filename('tnt') or get_wad_filename('plutonia'):
+    if map_exists('map01') or map_exists('tn_map01') or map_exists('pl_map01'):
         texfile.write('#include "texdefs/doom2.txt"\n')
-    if get_wad_filename('tnt'):
+    if map_exists('tn_map01'):
         texfile.write('#include "texdefs/tnt.txt"\n')
-    if get_wad_filename('plutonia'):
+    if map_exists('pl_map01'):
         texfile.write('#include "texdefs/plutonia.txt"\n')
-    if get_wad_filename('doom2') and (get_wad_filename('id1') or get_wad_filename('iddm1')):
+    if map_exists('lr_map01') or map_exists('dm_map01'):
         texfile.write('#include "texdefs/id1.txt"\n')
-    if get_wad_filename('doom2') and (masterlevels_is_complete() or get_wad_filename('masterlevels')):
+    if map_exists('ml_map01'):
         texfile.write('#include "texdefs/masterlevels.txt"\n')
-    if masterlevelsrejects_is_complete():
+    if map_exists('ml_map22'):
         texfile.write('#include "texdefs/masterlevelsrejects.txt"\n')
+
+def copy_resources():
+    for src_file in RES_FILES:
+        logs('Copying %s' % src_file)
+        copyfile(RES_DIR + src_file, DEST_DIR + src_file)
+    # add texture definition includes only for present wads
+    add_textures()
 
 def copy_id1_doom1_skies():
     logs('Duplicating doom1 sky patches to suppress errors with id1...')
@@ -718,8 +731,7 @@ def extract():
         copyfile(RES_DIR + 'iwadinfo.txt', DEST_DIR + 'iwadinfo.txt')
         logs('Copying textures.txt')
         copyfile(RES_DIR + 'textures.txt', DEST_DIR + 'textures.txt')
-    # add texture definition includes only for present wads
-    add_textures()
+        add_textures()
     # duplicate doom1 sky patches to suppress errors with id1
     if get_wad_filename('id1') and get_wad_filename('doom2'):
         if not doom_is_registered():
@@ -876,6 +888,7 @@ def pk3_patch():
     pk3 = ZipFile(DEST_FILENAME, 'r')
     pk3.extractall(DEST_DIR)
     pk3.close()
+    make_dirs()
     copy_resources()
     pk3_compress()
     elapsed_time = time.time() - start_time
@@ -945,15 +958,10 @@ def main():
         return
     start_time = time.time()
     logg('\nProcessing WADs...')
-    # make dirs if they don't exist
-    if not path.exists(DEST_DIR):
-        os.mkdir(DEST_DIR)
-    for dirname in ['colormaps', 'flats', 'graphics', 'mapinfo', 'maps',
-                    'music', 'patches', 'sounds', 'sprites', 'texdefs', 'zscript']:
-        if not path.exists(DEST_DIR + dirname):
-            os.mkdir(DEST_DIR + dirname)
     # add additional lumps to the pre-defined lump lists
     add_to_wad_lump_lists()
+    # make dirs if they don't exist
+    make_dirs()
     # extract and copy all lumps from wads and res folder
     extract()
     # deduct doom.wad maps if doomu.wad is also present

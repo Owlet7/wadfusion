@@ -8,10 +8,12 @@
   - Like with Sigil II, the new "registered" MP3 version isn't supported on its
     own. The freeware version must be used to export the campaign, while the MP3
     version will only be used to export the alternate music.
-  - The update from v1.21 to v1.23 features no changes that are relevant to
-    Fusion, so you can safely ignore it when updating. The version of Sigil that
-    is included in DOOM + DOOM II has map fixes that aren't present in v1.23,
-    so take that into account, too.
+  - The update from v1.21 to v1.23 only features a filename change, changes to
+    the compatibility version (which isn't supported by Fusion), and a
+    repackaging of the MP3 music, so you can safely ignore it when updating.
+  - The version of Sigil that is included in DOOM + DOOM II (v1.22) has map
+    fixes that weren't carried over into v1.23, so it remains the recommended,
+    effectively most up-to-date version.
 - Added title screen when starting new games.
   - Added "Intro title screens" compatibility option to automatically skip them.
 - Added "Intro stories" option to include "intermissions" at the start of
@@ -59,6 +61,8 @@
   the available command line arguments.
 - Added `-p` and `--patch` command line arguments. If used, the script will
   attempt to patch an existing IPK3 without needing to extract the WADs again.
+  - Due to the restructuring of files in this update, I would recommend doing a
+    "clean install" anyway if possible. Things should still work if you don't.
 - Added `-d` and `--deflate` command line arguments. If used, the IPK3 will be
   generated with DEFLATE compression.
   - The IPK3 will now use Store compression by default. That means the file will
