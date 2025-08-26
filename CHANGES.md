@@ -33,6 +33,8 @@
 - Added "Music substitutions" compatibility options.
   - These can be used to force Final DOOM music in DOOM II on a per-map basis.
 - Moved all texture substitution options to a sub-menu.
+- Fixed extreme slowdowns when music volume was muted.
+- Fixed two Legacy of Rust textures that wouldn't render.
 - Fixed the background graphics in Final DOOM's endings.
 - Removed `SKY1` from the Legacy of Rust list in the texture replacements
   script. Not sure how it got there.

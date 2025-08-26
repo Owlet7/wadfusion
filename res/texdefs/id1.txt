@@ -4,7 +4,6 @@
 // renamed from BRNPOIS2 to avoid Doom1 conflict
 WallTexture "BRNPOIS3", 128, 128
 {
-	NullTexture
 	Patch "WALL62_1", 0, 0
 	Patch "PS20A0", 0, 57
 }
@@ -17,7 +16,6 @@ WallTexture "DOORSTP1", 8, 128
 
 WallTexture "BRDRAIN1", 128, 128
 {
-	NullTexture
 	Patch "WALL62_1", 0, 0
 	Patch "P002A0", 0, 0
 	Patch "P002A0", 64, 0
