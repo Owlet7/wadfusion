@@ -181,7 +181,10 @@ class WadFusionStaticHandler : StaticEventHandler
 			if ( music == titleMusic[i] )
 				return;
 			else if ( i == titleMusic.Size() - 1 )
-				S_ChangeMusic(music);
+			{
+				if ( CVar.FindCVar("snd_musicvolume").GetFloat() > 0 )
+					S_ChangeMusic(music);
+			}
 		}
 	}
 }
