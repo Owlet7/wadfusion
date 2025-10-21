@@ -1,0 +1,44 @@
+name: Feature request
+description: Suggest an idea
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Please do not request support for any unofficial or console exclusive content. ###
+        **All such requests will be closed without comment.**
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: Please search to see if an issue already exists for the feature you're requesting.
+      options:
+      - label: I have searched the existing issues
+        required: true
+  - type: input
+    attributes:
+      label: WadFusion Version
+      description: |
+        Which version of WadFusion are you using? Write down the git commit SHA if you're using a dev build.
+      placeholder: e.g. 1.5.1 or c8a5286
+    validations:
+      required: false
+  - type: input
+    attributes:
+      label: Operating System
+      description: Which operating system are you using?
+      placeholder: i.e. GNU/Linux distro, Windows version, etc.
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Feature Request Description
+      description: A concise description of what you'd like to see added, changed, or improved.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Attachments
+      placeholder: You can attach images or other files by clicking this area to highlight it and then dragging files in.
+    validations:
+      required: false
