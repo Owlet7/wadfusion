@@ -1052,6 +1052,29 @@ def map_exists(map_name):
             return True
     return False
 
+def add_newgame_patch():
+    global RES_FILES
+    if map_exists('e1m1'):
+        RES_FILES += ['maps/WF_NEWGAME_E1M1.wad', 'maps/WF_NEWGAME_E2M1.wad', 'maps/WF_NEWGAME_E3M1.wad']
+    if map_exists('e4m1'):
+        RES_FILES += ['maps/WF_NEWGAME_E4M1.wad']
+    if map_exists('e5m1'):
+        RES_FILES += ['maps/WF_NEWGAME_E5M1.wad']
+    if map_exists('e6m1'):
+        RES_FILES += ['maps/WF_NEWGAME_E6M1.wad']
+    if map_exists('map01'):
+        RES_FILES += ['maps/WF_NEWGAME_MAP01.wad']
+    if map_exists('ml_map01'):
+        RES_FILES += ['maps/WF_NEWGAME_ML_MAP01.wad']
+    if map_exists('nv_map01'):
+        RES_FILES += ['maps/WF_NEWGAME_NV_MAP01.wad']
+    if map_exists('tn_map01'):
+        RES_FILES += ['maps/WF_NEWGAME_TN_MAP01.wad']
+    if map_exists('pl_map01'):
+        RES_FILES += ['maps/WF_NEWGAME_PL_MAP01.wad']
+    if map_exists('lr_map01'):
+        RES_FILES += ['maps/WF_NEWGAME_LR_MAP01.wad', 'maps/WF_NEWGAME_LR_MAP08.wad']
+
 def add_textures_patch():
     texfile = open(DEST_DIR + 'textures.txt', 'a')
     if map_exists('e1m1') or map_exists('lr_map01') or map_exists('dm_map01'):
@@ -1256,6 +1279,7 @@ def pk3_patch():
     pk3.extractall(DEST_DIR)
     pk3.close()
     make_dirs()
+    add_newgame_patch()
     copy_resources()
     pk3_compress()
     elapsed_time = time.time() - start_time
@@ -1292,11 +1316,12 @@ def main():
     set_sigil_filenames()
     # initialize data tables
     declare_data()
-    add_newgame()
     # patch an existing ipk3 if --patch argument is used
     if should_patch():
         pk3_patch()
         return
+    # add newgame maps only for present wads
+    add_newgame()
     found = get_report_found()
     # bail if no wads in SRC_WAD_DIR
     if len(found) == 0:
