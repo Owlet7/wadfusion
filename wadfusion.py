@@ -1009,7 +1009,7 @@ def add_newgame():
     global RES_FILES
     if doom_is_registered() or doom_is_retail() or doomu_is_retail():
         RES_FILES += ['maps/WF_NEWGAME_E1M1.wad', 'maps/WF_NEWGAME_E2M1.wad', 'maps/WF_NEWGAME_E3M1.wad']
-    if doom_is_retail():
+    if doom_is_retail() or doomu_is_retail():
         RES_FILES += ['maps/WF_NEWGAME_E4M1.wad']
     if get_wad_filename(SIGIL_WAD):
         RES_FILES += ['maps/WF_NEWGAME_E5M1.wad']
