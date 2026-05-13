@@ -1030,7 +1030,7 @@ def add_newgame():
 
 def add_textures():
     texfile = open(DEST_DIR + 'textures.txt', 'a')
-    if doom_is_registered() or doom_is_retail() or ((get_wad_filename('id1') or get_wad_filename('iddm1')) and get_wad_filename('doom 2')):
+    if doom_is_registered() or doom_is_retail() or doomu_is_retail() or ((get_wad_filename('id1') or get_wad_filename('iddm1')) and get_wad_filename('doom 2')):
         texfile.write('#include "texdefs/doom1.txt"\n')
     if get_wad_filename('doom2') or get_wad_filename('tnt') or get_wad_filename('plutonia'):
         texfile.write('#include "texdefs/doom2.txt"\n')
