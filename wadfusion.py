@@ -221,19 +221,6 @@ def declare_data():
         'mapinfo/maps_id1.txt',
         'mapinfo/maps_iddm1.txt',
         'maps/WF_NEWGAME.wad',
-        'maps/WF_NEWGAME_E1M1.wad',
-        'maps/WF_NEWGAME_E2M1.wad',
-        'maps/WF_NEWGAME_E3M1.wad',
-        'maps/WF_NEWGAME_E4M1.wad',
-        'maps/WF_NEWGAME_E5M1.wad',
-        'maps/WF_NEWGAME_E6M1.wad',
-        'maps/WF_NEWGAME_MAP01.wad',
-        'maps/WF_NEWGAME_ML_MAP01.wad',
-        'maps/WF_NEWGAME_NV_MAP01.wad',
-        'maps/WF_NEWGAME_LR_MAP01.wad',
-        'maps/WF_NEWGAME_LR_MAP08.wad',
-        'maps/WF_NEWGAME_TN_MAP01.wad',
-        'maps/WF_NEWGAME_PL_MAP01.wad',
         'maps/WF_STORY.wad',
         'maps/WF_STORY_ML_MAP29.wad',
         'maps/WF_STORY_ML_MAP30.wad',
@@ -562,6 +549,8 @@ def extras_is_kex():
         return True
 
 def masterlevels_is_complete():
+    if not get_wad_filename('doom2'):
+        return
     for i, wad_name in enumerate(MASTER_LEVELS_ORDER):
         in_wad = omg.WAD()
         wad_filename = get_wad_filename(wad_name)
@@ -1016,6 +1005,46 @@ def make_dirs():
         if not path.exists(DEST_DIR + dirname):
             os.mkdir(DEST_DIR + dirname)
 
+def add_newgame():
+    global RES_FILES
+    if doom_is_registered() or doom_is_retail():
+        RES_FILES += ['maps/WF_NEWGAME_E1M1.wad', 'maps/WF_NEWGAME_E2M1.wad', 'maps/WF_NEWGAME_E3M1.wad']
+    if doom_is_retail():
+        RES_FILES += ['maps/WF_NEWGAME_E4M1.wad']
+    if get_wad_filename(SIGIL_WAD):
+        RES_FILES += ['maps/WF_NEWGAME_E5M1.wad']
+    if get_wad_filename(SIGIL2_WAD):
+        RES_FILES += ['maps/WF_NEWGAME_E6M1.wad']
+    if get_wad_filename('doom2'):
+        RES_FILES += ['maps/WF_NEWGAME_MAP01.wad']
+    if masterlevels_is_complete() or (get_wad_filename('masterlevels') and get_wad_filename('doom2')):
+        RES_FILES += ['maps/WF_NEWGAME_ML_MAP01.wad']
+    if get_wad_filename('nerve'):
+        RES_FILES += ['maps/WF_NEWGAME_NV_MAP01.wad']
+    if get_wad_filename('tnt'):
+        RES_FILES += ['maps/WF_NEWGAME_TN_MAP01.wad']
+    if get_wad_filename('plutonia'):
+        RES_FILES += ['maps/WF_NEWGAME_PL_MAP01.wad']
+    if get_wad_filename('id1'):
+        RES_FILES += ['maps/WF_NEWGAME_LR_MAP01.wad', 'maps/WF_NEWGAME_LR_MAP08.wad']
+
+def add_textures():
+    texfile = open(DEST_DIR + 'textures.txt', 'a')
+    if doom_is_registered() or doom_is_retail() or ((get_wad_filename('id1') or get_wad_filename('iddm1')) and get_wad_filename('doom 2')):
+        texfile.write('#include "texdefs/doom1.txt"\n')
+    if get_wad_filename('doom2') or get_wad_filename('tnt') or get_wad_filename('plutonia'):
+        texfile.write('#include "texdefs/doom2.txt"\n')
+    if get_wad_filename('tnt'):
+        texfile.write('#include "texdefs/tnt.txt"\n')
+    if get_wad_filename('plutonia'):
+        texfile.write('#include "texdefs/plutonia.txt"\n')
+    if (get_wad_filename('id1') or get_wad_filename('iddm1')) and get_wad_filename('doom2'):
+        texfile.write('#include "texdefs/id1.txt"\n')
+    if masterlevels_is_complete() or (get_wad_filename('masterlevels') and get_wad_filename('doom2')):
+        texfile.write('#include "texdefs/masterlevels.txt"\n')
+    if masterlevelsrejects_is_complete():
+        texfile.write('#include "texdefs/masterlevelsrejects.txt"\n')
+
 def map_exists(map_name):
     map_name += '.wad'
     for filename in os.listdir(DEST_DIR + 'maps/'):
@@ -1023,7 +1052,7 @@ def map_exists(map_name):
             return True
     return False
 
-def add_textures():
+def add_textures_patch():
     texfile = open(DEST_DIR + 'textures.txt', 'a')
     if map_exists('e1m1') or map_exists('lr_map01') or map_exists('dm_map01'):
         texfile.write('#include "texdefs/doom1.txt"\n')
@@ -1045,7 +1074,10 @@ def copy_resources():
         logs('Copying %s' % src_file)
         copyfile(RES_DIR + src_file, DEST_DIR + src_file)
     # add texture definition includes only for present wads
-    add_textures()
+    if not should_patch():
+        add_textures()
+    else:
+        add_textures_patch()
 
 def copy_id1_doom1_skies():
     logs('Duplicating doom1 sky patches to suppress errors with id1...')
@@ -1166,8 +1198,11 @@ def get_eps(wads_found):
                 extra += ' + MAP33'
             eps += ['Hell on Earth' + extra]
             extra = ''
-        elif wadname == 'attack' and masterlevels_is_complete() and not 'masterlevels' in wads_found and 'doom2' in wads_found and not masterlevelsrejects_is_complete():
-            eps += ['Master Levels']
+        elif wadname == 'attack' and masterlevels_is_complete() and not 'masterlevels' in wads_found:
+            if masterlevelsrejects_is_complete():
+                extra += ' + Rejects'
+            eps += ['Master Levels' + extra]
+            extra = ''
         elif wadname == 'masterlevels' and 'doom2' in wads_found:
             if masterlevelsrejects_is_complete():
                 extra += ' + Rejects'
@@ -1257,6 +1292,7 @@ def main():
     set_sigil_filenames()
     # initialize data tables
     declare_data()
+    add_newgame()
     # patch an existing ipk3 if --patch argument is used
     if should_patch():
         pk3_patch()
