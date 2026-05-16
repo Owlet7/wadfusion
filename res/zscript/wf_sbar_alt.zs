@@ -69,35 +69,34 @@ extend class WadFusionStatusBar
 		String mapName = Level.MapName.MakeLower();
 		
 		// Draw health
-		int hudHealthYOffset = 0;
-		
+		int healthPosYOffset = 0;
 		if ( ( hudSwapHealthArmor || !altHUDHealth ) && altHUDArmor )
-			hudHealthYOffset = 27;
+			healthPosYOffset = 27;
 		
 		let hasBerserk = CPlayer.mo.FindInventory("PowerStrength");
 		
+		int health = CPlayer.Health;
+		
 		if ( altHUDHealth )
 		{
-			int health = CPlayer.Health;
-			
 			if ( !altHUDMugshotReplace )
-				DrawImage(hasBerserk ? "PSTRA0" : "MEDIA0", (20 + ultraWide, -10 - hudHealthYOffset), DI_SCREEN_LEFT_BOTTOM, healthAlpha);
+				DrawImage(hasBerserk ? "PSTRA0" : "MEDIA0", (20 + ultraWide, -10 - healthPosYOffset), DI_SCREEN_LEFT_BOTTOM, healthAlpha);
 			else
-				DrawTexture(GetMugShot(5), (3 + ultraWide, -35 - hudHealthYOffset), DI_ITEM_OFFSETS|DI_SCREEN_LEFT_BOTTOM, healthAlpha);
+				DrawTexture(GetMugShot(5), (3 + ultraWide, -35 - healthPosYOffset), DI_ITEM_OFFSETS|DI_SCREEN_LEFT_BOTTOM, healthAlpha);
 			
-			DrawString(mHUDFont, FormatNumber(health, 1), (40 + ultraWide, -25 - hudHealthYOffset),
+			DrawString(mHUDFont, FormatNumber(health, 1), (40 + ultraWide, -25 - healthPosYOffset),
 					   DI_SCREEN_LEFT_BOTTOM|DI_NOSHADOW, GetHealthColor(), healthAlpha);
 		}
 		
 		// Draw armor
+		let armor = CPlayer.mo.FindInventory("BasicArmor");
+		
 		if ( altHUDArmor )
 		{
-			let armor = CPlayer.mo.FindInventory("BasicArmor");
-			
 			if ( armor != null && armor.Amount > 0 )
 			{
-				DrawInventoryIcon(armor, (20 + ultraWide, -37 + hudHealthYOffset), DI_SCREEN_LEFT_BOTTOM, healthAlpha);
-				DrawString(mHUDFont, FormatNumber(armor.Amount, 1), (40 + ultraWide, -52 + hudHealthYOffset),
+				DrawInventoryIcon(armor, (20 + ultraWide, -37 + healthPosYOffset), DI_SCREEN_LEFT_BOTTOM, healthAlpha);
+				DrawString(mHUDFont, FormatNumber(armor.Amount, 1), (40 + ultraWide, -52 + healthPosYOffset),
 						   DI_SCREEN_LEFT_BOTTOM|DI_NOSHADOW, GetArmorColor(), healthAlpha);
 			}
 		}
@@ -105,58 +104,25 @@ extend class WadFusionStatusBar
 		// Draw mugshot
 		if ( altHUDMugshot )
 		{
-			int hudMugshotXOffset = 0;
+			int mugshotPosXOffset = 0;
+			
+			int currentHealthLength = 0;
+			int currentArmorLength = 0;
+			
+			if ( altHUDHealth )
+				currentHealthLength = String.Format("%i", health).Length();
+			
+			if ( armor != null && altHUDArmor )
+				currentArmorLength = String.Format("%i", armor.Amount).Length();
 			
 			if ( !altHUDHealth && !altHUDArmor )
-				hudMugshotXOffset = 81;
+				mugshotPosXOffset = 81;
+			else if ( ( !hudSwapHealthArmor || !altHUDArmor ) && currentHealthLength > 3 )
+				mugshotPosXOffset = -14 * ( currentHealthLength - 3 );
+			else if ( hudSwapHealthArmor && currentArmorLength > 3 )
+				mugshotPosXOffset = -14 * ( currentArmorLength - 3 );
 			
-			DrawTexture(GetMugShot(5), (84 - hudMugshotXOffset + ultraWide, -35), DI_ITEM_OFFSETS|DI_SCREEN_LEFT_BOTTOM, healthAlpha);
-		}
-		
-		// Draw keys
-		bool locks[6];
-		
-		for ( int i = 0; i < 6; i++ )
-			locks[i] = CPlayer.mo.CheckKeys(i + 1, false, true);
-		
-		if ( !deathmatch && altHUDKeys )
-		{
-			Vector2 keyInvPos = (-84 - ultraWide, -25);
-			int keyInvPosYIncrement = 8;
-			
-			String keyImage = "";
-			
-			// Blue key
-			if ( locks[1] && locks[4] )
-				keyImage = "STKEYS6";
-			else if ( locks[1] )
-				keyImage = "STKEYS0";
-			else if ( locks[4] )
-				keyImage = "STKEYS3";
-			if ( locks[1] || locks[4] )
-				DrawImage(keyImage, keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			keyInvPos.Y += keyInvPosYIncrement;
-			
-			// Yellow key
-			if ( locks[2] && locks[5] )
-				keyImage = "STKEYS7";
-			else if ( locks[2] )
-				keyImage = "STKEYS1";
-			else if ( locks[5] )
-				keyImage = "STKEYS4";
-			if ( locks[2] || locks[5] )
-				DrawImage(keyImage, keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
-			keyInvPos.Y += keyInvPosYIncrement;
-			
-			// Red key
-			if ( locks[0] && locks[3] )
-				keyImage = "STKEYS8";
-			else if ( locks[0] )
-				keyImage = "STKEYS2";
-			else if ( locks[3] )
-				keyImage = "STKEYS5";
-			if ( locks[0] || locks[3] )
-				DrawImage(keyImage, keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
+			DrawTexture(GetMugShot(5), (84 - mugshotPosXOffset + ultraWide, -35), DI_ITEM_OFFSETS|DI_SCREEN_LEFT_BOTTOM, healthAlpha);
 		}
 		
 		// Draw weapon slots
@@ -336,7 +302,7 @@ extend class WadFusionStatusBar
 			String ammoCellInv   = ammoCellsStr  .." "..cellAmountStr;
 			String ammoFuelInv   = ammoFuelStr   .." "..fuelAmountStr;
 			
-			if ( fuel != null && ammotype1 != fuel )
+			if ( fuel != null && ( ammotype1 != fuel || !altHUDAmmo ) )
 			{
 				if ( ( isId1 && id1WeapSwap ) || ( hasIncinerator || hasHeatwave ) || hudId24 || id1WeapSwapAlways )
 				{
@@ -345,7 +311,7 @@ extend class WadFusionStatusBar
 				}
 			}
 			
-			if ( cell != null && ammotype1 != cell )
+			if ( cell != null && ( ammotype1 != cell || !altHUDAmmo ) )
 			{
 				if ( !( isId1 && id1WeapSwap ) || ( hasPlasmaRifle || hasBfg9000 ) || hudId24 )
 				{
@@ -357,23 +323,80 @@ extend class WadFusionStatusBar
 				}
 			}
 			
-			if ( rocket != null && ammotype1 != rocket )
+			if ( rocket != null && ( ammotype1 != rocket || !altHUDAmmo ) )
 			{
 				DrawString(mConFont, ammoRocketInv, ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, ammoInvAlpha);
 				ammoInvPos.Y -= ammoInvPosYIncrement;
 			}
 			
-			if ( shell != null && ammotype1 != shell )
+			if ( shell != null && ( ammotype1 != shell || !altHUDAmmo ) )
 			{
 				DrawString(mConFont, ammoShellInv, ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, ammoInvAlpha);
 				ammoInvPos.Y -= ammoInvPosYIncrement;
 			}
 			
-			if ( clip != null && ammotype1 != clip )
+			if ( clip != null && ( ammotype1 != clip || !altHUDAmmo ) )
 			{
 				DrawString(mConFont, ammoClipInv, ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, ammoInvAlpha);
 				ammoInvPos.Y -= ammoInvPosYIncrement;
 			}
+		}
+		
+		// Draw keys
+		if ( !deathmatch && altHUDKeys )
+		{
+			int currentAmmoLength = 0;
+			int keyInvPosXOffset = 0;
+			
+			if ( ammotype1 != null && altHUDAmmo )
+				currentAmmoLength = String.Format("%i", ammotype1.Amount).Length();
+			
+			if ( !altHUDAmmo && !altHUDAmmoInv )
+				keyInvPosXOffset = -71;
+			else if ( currentAmmoLength > 3 )
+				keyInvPosXOffset = 14 * ( currentAmmoLength - 3 );
+			
+			Vector2 keyInvPos = (-84 - keyInvPosXOffset - ultraWide, -25);
+			int keyInvPosYIncrement = 8;
+			
+			String keyImage = "";
+			
+			bool locks[6];
+			
+			for ( int i = 0; i < 6; i++ )
+				locks[i] = CPlayer.mo.CheckKeys(i + 1, false, true);
+			
+			// Blue key
+			if ( locks[1] && locks[4] )
+				keyImage = "STKEYS6";
+			else if ( locks[1] )
+				keyImage = "STKEYS0";
+			else if ( locks[4] )
+				keyImage = "STKEYS3";
+			if ( locks[1] || locks[4] )
+				DrawImage(keyImage, keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
+			keyInvPos.Y += keyInvPosYIncrement;
+			
+			// Yellow key
+			if ( locks[2] && locks[5] )
+				keyImage = "STKEYS7";
+			else if ( locks[2] )
+				keyImage = "STKEYS1";
+			else if ( locks[5] )
+				keyImage = "STKEYS4";
+			if ( locks[2] || locks[5] )
+				DrawImage(keyImage, keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
+			keyInvPos.Y += keyInvPosYIncrement;
+			
+			// Red key
+			if ( locks[0] && locks[3] )
+				keyImage = "STKEYS8";
+			else if ( locks[0] )
+				keyImage = "STKEYS2";
+			else if ( locks[3] )
+				keyImage = "STKEYS5";
+			if ( locks[0] || locks[3] )
+				DrawImage(keyImage, keyInvPos, DI_SCREEN_RIGHT_BOTTOM, keysAlpha);
 		}
 		
 		// Draw powerups
