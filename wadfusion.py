@@ -492,19 +492,19 @@ def set_sigil_filenames():
     for i in SIGIL_FILENAMES:
         if get_wad_filename(i):
             SIGIL_WAD = i
-        break
+            break
     for i in SIGIL_MP3_FILENAMES:
         if get_wad_filename(i):
             SIGIL_MP3_WAD = i
-        break
+            break
     for i in SIGIL2_FILENAMES:
         if get_wad_filename(i):
             SIGIL2_WAD = i
-        break
+            break
     for i in SIGIL2_MP3_FILENAMES:
         if get_wad_filename(i):
             SIGIL2_MP3_WAD = i
-        break
+            break
 
 def doom_is_registered():
     d1_wad = omg.WAD()
@@ -677,10 +677,10 @@ def add_to_wad_lump_lists():
             logs('  Extracting KEX resources from nerve.wad')
             WAD_LUMP_LISTS['nerve'] += ['graphics_nerve_kex']
     if pwad_is_kex(SIGIL_WAD):
-        logs('  Extracting KEX resources from sigil.wad')
+        logs('  Extracting KEX resources from ' + SIGIL_WAD + '.wad')
         WAD_LUMP_LISTS[SIGIL_WAD] += ['graphics_sigil_kex']
     if pwad_is_kex(SIGIL2_WAD):
-        logs('  Extracting KEX resources from sigil2.wad')
+        logs('  Extracting KEX resources from ' + SIGIL2_WAD + '.wad')
         WAD_LUMP_LISTS[SIGIL2_WAD] += ['graphics_sigil2_kex']
     # if extras is the kex version
     if extras_is_kex():
@@ -952,28 +952,28 @@ def extract_iwads():
         if iwad_name == SIGIL_WAD:
             if not doom_is_registered():
                 if not doomu_is_retail():
-                    logg('  ERROR: Skipping sigil.wad as registered or retail doom.wad is not present', error=True)
+                    logg('  ERROR: Skipping ' + SIGIL_WAD + '.wad as registered or retail doom.wad is not present', error=True)
                     continue
         if iwad_name == SIGIL_MP3_WAD and not get_wad_filename(SIGIL_WAD):
-            logg('  ERROR: Skipping sigil_shreds.wad as sigil.wad is not present', error=True)
+            logg('  ERROR: Skipping ' + SIGIL_MP3_WAD + '.wad as sigil.wad is not present', error=True)
             continue
         if iwad_name == SIGIL_MP3_WAD:
             if not doom_is_registered():
                 if not doomu_is_retail():
-                    logg('  ERROR: Skipping sigil_shreds.wad as registered or retail doom.wad is not present', error=True)
+                    logg('  ERROR: Skipping ' + SIGIL_MP3_WAD + '.wad as registered or retail doom.wad is not present', error=True)
                     continue
         if iwad_name == SIGIL2_WAD:
             if not doom_is_registered():
                 if not doomu_is_retail():
-                    logg('  ERROR: Skipping sigil2.wad as registered or retail doom.wad is not present', error=True)
+                    logg('  ERROR: Skipping ' + SIGIL2_WAD + '.wad as registered or retail doom.wad is not present', error=True)
                     continue
         if iwad_name == SIGIL2_MP3_WAD and not get_wad_filename(SIGIL2_WAD):
-            logg('  ERROR: Skipping sigil2_mp3.wad as sigil2.wad is not present', error=True)
+            logg('  ERROR: Skipping ' + SIGIL2_MP3_WAD + '.wad as sigil2.wad is not present', error=True)
             continue
         if iwad_name == SIGIL2_MP3_WAD:
             if not doom_is_registered():
                 if not doomu_is_retail():
-                    logg('  ERROR: Skipping sigil2_mp3.wad as registered or retail doom.wad is not present', error=True)
+                    logg('  ERROR: Skipping ' + SIGIL2_MP3_WAD + '.wad as registered or retail doom.wad is not present', error=True)
                     continue
         if iwad_name == 'id1' and not get_wad_filename('doom2'):
             logg('  ERROR: Skipping id1.wad as doom2.wad is not present', error=True)
