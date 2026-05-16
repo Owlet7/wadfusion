@@ -1,6 +1,6 @@
 //-----------------------------------------------------------------------------
 //
-// Copyright 2024-2025 Owlet VII
+// Copyright 2024-2026 Owlet VII
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -104,21 +104,21 @@ class WadFusionHandler : EventHandler
 	
 	override void CheckReplacement (ReplaceEvent e)
 	{
+		string mapPrefix = Level.MapName.Left(3).MakeLower();
+		
+		// increase the spiderdemon's health from 3000 to 9000 in Sigil 2
+		int sigil2SpiderBoss = CVar.FindCVar("wf_compat_sigil2spiderboss").GetInt();
+		if ( ( sigil2SpiderBoss == 1 && mapPrefix == "e6m" ) || sigil2SpiderBoss >= 2 )
+			DoSigil2SpiderBossBuff(e);
+		
 		// replace plasmarifle and bfg9000 with incinerator and calamity blade, respectively
 		int id24WeapSwap = CVar.FindCVar("wf_compat_id24_weapons").GetInt();
-		string mapPrefix = Level.MapName.Left(3).MakeLower();
 		if ( ( id24WeapSwap == 1 && mapPrefix == "lr_" ) || id24WeapSwap >= 2 )
 			DoId24WeaponReplacements(e);
 	}
 	
 	override void WorldThingSpawned(WorldEvent e)
 	{
-		// increase the spiderdemon's health from 3000 to 9000 in Sigil 2
-		int sigil2SpiderBoss = CVar.FindCVar("wf_compat_sigil2spiderboss").GetInt();
-		string mapPrefix = Level.MapName.Left(3).MakeLower();
-		if ( ( sigil2SpiderBoss == 1 && mapPrefix == "e6m" ) || sigil2SpiderBoss >= 2 )
-			DoSigil2SpiderBossBuff(e);
-		
 		// override gzdoom's transparency render style for id24 actors
 		if ( CVar.FindCVar("wf_id24trans").GetBool() )
 			DoId24ActorTransparency(e);
@@ -136,12 +136,6 @@ class WadFusionHandler : EventHandler
 		// don't count revived enemies
 		if ( CVar.FindCVar("wf_compat_killcountfix").GetBool() )
 			RevertKillCounter(e);
-	}
-	
-	void DoSigil2SpiderBossBuff(WorldEvent e)
-	{
-		if ( SpiderMastermind(e.Thing) != null )
-			SpiderMastermind(e.Thing).Health = 9000;
 	}
 	
 	void DoId24ActorTransparency(WorldEvent e)
@@ -165,6 +159,15 @@ class WadFusionHandler : EventHandler
 		{
 			ID24VassagoFlame(e.Thing).A_SetRenderStyle(0.5, STYLE_Translucent);
 			ID24VassagoFlame(e.Thing).bZDOOMTRANS = false;
+		}
+	}
+	
+	void DoSigil2SpiderBossBuff(ReplaceEvent e)
+	{
+		if ( Level.MapTime == 0 )
+		{
+			if ( e.Replacee is "SpiderMastermind" )
+				e.Replacement = "SpiderMastermindSigil2";
 		}
 	}
 	
@@ -206,5 +209,13 @@ class WadFusionHandler : EventHandler
 	{
 		if ( e.Thing && e.Thing.bCountKill )
 			e.Thing.ClearCounters();
+	}
+}
+
+class SpiderMastermindSigil2 : SpiderMastermind
+{
+	Default
+	{
+		Health 9000;
 	}
 }
