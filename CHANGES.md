@@ -32,6 +32,7 @@
     order", which is the order in which they are listed on the "New Game" menu,
     "Chronological order", or "Release order".
 - Added a compatibility option to apply the Sigil II Spiderdemon buff globally.
+  - The buffed Spiderdemon is now a separate actor.
 - Added "Music substitutions" compatibility options.
   - These can be used to force Final DOOM music in DOOM II on a per-map basis.
 - Moved all texture substitution options to a sub-menu.
@@ -58,6 +59,8 @@
 - Added "Show map author" option for the alternate fullscreen HUD.
 - Added "Show skill level" option for the alternate fullscreen HUD.
 - Added "Don't offset map info" option for the alternate fullscreen HUD.
+- Added "Show current ammo in list" option for the alternate fullscreen HUD.
+- Renamed "Ammo pool" to "Ammo list".
 - Localised some menu and HUD elements.
 - Added partial Brazilian Portuguese localisation. @maverick-hunter
 - Updated German localisation. @Meerschweinmann
