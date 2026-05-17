@@ -1,6 +1,6 @@
 //-----------------------------------------------------------------------------
 //
-// Copyright 2024-2025 Owlet VII
+// Copyright 2024-2026 Owlet VII
 //
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -192,6 +192,7 @@ extend class WadFusionStaticHandler
 		CVar.FindCVar("wf_hud_alt_armor").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_ammo").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_ammoinv").ResetToDefault();
+		CVar.FindCVar("wf_hud_alt_ammoinv_current").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_powerup").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_weapinv").ResetToDefault();
 		CVar.FindCVar("wf_hud_alt_keys").ResetToDefault();

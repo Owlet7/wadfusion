@@ -40,6 +40,7 @@ extend class WadFusionStatusBar
 		let altHUDAmmoInv         = CVar.FindCVar("wf_hud_alt_ammoinv").GetBool();
 		let altHUDPowerup         = CVar.FindCVar("wf_hud_alt_powerup").GetBool();
 		let altHUDWeapInv         = CVar.FindCVar("wf_hud_alt_weapinv").GetBool();
+		let altHUDWeapInvCurrent  = CVar.FindCVar("wf_hud_alt_ammoinv_current").GetBool();
 		let altHUDKeys            = CVar.FindCVar("wf_hud_alt_keys").GetBool();
 		let altHUDFrags           = CVar.FindCVar("wf_hud_alt_frags").GetBool();
 		let altHUDStatsKills      = CVar.FindCVar("wf_hud_alt_stats_kills").GetInt() >= 1;
@@ -302,7 +303,7 @@ extend class WadFusionStatusBar
 			String ammoCellInv   = ammoCellsStr  .." "..cellAmountStr;
 			String ammoFuelInv   = ammoFuelStr   .." "..fuelAmountStr;
 			
-			if ( fuel != null && ( ammotype1 != fuel || !altHUDAmmo ) )
+			if ( fuel != null && ( ( ammotype1 != fuel || altHUDWeapInvCurrent ) || !altHUDAmmo ) )
 			{
 				if ( ( isId1 && id1WeapSwap ) || ( hasIncinerator || hasHeatwave ) || hudId24 || id1WeapSwapAlways )
 				{
@@ -311,7 +312,7 @@ extend class WadFusionStatusBar
 				}
 			}
 			
-			if ( cell != null && ( ammotype1 != cell || !altHUDAmmo ) )
+			if ( cell != null && ( ( ammotype1 != cell || altHUDWeapInvCurrent ) || !altHUDAmmo ) )
 			{
 				if ( !( isId1 && id1WeapSwap ) || ( hasPlasmaRifle || hasBfg9000 ) || hudId24 )
 				{
@@ -323,19 +324,19 @@ extend class WadFusionStatusBar
 				}
 			}
 			
-			if ( rocket != null && ( ammotype1 != rocket || !altHUDAmmo ) )
+			if ( rocket != null && ( ( ammotype1 != rocket || altHUDWeapInvCurrent ) || !altHUDAmmo ) )
 			{
 				DrawString(mConFont, ammoRocketInv, ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, ammoInvAlpha);
 				ammoInvPos.Y -= ammoInvPosYIncrement;
 			}
 			
-			if ( shell != null && ( ammotype1 != shell || !altHUDAmmo ) )
+			if ( shell != null && ( ( ammotype1 != shell || altHUDWeapInvCurrent ) || !altHUDAmmo ) )
 			{
 				DrawString(mConFont, ammoShellInv, ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, ammoInvAlpha);
 				ammoInvPos.Y -= ammoInvPosYIncrement;
 			}
 			
-			if ( clip != null && ( ammotype1 != clip || !altHUDAmmo ) )
+			if ( clip != null && ( ( ammotype1 != clip || altHUDWeapInvCurrent ) || !altHUDAmmo ) )
 			{
 				DrawString(mConFont, ammoClipInv, ammoInvPos, DI_SCREEN_RIGHT_BOTTOM|DI_TEXT_ALIGN_RIGHT, Font.CR_WHITE, ammoInvAlpha);
 				ammoInvPos.Y -= ammoInvPosYIncrement;

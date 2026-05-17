@@ -102,6 +102,7 @@ WF_MENU_HUD_ALT_HEALTH,,,Show health,,,,Zeige Gesundheit,,,,,,,,,,,,,,Pokaż zdr
 WF_MENU_HUD_ALT_ARMOR,,,Show armor,Show armour,,,Zeige Rüstung,,,,,,,,,,,,,,Pokaż zbroję,,,,Отображать броню,,,,,
 WF_MENU_HUD_ALT_AMMO,,,Show ammo,,,,Zeige Munition,,,,,,,,,,,,,,Pokaż amunicję,,,,Отображать патроны,,,,,
 WF_MENU_HUD_ALT_AMMOINV,,,Show ammo list,,,,Zeige Munitions-Liste,,,,,,,,,,,,,,Pokaż listę amunicji,,,,Отображать список патронов,,,,,
+WF_MENU_HUD_ALT_AMMOINV_CURRENT,,,Show current ammo in list,,,,,,,,,,,,,,,,,,,,,,Отображать нынешние патроны в списке,,,,,
 WF_MENU_HUD_ALT_POWERUP,,,Show powerup timers,,,,Zeige Boni Timer,,,,,,,,,,,,,,Pokaż czas dla ulepszeń,,,,Отображать таймеры усилений,,,,,
 WF_MENU_HUD_ALT_WEAPINV,,,Show weapon slots,,,,,,,,,,,,,,,,,,Pokaż sloty na broń,,,,Отображать слоты оружия,,,,,
 WF_MENU_HUD_ALT_KEYS,,,Show keys,,,,Zeige Schlüssel,,,,,,,,,,,,,,Pokaż klucze,,,,Отображать ключи,,,,,

@@ -168,6 +168,7 @@ nosave bool wf_hud_alt_health = true;
 nosave bool wf_hud_alt_armor = true;
 nosave bool wf_hud_alt_ammo = true;
 nosave bool wf_hud_alt_ammoinv = true;
+nosave bool wf_hud_alt_ammoinv_current = true;
 nosave bool wf_hud_alt_powerup = true;
 nosave bool wf_hud_alt_weapinv = true;
 nosave bool wf_hud_alt_keys = true;
