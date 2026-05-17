@@ -6,7 +6,7 @@ It's fine if you don't have all of the DOOM games, e.g. you have DOOM II but not
 
 If you just bought these games from [GOG](https://www.gog.com/en/game/doom_doom_ii), or [Steam](https://store.steampowered.com/app/2280/), etc., and you aren't familiar with UZDoom and DOOM modding, see the [**Absolute Beginner's Guide**](#absolute-beginners-guide) section below.
 
-### Note: WadFusion requires GZDoom v4.14.1 or newer, it will not work with other engines.
+### Note: WadFusion requires UZDoom v4.14.3 or newer, it will not work with other engines.
 
 ## Usage
 
@@ -80,6 +80,66 @@ For the Master Levels Rejects to be integrated, *all* of the following WADs must
 - [Ultimate Doom The Way id Did](https://www.doomworld.com/idgames/levels/doom/s-u/udtwid) (`udtwid.wad`)
 
 **Note: [Works of the Masters](https://jp.itch.io/deluxe-master-levels) is not supported by WadFusion! Do not use the WADs included with it!**
+
+## Full Run Mode
+
+WadFusion features optional "Full Run" modes. When enabled, finishing an episode will immediately start the next episode. If an episode isn't available, it will be skipped over.
+
+It can be enabled from the WadFusion options menu in UZDoom, and is available in three configurations:
+
+<details>
+<summary>Default order</summary>
+
+  - Knee-Deep in the Dead
+  - The Shores of Hell
+  - Inferno
+  - Thy Flesh Consumed
+  - SIGIL
+  - SIGIL II
+  - Hell On Earth
+  - Master Levels
+  - No Rest for the Living
+  - The Vulcan Abyss
+  - Counterfeit Eden
+  - TNT: Evilution
+  - The Plutonia Experiment
+</details>
+
+<details>
+<summary>Release order</summary>
+
+  - Knee-Deep in the Dead
+  - The Shores of Hell
+  - Inferno
+  - Hell On Earth
+  - Thy Flesh Consumed
+  - Master Levels
+  - TNT: Evilution
+  - The Plutonia Experiment
+  - No Rest for the Living
+  - SIGIL
+  - SIGIL II
+  - The Vulcan Abyss
+  - Counterfeit Eden
+</details>
+
+<details>
+<summary>Chronological order</summary>
+
+  - Knee-Deep in the Dead
+  - The Shores of Hell
+  - Inferno
+  - Thy Flesh Consumed
+  - SIGIL
+  - SIGIL II
+  - Hell On Earth
+  - No Rest for the Living
+  - Master Levels
+  - TNT: Evilution
+  - The Plutonia Experiment
+  - The Vulcan Abyss
+  - Counterfeit Eden
+</details>
 
 ## Absolute Beginner's Guide
 

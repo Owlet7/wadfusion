@@ -1,9 +1,11 @@
 # WadFusion Changelog
 
-## Unreleased Changes
-[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.1...HEAD)
-- Removed ID24 actors, as they were merged into GZDoom.
-  - **GZDoom must be updated to dev build g4.15pre-230 or newer!**
+## [WadFusion 1.6.0](https://github.com/Owlet7/wadfusion/releases/tag/v1.6.0) — [18 May 2026](https://github.com/Owlet7/wadfusion/tree/v1.6.0)
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.1...v1.6.0)
+- Removed ID24 actors, as they were merged into GZDoom / UZDoom.
+  - **A dev build of UZDoom 5.0.0 must be used! GZDoom is no longer supported!**
+  - **An alternate version with ID24 actors is also provided for the UZDoom**
+    **4.14.3 stable build.**
 - Added support for Sigil v1.23.
   - Like with Sigil II, the new "registered" MP3 version isn't supported on its
     own. The freeware version must be used to export the campaign, while the MP3
