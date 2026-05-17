@@ -40,6 +40,7 @@
 - Moved all texture substitution options to a sub-menu.
 - Fixed extreme slowdowns when music volume was muted.
 - Fixed two Legacy of Rust textures that wouldn't render.
+- Fixed a softlock in Legacy of Rust's MAP09.
 - Fixed the background graphics in Final DOOM's endings.
 - Removed `SKY1` from the Legacy of Rust list in the texture replacements
   script. Not sure how it got there.

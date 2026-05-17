@@ -113,6 +113,16 @@ class WadFusionMapFixes : LevelPostProcessor
 					AddThing(11, ( 352, 224, 0), 180);
 					break;
 				}
+				
+				// workaround for the "shortTex" compatibility issue, fixes softlock
+				// hopefully a temporary solution
+				
+				case '1699E255B8C0DB86EBB00E5B3C44B4AA': // id1.wad MAP09
+				{
+					SetLineSpecial(5411, Floor_RaiseByValueTxTy, 24, 16, 128);
+					SetLineSpecial(5419, Floor_RaiseByValueTxTy, 25, 16, 128);
+					break;
+				}
 			}
 		}
 	}
