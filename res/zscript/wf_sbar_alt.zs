@@ -241,7 +241,7 @@ extend class WadFusionStatusBar
 				DrawInventoryBar(diparms, (0, 0), 7, DI_SCREEN_CENTER_BOTTOM, HX_SHADOW);
 		}
 		
-		// Draw ammo pool
+		// Draw ammo list
 		if ( altHUDAmmoInv )
 		{
 			int ammoInvPosYIncrement = 8;
