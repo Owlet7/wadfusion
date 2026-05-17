@@ -1,5 +1,9 @@
 # WadFusion Changelog
 
+## [WadFusion 1.6.1](https://github.com/Owlet7/wadfusion/releases/tag/v1.6.1) — [18 May 2026](https://github.com/Owlet7/wadfusion/tree/v1.6.1)
+[**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.6.0...v1.6.1)
+- HOTFIX: Added support for LZDoom 4.14.3a.
+
 ## [WadFusion 1.6.0](https://github.com/Owlet7/wadfusion/releases/tag/v1.6.0) — [18 May 2026](https://github.com/Owlet7/wadfusion/tree/v1.6.0)
 [**Full Changelog**](https://github.com/Owlet7/wadfusion/compare/v1.5.1...v1.6.0)
 - Removed ID24 actors, as they were merged into GZDoom / UZDoom.

@@ -18,9 +18,9 @@
 //-----------------------------------------------------------------------------
 //
 
-version "4.15.1"
+version "4.14.3"
 
-const WF_VERSION = "1.6.0";
+const WF_VERSION = "1.6.1";
 
 #include "zscript/wf_handler.zs"
 #include "zscript/wf_handler_static.zs"

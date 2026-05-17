@@ -1,18 +1,18 @@
 # WadFusion — simple IWAD merge utility
 
-WadFusion merges your provided DOOM, DOOM II, and Final DOOM data into a single IPK3 file that can be played in [UZDoom](https://zdoom.org/index), with each game as its own entry in the episode list. This makes it very convenient to play all of classic DOOM's official releases without re-launching the game with different settings.
+WadFusion merges your provided DOOM, DOOM II, and Final DOOM data into a single IPK3 file that can be played in [ZDoom](https://zdoom.org/index), with each game as its own entry in the episode list. This makes it very convenient to play all of classic DOOM's official releases without re-launching the game with different settings.
 
 It's fine if you don't have all of the DOOM games, e.g. you have DOOM II but not Final DOOM—WadFusion will package up everything it can find.
 
-If you just bought these games from [GOG](https://www.gog.com/en/game/doom_doom_ii), or [Steam](https://store.steampowered.com/app/2280/), etc., and you aren't familiar with UZDoom and DOOM modding, see the [**Absolute Beginner's Guide**](#absolute-beginners-guide) section below.
+If you just bought these games from [GOG](https://www.gog.com/en/game/doom_doom_ii), or [Steam](https://store.steampowered.com/app/2280/), etc., and you aren't familiar with ZDoom and DOOM modding, see the [**Absolute Beginner's Guide**](#absolute-beginners-guide) section below.
 
-### Note: WadFusion requires UZDoom v4.14.3 or newer, it will not work with other engines.
+### Note: WadFusion requires UZDoom or LZDoom. It will not work with other engines.
 
 ## Usage
 
-Simply copy all of your WADs into the `source_wads` subfolder, then run WadFusion. A log will appear showing progress and any errors that arise. A new file called `doom_fusion.ipk3` will be created, with all the game content in it. It should be selectable in UZDoom as "DOOM Fusion".
+Simply copy all of your WADs into the `source_wads` subfolder, then run WadFusion. A log will appear showing progress and any errors that arise. A new file called `doom_fusion.ipk3` will be created, with all the game content in it. It should be selectable in ZDoom as "DOOM Fusion".
 
-Also included is a file called `doom_fusion_widescreen_gfx.pk3`, which adds super-ultra-widescreen assets courtesy of the [Ultra-Widerpix854 project](https://www.doomworld.com/forum/topic/148537). DOOM Fusion will load it automatically if it's placed in the same directory as the IPK3. UZDoom's own widescreen assets are disabled in Fusion. (It's worth noting that the full Ultra-Widerpix854 project has some extra features not included with WadFusion, such as alternate versions for some graphics, extended sky textures, and support for other DOOM-based games.)
+Also included is a file called `doom_fusion_widescreen_gfx.pk3`, which adds super-ultra-widescreen assets courtesy of the [Ultra-Widerpix854 project](https://www.doomworld.com/forum/topic/148537). DOOM Fusion will load it automatically if it's placed in the same directory as the IPK3. ZDoom's own widescreen assets are disabled in Fusion. (It's worth noting that the full Ultra-Widerpix854 project has some extra features not included with WadFusion, such as alternate versions for some graphics, extended sky textures, and support for other DOOM-based games.)
 
 ## Options
 
@@ -47,17 +47,17 @@ Here is the official list of WADs that WadFusion will recognize:
 
 If IWADs from the Unity or KEX-based re-releases are also included (must be named `doomunity.wad`, `doom2unity.wad`, `tntunity.wad`, `plutoniaunity.wad` or `doomkex.wad`, `doom2kex.wad`, `tntkex.wad`, `plutoniakex.wad`), WadFusion will extract the official widescreen assets from them. These versions can also be used as the main IWADs for extraction, but do keep in mind that they are censored, and that WadFusion already comes with optional super-ultrawide assets.
 
-If `extras.wad` from the re-releases is included, WadFusion will extract the official "secret revealed" sound, and some status bar icons that can be used by the custom alternate fullscreen HUD. If the version from the KEX-based re-release is used, WadFusion will also extract Andrew Hulshult's "IDKFA" covers of the DOOM and DOOM II soundtracks, which can be toggled from the WadFusion options menu in UZDoom.
+If `extras.wad` from the re-releases is included, WadFusion will extract the official "secret revealed" sound, and some status bar icons that can be used by the custom alternate fullscreen HUD. If the version from the KEX-based re-release is used, WadFusion will also extract Andrew Hulshult's "IDKFA" covers of the DOOM and DOOM II soundtracks, which can be toggled from the WadFusion options menu in ZDoom.
 
 None of the "official add-on" content from the Unity or KEX-based re-releases of DOOM and DOOM II is supported.
 
-For SIGIL and SIGIL II, all the filenames for different releases of those WADs are also recognized; you shouldn't have to rename your original files. If `sigil_shreds.wad` is included, or if both versions of SIGIL II are included, WadFusion will extract both soundtracks, which can be toggled from the WadFusion options menu in UZDoom. The MP3 version of SIGIL II isn't supported on its own, the MIDI version must be included alongside it.
+For SIGIL and SIGIL II, all the filenames for different releases of those WADs are also recognized; you shouldn't have to rename your original files. If `sigil_shreds.wad` is included, or if both versions of SIGIL II are included, WadFusion will extract both soundtracks, which can be toggled from the WadFusion options menu in ZDoom. The MP3 version of SIGIL II isn't supported on its own, the MIDI version must be included alongside it.
 
-[Tech Gone Bad](https://doomwiki.org/wiki/Tech_Gone_Bad) and [Phobos Mission Control](https://doomwiki.org/wiki/Phobos_Mission_Control) are levels that were made as a warm-up exercise for John Romero's cancelled game, Blackroom. If they're included, enabling them in the WadFusion options menu in UZDoom will replace E1M8 or E1M4 in the Knee-Deep in the Dead episode.
+[Tech Gone Bad](https://doomwiki.org/wiki/Tech_Gone_Bad) and [Phobos Mission Control](https://doomwiki.org/wiki/Phobos_Mission_Control) are levels that were made as a warm-up exercise for John Romero's cancelled game, Blackroom. If they're included, enabling them in the WadFusion options menu in ZDoom will replace E1M8 or E1M4 in the Knee-Deep in the Dead episode.
 
 ## Master Levels Rejects
 
-The WadFusion options menu in UZDoom has an option to switch the Master Levels between the official 21 map order as arranged by Xaser, and the expanded 43 map order that incorporates the rejected and related bonus maps, and arranges them into sub-episode campaigns.
+The WadFusion options menu in ZDoom has an option to switch the Master Levels between the official 21 map order as arranged by Xaser, and the expanded 43 map order that incorporates the rejected and related bonus maps, and arranges them into sub-episode campaigns.
 
 For the Master Levels Rejects to be integrated, *all* of the following WADs must be included:
 - Master Levels for DOOM II (the original 20 WAD files, or `masterlevels.wad` from the [KEX-based re-release](https://doomwiki.org/wiki/Doom_%2B_Doom_II))
@@ -85,7 +85,7 @@ For the Master Levels Rejects to be integrated, *all* of the following WADs must
 
 WadFusion features optional "Full Run" modes. When enabled, finishing an episode will immediately start the next episode. If an episode isn't available, it will be skipped over.
 
-It can be enabled from the WadFusion options menu in UZDoom, and is available in three configurations:
+It can be enabled from the WadFusion options menu in ZDoom, and is available in three configurations:
 
 <details>
 <summary>Default order</summary>
